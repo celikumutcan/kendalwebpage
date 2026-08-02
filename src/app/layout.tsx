@@ -8,6 +8,7 @@ import { LightTemperatureProvider } from "@/lib/LightTemperatureProvider";
 import { Navbar } from "@/components/ui/Navbar";
 import { Footer } from "@/components/ui/Footer";
 import { CookieConsentBanner } from "@/components/ui/CookieConsentBanner";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 import { OrganizationSchema } from "@/components/shared/OrganizationSchema";
 
@@ -40,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr">
-      <body className={`${inter.className} bg-black text-white antialiased`}>
+    <html lang="tr" suppressHydrationWarning>
+      <body className={`${inter.className} bg-black text-white antialiased`} suppressHydrationWarning>
         <LanguageProvider>
           <SmoothScrollProvider>
             <LightTemperatureProvider>
@@ -51,6 +52,7 @@ export default function RootLayout({
                 <main>{children}</main>
                 <Footer />
                 <CookieConsentBanner />
+                <ScrollToTop />
               </GsapContext>
             </LightTemperatureProvider>
           </SmoothScrollProvider>

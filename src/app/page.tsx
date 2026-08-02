@@ -28,14 +28,12 @@ export default function Home() {
         <NewsTicker />
         <Hero />
         <About />
-        <ApertureTransition />
         <BrandsStrip />
         <VideoShowcase />
         <ProductGallery />
         <WhyUs />
         <CatalogCTA />
         <RetailPresence />
-        <ApertureTransition />
         <GlobalPresence />
         <Projects />
         <Contact />

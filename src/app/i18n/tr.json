@@ -15,32 +15,28 @@
   },
   "about": {
     "title": "Hakkımızda",
-    "text1": "Kendal Elektrik, yenilikçi yaklaşımı ve kalite odaklı üretim anlayışıyla elektrik malzemeleri sektöründe öncü bir markadır.",
+    "text1": "Biz sadece ışık üretmiyoruz; karanlığa meydan okuyan, yıllara direnen teknolojiler tasarlıyoruz.",
     "text2": "Geleceğin aydınlatma teknolojilerini bugünden tasarlayarak, hem yurt içinde hem de küresel pazarlarda güvenilir çözümler sunuyoruz.",
     "beats": [
       {
-        "title": "1998 — Kuruluş",
-        "text": "Elektrik malzemeleri sektöründe mütevazı başlangıçlar."
+        "title": "1998 — Bir Kıvılcımla Başladı",
+        "text": "Her büyük hikaye cesur bir adımla başlar. 1998'de, karanlığı yarmaya kararlı, mütevazı ama tutkulu bir vizyonla ilk kıvılcımı çaktık."
       },
       {
-        "title": "22.000 m² — Üretim Gücü",
-        "text": "Tam entegre tesisimizde otomasyon destekli üretim."
+        "title": "Asla Sönmeyen Ampul",
+        "text": "Ürünlerimiz bir kez yanar, nesiller boyu aydınlatır. Kendal'ın ilk gün ürettiği ampullerin bile yıllara meydan okuması, sağlamlığa ve mükemmelliğe olan sarsılmaz inancımızın bir anıtıdır."
       },
       {
-        "title": "İTÜ İş Birliği",
-        "text": "Yerli LED çip AR-GE'si ile inovasyonda öncü."
+        "title": "22.000 m² — Dev Üretim Gücü",
+        "text": "Tam otomatik, modern üretim tesisimizde hata payını sıfıra indirerek, dünya standartlarında kusursuz aydınlatma teknolojileri üretiyoruz."
       },
       {
-        "title": "3000+ Ürün Çeşidi",
-        "text": "İhtiyacınıza uygun geniş ürün kataloğu."
+        "title": "İnovasyon & Yerli Çip",
+        "text": "Sadece üreten değil, icat eden bir yapı. İTÜ iş birliği ile tasarladığımız yerli LED çiplerle aydınlatmada sınırları yeniden çiziyoruz."
       },
       {
-        "title": "81 İlde Bayi Ağı",
-        "text": "Tüm Türkiye'ye ulaşan güçlü ve güvenilir dağıtım ağı."
-      },
-      {
-        "title": "İlk 10 İhracatçı",
-        "text": "Asya, Avrupa ve Afrika pazarında ülkemizi gururla temsil ediyoruz."
+        "title": "Dünyayı Aydınlatıyoruz",
+        "text": "Türkiye'nin 81 iline kök salmış gücümüzle yetinmedik; Asya, Avrupa ve Afrika pazarında ilk 10 ihracatçı arasına girerek ışığımızı küresel bir mirasa dönüştürdük."
       }
     ]
   },

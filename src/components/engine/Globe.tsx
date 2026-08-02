@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useRef, useState, useEffect, useMemo } from "react";
+import React, { useRef, useMemo, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import { useTexture } from "@react-three/drei";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
 
@@ -29,26 +30,18 @@ const GlobeScene = () => {
   const groupRef = useRef<THREE.Group>(null);
   const { progress } = useLightTemperature();
   
-  const [earthTexture, setEarthTexture] = useState<THREE.Texture | null>(null);
-  const [bumpTexture, setBumpTexture] = useState<THREE.Texture | null>(null);
-  const [specularTexture, setSpecularTexture] = useState<THREE.Texture | null>(null);
+  const [earthTexture, bumpTexture, specularTexture] = useTexture([
+    "/textures/earth-dark.jpg",
+    "/textures/earth-topology.png",
+    "/textures/earth-water.png"
+  ]);
 
-  useEffect(() => {
-    const loader = new THREE.TextureLoader();
-    
-    loader.load("/textures/earth-dark.jpg", (tex) => {
-      tex.colorSpace = THREE.SRGBColorSpace;
-      setEarthTexture(tex);
-    });
-    
-    loader.load("/textures/earth-topology.png", (tex) => {
-      setBumpTexture(tex);
-    });
-
-    loader.load("/textures/earth-water.png", (tex) => {
-      setSpecularTexture(tex);
-    });
-  }, []);
+  // Ensure color space is correct for Three.js latest versions
+  useMemo(() => {
+    if (earthTexture) {
+      earthTexture.colorSpace = THREE.SRGBColorSpace;
+    }
+  }, [earthTexture]);
 
   // Interpolate cool to warm color for rim glow and pins based on scroll progress
   const targetColor = useMemo(() => {
@@ -70,18 +63,14 @@ const GlobeScene = () => {
       {/* Textured Earth Base */}
       <mesh>
         <sphereGeometry args={[2, 64, 64]} />
-        {earthTexture ? (
-          <meshStandardMaterial 
-            map={earthTexture} 
-            bumpMap={bumpTexture}
-            bumpScale={0.015}
-            roughnessMap={specularTexture}
-            roughness={0.7}
-            metalness={0.1}
-          />
-        ) : (
-          <meshStandardMaterial color="#0a1628" />
-        )}
+        <meshStandardMaterial 
+          map={earthTexture} 
+          bumpMap={bumpTexture}
+          bumpScale={0.015}
+          roughnessMap={specularTexture}
+          roughness={0.7}
+          metalness={0.1}
+        />
       </mesh>
 
       {/* Atmospheric Rim Glow */}
@@ -121,7 +110,9 @@ export const Globe = () => {
         <directionalLight position={[5, 3, 5]} intensity={2.5} color="#ffffff" />
         <directionalLight position={[-5, -3, -5]} intensity={0.5} color="#d8e4ff" />
         
-        <GlobeScene />
+        <Suspense fallback={null}>
+          <GlobeScene />
+        </Suspense>
       </Canvas>
     </div>
   );

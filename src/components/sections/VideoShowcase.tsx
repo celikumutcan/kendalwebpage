@@ -47,10 +47,11 @@ export const VideoShowcase = () => {
         >
           <iframe
             className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/xrD_kftGciA?autoplay=1&mute=1&loop=1&playlist=xrD_kftGciA&controls=0&showinfo=0&rel=0"
+            src="https://www.youtube.com/embed/xrD_kftGciA?autoplay=1&mute=1&loop=1&playlist=xrD_kftGciA&controls=1&showinfo=0&rel=0"
             title="Kendal Elektrik Corporate Video"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
             sandbox="allow-scripts allow-same-origin allow-presentation"
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>

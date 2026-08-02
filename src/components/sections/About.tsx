@@ -70,21 +70,33 @@ export const About = () => {
               }`}
             >
               {/* Text Side */}
-              <div className="flex-1 text-center md:text-left">
-                <h3 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+              <div className="flex-1 text-center md:text-left relative z-10 px-4 md:px-0">
+                <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 leading-tight drop-shadow-lg">
                   {beat.title}
                 </h3>
-                <p className="text-xl md:text-2xl text-gray-300">
+                <p className="text-lg md:text-2xl text-gray-300 font-light leading-relaxed">
                   {beat.text}
                 </p>
               </div>
 
-              {/* Visual Side */}
-              <div className="flex-1 w-full flex items-center justify-center">
-                <div className="w-full max-w-sm aspect-square rounded-full border border-white/10 bg-white/5 flex items-center justify-center relative overflow-hidden">
-                   {/* Abstract background for visual */}
-                   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.1)_0%,_transparent_70%)]" />
-                   <span className="text-6xl md:text-8xl font-black text-[var(--brand-red)] opacity-80 drop-shadow-[0_0_15px_rgba(227,0,15,0.3)]">0{i + 1}</span>
+              {/* Premium Visual Side */}
+              <div className="flex-1 w-full flex items-center justify-center relative">
+                {/* Glowing Aura behind */}
+                <div className="absolute w-64 h-64 bg-[var(--brand-red)]/20 blur-[100px] rounded-full mix-blend-screen pointer-events-none" />
+                
+                {/* Glassmorphism Orb / Card */}
+                <div className="w-full max-w-sm md:max-w-md aspect-square rounded-[2rem] md:rounded-[4rem] border border-white/10 bg-gradient-to-br from-white/10 to-transparent backdrop-blur-2xl flex flex-col items-center justify-center relative overflow-hidden shadow-2xl transform transition-transform hover:scale-105 duration-700">
+                   {/* Inner decorative borders */}
+                   <div className="absolute inset-4 rounded-[1.5rem] md:rounded-[3.5rem] border border-[var(--brand-red)]/20" />
+                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(227,0,15,0.2)_0%,transparent_60%)]" />
+                   
+                   {/* Massive numbers */}
+                   <span className="text-8xl md:text-[10rem] font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/10 drop-shadow-[0_0_40px_rgba(227,0,15,0.5)]">
+                     0{i + 1}
+                   </span>
+                   
+                   {/* Aesthetic Line */}
+                   <div className="w-24 h-[2px] mt-4 bg-gradient-to-r from-transparent via-[var(--brand-red)] to-transparent opacity-70" />
                 </div>
               </div>
             </div>

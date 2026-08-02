@@ -46,36 +46,36 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
       ref={containerRef}
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black"
     >
-      {/* Subtle vignette pulse */}
+      {/* Yavaşça artan şiddetli sıcak parlama efekti */}
       <div 
-        className="absolute inset-0 opacity-50"
+        className="absolute inset-0 opacity-80 mix-blend-screen transition-all duration-700"
         style={{
-          background: `radial-gradient(circle at center, rgba(216, 228, 255, ${progress * 0.003}) 0%, transparent 60%)`
+          background: `radial-gradient(circle at center, rgba(255, 230, 100, ${progress * 0.015}) 0%, rgba(255, 170, 0, ${progress * 0.008}) 30%, transparent 80%)`
         }}
       />
       
       <div className="relative z-10 flex flex-col items-center">
-        {/* LED Light Bulb SVG */}
-        <svg width="120" height="120" viewBox="0 0 100 100" className={`mb-6 transition-all duration-700 ${progress >= 100 ? 'drop-shadow-[0_0_30px_rgba(255,255,255,1)] scale-110' : 'drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]'}`}>
-          {/* Bulb Outline (Dim) */}
+        {/* Ampul SVG - Sonlara doğru kör edici parlaklık */}
+        <svg width="120" height="120" viewBox="0 0 100 100" className={`mb-6 transition-all duration-700 ${progress >= 90 ? 'drop-shadow-[0_0_80px_rgba(255,230,100,1)] scale-125' : 'drop-shadow-[0_0_20px_rgba(255,180,0,0.5)]'}`}>
+          {/* Ampul Dış Hatları (Loş sarımsı) */}
           <path
             d="M 35 70 C 35 80, 40 85, 45 85 L 55 85 C 60 85, 65 80, 65 70 C 75 60, 80 45, 75 30 C 70 15, 50 10, 50 10 C 50 10, 30 15, 25 30 C 20 45, 25 60, 35 70 Z"
             fill="transparent"
-            stroke="#ffffff"
+            stroke="#ffcc00"
             strokeWidth="2"
-            strokeOpacity="0.1"
+            strokeOpacity="0.15"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* Screw Base */}
-          <path d="M 40 85 L 60 85 M 42 90 L 58 90 M 45 95 L 55 95" stroke="#ffffff" strokeWidth="2" strokeOpacity="0.3" strokeLinecap="round" />
+          {/* Metalik Duy kısmı */}
+          <path d="M 40 85 L 60 85 M 42 90 L 58 90 M 45 95 L 55 95" stroke="#a0a0a0" strokeWidth="2" strokeOpacity="0.4" strokeLinecap="round" />
           
-          {/* Animated Filament (Bright) */}
+          {/* Hareketli Flaman (Parlak sıcak sarı) */}
           <path
             ref={circuitRef}
             d="M 45 85 L 45 60 L 35 45 L 50 30 L 65 45 L 55 60 L 55 85"
             fill="transparent"
-            stroke="#ffffff"
+            stroke="#ffcc00"
             strokeWidth="2"
             strokeDasharray="200"
             strokeDashoffset="200"
@@ -84,7 +84,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           />
         </svg>
 
-        <div className="text-white/80 font-mono text-lg tracking-widest" style={{ textShadow: `0 0 ${progress * 0.1}px rgba(255,255,255,0.5)` }}>
+        <div className="text-[#ffcc00]/90 font-mono text-lg tracking-widest" style={{ textShadow: `0 0 ${progress * 0.15}px rgba(255,200,0,0.6)` }}>
           {progress.toString().padStart(3, "0")}%
         </div>
       </div>

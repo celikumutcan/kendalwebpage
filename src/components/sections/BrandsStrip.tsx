@@ -33,8 +33,16 @@ export const BrandsStrip = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full bg-black py-12 overflow-hidden border-y border-white/5">
-      <div className="flex w-[200%] md:w-[150%] lg:w-[100%] min-w-max" ref={trackRef}>
+    <section ref={containerRef} className="w-full bg-black py-16 overflow-hidden border-y border-white/5 relative">
+      {/* Title indicating these are sub-brands */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-center pointer-events-none">
+        <h3 className="text-white/60 text-sm md:text-base font-semibold tracking-[0.2em] uppercase">
+          Alt Markalarımız
+        </h3>
+        <div className="w-12 h-px bg-[var(--brand-red)] mx-auto mt-2 opacity-50" />
+      </div>
+
+      <div className="flex w-[200%] md:w-[150%] lg:w-[100%] min-w-max mt-6" ref={trackRef}>
         {/* Render twice for infinite loop effect */}
         {[...BRANDS, ...BRANDS].map((brand, idx) => (
           <div

@@ -59,6 +59,11 @@ export const Hero = () => {
       ref={containerRef}
       className="relative h-[200vh] w-full bg-black text-white"
     >
+      {/* Markanın kırmızı rengini içeren şık ve dinamik arka plan aydınlatmaları */}
+      <div className="absolute top-0 left-0 w-full h-[100vh] pointer-events-none opacity-40 mix-blend-screen overflow-hidden">
+        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(227,0,15,0.4)_0%,transparent_70%)] blur-3xl" />
+        <div className="absolute bottom-[10%] right-[-10%] w-[60%] h-[70%] rounded-full bg-[radial-gradient(circle_at_center,rgba(179,0,12,0.3)_0%,transparent_70%)] blur-3xl" />
+      </div>
       {/* Fixed container for the WebGL and content so it stays on screen while scrolling the 200vh */}
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
         {/* R3F WebGL Layer */}
