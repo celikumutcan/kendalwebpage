@@ -53,6 +53,8 @@ const nextConfig: NextConfig = {
   ...(isStatic ? {
     output: "export",
     images: { unoptimized: true },
+    basePath: "/kendalwebpage",
+    assetPrefix: "/kendalwebpage",
   } : {}),
   devIndicators: false,
 };
