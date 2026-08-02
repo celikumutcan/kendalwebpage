@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -37,8 +38,11 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-40 px-6 py-4 flex items-center justify-between bg-black/60 backdrop-blur-md text-white border-b border-white/5 transition-colors duration-300">
-      <div className="font-bold text-xl tracking-tight">
-        <span className="text-[var(--brand-red)]">K</span>ENDAL
+      <div className="font-bold text-xl tracking-tight flex items-center gap-2">
+        <Image src="/kendal-icon.png" alt="Kendal Logo" width={28} height={28} className="object-contain" />
+        <div>
+          <span className="text-[var(--brand-red)]">K</span>ENDAL
+        </div>
       </div>
       <div className="hidden md:flex items-center gap-8 text-sm">
         {navLinks.map((link) => (

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import Link from "next/link";
 
@@ -15,16 +16,23 @@ export const Footer = () => {
         
         {/* Company Info */}
         <div className="md:col-span-1">
-          <div className="font-bold text-2xl tracking-tight text-white mb-6">
-            <span className="text-[var(--brand-red)]">K</span>ENDAL
+          <div className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2">
+            <Image src="/kendal-icon.png" alt="Kendal Logo" width={32} height={32} className="object-contain" />
+            <div>
+              <span className="text-[var(--brand-red)]">K</span>ENDAL
+            </div>
           </div>
           <p className="text-sm leading-relaxed mb-4">
             {(t as any).footer?.company}
           </p>
-          <p className="text-sm opacity-60">
-            {/* PLACEHOLDER: Client to confirm headquarters vs production facility address */}
+          <a 
+            href="https://www.google.com/maps/search/?api=1&query=Selimpaşa+Org.+San.+Böl.+5008+Sokak+No:6+Selimpaşa+Silivri/İSTANBUL" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sm opacity-60 hover:opacity-100 hover:text-[var(--brand-red)] transition-colors inline-block"
+          >
             {(t as any).footer?.address}
-          </p>
+          </a>
         </div>
 
         {/* Contact */}
@@ -32,10 +40,18 @@ export const Footer = () => {
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.contact_title}</h4>
           <ul className="space-y-3 text-sm">
             <li>
-              {/* PLACEHOLDER: Client to confirm actual contact phone number */}
+              <span className="opacity-60 block text-xs mb-1">İletişim Hattı</span>
               {(t as any).footer?.phone}
             </li>
             <li>
+              <span className="opacity-60 block text-xs mb-1">Satış Destek Hattı</span>
+              {(t as any).footer?.sales_phone}
+            </li>
+            <li>
+              <span className="opacity-60 block text-xs mb-1">Teknik Servis Hattı</span>
+              {(t as any).footer?.support_phone}
+            </li>
+            <li className="pt-2">
               <a href="mailto:info@kendalelektrik.com.tr" className="hover:text-[var(--brand-red)] transition-colors">
                 {(t as any).footer?.email}
               </a>

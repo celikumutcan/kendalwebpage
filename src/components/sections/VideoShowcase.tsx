@@ -34,9 +34,6 @@ export const VideoShowcase = () => {
     return () => ctx.revert();
   }, []);
 
-  // REPLACE_WITH_VIDEO_ID
-  const videoId = "dQw4w9WgXcQ";
-
   return (
     <section ref={containerRef} className="w-full bg-black text-white py-32 px-6">
       <div className="max-w-6xl mx-auto">
@@ -49,9 +46,10 @@ export const VideoShowcase = () => {
           className="relative w-full aspect-video rounded-3xl overflow-hidden bg-white/5 border border-white/10 opacity-0"
         >
           <iframe
-            className="absolute inset-0 w-full h-full"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0`}
-            title={t.video.title}
+            className="w-full h-full object-cover"
+            src="https://www.youtube.com/embed/xrD_kftGciA?autoplay=1&mute=1&loop=1&playlist=xrD_kftGciA&controls=0&showinfo=0&rel=0"
+            title="Kendal Elektrik Corporate Video"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             sandbox="allow-scripts allow-same-origin allow-presentation"
             referrerPolicy="strict-origin-when-cross-origin"

@@ -30,20 +30,24 @@ const GlobeScene = () => {
   const { progress } = useLightTemperature();
   
   const [earthTexture, setEarthTexture] = useState<THREE.Texture | null>(null);
+  const [bumpTexture, setBumpTexture] = useState<THREE.Texture | null>(null);
+  const [specularTexture, setSpecularTexture] = useState<THREE.Texture | null>(null);
 
   useEffect(() => {
     const loader = new THREE.TextureLoader();
-    loader.load(
-      "/textures/earth-dark.jpg",
-      (texture) => {
-        texture.colorSpace = THREE.SRGBColorSpace;
-        setEarthTexture(texture);
-      },
-      undefined,
-      (err) => {
-        console.warn("Earth texture failed to load, falling back to basic sphere.", err);
-      }
-    );
+    
+    loader.load("/textures/earth-dark.jpg", (tex) => {
+      tex.colorSpace = THREE.SRGBColorSpace;
+      setEarthTexture(tex);
+    });
+    
+    loader.load("/textures/earth-topology.png", (tex) => {
+      setBumpTexture(tex);
+    });
+
+    loader.load("/textures/earth-water.png", (tex) => {
+      setSpecularTexture(tex);
+    });
   }, []);
 
   // Interpolate cool to warm color for rim glow and pins based on scroll progress
@@ -67,9 +71,16 @@ const GlobeScene = () => {
       <mesh>
         <sphereGeometry args={[2, 64, 64]} />
         {earthTexture ? (
-          <meshBasicMaterial map={earthTexture} />
+          <meshStandardMaterial 
+            map={earthTexture} 
+            bumpMap={bumpTexture}
+            bumpScale={0.015}
+            roughnessMap={specularTexture}
+            roughness={0.7}
+            metalness={0.1}
+          />
         ) : (
-          <meshBasicMaterial color="#0a1628" />
+          <meshStandardMaterial color="#0a1628" />
         )}
       </mesh>
 
@@ -104,8 +115,12 @@ const GlobeScene = () => {
 export const Globe = () => {
   return (
     <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
-      <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
-        <ambientLight intensity={0.5} />
+      <Canvas camera={{ position: [0, 0, 5.5], fov: 45 }}>
+        {/* Cinematic lighting setup */}
+        <ambientLight intensity={0.2} />
+        <directionalLight position={[5, 3, 5]} intensity={2.5} color="#ffffff" />
+        <directionalLight position={[-5, -3, -5]} intensity={0.5} color="#d8e4ff" />
+        
         <GlobeScene />
       </Canvas>
     </div>

@@ -41,7 +41,7 @@ export const CatalogCTA = () => {
           {t.catalog.subtitle}
         </p>
         <a
-          href="/docs/kendal-katalog-2026.pdf"
+          href="/kendal-elektrik-katalog-2026.pdf"
           download
           rel="noopener noreferrer"
           className="inline-block bg-[var(--brand-red)] hover:bg-[var(--brand-red-deep)] text-white font-semibold text-lg px-8 py-4 rounded-full transition-colors duration-300 shadow-lg shadow-black/20"
