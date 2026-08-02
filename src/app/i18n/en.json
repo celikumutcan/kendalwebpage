@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "about": "About",
+    "products": "Products",
+    "why_us": "Why Us",
+    "global": "Global",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Global Manufacturer Since 1998",
+    "title_part1": "From Darkness",
+    "title_part2": "to Light",
+    "subtitle": "Innovative lighting & electrical equipment."
+  },
+  "about": {
+    "title": "About Us",
+    "text1": "Kendal Elektrik is a leading brand in the electrical materials sector with its innovative approach and quality-oriented production.",
+    "text2": "By designing the lighting technologies of the future today, we provide reliable solutions both domestically and in global markets.",
+    "beats": [
+      {
+        "title": "1998 — Founding",
+        "text": "Humble beginnings in the electrical materials sector."
+      },
+      {
+        "title": "22.000 m² — Production Power",
+        "text": "Automation-supported production in our fully integrated facility."
+      },
+      {
+        "title": "ITU Partnership",
+        "text": "Pioneering innovation with domestic LED chip R&D."
+      },
+      {
+        "title": "3000+ Products",
+        "text": "A wide product catalog to suit your every need."
+      },
+      {
+        "title": "Nationwide Network",
+        "text": "A strong and reliable distribution network reaching all 81 provinces."
+      },
+      {
+        "title": "Top 10 Exporter",
+        "text": "Proudly representing our country in Asian, European, and African markets."
+      }
+    ]
+  },
+  "products": {
+    "title": "Product Gallery",
+    "categories": {
+      "ampul": "Bulbs",
+      "ic_aydinlatma": "Indoor Lighting",
+      "serit_led": "Strip LEDs",
+      "dis_aydinlatma": "Outdoor Lighting",
+      "diger": "Other"
+    },
+    "brands": "Our Brands: K2 LED, K2 Plus, Vanti, Global"
+  },
+  "why_us": {
+    "title": "Why Kendal?",
+    "item1_title": "3000+ Products",
+    "item1_desc": "Comprehensive solutions with a wide product range.",
+    "item2_title": "Certifications",
+    "item2_desc": "International standards, ISO certified manufacturing.",
+    "item3_title": "In-house Production",
+    "item3_desc": "Fully automated production lines.",
+    "item4_title": "81 Provinces",
+    "item4_desc": "Strong dealer network reaching every point in Turkey.",
+    "item5_title": "Certified Quality",
+    "item5_desc": "Production fully compliant with international quality and export standards."
+  },
+  "catalog": {
+    "title": "Download Our 2026 Product Catalog",
+    "subtitle": "Explore our complete lighting and electrical solutions in detail.",
+    "button": "Download Catalog"
+  },
+  "video": {
+    "title": "Get to Know Us"
+  },
+  "retail": {
+    "title": "Available in Turkey's Leading Retail Chains"
+  },
+  "cookies": {
+    "message": "We use cookies to ensure you get the best experience on our website. By using our site, you consent to our cookie policy.",
+    "accept": "Accept"
+  },
+  "news": {
+    "items": [
+      "Our domestic LED chip R&D partnership with ITU is rapidly progressing.",
+      "We are among the top 10 exporters in Asia, Europe, and Africa.",
+      "We showcased our new products at the international lighting exhibition."
+    ]
+  },
+  "global": {
+    "title": "Global Presence",
+    "subtitle": "Top 10 exporter in Asia, Europe & Africa",
+    "text": "Our products illuminate millions of spaces not only in Turkey but around the world. We manage our global dealer network seamlessly through our dedicated B2B portal."
+  },
+  "projects": {
+    "title": "Reference Projects"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "address": "Kendal Elektrik Inc. Production Facilities"
+  },
+  "footer": {
+    "rights": "Kendal Elektrik. All rights reserved.",
+    "company": "Kendal Elektrik Aydınlatma Elektronik İnşaat Sanayi ve Dış Ticaret A.Ş.",
+    "address": "Şahkulu Mahallesi, Büyükhendek Cad. No:28, Beyoğlu/Istanbul",
+    "contact_title": "Contact",
+    "phone": "Phone: +90 212 XXX XX XX",
+    "email": "info@kendalelektrik.com.tr",
+    "links_title": "Corporate",
+    "links": {
+      "about": "About Us",
+      "products": "Products",
+      "production": "Production",
+      "certs": "Certificates",
+      "contact": "Contact"
+    },
+    "legal_title": "Legal",
+    "legal": {
+      "kvkk": "KVKK Clarification Text",
+      "privacy": "Privacy & Cookie Policy"
+    }
+  }
+}

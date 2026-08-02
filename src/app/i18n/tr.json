@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "why_us": "Neden Biz",
+    "global": "Küresel Ağımız",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "badge": "1998'den Beri Küresel Üretici",
+    "title_part1": "Karanlıktan",
+    "title_part2": "Aydınlığa",
+    "subtitle": "Yenilikçi aydınlatma ve elektrik donanımları."
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "text1": "Kendal Elektrik, yenilikçi yaklaşımı ve kalite odaklı üretim anlayışıyla elektrik malzemeleri sektöründe öncü bir markadır.",
+    "text2": "Geleceğin aydınlatma teknolojilerini bugünden tasarlayarak, hem yurt içinde hem de küresel pazarlarda güvenilir çözümler sunuyoruz.",
+    "beats": [
+      {
+        "title": "1998 — Kuruluş",
+        "text": "Elektrik malzemeleri sektöründe mütevazı başlangıçlar."
+      },
+      {
+        "title": "22.000 m² — Üretim Gücü",
+        "text": "Tam entegre tesisimizde otomasyon destekli üretim."
+      },
+      {
+        "title": "İTÜ İş Birliği",
+        "text": "Yerli LED çip AR-GE'si ile inovasyonda öncü."
+      },
+      {
+        "title": "3000+ Ürün Çeşidi",
+        "text": "İhtiyacınıza uygun geniş ürün kataloğu."
+      },
+      {
+        "title": "81 İlde Bayi Ağı",
+        "text": "Tüm Türkiye'ye ulaşan güçlü ve güvenilir dağıtım ağı."
+      },
+      {
+        "title": "İlk 10 İhracatçı",
+        "text": "Asya, Avrupa ve Afrika pazarında ülkemizi gururla temsil ediyoruz."
+      }
+    ]
+  },
+  "products": {
+    "title": "Ürün Galerisi",
+    "categories": {
+      "ampul": "Ampuller",
+      "ic_aydinlatma": "İç Aydınlatma",
+      "serit_led": "Şerit LED",
+      "dis_aydinlatma": "Dış Aydınlatma",
+      "diger": "Diğer"
+    },
+    "brands": "Markalarımız: K2 LED, K2 Plus, Vanti, Global"
+  },
+  "why_us": {
+    "title": "Neden Kendal?",
+    "item1_title": "3000+ Ürün",
+    "item1_desc": "Geniş ürün yelpazesi ile tüm ihtiyaçlarınıza çözüm.",
+    "item2_title": "Kalite Sertifikaları",
+    "item2_desc": "Uluslararası standartlarda, ISO belgeli üretim.",
+    "item3_title": "Yerli Üretim",
+    "item3_desc": "Tam otomatik üretim hatlarımızla %100 yerli üretim.",
+    "item4_title": "81 İlde Ağ",
+    "item4_desc": "Türkiye'nin her noktasına ulaşan güçlü bayi ağı.",
+    "item5_title": "Sertifikalı Kalite",
+    "item5_desc": "Uluslararası kalite ve ihracat standartlarına tam uyumlu üretim."
+  },
+  "catalog": {
+    "title": "2026 Ürün Kataloğumuzu İndirin",
+    "subtitle": "Tüm aydınlatma ve elektrik çözümlerimizi detaylı inceleyin.",
+    "button": "Kataloğu İndir"
+  },
+  "video": {
+    "title": "Bizi Tanıyın"
+  },
+  "retail": {
+    "title": "Türkiye'nin Önde Gelen Zincir Marketlerinde"
+  },
+  "cookies": {
+    "message": "Size daha iyi bir deneyim sunmak için çerezleri kullanıyoruz. Sitemizi kullanarak çerez politikamızı kabul etmiş olursunuz.",
+    "accept": "Kabul Et"
+  },
+  "news": {
+    "items": [
+      "İTÜ iş birliği ile yerli LED çip AR-GE çalışmalarımız hızla devam ediyor.",
+      "Asya, Avrupa ve Afrika'da ilk 10 ihracatçı arasındayız.",
+      "Uluslararası aydınlatma fuarında yeni ürünlerimizi tanıttık."
+    ]
+  },
+  "global": {
+    "title": "Küresel Varlığımız",
+    "subtitle": "Asya, Avrupa ve Afrika'da ilk 10 ihracatçı arasında",
+    "text": "Ürünlerimiz sadece Türkiye'de değil, dünyanın dört bir yanında milyonlarca mekanı aydınlatıyor. Özel B2B portalımız ile küresel bayi ağımızı tek merkezden yönetiyoruz."
+  },
+  "projects": {
+    "title": "Referans Projeler"
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "name": "Adınız",
+    "email": "E-posta Adresiniz",
+    "message": "Mesajınız",
+    "submit": "Gönder",
+    "address": "Kendal Elektrik A.Ş. Üretim Tesisleri"
+  },
+  "footer": {
+    "rights": "Kendal Elektrik. Tüm hakları saklıdır.",
+    "company": "Kendal Elektrik Aydınlatma Elektronik İnşaat Sanayi ve Dış Ticaret A.Ş.",
+    "address": "Şahkulu Mahallesi, Büyükhendek Cad. No:28, Beyoğlu/İstanbul",
+    "contact_title": "İletişim",
+    "phone": "İletişim Hattı: 0212 XXX XX XX",
+    "email": "info@kendalelektrik.com.tr",
+    "links_title": "Kurumsal",
+    "links": {
+      "about": "Hakkımızda",
+      "products": "Ürünler",
+      "production": "Üretim",
+      "certs": "Sertifikalar",
+      "contact": "İletişim"
+    },
+    "legal_title": "Yasal",
+    "legal": {
+      "kvkk": "KVKK Aydınlatma Metni",
+      "privacy": "Gizlilik ve Çerez Politikası"
+    }
+  }
+}
