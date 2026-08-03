@@ -59,7 +59,7 @@ export const Navbar = () => {
       
       <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center">
         {navLinks.map((link) => (
-          <a 
+          <Link 
             key={link.id}
             href={link.href} 
             target={link.external ? "_blank" : undefined}
@@ -72,7 +72,7 @@ export const Navbar = () => {
             {activeSection === link.id && !link.external && (
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[var(--brand-red)] rounded-full" />
             )}
-          </a>
+          </Link>
         ))}
       </div>
       

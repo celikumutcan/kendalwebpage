@@ -52,7 +52,7 @@ const nextConfig: NextConfig = {
       ];
     },
   }),
-  ...(isStatic ? {
+  ...(process.env.NODE_ENV === "production" || isStatic ? {
     output: "export",
     images: { unoptimized: true },
     basePath: "/kendalwebpage",

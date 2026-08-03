@@ -63,11 +63,11 @@ export const Footer = () => {
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.links_title}</h4>
           <ul className="space-y-3 text-sm">
-            <li><a href="/#about" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.about}</a></li>
-            <li><a href="/#products" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.products}</a></li>
-            <li><a href="/#why-us" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.production}</a></li>
-            <li><a href="/kariyer" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).nav?.career || "Kariyer"}</a></li>
-            <li><a href="/#contact" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.contact}</a></li>
+            <li><Link href="/#about" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.about}</Link></li>
+            <li><Link href="/#products" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.products}</Link></li>
+            <li><Link href="/#why-us" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.production}</Link></li>
+            <li><Link href="/kariyer" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).nav?.career || "Kariyer"}</Link></li>
+            <li><Link href="/#contact" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.contact}</Link></li>
           </ul>
         </div>
 
