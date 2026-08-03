@@ -63,15 +63,6 @@ export const Hero = () => {
       <div className="absolute top-0 left-0 w-full h-[100vh] pointer-events-none opacity-40 overflow-hidden z-0">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(227,0,15,0.4)_0%,transparent_60%)]" />
         <div className="absolute bottom-[10%] right-[-10%] w-[60%] h-[70%] rounded-full bg-[radial-gradient(circle_at_center,rgba(179,0,12,0.3)_0%,transparent_60%)]" />
-        
-        {/* Decorative Lightbulb Icon */}
-        <div className="absolute top-[30%] right-[15%] opacity-20 blur-[2px] animate-pulse">
-          <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--brand-red)]">
-            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5" />
-            <path d="M9 18h6" />
-            <path d="M10 22h4" />
-          </svg>
-        </div>
       </div>
       {/* Fixed container for the WebGL and content so it stays on screen while scrolling the 200vh */}
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
