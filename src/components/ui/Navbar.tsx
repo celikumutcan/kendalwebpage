@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 
@@ -44,7 +45,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-40 px-4 md:px-6 py-4 flex items-center justify-between bg-black/60 backdrop-blur-md text-white border-b border-white/5 transition-colors duration-300">
-      <div className="font-bold text-xl tracking-tight flex items-center gap-2">
+      <Link href="/" className="font-bold text-xl tracking-tight flex items-center gap-2 hover:opacity-80 transition-opacity">
         <Image src="/kendal-icon.png" alt="Kendal Logo" width={28} height={28} className="object-contain" />
         <div className="hidden sm:block">
           KENDAL ELEKTRİK
@@ -54,7 +55,7 @@ export const Navbar = () => {
           <path d="M9 18h6" />
           <path d="M10 22h4" />
         </svg>
-      </div>
+      </Link>
       
       <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center">
         {navLinks.map((link) => (

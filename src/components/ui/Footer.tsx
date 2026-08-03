@@ -16,12 +16,12 @@ export const Footer = () => {
         
         {/* Company Info */}
         <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
-          <div className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2">
+          <Link href="/" className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2 hover:opacity-80 transition-opacity">
             <Image src="/kendal-icon.png" alt="Kendal Logo" width={32} height={32} className="object-contain" />
             <div>
-              <span className="text-[var(--brand-red)]">K</span>ENDAL ELEKTRİK
+              KENDAL ELEKTRİK
             </div>
-          </div>
+          </Link>
           <p className="text-sm leading-relaxed mb-4">
             {(t as any).footer?.company}
           </p>

@@ -82,9 +82,13 @@ export const WhyUs = () => {
     <section
       id="why-us"
       ref={containerRef}
-      className="w-full py-24 md:py-32 px-6"
+      className="relative w-full py-24 md:py-32 px-6 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto">
+      {/* Warm Bulb Illumination Concept */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-30 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at 50% -10%, #ffb347 0%, transparent 60%)' }} />
+      <div className="absolute bottom-0 right-0 w-full h-[500px] pointer-events-none opacity-10 mix-blend-screen" style={{ background: 'radial-gradient(circle at 100% 100%, #ffb347 0%, transparent 60%)' }} />
+
+      <div className="relative max-w-6xl mx-auto z-10">
         <div className="flex flex-col items-center mb-16 md:mb-24 text-center">
           <h3 className="text-3xl md:text-5xl font-bold text-[var(--global-text)] mb-6">
             {t.why_us.title}

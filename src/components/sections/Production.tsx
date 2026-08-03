@@ -68,14 +68,12 @@ export const Production = () => {
       ref={containerRef}
       className="relative w-full bg-transparent py-32 px-6 overflow-hidden"
     >
-      {/* Background Energy Rays */}
-      <div className="absolute inset-0 pointer-events-none opacity-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw]">
-          <div 
-            className="w-full h-full bg-[radial-gradient(circle_at_center,var(--accent-current)_0%,transparent_70%)] will-change-transform" 
-            style={{ animation: 'pulse-scale 4s ease-in-out infinite' }}
-          />
-        </div>
+      {/* LED Strip Illumination Concept (Tech/Neon) */}
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-[#00f3ff] opacity-40 shadow-[0_0_20px_#00f3ff]" />
+      <div className="absolute bottom-0 right-0 w-full h-[2px] bg-[#00f3ff] opacity-40 shadow-[0_0_20px_#00f3ff]" />
+      
+      <div className="absolute inset-0 pointer-events-none opacity-20 mix-blend-screen">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh]" style={{ background: 'radial-gradient(ellipse at center, rgba(0,243,255,0.15) 0%, transparent 70%)' }} />
       </div>
 
       <style dangerouslySetInnerHTML={{__html: `
@@ -123,12 +121,12 @@ export const Production = () => {
           ].map((stat, i) => (
             <div key={i} className="relative flex flex-col items-center justify-center p-10 group">
               {/* Energy Rings Background */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity duration-700">
-                <svg className="w-48 h-48 absolute" viewBox="0 0 100 100" style={{ animation: 'spin-slow 20s linear infinite' }}>
-                  <circle cx="50" cy="50" r="48" fill="none" stroke="var(--accent-current)" strokeWidth="0.5" strokeDasharray="4 8" />
-                  <circle cx="50" cy="50" r="42" fill="none" stroke="var(--accent-current)" strokeWidth="1" strokeDasharray="20 10" opacity="0.5" />
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-30 group-hover:opacity-60 transition-opacity duration-700">
+                <svg className="w-48 h-48 absolute" viewBox="0 0 100 100" style={{ animation: 'spin-slow 15s linear infinite' }}>
+                  <circle cx="50" cy="50" r="48" fill="none" stroke="#00f3ff" strokeWidth="0.5" strokeDasharray="4 8" />
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="#00f3ff" strokeWidth="1.5" strokeDasharray="20 10" opacity="0.8" />
                 </svg>
-                <div className="w-32 h-32 bg-[var(--accent-current)] rounded-full blur-2xl opacity-30" />
+                <div className="w-32 h-32 bg-[#00f3ff] rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
               </div>
               
               <div 

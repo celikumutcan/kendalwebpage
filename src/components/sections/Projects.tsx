@@ -129,6 +129,10 @@ export const Projects = () => {
       ref={containerRef}
       className="relative w-full bg-transparent py-32 overflow-hidden"
     >
+      {/* RGB Smart Lighting Concept */}
+      <div className="absolute top-0 left-0 w-[50vw] h-full pointer-events-none opacity-40 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at -20% 50%, #8a2be2 0%, transparent 70%)' }} />
+      <div className="absolute top-0 right-0 w-[50vw] h-full pointer-events-none opacity-30 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at 120% 50%, #ff00ff 0%, transparent 70%)' }} />
+
       <div className="max-w-7xl mx-auto px-6 mb-24 text-center ref-title relative z-20">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
           {(t as any).references?.title || "Türkiye'nin Dört Bir Yanında"}

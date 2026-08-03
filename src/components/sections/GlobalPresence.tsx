@@ -65,6 +65,12 @@ export const GlobalPresence = () => {
           <Globe scrollProgress={scrollProgress} />
         </div>
 
+        {/* Architectural Spotlight Concept */}
+        <div 
+          className="absolute top-[-20vh] left-1/2 -translate-x-1/2 w-[150vw] h-[150vh] pointer-events-none opacity-20 mix-blend-overlay z-10" 
+          style={{ background: 'conic-gradient(from 150deg at 50% 0%, transparent 0deg, rgba(255,255,255,1) 30deg, transparent 60deg)' }} 
+        />
+
         {/* Dark overlay that fades out slightly to make text readable */}
         <div className="absolute inset-0 z-10 bg-black/40 pointer-events-none" />
 
