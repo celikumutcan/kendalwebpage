@@ -54,7 +54,7 @@ const coreShader = {
 // The inner component that has access to R3F hooks
 const LightCoreScene = ({ scrollProgress }: { scrollProgress: number }) => {
   const materialRef = useRef<THREE.ShaderMaterial>(null);
-  const { progress: globalProgress } = useLightTemperature();
+  const { getProgress } = useLightTemperature();
   const colorCool = useMemo(() => new THREE.Color("#d8e4ff"), []);
   const colorWarm = useMemo(() => new THREE.Color("#ffb347"), []);
   const targetColor = useMemo(() => new THREE.Color(), []);
@@ -70,7 +70,7 @@ const LightCoreScene = ({ scrollProgress }: { scrollProgress: number }) => {
       );
       
       // Interpolate color based on global temperature progress
-      targetColor.lerpColors(colorCool, colorWarm, globalProgress);
+      targetColor.lerpColors(colorCool, colorWarm, getProgress());
       materialRef.current.uniforms.uColor.value.lerp(targetColor, 0.1);
     }
   });

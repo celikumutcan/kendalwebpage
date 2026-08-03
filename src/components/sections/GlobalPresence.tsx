@@ -2,9 +2,10 @@
 
 import React, { useRef } from "react";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
+import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import dynamic from "next/dynamic";
+import { useState } from "react";
 
 const Globe = dynamic(() => import("@/components/engine/Globe").then((mod) => mod.Globe), {
   ssr: false,
@@ -13,27 +14,40 @@ const Globe = dynamic(() => import("@/components/engine/Globe").then((mod) => mo
 export const GlobalPresence = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
-  const globeWrapperRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Entrance reveal for the globe
-      if (globeWrapperRef.current) {
-        gsap.fromTo(
-          globeWrapperRef.current,
-          { scale: 0.8, opacity: 0 },
-          {
-            scale: 1,
-            opacity: 1,
-            duration: 1.5,
-            ease: "power3.out",
-            scrollTrigger: {
-              trigger: containerRef.current,
-              start: "top 70%",
-            },
-          }
-        );
-      }
+      // Track scroll progress for the globe zoom
+      ScrollTrigger.create({
+        trigger: containerRef.current,
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        onUpdate: (self) => {
+          setScrollProgress(self.progress);
+        },
+      });
+
+      // Text reveal animation
+      gsap.fromTo(
+        ".global-reveal",
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 10%",
+            end: "center center",
+            scrub: 1,
+          },
+        }
+      );
     }, containerRef);
 
     return () => ctx.revert();
@@ -43,26 +57,29 @@ export const GlobalPresence = () => {
     <section
       id="global"
       ref={containerRef}
-      className="w-full bg-transparent  py-32 px-6"
+      className="w-full bg-transparent h-[200vh] relative"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-        <div className="flex-1 md:pr-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
+      <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+        {/* Background Globe that will zoom out */}
+        <div className="absolute inset-0 z-0 opacity-80">
+          <Globe scrollProgress={scrollProgress} />
+        </div>
+
+        {/* Dark overlay that fades out slightly to make text readable */}
+        <div className="absolute inset-0 z-10 bg-black/40 pointer-events-none" />
+
+        {/* Text Content */}
+        <div ref={textRef} className="relative z-20 max-w-4xl mx-auto flex flex-col items-center text-center px-6">
+          <h2 className="global-reveal text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-[var(--global-text)] tracking-tight drop-shadow-2xl">
             {t.global.title}
           </h2>
-          <div className="text-xl md:text-2xl font-medium text-[var(--global-text)] opacity-70 mb-8 leading-relaxed">
+          <div className="global-reveal w-24 h-1 bg-[var(--brand-red)] mb-8 rounded-full shadow-[0_0_15px_rgba(227,0,15,0.6)]" />
+          <div className="global-reveal text-xl md:text-3xl font-medium text-[var(--global-text)] opacity-90 mb-8 leading-relaxed drop-shadow-lg">
             {t.global.subtitle}
           </div>
-          <p className="text-[var(--global-text)] opacity-60 leading-relaxed text-lg font-light">
+          <p className="global-reveal text-[var(--global-text)] opacity-80 leading-relaxed text-lg md:text-xl font-light max-w-3xl drop-shadow-md">
             {t.global.text}
           </p>
-        </div>
-        
-        <div className="flex-1 relative w-full aspect-[4/3] bg-white/[0.02] rounded-2xl border border-white/5 overflow-hidden">
-          {/* 3D Globe Wrapper */}
-          <div ref={globeWrapperRef} className="absolute inset-0 w-full h-full opacity-0">
-            <Globe />
-          </div>
         </div>
       </div>
     </section>

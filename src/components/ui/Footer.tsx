@@ -15,11 +15,11 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         
         {/* Company Info */}
-        <div className="md:col-span-1">
+        <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
           <div className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2">
             <Image src="/kendal-icon.png" alt="Kendal Logo" width={32} height={32} className="object-contain" />
             <div>
-              <span className="text-[var(--brand-red)]">K</span>ENDAL
+              <span className="text-[var(--brand-red)]">K</span>ENDAL ELEKTRİK
             </div>
           </div>
           <p className="text-sm leading-relaxed mb-4">
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
 
         {/* Contact */}
-        <div>
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.contact_title}</h4>
           <ul className="space-y-3 text-sm">
             <li>
@@ -60,7 +60,7 @@ export const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.links_title}</h4>
           <ul className="space-y-3 text-sm">
             <li><a href="/#about" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.about}</a></li>
@@ -72,7 +72,7 @@ export const Footer = () => {
         </div>
 
         {/* Legal & Social */}
-        <div>
+        <div className="text-center md:text-left flex flex-col items-center md:items-start">
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.legal_title}</h4>
           <ul className="space-y-3 text-sm mb-8">
             <li>

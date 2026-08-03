@@ -20,11 +20,10 @@ export const Production = () => {
       const elements = gsap.utils.toArray(".prod-reveal");
       gsap.fromTo(
         elements,
-        { opacity: 0, y: 40, filter: "blur(5px)" },
+        { opacity: 0, y: 40 },
         {
           opacity: 1,
           y: 0,
-          filter: "blur(0px)",
           duration: 1,
           stagger: 0.1,
           ease: "power2.out",
@@ -56,22 +55,6 @@ export const Production = () => {
         });
       });
 
-      // Energy particles / Machine pulse animation
-      gsap.to(".energy-ring", {
-        rotation: 360,
-        duration: 20,
-        repeat: -1,
-        ease: "linear"
-      });
-      
-      gsap.to(".energy-pulse", {
-        scale: 1.1,
-        opacity: 0.3,
-        duration: 2,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut"
-      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -87,8 +70,24 @@ export const Production = () => {
     >
       {/* Background Energy Rays */}
       <div className="absolute inset-0 pointer-events-none opacity-10">
-        <div className="energy-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-[radial-gradient(circle_at_center,var(--accent-current)_0%,transparent_70%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw]">
+          <div 
+            className="w-full h-full bg-[radial-gradient(circle_at_center,var(--accent-current)_0%,transparent_70%)] will-change-transform" 
+            style={{ animation: 'pulse-scale 4s ease-in-out infinite' }}
+          />
+        </div>
       </div>
+
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes pulse-scale {
+          0%, 100% { transform: scale(1); opacity: 0.1; }
+          50% { transform: scale(1.1); opacity: 0.3; }
+        }
+        @keyframes spin-slow {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}} />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl md:text-6xl font-bold mb-20 text-center text-[var(--global-text)] prod-reveal">
@@ -125,7 +124,7 @@ export const Production = () => {
             <div key={i} className="relative flex flex-col items-center justify-center p-10 group">
               {/* Energy Rings Background */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity duration-700">
-                <svg className="energy-ring w-48 h-48 absolute" viewBox="0 0 100 100">
+                <svg className="w-48 h-48 absolute" viewBox="0 0 100 100" style={{ animation: 'spin-slow 20s linear infinite' }}>
                   <circle cx="50" cy="50" r="48" fill="none" stroke="var(--accent-current)" strokeWidth="0.5" strokeDasharray="4 8" />
                   <circle cx="50" cy="50" r="42" fill="none" stroke="var(--accent-current)" strokeWidth="1" strokeDasharray="20 10" opacity="0.5" />
                 </svg>

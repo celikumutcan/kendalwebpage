@@ -6,11 +6,11 @@ import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import * as THREE from "three";
 
 interface LightTemperatureContextType {
-  progress: number;
+  getProgress: () => number;
 }
 
 const LightTemperatureContext = createContext<LightTemperatureContextType>({
-  progress: 0,
+  getProgress: () => 0,
 });
 
 export const LightTemperatureProvider = ({
@@ -18,21 +18,14 @@ export const LightTemperatureProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [progress, setProgress] = useState(0);
+  const progressRef = useRef(0);
   const colorCool = useRef(new THREE.Color("#d8e4ff"));
   const colorWarm = useRef(new THREE.Color("#ffb347"));
   const currentColor = useRef(new THREE.Color());
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Background colors sequence: Darkness -> Dark Blue -> Dark Gray -> Neutral -> Warm White -> Soft Amber -> Bright White
-      const bgColors = ['#000000', '#0a1128', '#1a1a1a', '#4a4a4a', '#f5f5f0', '#fff3e0', '#ffffff'];
-      // Text colors: White on dark backgrounds, Dark Gray on light backgrounds
-      const textColors = ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#171717', '#171717', '#171717'];
-
-      const bgInterpolator = gsap.utils.interpolate(bgColors);
-      const textInterpolator = gsap.utils.interpolate(textColors);
-
+      // Removed global background and text color transition to keep the site in a consistent dark theme
       ScrollTrigger.create({
         trigger: document.body,
         start: "top top",
@@ -40,9 +33,9 @@ export const LightTemperatureProvider = ({
         scrub: true,
         onUpdate: (self) => {
           const p = self.progress;
-          setProgress(p);
+          progressRef.current = p;
 
-          // Update CSS custom property for progress
+          // Update CSS custom property for progress (used by LightCore/Globe)
           document.documentElement.style.setProperty("--light-temp", p.toString());
 
           // Interpolate accent color
@@ -51,25 +44,19 @@ export const LightTemperatureProvider = ({
             "--accent-current",
             `#${currentColor.current.getHexString()}`
           );
-
-          // Update global background and text
-          document.documentElement.style.setProperty("--global-bg", bgInterpolator(p));
-          document.documentElement.style.setProperty("--global-text", textInterpolator(p));
         },
       });
       
       // Initial set
       document.documentElement.style.setProperty("--light-temp", "0");
       document.documentElement.style.setProperty("--accent-current", "#d8e4ff");
-      document.documentElement.style.setProperty("--global-bg", bgColors[0]);
-      document.documentElement.style.setProperty("--global-text", textColors[0]);
     });
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <LightTemperatureContext.Provider value={{ progress }}>
+    <LightTemperatureContext.Provider value={{ getProgress: () => progressRef.current }}>
       {children}
     </LightTemperatureContext.Provider>
   );

@@ -71,7 +71,7 @@ export const InternationalReferences = () => {
     <section
       id="international-references"
       ref={containerRef}
-      className="w-full bg-transparent py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5"
+      className="w-full bg-transparent pt-16 pb-24 md:pt-20 md:pb-32 px-6 border-t border-[var(--global-text)]/5"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center int-ref-title">

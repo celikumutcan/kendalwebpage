@@ -101,7 +101,7 @@ export const WhyUs = () => {
               ref={(el) => { itemsRef.current[idx] = el; }}
               className="w-full sm:w-[45%] lg:w-[30%] flex flex-col items-center text-center group"
             >
-              <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-[var(--global-text)] bg-opacity-5 text-[var(--accent-current)] group-hover:scale-110 group-hover:bg-[var(--accent-current)] group-hover:text-white transition-all duration-300">
+              <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-[var(--global-text)] bg-opacity-5 text-[var(--brand-red)] group-hover:scale-110 group-hover:bg-[var(--brand-red)] group-hover:text-white transition-all duration-300">
                 {item.icon}
               </div>
               <h4 className="text-xl md:text-2xl font-bold text-[var(--global-text)] mb-3">

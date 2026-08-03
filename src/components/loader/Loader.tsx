@@ -7,20 +7,19 @@ import Image from "next/image";
 
 export const Loader = ({ onComplete }: { onComplete: () => void }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const progressRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
+  const topPanelRef = useRef<HTMLDivElement>(null);
+  const bottomPanelRef = useRef<HTMLDivElement>(null);
+  const laserRef = useRef<HTMLDivElement>(null);
+  const textContainerRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     let currentProgress = 0;
 
-    // Smooth, somewhat realistic progress increment
     const interval = setInterval(() => {
-      currentProgress += Math.random() * 12;
-
-      // If the document is not fully loaded, hold the progress around 90%
+      currentProgress += Math.random() * 10;
       if (document.readyState !== 'complete' && currentProgress > 90) {
-        currentProgress = 90 + (Math.random() * 5); // fluctuate slightly
+        currentProgress = 90 + (Math.random() * 5);
       }
 
       if (currentProgress >= 100) {
@@ -31,13 +30,11 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
       setProgress(Math.min(100, Math.round(currentProgress)));
     }, 150);
 
-    // Force completion when window finishes loading all assets (images, fonts)
     const handleLoad = () => {
       setProgress(100);
     };
 
     if (document.readyState === 'complete') {
-      // If already loaded on mount, quickly finish
       setTimeout(() => setProgress(100), 100);
     } else {
       window.addEventListener('load', handleLoad);
@@ -56,24 +53,44 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           onComplete,
         });
 
-        // Elegant fade out sequence without heavy blur for performance
-        tl.to(textRef.current, {
-          opacity: 0,
-          y: -10,
-          duration: 0.5,
-          ease: "power2.inOut",
+        // 1. The laser flash (intense white)
+        tl.to(laserRef.current, {
+          backgroundColor: "#ffffff",
+          boxShadow: "0 0 40px 10px rgba(255,255,255,1), 0 0 80px 20px rgba(255,255,255,0.8)",
+          height: "4px",
+          duration: 0.15,
+          ease: "power4.out"
         })
-          .to(progressRef.current, {
-            scaleX: 0,
-            opacity: 0,
-            duration: 0.8,
-            ease: "power3.inOut",
-          }, "-=0.4")
-          .to(containerRef.current, {
-            opacity: 0,
-            duration: 1,
-            ease: "power2.inOut",
-          }, "-=0.2");
+        // 2. Hide text quickly
+        .to(textContainerRef.current, {
+          opacity: 0,
+          scale: 1.2,
+          duration: 0.2,
+          ease: "power2.in"
+        }, "<")
+        // 3. The Curtain Reveal (Split screen)
+        .to(topPanelRef.current, {
+          y: "-100%",
+          duration: 1.2,
+          ease: "expo.inOut"
+        }, "+=0.1")
+        .to(bottomPanelRef.current, {
+          y: "100%",
+          duration: 1.2,
+          ease: "expo.inOut"
+        }, "<")
+        // 4. Fade laser out as doors open
+        .to(laserRef.current, {
+          opacity: 0,
+          scaleY: 0,
+          duration: 0.4,
+          ease: "power2.out"
+        }, "-=1.0")
+        // 5. Hide container
+        .to(containerRef.current, {
+          autoAlpha: 0,
+          duration: 0.1,
+        });
       }, containerRef);
       return () => ctx.revert();
     }
@@ -82,40 +99,56 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#050505]"
+      className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden pointer-events-none"
     >
-      <div className="w-64 max-w-[80vw] flex flex-col items-center gap-12">
+      {/* Top Black Panel */}
+      <div 
+        ref={topPanelRef} 
+        className="absolute top-0 left-0 w-full h-[50vh] bg-[#020202] z-10 origin-top shadow-[0_10px_30px_rgba(0,0,0,0.8)] pointer-events-auto" 
+      />
+      
+      {/* Bottom Black Panel */}
+      <div 
+        ref={bottomPanelRef} 
+        className="absolute bottom-0 left-0 w-full h-[50vh] bg-[#020202] z-10 origin-bottom shadow-[0_-10px_30px_rgba(0,0,0,0.8)] pointer-events-auto" 
+      />
 
-        {/* Brand Logo & Percentage */}
-        <div ref={textRef} className="flex flex-col items-center gap-8 text-center">
-          <div className="relative w-24 h-24 md:w-32 md:h-32 opacity-80 animate-pulse">
-            <Image
-              src="/kendal-icon.png"
-              alt="Kendal Elektrik"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-          <div className="flex flex-col gap-3">
-            <div className="text-white/90 tracking-[0.3em] md:tracking-[0.4em] uppercase font-light text-lg md:text-2xl flex items-center justify-center">
-              KENDAL ELEKTRİK
-            </div>
-            <div className="text-white/50 font-mono text-base md:text-xl tracking-widest mt-2 font-medium">
-              {progress.toString().padStart(3, "0")}%
-            </div>
-          </div>
-        </div>
+      {/* The Laser Line (between panels) */}
+      <div 
+        ref={laserRef}
+        className="absolute top-1/2 left-0 w-full h-[1px] -translate-y-1/2 z-20 transition-all duration-300 origin-left"
+        style={{
+          width: `${progress}%`,
+          backgroundColor: "var(--brand-red)",
+          boxShadow: `0 0 ${10 + (progress * 0.2)}px ${2 + (progress * 0.05)}px rgba(227, 0, 15, ${0.5 + (progress * 0.005)})`
+        }}
+      />
 
-        {/* Minimalist Progress Line */}
-        <div className="w-full h-[2px] bg-white/5 relative overflow-hidden rounded-full">
-          <div
-            ref={progressRef}
-            className="absolute top-0 left-0 h-full bg-[var(--brand-red)] transition-all duration-300 shadow-[0_0_15px_rgba(227,0,15,0.6)] rounded-full origin-left"
-            style={{ width: `${progress}%` }}
+      {/* Progress Text & Logo */}
+      <div 
+        ref={textContainerRef} 
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-6 text-white pointer-events-none mix-blend-exclusion w-full px-4"
+      >
+        {/* Enormous Logo */}
+        <div className="relative w-28 h-28 md:w-40 md:h-40 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+          <Image
+            src="/kendal-icon.png"
+            alt="Kendal Elektrik Logo"
+            fill
+            className="object-contain"
+            priority
           />
         </div>
-
+        
+        {/* Glowing Progress Number */}
+        <div className="text-6xl md:text-8xl font-black tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mt-2">
+          {progress.toString().padStart(3, "0")}
+        </div>
+        
+        {/* Brand Name */}
+        <div className="text-sm md:text-xl uppercase tracking-[0.4em] md:tracking-[0.8em] opacity-90 font-bold drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] whitespace-nowrap">
+          Kendal Elektrik
+        </div>
       </div>
     </div>
   );

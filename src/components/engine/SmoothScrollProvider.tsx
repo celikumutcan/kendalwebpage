@@ -7,6 +7,11 @@ import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 // Wraps the app in a smooth scrolling context and ties Lenis to GSAP ticker
 export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
+    // Prevent browser's automatic scroll restoration which causes jumps on reload
+    if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou

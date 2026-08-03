@@ -69,9 +69,9 @@ const AnimatedArc = ({ points, targetColor }: { points: THREE.Vector3[], targetC
   );
 };
 
-const GlobeScene = () => {
+const GlobeScene = ({ scrollProgress }: { scrollProgress: number }) => {
   const groupRef = useRef<THREE.Group>(null);
-  const { progress } = useLightTemperature();
+  const { getProgress } = useLightTemperature();
   
   const [earthTexture, bumpTexture, specularTexture] = useTexture([
     "/textures/earth-dark.jpg",
@@ -85,22 +85,40 @@ const GlobeScene = () => {
     }
   }, [earthTexture]);
 
-  const targetColor = useMemo(() => {
-    return new THREE.Color().lerpColors(
-      new THREE.Color("#9cb4d8"), // Softer, more elegant blue
-      new THREE.Color("#e8b07d"), // Softer, premium warm
-      progress * 0.8 + 0.1 // Prevents reaching absolute extremes for a softer transition
-    );
-  }, [progress]);
+  const colorA = useMemo(() => new THREE.Color("#9cb4d8"), []);
+  const colorB = useMemo(() => new THREE.Color("#e8b07d"), []);
+  const targetColor = useMemo(() => new THREE.Color("#9cb4d8"), []); // Initial color
 
   useFrame((state, delta) => {
+    const p = getProgress();
+    targetColor.lerpColors(colorA, colorB, p * 0.8 + 0.1);
+
+    // Fly out of the Earth effect
+    // scrollProgress 0 -> camera is inside (z = 0.5)
+    // scrollProgress 1 -> camera is outside (z = 5.5)
+    const targetZ = THREE.MathUtils.lerp(0.1, 5.5, scrollProgress);
+    state.camera.position.z = THREE.MathUtils.lerp(state.camera.position.z, targetZ, 0.1);
+
     if (groupRef.current) {
       groupRef.current.rotation.y += 0.002;
+      groupRef.current.traverse((child: any) => {
+        // Exclude the earth mesh standard material
+        if (child.isMesh && child.material && child.material.type !== "MeshStandardMaterial") {
+           // Only update color if it's not the red HQ pin
+           if (child.material.color && child.material.color.getHexString() !== "e3000f") {
+             child.material.color.copy(targetColor);
+           }
+        }
+        // For lines from drei (Line2 uses LineMaterial)
+        if (child.isLine2 && child.material && child.material.color) {
+           child.material.color.copy(targetColor);
+        }
+      });
     }
   });
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} rotation={[0.4, -2.1, 0]}>
       {/* Textured Earth Base */}
       <mesh>
         <sphereGeometry args={[2, 48, 48]} />
@@ -111,6 +129,7 @@ const GlobeScene = () => {
           roughnessMap={specularTexture}
           roughness={0.6}
           metalness={0.15}
+          side={THREE.DoubleSide}
         />
       </mesh>
 
@@ -127,17 +146,19 @@ const GlobeScene = () => {
 
       {/* Pins and Glowing Nodes */}
       {LOCATIONS.map((loc, idx) => {
-        const pos = latLongToVector3(loc.lat, loc.lon, 2.05);
+        const pos = latLongToVector3(loc.lat, loc.lon, 2.06); // Slightly raised
         const isHQ = idx === 0;
+        const pinColor = isHQ ? new THREE.Color("#E3000F") : targetColor; // Brand red for HQ
+        
         return (
           <group key={`pin-${idx}`} position={pos}>
             <mesh>
-              <sphereGeometry args={[isHQ ? 0.08 : 0.05, 16, 16]} />
-              <meshBasicMaterial color={targetColor} />
+              <sphereGeometry args={[isHQ ? 0.08 : 0.04, 16, 16]} />
+              <meshBasicMaterial color={pinColor} />
             </mesh>
             <mesh>
-              <sphereGeometry args={[isHQ ? 0.25 : 0.15, 16, 16]} />
-              <meshBasicMaterial color={targetColor} transparent opacity={isHQ ? 0.6 : 0.4} blending={THREE.AdditiveBlending} depthWrite={false} />
+              <sphereGeometry args={[isHQ ? 0.3 : 0.15, 16, 16]} />
+              <meshBasicMaterial color={pinColor} transparent opacity={isHQ ? 0.8 : 0.3} blending={THREE.AdditiveBlending} depthWrite={false} />
             </mesh>
           </group>
         );
@@ -146,16 +167,16 @@ const GlobeScene = () => {
   );
 };
 
-export const Globe = () => {
+export const Globe = ({ scrollProgress = 1 }: { scrollProgress?: number }) => {
   return (
     <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
-      <Canvas camera={{ position: [0, 0, 5.5], fov: 45 }} performance={{ min: 0.5 }}>
+      <Canvas camera={{ position: [0, 0, 0.1], fov: 45 }} performance={{ min: 0.5 }}>
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 3, 5]} intensity={3.5} color="#ffffff" />
         <directionalLight position={[-5, -3, -5]} intensity={1.0} color="#b0c4de" />
         
         <Suspense fallback={null}>
-          <GlobeScene />
+          <GlobeScene scrollProgress={scrollProgress} />
         </Suspense>
       </Canvas>
     </div>
