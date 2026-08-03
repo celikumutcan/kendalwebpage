@@ -16,16 +16,17 @@ export const Production = () => {
   useIsomorphicLayoutEffect(() => {
     if (!prod) return;
     const ctx = gsap.context(() => {
-      // Fade in text blocks and images
+      // Cinematic fade up
       const elements = gsap.utils.toArray(".prod-reveal");
       gsap.fromTo(
         elements,
-        { opacity: 0, y: 40 },
+        { opacity: 0, y: 40, filter: "blur(5px)" },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
-          stagger: 0.2,
+          filter: "blur(0px)",
+          duration: 1,
+          stagger: 0.1,
           ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,
@@ -43,7 +44,7 @@ export const Production = () => {
 
         gsap.to(obj, {
           val: targetValue,
-          duration: 2.5,
+          duration: 3,
           ease: "power2.out",
           scrollTrigger: {
             trigger: statsRef.current,
@@ -53,6 +54,23 @@ export const Production = () => {
             el.innerHTML = Math.round(obj.val) + suffix;
           },
         });
+      });
+
+      // Energy particles / Machine pulse animation
+      gsap.to(".energy-ring", {
+        rotation: 360,
+        duration: 20,
+        repeat: -1,
+        ease: "linear"
+      });
+      
+      gsap.to(".energy-pulse", {
+        scale: 1.1,
+        opacity: 0.3,
+        duration: 2,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut"
       });
     }, containerRef);
 
@@ -65,93 +83,84 @@ export const Production = () => {
     <section
       id="production"
       ref={containerRef}
-      className="w-full bg-[#050505] text-white py-32 px-6 border-t border-white/5"
+      className="relative w-full bg-transparent py-32 px-6 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[var(--brand-red)] prod-reveal">
+      {/* Background Energy Rays */}
+      <div className="absolute inset-0 pointer-events-none opacity-10">
+        <div className="energy-pulse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-[radial-gradient(circle_at_center,var(--accent-current)_0%,transparent_70%)]" />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <h2 className="text-4xl md:text-6xl font-bold mb-20 text-center text-[var(--global-text)] prod-reveal">
           {prod.title}
         </h2>
 
         {/* Top Section: Image left, Text right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
-          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden prod-reveal group">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+          <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden prod-reveal group shadow-2xl">
             <Image
               src="/images/production/uretim-1.jpg"
               alt="Kendal Elektrik Üretim Tesisi 1"
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+            <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-700" />
           </div>
-          <div className="space-y-6 prod-reveal text-white/90 leading-relaxed text-lg">
+          <div className="space-y-8 prod-reveal text-[var(--global-text)] opacity-90 leading-relaxed text-lg md:text-xl font-light text-justify">
             <p>{prod.text1}</p>
           </div>
         </div>
 
-        {/* Stats Section */}
+        {/* Stats Section with Energy Rings */}
         <div 
           ref={statsRef}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 prod-reveal"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32 prod-reveal relative"
         >
-          {/* Stat 1 */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-[var(--brand-red)] transition-colors">
-            <div 
-              className="stat-num text-5xl md:text-6xl font-bold text-[var(--brand-red)] mb-4"
-              data-value="60"
-              data-suffix="M+"
-            >
-              0M+
+          {[
+            { value: "60", suffix: "M+", label: prod.stat1_label },
+            { value: "200", suffix: "", label: prod.stat2_label },
+            { value: "97", suffix: "/100", label: prod.stat3_label }
+          ].map((stat, i) => (
+            <div key={i} className="relative flex flex-col items-center justify-center p-10 group">
+              {/* Energy Rings Background */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 group-hover:opacity-40 transition-opacity duration-700">
+                <svg className="energy-ring w-48 h-48 absolute" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="48" fill="none" stroke="var(--accent-current)" strokeWidth="0.5" strokeDasharray="4 8" />
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="var(--accent-current)" strokeWidth="1" strokeDasharray="20 10" opacity="0.5" />
+                </svg>
+                <div className="w-32 h-32 bg-[var(--accent-current)] rounded-full blur-2xl opacity-30" />
+              </div>
+              
+              <div 
+                className="stat-num text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-[var(--global-text)] to-[var(--accent-current)] mb-4 drop-shadow-lg relative z-10"
+                data-value={stat.value}
+                data-suffix={stat.suffix}
+              >
+                0{stat.suffix}
+              </div>
+              <div className="text-[var(--global-text)] opacity-70 font-medium tracking-widest uppercase text-sm relative z-10 text-center">
+                {stat.label}
+              </div>
             </div>
-            <div className="text-white/70 font-medium tracking-wide">
-              {prod.stat1_label}
-            </div>
-          </div>
-          
-          {/* Stat 2 */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-[var(--brand-red)] transition-colors">
-            <div 
-              className="stat-num text-5xl md:text-6xl font-bold text-[var(--brand-red)] mb-4"
-              data-value="200"
-              data-suffix=""
-            >
-              0
-            </div>
-            <div className="text-white/70 font-medium tracking-wide">
-              {prod.stat2_label}
-            </div>
-          </div>
-
-          {/* Stat 3 */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-[var(--brand-red)] transition-colors">
-            <div 
-              className="stat-num text-5xl md:text-6xl font-bold text-[var(--brand-red)] mb-4"
-              data-value="97"
-              data-suffix="/100"
-            >
-              0/100
-            </div>
-            <div className="text-white/70 font-medium tracking-wide">
-              {prod.stat3_label}
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Bottom Section: Text left, Image right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 prod-reveal text-white/90 leading-relaxed text-lg lg:order-1 order-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8 prod-reveal text-[var(--global-text)] opacity-90 leading-relaxed text-lg md:text-xl font-light lg:order-1 order-2 text-justify">
             <p>{prod.text2}</p>
             <p>{prod.text3}</p>
           </div>
-          <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden prod-reveal group lg:order-2 order-1">
+          <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden prod-reveal group shadow-2xl lg:order-2 order-1">
             <Image
               src="/images/production/uretim-2.jpg"
               alt="Kendal Elektrik Üretim Tesisi 2"
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover transition-transform duration-1000 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+            <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-700" />
           </div>
         </div>
       </div>

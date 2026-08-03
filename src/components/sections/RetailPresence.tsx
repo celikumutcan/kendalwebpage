@@ -6,16 +6,15 @@ import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
 
-// IMPORTANT: These are placeholder real brand names/logo slots.
-// Actual usage requires Kendal Elektrik to confirm current, authorized retail partnerships
-// and obtain correct logo assets before this goes live.
-const PLACEHOLDER_RETAILERS = [
-  { name: "Migros", logo: "/images/retail/migros.png" },
-  { name: "BİM", logo: "/images/retail/bim.png" },
-  { name: "A101", logo: "/images/retail/a101.png" },
-  { name: "Retailer 4", logo: "/images/retail/placeholder.png" },
-  { name: "Retailer 5", logo: "/images/retail/placeholder.png" },
-  { name: "Retailer 6", logo: "/images/retail/placeholder.png" },
+const RETAILERS = [
+  { name: "Bizim Toptan", logo: "/images/retail/bizim-logo.png" },
+  { name: "Seç Market", logo: "/images/retail/sec-logo.png" },
+  { name: "Avansas", logo: "/images/retail/avansas-logo.png" },
+  { name: "ANPA Gross", logo: "/images/retail/anpa-logo.png" },
+  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: "/images/retail/tarim-logo.png" },
+  { name: "Koçtaş", logo: "/images/retail/koctas-logo.png" },
+  { name: "BİM", logo: "/images/retail/bim-logo.webp" },
+  { name: "A101", logo: "/images/retail/a101-logo.png" },
 ];
 
 export const RetailPresence = () => {
@@ -46,22 +45,28 @@ export const RetailPresence = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full bg-black py-24 px-6 border-t border-white/5">
+    <section ref={containerRef} className="w-full bg-transparent py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-white/90">
-          {(t as any).retail?.title}
+        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[var(--global-text)] opacity-90 tracking-tight">
+          {(t as any).retail?.title || "Türkiye'nin Önde Gelen Zincir Marketlerinde"}
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {PLACEHOLDER_RETAILERS.map((retailer, idx) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">
+          {RETAILERS.map((retailer, idx) => (
             <div 
               key={idx} 
-              className="retail-logo w-full aspect-video bg-white/5 rounded-xl border border-white/10 flex items-center justify-center p-4 hover:bg-white/10 transition-colors duration-300"
+              className="retail-logo w-full aspect-video rounded-2xl border border-[var(--global-text)]/10 flex items-center justify-center p-6 transition-all duration-300 bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] group"
             >
-              {/* Fallback to text since images don't exist yet */}
-              <span className="font-bold text-lg text-white/50 tracking-wider">
-                {retailer.name}
-              </span>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image
+                  src={retailer.logo}
+                  alt={retailer.name}
+                  fill
+                  className="object-contain object-center transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  loading="lazy"
+                />
+              </div>
             </div>
           ))}
         </div>

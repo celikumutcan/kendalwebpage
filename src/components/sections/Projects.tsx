@@ -63,27 +63,61 @@ export const Projects = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLDivElement>(null);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      // Infinite marquee
       if (trackRef.current) {
         gsap.to(trackRef.current, {
           xPercent: -50,
           repeat: -1,
-          duration: 200, // Yavaşlatılmış hız (120'den 200'e çıkarıldı)
+          duration: 200,
           ease: "linear",
         });
       }
 
+      // Title reveal
       gsap.from(".ref-title", {
         opacity: 0,
         y: 30,
-        duration: 0.8,
+        filter: "blur(10px)",
+        duration: 1,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 80%",
+          start: "top 75%",
         }
       });
+
+      // Cinematic illumination (dim to bright, grayscale to color)
+      gsap.fromTo(overlayRef.current,
+        { opacity: 0.95 },
+        { 
+          opacity: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 65%",
+            end: "top 15%",
+            scrub: true,
+          }
+        }
+      );
+      
+      gsap.fromTo(".project-image",
+        { filter: "grayscale(100%) brightness(0.3)" },
+        {
+          filter: "grayscale(0%) brightness(1)",
+          ease: "none",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 65%",
+            end: "top 15%",
+            scrub: true,
+          }
+        }
+      );
+
     }, containerRef);
 
     return () => ctx.revert();
@@ -93,43 +127,49 @@ export const Projects = () => {
     <section
       id="projects"
       ref={containerRef}
-      className="w-full bg-[#050505] py-32 overflow-hidden border-t border-white/5"
+      className="relative w-full bg-transparent py-32 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6 mb-16 text-center ref-title">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+      <div className="max-w-7xl mx-auto px-6 mb-24 text-center ref-title relative z-20">
+        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
           {(t as any).references?.title || "Türkiye'nin Dört Bir Yanında"}
         </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+        <p className="text-[var(--global-text)] opacity-60 text-lg md:text-xl max-w-2xl mx-auto font-light">
           {(t as any).references?.subtitle || "81 ilde sayısız projeyi aydınlatmaya devam ediyoruz."}
         </p>
       </div>
 
-      <div className="flex w-[max-content]" ref={trackRef}>
-        {[...REFERENCE_DATA, ...REFERENCE_DATA].map((item, idx) => {
-          const isPriority = idx < 4;
-          return (
-            <div
-              key={idx}
-              className="flex-shrink-0 relative w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-4 rounded-xl overflow-hidden group border border-white/5"
-            >
-              <Image
-                src={`/images/references/turkiye/${item.id}.jpg`}
-                alt={`${item.name} - ${item.location}`}
-                fill
-                sizes="(max-width: 768px) 75vw, (max-width: 1024px) 35vw, 25vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-                priority={isPriority}
-                loading={isPriority ? "eager" : "lazy"}
-              />
-              <div className="absolute inset-0 bg-black/10 transition-colors duration-500" />
-              
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent opacity-100 flex flex-col justify-end p-5 pointer-events-none">
-                <h4 className="text-white font-medium text-lg leading-tight mb-1">{item.name}</h4>
-                <p className="text-white/70 text-sm">{item.location}</p>
+      <div className="relative">
+        {/* Global Dark Overlay that fades out on scroll */}
+        <div ref={overlayRef} className="absolute inset-0 bg-[var(--global-bg)] z-10 pointer-events-none" />
+
+        <div className="flex w-[max-content]" ref={trackRef}>
+          {[...REFERENCE_DATA, ...REFERENCE_DATA].map((item, idx) => {
+            const isPriority = idx < 4;
+            return (
+              <div
+                key={idx}
+                className="flex-shrink-0 relative w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-4 rounded-xl overflow-hidden group border border-white/5"
+              >
+                <Image
+                  src={`/images/references/turkiye/${item.id}.jpg`}
+                  alt={`${item.name} - ${item.location}`}
+                  fill
+                  sizes="(max-width: 768px) 75vw, (max-width: 1024px) 35vw, 25vw"
+                  className="project-image object-cover transition-transform duration-1000 group-hover:scale-105"
+                  style={{ willChange: "filter, transform" }}
+                  priority={isPriority}
+                  loading={isPriority ? "eager" : "lazy"}
+                />
+                
+                {/* Gradient overlay for text legibility */}
+                <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 flex flex-col justify-end p-6 pointer-events-none">
+                  <h4 className="text-white font-bold text-xl md:text-2xl leading-tight mb-2 drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.name}</h4>
+                  <p className="text-white/70 text-sm font-medium tracking-wide transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-75">{item.location}</p>
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
     </section>
   );

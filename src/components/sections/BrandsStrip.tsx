@@ -36,10 +36,10 @@ export const BrandsStrip = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full bg-black py-16 overflow-hidden border-y border-white/5 relative">
+    <section ref={containerRef} className="w-full bg-white py-24 overflow-hidden border-y border-gray-200 relative">
       {/* Title indicating these are sub-brands */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-center pointer-events-none">
-        <h3 className="text-white/60 text-sm md:text-base font-semibold tracking-[0.2em] uppercase">
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 z-10 text-center pointer-events-none">
+        <h3 className="text-gray-400 text-sm md:text-base font-semibold tracking-[0.2em] uppercase">
           Alt Markalarımız
         </h3>
         <div className="w-12 h-px bg-[var(--brand-red)] mx-auto mt-2 opacity-50" />
@@ -51,9 +51,9 @@ export const BrandsStrip = () => {
         {[...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS].map((brand, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 flex items-center justify-center mx-8 opacity-60 hover:opacity-100 transition-all duration-300"
+            className="flex-shrink-0 flex items-center justify-center mx-8 opacity-80 hover:opacity-100 transition-all duration-300"
           >
-            <div className="relative w-40 h-16 md:w-48 md:h-20 bg-white/5 rounded-lg p-3 flex items-center justify-center border border-white/5 hover:border-white/20 transition-colors">
+            <div className="relative w-40 h-16 md:w-48 md:h-20 bg-gray-50 rounded-xl p-3 flex items-center justify-center border border-gray-200 hover:border-gray-300 transition-colors shadow-sm hover:shadow-md">
               <Image
                 src={brand.logo}
                 alt={brand.name}
@@ -68,3 +68,6 @@ export const BrandsStrip = () => {
     </section>
   );
 };
+
+
+

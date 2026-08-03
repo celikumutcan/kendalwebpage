@@ -1,92 +1,121 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import Image from "next/image";
 
 export const Loader = ({ onComplete }: { onComplete: () => void }) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const circuitRef = useRef<SVGPathElement>(null);
+  const progressRef = useRef<HTMLDivElement>(null);
+  const textRef = useRef<HTMLDivElement>(null);
   const [progress, setProgress] = useState(0);
 
+  useEffect(() => {
+    let currentProgress = 0;
+
+    // Smooth, somewhat realistic progress increment
+    const interval = setInterval(() => {
+      currentProgress += Math.random() * 12;
+
+      // If the document is not fully loaded, hold the progress around 90%
+      if (document.readyState !== 'complete' && currentProgress > 90) {
+        currentProgress = 90 + (Math.random() * 5); // fluctuate slightly
+      }
+
+      if (currentProgress >= 100) {
+        currentProgress = 100;
+        clearInterval(interval);
+      }
+
+      setProgress(Math.min(100, Math.round(currentProgress)));
+    }, 150);
+
+    // Force completion when window finishes loading all assets (images, fonts)
+    const handleLoad = () => {
+      setProgress(100);
+    };
+
+    if (document.readyState === 'complete') {
+      // If already loaded on mount, quickly finish
+      setTimeout(() => setProgress(100), 100);
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
+
   useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      // Simulate loading progress
-      const tl = gsap.timeline({
-        onUpdate: function () {
-          setProgress(Math.round(this.progress() * 100));
-        },
-        onComplete: () => {
-          // Aperture style exit
-          gsap.to(containerRef.current, {
-            scale: 1.5,
+    if (progress === 100) {
+      const ctx = gsap.context(() => {
+        const tl = gsap.timeline({
+          onComplete,
+        });
+
+        // Elegant fade out sequence without heavy blur for performance
+        tl.to(textRef.current, {
+          opacity: 0,
+          y: -10,
+          duration: 0.5,
+          ease: "power2.inOut",
+        })
+          .to(progressRef.current, {
+            scaleX: 0,
             opacity: 0,
             duration: 0.8,
+            ease: "power3.inOut",
+          }, "-=0.4")
+          .to(containerRef.current, {
+            opacity: 0,
+            duration: 1,
             ease: "power2.inOut",
-            onComplete,
-          });
-        },
-      });
-
-      // Animate SVG stroke
-      if (circuitRef.current) {
-        tl.to(circuitRef.current, {
-          strokeDashoffset: 0,
-          duration: 2.5,
-          ease: "power1.inOut",
-        });
-      }
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, [onComplete]);
+          }, "-=0.2");
+      }, containerRef);
+      return () => ctx.revert();
+    }
+  }, [progress, onComplete]);
 
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black"
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-[#050505]"
     >
-      {/* Yavaşça artan şiddetli sıcak parlama efekti */}
-      <div 
-        className="absolute inset-0 opacity-80 mix-blend-screen transition-all duration-700"
-        style={{
-          background: `radial-gradient(circle at center, rgba(255, 230, 100, ${progress * 0.015}) 0%, rgba(255, 170, 0, ${progress * 0.008}) 30%, transparent 80%)`
-        }}
-      />
-      
-      <div className="relative z-10 flex flex-col items-center">
-        {/* Ampul SVG - Sonlara doğru kör edici parlaklık */}
-        <svg width="120" height="120" viewBox="0 0 100 100" className={`mb-6 transition-all duration-700 ${progress >= 90 ? 'drop-shadow-[0_0_80px_rgba(255,230,100,1)] scale-125' : 'drop-shadow-[0_0_20px_rgba(255,180,0,0.5)]'}`}>
-          {/* Ampul Dış Hatları (Loş sarımsı) */}
-          <path
-            d="M 35 70 C 35 80, 40 85, 45 85 L 55 85 C 60 85, 65 80, 65 70 C 75 60, 80 45, 75 30 C 70 15, 50 10, 50 10 C 50 10, 30 15, 25 30 C 20 45, 25 60, 35 70 Z"
-            fill="transparent"
-            stroke="#ffcc00"
-            strokeWidth="2"
-            strokeOpacity="0.15"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          {/* Metalik Duy kısmı */}
-          <path d="M 40 85 L 60 85 M 42 90 L 58 90 M 45 95 L 55 95" stroke="#a0a0a0" strokeWidth="2" strokeOpacity="0.4" strokeLinecap="round" />
-          
-          {/* Hareketli Flaman (Parlak sıcak sarı) */}
-          <path
-            ref={circuitRef}
-            d="M 45 85 L 45 60 L 35 45 L 50 30 L 65 45 L 55 60 L 55 85"
-            fill="transparent"
-            stroke="#ffcc00"
-            strokeWidth="2"
-            strokeDasharray="200"
-            strokeDashoffset="200"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+      <div className="w-64 max-w-[80vw] flex flex-col items-center gap-12">
 
-        <div className="text-[#ffcc00]/90 font-mono text-lg tracking-widest" style={{ textShadow: `0 0 ${progress * 0.15}px rgba(255,200,0,0.6)` }}>
-          {progress.toString().padStart(3, "0")}%
+        {/* Brand Logo & Percentage */}
+        <div ref={textRef} className="flex flex-col items-center gap-8 text-center">
+          <div className="relative w-24 h-24 md:w-32 md:h-32 opacity-80 animate-pulse">
+            <Image
+              src="/kendal-icon.png"
+              alt="Kendal Elektrik"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="text-white/90 tracking-[0.3em] md:tracking-[0.4em] uppercase font-light text-lg md:text-2xl flex items-center justify-center">
+              KENDAL ELEKTRİK
+            </div>
+            <div className="text-white/50 font-mono text-base md:text-xl tracking-widest mt-2 font-medium">
+              {progress.toString().padStart(3, "0")}%
+            </div>
+          </div>
         </div>
+
+        {/* Minimalist Progress Line */}
+        <div className="w-full h-[2px] bg-white/5 relative overflow-hidden rounded-full">
+          <div
+            ref={progressRef}
+            className="absolute top-0 left-0 h-full bg-[var(--brand-red)] transition-all duration-300 shadow-[0_0_15px_rgba(227,0,15,0.6)] rounded-full origin-left"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+
       </div>
     </div>
   );

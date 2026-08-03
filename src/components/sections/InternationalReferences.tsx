@@ -71,11 +71,11 @@ export const InternationalReferences = () => {
     <section
       id="international-references"
       ref={containerRef}
-      className="w-full bg-[#050505] py-24 px-6 border-t border-white/5"
+      className="w-full bg-transparent py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5"
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center int-ref-title">
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-[var(--global-text)] opacity-90 tracking-tight">
             {(t as any).international_references?.title || "Yurtdışındaki Referanslarımız"}
           </h2>
         </div>
@@ -104,3 +104,4 @@ export const InternationalReferences = () => {
     </section>
   );
 };
+

@@ -47,16 +47,16 @@ export const Certifications = () => {
     <section
       id="certifications"
       ref={containerRef}
-      className="w-full bg-black text-white py-24 px-6 border-t border-white/5"
+      className="w-full bg-transparent py-16 md:py-24 px-6 border-t border-white/5"
     >
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {certs.map((cert, idx) => (
             <div
               key={idx}
-              className="cert-item flex flex-col items-center justify-center p-6 rounded-2xl bg-white/[0.02] border border-white/10 transition-all duration-300 hover:bg-white/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group"
+              className="cert-item flex flex-col items-center justify-center p-6 rounded-2xl bg-[var(--global-text)]/[0.02] border border-[var(--global-text)]/10 transition-all duration-300 hover:bg-[var(--global-text)]/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group"
             >
-              <div className="relative w-24 h-24 mb-4 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-all duration-300">
+              <div className="relative w-24 h-24 mb-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-105 drop-shadow-md">
                 <Image
                   src={cert.icon}
                   alt={cert.label || "Certification"}
@@ -65,7 +65,7 @@ export const Certifications = () => {
                   className="object-contain drop-shadow-md"
                 />
               </div>
-              <h3 className="text-center text-sm md:text-base font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
+              <h3 className="text-center text-sm md:text-base font-medium text-[var(--global-text)] opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                 {cert.label}
               </h3>
             </div>
@@ -75,3 +75,4 @@ export const Certifications = () => {
     </section>
   );
 };
+

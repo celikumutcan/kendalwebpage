@@ -25,6 +25,14 @@ export const LightTemperatureProvider = ({
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      // Background colors sequence: Darkness -> Dark Blue -> Dark Gray -> Neutral -> Warm White -> Soft Amber -> Bright White
+      const bgColors = ['#000000', '#0a1128', '#1a1a1a', '#4a4a4a', '#f5f5f0', '#fff3e0', '#ffffff'];
+      // Text colors: White on dark backgrounds, Dark Gray on light backgrounds
+      const textColors = ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#171717', '#171717', '#171717'];
+
+      const bgInterpolator = gsap.utils.interpolate(bgColors);
+      const textInterpolator = gsap.utils.interpolate(textColors);
+
       ScrollTrigger.create({
         trigger: document.body,
         start: "top top",
@@ -37,18 +45,24 @@ export const LightTemperatureProvider = ({
           // Update CSS custom property for progress
           document.documentElement.style.setProperty("--light-temp", p.toString());
 
-          // Interpolate color and update CSS custom property
+          // Interpolate accent color
           currentColor.current.lerpColors(colorCool.current, colorWarm.current, p);
           document.documentElement.style.setProperty(
             "--accent-current",
             `#${currentColor.current.getHexString()}`
           );
+
+          // Update global background and text
+          document.documentElement.style.setProperty("--global-bg", bgInterpolator(p));
+          document.documentElement.style.setProperty("--global-text", textInterpolator(p));
         },
       });
       
       // Initial set
       document.documentElement.style.setProperty("--light-temp", "0");
       document.documentElement.style.setProperty("--accent-current", "#d8e4ff");
+      document.documentElement.style.setProperty("--global-bg", bgColors[0]);
+      document.documentElement.style.setProperty("--global-text", textColors[0]);
     });
 
     return () => ctx.revert();

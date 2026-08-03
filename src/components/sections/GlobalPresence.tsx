@@ -43,17 +43,17 @@ export const GlobalPresence = () => {
     <section
       id="global"
       ref={containerRef}
-      className="w-full bg-black text-white py-32 px-6"
+      className="w-full bg-transparent  py-32 px-6"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-        <div className="flex-1">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="flex-1 md:pr-8">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
             {t.global.title}
           </h2>
-          <div className="text-xl font-medium text-white/70 mb-8">
+          <div className="text-xl md:text-2xl font-medium text-[var(--global-text)] opacity-70 mb-8 leading-relaxed">
             {t.global.subtitle}
           </div>
-          <p className="text-gray-400 leading-relaxed text-lg">
+          <p className="text-[var(--global-text)] opacity-60 leading-relaxed text-lg font-light">
             {t.global.text}
           </p>
         </div>
@@ -68,3 +68,5 @@ export const GlobalPresence = () => {
     </section>
   );
 };
+
+

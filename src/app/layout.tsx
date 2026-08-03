@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <body className={`${inter.className} bg-black text-white antialiased`} suppressHydrationWarning>
+      <body className={`${inter.className} antialiased transition-colors duration-200`} suppressHydrationWarning>
         <LanguageProvider>
           <SmoothScrollProvider>
             <LightTemperatureProvider>

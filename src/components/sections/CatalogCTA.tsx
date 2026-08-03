@@ -32,12 +32,12 @@ export const CatalogCTA = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full bg-[#050505] text-white py-32 px-6">
-      <div className="catalog-content max-w-4xl mx-auto text-center p-12 md:p-20 rounded-3xl bg-gradient-to-br from-white/10 to-transparent border border-white/10">
-        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+    <section ref={containerRef} className="w-full bg-transparent py-32 px-6">
+      <div className="catalog-content max-w-4xl mx-auto text-center p-12 md:p-20 rounded-3xl bg-gradient-to-br from-[var(--global-text)]/[0.05] to-transparent border border-[var(--global-text)]/[0.05]">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
           {t.catalog.title}
         </h2>
-        <p className="text-gray-400 text-lg mb-10">
+        <p className="text-[var(--global-text)] opacity-60 text-lg mb-10">
           {t.catalog.subtitle}
         </p>
         <a
@@ -52,3 +52,4 @@ export const CatalogCTA = () => {
     </section>
   );
 };
+
