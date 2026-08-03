@@ -5,6 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useTexture, Line } from "@react-three/drei";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
+import { getAssetPath } from "@/utils/basePath";
 
 // Helper to convert lat/long to 3D sphere coordinates
 const latLongToVector3 = (lat: number, lon: number, radius: number) => {
@@ -74,9 +75,9 @@ const GlobeScene = ({ scrollProgress }: { scrollProgress: number }) => {
   const { getProgress } = useLightTemperature();
   
   const [earthTexture, bumpTexture, specularTexture] = useTexture([
-    "/textures/earth-dark.jpg",
-    "/textures/earth-topology.png",
-    "/textures/earth-water.png"
+    getAssetPath("/textures/earth-dark.jpg"),
+    getAssetPath("/textures/earth-topology.png"),
+    getAssetPath("/textures/earth-water.png")
   ]);
 
   useMemo(() => {

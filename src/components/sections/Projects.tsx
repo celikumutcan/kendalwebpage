@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import { getAssetPath } from "@/utils/basePath";
 
 const REFERENCE_DATA = [
   // En Prestijli / Bilinen Markalar (Öne Çıkanlar)
@@ -155,7 +156,7 @@ export const Projects = () => {
                 className="flex-shrink-0 relative w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-4 rounded-xl overflow-hidden group border border-white/5"
               >
                 <Image
-                  src={`/images/references/turkiye/${item.id}.jpg`}
+                  src={getAssetPath(`/images/references/turkiye/${item.id}.jpg`)}
                   alt={`${item.name} - ${item.location}`}
                   fill
                   sizes="(max-width: 768px) 75vw, (max-width: 1024px) 35vw, 25vw"

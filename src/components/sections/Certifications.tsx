@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import { getAssetPath } from "@/utils/basePath";
 
 export const Certifications = () => {
   const { t } = useLanguage();
@@ -36,11 +37,11 @@ export const Certifications = () => {
   }, []);
 
   const certs = [
-    { label: (t as any).certifications?.iso, icon: "/images/certifications/iso.png" },
-    { label: (t as any).certifications?.tse, icon: "/images/certifications/tse.png" },
-    { label: (t as any).certifications?.kalite, icon: "/images/certifications/kalite.png" },
-    { label: (t as any).certifications?.yerli, icon: "/images/certifications/yerli-uretim.png" },
-    { label: (t as any).certifications?.marka_tescil, icon: "/images/certifications/marka-tescil.png" },
+    { label: (t as any).certifications?.iso, icon: getAssetPath("/images/certifications/iso.png") },
+    { label: (t as any).certifications?.tse, icon: getAssetPath("/images/certifications/tse.png") },
+    { label: (t as any).certifications?.kalite, icon: getAssetPath("/images/certifications/kalite.png") },
+    { label: (t as any).certifications?.yerli, icon: getAssetPath("/images/certifications/yerli-uretim.png") },
+    { label: (t as any).certifications?.marka_tescil, icon: getAssetPath("/images/certifications/marka-tescil.png") },
   ];
 
   return (

@@ -12,6 +12,7 @@ import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 
 import { OrganizationSchema } from "@/components/shared/OrganizationSchema";
+import { getAssetPath } from "@/utils/basePath";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     description: "Innovative lighting and electrical equipment.",
     type: "website",
     url: "/",
-    images: [{ url: "/images/og-cover.jpg", width: 1200, height: 630 }],
+    images: [{ url: getAssetPath("/images/og-cover.jpg"), width: 1200, height: 630 }],
     locale: "tr_TR",
     alternateLocale: ["en_US"],
   },

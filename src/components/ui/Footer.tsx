@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import Link from "next/link";
+import { getAssetPath } from "@/utils/basePath";
 
 // Main Footer
 export const Footer = () => {
@@ -17,7 +18,7 @@ export const Footer = () => {
         {/* Company Info */}
         <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
           <Link href="/" className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <Image src="/kendal-icon.png" alt="Kendal Logo" width={32} height={32} className="object-contain" />
+            <Image src={getAssetPath("/kendal-icon.png")} alt="Kendal Logo" width={32} height={32} className="object-contain" />
             <div>
               KENDAL ELEKTRİK
             </div>

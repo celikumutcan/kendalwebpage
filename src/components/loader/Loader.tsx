@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
+import { getAssetPath } from "@/utils/basePath";
 
 export const Loader = ({ onComplete }: { onComplete: () => void }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -132,7 +133,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         {/* Enormous Logo */}
         <div className="relative w-28 h-28 md:w-40 md:h-40 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
           <Image
-            src="/kendal-icon.png"
+            src={getAssetPath("/kendal-icon.png")}
             alt="Kendal Elektrik Logo"
             fill
             className="object-contain"

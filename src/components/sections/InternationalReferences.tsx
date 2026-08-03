@@ -5,31 +5,32 @@ import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import { getAssetPath } from "@/utils/basePath";
 
 const INT_REFERENCES = [
   {
     id: "elbi",
     name: "Elbi",
     country: "Romania",
-    logo: "/images/references/international/elbi-logo.png",
+    logo: getAssetPath("/images/references/international/elbi-logo.png"),
   },
   {
     id: "maktrade",
     name: "MakTrade",
     country: "Serbia",
-    logo: "/images/references/international/maktrade-logo.png",
+    logo: getAssetPath("/images/references/international/maktrade-logo.png"),
   },
   {
     id: "novatex",
     name: "Novatex",
     country: "Albania",
-    logo: "/images/references/international/novatex-logo.png",
+    logo: getAssetPath("/images/references/international/novatex-logo.png"),
   },
   {
     id: "smitcommerce",
     name: "Smit Commerce",
     country: "Croatia",
-    logo: "/images/references/international/smitcommerce-logo.png",
+    logo: getAssetPath("/images/references/international/smitcommerce-logo.png"),
   },
 ];
 

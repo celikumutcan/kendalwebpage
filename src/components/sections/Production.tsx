@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import { getAssetPath } from "@/utils/basePath";
 
 export const Production = () => {
   const { t } = useLanguage();
@@ -96,7 +97,7 @@ export const Production = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden prod-reveal group shadow-2xl">
             <Image
-              src="/images/production/uretim-1.jpg"
+              src={getAssetPath("/images/production/uretim-1.jpg")}
               alt="Kendal Elektrik Üretim Tesisi 1"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"
@@ -151,7 +152,7 @@ export const Production = () => {
           </div>
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden prod-reveal group shadow-2xl lg:order-2 order-1">
             <Image
-              src="/images/production/uretim-2.jpg"
+              src={getAssetPath("/images/production/uretim-2.jpg")}
               alt="Kendal Elektrik Üretim Tesisi 2"
               fill
               className="object-cover transition-transform duration-1000 group-hover:scale-105"

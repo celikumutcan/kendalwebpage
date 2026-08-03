@@ -4,12 +4,13 @@ import React, { useRef } from "react";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
+import { getAssetPath } from "@/utils/basePath";
 
 const BRANDS = [
-  { name: "K2 LED", logo: "/images/brands/k2-led.jpg" },
-  { name: "K2 Plus", logo: "/images/brands/k2-plus.jpg" },
-  { name: "Vanti", logo: "/images/brands/vanti.jpg" },
-  { name: "Global", logo: "/images/brands/global.png" },
+  { name: "K2 LED", logo: getAssetPath("/images/brands/k2-led.jpg") },
+  { name: "K2 Plus", logo: getAssetPath("/images/brands/k2-plus.jpg") },
+  { name: "Vanti", logo: getAssetPath("/images/brands/vanti.jpg") },
+  { name: "Global", logo: getAssetPath("/images/brands/global.png") },
 ];
 
 export const BrandsStrip = () => {

@@ -5,16 +5,17 @@ import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
+import { getAssetPath } from "@/utils/basePath";
 
 const RETAILERS = [
-  { name: "Bizim Toptan", logo: "/images/retail/bizim-logo.png" },
-  { name: "Seç Market", logo: "/images/retail/sec-logo.png" },
-  { name: "Avansas", logo: "/images/retail/avansas-logo.png" },
-  { name: "ANPA Gross", logo: "/images/retail/anpa-logo.png" },
-  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: "/images/retail/tarim-logo.png" },
-  { name: "Koçtaş", logo: "/images/retail/koctas-logo.png" },
-  { name: "BİM", logo: "/images/retail/bim-logo.webp" },
-  { name: "A101", logo: "/images/retail/a101-logo.png" },
+  { name: "Bizim Toptan", logo: getAssetPath("/images/retail/bizim-logo.png") },
+  { name: "Seç Market", logo: getAssetPath("/images/retail/sec-logo.png") },
+  { name: "Avansas", logo: getAssetPath("/images/retail/avansas-logo.png") },
+  { name: "ANPA Gross", logo: getAssetPath("/images/retail/anpa-logo.png") },
+  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: getAssetPath("/images/retail/tarim-logo.png") },
+  { name: "Koçtaş", logo: getAssetPath("/images/retail/koctas-logo.png") },
+  { name: "BİM", logo: getAssetPath("/images/retail/bim-logo.webp") },
+  { name: "A101", logo: getAssetPath("/images/retail/a101-logo.png") },
 ];
 
 export const RetailPresence = () => {
