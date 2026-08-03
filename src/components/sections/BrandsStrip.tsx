@@ -6,9 +6,9 @@ import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
 
 const BRANDS = [
-  { name: "K2 LED", logo: "/images/brands/k2-led.png" },
-  { name: "K2 Plus", logo: "/images/brands/k2-plus.png" },
-  { name: "Vanti", logo: "/images/brands/vanti.png" },
+  { name: "K2 LED", logo: "/images/brands/k2-led.jpg" },
+  { name: "K2 Plus", logo: "/images/brands/k2-plus.jpg" },
+  { name: "Vanti", logo: "/images/brands/vanti.jpg" },
   { name: "Global", logo: "/images/brands/global.png" },
 ];
 
@@ -18,7 +18,10 @@ export const BrandsStrip = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Infinite horizontal marquee
+      // True infinite horizontal marquee
+      // By using w-max and duplicating the set 4 times,
+      // moving exactly -50% shifts by exactly 2 full sets.
+      // Since sets 1-2 are identical to 3-4, the loop is perfectly seamless.
       if (trackRef.current) {
         gsap.to(trackRef.current, {
           xPercent: -50,
@@ -42,16 +45,22 @@ export const BrandsStrip = () => {
         <div className="w-12 h-px bg-[var(--brand-red)] mx-auto mt-2 opacity-50" />
       </div>
 
-      <div className="flex w-[200%] md:w-[150%] lg:w-[100%] min-w-max mt-6" ref={trackRef}>
-        {/* Render twice for infinite loop effect */}
-        {[...BRANDS, ...BRANDS].map((brand, idx) => (
+      {/* w-max is CRITICAL for the seamless GSAP loop to calculate exact pixel width */}
+      <div className="flex w-max mt-6" ref={trackRef}>
+        {/* Render 4 times so -50% shift perfectly aligns with the start */}
+        {[...BRANDS, ...BRANDS, ...BRANDS, ...BRANDS].map((brand, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 flex items-center justify-center w-[25vw] sm:w-[20vw] md:w-[15vw] mx-8 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300"
+            className="flex-shrink-0 flex items-center justify-center mx-8 opacity-60 hover:opacity-100 transition-all duration-300"
           >
-            {/* Fallback to text if placeholder image fails */}
-            <div className="relative w-full h-12 flex items-center justify-center font-bold text-2xl tracking-widest text-white/80">
-              {brand.name}
+            <div className="relative w-40 h-16 md:w-48 md:h-20 bg-white/5 rounded-lg p-3 flex items-center justify-center border border-white/5 hover:border-white/20 transition-colors">
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                fill
+                sizes="(max-width: 768px) 160px, 192px"
+                className="object-contain p-2"
+              />
             </div>
           </div>
         ))}

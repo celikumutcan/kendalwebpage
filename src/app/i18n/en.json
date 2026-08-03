@@ -1,11 +1,14 @@
 {
   "nav": {
     "about": "About",
+    "production": "Production",
     "products": "Products",
     "why_us": "Why Us",
     "global": "Global",
     "projects": "Projects",
-    "contact": "Contact"
+    "career": "Careers",
+    "sanalpos": "Virtual POS",
+    "dealer": "Dealer Login"
   },
   "hero": {
     "badge": "Global Manufacturer Since 1998",
@@ -19,30 +22,37 @@
     "text2": "By designing the lighting technologies of the future today, we provide reliable solutions both domestically and in global markets.",
     "beats": [
       {
-        "title": "1998 — Founding",
-        "text": "Humble beginnings in the electrical materials sector."
+        "title": "1998 — Started with an Idea",
+        "text": "We set out with a humble yet passionate vision in the electrical materials sector, backed by 100% Turkish capital."
       },
       {
-        "title": "22.000 m² — Production Power",
-        "text": "Automation-supported production in our fully integrated facility."
+        "title": "22,000 m² — Production Power",
+        "text": "Today, we manufacture at world standards with our expert team of 150 employees and fully automated production lines."
       },
       {
-        "title": "ITU Partnership",
-        "text": "Pioneering innovation with domestic LED chip R&D."
+        "title": "From Mold to Product — In-House",
+        "text": "We guarantee our quality by handling all stages in-house, from crafting our own metal molds to precision injection production."
       },
       {
-        "title": "3000+ Products",
-        "text": "A wide product catalog to suit your every need."
+        "title": "R&D and Automation",
+        "text": "Our products, developed in our own R&D center and TSE-certified accredited lab, are perfected by our dedicated automation team established in 2013."
       },
       {
-        "title": "Nationwide Network",
-        "text": "A strong and reliable distribution network reaching all 81 provinces."
+        "title": "Market Leader in LED Bulbs",
+        "text": "With our eye-friendly 4000K LED technology and diverse product range, we stand at the top of the market in domestic LED bulb production capacity."
       },
       {
-        "title": "Top 10 Exporter",
-        "text": "Proudly representing our country in Asian, European, and African markets."
+        "title": "Global Ambition",
+        "text": "We are rapidly approaching our goal of becoming a true global brand, aiming for top 10 status in Asian, European, and African export markets."
       }
     ]
+  },
+  "certifications": {
+    "iso": "ISO Management System Certificates",
+    "tse": "TSE Product Approval Certificates",
+    "kalite": "Integrated Quality Policy",
+    "yerli": "Domestic Product Certificates",
+    "marka_tescil": "Trademark Registration Certificates"
   },
   "products": {
     "title": "Product Gallery",
@@ -54,6 +64,18 @@
       "diger": "Other"
     },
     "brands": "Our Brands: K2 LED, K2 Plus, Vanti, Global"
+  },
+  "production": {
+    "title": "Production",
+    "text1": "Having started its sector activities in 2017, our company is currently Turkey's largest bulb manufacturing facility with an annual production capacity of 60 million units. In our 22,000m² closed area, with 200 employees and full automation, we produce LED bulbs, filament rustic bulbs, surface and flush-mounted LED panels and spots, LED projectors, LED waterproof fixtures, LED street luminaires, LED wall washers, pendant chandeliers, LED store spots, and decorative linear fixtures.",
+    "text2": "Commanding a significant market share, Kendal Elektrik closely follows global technological developments and is the first to implement them in Turkey. Notably, we were the first to manufacture filament rustic bulbs in Turkey. While K2 is our company's own brand, we also manufacture proprietary brands for numerous companies in Turkey and abroad.",
+    "text3": "Continuously making high investments in ERP software every year, Kendal Elektrik monitors all its production online and reports live using the MES/MAS program.",
+    "stat1_value": "60M+",
+    "stat1_label": "Annual Production Capacity",
+    "stat2_value": "200",
+    "stat2_label": "Employees",
+    "stat3_value": "97/100",
+    "stat3_label": "RBA International Audit Score"
   },
   "why_us": {
     "title": "Why Kendal?",
@@ -95,16 +117,15 @@
     "subtitle": "Top 10 exporter in Asia, Europe & Africa",
     "text": "Our products illuminate millions of spaces not only in Turkey but around the world. We manage our global dealer network seamlessly through our dedicated B2B portal."
   },
+  "references": {
+    "title": "Across Turkey",
+    "subtitle": "We continue to illuminate countless projects across 81 provinces with Kendal quality."
+  },
+  "international_references": {
+    "title": "Our International References"
+  },
   "projects": {
     "title": "Reference Projects"
-  },
-  "contact": {
-    "title": "Contact Us",
-    "name": "Your Name",
-    "email": "Your Email",
-    "message": "Your Message",
-    "submit": "Send Message",
-    "address": "Kendal Elektrik Inc. Production Facilities"
   },
   "footer": {
     "rights": "Kendal Elektrik. All rights reserved.",
@@ -125,8 +146,50 @@
     },
     "legal_title": "Legal",
     "legal": {
-      "kvkk": "KVKK Clarification Text",
-      "privacy": "Privacy & Cookie Policy"
+      "kvkk": "KVKK Illumination Text",
+      "privacy": "Privacy and Cookie Policy"
+    }
+  },
+  "career": {
+    "title": "Careers",
+    "subtitle": "Join the Kendal Elektrik Family",
+    "hr_policy": {
+      "vision_title": "Our Human Resources Vision",
+      "vision_text": "To create a qualified workforce that is highly motivated, protects and elevates the corporate image, prioritizes innovative work, values service, and views their job as part of a cohesive whole.",
+      "mission_title": "Our Human Resources Mission",
+      "mission_text": "To plan the human resources needed to achieve our company's goals and strategies, train our personnel, perform personnel operations at the highest level, and maintain highly self-confident staff who are experts in their fields, capable of representing the company, and generating new initiatives.",
+      "policy_title": "Human Resources Policy",
+      "policy_text": "Kendal Elektrik's core human resources policy is to operate in adherence to the principles of efficiency and profitability within the framework of relevant legislation and established policies. By developing its contemporary and innovative corporate structure, Kendal Elektrik has adopted the strategic goal of having employees who are experts in their fields and capable of introducing new perspectives.",
+      "training_title": "Human Resources Training Policy",
+      "training_text": "In order to have employees who are experts in their fields and capable of creating new opportunities, and to increase competence and prepare them for higher roles, we organize in-service trainings in accordance with the principles of efficiency, effectiveness, and economy. Through our Personnel Performance Management System, we aim to integrate personal goals with organizational objectives, support personal success, increase corporate success, evaluate the contributions of all employees towards corporate goals through a fair, systematic, and measurable method, determine employee expectations to increase their loyalty, and create a motivating work environment to boost workforce productivity.",
+      "health_safety_title": "Occupational Health and Safety",
+      "health_safety_text": "At Kendal Elektrik, occupational health and safety is adopted as a natural part of work life and corporate culture, and the continuous improvement of this culture is targeted. Occupational health and safety practices are implemented in accordance with relevant legislation, obligations, and standards, while the best practices in this field are constantly followed and adapted. In all activities, potential risks are analyzed in advance, and proactive approaches are put forward to prevent these risks. Refresher trainings on occupational health and safety are provided to all employees upon hiring and periodically during their employment."
+    },
+    "principles": [
+      "Determining the qualifications of personnel appropriate for the specific role and executing the appointment processes.",
+      "Identifying the necessary training to develop the personnel's work ability, success, and effort, and ensuring they receive it.",
+      "Encouraging personnel to work in adherence to ethical behavior principles and efficiency/profitability principles, and fostering corporate loyalty.",
+      "Informing personnel in a timely manner about matters that concern them.",
+      "Continuously reviewing, updating, and developing the Human Resources policy.",
+      "Adopting, participating in, and encouraging the concept and projects of Social Responsibility in all practices.",
+      "Further strengthening our Respectful and Eco-Friendly employee profile."
+    ],
+    "human_rights": [
+      "As Kendal Elektrik, we consider it a fundamental responsibility to respect human rights, protect universal values, and raise awareness on this issue in all our activities.",
+      "We commit to non-discrimination in our relations with employees and customers in line with Kendal Elektrik's Ethical Principles.",
+      "Our management has the responsibility to prevent mistreatment, discrimination, or harassment in the workplace and to report such situations immediately to Human Resources.",
+      "Providing an open and reliable communication environment where complaints can be communicated without fear of retaliation is our top priority.",
+      "We adopt the principle of not establishing business relationships with any institution or organization that violates national and international labor laws, especially child labor.",
+      "Through our voluntary participation in the \"Workplace Equality Declaration\" (İşte Eşitlik Bildirgesi) conducted in collaboration with the Republic of Turkey Ministry of Family and Social Services and the World Economic Forum, we support gender equality and offer equal opportunities based on merit in recruitment and career development. Additionally, we actively support the return of working mothers to business life.",
+      "Our employment policy complying with the Labor Law No. 4857, our respect for unionization and collective bargaining rights, our occupational health and safety trainings, and our definitive stance against forced labor are standards we never compromise on, both within our organization and among our business partners."
+    ],
+    "links": {
+      "hr_policy_title": "Our Human Resources Policy",
+      "hr_policy_desc": "Our corporate vision, mission, and HR strategies.",
+      "principles_title": "Our Core Principles",
+      "principles_desc": "The fundamental human resources principles we embrace as the Kendal Elektrik family.",
+      "human_rights_title": "Human Rights & Employee Rights Policy",
+      "human_rights_desc": "Our commitment to universal values, equality, and workers' rights."
     }
   }
 }

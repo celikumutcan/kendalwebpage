@@ -8,10 +8,12 @@ import { ProductGallery } from "@/components/sections/ProductGallery";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
 import { Projects } from "@/components/sections/Projects";
-import { Contact } from "@/components/sections/Contact";
+import { InternationalReferences } from "@/components/sections/InternationalReferences";
 import { NewsTicker } from "@/components/sections/NewsTicker";
 import { BrandsStrip } from "@/components/sections/BrandsStrip";
 import { VideoShowcase } from "@/components/sections/VideoShowcase";
+import { Certifications } from "@/components/sections/Certifications";
+import { Production } from "@/components/sections/Production";
 import { CatalogCTA } from "@/components/sections/CatalogCTA";
 import { RetailPresence } from "@/components/sections/RetailPresence";
 import { ApertureTransition } from "@/components/shared/ApertureTransition";
@@ -32,11 +34,13 @@ export default function Home() {
         <VideoShowcase />
         <ProductGallery />
         <WhyUs />
+        <Certifications />
+        <Production />
         <CatalogCTA />
         <RetailPresence />
         <GlobalPresence />
         <Projects />
-        <Contact />
+        <InternationalReferences />
       </div>
     </main>
   );

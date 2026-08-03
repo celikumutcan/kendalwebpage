@@ -5,7 +5,9 @@
     "why_us": "Neden Biz",
     "global": "Küresel Ağımız",
     "projects": "Projeler",
-    "contact": "İletişim"
+    "career": "Kariyer",
+    "sanalpos": "Sanal Pos",
+    "dealer": "Online Bayi Girişi"
   },
   "hero": {
     "badge": "1998'den Beri Küresel Üretici",
@@ -19,26 +21,37 @@
     "text2": "Geleceğin aydınlatma teknolojilerini bugünden tasarlayarak, hem yurt içinde hem de küresel pazarlarda güvenilir çözümler sunuyoruz.",
     "beats": [
       {
-        "title": "1998 — Bir Kıvılcımla Başladı",
-        "text": "Her büyük hikaye cesur bir adımla başlar. 1998'de, karanlığı yarmaya kararlı, mütevazı ama tutkulu bir vizyonla ilk kıvılcımı çaktık."
+        "title": "1998 — Bir Fikirle Başladı",
+        "text": "%100 Türk sermayesiyle, elektrik malzemeleri sektöründe mütevazı ama tutkulu bir adımla yola çıktık."
       },
       {
-        "title": "Asla Sönmeyen Ampul",
-        "text": "Ürünlerimiz bir kez yanar, nesiller boyu aydınlatır. Kendal'ın ilk gün ürettiği ampullerin bile yıllara meydan okuması, sağlamlığa ve mükemmelliğe olan sarsılmaz inancımızın bir anıtıdır."
+        "title": "22.000 m² — Üretim Gücü",
+        "text": "Bugün 150 kişilik uzman kadromuz ve tam otomatik makine hatlarımızla, dünya standartlarında üretim gerçekleştiriyoruz."
       },
       {
-        "title": "22.000 m² — Dev Üretim Gücü",
-        "text": "Tam otomatik, modern üretim tesisimizde hata payını sıfıra indirerek, dünya standartlarında kusursuz aydınlatma teknolojileri üretiyoruz."
+        "title": "Kalıptan Ürüne — Kendi Elimizle",
+        "text": "Metal kalıplarımızdan enjeksiyon süreçlerine kadar tüm aşamaları kendi bünyemizde üreterek kalitemizi güvence altına alıyoruz."
       },
       {
-        "title": "İnovasyon & Yerli Çip",
-        "text": "Sadece üreten değil, icat eden bir yapı. İTÜ iş birliği ile tasarladığımız yerli LED çiplerle aydınlatmada sınırları yeniden çiziyoruz."
+        "title": "AR-GE ve Otomasyon",
+        "text": "Kendi AR-GE merkezimiz ve TSE onaylı akredite laboratuvarımızda geliştirdiğimiz ürünleri, 2013'te kurulan otomasyon ekibimizle kusursuzlaştırıyoruz."
       },
       {
-        "title": "Dünyayı Aydınlatıyoruz",
-        "text": "Türkiye'nin 81 iline kök salmış gücümüzle yetinmedik; Asya, Avrupa ve Afrika pazarında ilk 10 ihracatçı arasına girerek ışığımızı küresel bir mirasa dönüştürdük."
+        "title": "LED Ampülde Pazar Lideri",
+        "text": "Göz yormayan 4000K LED teknolojimiz ve geniş ürün yelpazemizle, yerli üretim LED ampul kapasitesinde pazarın zirvesindeyiz."
+      },
+      {
+        "title": "Küresel Hedef",
+        "text": "İç pazardaki liderlik vizyonumuzu Asya, Avrupa ve Afrika pazarlarında ilk 10'a girme hedefiyle taçlandırarak gerçek bir dünya markası olma yolunda hızla ilerliyoruz."
       }
     ]
+  },
+  "certifications": {
+    "iso": "ISO Yönetim Sistemi Sertifikaları",
+    "tse": "TSE Ürün Onay Sertifikaları",
+    "kalite": "Entegre Kalite Politikası",
+    "yerli": "Yerli Malı Belgeleri",
+    "marka_tescil": "Türk Patent - Marka Tescil Belgeleri"
   },
   "products": {
     "title": "Ürün Galerisi",
@@ -50,6 +63,18 @@
       "diger": "Diğer"
     },
     "brands": "Markalarımız: K2 LED, K2 Plus, Vanti, Global"
+  },
+  "production": {
+    "title": "Üretim",
+    "text1": "2017 yılında sektörel faaliyetlerine başlayan firmamız hali hazırda, yıllık 60 milyon üretim kapasitesi ile Türkiye'nin en büyük Ampul üretim tesisidir. 22.000m² kapalı alanda 200 kişi ve tam otomasyon ile led ampul, flamanlı rustik ampul, sıvaüstü sıva altı led panel ve spotlar, led projektör, led etanj, led sokak armatürü, led wall washer, sarkıt avizeler, ledli mağaza spotları, dekoratif lineer armatürler üretmektedir.",
+    "text2": "Sektörde önemli bir pazara sahip olan Kendal Elektrik, dünyadaki teknolojik gelişmeleri yakından takip ederek Türkiye'de ilk uygulayan firmadır. Özellikle flamanlı rustik ampul üretimini Türkiye'de ilk kez gerçekleştirmiştir. K2 markası şirketimizin kendi markası olmakla beraber, Türkiye ve yurt dışında birçok firmaya kendilerine ait markaların üretimi de yapılmaktadır.",
+    "text3": "Her yıl sürekli ERP yazılımlarına yüksek yatırımlar yapan Kendal Elektrik, MES/MAS programı ile tüm üretimini online izlemekte ve canlı raporlamaktadır.",
+    "stat1_value": "60M+",
+    "stat1_label": "Yıllık Üretim Kapasitesi",
+    "stat2_value": "200",
+    "stat2_label": "Çalışan",
+    "stat3_value": "97/100",
+    "stat3_label": "RBA Uluslararası Denetim Puanı"
   },
   "why_us": {
     "title": "Neden Kendal?",
@@ -91,16 +116,15 @@
     "subtitle": "Asya, Avrupa ve Afrika'da ilk 10 ihracatçı arasında",
     "text": "Ürünlerimiz sadece Türkiye'de değil, dünyanın dört bir yanında milyonlarca mekanı aydınlatıyor. Özel B2B portalımız ile küresel bayi ağımızı tek merkezden yönetiyoruz."
   },
+  "references": {
+    "title": "Türkiye'nin Dört Bir Yanında",
+    "subtitle": "81 ilde sayısız projeyi Kendal kalitesiyle aydınlatmaya devam ediyoruz."
+  },
+  "international_references": {
+    "title": "Yurtdışındaki Referanslarımız"
+  },
   "projects": {
     "title": "Referans Projeler"
-  },
-  "contact": {
-    "title": "Bize Ulaşın",
-    "name": "Adınız",
-    "email": "E-posta Adresiniz",
-    "message": "Mesajınız",
-    "submit": "Gönder",
-    "address": "Kendal Elektrik A.Ş. Üretim Tesisleri"
   },
   "footer": {
     "rights": "Kendal Elektrik. Tüm hakları saklıdır.",
@@ -123,6 +147,48 @@
     "legal": {
       "kvkk": "KVKK Aydınlatma Metni",
       "privacy": "Gizlilik ve Çerez Politikası"
+    }
+  },
+  "career": {
+    "title": "Kariyer",
+    "subtitle": "Kendal Elektrik Ailesine Katılın",
+    "hr_policy": {
+      "vision_title": "İnsan Kaynakları Vizyonumuz",
+      "vision_text": "Motivasyonu yüksek, kurum imajını koruyan ve yükselten, yenilikçi çalışmaları ön plana çıkaran, hizmete önem veren ve işini bir bütünün parçası olarak gören nitelikli insan kaynağını oluşturmak.",
+      "mission_title": "İnsan Kaynakları Misyonumuz",
+      "mission_text": "Şirketimizin amaç ve stratejilerini gerçekleştirecek insan kaynağını planlamak, personeli eğitmek, personelin işlemlerini en iyi düzeyde gerçekleştirmek, konusunda uzmanlaşmış, kurum temsil yeteneği olan ve alanında yeni açılımlar ortaya koyabilen, özgüveni yüksek personele sahip olmak.",
+      "policy_title": "İnsan Kaynakları Politikası",
+      "policy_text": "Kendal Elektrik İnsan kaynakları temel politikası; ilgili mevzuatlar ve belirlenen politikalar çerçevesinde verimlilik ve karlılık ilkelerine bağlı olarak çalışmaktır. Kendal Elektrik; çağdaş ve yenilikçi kurumsal yapısını geliştirerek konusunda uzmanlaşmış ve alanında yeni açılımlar ortaya koyabilen çalışanlara sahip olmayı stratejik amaç olarak benimsemiştir.",
+      "training_title": "İnsan Kaynakları Eğitim Politikası",
+      "training_text": "Konusunda uzmanlaşmış ve alanında yeni açılımlar ortaya koyabilen çalışanlara sahip olabilmek için yetkinlik artırmak ve daha üst görevlere hazırlamak amacıyla verimlilik, etkinlik ve tutumluluk ilkelerine uygun olarak; hizmet içi eğitimler düzenlemek. Personel Performans Yönetim Sistemi ile; kuruluş hedefleriyle, çalışanların kişisel hedeflerinin bütünleştirilmesi, kişisel başarının desteklenmesi, kurumun başarısının artırılması, kurumun hedeflerine ulaşılmasında tüm çalışanların katkısının adil, sistemli ve ölçülebilir bir yöntemle değerlendirilmesi, çalışanların beklentilerinin belirlenerek kuruma bağlılıklarının artırılması ve motive edici bir çalışma ortamı oluşturularak iş gücü verimliliğinin artırılması amaçlanmaktadır.",
+      "health_safety_title": "Çalışan Sağlığı ve İş Güvenliği",
+      "health_safety_text": "Kendal Elektrik; çalışan sağlığı ve güvenliği, çalışma yaşamının ve kurum içi kültürün doğal bir parçası olarak benimsenmekte ve bu kültürün sürekli geliştirilmesi hedeflenmektedir. Çalışan sağlığı ve iş güvenliği uygulamaları, ilgili mevzuat, yükümlülükler ve standartlara uygun olarak yerine getirilmekte, aynı zamanda bu alandaki en iyi uygulamalar sürekli olarak takip edilmekte ve uyarlanmaktadır. Tüm faaliyetlerde, olası riskler önceden analiz edilmekte ve bu riskleri önlemeye yönelik proaktif yaklaşımlar ortaya konulmaktadır. Çalışan sağlığı ve güvenliği ile ilgili olarak tüm çalışanlara işe girişlerinde ve işin devamı süresince belirli dönemlerde yenileme eğitimleri verilmektedir."
+    },
+    "principles": [
+      "Görevin özelliğine uygun personelin niteliklerini belirlemek ve atama işlemlerini gerçekleştirmek",
+      "Personelin iş yapma yeteneğinin, başarı ve çabasının geliştirilmesi için ihtiyaç duyulan eğitimleri belirlemek ve eğitim alınmasını sağlamak",
+      "Personelin, etik davranış ilkeleri ile verimlilik ve kârlılık ilkelerine bağlı olarak çalışmasını ve kuruma bağlılığını teşvik etmek",
+      "Personeli ilgilendiren konularda personeli zamanında bilgilendirmek",
+      "İnsan Kaynakları politikasını sürekli gözden geçirmek, güncellemek ve geliştirme",
+      "Sosyal Sorumluluk Kavramı ve Projelerini tüm uygulamalarda benimsemek, katılımlarda bulunmak ve teşvik etmek",
+      "Doğaya Saygılı ve Doğa Dostu çalışan profilimizi daha da güçlendirmek"
+    ],
+    "human_rights": [
+      "Kendal Elektrik olarak, tüm faaliyetlerimizde insan haklarına saygı duymayı, evrensel değerleri korumayı ve bu konudaki farkındalığı artırmayı temel bir sorumluluk olarak kabul ediyoruz.",
+      "Çalışanlarımızla ve müşterilerimizle olan ilişkilerimizde, Kendal Elektrik Etik İlkeleri doğrultusunda ayrımcılık yapmamayı taahhüt ediyoruz.",
+      "Yönetimimiz, iş yerinde kötü muamele, ayrımcılık veya tacizi önleme ve bu tür durumları derhal İnsan Kaynakları'na bildirme sorumluluğuna sahiptir.",
+      "Şikayetlerin misilleme korkusu olmadan iletilebileceği, açık ve güvenilir bir iletişim ortamı sağlamak temel önceliğimizdir.",
+      "Çocuk işçi çalıştırılması başta olmak üzere, ulusal ve uluslararası iş kanunlarını ihlal eden hiçbir kurum veya kuruluşla iş ilişkisi kurmamayı prensip ediniyoruz.",
+      "T.C. Aile ve Sosyal Hizmetler Bakanlığı ile Dünya Ekonomik Forumu iş birliğinde yürütülen \"İşte Eşitlik Bildirgesi\"ne gönüllü katılımımızla toplumsal cinsiyet eşitliğini destekliyor, işe alım ve kariyer gelişiminde liyakat esasına dayanarak eşit fırsatlar sunuyoruz. Ayrıca, çalışan annelerin iş hayatına dönüşünü aktif olarak destekliyoruz.",
+      "4857 Sayılı İş Kanunu'na uygun istihdam politikamız, sendikalaşma ve toplu sözleşme haklarına duyduğumuz saygı, iş sağlığı ve güvenliği eğitimlerimiz ile zorla çalıştırılmaya karşı kesin duruşumuz, hem kendi bünyemizde hem de iş ortaklarımız nezdinde taviz vermediğimiz standartlardır."
+    ],
+    "links": {
+      "hr_policy_title": "İnsan Kaynakları Politikamız",
+      "hr_policy_desc": "Kurumumuzun vizyonu, misyonu ve insan kaynakları stratejileri.",
+      "principles_title": "Temel İlkelerimiz",
+      "principles_desc": "Kendal Elektrik ailesi olarak benimsediğimiz temel insan kaynakları prensipleri.",
+      "human_rights_title": "İnsan Hakları ve Çalışan Hakları Politikası",
+      "human_rights_desc": "Evrensel değerlere, eşitliğe ve işçi haklarına verdiğimiz önem."
     }
   }
 }

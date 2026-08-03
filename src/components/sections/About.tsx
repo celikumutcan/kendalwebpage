@@ -50,13 +50,15 @@ export const About = () => {
     <section id="about" ref={containerRef} className="relative w-full bg-black text-white">
       <div ref={pinWrapperRef} className="h-screen w-full flex items-center justify-center overflow-hidden relative">
         {/* Intro text fading out early */}
-        <div className="absolute top-24 left-0 w-full text-center z-10 px-6 opacity-40">
-          <h2 className="text-2xl md:text-4xl font-bold mb-2 text-white/90">
-            {t.about.title}
-          </h2>
-          <p className="max-w-xl mx-auto text-sm md:text-base text-gray-400">
-            {t.about.text1}
-          </p>
+        <div className="absolute top-24 left-1/2 -translate-x-1/2 w-full max-w-3xl text-center z-10 px-6">
+          <div className="bg-black/60 backdrop-blur-md border border-white/10 rounded-2xl p-6">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 text-white">
+              {t.about.title}
+            </h2>
+            <p className="text-sm md:text-base text-white/90">
+              {t.about.text1}
+            </p>
+          </div>
         </div>
 
         {beats.map((beat, i) => {
@@ -71,12 +73,14 @@ export const About = () => {
             >
               {/* Text Side */}
               <div className="flex-1 text-center md:text-left relative z-10 px-4 md:px-0">
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 leading-tight drop-shadow-lg">
-                  {beat.title}
-                </h3>
-                <p className="text-lg md:text-2xl text-gray-300 font-light leading-relaxed">
-                  {beat.text}
-                </p>
+                <div className="bg-black/60 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl">
+                  <h3 className="text-3xl md:text-5xl lg:text-5xl font-extrabold mb-6 text-white leading-tight drop-shadow-md">
+                    {beat.title}
+                  </h3>
+                  <p className="text-lg md:text-2xl text-white/90 font-light leading-relaxed drop-shadow-sm">
+                    {beat.text}
+                  </p>
+                </div>
               </div>
 
               {/* Premium Visual Side */}

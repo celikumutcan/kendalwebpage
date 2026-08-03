@@ -1,0 +1,77 @@
+"use client";
+
+import React, { useRef } from "react";
+import Image from "next/image";
+import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { gsap } from "@/lib/gsapConfig";
+import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+
+export const Certifications = () => {
+  const { t } = useLanguage();
+  const containerRef = useRef<HTMLElement>(null);
+
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const items = gsap.utils.toArray(".cert-item");
+      
+      gsap.fromTo(
+        items,
+        { opacity: 0, scale: 0.9, y: 20 },
+        {
+          opacity: 1,
+          scale: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top 80%",
+          },
+        }
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  const certs = [
+    { label: (t as any).certifications?.iso, icon: "/images/certifications/iso.png" },
+    { label: (t as any).certifications?.tse, icon: "/images/certifications/tse.png" },
+    { label: (t as any).certifications?.kalite, icon: "/images/certifications/kalite.png" },
+    { label: (t as any).certifications?.yerli, icon: "/images/certifications/yerli-uretim.png" },
+    { label: (t as any).certifications?.marka_tescil, icon: "/images/certifications/marka-tescil.png" },
+  ];
+
+  return (
+    <section
+      id="certifications"
+      ref={containerRef}
+      className="w-full bg-black text-white py-24 px-6 border-t border-white/5"
+    >
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {certs.map((cert, idx) => (
+            <div
+              key={idx}
+              className="cert-item flex flex-col items-center justify-center p-6 rounded-2xl bg-white/[0.02] border border-white/10 transition-all duration-300 hover:bg-white/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group"
+            >
+              <div className="relative w-24 h-24 mb-4 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-all duration-300">
+                <Image
+                  src={cert.icon}
+                  alt={cert.label || "Certification"}
+                  fill
+                  sizes="96px"
+                  className="object-contain drop-shadow-md"
+                />
+              </div>
+              <h3 className="text-center text-sm md:text-base font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
+                {cert.label}
+              </h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};

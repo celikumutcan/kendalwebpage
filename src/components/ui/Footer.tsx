@@ -66,6 +66,7 @@ export const Footer = () => {
             <li><a href="/#about" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.about}</a></li>
             <li><a href="/#products" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.products}</a></li>
             <li><a href="/#why-us" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.production}</a></li>
+            <li><a href="/kariyer" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).nav?.career || "Kariyer"}</a></li>
             <li><a href="/#contact" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.contact}</a></li>
           </ul>
         </div>
