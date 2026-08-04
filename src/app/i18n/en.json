@@ -88,7 +88,8 @@
     "item4_title": "81 Provinces",
     "item4_desc": "Strong dealer network reaching every point in Turkey.",
     "item5_title": "Certified Quality",
-    "item5_desc": "Production fully compliant with international quality and export standards."
+    "item5_desc": "Production fully compliant with international quality and export standards.",
+    "subtitle": "The most important factors supporting our leadership and quality in the sector."
   },
   "catalog": {
     "title": "Download Our 2026 Product Catalog",
@@ -148,7 +149,10 @@
     "legal": {
       "kvkk": "KVKK Illumination Text",
       "privacy": "Privacy and Cookie Policy"
-    }
+    },
+    "phone_label": "Contact Line",
+    "sales_phone_label": "Sales Support Line",
+    "support_phone_label": "Technical Service Line"
   },
   "career": {
     "title": "Careers",

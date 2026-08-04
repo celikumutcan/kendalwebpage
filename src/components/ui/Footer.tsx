@@ -41,15 +41,15 @@ export const Footer = () => {
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.contact_title}</h4>
           <ul className="space-y-3 text-sm">
             <li>
-              <span className="opacity-60 block text-xs mb-1">İletişim Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.phone_label || "İletişim Hattı"}</span>
               {(t as any).footer?.phone}
             </li>
             <li>
-              <span className="opacity-60 block text-xs mb-1">Satış Destek Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.sales_phone_label || "Satış Destek Hattı"}</span>
               {(t as any).footer?.sales_phone}
             </li>
             <li>
-              <span className="opacity-60 block text-xs mb-1">Teknik Servis Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.support_phone_label || "Teknik Servis Hattı"}</span>
               {(t as any).footer?.support_phone}
             </li>
             <li className="pt-2">

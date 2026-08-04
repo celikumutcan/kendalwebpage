@@ -87,7 +87,8 @@
     "item4_title": "81 İlde Ağ",
     "item4_desc": "Türkiye'nin her noktasına ulaşan güçlü bayi ağı.",
     "item5_title": "Sertifikalı Kalite",
-    "item5_desc": "Uluslararası kalite ve ihracat standartlarına tam uyumlu üretim."
+    "item5_desc": "Uluslararası kalite ve ihracat standartlarına tam uyumlu üretim.",
+    "subtitle": "Sektördeki liderliğimizi ve kalitemizi destekleyen en önemli unsurlar."
   },
   "catalog": {
     "title": "2026 Ürün Kataloğumuzu İndirin",
@@ -147,7 +148,10 @@
     "legal": {
       "kvkk": "KVKK Aydınlatma Metni",
       "privacy": "Gizlilik ve Çerez Politikası"
-    }
+    },
+    "phone_label": "İletişim Hattı",
+    "sales_phone_label": "Satış Destek Hattı",
+    "support_phone_label": "Teknik Servis Hattı"
   },
   "career": {
     "title": "Kariyer",

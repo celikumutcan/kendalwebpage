@@ -94,7 +94,7 @@ export const WhyUs = () => {
             {t.why_us.title}
           </h3>
           <p className="text-lg text-[var(--global-text)] max-w-2xl font-medium">
-            Sektördeki liderliğimizi ve kalitemizi destekleyen en önemli unsurlar.
+            {(t as any).why_us?.subtitle || "Sektördeki liderliğimizi ve kalitemizi destekleyen en önemli unsurlar."}
           </p>
         </div>
         

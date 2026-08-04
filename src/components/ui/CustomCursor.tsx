@@ -21,9 +21,9 @@ export const CustomCursor = () => {
         isVisible = true;
       }
 
-      // 150px is half of the 300px width/height to perfectly center it
+      // 250px is half of the 500px width/height to perfectly center it
       // translate3d uses GPU acceleration and doesn't trigger layout reflows
-      cursorRef.current.style.transform = `translate3d(${e.clientX - 150}px, ${e.clientY - 150}px, 0)`;
+      cursorRef.current.style.transform = `translate3d(${e.clientX - 250}px, ${e.clientY - 250}px, 0)`;
     };
 
     const handleMouseLeave = () => {
@@ -44,9 +44,9 @@ export const CustomCursor = () => {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-[300px] h-[300px] rounded-full pointer-events-none z-[90] mix-blend-screen will-change-transform transition-opacity duration-500 opacity-0 hidden md:block"
+      className="fixed top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none z-[90] mix-blend-screen will-change-transform transition-opacity duration-500 opacity-0 hidden md:block"
       style={{
-        background: "radial-gradient(circle at center, rgba(255,255,255,0.06) 0%, rgba(227,0,15,0.02) 40%, transparent 70%)",
+        background: "radial-gradient(circle at center, rgba(255,255,255,0.20) 0%, rgba(227,0,15,0.08) 40%, transparent 70%)",
       }}
     />
   );

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Loader } from "@/components/loader/Loader";
 import { Hero } from "@/components/sections/Hero";
+import { AboutUs } from "@/components/sections/AboutUs";
 
 import { ProductGallery } from "@/components/sections/ProductGallery";
 import { WhyUs } from "@/components/sections/WhyUs";
@@ -29,8 +30,8 @@ export default function Home() {
       <div className={`transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <NewsTicker />
         <Hero />
-
         <BrandsStrip />
+        <AboutUs />
 
         <ProductGallery />
         <WhyUs />

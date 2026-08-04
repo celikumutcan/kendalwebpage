@@ -10,7 +10,7 @@ export const PrivacyContent = () => {
     <div className="min-h-screen bg-black text-white pt-32 pb-24 px-6 relative z-10">
       <div className="max-w-5xl mx-auto bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-md">
         {language === "tr" ? (
-          <div className="prose prose-invert prose-red max-w-none">
+          <div className="prose prose-invert prose-red max-w-none text-justify">
             <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center text-[var(--brand-red)]">Gizlilik ve Çerez Politikası</h1>
             <p className="text-gray-300 leading-relaxed mb-6">
               Kendal Elektrik Aydınlatma Elektronik İnş. San. Dış. Tic. A.Ş.’ de (“Şirket”, “biz” ya da “bizim”) müşterilerimizin gizlilik haklarının sürdürülmesine önem veriyor ve saygı gösteriyoruz. Bu doğrultuda işbu Gizlilik Politikasını oluşturduk. www.kendalelektrik.com.tr Sitesini (“Site”) ziyaret ettiğinizde edinebileceğiniz bilgilerden tarafınızı haberdar etmek ve neden müşteri bilgilerine ihtiyaç duyduğumuz, bilgileri hangi amaçlarla kullandığımız, hangi koşullar altında bilgileri ifşa etmek zorunda kalacağımız ve söz konusu bilgilerin kullanımı konusunda tarafımızı nasıl sınırlandırabileceğiniz hususlarında tarafınızı aydınlatmak için söz konusu gizlilik politika beyanını oluşturmuş bulunmaktayız.
@@ -108,7 +108,7 @@ export const PrivacyContent = () => {
             </p>
           </div>
         ) : (
-          <div className="prose prose-invert prose-red max-w-none">
+          <div className="prose prose-invert prose-red max-w-none text-justify">
             <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center text-[var(--brand-red)]">Privacy and Cookie Policy</h1>
             <p className="text-gray-300 leading-relaxed mb-6">
               We, Kendal Elektrik Aydınlatma Elektronik İnş. San. Dış. Tic. A.Ş. (“Company”, “we” or “our”), value and respect the maintenance of our customers' privacy rights. Accordingly, we have created this Privacy Policy. We have created this privacy policy statement to inform you about the information you may obtain when you visit the www.kendalelektrik.com.tr Site (“Site”) and to enlighten you about why we need customer information, for what purposes we use the information, under what conditions we may have to disclose the information, and how you can restrict us regarding the use of such information.
