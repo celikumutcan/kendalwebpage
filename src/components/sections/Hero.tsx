@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
@@ -8,18 +8,23 @@ import dynamic from "next/dynamic";
 
 const LightCore = dynamic(
   () => import("@/components/engine/LightCore").then((mod) => mod.LightCore),
-  { ssr: false }
+  { 
+    ssr: false,
+    loading: () => (
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.03)_0%,_transparent_50%)] animate-pulse pointer-events-none" />
+    )
+  }
 );
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
-  const [scrollProgress, setScrollProgress] = useState<number>(0);
+  // Store scroll progress in a ref instead of React state to avoid re-rendering on every scroll frame
+  const scrollProgressRef = useRef<number>(0);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Throttled scroll progress tracking
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: "top top",
@@ -27,12 +32,10 @@ export const Hero = () => {
         scrub: true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
-          const progress = Math.round(self.progress * 100) / 100;
-          setScrollProgress(progress);
+          scrollProgressRef.current = Math.round(self.progress * 100) / 100;
         },
       });
 
-      // Reduced scrub sensitivity for better performance
       gsap.fromTo(
         contentRef.current,
         { opacity: 0, y: 30 },
@@ -59,7 +62,7 @@ export const Hero = () => {
   return (
     <section
       ref={containerRef}
-      className="relative h-[150vh] w-full bg-transparent"
+      className="hero-cv-exclude relative h-[150vh] w-full bg-transparent"
     >
       <div className="absolute top-0 left-0 w-full h-[100vh] pointer-events-none opacity-30 overflow-hidden z-0">
         <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(227,0,15,0.3)_0%,transparent_60%)]" />
@@ -67,7 +70,7 @@ export const Hero = () => {
       </div>
 
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
-        <LightCore scrollProgress={scrollProgress} />
+        <LightCore scrollProgressRef={scrollProgressRef} />
 
         <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.4)_0%,_transparent_70%)] pointer-events-none" />
 

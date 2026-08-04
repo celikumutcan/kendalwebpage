@@ -4,6 +4,7 @@ import React, { useRef, useMemo } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
+import { useInView } from "@/lib/useInView";
 
 // Custom shader material for the pulsing light core and aperture effect
 const coreShader = {
@@ -52,7 +53,7 @@ const coreShader = {
 };
 
 // The inner component that has access to R3F hooks
-const LightCoreScene = ({ scrollProgress }: { scrollProgress: number }) => {
+const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
   const materialRef = useRef<THREE.ShaderMaterial>(null);
   const { getProgress } = useLightTemperature();
   const colorCool = useMemo(() => new THREE.Color("#d8e4ff"), []);
@@ -61,15 +62,14 @@ const LightCoreScene = ({ scrollProgress }: { scrollProgress: number }) => {
 
   useFrame((state) => {
     if (materialRef.current) {
+      const currentProgress = scrollProgressRef?.current ?? 0;
       materialRef.current.uniforms.uTime.value = state.clock.elapsedTime;
-      // Smoothly interpolate scroll progress for the shader
       materialRef.current.uniforms.uScroll.value = THREE.MathUtils.lerp(
         materialRef.current.uniforms.uScroll.value,
-        scrollProgress,
+        currentProgress,
         0.1
       );
-      
-      // Interpolate color based on global temperature progress
+
       targetColor.lerpColors(colorCool, colorWarm, getProgress());
       materialRef.current.uniforms.uColor.value.lerp(targetColor, 0.1);
     }
@@ -92,15 +92,19 @@ const LightCoreScene = ({ scrollProgress }: { scrollProgress: number }) => {
   );
 };
 
-// The main LightCore component, wrapping the canvas
-export const LightCore = ({ scrollProgress = 0 }: { scrollProgress?: number }) => {
+// The main LightCore component, wrapping the canvas.
+// Pauses the WebGL render loop entirely when scrolled off-screen.
+export const LightCore = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
+  const [containerRef, isInView] = useInView<HTMLDivElement>();
+
   return (
-    <div className="absolute inset-0 pointer-events-none z-0">
+    <div ref={containerRef} className="absolute inset-0 pointer-events-none z-0">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75 }}
         gl={{ alpha: true, antialias: true }}
+        frameloop={isInView ? "always" : "never"}
       >
-        <LightCoreScene scrollProgress={scrollProgress} />
+        <LightCoreScene scrollProgressRef={scrollProgressRef} />
       </Canvas>
     </div>
   );

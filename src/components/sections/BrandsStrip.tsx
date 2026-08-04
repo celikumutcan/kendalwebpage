@@ -47,15 +47,14 @@ export const BrandsStrip = () => {
             key={idx}
             className="flex-shrink-0 flex items-center justify-center mx-6 opacity-80 hover:opacity-100 transition-opacity duration-300"
           >
-            <div className="relative w-36 h-14 md:w-44 md:h-18 bg-gray-50 rounded-xl p-2 flex items-center justify-center border border-gray-200 hover:border-gray-300 transition-colors shadow-sm hover:shadow-md">
+            <div className="relative w-48 h-24 md:w-64 md:h-32 bg-gray-50 rounded-2xl flex items-center justify-center border border-gray-200 hover:border-gray-300 transition-colors shadow-sm hover:shadow-md">
               <Image
                 src={brand.logo}
                 alt={brand.name}
                 fill
-                sizes="(max-width: 768px) 144px, 176px"
-                className="object-contain p-2"
+                sizes="(max-width: 768px) 192px, 256px"
+                className="object-contain p-4 md:p-6"
                 loading="lazy"
-                quality={70}
               />
             </div>
           </div>

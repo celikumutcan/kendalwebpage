@@ -1,8 +1,14 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { createContext, useContext, useEffect, useRef } from "react";
 import Lenis from "lenis";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
+
+// Exposes the active Lenis instance so other components (e.g. a "scroll to top"
+// button) can drive scroll through Lenis instead of the native window.scrollTo,
+// which fights with Lenis's own scroll loop and appears to do nothing.
+const LenisContext = createContext<Lenis | null>(null);
+export const useLenis = () => useContext(LenisContext);
 
 export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }) => {
   const lenisRef = useRef<Lenis | null>(null);
@@ -50,5 +56,5 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
     };
   }, []);
 
-  return <>{children}</>;
+  return <LenisContext.Provider value={lenisRef.current}>{children}</LenisContext.Provider>;
 };

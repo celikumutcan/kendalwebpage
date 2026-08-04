@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useLenis } from "@/components/engine/SmoothScrollProvider";
 
 export const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const lenis = useLenis();
 
   // Show button when page is scrolled down
   const toggleVisibility = () => {
@@ -14,11 +16,14 @@ export const ScrollToTop = () => {
     }
   };
 
+  // Scroll through Lenis (which owns the actual scroll loop) instead of the
+  // native window.scrollTo, which conflicts with Lenis and does nothing.
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    if (lenis) {
+      lenis.scrollTo(0, { duration: 1.5, force: true });
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   useEffect(() => {
@@ -32,9 +37,8 @@ export const ScrollToTop = () => {
     <button
       onClick={scrollToTop}
       aria-label="Yukarı Çık"
-      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[var(--brand-red)] text-white shadow-[0_0_15px_rgba(227,0,15,0.5)] transition-all duration-300 hover:bg-[var(--brand-red-deep)] hover:scale-110 focus:outline-none ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-      }`}
+      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[var(--brand-red)] text-white shadow-[0_0_15px_rgba(227,0,15,0.5)] transition-all duration-300 hover:bg-[var(--brand-red-deep)] hover:scale-110 focus:outline-none ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
+        }`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

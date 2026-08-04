@@ -24,6 +24,7 @@ body {
   color: var(--global-text);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 :root {
   --accent-cool: #d8e4ff;
   --accent-warm: #ffb347;
@@ -31,4 +32,21 @@ body {
   --brand-red-deep: #B3000C;
   --global-bg: #000000;
   --global-text: #ffffff;
+}
+
+/*
+  Skip layout/paint/style work for sections that are far outside the viewport.
+  This is the single biggest lever for scroll jank on a long single-page site
+  with this many heavy blur/blend decorative layers mounted at once.
+  Hero is excluded on purpose (see .hero-cv-exclude), because it renders a
+  continuous WebGL canvas and sits at the very top of the page anyway.
+*/
+section:not(.hero-cv-exclude) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
+
+/* GlobalPresence section is taller (h-[150vh]) than the generic estimate above */
+#global {
+  contain-intrinsic-size: auto 1500px;
 }

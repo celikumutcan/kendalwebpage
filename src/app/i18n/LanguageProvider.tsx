@@ -19,6 +19,18 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>("tr");
 
+  useEffect(() => {
+    const savedLang = localStorage.getItem("kendal-language") as Language;
+    if (savedLang === "tr" || savedLang === "en") {
+      setLanguage(savedLang);
+    }
+  }, []);
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem("kendal-language", lang);
+  };
+
   const dictionaries: Record<Language, Dictionary> = {
     tr,
     en,
@@ -32,7 +44,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }, [language]);
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
       {children}
     </LanguageContext.Provider>
   );

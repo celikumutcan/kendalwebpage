@@ -6,6 +6,7 @@ import { useTexture, Line } from "@react-three/drei";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
 import { getAssetPath } from "@/utils/basePath";
+import { useInView } from "@/lib/useInView";
 
 const latLongToVector3 = (lat: number, lon: number, radius: number) => {
   const phi = (90 - lat) * (Math.PI / 180);
@@ -202,13 +203,17 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
   );
 };
 
+// Pauses the WebGL render loop entirely when scrolled off-screen.
 export const Globe = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
+  const [containerRef, isInView] = useInView<HTMLDivElement>();
+
   return (
-    <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
+    <div ref={containerRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
       <Canvas
         camera={{ position: [0, 0, 0.1], fov: 45 }}
         performance={{ min: 0.5 }}
         dpr={[1, 1.5]}
+        frameloop={isInView ? "always" : "never"}
       >
         <ambientLight intensity={0.4} />
         <directionalLight position={[5, 3, 5]} intensity={3.5} color="#ffffff" />

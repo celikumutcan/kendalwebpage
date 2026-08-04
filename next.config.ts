@@ -17,6 +17,9 @@ const cspHeader = `
 `;
 
 const nextConfig: NextConfig = {
+  images: {
+    qualities: [25, 50, 70, 75, 80, 100],
+  },
   ...(isStatic ? {} : {
     async headers() {
       return [

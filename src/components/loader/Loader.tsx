@@ -136,6 +136,7 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
             src={getAssetPath("/kendal-icon.png")}
             alt="Kendal Elektrik Logo"
             fill
+            sizes="(max-width: 768px) 112px, 160px"
             className="object-contain"
             priority
           />
