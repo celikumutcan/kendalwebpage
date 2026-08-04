@@ -1,0 +1,90 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+
+export function ImageSlider({ images }: { images: string[] }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  if (!images || images.length === 0) return null;
+
+  // Auto slide functionality
+  useEffect(() => {
+    if (isHovered || images.length <= 1) return;
+    
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [isHovered, images.length]);
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const goToPrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  };
+
+  return (
+    <div 
+      className="relative w-full aspect-video md:aspect-[21/9] bg-black/50 rounded-2xl overflow-hidden mb-12 border border-white/10 group"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {images.map((src, idx) => (
+        <div 
+          key={idx}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+          }`}
+        >
+          <Image 
+            src={src}
+            alt={`Görsel ${idx + 1}`}
+            fill
+            className="object-cover"
+            priority={idx === 0}
+          />
+        </div>
+      ))}
+
+      {images.length > 1 && (
+        <>
+          {/* Left Arrow */}
+          <button 
+            onClick={goToPrev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110"
+            aria-label="Önceki Görsel"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          {/* Right Arrow */}
+          <button 
+            onClick={goToNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-0 group-hover:opacity-100 hover:scale-110"
+            aria-label="Sonraki Görsel"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          {/* Indicators */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex gap-2">
+            {images.map((_, idx) => (
+              <button 
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                  idx === currentIndex ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/70'
+                }`}
+                aria-label={`Görsel ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}

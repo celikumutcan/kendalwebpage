@@ -14,7 +14,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "products", "why-us", "production", "global", "projects"];
+      const sections = ["about", "production", "retail", "global", "projects", "company-video"];
       let current = "";
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -35,13 +35,13 @@ export const Navbar = () => {
 
   const navLinks = [
     { id: "about", href: "/#about", label: t.nav.about },
-    { id: "products", href: "/#products", label: t.nav.products },
-    { id: "why-us", href: "/#why-us", label: t.nav.why_us },
     { id: "production", href: "/#production", label: (t as any).nav?.production || "Üretim" },
+    { id: "retail", href: "/#retail", label: (t as any).nav?.retail || "Zincir Marketler" },
     { id: "global", href: "/#global", label: t.nav.global },
     { id: "projects", href: "/#projects", label: t.nav.projects || "Referanslar" },
+    { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
+    { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
     { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
-    { id: "sanalpos", href: "https://sanalpos.kendalelektrik.com.tr/", label: (t as any).nav?.sanalpos || "Sanal Pos", external: true },
   ];
 
   return (
@@ -52,17 +52,16 @@ export const Navbar = () => {
           KENDAL ELEKTRİK
         </div>
       </Link>
-      
+
       <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center">
         {navLinks.map((link) => (
-          <Link 
+          <Link
             key={link.id}
-            href={link.href} 
+            href={link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
-            className={`relative pb-1 hover:opacity-100 transition-opacity ${
-              activeSection === link.id ? "opacity-100 font-medium" : "opacity-60"
-            }`}
+            className={`relative pb-1 hover:opacity-100 transition-opacity ${activeSection === link.id ? "opacity-100 font-medium" : "opacity-60"
+              }`}
           >
             {link.label}
             {activeSection === link.id && !link.external && (
@@ -71,16 +70,24 @@ export const Navbar = () => {
           </Link>
         ))}
       </div>
-      
-      <div className="flex items-center gap-4 ml-auto lg:ml-0">
+
+      <div className="flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0">
         <LanguageSwitcher />
-        <a 
-          href="https://b2b.kendalelektrik.com.tr:38282/" 
-          target="_blank" 
+        <a
+          href="https://sanalpos.kendalelektrik.com.tr/"
+          target="_blank"
           rel="noopener noreferrer"
-          className="text-xs sm:text-sm font-medium border border-white/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 hover:bg-[var(--brand-red)] hover:border-[var(--brand-red)] hover:text-white transition-all duration-300"
+          className="hidden sm:inline-flex text-xs sm:text-sm font-medium border border-white/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 hover:bg-[var(--brand-red)] hover:border-[var(--brand-red)] hover:text-white transition-all duration-300 whitespace-nowrap"
         >
-          {(t as any).nav?.dealer || "Online Bayi Girişi"}
+          {(t as any).nav?.sanalpos || "Sanal Pos"}
+        </a>
+        <a
+          href="https://b2b.kendalelektrik.com.tr:38282/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex text-xs sm:text-sm font-medium border border-white/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 hover:bg-[var(--brand-red)] hover:border-[var(--brand-red)] hover:text-white transition-all duration-300 whitespace-nowrap"
+        >
+          {(t as any).nav?.dealer || "B2B Girişi"}
         </a>
       </div>
     </nav>

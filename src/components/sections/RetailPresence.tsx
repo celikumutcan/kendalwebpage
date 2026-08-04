@@ -8,14 +8,14 @@ import Image from "next/image";
 import { getAssetPath } from "@/utils/basePath";
 
 const RETAILERS = [
+  { name: "BİM", logo: getAssetPath("/images/retail/bim-logo.webp") },
+  { name: "A101", logo: getAssetPath("/images/retail/a101-logo.png") },
+  { name: "Koçtaş", logo: getAssetPath("/images/retail/koctas-logo.png") },
+  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: getAssetPath("/images/retail/tarim-logo.png") },
   { name: "Bizim Toptan", logo: getAssetPath("/images/retail/bizim-logo.png") },
   { name: "Seç Market", logo: getAssetPath("/images/retail/sec-logo.png") },
   { name: "Avansas", logo: getAssetPath("/images/retail/avansas-logo.png") },
   { name: "ANPA Gross", logo: getAssetPath("/images/retail/anpa-logo.png") },
-  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: getAssetPath("/images/retail/tarim-logo.png") },
-  { name: "Koçtaş", logo: getAssetPath("/images/retail/koctas-logo.png") },
-  { name: "BİM", logo: getAssetPath("/images/retail/bim-logo.webp") },
-  { name: "A101", logo: getAssetPath("/images/retail/a101-logo.png") },
 ];
 
 export const RetailPresence = () => {
@@ -46,7 +46,7 @@ export const RetailPresence = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full relative py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
+    <section id="retail" ref={containerRef} className="w-full relative py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
       {/* Vibrant Spotlight Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
         {/* Left top warm glow */}

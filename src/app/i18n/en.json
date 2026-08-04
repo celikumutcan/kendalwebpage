@@ -8,7 +8,7 @@
     "projects": "Projects",
     "career": "Careers",
     "sanalpos": "Virtual POS",
-    "dealer": "Dealer Login"
+    "dealer": "B2B Login"
   },
   "hero": {
     "badge": "Global Manufacturer Since 1998",
@@ -67,12 +67,12 @@
   },
   "production": {
     "title": "Production",
-    "text1": "Having started its sector activities in 2017, our company is currently Turkey's largest bulb manufacturing facility with an annual production capacity of 60 million units. In our 22,000m² closed area, with 200 employees and full automation, we produce LED bulbs, filament rustic bulbs, surface and flush-mounted LED panels and spots, LED projectors, LED waterproof fixtures, LED street luminaires, LED wall washers, pendant chandeliers, LED store spots, and decorative linear fixtures.",
+    "text1": "Having started its sector activities in 1997, our company is currently Turkey's largest bulb manufacturing facility with an annual production capacity of 60 million units. In our 22,000m² closed area, with 200 employees and full automation, we produce LED bulbs, filament rustic bulbs, surface and flush-mounted LED panels and spots, LED projectors, LED waterproof fixtures, LED street luminaires, LED wall washers, pendant chandeliers, LED store spots, and decorative linear fixtures.",
     "text2": "Commanding a significant market share, Kendal Elektrik closely follows global technological developments and is the first to implement them in Turkey. Notably, we were the first to manufacture filament rustic bulbs in Turkey. While K2 is our company's own brand, we also manufacture proprietary brands for numerous companies in Turkey and abroad.",
     "text3": "Continuously making high investments in ERP software every year, Kendal Elektrik monitors all its production online and reports live using the MES/MAS program.",
     "stat1_value": "60M+",
     "stat1_label": "Annual Production Capacity",
-    "stat2_value": "200",
+    "stat2_value": "350",
     "stat2_label": "Employees",
     "stat3_value": "97/100",
     "stat3_label": "RBA International Audit Score"

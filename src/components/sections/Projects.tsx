@@ -8,25 +8,21 @@ import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { getAssetPath } from "@/utils/basePath";
 
 const REFERENCE_DATA = [
-  { id: "ref-20", name: "Fethiye & Hasan Gümüşdağ Camii", location: "Küçükçekmece – İstanbul" },
-  { id: "ref-30", name: "Levi's", location: "Beyoğlu – İstanbul" },
-  { id: "ref-24", name: "Hard Rock Cafe", location: "Beyoğlu – İstanbul" },
   { id: "ref-43", name: "Volkswagen", location: "Çorlu – Tekirdağ" },
   { id: "ref-16", name: "Ducati", location: "Ataşehir – İstanbul" },
+  { id: "ref-24", name: "Hard Rock Cafe", location: "Beyoğlu – İstanbul" },
+  { id: "ref-30", name: "Levi's", location: "Beyoğlu – İstanbul" },
   { id: "ref-42", name: "Vitra", location: "Nişantaşı – İstanbul" },
-  { id: "ref-15", name: "City's Mahalle", location: "İstanbul" },
-  { id: "ref-33", name: "MEF Üniversitesi", location: "Maslak – İstanbul" },
+  { id: "ref-41", name: "Triumph", location: "Ataşehir – İstanbul" },
   { id: "ref-12", name: "Çanakkale Seramik", location: "Çanakkale" },
   { id: "ref-32", name: "Mavi Jeans Akbatı AVM", location: "İstanbul" },
-  { id: "ref-28", name: "Koton Meydan AVM", location: "İstanbul" },
-  { id: "ref-11", name: "Camper", location: "Beyoğlu – İstanbul" },
-  { id: "ref-41", name: "Triumph", location: "Ataşehir – İstanbul" },
   { id: "ref-21", name: "FLO", location: "Sultanbeyli – İstanbul" },
   { id: "ref-36", name: "Penti", location: "Kadıköy – İstanbul" },
+  { id: "ref-28", name: "Koton Meydan AVM", location: "İstanbul" },
   { id: "ref-22", name: "Flormar Akbatı AVM", location: "İstanbul" },
-  { id: "ref-18", name: "E-Bebek Kadir Has AVM", location: "İstanbul" },
-  { id: "ref-19", name: "Elle Capacity AVM", location: "İstanbul" },
-  { id: "ref-27", name: "Koleksiyon Mobilya", location: "Ankara" },
+  { id: "ref-15", name: "City's Mahalle", location: "İstanbul" },
+  { id: "ref-33", name: "MEF Üniversitesi", location: "Maslak – İstanbul" },
+  { id: "ref-20", name: "Fethiye & Hasan Gümüşdağ Camii", location: "Küçükçekmece – İstanbul" },
   { id: "ref-06", name: "Borusan Oto", location: "Adana" },
   { id: "ref-07", name: "Borusan Oto", location: "Ataşehir – İstanbul" },
   { id: "ref-08", name: "Borusan Oto", location: "Avcılar – İstanbul" },
@@ -51,6 +47,10 @@ const REFERENCE_DATA = [
   { id: "ref-40", name: "Süpermarket", location: "Gebze – Kocaeli" },
   { id: "ref-01", name: "Açelya Trend", location: "Çerkezköy – Tekirdağ" },
   { id: "ref-02", name: "Aksesuar Group", location: "Florya – İstanbul" },
+  { id: "ref-11", name: "Camper", location: "Beyoğlu – İstanbul" },
+  { id: "ref-27", name: "Koleksiyon Mobilya", location: "Ankara" },
+  { id: "ref-18", name: "E-Bebek Kadir Has AVM", location: "İstanbul" },
+  { id: "ref-19", name: "Elle Capacity AVM", location: "İstanbul" },
 ];
 
 export const Projects = () => {
@@ -59,17 +59,15 @@ export const Projects = () => {
   const trackRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
 
+  const scrollTrack = (direction: 'left' | 'right') => {
+    if (trackRef.current) {
+      const scrollAmount = window.innerWidth > 768 ? window.innerWidth / 3 : window.innerWidth * 0.8;
+      trackRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Slower marquee for less CPU usage
-      if (trackRef.current) {
-        gsap.to(trackRef.current, {
-          xPercent: -50,
-          repeat: -1,
-          duration: 300, // 200 → 300 (slower)
-          ease: "linear",
-        });
-      }
 
       // Title reveal
       gsap.from(".ref-title", {
@@ -135,16 +133,43 @@ export const Projects = () => {
         </p>
       </div>
 
-      <div className="relative">
+      <div className="relative group/carousel">
         <div ref={overlayRef} className="absolute inset-0 bg-[var(--global-bg)] z-10 pointer-events-none" />
 
-        <div className="flex w-[max-content]" ref={trackRef}>
+        {/* Left Arrow */}
+        <button 
+          onClick={() => scrollTrack('left')}
+          className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
+          aria-label="Previous Project"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+
+        {/* Right Arrow */}
+        <button 
+          onClick={() => scrollTrack('right')}
+          className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
+          aria-label="Next Project"
+        >
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+
+        <div 
+          className="flex w-full overflow-x-auto snap-x snap-mandatory py-8 px-4 md:px-12 items-center" 
+          ref={trackRef}
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {/* Global styles block to hide scrollbar for webkit browsers */}
+          <style dangerouslySetInnerHTML={{__html: `
+            div::-webkit-scrollbar { display: none; }
+          `}} />
+          
           {REFERENCE_DATA.map((item, idx) => {
             const isPriority = idx < 4;
             return (
               <div
                 key={`${item.id}-${idx}`}
-                className="flex-shrink-0 relative w-[75vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-4 rounded-xl overflow-hidden group border border-white/5"
+                className="flex-shrink-0 snap-center relative w-[80vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-3 rounded-xl overflow-hidden group border border-white/5"
               >
                 <Image
                   src={getAssetPath(`/images/references/turkiye/${item.id}.jpg`)}

@@ -5,11 +5,10 @@ import { Loader } from "@/components/loader/Loader";
 import { Hero } from "@/components/sections/Hero";
 import { AboutUs } from "@/components/sections/AboutUs";
 
-import { ProductGallery } from "@/components/sections/ProductGallery";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
 import { Projects } from "@/components/sections/Projects";
-import { InternationalReferences } from "@/components/sections/InternationalReferences";
+import { CompanyVideo } from "@/components/sections/CompanyVideo";
 import { NewsTicker } from "@/components/sections/NewsTicker";
 import { BrandsStrip } from "@/components/sections/BrandsStrip";
 
@@ -33,7 +32,6 @@ export default function Home() {
         <BrandsStrip />
         <AboutUs />
 
-        <ProductGallery />
         <WhyUs />
         <Certifications />
         <Production />
@@ -41,7 +39,7 @@ export default function Home() {
         <RetailPresence />
         <GlobalPresence />
         <Projects />
-        <InternationalReferences />
+        <CompanyVideo />
       </div>
     </main>
   );
