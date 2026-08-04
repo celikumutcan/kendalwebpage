@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { getAssetPath } from "@/utils/basePath";
@@ -11,6 +12,8 @@ import { getAssetPath } from "@/utils/basePath";
 export const Navbar = () => {
   const { t } = useLanguage();
   const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,9 +60,21 @@ export const Navbar = () => {
         {navLinks.map((link) => (
           <Link
             key={link.id}
-            href={link.href}
+            href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
+            onClick={(e) => {
+              if (isHome && link.href.startsWith("/#")) {
+                e.preventDefault();
+                const targetId = link.href.substring(2);
+                const el = document.getElementById(targetId);
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                  window.history.pushState(null, "", `#${targetId}`);
+                }
+              }
+            }}
             className={`relative pb-1 hover:opacity-100 transition-opacity ${activeSection === link.id ? "opacity-100 font-medium" : "opacity-60"
               }`}
           >

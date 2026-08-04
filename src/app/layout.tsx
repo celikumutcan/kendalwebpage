@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.kendalelektrik.com.tr"), // Update to real domain before deploy
-  title: "Kendal Elektrik - Global Manufacturer Since 1998", // Default Turkish-aware structure limitation noted
+  title: "Kendal Elektrik - Global Manufacturer Since 1997", // Default Turkish-aware structure limitation noted
   description: "Innovative lighting and electrical equipment.", // Note: App Router metadata is static and single-language by default for root layout.
   icons: {
     icon: getAssetPath("/kendal-icon.png"),

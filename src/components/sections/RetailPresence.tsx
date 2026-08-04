@@ -70,7 +70,7 @@ export const RetailPresence = () => {
               key={idx} 
               className="retail-logo w-full aspect-video rounded-2xl border border-[var(--global-text)]/10 flex items-center justify-center p-6 transition-all duration-300 bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] group"
             >
-              <div className="relative w-full h-full flex items-center justify-center">
+              <div className="relative w-[65%] h-[65%] flex items-center justify-center">
                 <Image
                   src={retailer.logo}
                   alt={retailer.name}

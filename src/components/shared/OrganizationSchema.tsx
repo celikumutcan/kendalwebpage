@@ -7,7 +7,7 @@ export const OrganizationSchema = () => {
     name: "Kendal Elektrik",
     url: "https://www.kendalelektrik.com.tr",
     logo: "https://www.kendalelektrik.com.tr/images/logo.png",
-    foundingDate: "1998",
+    foundingDate: "1997",
     description: "Innovative lighting and electrical equipment manufacturer.",
     sameAs: [
       "https://www.facebook.com/kendalelektrik",
