@@ -33,7 +33,7 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: { id: string; href: string; label: any; external?: boolean }[] = [
     { id: "about", href: "/#about", label: t.nav.about },
     { id: "production", href: "/#production", label: (t as any).nav?.production || "Üretim" },
     { id: "retail", href: "/#retail", label: (t as any).nav?.retail || "Zincir Marketler" },

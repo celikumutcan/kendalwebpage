@@ -28,7 +28,7 @@ export default function HaberlerListesiPage() {
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {newsData.map((news) => (
+          {[...newsData].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).map((news) => (
             <Link href={`/haberler/${news.id}`} key={news.id} className="group block">
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[var(--brand-red)]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.1)] hover:-translate-y-1 h-full flex flex-col">
                 
