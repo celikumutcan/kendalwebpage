@@ -9,7 +9,6 @@ export const NewsTicker = () => {
   const { t } = useLanguage();
   const trackRef = useRef<HTMLDivElement>(null);
 
-  // Use type assertion since we know it's an array of strings in JSON
   const newsItems = (t as any).news?.items as string[] || [];
 
   useIsomorphicLayoutEffect(() => {
@@ -18,7 +17,7 @@ export const NewsTicker = () => {
         gsap.to(trackRef.current, {
           xPercent: -50,
           repeat: -1,
-          duration: 30,
+          duration: 40, // Slower for better performance
           ease: "linear",
         });
       }
@@ -30,19 +29,15 @@ export const NewsTicker = () => {
   if (newsItems.length === 0) return null;
 
   return (
-    <div className="w-full bg-white/5 border-b border-white/10 py-2 overflow-hidden text-xs md:text-sm font-medium tracking-wide text-white/70 backdrop-blur-sm relative z-30 pt-20">
+    <div className="w-full bg-white/5 border-b border-white/10 py-1.5 overflow-hidden text-xs md:text-sm font-medium tracking-wide text-white/70 backdrop-blur-sm relative z-30 pt-20">
       <div className="flex w-max" ref={trackRef}>
-        {/* Double array for seamless loop */}
         {[...newsItems, ...newsItems].map((item, idx) => (
-          <div key={idx} className="flex items-center px-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-white/40 mr-4 inline-block" />
-            {item}
+          <div key={idx} className="flex items-center px-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-white/40 mr-3 inline-block flex-shrink-0" />
+            <span className="whitespace-nowrap">{item}</span>
           </div>
         ))}
       </div>
     </div>
   );
 };
-
-
-

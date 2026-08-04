@@ -25,8 +25,8 @@ export const Production = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          stagger: 0.1,
+          duration: 0.8,
+          stagger: 0.08,
           ease: "power2.out",
           scrollTrigger: {
             trigger: containerRef.current,
@@ -44,7 +44,7 @@ export const Production = () => {
 
         gsap.to(obj, {
           val: targetValue,
-          duration: 3,
+          duration: 2.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: statsRef.current,
@@ -69,39 +69,28 @@ export const Production = () => {
       ref={containerRef}
       className="relative w-full bg-transparent py-32 px-6 overflow-hidden"
     >
-      {/* LED Strip Illumination Concept (Tech/Neon) */}
       <div className="absolute top-0 left-0 w-full h-[2px] bg-[#00f3ff] opacity-40 shadow-[0_0_20px_#00f3ff]" />
       <div className="absolute bottom-0 right-0 w-full h-[2px] bg-[#00f3ff] opacity-40 shadow-[0_0_20px_#00f3ff]" />
-      
+
       <div className="absolute inset-0 pointer-events-none opacity-20 mix-blend-screen">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[100vh]" style={{ background: 'radial-gradient(ellipse at center, rgba(0,243,255,0.15) 0%, transparent 70%)' }} />
       </div>
-
-      <style dangerouslySetInnerHTML={{__html: `
-        @keyframes pulse-scale {
-          0%, 100% { transform: scale(1); opacity: 0.1; }
-          50% { transform: scale(1.1); opacity: 0.3; }
-        }
-        @keyframes spin-slow {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}} />
 
       <div className="max-w-7xl mx-auto relative z-10">
         <h2 className="text-4xl md:text-6xl font-bold mb-20 text-center text-[var(--global-text)] prod-reveal">
           {prod.title}
         </h2>
 
-        {/* Top Section: Image left, Text right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           <div className="relative aspect-[4/3] w-full rounded-3xl overflow-hidden prod-reveal group shadow-2xl">
             <Image
               src={getAssetPath("/images/production/uretim-1.jpg")}
               alt="Kendal Elektrik Üretim Tesisi 1"
               fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={80}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-700" />
           </div>
@@ -110,8 +99,7 @@ export const Production = () => {
           </div>
         </div>
 
-        {/* Stats Section with Energy Rings */}
-        <div 
+        <div
           ref={statsRef}
           className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32 prod-reveal relative"
         >
@@ -121,16 +109,15 @@ export const Production = () => {
             { value: "97", suffix: "/100", label: prod.stat3_label }
           ].map((stat, i) => (
             <div key={i} className="relative flex flex-col items-center justify-center p-10 group">
-              {/* Energy Rings Background */}
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-30 group-hover:opacity-60 transition-opacity duration-700">
-                <svg className="w-48 h-48 absolute" viewBox="0 0 100 100" style={{ animation: 'spin-slow 15s linear infinite' }}>
+                <svg className="w-48 h-48 absolute" viewBox="0 0 100 100">
                   <circle cx="50" cy="50" r="48" fill="none" stroke="#00f3ff" strokeWidth="0.5" strokeDasharray="4 8" />
                   <circle cx="50" cy="50" r="42" fill="none" stroke="#00f3ff" strokeWidth="1.5" strokeDasharray="20 10" opacity="0.8" />
                 </svg>
                 <div className="w-32 h-32 bg-[#00f3ff] rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
               </div>
-              
-              <div 
+
+              <div
                 className="stat-num text-6xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-[var(--global-text)] to-[var(--accent-current)] mb-4 drop-shadow-lg relative z-10"
                 data-value={stat.value}
                 data-suffix={stat.suffix}
@@ -144,7 +131,6 @@ export const Production = () => {
           ))}
         </div>
 
-        {/* Bottom Section: Text left, Image right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8 prod-reveal text-[var(--global-text)] opacity-90 leading-relaxed text-lg md:text-xl font-light lg:order-1 order-2 text-justify">
             <p>{prod.text2}</p>
@@ -155,8 +141,10 @@ export const Production = () => {
               src={getAssetPath("/images/production/uretim-2.jpg")}
               alt="Kendal Elektrik Üretim Tesisi 2"
               fill
-              className="object-cover transition-transform duration-1000 group-hover:scale-105"
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 50vw"
+              quality={80}
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-700" />
           </div>
