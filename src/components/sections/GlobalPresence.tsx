@@ -15,7 +15,7 @@ export const GlobalPresence = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const scrollProgressRef = useRef(0);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -26,7 +26,7 @@ export const GlobalPresence = () => {
         end: "bottom bottom",
         scrub: true,
         onUpdate: (self) => {
-          setScrollProgress(self.progress);
+          scrollProgressRef.current = self.progress;
         },
       });
 
@@ -62,7 +62,7 @@ export const GlobalPresence = () => {
       <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
         {/* Background Globe that will zoom out */}
         <div className="absolute inset-0 z-0 opacity-80">
-          <Globe scrollProgress={scrollProgress} />
+          <Globe scrollProgressRef={scrollProgressRef} />
         </div>
 
         {/* Architectural Spotlight Concept */}

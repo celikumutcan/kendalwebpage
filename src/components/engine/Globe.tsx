@@ -29,6 +29,20 @@ const LOCATIONS = [
   { id: "albania", lat: 41.3, lon: 19.8 },
   { id: "malta", lat: 35.9, lon: 14.5 },
   { id: "iraq", lat: 33.3, lon: 44.4 },
+  { id: "germany", lat: 51.1, lon: 10.4 },
+  { id: "uk", lat: 53.4, lon: -2.9 },
+  { id: "usa", lat: 37.0, lon: -95.7 },
+  { id: "china", lat: 35.8, lon: 104.1 },
+  { id: "russia", lat: 61.5, lon: 105.3 },
+  { id: "brazil", lat: -14.2, lon: -51.9 },
+  { id: "australia", lat: -25.2, lon: 133.7 },
+  { id: "south-africa", lat: -30.5, lon: 22.9 },
+  { id: "egypt", lat: 26.8, lon: 30.8 },
+  { id: "japan", lat: 36.2, lon: 138.2 },
+  { id: "france", lat: 46.2, lon: 2.2 },
+  { id: "uae", lat: 23.4, lon: 53.8 },
+  { id: "canada", lat: 56.1, lon: -106.3 },
+  { id: "india", lat: 20.5, lon: 78.9 },
 ];
 
 const ARCS = LOCATIONS.slice(1).map(loc => {
@@ -70,12 +84,12 @@ const AnimatedArc = ({ points, targetColor }: { points: THREE.Vector3[], targetC
   );
 };
 
-const GlobeScene = ({ scrollProgress }: { scrollProgress: number }) => {
+const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
   const groupRef = useRef<THREE.Group>(null);
   const { getProgress } = useLightTemperature();
   
   const [earthTexture, bumpTexture, specularTexture] = useTexture([
-    getAssetPath("/textures/earth-dark.jpg"),
+    getAssetPath("/textures/earth-color.jpg"),
     getAssetPath("/textures/earth-topology.png"),
     getAssetPath("/textures/earth-water.png")
   ]);
@@ -97,7 +111,8 @@ const GlobeScene = ({ scrollProgress }: { scrollProgress: number }) => {
     // Fly out of the Earth effect
     // scrollProgress 0 -> camera is inside (z = 0.5)
     // scrollProgress 1 -> camera is outside (z = 5.5)
-    const targetZ = THREE.MathUtils.lerp(0.1, 5.5, scrollProgress);
+    const currentProgress = scrollProgressRef?.current ?? 1;
+    const targetZ = THREE.MathUtils.lerp(0.1, 5.5, currentProgress);
     state.camera.position.z = THREE.MathUtils.lerp(state.camera.position.z, targetZ, 0.1);
 
     if (groupRef.current) {
@@ -168,7 +183,7 @@ const GlobeScene = ({ scrollProgress }: { scrollProgress: number }) => {
   );
 };
 
-export const Globe = ({ scrollProgress = 1 }: { scrollProgress?: number }) => {
+export const Globe = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
   return (
     <div className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing">
       <Canvas camera={{ position: [0, 0, 0.1], fov: 45 }} performance={{ min: 0.5 }}>
@@ -177,7 +192,7 @@ export const Globe = ({ scrollProgress = 1 }: { scrollProgress?: number }) => {
         <directionalLight position={[-5, -3, -5]} intensity={1.0} color="#b0c4de" />
         
         <Suspense fallback={null}>
-          <GlobeScene scrollProgress={scrollProgress} />
+          <GlobeScene scrollProgressRef={scrollProgressRef} />
         </Suspense>
       </Canvas>
     </div>
