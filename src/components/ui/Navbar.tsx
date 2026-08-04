@@ -47,7 +47,7 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-40 px-4 md:px-6 py-4 flex items-center justify-between bg-black/60 backdrop-blur-md text-white border-b border-white/5 transition-colors duration-300">
       <Link href="/" className="font-bold text-xl tracking-tight flex items-center gap-2 hover:opacity-80 transition-opacity">
-        <Image src={getAssetPath("/kendal-icon.png")} alt="Kendal Logo" width={28} height={28} className="object-contain" style={{ width: "auto", height: "auto" }} />
+        <Image src={getAssetPath("/kendal-icon.png")} alt="Kendal Logo" width={28} height={28} className="w-7 h-7 object-contain min-w-[28px]" />
         <div className="hidden sm:block">
           KENDAL ELEKTRİK
         </div>

@@ -98,10 +98,10 @@ export const Projects = () => {
         }
       );
 
-      gsap.fromTo(".project-image",
-        { filter: "grayscale(100%) brightness(0.3)" },
+      gsap.fromTo(".project-overlay",
+        { opacity: 0.8 },
         {
-          filter: "grayscale(0%) brightness(1)",
+          opacity: 0,
           ease: "none",
           scrollTrigger: {
             trigger: containerRef.current,
@@ -151,12 +151,12 @@ export const Projects = () => {
                   alt={`${item.name} - ${item.location}`}
                   fill
                   sizes="(max-width: 768px) 75vw, (max-width: 1024px) 35vw, 25vw"
-                  className="project-image object-cover transition-transform duration-700 group-hover:scale-105"
-                  style={{ willChange: "filter" }}
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   priority={isPriority}
                   loading={isPriority ? "eager" : "lazy"}
                   quality={75}
                 />
+                <div className="project-overlay absolute inset-0 bg-black pointer-events-none" />
 
                 <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 flex flex-col justify-end p-6 pointer-events-none">
                   <h4 className="text-white font-bold text-xl md:text-2xl leading-tight mb-2 drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.name}</h4>
