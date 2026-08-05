@@ -5,6 +5,8 @@ import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import dynamic from "next/dynamic";
+import Image from "next/image";
+import { getAssetPath } from "@/utils/basePath";
 
 const LightCore = dynamic(
   () => import("@/components/engine/LightCore").then((mod) => mod.LightCore),
@@ -78,7 +80,7 @@ export const Hero = () => {
           ref={contentRef}
           className="relative z-10 flex flex-col items-center text-center opacity-0 pointer-events-none bg-transparent/30 backdrop-blur-md rounded-3xl p-8 md:p-16 border border-white/10"
         >
-          <div className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs tracking-widest backdrop-blur-sm">
+          <div className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm md:text-base font-semibold tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(255,255,255,0.1)]">
             {t.hero.badge}
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
@@ -87,9 +89,17 @@ export const Hero = () => {
               {t.hero.title_part2}
             </span>
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-gray-300">
+          <p className="mt-6 max-w-lg text-lg md:text-xl text-white font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             {t.hero.subtitle}
           </p>
+          <div className="mt-8 relative w-64 h-24 md:w-96 md:h-32 bg-white/5 rounded-2xl p-3 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors shadow-lg">
+            <Image
+              src={getAssetPath("/images/brands/k2-led.jpg")}
+              alt="K2 LED"
+              fill
+              className="object-contain drop-shadow-md rounded-lg"
+            />
+          </div>
         </div>
       </div>
     </section>

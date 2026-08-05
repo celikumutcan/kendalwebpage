@@ -41,6 +41,25 @@ const LOCATIONS = [
   { id: "uae", lat: 23.4, lon: 53.8 },
   { id: "canada", lat: 56.1, lon: -106.3 },
   { id: "india", lat: 20.5, lon: 78.9 },
+  { id: "italy", lat: 41.9, lon: 12.5 },
+  { id: "spain", lat: 40.4, lon: -3.7 },
+  { id: "greece", lat: 37.9, lon: 23.7 },
+  { id: "saudi-arabia", lat: 23.8, lon: 45.0 },
+  { id: "south-korea", lat: 35.9, lon: 127.7 },
+  { id: "mexico", lat: 23.6, lon: -102.5 },
+  { id: "argentina", lat: -38.4, lon: -63.6 },
+  { id: "morocco", lat: 31.7, lon: -7.0 },
+  { id: "nigeria", lat: 9.0, lon: 8.6 },
+  { id: "kenya", lat: -1.2, lon: 36.8 },
+  { id: "indonesia", lat: -0.7, lon: 113.9 },
+  { id: "thailand", lat: 15.8, lon: 100.9 },
+  { id: "vietnam", lat: 14.0, lon: 108.2 },
+  { id: "philippines", lat: 12.8, lon: 121.7 },
+  { id: "malaysia", lat: 4.2, lon: 109.9 },
+  { id: "poland", lat: 51.9, lon: 19.1 },
+  { id: "netherlands", lat: 52.1, lon: 5.2 },
+  { id: "sweden", lat: 60.1, lon: 18.6 },
+  { id: "kazakhstan", lat: 48.0, lon: 68.0 }
 ];
 
 const ARCS = LOCATIONS.slice(1).map(loc => {

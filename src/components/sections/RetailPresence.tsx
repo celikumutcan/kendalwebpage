@@ -2,8 +2,7 @@
 
 import React, { useRef } from "react";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+
 import Image from "next/image";
 import { getAssetPath } from "@/utils/basePath";
 
@@ -21,29 +20,7 @@ const RETAILERS = [
 export const RetailPresence = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
-  
-  useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".retail-logo",
-        { y: 30, opacity: 0, scale: 0.9 },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 0.6,
-          stagger: 0.1,
-          ease: "back.out(1.5)",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 75%",
-          },
-        }
-      );
-    }, containerRef);
 
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section id="retail" ref={containerRef} className="w-full relative py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
@@ -70,7 +47,7 @@ export const RetailPresence = () => {
               key={idx} 
               className="retail-logo w-full aspect-video rounded-2xl border border-[var(--global-text)]/10 flex items-center justify-center p-6 transition-all duration-300 bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] group"
             >
-              <div className="relative w-[65%] h-[65%] flex items-center justify-center">
+              <div className="relative w-[85%] h-[85%] flex items-center justify-center">
                 <Image
                   src={retailer.logo}
                   alt={retailer.name}

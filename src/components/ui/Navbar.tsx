@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "production", "retail", "global", "projects", "company-video"];
+      const sections = ["about", "stats", "retail", "global", "projects", "company-video"];
       let current = "";
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -38,12 +38,12 @@ export const Navbar = () => {
 
   const navLinks: { id: string; href: string; label: any; external?: boolean }[] = [
     { id: "about", href: "/#about", label: t.nav.about },
-    { id: "production", href: "/#production", label: (t as any).nav?.production || "Üretim" },
-    { id: "retail", href: "/#retail", label: (t as any).nav?.retail || "Zincir Marketler" },
-    { id: "global", href: "/#global", label: t.nav.global },
-    { id: "projects", href: "/#projects", label: t.nav.projects || "Referanslar" },
-    { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
     { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
+    { id: "stats", href: "/#stats", label: (t as any).nav?.production || "Üretim ve İhracat" },
+    { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
+    { id: "global", href: "/#global", label: t.nav.global },
+    { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
+    { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
     { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
   ];
 

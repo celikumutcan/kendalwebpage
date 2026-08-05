@@ -13,7 +13,7 @@
     "badge": "1997'den Beri Küresel Üretici",
     "title_part1": "Karanlıktan",
     "title_part2": "Aydınlığa",
-    "subtitle": "Yenilikçi aydınlatma ve elektrik donanımları."
+    "subtitle": "Yenilikçi aydınlatma ve elektrik donanımları"
   },
   "about": {
     "title": "Hakkımızda",
@@ -21,28 +21,28 @@
     "text2": "Geleceğin aydınlatma teknolojilerini bugünden tasarlayarak, hem yurt içinde hem de küresel pazarlarda güvenilir çözümler sunuyoruz.",
     "beats": [
       {
-        "title": "1997 — Bir Fikirle Başladı",
-        "text": "%100 Türk sermayesiyle, elektrik malzemeleri sektöründe mütevazı ama tutkulu bir adımla yola çıktık."
+        "title": "Filament Ampulde Tek Üretici",
+        "text": "Türkiye, Avrupa ve Ortadoğu'da filament ampul üreten tek üreticiyiz. Kendi LED panel ve plastik enjeksiyon üretim hatlarımızla kaliteyi baştan sona kontrol ediyoruz."
       },
       {
-        "title": "22.000 m² — Üretim Gücü",
-        "text": "Bugün 150 kişilik uzman kadromuz ve tam otomatik makine hatlarımızla, dünya standartlarında üretim gerçekleştiriyoruz."
+        "title": "Yüksek Teknoloji ve %89 Otomasyon",
+        "text": "Üretim hatlarımızda %89 otomasyon oranına ulaştık. ERP, MAS ve WMS gibi gelişmiş dijital sistemlerle üretimden depoya kadar tüm süreçleri anlık izliyor ve yönetiyoruz."
       },
       {
-        "title": "Kalıptan Ürüne — Kendi Elimizle",
-        "text": "Metal kalıplarımızdan enjeksiyon süreçlerine kadar tüm aşamaları kendi bünyemizde üreterek kalitemizi güvence altına alıyoruz."
+        "title": "Ar-Ge ve Akredite Laboratuvar",
+        "text": "TSE onaylı akredite laboratuvarımız ve kendi Ar-Ge merkezimizle yenilikçi ürünler geliştiriyor; 2013'te kurulan otomasyon ekibimizin gücüyle teknolojimizi sürekli ileriye taşıyoruz."
       },
       {
-        "title": "AR-GE ve Otomasyon",
-        "text": "Kendi AR-GE merkezimiz ve TSE onaylı akredite laboratuvarımızda geliştirdiğimiz ürünleri, 2013'te kurulan otomasyon ekibimizle kusursuzlaştırıyoruz."
+        "title": "Uluslararası Kalite Kontrol Sistemi",
+        "text": "Hammadde (IQC), proses (IPQC) ve çıkış (OQC) süreçlerini AQL örnekleme planına göre uyguluyor; ürünlerimizi fonksiyonellik, ömür ve çeşitli elektriksel testlerden geçiriyoruz."
       },
       {
-        "title": "LED Ampülde Pazar Lideri",
-        "text": "Göz yormayan 4000K LED teknolojimiz ve geniş ürün yelpazemizle, yerli üretim LED ampul kapasitesinde pazarın zirvesindeyiz."
+        "title": "OPEX ve Kusursuzluk Vizyonu",
+        "text": "Operasyonel verimlilik stratejisi (OPEX) ile verimliliği maksimuma çıkarırken, üretim hatalarını 1500 ppm'in altına düşürme ve kalite performansını %99'a çıkarma hedefiyle çalışıyoruz."
       },
       {
-        "title": "Küresel Hedef",
-        "text": "İç pazardaki liderlik vizyonumuzu Asya, Avrupa ve Afrika pazarlarında ilk 10'a girme hedefiyle taçlandırarak gerçek bir dünya markası olma yolunda hızla ilerliyoruz."
+        "title": "\"Produce in Turkey, Sell to World\"",
+        "text": "Çevre dostu ve enerji verimli ürünlerimiz, her yıl yeni patent başvurularımız ve ESD korumalı üretim altyapımızla sürdürülebilir bir küresel marka olma yolunda ilerliyoruz."
       }
     ]
   },
@@ -108,14 +108,14 @@
   "news": {
     "items": [
       "İTÜ iş birliği ile yerli LED çip AR-GE çalışmalarımız hızla devam ediyor.",
-      "Asya, Avrupa ve Afrika'da ilk 10 ihracatçı arasındayız.",
+      "Yeni nesil LED ampul serimizle enerji tasarrufunda standartları yeniden belirliyoruz.",
       "Uluslararası aydınlatma fuarında yeni ürünlerimizi tanıttık."
     ]
   },
   "global": {
     "title": "Küresel Varlığımız",
     "subtitle": "Türkiye Merkezli Üretim Gücü",
-    "text": "Türkiye merkezli üretim gücümüz ile Avrupa, Balkanlar ve Orta Doğu'daki iş ortaklarımıza ihracat gerçekleştiriyoruz. Özel B2B portalımız ile bölgesel ve küresel bayi ağımızı tek merkezden yönetiyoruz."
+    "text": "Türkiye merkezli üretim gücümüzle 4 kıtada, 42 ülkeye yayılan güçlü bir ihracat ağına sahibiz. Asya, Avrupa ve Afrika'da sektörün en büyük oyuncularından biri olarak ülkemizi küresel arenada gururla temsil ediyor, sağlam üretim altyapımızla dünya standartlarında kalite sunuyoruz."
   },
   "references": {
     "title": "Türkiye'nin Dört Bir Yanında",

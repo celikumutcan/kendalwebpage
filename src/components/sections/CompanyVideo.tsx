@@ -61,7 +61,7 @@ export const CompanyVideo = () => {
           */}
           <iframe
             className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/xrD_kftGciA?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+            src="https://www.youtube.com/embed/NxqB0GMRQJw?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
             title="Kendal Elektrik Corporate Video"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
