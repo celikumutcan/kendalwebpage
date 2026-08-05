@@ -8,8 +8,8 @@ const STATS = [
   { value: 29, label: "Yıllık Tecrübe", suffix: "" },
   { value: 22000, label: "m² Kapalı Alan", suffix: "" },
   { value: 350, label: "İstihdam", suffix: "+" },
-  { value: 60, label: "Milyon+ Yıllık Üretim Hacmi", suffix: "" },
-  { value: 3000, label: "Çeşit Farklı Ürün", suffix: "+" },
+  { value: 80, label: "Milyon+ Yıllık Üretim Hacmi", suffix: "" },
+  { value: 1000, label: "Çeşit Farklı Ürün", suffix: "+" },
   { value: 540, label: "Türkiye Çapında Bayi", suffix: "+" },
 ];
 
@@ -39,7 +39,7 @@ export const CompanyStats = () => {
           });
         }
       });
-      
+
       gsap.fromTo(
         ".stat-item",
         { opacity: 0, y: 30 },
@@ -63,12 +63,12 @@ export const CompanyStats = () => {
   return (
     <section id="stats" ref={containerRef} className="py-24 md:py-32 bg-transparent relative border-t border-[var(--global-text)]/5 overflow-hidden">
       <div className="absolute top-[-20%] right-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(227,0,15,0.05)_0%,transparent_60%)] pointer-events-none" />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row gap-12 md:gap-24 mb-24 items-start">
           <div className="md:w-1/3">
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--global-text)] mb-6 tracking-tight leading-tight">
-              Aydınlatmada <br/> <span className="text-[var(--brand-red)]">Türkiye'nin</span> Gururu
+              Aydınlatmada <br /> <span className="text-[var(--brand-red)]">Türkiye'nin</span> Gururu
             </h2>
             <div className="w-16 h-1 bg-[var(--brand-red)] rounded-full"></div>
           </div>

@@ -408,5 +408,70 @@ export const newsDataEN: NewsItem[] = [
       "[IMAGE]/images/haberler/22/tuya-8.png",
       "By following these steps, you can easily connect your KCL040 smart RGB LED strip to the Tuya Smart app and arrange the atmosphere of your home as you wish. If you encounter any problems, you can consult the help section of the app."
     ]
+  },
+  {
+    id: "23",
+    title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED TORCH BULB PRODUCTS",
+    date: "August 05, 2024",
+    images: [
+      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.jpg")
+    ],
+    content: [
+      "Meet our LED Torch bulbs that offer innovative and reliable solutions for today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Torch bulbs stand out with their high performance and long life. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
+      "K2 Brand Torch Bulbs: KES130, KES131, KES132, KES133, KES134",
+      "GLOBAL Brand Torch Bulbs: KES230, KES231, KES232, KES233",
+      "Why Should You Choose Our LED Torch Bulbs?",
+      "Domestic Production: All our torch bulbs are domestically produced according to high-quality standards.",
+      "Aluminum Thermally Insulated Cooling System: Effectively manages the heat of the bulbs, ensuring long life and high efficiency.",
+      "Energy Efficiency: Offers environmentally and budget-friendly solutions with the low energy consumption provided by LED technology.",
+      "Our LED torch bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Use them for security and emergencies at home, in detailed workspaces in offices, or in industrial environments. Add value to your spaces with our high-quality lighting solutions.",
+      "Contact us for more information and orders."
+    ]
+  },
+  {
+    id: "24",
+    title: "HOW LONG IS THE LIFESPAN OF LED LIGHTS?",
+    date: "August 08, 2024",
+    images: [
+      getAssetPath("/images/haberler/24/ledomru-838x622.jpg")
+    ],
+    content: [
+      "LED (Light Emitting Diode) lights attract attention with their energy efficiency, long lifespan, and low maintenance requirements. However, many people wonder how long LED lights can last, which factors affect their lifespan, and what the advantages of LEDs are.",
+      "How Long is the Lifespan of LED Lights? LED lights are known for having a much longer lifespan than traditional filament bulbs and fluorescent lamps. On average, the lifespan of an LED bulb ranges from 15,000 to 50,000 hours. These figures make long-term use of LEDs possible, making them an ideal choice for both commercial and residential lighting.",
+      "The Secrets of LEDs' Long Lifespan The long lifespan of LED lights stems from a few fundamental factors:",
+      "Energy Efficiency: LEDs are highly superior in terms of energy efficiency. While traditional filament bulbs convert almost all their energy into heat, LEDs convert a large portion of their energy into light. This allows them to generate less heat and last longer.",
+      "Low Heat Generation: LEDs produce significantly less heat compared to other lighting technologies. Less heat means that the internal components of the LEDs operate at lower temperatures, which extends their lifespan.",
+      "Durability and Sturdiness: LED lights are made of durable semiconductor materials instead of glass or fragile parts. This makes them much more resistant to impacts and vibrations.",
+      "Lifespan and Loss of Brightness The lifespan of LEDs generally comes with a decrease in light output. LEDs may lose their brightness over time, but this loss is usually slow and at a low level. The lifespan of an LED bulb typically refers to a 70% decrease in light output. This means that the LED continues to function effectively throughout its lifespan.",
+      "Factors Affecting the Quality of LED Lights The lifespan of LEDs can vary depending on several factors:",
+      "Quality and Manufacturer: High-quality LED bulbs generally have a longer lifespan. Reliable manufacturers offer products with high standards that ensure the LEDs are long-lasting.",
+      "Operating Conditions: The temperature, humidity, and duration of use of the environment where LED lights are located can affect their lifespan. Extreme temperatures and humidity can negatively impact the performance of LEDs.",
+      "Power Supply: The lifespan of LEDs also depends on the power supply used. A poor quality or incompatible power supply can shorten the lifespan of an LED.",
+      "Advantages of LEDs The long lifespan of LED lights not only provides economic benefits but also offers significant environmental advantages:",
+      "Energy Savings: LEDs consume significantly less energy than traditional bulbs. This not only reduces your energy bills but also your carbon footprint.",
+      "Less Waste: The long lifespan of LEDs means they need to be replaced less frequently, reducing the amount of waste generated.",
+      "Instant On: LEDs provide full brightness instantly, offering convenience in use.",
+      "Is This Duration Sufficient? Depending on how many hours it is used per day, it is possible to determine the lifespan of LED lighting products. A fixture operating for 24 hours can provide a lifespan of between 2 and 6 years. With less frequent use, the product's lifespan naturally becomes much longer.",
+      "Conclusion LED lights are one of the most popular choices in the modern lighting world due to their long lifespans and energy efficiency. Having an average lifespan of between 15,000 and 50,000 hours makes them advantageous both economically and environmentally. However, it is important to remember that there are factors that affect the lifespan of LEDs. Choosing high-quality products, paying attention to appropriate usage conditions, and using the right power supplies will help you keep the performance and lifespan of LEDs at a maximum level."
+    ]
+  },
+  {
+    id: "25",
+    title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED CANDLE BULB PRODUCTS",
+    date: "August 12, 2024",
+    images: [
+      getAssetPath("/images/haberler/25/2-838x622.jpg")
+    ],
+    content: [
+      "Meet our LED Candle bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Candle bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
+      "K2 Brand LED Candle Bulbs: KES205, KES209, KES183, KES184",
+      "K2 Brand LED Bent-Tip Candle Bulbs: KES206, KES210",
+      "Why Should You Choose Our LED Candle Bulbs?",
+      "Domestic Production: All our candle bulbs are domestically produced according to high-quality standards.",
+      "Aluminum Thermally Insulated Cooling System: Effectively manages the heat of the bulbs, ensuring a long lifespan and high efficiency.",
+      "Energy Efficiency: Offers environmentally and budget-friendly solutions with the low energy consumption provided by LED technology.",
+      "Our LED candle bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Use them for security and emergencies at home, in detailed workspaces in offices, or in industrial environments. Add value to your spaces with our high-quality lighting solutions.",
+      "Contact us for more information and orders."
+    ]
   }
 ];

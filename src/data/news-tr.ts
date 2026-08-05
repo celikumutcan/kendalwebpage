@@ -408,5 +408,70 @@ export const newsDataTR: NewsItem[] = [
       "[IMAGE]/images/haberler/22/tuya-8.png",
       "Bu adımları takip ederek KCL040 akıllı RGB LED şeridinizi kolayca Tuya Smart uygulamasına bağlayabilir ve evinizin atmosferini istediğiniz gibi düzenleyebilirsiniz. Herhangi bir sorunla karşılaşırsanız, uygulamanın yardım bölümüne başvurabilirsiniz."
     ]
+  },
+  {
+    id: "23",
+    title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED TORCH AMPUL ÜRÜNLERİMİZ",
+    date: "05 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.jpg")
+    ],
+    content: [
+      "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Torch ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Torch ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
+      "K2 Marka Torch Ampuller: KES130, KES131, KES132, KES133, KES134",
+      "GLOBAL Marka Torch Ampuller: KES230, KES231, KES232, KES233",
+      "Neden LED Torch Ampullerimizi Tercih Etmelisiniz?",
+      "Yerli Üretim: Tüm torch ampullerimiz yerli üretim olup, yüksek kalite standartlarına göre üretilmiştir.",
+      "Alüminyum Isı Yalıtımlı Soğutma Sistemi: Ampullerin ısısını etkili bir şekilde yönetir, uzun ömür ve yüksek verimlilik sağlar.",
+      "Enerji Verimliliği: LED teknolojisinin sunduğu düşük enerji tüketimi ile hem çevreye hem de bütçenize dost çözümler sunar.",
+      "LED torch ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. Evde güvenlik ve acil durumlar için, ofislerde detaylı çalışma alanlarında veya endüstriyel ortamlarda kullanın. Yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın.",
+      "Daha fazla bilgi ve sipariş için bizimle iletişime geçin."
+    ]
+  },
+  {
+    id: "24",
+    title: "LED IŞIKLARIN ÖMRÜ NE KADAR?",
+    date: "08 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/24/ledomru-838x622.jpg")
+    ],
+    content: [
+      "LED (Light Emitting Diode) ışıklar, enerji verimliliği, uzun ömürleri ve düşük bakım gereksinimleri ile dikkat çekiyor. Ancak, birçok kişi LED ışıkların ne kadar dayanabileceğini, hangi faktörlerin ömrünü etkilediğini ve LED’lerin avantajlarını merak ediyor.",
+      "LED Işıkların Ömrü Ne Kadardır? LED ışıklar, geleneksel filament ampullerden ve floresan lambalardan çok daha uzun bir ömre sahip olmalarıyla bilinir. Ortalama olarak, bir LED ampulün ömrü 15.000 ila 50.000 saat arasında değişir. Bu rakamlar, LED’lerin uzun süreli kullanımını mümkün kılar ve bu da onları hem ticari hem de konut aydınlatması için ideal bir seçenek haline getirir.",
+      "LED’lerin Uzun Ömrünün Sırları LED ışıkların uzun ömrü birkaç temel faktörden kaynaklanır:",
+      "Enerji Verimliliği: LED’ler, enerji verimliliği açısından oldukça üstündür. Geleneksel filament ampuller neredeyse tüm enerjilerini ısıya dönüştürürken, LED’ler enerjinin büyük bir kısmını ışığa dönüştürür. Bu, hem daha az ısınmalarını hem de daha uzun süre dayanabilmelerini sağlar.",
+      "Düşük Isı Üretimi: LED’ler, diğer aydınlatma teknolojilerine kıyasla çok daha az ısı üretir. Isının az olması, LED’lerin iç bileşenlerinin daha düşük sıcaklıklarda çalışmasını sağlar ve bu da ömürlerini uzatır.",
+      "Sağlamlık ve Dayanıklılık: LED ışıklar, cam veya kırılgan parçalar yerine dayanıklı yarı iletken malzemelerden yapılır. Bu da onları darbelere ve titreşimlere karşı daha dayanıklı hale getirir.",
+      "Ömür Süresi ve Parlaklık Kaybı LED’lerin ömrü genellikle ışık çıkışında bir azalma ile birlikte gelir. LED'ler zamanla parlaklıklarını kaybedebilir, ancak bu kayıp genellikle yavaş ve düşük düzeydedir. LED ampulün ömrü, ışık çıkışında genellikle %70'lik bir azalmayı ifade eder. Bu, LED'lerin ömrü boyunca hala etkin bir şekilde çalışmaya devam ettiği anlamına gelir.",
+      "LED Işıkların Kalitesini Etkileyen Faktörler LED’lerin ömrü, birçok faktöre bağlı olarak değişebilir:",
+      "Kalite ve Üretici: Yüksek kaliteli LED ampuller genellikle daha uzun ömürlüdür. Güvenilir üreticiler, LED’lerin uzun ömürlü olmasını sağlayacak yüksek standartlara sahip ürünler sunar.",
+      "Kullanım Koşulları: LED ışıkların bulunduğu ortamın sıcaklığı, nem oranı ve kullanım süresi, ömürlerini etkileyebilir. Aşırı sıcaklıklar ve nem, LED'lerin performansını olumsuz yönde etkileyebilir.",
+      "Güç Kaynağı: LED’lerin ömrü, kullanılan güç kaynağına da bağlıdır. Kalitesiz veya uyumsuz bir güç kaynağı, LED’in ömrünü kısaltabilir.",
+      "LED’lerin Avantajları LED ışıkların uzun ömrü, sadece ekonomik faydalar sağlamakla kalmaz, aynı zamanda çevresel açıdan da büyük avantajlar sunar:",
+      "Enerji Tasarrufu: LED’ler, geleneksel ampullerden çok daha az enerji tüketir. Bu, hem enerji faturalarınızı düşürür hem de karbon ayak izinizi azaltır.",
+      "Az Atık: LED’lerin uzun ömrü, daha az sıklıkta değiştirilmesi gerektiği anlamına gelir, bu da atık miktarını azaltır.",
+      "Hızlı Açılma: LED’ler anında tam parlaklıkta ışık sağlar, bu da kullanım rahatlığı sunar.",
+      "Bu Süre Yeterli mi? Günde kaç saat kullanıldığına bağlı olarak led aydınlatma ürünlerinin ömrünü belirlemek mümkün. 24 saat çalıştırılan bir armatür 2 ile 6 yıl arasında bir kullanım süresi sağlayabilir. Daha az süreli kullanımlarda elbette ürünün ömrü daha uzun olur.",
+      "Sonuç LED ışıklar, uzun ömürleri ve enerji verimlilikleri ile modern aydınlatma dünyasının en popüler seçeneklerinden biridir. Ortalama olarak 15.000 ila 50.000 saat arasında bir ömre sahip olmaları, onları hem ekonomik hem de çevresel açıdan avantajlı kılar. Ancak, LED’lerin ömrünü etkileyen faktörler olduğunu unutmamak önemlidir. Kaliteli ürünler seçmek, uygun kullanım koşullarına dikkat etmek ve doğru güç kaynaklarını kullanmak, LED’lerin performansını ve ömrünü maksimum düzeyde tutmanıza yardımcı olacaktır."
+    ]
+  },
+  {
+    id: "25",
+    title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED'Lİ BUJİ AMPUL ÜRÜNLERİMİZ",
+    date: "12 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/25/2-838x622.jpg")
+    ],
+    content: [
+      "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED'li Bujili ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED'li Bujili ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
+      "K2 Marka LED'li Bujili Ampuller: KES205, KES209, KES183, KES184",
+      "K2 Marka LED'li Kivrik Bujili Ampuller: KES206, KES210",
+      "Neden LED'li Bujili Ampullerimizi Tercih Etmelisiniz?",
+      "Yerli Üretim: Tüm bujili ampullerimiz yerli üretim olup, yüksek kalite standartlarına göre üretilmiştir.",
+      "Alüminyum Isı Yalıtımlı Soğutma Sistemi: Ampullerin ısısını etkili bir şekilde yönetir, uzun ömür ve yüksek verimlilik sağlar.",
+      "Enerji Verimliliği: LED teknolojisinin sunduğu düşük enerji tüketimi ile hem çevreye hem de bütçenize dost çözümler sunar.",
+      "LED'li bujili ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. Evde güvenlik ve acil durumlar için, ofislerde detaylı çalışma alanlarında veya endüstriyel ortamlarda kullanın. Yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın.",
+      "Daha fazla bilgi ve sipariş için bizimle iletişime geçin."
+    ]
   }
 ];

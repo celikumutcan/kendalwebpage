@@ -92,12 +92,12 @@ export const Hero = () => {
           <p className="mt-6 max-w-lg text-lg md:text-xl text-white font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
             {t.hero.subtitle}
           </p>
-          <div className="mt-8 relative w-64 h-24 md:w-96 md:h-32 bg-white/5 rounded-2xl p-3 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors shadow-lg">
+          <div className="mt-8 relative w-72 h-32 md:w-[32rem] md:h-44 transition-transform hover:scale-105 duration-500">
             <Image
               src={getAssetPath("/images/brands/k2-led.jpg")}
               alt="K2 LED"
               fill
-              className="object-contain drop-shadow-md rounded-lg"
+              className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
             />
           </div>
         </div>
