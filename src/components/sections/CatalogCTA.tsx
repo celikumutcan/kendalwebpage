@@ -32,15 +32,15 @@ export const CatalogCTA = () => {
   }, []);
 
   return (
-    <section ref={containerRef} className="w-full relative py-32 px-6 overflow-hidden flex items-center justify-center">
+    <section ref={containerRef} className="w-full relative py-16 md:py-24 px-6 overflow-hidden flex items-center justify-center">
       {/* Background glow effects */}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-30 dark:opacity-50">
         <div className="absolute w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-gradient-to-r from-[var(--brand-red)] to-rose-500 blur-[120px] rounded-full translate-x-1/4 -translate-y-1/4 mix-blend-multiply dark:mix-blend-screen" />
         <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-gradient-to-r from-blue-500 to-indigo-500 blur-[120px] rounded-full -translate-x-1/4 translate-y-1/4 mix-blend-multiply dark:mix-blend-screen" />
       </div>
       
-      <div className="catalog-content relative z-10 w-full max-w-5xl mx-auto text-center p-10 md:p-20 lg:p-24 rounded-[3rem] bg-[var(--global-bg)]/40 backdrop-blur-2xl border border-[var(--global-text)]/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
-        <div className="absolute inset-0 rounded-[3rem] bg-gradient-to-b from-[var(--global-text)]/[0.03] to-transparent pointer-events-none" />
+      <div className="catalog-content relative z-10 w-full max-w-4xl mx-auto text-center p-8 md:p-12 lg:p-16 rounded-[2.5rem] bg-[var(--global-bg)]/40 backdrop-blur-2xl border border-[var(--global-text)]/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">
+        <div className="absolute inset-0 rounded-[2.5rem] bg-gradient-to-b from-[var(--global-text)]/[0.03] to-transparent pointer-events-none" />
         
         <div className="relative flex flex-col items-center">
           <div className="w-20 h-20 mb-8 rounded-full bg-[var(--brand-red)]/10 flex items-center justify-center text-[var(--brand-red)]">
@@ -49,11 +49,11 @@ export const CatalogCTA = () => {
             </svg>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-[var(--global-text)] tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-[var(--global-text)] tracking-tight">
             {t.catalog.title}
           </h2>
           
-          <p className="text-[var(--global-text)] opacity-70 text-lg md:text-xl lg:text-2xl mb-12 max-w-2xl mx-auto font-medium">
+          <p className="text-[var(--global-text)] opacity-70 text-base md:text-lg lg:text-xl mb-10 max-w-2xl mx-auto font-medium">
             {t.catalog.subtitle}
           </p>
           
@@ -61,7 +61,7 @@ export const CatalogCTA = () => {
             href="kendal-elektrik-katalog-2026.pdf"
             download
             rel="noopener noreferrer"
-            className="group inline-flex items-center justify-center gap-4 bg-[var(--brand-red)] hover:bg-[var(--brand-red-deep)] text-white font-bold text-lg md:text-xl px-10 py-5 rounded-full transition-all duration-300 shadow-xl hover:shadow-[var(--brand-red)]/40 hover:-translate-y-1"
+            className="group inline-flex items-center justify-center gap-3 bg-[var(--brand-red)] hover:bg-[var(--brand-red-deep)] text-white font-bold text-base md:text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-[var(--brand-red)]/40 hover:-translate-y-1"
           >
             <span>{t.catalog.button}</span>
             <svg className="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
