@@ -1,0 +1,412 @@
+import { getAssetPath } from "@/utils/basePath";
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  date: string;
+  images: string[];
+  content: string[];
+}
+
+export const newsDataTR: NewsItem[] = [
+  {
+    id: "1",
+    title: "GELENEKSEL KENDAL ELEKTRİK İFTAR YEMEGİMİZİ DÜZENLEDİK",
+    date: "13 Nisan 2024",
+    images: [
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.jpg")
+    ],
+    content: [
+      "Her sene geleneksel olarak düzenlemiş olduğumuz iftar yemeği programımızı bu sene de 29 / 03 / 2024 tarihinde çalışanlarımız ile bilrlikte gerçekleştirdik. Ramazan ayının birlik ve berleğini yaşadığıımız iftar yemeğinde çalışanlarımız ile bir araya geldik.",
+      "Aynı sofrayı bizlerle paylaştıkları için tüm çalışanlarımıza teşekkür ediyor, Mübarek Ramazan ayına veda ederken, Ramazan Bayramının tüm Kendal Elektrik ailesi ve tüm ülkemize barış, mutluluk, birlik ve beraberlik getirmesini diliyoruz."
+    ]
+  },
+  {
+    id: "2",
+    title: "ALMANYA MESSE FRANKFURT LIGHT + BUILDING FUARINA KATILIM SAĞLADIK",
+    date: "23 Mayıs 2024",
+    images: [
+      getAssetPath("/images/haberler/2/111121-838x622.jpg"),
+      getAssetPath("/images/haberler/2/22222211.jpg"),
+      getAssetPath("/images/haberler/2/333323332.jpg"),
+      getAssetPath("/images/haberler/2/44444444443.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak Messe Frankfurt Light + Building Fuarına katılım sağladık. Almanya’da 3 Mart 2024 – 8 Mart 2024 tarihleri arasında düzenlenen  fuarda en yenilikçi ürünlerimizi ziyaretçilerle buluşturduk.",
+      "Kendal Elektrik'in Messe Frankfurt Light + Building Fuarı'ndaki varlığı, sektördeki en son trendleri takip etme ve müşterilerle doğrudan etkileşime geçme fırsatı sunmakta.",
+      "Fuar, enerji verimliliği, akıllı led teknolojiler ve sürdürülebilirlik gibi konuları ele alarak sektör profesyonellerini bir araya getiriyor. Kendal Elektrik olarak, bu etkinlikte yer alarak sektördeki en son yenilikleri müşterilerimize sunmaya ve geleceğe dair stratejilerimizi geliştirmeye odaklanıyoruz."
+    ]
+  },
+  {
+    id: "3",
+    title: "AYDINLATMA SEKTÖRÜNDE SON TRENDLER ve TEKNOLOJİK GELİŞMELER",
+    date: "27 Mayıs 2024",
+    images: [
+      getAssetPath("/images/haberler/3/12131231.jpg"),
+      getAssetPath("/images/haberler/3/2112112312-838x622.jpg"),
+      getAssetPath("/images/haberler/3/32312313.jpg")
+    ],
+    content: [
+      "Aydınlatma artık sadece bir mekânı aydınlatmakla kalmıyor, aynı zamanda enerji verimliliği, estetik ve kullanıcı konforunu sağlamak için akıllı sistemlerle entegre ediliyor.",
+      "Son yıllarda, akıllı aydınlatma sistemlerinin kullanımı hızla artmaktadır. Bu sistemler, çevresel koşullara ve kullanıcı ihtiyaçlarına göre otomatik olarak ayarlanarak enerji tasarrufu sağlar ve kullanıcı deneyimini artırır. Ayrıca, LED teknolojisinin giderek yaygınlaşmasıyla birlikte, enerji verimliliği ve uzun ömür gibi avantajlarla birlikte çeşitli renk seçenekleri sunarak tasarım özgürlüğünü artırıyor.",
+      "Çevre dostu tasarım trendleri de aydınlatma sektöründe etkisini göstermektedir. Geri dönüştürülebilir malzemelerin kullanımı ve sürdürülebilir üretim yöntemleri, çevresel etkiyi minimize etmeyi hedeflerken, renk ve aydınlatma psikolojisi ise mekânın atmosferini ve kullanıcıların ruh halini etkileyebilecek şekilde tasarlanmıştır.",
+      "Aydınlatma armatürlerinin tasarımında da yaratıcı ve çeşitli yaklaşımlar göze çarpmaktadır. Minimalist tasarımlar, geometrik formlar ve doğal malzemelerin kullanımıyla oluşturulan armatürler, mekânlara benzersiz ve estetik bir görünüm kazandırmaktadır.",
+      "Kendal Elektrik olarak, aydınlatma sektöründeki bu trendleri ve teknolojik gelişmeleri yakından takip ediyor ve müşterilerimize en yeni ve yenilikçi çözümleri sunmaya devam ediyoruz. Sektördeki değişim ve gelişimlere açık olan firmamızı tercih ettiğiniz için teşekkür ederiz."
+    ]
+  },
+  {
+    id: "4",
+    title: "FİBER ve CAT6 KABLO ÜRÜNLERİNDE KAMPANYA",
+    date: "31 Mayıs 2024",
+    images: [
+      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak, size özel bir kampanya duyurusu yapmaktan mutluluk duyuyoruz! Stoklarımızda bulunan KKC107 Fiber Kablo ve KKC106 CAT6 Kablo ürünlerimiz için özel fiyatlar ve koşullar sunuyoruz. Bu ürünler sınırlı stoklarla sunulmaktadır ve kampanya kapsamındaki fiyat ve koşulları öğrenmek için bölge yöneticinizle iletişime geçebilirsiniz.",
+      "KKC107 FİBER KABLO 9 SM SX / 2.00 mm LSZH / 9/125 G657 A2 Özellikleri:",
+      "Tek Modlu Fiber",
+      "9/125 G657 A2 Fiber Kategorisi",
+      "2.00 mm LSZH Kılıf",
+      "Sınırlı Stoklarla",
+      "KKC106 CAT6 KABLO 0,58mm CCA 4PA / IRUTP Özellikleri:",
+      "CAT6 UTP Kablosu",
+      "0.58mm CCA İletken",
+      "4 Çift, Düz Telli",
+      "Sınırlı Stoklarla",
+      "Bu özel kampanya, yalnızca belirtilen ürünler için geçerlidir ve stoklarla sınırlıdır. Özel fiyatlar ve koşullar için hemen bölge yöneticinizi arayın ve fırsatları kaçırmayın!",
+      "Detaylı bilgi ve sipariş için bölge yöneticinizle iletişime geçebilirsiniz."
+    ]
+  },
+  {
+    id: "5",
+    title: "AMBALAJ TASARIMLARIMIZI YENİLEYEREK ESTETİK BİR GÜNCELLEME YAPTIK.",
+    date: "24 Haziran 2024",
+    images: [
+      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak, ürün ambalajlarını yenileyerek müşteri deneyimini iyileştirmeyi hedefliyoruz. Yeni kutu tasarımları, minimalist bir yaklaşımla estetik bir güncelleme sunuyor ve ürünlerin doğal çekiciliğini ön plana çıkarıyor.",
+      "Bu değişiklik, ürün sunumunu modernleştirme ve kullanıcıların beklentilerini karşılama amacı taşıyor. Yenilenen ambalajlar, sade ve şık bir görünümle firmanın değerlerini yansıtıyor.",
+      "Kendal Elektrik olarak, müşteri memnuniyetini artırmak ve pratik kullanım sağlamak için sürekli olarak gelişim göstermeye devam ediyoruz. Yeni kutu tasarımlarıyla, kullanıcılarımıza daha keyifli bir alışveriş deneyimi sunmaya odaklanıyoruz."
+    ]
+  },
+  {
+    id: "6",
+    title: "YENİ İNSAN KAYNAKLARI MÜDÜRÜMÜZ ZEHRA ŞİMŞEK ÖZEN ARAMIZA KATILDI",
+    date: "01 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/6/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/6/zehrasimsekozen.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak sürekli büyüyen ve gelişen yapımızı daha da güçlendirmek adına önemli bir adım attık. İnsan Kaynakları Müdürü olarak göreve başlayan Zehra Şimşek ÖZEN, şirketimizin insan kaynakları stratejilerini güçlendirerek, çalışan memnuniyetini artırmayı ve iş stratejilerimizi insan odaklı yaklaşımlarla desteklemek için kararlılıkla çalışacaktır.",
+      "Kendisiyle birlikte, şirket kültürümüzü güçlendirerek ve yenilikçi çözümler üreterek başarıya ulaşacağımızı bilmekten memnuniyet duyuyoruz. Zehra Şimşek ÖZEN'i ekibimize katılmasından dolayı kutlar, başarılı bir işbirliği dileriz."
+    ]
+  },
+  {
+    id: "7",
+    title: "İYİ AYDINLATMANIN SAĞLIK AÇISINDAN ÖNEMİ",
+    date: "11 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.png")
+    ],
+    content: [
+      "Göz Sağlığı ve Görme Performansı:",
+      "İyi aydınlatılmış ortamlarda çalışmak veya okumak göz yorgunluğunu önler. Özellikle bilgisayar veya diğer ekranlarla uzun süre çalışanlar için doğru aydınlatma önemlidir. Kötü aydınlatma görme bozukluklarına yol açabilir veya mevcut görme sorunlarını kötüleştirebilir.",
+      "Duygusal ve Psikolojik Etkiler:",
+      "Doğal ışıkla aydınlatılan ortamlar insanların ruh halini ve duygusal durumunu olumlu yönde etkiler. Güneş ışığı serotonin seviyelerini artırarak depresyon riskini azaltır. Bu nedenle, iç mekanlarda mümkün olduğunca doğal ışık kullanımı teşvik edilmelidir.",
+      "Uyku Düzeni:",
+      "Doğru aydınlatılmamış ortamlar uyku kalitesini olumsuz etkileyebilir. Doğru aydınlatma uykuya geçişi kolaylaştırabilir ve uyku kalitesini artırabilir.",
+      "Verimlilik ve Konsantrasyon:",
+      "İyi aydınlatılmış ortamlar özellikle çalışma ve öğrenme verimliliğini artırır. Kişilerin daha odaklanmış olmalarını sağlar ve görevleri daha etkili bir şekilde yerine getirmelerine yardımcı olur.",
+      "Güvenlik:",
+      "Yeterli aydınlatma sağlanmış ortamlar kazaları önler. Özellikle merdivenler, koridorlar ve dış mekanlar gibi riskli alanlarda iyi aydınlatma önemlidir. Bu, insanların daha güvenli hareket etmelerini sağlar.",
+      "İyi aydınlatmanın genel yaşam kalitesini artırdığı unutulmamalıdır. Hem fiziksel sağlık hem de zihinsel sağlık üzerinde önemli bir etkisi vardır. Bu nedenle, ev ve iş yerlerinde aydınlatma düzenlemeleri yapılırken doğal ve yapay ışığın dengeli bir şekilde kullanılması önerilir. Ayrıca, kişisel tercihler ve faaliyetler için uygun aydınlatma seçimlerinin yapılması da sağlık açısından önem taşır."
+    ]
+  },
+  {
+    id: "8",
+    title: "ARMATÜR NEDİR NERELERDE KULLANILIR?",
+    date: "12 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/8/armaturnedir-838x622.jpg")
+    ],
+    content: [
+      "Aydınlatma armatürleri, ışık kaynaklarını yönlendiren ve koruyan bileşenler olarak tanımlanabilir. Genellikle iç ve dış mekanlarda kullanılan bu armatürler, işlevsel ve estetik amaçlar taşır.",
+      "Bileşenleri ve Yapısı: Aydınlatma armatürleri genellikle bir gövdeye sahiptir ve üzerinde lamba bağlantısı için bir veya birden fazla duy bulunabilir. Armatürler, lambanın yanı sıra güç kaynağı, reflektör, lens, difüzör, duy ve elektriksel bağlantı ekipmanları gibi çeşitli bileşenleri içerir.",
+      "Işık Kaynakları: Geleneksel armatürler, lamba ile çalışırken, günümüzde LED modül gibi dahili ışık kaynaklarına sahip armatürler de mevcuttur. LED'ler uzun ömürlü oldukları için, bu tür armatürlerde lamba değişimi gerekmez.",
+      "Kullanım Alanları:",
+      "Konutlar: Oturma odası, yatak odası, mutfak ve banyo gibi yaşam alanlarında genellikle dekoratif ve aydınlatma amaçlı kullanılırlar.",
+      "Ofisler: Çalışma ortamlarında görev ve genel aydınlatma sağlamak için kullanılır. Doğru aydınlatma çalışanların verimliliğini artırır.",
+      "Ticari Alanlar: Mağazalar, restoranlar, kafeler gibi yerlerde müşteri deneyimini artırmak ve hoş bir atmosfer yaratmak için kullanılırlar.",
+      "Kamu Binaları: Hastaneler, okullar, kamu kurumları gibi yerlerde genel aydınlatma sağlamak ve güvenliği artırmak için kullanılırlar.",
+      "Açık Alanlar: Parklar, bahçeler, sokaklar, otoparklar gibi yerlerde güvenlik ve estetik amaçlı kullanımı yaygındır.",
+      "Seçim ve Konumlandırma: Doğru armatür seçimi ve uygun konumlandırma, bir mekânın aydınlatma kalitesini, görsel etkisini ve enerji verimliliğini doğrudan etkiler. İyi planlanmış aydınlatma, mekânın kullanım amacına uygun şekilde destek sağlar.",
+      "Teknolojik Gelişmeler: Son yıllarda LED teknolojisinin gelişimi, armatürlerin enerji verimliliğini artırmış ve bakım maliyetlerini düşürmüştür. Ayrıca, akıllı aydınlatma sistemleriyle birlikte, armatürlerin yönetimi ve kontrolü de daha etkin hale gelmiştir.",
+      "Aydınlatma armatürleri, teknolojik ilerlemelerle birlikte sürekli olarak gelişen ve çeşitlenen bir ürün kategorisidir. Her kullanım alanı ve ihtiyaca uygun olarak farklı tasarımlar ve özellikler sunarlar, bu da onları modern yaşamın ayrılmaz bir parçası haline getirir."
+    ]
+  },
+  {
+    id: "9",
+    title: "EVİNİZ İÇİN DOĞRU AYDINLATMA ÖNERİLERİ",
+    date: "12 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.jpg")
+    ],
+    content: [
+      "Aydınlatma sisteminizi düzenlerken, her odanın ya da alanın kendine has bir dokusu olduğunu ve aydınlatmayı da bu dokuya uyumlu şekilde yapmanız gerektiğini unutmayın. Tek bir sisteme bağlı kalmayın.",
+      "Salon Aydınlatması",
+      "Salonlar, misafirlerin ağırlanıp estetik yapıların ön planda olduğu alanlardır. Bu yüzden salonunuz için seçeceğiniz aydınlatma sistemi büyük bir özen gerektirir. Salon aydınlatmasında dikkat edilmesi gereken bazı noktalar bulunmaktadır. İlki mümkünse iki ayrı ışıklandırma kullanmanızdır. Eğer bu imkan yoksa, ışık yoğunluğunu ayarlamaya yardımcı olan dimmer sistemlerini düşünebilirsiniz.",
+      "İki farklı aydınlatma seçeneği kullanmanın avantajları nelerdir? Misafirleriniz geldiğinde, etkinliğe göre aydınlatmayı ayarlayabilme imkanı, daha hoş bir atmosfer oluşturmanıza yardımcı olacaktır. Örneğin, parlak ışık daha neşeli bir ortam yaratırken, loş ışık yemek yeme veya film izleme gibi daha sakin etkinlikler için idealdir. Ayrıca, loş ışık kullanımı göz sağlığınızı da koruyabilir.",
+      "Oturma Odası Aydınlatması",
+      "Oturma odası, salonla karşılaştırıldığında daha kişisel bir alan olarak görülebilir. Bu sebeple, oturma odasının aydınlatma düzenlemesi tamamen sizin zevklerinize göre olabilir. Oturma odasında tercih edeceğiniz doğru bir aydınlatma ile kendinizi daha mutlu hissedebilirsiniz. Ayrıca, ailenizle keyifli zaman geçirmek için de ideal bir ortam oluşturabilirsiniz. Yumuşak ve sıcak bir aydınlatma seçimi, ruhsal dinginliğinizi artırabilir ve daha sakin bir atmosfer yaratabilir.",
+      "Yatak Odası Aydınlatması",
+      "Yatak odası aydınlatması, vücudunuzun dinlenme kalitesini artırmak için önemlidir. Bu nedenle, yatak odası için seçeceğiniz aydınlatma sistemi, melatonin seviyesini artırarak uykuya daha kolay dalmanızı sağlayacak şekilde düzenlenmelidir. Çok parlak olmayan, yumuşak ve loş bir ışıklandırma tercih edebilirsiniz. Ayrıca, salon için önerdiğimiz gibi yatak odasında da ışık seviyesini ayarlayabilen sistemleri tercih etmek, daha uygun bir ortam sağlamanıza yardımcı olabilir.",
+      "Çalışma Odası Aydınlatması",
+      "Çalışma odasının aydınlatması son derece önemlidir. Doğru bir ışıklandırma sistemi sayesinde çalışma verimliliğinizi artırabilirsiniz. Çalışma odasında ışıklandırma düzenlerken dikkat etmeniz gereken en önemli husus, ışığın yeterince parlak olması ve fazla yayılmamasıdır. Çünkü aşırı yayılan ışık, odada loş bir atmosfer oluşturabilir. Işığın yeterince güçlü olmaması durumunda ise loş ışıkla birleşen çalışma yorgunluğu, uyku isteğinizi artırabilir. Bu sebeple çalışma odası için mümkün olduğunca güçlü bir aydınlatma sistemini tercih etmelisiniz. Işığı doğrudan masanıza yönlendirecek bir avize seçimi de iş verimliliğinizi artırabilir ve çalışma süresince daha uyanık kalmanıza yardımcı olabilir.",
+      "Mutfak Aydınlatması",
+      "Mutfaklar genellikle çok sayıda eşyanın bulunduğu ve dar bir görüntüye sahip olabilecekleri için aydınlatma seçimi önemlidir. Mutfak alanınızı daha ferah göstermek için genel ışıklandırma sistemlerine odaklanabilirsiniz. Mutfağın genelinde parlak ışıklar kullanarak alanın ferah ve geniş görünmesini sağlayabilirsiniz. Ayrıca dolap altı ışıkları, hem kullanışlı hem de estetik bir görünüm sağlayabilir. Dolap içinde kullanılacak LED ışıklar ise elektrik tasarrufu sağlarken mutfağınıza hoş bir atmosfer katabilir.",
+      "Abajur ve Lambader Kullanımı",
+      "Abajur ve lambaderler estetik görünümleriyle popüler olan aydınlatma seçeneklerindendir. Evde aydınlatma sistemlerini düzenlerken bu tarz eşyalardan yararlanabilirsiniz. Örneğin salon veya oturma odası gibi alanlarda kullanacağınız lambaderler, konforunuzu artırırken aynı zamanda göz alıcı bir estetik sunabilir. Yatak odasında başucu komodini üzerinde veya duvara monte edilen abajurlar, gece kitap okurken gözlerinizin yorulmasını önleyebilir. Ayrıca çalışma masanızda kullanacağınız lambalar, hem enerji tasarrufu yapmanıza hem de iş odaklanmanızı artırmanıza yardımcı olabilir.",
+      "Avizeler",
+      "Avizeler, bir odanın aydınlatma sisteminin önemli bir parçasıdır ve odanın estetik dokusunu tamamlayarak hoş bir atmosfer yaratabilirler. Bir avize seçerken odanın genel atmosferiyle uyum içinde olmasına dikkat etmek önemlidir. Mobilyalarınız ve diğer dekoratif unsurlarınızla birlikte düşünerek avize seçiminizi yapmalısınız. Örneğin, odada farklı tarzlarda ve renklerde dekoratif aksesuarlar kullanıyorsanız, sade ve uyumlu bir avize seçerek bu kontrastı dengeleyebilirsiniz.",
+      "Odada çok büyük ve gösterişli bir avize kullanmak, odanın dengesini bozabilir ve fazla abartılı bir görünüme neden olabilir. Oda daha sade ve minimalist bir tarzdaysa, daha detaylı ve zarif bir avize seçimi odanın estetiğini artırabilir ve dikkatleri üzerine çekebilir.",
+      "Gün ışığının az olduğu odalarda ise parlak ışıklar eşliğinde açık renkli ve sade bir avize kullanarak odanın daha ferah ve aydınlık görünmesini sağlayabilirsiniz."
+    ]
+  },
+  {
+    id: "10",
+    title: "YENİ İDARİ İŞLER UZMANIMIZ EREN OKAN ARAMIZA KATILDI",
+    date: "12 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/10/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/10/erenokan.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak sürekli büyüme ve gelişme yolunda emin adımlarla ilerlerken, ekibimize katılan her yeni üye bizim için büyük bir değer taşır. İşte bu değerli ekibe, İdari İşler Uzmanı olarak katılan Eren OKAN, şirketimizin idari işler süreçlerini daha da iyileştirmek, verimliliği artırmak ve günlük operasyonlarda mükemmelliği sağlamak için kararlılıkla çalışacak. Kendisi, görevini yerine getirirken titizlikle ve özveriyle çalışmanın yanı sıra, ekibimizin dinamik yapısına ve şirket kültürümüze de büyük bir katkı sağlayacaktır.",
+      "Kendisiyle birlikte, şirketimizin vizyonunu daha ileri taşıyacak ve birlikte başarılara imza atacağımızı bilmekten memnuniyet duyuyoruz. Eren OKAN'ı ekibimize katılmasından dolayı kutlar, başarılı bir işbirliği ve başarı dolu bir gelecek dileriz."
+    ]
+  },
+  {
+    id: "11",
+    title: "AYDINLATMADA DİM EDİLEBİLİR TERİMİ NEDİR ?",
+    date: "16 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/11/dimablee-838x622.jpg")
+    ],
+    content: [
+      "Dim edilebilir aydınlatma terimi, günümüzde aydınlatma teknolojilerinin esnekliğini ve kullanıcı dostu özelliklerini vurgulayan bir kavramdır. Bu tür aydınlatma sistemleri, kullanıcıların aydınlatma seviyesini istedikleri gibi ayarlayabilmesine olanak tanır. Genellikle evlerden ofislere, otellerden mağazalara kadar birçok farklı mekanda kullanılan bu sistemler, enerji tasarrufu sağlamaları ve konforlu bir ortam yaratmalarıyla ön plandadır.",
+      "Faydaları Nelerdir?",
+      "Dim edilebilir aydınlatmanın faydaları arasında öne çıkan enerji tasarrufu, günümüzde giderek daha fazla önem kazanmaktadır. Aydınlatma seviyesini düşürmek, doğrudan enerji tüketimini azaltarak elektrik faturalarında belirgin bir tasarruf sağlar. Ayrıca, azalan enerji kullanımı çevresel etkileri de azaltır, böylece sürdürülebilirlik açısından da olumlu bir katkı sağlar.",
+      "Dim edilebilir aydınlatma sistemleri aynı zamanda lambaların ömrünü uzatabilir. Işık seviyesini düşük tutmak, lambaların daha az ısınmasını ve dolayısıyla daha az yıpranmasını sağlar. Bu da lambaların daha uzun süre sorunsuz çalışmasına olanak tanır ve bakım maliyetlerini azaltır.",
+      "Konfor ve atmosfer yaratma açısından da dim edilebilir aydınlatma büyük önem taşır. Farklı aktiviteler için farklı aydınlatma seviyeleri ayarlanabilir. Örneğin, dinlenme veya romantik bir ortam için düşük ışık seviyeleri tercih edilebilirken, çalışma veya okuma için daha parlak aydınlatma seviyeleri seçilebilir. Bu da kullanıcıların mekanı ihtiyaçlarına göre daha verimli ve keyifli bir şekilde kullanmalarını sağlar.",
+      "Dim Edilebilir Aydınlatma Sistemleri:",
+      "Teknolojinin ilerlemesiyle birlikte dim edilebilir aydınlatma sistemleri de gelişmiş ve çeşitlenmiştir. Geleneksel analog dimmerlerin yanı sıra dijital dimmerler ve akıllı dimmerler de yaygın olarak kullanılmaktadır. Dijital dimmerler daha hassas kontrol imkanı sunarken, akıllı dimmerler ise Wi-Fi veya Bluetooth üzerinden uzaktan kontrol edilebilirler ve akıllı ev sistemleriyle entegre edilebilirler.",
+      "Sonuç olarak, dim edilebilir aydınlatma sistemleri modern yaşamın gereksinimlerine uygun olarak tasarlanmış, enerji tasarrufu sağlayan, uzun ömürlü ve konforlu mekanlar yaratmada önemli bir rol oynayan teknolojilerdir. Her türlü mekan için uygun çözümler sunmalarıyla da tercih edilmektedirler."
+    ]
+  },
+  {
+    id: "12",
+    title: "AMELİYATHANE LAMBALARI NEDEN GÖLGE OLUŞTURMAZ?",
+    date: "18 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/12/amelyatisigi-838x622.jpg")
+    ],
+    content: [
+      "Ameliyat lambaları, cerrahi operasyonların başarılı bir şekilde gerçekleştirilmesinde kritik bir rol oynar. Modern tıbbın gerektirdiği hassaslık ve detay gereksinimlerini karşılamak için sürekli olarak geliştirilen bu teknoloji, cerrahların ameliyat sırasında net bir görüş elde etmelerini sağlar.",
+      "Ameliyat lambalarının tasarımı, gölge oluşturmama özelliği ile öne çıkar. Bu lambalar genellikle çoklu ışık kaynağına sahip olup, bu kaynaklar ameliyat alanını farklı açılardan aydınlatarak gölgelenmeyi minimum seviyeye indirir. Özellikle kullanılan reflektörler ve difüzörler, ışığın homojen bir şekilde dağılmasını sağlar. Reflektörler, ışığın yoğunluğunu ve yönünü kontrol ederek ameliyat alanında gölgelerin oluşmasını engeller. Bu sayede cerrahlar, operasyon boyunca herhangi bir görüş engeli yaşamadan çalışabilirler.",
+      "Ameliyat lambalarının doğru konumlandırılması da büyük önem taşır. Lambalar genellikle ameliyat masasına dik bir açıyla yerleştirilir ki bu, operasyon alanının en iyi şekilde aydınlatılmasını ve cerrahların her detayı görmelerini sağlar. Modern ameliyat lambaları, aynı zamanda aydınlatma gücü ve renk sıcaklığı gibi ayarlanabilir özelliklere sahiptir, bu da cerrahların operasyon sürecini daha da optimize etmelerine yardımcı olur.",
+      "Gölge seyreltme teknikleri sürekli olarak geliştirilmekte ve yeni teknolojilerle desteklenmektedir. Örneğin, bazı lambalar artık LED teknolojisiyle donatılmıştır, bu da daha az enerji tüketimiyle daha fazla ışık gücü sağlar ve operasyon sürecindeki hassasiyeti artırır.",
+      "Sonuç olarak, ameliyat lambalarının gölge seyreltme özellikleri ve doğru kullanımı, cerrahların operasyon sırasında en iyi sonuçları elde etmelerini sağlayan kritik faktörlerden biridir. Sürekli olarak gelişen bu teknolojiler, tıbbın ilerlemesine ve cerrahi müdahalelerin başarılı bir şekilde gerçekleştirilmesine önemli katkılar sağlamaktadır."
+    ]
+  },
+  {
+    id: "13",
+    title: "LED AMPULLERİN ÖMRÜ NASIL UZATILIR?",
+    date: "17 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/13/ledampul-838x622.jpg")
+    ],
+    content: [
+      "LED Ampullerin Ömrünü Uzatma Stratejileri",
+      "1. Güç Dalgalanmalarına Karşı Koruma: LED ampuller, hassas yarı iletken bileşenler içerir ve güç dalgalanmaları bu bileşenlere zarar verebilir. Özellikle güç şebekesi kararsız olan bölgelerde, şebeke gerilimindeki ani yükselmeler ve düşmeler LED ampullerin ömrünü kısaltabilir. Gerilim Regülatörleri ve Üstten Gerilim Koruma (Parafudr) ile bu durum önlenebilir.",
+      "2. Doğru Kullanım Koşulları: LED ampuller genellikle belirli sıcaklık aralıklarında optimum performans gösterir. Aşırı sıcaklık veya soğuk ortamlardan kaçınarak ampullerin ömrünü uzatabilirsiniz. Ayrıca, yüksek nem, LED ampullerin performansını etkileyebilir ve ömrünü kısaltabilir.",
+      "3. Yüksek Kaliteli Aydınlatma Armatürleri: Ampullerinizi yerleştirdiğiniz armatürlerin kalitesi, ampulün genel performansını etkiler. İyi bir ısı dağılımı sağlayan ve bileşenlere zarar vermeden çalışan armatürler, ampul ömrünü uzatabilir.",
+      "4. Düzenli Bakım ve Kontroller: Aydınlatma sistemlerinizi düzenli olarak kontrol edip bakım yapmak, potansiyel sorunları erken tespit etmenizi sağlar. Ampullerin temiz ve tozsuz olması da performanslarını korumak için önemlidir.",
+      "5. LED Özelliklerine Uygun Kullanım: LED ampuller genellikle sık açma-kapama işlemlerine dayanıklıdır, ancak sık sık açma-kapama yapmak yerine, ampulleri uzun süreler boyunca çalışmalarına izin vermek ömrünü uzatır. Ayrıca, LED ampuller için özel olarak tasarlanmış dimmerler kullanmak da ömrü uzatır.",
+      "Bu stratejileri uygulayarak, LED ampullerinizin ömrünü önemli ölçüde uzatabilirsiniz. Her bir adım, ampullerinizin performansını korurken, enerji ve bakım maliyetlerinden de tasarruf etmenizi sağlayabilir."
+    ]
+  },
+  {
+    id: "14",
+    title: "Li-Fi TEKNOLOJİSİ NEDİR NE İŞE YARAR?",
+    date: "19 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/14/lifi-838x622.jpg")
+    ],
+    content: [
+      "Li-Fi Teknolojisi: Işıkla Hızlı ve Güvenli İletişim",
+      "Günümüzde internet bağlantısı her zamankinden daha önemli hale gelmiştir. Evlerimizden ofislerimize, kamuya açık alanlara kadar her yerde yüksek hızlı ve güvenli bir bağlantı ihtiyacımız var. İşte tam da bu noktada Li-Fi (Light Fidelity) teknolojisi devreye giriyor.",
+      "Li-Fi Nedir? Li-Fi, \"Light Fidelity\" kelimelerinin kısaltmasıdır ve kablosuz iletişim için LED ışıklarını kullanır. Bu teknoloji, LED ampuller tarafından yayılan hızlı ışık sinyalleri üzerinden veri iletimi yapar. Wi-Fi gibi RF (Radyo Frekansı) kullanmayan Li-Fi, elektromanyetik gürültünün yoğun olduğu ortamlarda güvenli bir alternatif sunar.",
+      "Li-Fi Nasıl Çalışır? Veri iletimi için LED ışıktan gelen sinyaller alıcılar tarafından alınırken, bu sinyallerin LED ampullere geri gönderilmesi içinse vericiler kullanılır. Lİ-Fİ Teknolojisi, bir ağ içinde birden fazla ışık kullanılabilmesine imkan tanır, bu sayede kullanıcılar bağlantı kaybı yaşamadan ışıklar arasında geçiş yapabilirler.",
+      "Li-Fi'nin Avantajları: Yüksek Hızlı Veri İletimi (gigabit seviyesinde veri aktarım), Güvenlik (elektromanyetik frekansların kullanıldığı yerlerde güvenli iletişim), Düşük Gecikme Süresi (ışık hızında veri iletimi) ve Çevre Dostu (LED kullanımı ile enerji tasarrufu).",
+      "Uygulama Alanları: Ofis Ortamları, Kamu Alanları (havaalanları, hastaneler), Endüstriyel Kullanım ve IoT (Internet of Things) cihazları arasında hızlı ve güvenli veri aktarımı.",
+      "Sonuç olarak, Li-Fi teknolojisi modern dünyanın ihtiyaçlarına cevap veren, hızlı, güvenli ve çevre dostu bir iletişim seçeneği olarak öne çıkmaktadır."
+    ]
+  },
+  {
+    id: "15",
+    title: "D50 AYDINLATMA STANDARDI NEDİR? NERELERDE KULLANILIR?",
+    date: "22 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/15/d50-838x622.jpg")
+    ],
+    content: [
+      "Renk yönetimi, grafik tasarım, basım ve fotoğrafçılık gibi sektörlerde, işlerin kalitesini doğrudan etkileyen bir faktördür. Özellikle matbaa ortamlarında, doğru renklerin doğru şekilde değerlendirilmesi ve basılması, müşteri memnuniyeti ve iş kalitesi için kritik önem taşır. Bu nedenle, ISO 3664:2000 standardına göre belirlenen D50 aydınlatma standartı büyük bir öneme sahiptir.",
+      "D50 aydınlatma, ışık sıcaklığı olarak 5000 Kelvin değerindeki bir beyaz denge noktasını ifade eder. Bu sıcaklık değeri, renklerin doğru şekilde değerlendirilmesi için ideal bir ortam sağlar.",
+      "1. Renk Doğruluğu ve Konsistensi: D50 aydınlatma, renk yönetimi standartlarına uygun olarak seçilmiş bir beyaz denge noktası sağlar. Matbaalarda kullanılan bu standart, baskı öncesi süreçlerde, renklerin doğru şekilde değerlendirilmesini ve basılan işlerin orijinal renklere ne kadar yakın olduğunun kontrol edilmesini sağlar.",
+      "2. Işık Sıcaklığı ve Renk Sapmaları: Normal ampuller ve halojen lambalar 5000 Kelvin’in altında bir sıcaklık değerine sahiptir. Bu tür ışıkla aydınlatılmış ortamlarda gördüğümüz tüm renklerin üstünde sarı ‘CAST’ Renk Sapması oluşur.",
+      "Floresan lambalar ise 5000 Kelvin üstünde değere sahiptirler. Bu kez de tüm renklerin üstünde mavi ‘CAST’ Renk Sapması oluşur.",
+      "D50 aydınlatma, özellikle renk yönetimi gerektiren birçok alanda kullanım bulur. Başlıca kullanım alanları şunlardır: Matbaalar ve baskı merkezleri, Fotoğraf stüdyoları, Grafik tasarım ve reklam ajansları, Baskı kontrol odaları, Renk değerlendirme kabinleri, Renk kalibrasyon laboratuvarları, Sanat galerileri ve müzeler, Eğitim ve eğitim materyalleri.",
+      "Sonuç olarak, matbaalarda D50 aydınlatma kullanılması, işlerin kalitesini artırır, renk yönetimini sağlamlaştırır ve müşteri memnuniyetini maksimize eder. Bu nedenle, matbaa ortamlarında bu standartlara uygun aydınlatmanın kullanılması büyük önem taşır."
+    ]
+  },
+  {
+    id: "16",
+    title: "SPOT IŞIKLAR ve DOWNLIGHT'LAR ARASINDAKİ FARKLAR",
+    date: "23 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/16/SPOTT-838x622.jpg")
+    ],
+    content: [
+      "Ev veya işyeri aydınlatmasını planlarken karşınıza çıkan seçeneklerden bazıları spot ışıklar ve downlight'lar olabilir. Her ikisi de farklı aydınlatma ihtiyaçları için tasarlanmış olsa da, özellikleri ve kullanım alanları açısından belirgin farklılıklar gösterirler.",
+      "Spot Işıklar: Odaklanmış Aydınlatma. Spot ışıklar, belirli bir alanı veya nesneyi vurgulamak için idealdir. Genellikle 15°, 24° ve 36° gibi farklı ışın açılarıyla gelir. Sanat galerileri, dekoratif ürün aydınlatmaları, vitrinler gibi alanlarda yaygın olarak kullanılırlar. Dramatik ışık ve gölge efektleri yaratarak vurgulanan nesnelerin veya alanların dikkat çekmesini sağlarlar.",
+      "Downlight'lar: Genel Aydınlatma. Downlight'lar, geniş bir alana yumuşak ve genel bir aydınlatma sağlamak için tasarlanmıştır. Genellikle 60°'lik bir ışın açısına sahiptirler. Oturma odaları, yatak odaları, mutfaklar gibi genel aydınlatma gerektiren alanlarda sıkça kullanılırlar. Yumuşak ve göz kamaştırmayan bir aydınlatma sunarak genel bir atmosfer oluştururlar.",
+      "Aydınlatma Seçimi Nasıl Yapılmalı? İhtiyaçlarınızı (odaklanmış vs genel), estetik tercihlerinizi ve ışın açısı gibi teknik detayları göz önünde bulundurmalısınız.",
+      "Sonuç: Spot ışıklar ve downlight'lar, farklı aydınlatma ihtiyaçlarını karşılayan ve farklı görsel etkiler yaratan ürünlerdir. Her iki seçeneği de dikkatlice değerlendirerek, mekanda istediğiniz atmosferi ve kullanıcı deneyimini optimize edebilirsiniz."
+    ]
+  },
+  {
+    id: "17",
+    title: "LED PROJEKTÖR NEDİR?",
+    date: "26 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/17/pojector-838x622.jpg")
+    ],
+    content: [
+      "LED projektör, açık hava alanlarında, sahnelerde, etkinliklerde, spor etkinliklerinde ve binaların aydınlatılmasında sıklıkla kullanılan bir aydınlatma cihazıdır. LED (Işık Yayan Diyot) teknolojisiyle çalışan bu projektörler, yüksek yoğunlukta ve yönlendirilmiş ışık üretebilme kapasitesine sahiptir. Geleneksel aydınlatma çözümlerine kıyasla daha verimli ve uzun ömürlü olan LED projektörler, enerji tasarrufu sağlamakla kalmaz, aynı zamanda çevre dostu bir seçenek sunar.",
+      "LED Projektörlerin Çalışma Sistemi: LED projektörlerin çalışma prensibi, LED'lerin özel bir düzenleme ile yoğun ve yönlendirilmiş ışık üretmesine dayanır. Yüksek Parlaklık, Düşük Enerji Tüketimi, Uzun Ömür ve Düşük Isınma gibi birçok avantaj sunar.",
+      "LED Projektörlerin Kullanım Alanları: Sahne Aydınlatması, Spor Etkinlikleri (stadyumlar), Bina Cephe Aydınlatması, Açık Hava Mekanları (parklar, bahçeler), Etkinlikler ve Konserler, Gece Kulüpleri ve Görsel Sunumlar.",
+      "LED projektörler, modern aydınlatma teknolojisinin en verimli ve etkili örneklerinden biridir. Yüksek parlaklık, düşük enerji tüketimi ve uzun ömürleri sayesinde hem ekonomik hem de çevresel avantajlar sunar. Eğer siz de etkinliklerinizi, açık hava mekanlarınızı veya binalarınızı etkileyici bir şekilde aydınlatmak istiyorsanız, LED projektörler mükemmel bir seçenek olabilir."
+    ]
+  },
+  {
+    id: "18",
+    title: "AYDINLATMA ARMATÜRLERİNDE IP KORUMA NEDİR?",
+    date: "24 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/18/ip-838x622.jpg")
+    ],
+    content: [
+      "Aydınlatma armatürleri, çeşitli ortamlarda kullanıldıkları için çeşitli dış etkenlere karşı korunmalıdır. Bu koruma seviyesi, IP koruma sınıfı olarak adlandırılır. IP, 'Ingress Protection' kelimelerinin baş harflerinden oluşur ve bir aydınlatma armatürünün katı ve sıvı cisimlere karşı direncini belirler.",
+      "IP koruma sınıfı, genellikle iki rakamdan oluşur: İlk rakam katı cisimlere karşı korumayı, ikinci rakam ise sıvılara karşı korumayı gösterir. Örneğin, IP65 derecesine sahip bir aydınlatma armatürü, toza ve su sıçramalarına karşı tam korumalı demektir.",
+      "1. BASAMAK DEĞERLERİ: 0 (Korumasız) ile 6 (Toz geçirmez) arasında değişir. 1'den 4'e kadar olan seviyeler farklı büyüklükteki katı cisimlere karşı koruma sağlar. 5 Toza karşı koruma sağlar.",
+      "2. BASAMAK DEĞERLERİ: 0 (Korumasız) ile 8 (Suya sürekli daldırma etkilerine karşı koruma) arasında değişir. 1'den 6'ya kadar damlayan, sıçrayan ve fışkırtılan sulara karşı koruma seviyelerini ifade eder. 7 suya 30 dakikadan kısa süreli daldırmalara dayanıklılığı belirtir.",
+      "Aydınlatma armatürlerinde IP koruma sınıfını belirlerken kullanılacak ortam büyük önem taşır. Dış mekanlar için en az IP65 seviyesinde bir koruma önerilirken, iç mekanlar için daha düşük koruma seviyeleri yeterli olabilir.",
+      "Sonuç olarak, aydınlatma armatürlerinde IP koruma sınıfı, armatürlerin dayanıklılığını ve uzun ömürlülüğünü sağlayan kritik bir faktördür. Doğru seviyede bir koruma seçerek hem ortam koşullarına uygunluğu sağlamak hem de maliyetleri optimize etmek mümkündür."
+    ]
+  },
+  {
+    id: "19",
+    title: "LİNEER LED NEDİR?",
+    date: "29 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/19/beyazled-838x622.jpg")
+    ],
+    content: [
+      "Linear LED, adından da anlaşılacağı gibi, uzun ve ince bir yapıdaki LED ışık kaynağını ifade eder. Bu tasarım, LED'lerin bir araya getirilerek doğrusal bir formda düzenlenmesiyle oluşur. Genellikle boru şeklinde veya panel formatında bulunur ve belirli bir uzunluk boyunca sürekli aydınlatma sağlar.",
+      "Linear LED'lerin Avantajları",
+      "Enerji Verimliliği: Linear LED'ler, enerji tüketimini minimize ederken yüksek ışık çıkışı sağlar. Geleneksel ampullere göre çok daha az enerji tüketirler ve bu da uzun vadede enerji tasarrufu sağlar.",
+      "Uzun Ömür: LED teknolojisinin en büyük avantajlarından biri de uzun ömürlü olmasıdır. Linear LED'ler, ortalama 50.000 saat veya daha fazla kullanım ömrü sunar, bu da sık sık ampul değiştirme ihtiyacını ortadan kaldırır.",
+      "Düşük Isı Üretimi: Linear LED'ler, düşük ısı üretirler. Bu, hem enerji verimliliğini artırır hem de aydınlatma ortamının aşırı ısınmasını önler, böylece güvenliği artırır.",
+      "Kompakt ve Şık Tasarım: İnce ve uzun formu sayesinde lineer LED'ler, estetik açıdan modern ve şık bir görünüm sunar. Bu özellik, çeşitli iç mekan ve dış mekan tasarımlarında uyumlu bir aydınlatma seçeneği sağlar.",
+      "Hızlı ve Kolay Kurulum: Linear LED'lerin kurulumu genellikle basittir ve bu da zaman tasarrufu sağlar. Ayrıca, çoğu model, mevcut aydınlatma sistemleriyle uyumlu olarak tasarlanmıştır.",
+      "Nerelerde Kullanılır?",
+      "Ofisler ve Ticari Alanlar: Linear LED'ler, ofislerde sürekli ve homojen aydınlatma sağlar, bu da çalışanların verimliliğini artırabilir. Ayrıca, mağazalarda ürünlerin doğru şekilde aydınlatılmasını sağlar.",
+      "Mimari ve İç Mekan Tasarımı: İç mekan tasarımlarında estetik bir dokunuş sağlar. Özellikle modern ve minimal tasarımlar için ideal bir seçenektir.",
+      "Endüstriyel Alanlar: Fabrika ve depo gibi endüstriyel alanlarda, geniş alanları eşit şekilde aydınlatma sağlar, bu da güvenliği artırır ve iş verimliliğini destekler.",
+      "Dış Mekan Aydınlatması: Yollar, park alanları ve bina dış cepheleri gibi dış mekanlarda kullanılarak hem güvenliği artırır hem de estetik bir görünüm sunar.",
+      "Sonuç",
+      "Linear LED'ler, enerji verimliliği, uzun ömür ve estetik tasarımıyla modern aydınlatmanın vazgeçilmez bir parçası haline gelmiştir. Hem iç mekan hem de dış mekan aydınlatmasında sundukları avantajlarla, bu teknolojiyi tercih etmek, hem maliyet tasarrufu sağlar hem de daha etkili bir aydınlatma çözümü sunar. Eğer siz de aydınlatma sisteminizi modernize etmek istiyorsanız, linear LED'leri değerlendirmeniz size birçok fayda sağlayacaktır."
+    ]
+  },
+  {
+    id: "20",
+    title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED AMPUL ÜRÜNLERİMİZ",
+    date: "30 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/20/LINAER-838x622.jpg")
+    ],
+    content: [
+      "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED ampullerimizle tanışın. Hem evde hem de iş yerlerinde mükemmel aydınlatma sağlamak için tasarladığımız LED ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
+      "K2 Marka Ampuller: KES120 (IC DRIVER), KES122 (IC DRIVER), KES123 (IC DRIVER), KES126 (IC DRIVER), KES180, KES181, KES182, KES185, KES186 (DIM), KES187",
+      "GLOBAL Marka Ampuller: KES170, KES171, KES172, KES173",
+      "IC Driver Nedir? IC driver, LED ampullerin içindeki voltaj ve akımı düzenleyen bir bileşendir. Bu, LED'in doğru ve stabil çalışmasını sağlar, performansını optimize eder ve ömrünü uzatır. IC driver'lar, enerji verimliliğini artırarak daha güvenilir aydınlatma sağlar.",
+      "Neden LED Ampullerimizi Tercih Etmelisiniz?",
+      "Yerli Üretim: Tüm ampullerimiz yerli üretim olup, yüksek kalite standartlarına göre üretilmiştir.",
+      "Alüminyum Isı Yalıtımlı Soğutma Sistemi: Ampullerin ısısını etkili bir şekilde yönetir, uzun ömür ve yüksek verimlilik sağlar.",
+      "Enerji Verimliliği: LED teknolojisinin sunduğu düşük enerji tüketimi ile hem çevreye hem de bütçenize dost çözümler sunar.",
+      "LED ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. İster evde ister iş yerinde kullanın, yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın."
+    ]
+  },
+  {
+    id: "21",
+    title: "KCL040 AKILLI RGB LED ŞERİT TUYA SMART UYGULAMASINA NASIL BAĞLANIR?",
+    date: "31 Temmuz 2024",
+    images: [
+      getAssetPath("/images/haberler/21/kes180-838x622.jpg")
+    ],
+    content: [
+      "KCL040 akıllı RGB LED şeridinizle evinizin atmosferini değiştirmek artık çok kolay. Tuya Smart uygulaması üzerinden bu şeridi kontrol edebilir, renklerini ve efektlerini mobil cihazınızdan ayarlayabilirsiniz.",
+      "Tuya Smart akıllı aydınlatma sistemleri, Kendal kalitesiyle evinizin her noktasına ulaşıyor."
+    ]
+  },
+  {
+    id: "22",
+    title: "KCL040 AKILLI RGB LED ŞERİT TUYA SMART UYGULAMASINA NASIL BAĞLANIR? (ADIM ADIM REHBER)",
+    date: "01 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/22/tuya-838x622.jpg")
+    ],
+    content: [
+      "KCL040 akıllı RGB LED şeridinizle evinizin atmosferini değiştirmek artık çok kolay. Tuya Smart uygulaması üzerinden bu şeridi kontrol edebilir, renklerini ve efektlerini mobil cihazınızdan ayarlayabilirsiniz. İşte adım adım KCL040 LED şeridinizi Tuya Smart uygulamasına nasıl bağlayacağınız:",
+      "Adım 1: LED Şeridi Hazırlayın",
+      "KCL040 LED şeridinizi ilk olarak bir prize takın. Şeridin doğru çalıştığından emin olmak için kısa bir süre prizde kalmasını sağlayın. LED şeridi prize birkaç kez takıp çıkararak bağlantı moduna geçmesini bekleyin. LED şerit yanıp sönmeye başladığında, cihaz bağlanmaya hazır demektir.",
+      "Adım 2: Tuya Smart Uygulamasını Açın",
+      "Eğer Tuya Smart uygulamasını henüz indirmediyseniz, App Store veya Google Play Store üzerinden uygulamayı indirip yükleyin. Uygulamayı açın ve hesabınıza giriş yapın. Hesabınız yoksa, yeni bir hesap oluşturun.",
+      "[IMAGE]/images/haberler/22/tuya-2.png",
+      "Adım 3: Yeni Cihaz Ekleme",
+      "Uygulamanın ana ekranında, ekranın üst kısmında bulunan \"+\" veya \"Cihaz Ekle\" seçeneğine tıklayın.",
+      "[IMAGE]/images/haberler/22/tuya-3.png",
+      "Açılan pencerede Yakındaki cihazlar bölümünde \"Smart Strip Light of Kendal\" ürününü seçin. Bu, LED şeridinizi tanımlayacaktır.",
+      "[IMAGE]/images/haberler/22/tuya-4.png",
+      "Adım 4: Wi-Fi Ağ ve Şifre Ayarları",
+      "Şimdi Wi-Fi ağınızı seçmeniz istenecektir. LED şeridi bağlamak için evinizdeki Wi-Fi ağını seçin. Seçtiğiniz Wi-Fi ağının şifresini doğru bir şekilde girin. Şifrenizi girerken dikkatli olun ve doğru olduğundan emin olun.",
+      "Şifreyi girdikten sonra \"İleri\" butonuna basın. Uygulama, LED şeridinizi Wi-Fi ağına bağlamaya başlayacaktır.",
+      "[IMAGE]/images/haberler/22/tuya-5.png",
+      "Adım 5: Bağlantı ve Tamamlama",
+      "Bağlantı işlemi birkaç dakika sürebilir. LED şerit, ağınızın bağlantı hızına göre cihazınıza bağlanacaktır. Bu süreçte LED şeridin yanıp sönme hareketini takip edin.",
+      "[IMAGE]/images/haberler/22/tuya-6.png",
+      "Bağlantı başarılı olduğunda, uygulama size işlemin tamamlandığını bildirecek ve \"Tamamlandı\" butonuna tıklamanızı isteyecektir.",
+      "[IMAGE]/images/haberler/22/tuya-7.png",
+      "Artık mobil cihazınızı uzaktan kumanda olarak kullanabilirsiniz. Uygulama üzerinden LED şeridinizi açıp kapatabilir, renklerini değiştirebilir ve çeşitli efektleri ayarlayabilirsiniz.",
+      "[IMAGE]/images/haberler/22/tuya-8.png",
+      "Bu adımları takip ederek KCL040 akıllı RGB LED şeridinizi kolayca Tuya Smart uygulamasına bağlayabilir ve evinizin atmosferini istediğiniz gibi düzenleyebilirsiniz. Herhangi bir sorunla karşılaşırsanız, uygulamanın yardım bölümüne başvurabilirsiniz."
+    ]
+  }
+];

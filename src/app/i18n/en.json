@@ -1,14 +1,17 @@
 {
   "nav": {
     "about": "About",
-    "production": "Production",
+    "production": "Production & Export",
     "products": "Products",
     "why_us": "Why Us",
     "global": "Global",
     "projects": "Projects",
     "career": "Careers",
     "sanalpos": "Virtual POS",
-    "dealer": "B2B Login"
+    "dealer": "B2B Login",
+    "news": "News",
+    "retail": "Retail Chains",
+    "video": "Promo Video"
   },
   "hero": {
     "badge": "Global Manufacturer Since 1997",

@@ -7,7 +7,11 @@
     "projects": "Projeler",
     "career": "Kariyer",
     "sanalpos": "Sanal Pos",
-    "dealer": "B2B Girişi"
+    "dealer": "B2B Girişi",
+    "news": "Haberler",
+    "retail": "Zincir Marketler",
+    "video": "Tanıtım Filmi",
+    "production": "Üretim ve İhracat"
   },
   "hero": {
     "badge": "1997'den Beri Küresel Üretici",

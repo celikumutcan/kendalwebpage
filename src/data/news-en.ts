@@ -1,0 +1,412 @@
+import { getAssetPath } from "@/utils/basePath";
+
+export interface NewsItem {
+  id: string;
+  title: string;
+  date: string;
+  images: string[];
+  content: string[];
+}
+
+export const newsDataEN: NewsItem[] = [
+  {
+    id: "1",
+    title: "WE HOSTED OUR TRADITIONAL KENDAL ELECTRIC IFTAR DINNER",
+    date: "Apr 13, 2024",
+    images: [
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.jpg"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.jpg")
+    ],
+    content: [
+      "We held our traditional iftar dinner program on 29 / 03 / 2024 together with our employees. We came together with our employees at the iftar dinner where we experienced the unity and togetherness of the month of Ramadan.",
+      "We thank all our employees for sharing the same table with us, and as we bid farewell to the Holy Month of Ramadan, we wish that the Ramadan Feast brings peace, happiness, unity and solidarity to the entire Kendal Electric family and our country."
+    ]
+  },
+  {
+    id: "2",
+    title: "WE PARTICIPATED IN MESSE FRANKFURT LIGHT + BUILDING FAIR IN GERMANY",
+    date: "May 23, 2024",
+    images: [
+      getAssetPath("/images/haberler/2/111121-838x622.jpg"),
+      getAssetPath("/images/haberler/2/22222211.jpg"),
+      getAssetPath("/images/haberler/2/333323332.jpg"),
+      getAssetPath("/images/haberler/2/44444444443.jpg")
+    ],
+    content: [
+      "As Kendal Electric, we participated in the Messe Frankfurt Light + Building Fair. We introduced our most innovative products to visitors at the fair held in Germany between March 3, 2024 - March 8, 2024.",
+      "Kendal Electric's presence at the Messe Frankfurt Light + Building Fair offers the opportunity to follow the latest trends in the sector and interact directly with customers.",
+      "The fair brings sector professionals together by addressing topics such as energy efficiency, smart LED technologies, and sustainability. As Kendal Electric, by participating in this event, we focus on presenting the latest innovations in the sector to our customers and developing our strategies for the future."
+    ]
+  },
+  {
+    id: "3",
+    title: "LATEST TRENDS AND TECHNOLOGICAL DEVELOPMENTS IN THE LIGHTING SECTOR",
+    date: "May 27, 2024",
+    images: [
+      getAssetPath("/images/haberler/3/12131231.jpg"),
+      getAssetPath("/images/haberler/3/2112112312-838x622.jpg"),
+      getAssetPath("/images/haberler/3/32312313.jpg")
+    ],
+    content: [
+      "Lighting no longer merely illuminates a space, but is also integrated with smart systems to provide energy efficiency, aesthetics, and user comfort.",
+      "In recent years, the use of smart lighting systems is rapidly increasing. These systems automatically adjust according to environmental conditions and user needs, providing energy savings and enhancing the user experience. Additionally, with the widespread use of LED technology, it offers design freedom by providing various color options along with advantages such as energy efficiency and long life.",
+      "Eco-friendly design trends are also showing their impact in the lighting sector. While the use of recyclable materials and sustainable production methods aims to minimize environmental impact, color and lighting psychology are designed to affect the atmosphere of the space and the mood of the users.",
+      "Creative and diverse approaches also stand out in the design of lighting fixtures. Fixtures created using minimalist designs, geometric forms, and natural materials give spaces a unique and aesthetic appearance.",
+      "As Kendal Electric, we closely follow these trends and technological developments in the lighting sector and continue to offer our customers the newest and most innovative solutions. Thank you for choosing our company, which is open to changes and developments in the sector."
+    ]
+  },
+  {
+    id: "4",
+    title: "CAMPAIGN ON FIBER AND CAT6 CABLE PRODUCTS",
+    date: "May 31, 2024",
+    images: [
+      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.jpg")
+    ],
+    content: [
+      "As Kendal Electric, we are happy to announce a special campaign just for you! We offer special prices and conditions for our KKC107 Fiber Cable and KKC106 CAT6 Cable products in our stock. These products are offered with limited stocks, and you can contact your regional manager to learn the campaign prices and conditions.",
+      "KKC107 FIBER CABLE 9 SM SX / 2.00 mm LSZH / 9/125 G657 A2 Features:",
+      "Single Mode Fiber",
+      "9/125 G657 A2 Fiber Category",
+      "2.00 mm LSZH Sheath",
+      "With Limited Stocks",
+      "KKC106 CAT6 CABLE 0.58mm CCA 4PA / IRUTP Features:",
+      "CAT6 UTP Cable",
+      "0.58mm CCA Conductor",
+      "4 Pairs, Straight Wire",
+      "With Limited Stocks",
+      "This special campaign is only valid for the specified products and is limited by stocks. Call your regional manager now for special prices and conditions and don't miss the opportunities!",
+      "You can contact your regional manager for detailed information and orders."
+    ]
+  },
+  {
+    id: "5",
+    title: "WE MADE AN AESTHETIC UPDATE BY RENEWING OUR PACKAGING DESIGNS",
+    date: "Jun 24, 2024",
+    images: [
+      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.jpg")
+    ],
+    content: [
+      "As Kendal Electric, we aim to improve the customer experience by renewing our product packaging. The new box designs offer an aesthetic update with a minimalist approach and highlight the natural appeal of the products.",
+      "This change aims to modernize product presentation and meet user expectations. The renewed packaging reflects the company's values with a simple and elegant appearance.",
+      "As Kendal Electric, we continue to improve ourselves constantly to increase customer satisfaction and provide practical use. With our new box designs, we focus on providing a more pleasant shopping experience to our users."
+    ]
+  },
+  {
+    id: "6",
+    title: "OUR NEW HUMAN RESOURCES MANAGER ZEHRA ŞİMŞEK ÖZEN HAS JOINED US",
+    date: "Jul 01, 2024",
+    images: [
+      getAssetPath("/images/haberler/6/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/6/zehrasimsekozen.jpg")
+    ],
+    content: [
+      "As Kendal Electric, we have taken an important step to further strengthen our constantly growing and developing structure. Zehra Şimşek ÖZEN, who has started working as Human Resources Manager, will work with determination to increase employee satisfaction and support our business strategies with human-oriented approaches by strengthening our company's human resources strategies.",
+      "We are pleased to know that together with her, we will achieve success by strengthening our company culture and producing innovative solutions. We congratulate Zehra Şimşek ÖZEN on joining our team and wish a successful cooperation."
+    ]
+  },
+  {
+    id: "7",
+    title: "THE IMPORTANCE OF GOOD LIGHTING FOR HEALTH",
+    date: "Jul 11, 2024",
+    images: [
+      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.png")
+    ],
+    content: [
+      "Eye Health and Visual Performance:",
+      "Working or reading in well-lit environments prevents eye strain. Proper lighting is especially important for those who work with computers or other screens for long periods. Poor lighting can lead to visual impairment or worsen existing vision problems.",
+      "Emotional and Psychological Effects:",
+      "Environments illuminated by natural light positively affect people's moods and emotional states. Sunlight increases serotonin levels and reduces the risk of depression. Therefore, the use of natural light indoors should be encouraged as much as possible.",
+      "Sleep Patterns:",
+      "Improperly lit environments can negatively affect sleep quality. Proper lighting can ease the transition to sleep and improve sleep quality.",
+      "Productivity and Concentration:",
+      "Well-lit environments specifically increase working and learning productivity. It allows individuals to be more focused and helps them perform tasks more effectively.",
+      "Safety:",
+      "Adequately lit environments prevent accidents. Good lighting is important especially in risky areas such as stairs, corridors, and outdoors. This allows people to move more safely.",
+      "It should not be forgotten that good lighting increases overall quality of life. It has a significant impact on both physical and mental health. Therefore, it is recommended to use natural and artificial light in a balanced way when making lighting arrangements in homes and workplaces. Also, making appropriate lighting choices for personal preferences and activities is important for health."
+    ]
+  },
+  {
+    id: "8",
+    title: "WHAT IS A LIGHTING FIXTURE AND WHERE IS IT USED?",
+    date: "Jul 12, 2024",
+    images: [
+      getAssetPath("/images/haberler/8/armaturnedir-838x622.jpg")
+    ],
+    content: [
+      "Lighting fixtures can be defined as components that direct and protect light sources. These fixtures, generally used indoors and outdoors, serve functional and aesthetic purposes.",
+      "Components and Structure: Lighting fixtures usually have a body and may have one or more sockets on them for lamp connection. Fixtures include various components besides the lamp, such as power supply, reflector, lens, diffuser, socket, and electrical connection equipment.",
+      "Light Sources: While traditional fixtures work with lamps, today there are also fixtures with internal light sources such as LED modules. Since LEDs are long-lasting, lamp replacement is not required in such fixtures.",
+      "Usage Areas:",
+      "Residences: They are generally used for decorative and lighting purposes in living areas such as living rooms, bedrooms, kitchens, and bathrooms.",
+      "Offices: Used to provide task and general lighting in work environments. Proper lighting increases employee productivity.",
+      "Commercial Areas: Used in places like stores, restaurants, and cafes to improve the customer experience and create a pleasant atmosphere.",
+      "Public Buildings: Used to provide general lighting and increase security in places like hospitals, schools, and public institutions.",
+      "Outdoor Areas: Their use for security and aesthetic purposes is common in places like parks, gardens, streets, and parking lots.",
+      "Selection and Positioning: Correct fixture selection and appropriate positioning directly affect the lighting quality, visual impact, and energy efficiency of a space. Well-planned lighting provides support in accordance with the intended use of the space.",
+      "Technological Developments: In recent years, the development of LED technology has increased the energy efficiency of fixtures and reduced maintenance costs. Additionally, with smart lighting systems, the management and control of fixtures have also become more effective.",
+      "Lighting fixtures are a product category that constantly evolves and diversifies with technological advancements. They offer different designs and features suitable for every usage area and need, making them an indispensable part of modern life."
+    ]
+  },
+  {
+    id: "9",
+    title: "PROPER LIGHTING SUGGESTIONS FOR YOUR HOME",
+    date: "Jul 12, 2024",
+    images: [
+      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.jpg")
+    ],
+    content: [
+      "When arranging your lighting system, remember that every room or area has its own unique texture and you need to light it in harmony with this texture. Do not stick to a single system.",
+      "Living Room Lighting",
+      "Living rooms are areas where guests are hosted and aesthetic structures are prominent. For this reason, the lighting system you choose for your living room requires great care. There are some points to consider in living room lighting. The first is to use two separate lighting systems if possible. If this is not possible, you may consider dimmer systems that help adjust light intensity.",
+      "What are the advantages of using two different lighting options? Having the opportunity to adjust the lighting according to the event when your guests arrive will help you create a more pleasant atmosphere. For example, bright light creates a more cheerful environment, while dim light is ideal for calmer activities such as dining or watching a movie. Additionally, the use of dim light can also protect your eye health.",
+      "Sitting Room Lighting",
+      "The sitting room can be seen as a more personal space compared to the living room. Therefore, the lighting arrangement of the sitting room can be entirely according to your tastes. With proper lighting preferred in the sitting room, you can feel happier. You can also create an ideal environment to spend pleasant time with your family. A soft and warm lighting choice can increase your mental calmness and create a quieter atmosphere.",
+      "Bedroom Lighting",
+      "Bedroom lighting is important to increase your body's resting quality. Therefore, the lighting system you choose for the bedroom should be arranged to make it easier for you to fall asleep by increasing melatonin levels. You can opt for a soft and dim lighting that is not too bright. Also, just as we suggested for the living room, preferring systems that can adjust the light level in the bedroom can help you provide a more suitable environment.",
+      "Study Room Lighting",
+      "The lighting of the study room is extremely important. Thanks to a correct lighting system, you can increase your work productivity. The most important issue to consider when arranging lighting in the study room is that the light should be bright enough and not spread too much. Because excessively spreading light can create a dim atmosphere in the room. In the case where the light is not strong enough, work fatigue combined with dim light can increase your desire to sleep. For this reason, you should prefer as strong a lighting system as possible for the study room. Choosing a chandelier that will direct light straight to your desk can also increase your work efficiency and help you stay more awake during working hours.",
+      "Kitchen Lighting",
+      "Since kitchens usually contain many items and can have a narrow appearance, lighting choice is important. You can focus on general lighting systems to make your kitchen area look more spacious. You can make the area look spacious and wide by using bright lights throughout the kitchen. Additionally, under-cabinet lights can provide both a useful and aesthetic appearance. LED lights to be used inside cabinets can save electricity while adding a pleasant atmosphere to your kitchen.",
+      "Use of Lampshades and Floor Lamps",
+      "Lampshades and floor lamps are among the lighting options popular for their aesthetic appearance. You can utilize such items when arranging lighting systems at home. For example, floor lamps you will use in areas like the living room or sitting room can increase your comfort while also offering an eye-catching aesthetic. Lampshades mounted on the wall or placed on the bedside nightstand in the bedroom can prevent eye fatigue while reading a book at night. Also, lamps you will use on your study desk can help you save energy and increase your work focus.",
+      "Chandeliers",
+      "Chandeliers are an important part of a room's lighting system and can create a pleasant atmosphere by completing the aesthetic texture of the room. When choosing a chandelier, it is important to pay attention to its harmony with the general atmosphere of the room. You should make your chandelier selection by considering your furniture and other decorative elements. For example, if you use decorative accessories of different styles and colors in the room, you can balance this contrast by choosing a simple and harmonious chandelier.",
+      "Using a very large and flashy chandelier in the room can disrupt the balance of the room and cause a too exaggerated appearance. If the room is in a simpler and minimalist style, a more detailed and elegant chandelier choice can increase the aesthetics of the room and draw attention.",
+      "In rooms where daylight is scarce, you can make the room look more spacious and bright by using a light-colored and simple chandelier accompanied by bright lights."
+    ]
+  },
+  {
+    id: "10",
+    title: "OUR NEW ADMINISTRATIVE AFFAIRS SPECIALIST EREN OKAN HAS JOINED US",
+    date: "Jul 12, 2024",
+    images: [
+      getAssetPath("/images/haberler/10/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/10/erenokan.jpg")
+    ],
+    content: [
+      "As Kendal Electric takes firm steps towards continuous growth and development, every new member joining our team carries great value for us. Eren OKAN, who joined this valuable team as an Administrative Affairs Specialist, will work with determination to further improve our company's administrative affairs processes, increase efficiency, and ensure excellence in daily operations. He will not only work meticulously and selflessly while performing his duties, but will also make a great contribution to the dynamic structure of our team and our company culture.",
+      "We are pleased to know that together with him, we will carry our company's vision further and achieve success together. We congratulate Eren OKAN on joining our team and wish for a successful cooperation and a successful future."
+    ]
+  },
+  {
+    id: "11",
+    title: "WHAT IS THE TERM DIMMABLE IN LIGHTING?",
+    date: "Jul 16, 2024",
+    images: [
+      getAssetPath("/images/haberler/11/dimablee-838x622.jpg")
+    ],
+    content: [
+      "The term dimmable lighting is a concept that emphasizes the flexibility and user-friendly features of today's lighting technologies. Such lighting systems allow users to adjust the lighting level as they wish. Generally used in many different venues from homes to offices, hotels to stores, these systems come to the forefront by providing energy savings and creating a comfortable environment.",
+      "What Are Its Benefits?",
+      "Energy saving, which stands out among the benefits of dimmable lighting, is becoming increasingly important today. Reducing the lighting level directly reduces energy consumption, providing significant savings on electricity bills. Additionally, decreasing energy use also reduces environmental impacts, thus making a positive contribution to sustainability.",
+      "Dimmable lighting systems can also extend the life of lamps. Keeping the light level low ensures that the lamps heat up less and therefore wear out less. This allows the lamps to operate smoothly for a longer time and reduces maintenance costs.",
+      "In terms of comfort and creating an atmosphere, dimmable lighting is also of great importance. Different lighting levels can be adjusted for different activities. For example, while low light levels may be preferred for resting or a romantic setting, brighter lighting levels can be selected for working or reading. This enables users to utilize the space more efficiently and pleasantly according to their needs.",
+      "Dimmable Lighting Systems:",
+      "With the advancement of technology, dimmable lighting systems have also developed and diversified. In addition to traditional analog dimmers, digital dimmers and smart dimmers are also widely used. While digital dimmers offer more precise control, smart dimmers can be remotely controlled via Wi-Fi or Bluetooth and integrated with smart home systems.",
+      "In conclusion, dimmable lighting systems are technologies designed in accordance with the requirements of modern life, playing an important role in creating energy-saving, long-lasting, and comfortable spaces. They are preferred because they offer suitable solutions for all types of venues."
+    ]
+  },
+  {
+    id: "12",
+    title: "WHY DO OPERATING ROOM LIGHTS NOT CREATE SHADOWS?",
+    date: "Jul 18, 2024",
+    images: [
+      getAssetPath("/images/haberler/12/amelyatisigi-838x622.jpg")
+    ],
+    content: [
+      "Operating room lights play a critical role in the successful performance of surgical operations. This technology, which is continuously developed to meet the precision and detail requirements required by modern medicine, allows surgeons to obtain a clear view during surgery.",
+      "The design of operating lights stands out with its shadow-free feature. These lights generally have multiple light sources, and these sources illuminate the surgical field from different angles, minimizing shadowing. The reflectors and diffusers used ensure that light is distributed homogeneously. Reflectors prevent the formation of shadows in the operating area by controlling the intensity and direction of light. In this way, surgeons can work without experiencing any visual obstruction during the operation.",
+      "The correct positioning of operating room lights is also of great importance. Lights are usually placed at a right angle to the operating table, which ensures that the operating area is optimally illuminated and surgeons can see every detail. Modern operating lights also have adjustable features such as lighting power and color temperature, helping surgeons optimize the operation process further.",
+      "Shadow dilution techniques are continuously improved and supported by new technologies. For example, some lights are now equipped with LED technology, which provides more light power with less energy consumption and increases precision in the operation process.",
+      "In conclusion, the shadow dilution features and correct use of operating room lights are among the critical factors that ensure surgeons achieve the best results during the operation. These continuously developing technologies make significant contributions to the advancement of medicine and the successful performance of surgical interventions."
+    ]
+  },
+  {
+    id: "13",
+    title: "HOW TO EXTEND THE LIFE OF LED BULBS?",
+    date: "Jul 17, 2024",
+    images: [
+      getAssetPath("/images/haberler/13/ledampul-838x622.jpg")
+    ],
+    content: [
+      "Strategies to Extend the Life of LED Bulbs",
+      "1. Protection Against Power Fluctuations: LED bulbs contain sensitive semiconductor components, and power fluctuations can damage these components. Especially in regions where the power grid is unstable, sudden rises and drops in grid voltage can shorten the life of LED bulbs. This can be prevented with Voltage Regulators and Surge Protectors.",
+      "2. Proper Usage Conditions: LED bulbs generally perform optimally in certain temperature ranges. You can extend the life of the bulbs by avoiding extreme hot or cold environments. Additionally, high humidity can affect the performance of LED bulbs and shorten their life.",
+      "3. High-Quality Lighting Fixtures: The quality of the fixtures you place your bulbs in affects the overall performance of the bulb. Fixtures that provide good heat dissipation and operate without damaging the components can extend bulb life.",
+      "4. Regular Maintenance and Checks: Regularly checking and maintaining your lighting systems allows you to detect potential problems early. Keeping the bulbs clean and dust-free is also important to maintain their performance.",
+      "5. Usage Suitable for LED Features: LED bulbs are generally resistant to frequent on-off operations, but instead of turning them on and off frequently, allowing the bulbs to operate for long periods extends their life. Also, using dimmers specifically designed for LED bulbs extends their life.",
+      "By applying these strategies, you can significantly extend the life of your LED bulbs. Each step can help you save on energy and maintenance costs while preserving the performance of your bulbs."
+    ]
+  },
+  {
+    id: "14",
+    title: "WHAT IS Li-Fi TECHNOLOGY AND WHAT DOES IT DO?",
+    date: "Jul 19, 2024",
+    images: [
+      getAssetPath("/images/haberler/14/lifi-838x622.jpg")
+    ],
+    content: [
+      "Li-Fi Technology: Fast and Secure Communication with Light",
+      "Today, internet connection has become more important than ever. We need a high-speed and secure connection everywhere from our homes to our offices and public areas. This is exactly where Li-Fi (Light Fidelity) technology comes into play.",
+      "What is Li-Fi? Li-Fi stands for \"Light Fidelity\" and uses LED lights for wireless communication. This technology transmits data through fast light signals emitted by LED bulbs. Li-Fi, which does not use RF (Radio Frequency) like Wi-Fi, offers a secure alternative in environments with intense electromagnetic noise.",
+      "How Does Li-Fi Work? For data transmission, signals coming from the LED light are received by receivers, while transmitters are used to send these signals back to the LED bulbs. Li-Fi Technology allows multiple lights to be used within a network, so users can switch between lights without experiencing a loss of connection.",
+      "Advantages of Li-Fi: High-Speed Data Transmission (data transfer at gigabit levels), Security (secure communication in places where electromagnetic frequencies are used), Low Latency (data transmission at the speed of light), and Eco-Friendly (energy saving through the use of LEDs).",
+      "Application Areas: Office Environments, Public Areas (airports, hospitals), Industrial Use, and fast and secure data transfer between IoT (Internet of Things) devices.",
+      "In conclusion, Li-Fi technology stands out as a fast, secure, and environmentally friendly communication option that meets the needs of the modern world."
+    ]
+  },
+  {
+    id: "15",
+    title: "WHAT IS THE D50 LIGHTING STANDARD? WHERE IS IT USED?",
+    date: "Jul 22, 2024",
+    images: [
+      getAssetPath("/images/haberler/15/d50-838x622.jpg")
+    ],
+    content: [
+      "It is a factor that directly affects the quality of work in sectors such as color management, graphic design, printing, and photography. Especially in printing environments, accurately evaluating and printing the correct colors is of critical importance for customer satisfaction and work quality. For this reason, the D50 lighting standard determined according to the ISO 3664:2000 standard is of great importance.",
+      "D50 lighting refers to a white balance point with a color temperature of 5000 Kelvin. This temperature value provides an ideal environment for accurately evaluating colors.",
+      "1. Color Accuracy and Consistency: D50 lighting provides a white balance point selected in accordance with color management standards. This standard used in printing houses ensures that colors are evaluated accurately in pre-press processes and checks how close the printed works are to the original colors.",
+      "2. Light Temperature and Color Aberrations: Normal bulbs and halogen lamps have a temperature value below 5000 Kelvin. In environments illuminated by this type of light, a yellow 'CAST' Color Aberration occurs over all the colors we see.",
+      "Fluorescent lamps, on the other hand, have a value above 5000 Kelvin. This time, a blue 'CAST' Color Aberration occurs over all colors.",
+      "D50 lighting finds use in many areas that require color management. The main usage areas are: Printing houses and print centers, Photography studios, Graphic design and advertising agencies, Print control rooms, Color evaluation booths, Color calibration laboratories, Art galleries and museums, Education and educational materials.",
+      "In conclusion, the use of D50 lighting in printing houses improves the quality of works, solidifies color management, and maximizes customer satisfaction. Therefore, using lighting that complies with these standards in printing environments is of great importance."
+    ]
+  },
+  {
+    id: "16",
+    title: "DIFFERENCES BETWEEN SPOTLIGHTS AND DOWNLIGHTS",
+    date: "Jul 23, 2024",
+    images: [
+      getAssetPath("/images/haberler/16/SPOTT-838x622.jpg")
+    ],
+    content: [
+      "Some of the options you come across when planning home or workplace lighting may be spotlights and downlights. Although both are designed for different lighting needs, they show significant differences in terms of their features and usage areas.",
+      "Spotlights: Focused Lighting. Spotlights are ideal for highlighting a specific area or object. They usually come with different beam angles such as 15°, 24°, and 36°. They are widely used in areas like art galleries, decorative product lighting, and showcases. They create dramatic light and shadow effects to ensure that highlighted objects or areas draw attention.",
+      "Downlights: General Lighting. Downlights are designed to provide soft and general lighting to a wide area. They usually have a 60° beam angle. They are frequently used in areas requiring general lighting such as living rooms, bedrooms, and kitchens. They create a general atmosphere by offering soft and glare-free lighting.",
+      "How to Choose Lighting? You should consider your needs (focused vs general), your aesthetic preferences, and technical details like beam angle.",
+      "Conclusion: Spotlights and downlights are products that meet different lighting needs and create different visual effects. By carefully evaluating both options, you can optimize the atmosphere and user experience you desire in your space."
+    ]
+  },
+  {
+    id: "17",
+    title: "WHAT IS AN LED PROJECTOR?",
+    date: "Jul 26, 2024",
+    images: [
+      getAssetPath("/images/haberler/17/pojector-838x622.jpg")
+    ],
+    content: [
+      "An LED projector is a lighting device frequently used in outdoor areas, stages, events, sports events, and building illumination. Operating with LED (Light Emitting Diode) technology, these projectors have the capacity to produce high-intensity and directed light. Being more efficient and longer-lasting compared to traditional lighting solutions, LED projectors not only save energy but also offer an environmentally friendly option.",
+      "How LED Projectors Work: The operating principle of LED projectors relies on LEDs producing intense and directed light through a special arrangement. It offers many advantages such as High Brightness, Low Energy Consumption, Long Life, and Low Heat Generation.",
+      "Usage Areas of LED Projectors: Stage Lighting, Sports Events (stadiums), Building Facade Illumination, Outdoor Venues (parks, gardens), Events and Concerts, Nightclubs, and Visual Presentations.",
+      "LED projectors are one of the most efficient and effective examples of modern lighting technology. Thanks to their high brightness, low energy consumption, and long lives, they offer both economic and environmental advantages. If you want to impressively illuminate your events, outdoor venues, or buildings, LED projectors can be an excellent option."
+    ]
+  },
+  {
+    id: "18",
+    title: "WHAT IS IP PROTECTION IN LIGHTING FIXTURES?",
+    date: "Jul 24, 2024",
+    images: [
+      getAssetPath("/images/haberler/18/ip-838x622.jpg")
+    ],
+    content: [
+      "Since lighting fixtures are used in various environments, they must be protected against various external factors. This protection level is called the IP protection class. IP stands for 'Ingress Protection' and determines the resistance of a lighting fixture against solid and liquid objects.",
+      "The IP protection class generally consists of two digits: The first digit indicates protection against solid objects, and the second digit indicates protection against liquids. For example, a lighting fixture with an IP65 rating means it is fully protected against dust and water splashes.",
+      "1ST DIGIT VALUES: Ranges from 0 (Unprotected) to 6 (Dust tight). Levels 1 to 4 provide protection against solid objects of different sizes. 5 provides protection against dust.",
+      "2ND DIGIT VALUES: Ranges from 0 (Unprotected) to 8 (Protection against continuous submersion in water). Levels 1 to 6 express protection levels against dripping, splashing, and jetted waters. 7 indicates resistance to short-term immersions in water for less than 30 minutes.",
+      "When determining the IP protection class for lighting fixtures, the environment to be used is of great importance. While a protection of at least IP65 level is recommended for outdoors, lower protection levels may be sufficient for indoors.",
+      "In conclusion, the IP protection class in lighting fixtures is a critical factor ensuring the durability and longevity of the fixtures. By choosing a protection at the right level, it is possible to ensure suitability for environmental conditions and optimize costs."
+    ]
+  },
+  {
+    id: "19",
+    title: "WHAT IS A LINEAR LED?",
+    date: "July 29, 2024",
+    images: [
+      getAssetPath("/images/haberler/19/beyazled-838x622.jpg")
+    ],
+    content: [
+      "Linear LED, as the name suggests, refers to a long and thin LED light source. This design is created by arranging LEDs in a linear format. It usually comes in a tube or panel format and provides continuous lighting over a certain length.",
+      "Advantages of Linear LEDs",
+      "Energy Efficiency: Linear LEDs provide high light output while minimizing energy consumption. They consume much less energy compared to traditional bulbs, ensuring long-term energy savings.",
+      "Long Lifespan: One of the biggest advantages of LED technology is its long lifespan. Linear LEDs offer an average lifespan of 50,000 hours or more, eliminating the need for frequent bulb replacements.",
+      "Low Heat Output: Linear LEDs produce very little heat. This increases energy efficiency and prevents overheating in the lighting environment, thereby improving safety.",
+      "Compact and Stylish Design: Thanks to its thin and long form, linear LEDs offer an aesthetically modern and stylish appearance. This feature provides a harmonious lighting option in various interior and exterior designs.",
+      "Fast and Easy Installation: Installation of Linear LEDs is generally simple, which saves time. Additionally, most models are designed to be compatible with existing lighting systems.",
+      "Where is it Used?",
+      "Offices and Commercial Spaces: Linear LEDs provide continuous and homogeneous lighting in offices, which can increase employee productivity. It also ensures proper lighting of products in stores.",
+      "Architectural and Interior Design: Provides an aesthetic touch in interior designs. It is an ideal option especially for modern and minimal designs.",
+      "Industrial Areas: Provides uniform lighting over large areas in industrial spaces like factories and warehouses, increasing safety and supporting work efficiency.",
+      "Outdoor Lighting: Used in outdoor areas such as roads, parking lots, and building facades, it enhances both safety and aesthetics.",
+      "Conclusion",
+      "Linear LEDs have become an indispensable part of modern lighting with their energy efficiency, long lifespan, and aesthetic design. Choosing this technology provides both cost savings and a more effective lighting solution. If you want to modernize your lighting system, considering linear LEDs will offer you many benefits."
+    ]
+  },
+  {
+    id: "20",
+    title: "OUR DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED BULB PRODUCTS",
+    date: "July 30, 2024",
+    images: [
+      getAssetPath("/images/haberler/20/LINAER-838x622.jpg")
+    ],
+    content: [
+      "Meet our LED bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in the workplace, our LED bulbs stand out with their high performance and long lifespan. We ensure you experience impressive lighting in every space with energy efficiency, modern design, and superior technology.",
+      "K2 Brand Bulbs: KES120 (IC DRIVER), KES122 (IC DRIVER), KES123 (IC DRIVER), KES126 (IC DRIVER), KES180, KES181, KES182, KES185, KES186 (DIM), KES187",
+      "GLOBAL Brand Bulbs: KES170, KES171, KES172, KES173",
+      "What is an IC Driver? An IC driver is a component that regulates the voltage and current inside LED bulbs. This ensures the LED operates correctly and stably, optimizes its performance, and extends its lifespan. IC drivers improve energy efficiency and provide more reliable lighting.",
+      "Why Should You Choose Our LED Bulbs?",
+      "Domestic Production: All our bulbs are domestically produced according to high-quality standards.",
+      "Aluminum Thermally Insulated Cooling System: Effectively manages the heat of the bulbs, ensuring a long lifespan and high efficiency.",
+      "Energy Efficiency: Offers environmentally and budget-friendly solutions with the low energy consumption of LED technology.",
+      "Our LED bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Whether you use them at home or in the workplace, add value to your spaces with our high-quality lighting solutions."
+    ]
+  },
+  {
+    id: "21",
+    title: "HOW TO CONNECT KCL040 SMART RGB LED STRIP TO THE TUYA SMART APP?",
+    date: "July 31, 2024",
+    images: [
+      getAssetPath("/images/haberler/21/kes180-838x622.jpg")
+    ],
+    content: [
+      "Changing the atmosphere of your home is now very easy with your KCL040 smart RGB LED strip. You can control this strip and adjust its colors and effects from your mobile device via the Tuya Smart app.",
+      "Tuya Smart smart lighting systems reach every corner of your home with Kendal quality."
+    ]
+  },
+  {
+    id: "22",
+    title: "HOW TO CONNECT KCL040 SMART RGB LED STRIP TO THE TUYA SMART APP? (STEP BY STEP GUIDE)",
+    date: "August 01, 2024",
+    images: [
+      getAssetPath("/images/haberler/22/tuya-838x622.jpg")
+    ],
+    content: [
+      "Changing the atmosphere of your home is now very easy with your KCL040 smart RGB LED strip. You can control this strip and adjust its colors and effects from your mobile device via the Tuya Smart app. Here is how to connect your KCL040 LED strip to the Tuya Smart app step by step:",
+      "Step 1: Prepare the LED Strip",
+      "First, plug your KCL040 LED strip into an outlet. Let it stay plugged in for a short while to ensure it works correctly. Plug and unplug the LED strip a few times and wait for it to enter pairing mode. When the LED strip starts flashing, the device is ready to connect.",
+      "Step 2: Open the Tuya Smart App",
+      "If you haven't downloaded the Tuya Smart app yet, download and install it from the App Store or Google Play Store. Open the app and log into your account. If you don't have an account, create a new one.",
+      "[IMAGE]/images/haberler/22/tuya-2.png",
+      "Step 3: Add a New Device",
+      "On the main screen of the app, click the \"+\" or \"Add Device\" option at the top of the screen.",
+      "[IMAGE]/images/haberler/22/tuya-3.png",
+      "In the window that opens, select the \"Smart Strip Light of Kendal\" product in the Nearby devices section. This will identify your LED strip.",
+      "[IMAGE]/images/haberler/22/tuya-4.png",
+      "Step 4: Wi-Fi Network and Password Settings",
+      "You will now be asked to select your Wi-Fi network. Select your home Wi-Fi network to connect the LED strip. Enter the password for your selected Wi-Fi network correctly. Be careful and make sure it is correct.",
+      "After entering the password, press the \"Next\" button. The app will start connecting your LED strip to your Wi-Fi network.",
+      "[IMAGE]/images/haberler/22/tuya-5.png",
+      "Step 5: Connection and Completion",
+      "The connection process may take a few minutes. The LED strip will connect to your device depending on your network's connection speed. Follow the flashing pattern of the LED strip during this process.",
+      "[IMAGE]/images/haberler/22/tuya-6.png",
+      "When the connection is successful, the app will notify you that the process is complete and ask you to click the \"Done\" button.",
+      "[IMAGE]/images/haberler/22/tuya-7.png",
+      "You can now use your mobile device as a remote control. You can turn your LED strip on and off, change its colors, and adjust various effects via the app.",
+      "[IMAGE]/images/haberler/22/tuya-8.png",
+      "By following these steps, you can easily connect your KCL040 smart RGB LED strip to the Tuya Smart app and arrange the atmosphere of your home as you wish. If you encounter any problems, you can consult the help section of the app."
+    ]
+  }
+];
