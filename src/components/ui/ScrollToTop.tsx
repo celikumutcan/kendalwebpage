@@ -16,10 +16,9 @@ export const ScrollToTop = () => {
     }
   };
 
-  // Scroll through Lenis (which owns the actual scroll loop) instead of the
-  // native window.scrollTo, which conflicts with Lenis and does nothing.
   const scrollToTop = () => {
     if (lenis) {
+      // Use absolute 0 and force to ensure it reaches top without locking
       lenis.scrollTo(0, { duration: 1.5, force: true });
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });

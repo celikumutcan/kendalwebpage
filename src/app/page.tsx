@@ -29,8 +29,8 @@ export default function Home() {
         <Hero />
         <AboutUs />
 
-        <CompanyStats />
         <Certifications />
+        <CompanyStats />
         <CatalogCTA />
         <CompanyVideo />
         <GlobalPresence />

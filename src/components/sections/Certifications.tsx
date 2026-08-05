@@ -48,9 +48,12 @@ export const Certifications = () => {
     <section
       id="certifications"
       ref={containerRef}
-      className="w-full bg-transparent py-16 md:py-24 px-6 border-t border-white/5"
+      className="w-full relative bg-transparent py-16 md:py-24 px-6 border-t border-white/5 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      {/* Background ambient light */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] h-[300px] bg-yellow-500/40 rounded-[100%] blur-[90px] pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {certs.map((cert, idx) => (
             <div

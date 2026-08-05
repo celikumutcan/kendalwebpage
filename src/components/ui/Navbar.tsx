@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { getAssetPath } from "@/utils/basePath";
+import { useLenis } from "@/components/engine/SmoothScrollProvider";
 
 // Main Navbar fixed to top
 export const Navbar = () => {
@@ -14,16 +15,20 @@ export const Navbar = () => {
   const [activeSection, setActiveSection] = useState("");
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const lenis = useLenis();
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["about", "stats", "retail", "global", "projects", "company-video"];
       let current = "";
+      let maxTop = -Infinity;
+
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
           const rect = el.getBoundingClientRect();
-          if (rect.top <= 150) {
+          if (rect.top <= 150 && rect.top > maxTop) {
+            maxTop = rect.top;
             current = section;
           }
         }
@@ -70,7 +75,11 @@ export const Navbar = () => {
                 const el = document.getElementById(targetId);
                 if (el) {
                   const y = el.getBoundingClientRect().top + window.scrollY - 80;
-                  window.scrollTo({ top: y, behavior: "smooth" });
+                  if (lenis) {
+                    lenis.scrollTo(y, { force: true, duration: 1.5 });
+                  } else {
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
                   window.history.pushState(null, "", `#${targetId}`);
                 }
               }

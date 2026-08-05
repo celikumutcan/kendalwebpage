@@ -141,7 +141,10 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
     state.camera.position.z = THREE.MathUtils.lerp(state.camera.position.z, targetZ, 0.1);
 
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.002;
+      // Base rotation centered on Turkey (approx -2.1 rad)
+      const baseRotationY = -2.1;
+      // Pendulum swing: +/- 0.3 radians based on elapsed time
+      groupRef.current.rotation.y = baseRotationY + Math.sin(state.clock.elapsedTime * 0.4) * 0.3;
     }
 
     if (glowRef.current) {

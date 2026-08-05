@@ -52,22 +52,28 @@ export const CompanyVideo = () => {
         
         <div 
           ref={videoRef}
-          className="w-full aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(255,0,0,0.1)] relative group"
+          className="w-full relative group"
         >
-          {/* We use a lazy loading approach or standard iframe.
-              To ensure it doesn't lag the page, loading="lazy" is great.
-              mute=1 & autoplay=1 starts the video muted automatically.
-              controls=1 allows the user to unmute and make it fullscreen.
-          */}
-          <iframe
-            className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/NxqB0GMRQJw?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
-            title="Kendal Elektrik Corporate Video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+          {/* LED Ambilight Glow Effect */}
+          <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)] rounded-[2.5rem] md:rounded-[3rem] opacity-50 blur-2xl md:blur-3xl group-hover:opacity-75 transition-opacity duration-700 animate-pulse pointer-events-none" />
+          
+          {/* Video Container */}
+          <div className="w-full aspect-video rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10 bg-black">
+            {/* We use a lazy loading approach or standard iframe.
+                To ensure it doesn't lag the page, loading="lazy" is great.
+                mute=1 & autoplay=1 starts the video muted automatically.
+                controls=1 allows the user to unmute and make it fullscreen.
+            */}
+            <iframe
+              className="w-full h-full object-cover"
+              src="https://www.youtube.com/embed/NxqB0GMRQJw?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1"
+              title="Kendal Elektrik Corporate Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
