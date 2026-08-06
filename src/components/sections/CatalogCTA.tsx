@@ -6,7 +6,7 @@ import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 
 export const CatalogCTA = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
 
   useIsomorphicLayoutEffect(() => {
@@ -58,8 +58,8 @@ export const CatalogCTA = () => {
           </p>
 
           <a
-            href="kendal-elektrik-katalog-2026.pdf"
-            download="Kendal_Elektrik_Katalog_Fiyat_Listesi_2026.pdf"
+            href={language === "en" ? "en-catalog.pdf" : "kendal-elektrik-katalog-2026.pdf"}
+            download={language === "en" ? "Kendal_Electric_Catalog_2026.pdf" : "Kendal_Elektrik_Katalog_Fiyat_Listesi_2026.pdf"}
             rel="noopener noreferrer"
             title={t.catalog.button}
             aria-label={t.catalog.button}

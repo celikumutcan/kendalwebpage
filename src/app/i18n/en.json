@@ -17,7 +17,7 @@
     "group_brands": "Brands & Markets",
     "group_media": "Media & References",
     "brands": "Our Sub-Brands",
-    "catalog": "Catalog & Price List"
+    "catalog": "Catalog"
   },
   "hero": {
     "badge": "Global Manufacturer Since 1997",
@@ -101,9 +101,9 @@
     "subtitle": "The most important factors supporting our leadership and quality in the sector."
   },
   "catalog": {
-    "title": "Download 2026 Product Catalog & Price List",
-    "subtitle": "Explore all our lighting and electrical solutions in detail with the current Kendal Elektrik price list.",
-    "button": "Download Catalog & Price List"
+    "title": "Download 2026 Product Catalog",
+    "subtitle": "Explore all our lighting and electrical solutions in detail with the current Kendal Elektrik catalog.",
+    "button": "Download Catalog"
   },
   "video": {
     "title": "Get to Know Us"
