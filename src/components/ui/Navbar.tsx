@@ -70,15 +70,31 @@ export const Navbar = () => {
     }
   }, [isHome, lenis, pathname]);
 
-  const navLinks: { id: string; href: string; label: any; external?: boolean }[] = [
-    { id: "about", href: "/#about", label: t.nav.about },
-    { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
-    { id: "stats", href: "/#stats", label: (t as any).nav?.production || "Üretim ve İhracat" },
-    { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
-    { id: "global", href: "/#global", label: t.nav.global },
-    { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
-    { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
-    { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
+  const navGroups = [
+    {
+      label: (t as any).nav?.group_corporate || "Kurumsal",
+      links: [
+        { id: "about", href: "/#about", label: t.nav.about },
+        { id: "stats", href: "/#stats", label: (t as any).nav?.production || "Üretim ve İhracat" },
+        { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
+        { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
+      ]
+    },
+    {
+      label: (t as any).nav?.group_brands || "Markalar & Pazarlar",
+      links: [
+        { id: "brands", href: "/#brands", label: (t as any).nav?.brands || "Alt Markalarımız" },
+        { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
+        { id: "global", href: "/#global", label: t.nav.global },
+      ]
+    },
+    {
+      label: (t as any).nav?.group_media || "Medya & Referanslar",
+      links: [
+        { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
+        { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
+      ]
+    }
   ];
 
   return (
@@ -90,51 +106,63 @@ export const Navbar = () => {
         </div>
       </Link>
 
-      <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center">
-        {navLinks.map((link) => (
-          <Link
-            key={link.id}
-            href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
-            target={link.external ? "_blank" : undefined}
-            rel={link.external ? "noopener noreferrer" : undefined}
-            scroll={link.href.startsWith("/#") ? false : true}
-            onClick={(e) => {
-              if (isHome && link.href.startsWith("/#")) {
-                e.preventDefault();
-                const targetId = link.href.substring(2);
-                const el = document.getElementById(targetId);
-                if (el) {
-                  window.history.pushState(null, '', `/#${targetId}`);
+      <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center h-full">
+        {navGroups.map((group, gIdx) => (
+          <div key={gIdx} className="group relative py-2 cursor-pointer">
+            <div className="flex items-center gap-1 hover:opacity-100 opacity-80 transition-opacity">
+              {group.label}
+              <svg className="w-4 h-4 opacity-70 group-hover:rotate-180 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+            
+            {/* Dropdown Menu */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 min-w-[220px]">
+              <div className="bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl flex flex-col gap-1">
+                {group.links.map((link) => (
+                  <Link
+                    key={link.id}
+                    href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
+                    target={(link as any).external ? "_blank" : undefined}
+                    rel={(link as any).external ? "noopener noreferrer" : undefined}
+                    scroll={link.href.startsWith("/#") ? false : true}
+                    onClick={(e) => {
+                      if (isHome && link.href.startsWith("/#")) {
+                        e.preventDefault();
+                        const targetId = link.href.substring(2);
+                        const el = document.getElementById(targetId);
+                        if (el) {
+                          window.history.pushState(null, '', `/#${targetId}`);
 
-                  if (lenis) {
-                    (window as any).isProgrammaticScroll = true;
-                    document.body.classList.add('disable-cv');
-                    const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
+                          if (lenis) {
+                            (window as any).isProgrammaticScroll = true;
+                            document.body.classList.add('disable-cv');
+                            const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
 
-                    lenis.scrollTo(trueY, {
-                      force: true,
-                      duration: 1.5,
-                      onComplete: () => {
-                        document.body.classList.remove('disable-cv');
-                        (window as any).isProgrammaticScroll = false;
-                        window.dispatchEvent(new CustomEvent('scroll-refresh'));
+                            lenis.scrollTo(trueY, {
+                              force: true,
+                              duration: 1.5,
+                              onComplete: () => {
+                                document.body.classList.remove('disable-cv');
+                                (window as any).isProgrammaticScroll = false;
+                                window.dispatchEvent(new CustomEvent('scroll-refresh'));
+                              }
+                            });
+                          } else {
+                            const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                            window.scrollTo({ top: y, behavior: "smooth" });
+                          }
+                        }
                       }
-                    });
-                  } else {
-                    const y = el.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({ top: y, behavior: "smooth" });
-                  }
-                }
-              }
-            }}
-            className={`relative pb-1 hover:opacity-100 transition-opacity ${activeSection === link.id ? "opacity-100 font-medium" : "opacity-60"
-              }`}
-          >
-            {link.label}
-            {activeSection === link.id && !link.external && (
-              <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[var(--brand-red)] rounded-full" />
-            )}
-          </Link>
+                    }}
+                    className={`block px-4 py-2.5 rounded-xl hover:bg-white/10 transition-colors ${activeSection === link.id ? "bg-[var(--brand-red)]/20 text-[var(--brand-red)] font-medium" : "text-white/80 hover:text-white"}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
         ))}
       </div>
 

@@ -11,7 +11,11 @@
     "dealer": "B2B Login",
     "news": "News",
     "retail": "Retail Chains",
-    "video": "Promo Video"
+    "video": "Promo Video",
+    "group_corporate": "Corporate",
+    "group_brands": "Brands & Markets",
+    "group_media": "Media & References",
+    "brands": "Our Sub-Brands"
   },
   "hero": {
     "badge": "Global Manufacturer Since 1997",

@@ -94,7 +94,7 @@ export const Hero = () => {
           </p>
           <div className="mt-8 relative w-72 h-32 md:w-[32rem] md:h-44 transition-transform hover:scale-105 duration-500">
             <Image
-              src={getAssetPath("/images/brands/k2-led.jpg")}
+              src={getAssetPath("/images/brands/k2-logo.svg")}
               alt="K2 LED"
               fill
               sizes="(max-width: 768px) 288px, 512px"

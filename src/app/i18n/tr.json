@@ -11,7 +11,11 @@
     "news": "Haberler",
     "retail": "Zincir Marketler",
     "video": "Tanıtım Filmi",
-    "production": "Üretim"
+    "production": "Üretim",
+    "group_corporate": "Kurumsal",
+    "group_brands": "Markalar & Pazarlar",
+    "group_media": "Medya & Referanslar",
+    "brands": "Alt Markalarımız"
   },
   "hero": {
     "badge": "1997'den Beri Küresel Üretici",
