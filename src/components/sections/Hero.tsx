@@ -97,6 +97,7 @@ export const Hero = () => {
               src={getAssetPath("/images/brands/k2-led.jpg")}
               alt="K2 LED"
               fill
+              sizes="(max-width: 768px) 288px, 512px"
               className="object-contain drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
             />
           </div>

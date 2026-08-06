@@ -29,7 +29,7 @@ export function ImageSlider({ images }: { images: string[] }) {
 
   return (
     <div 
-      className="relative w-full aspect-video md:aspect-[21/9] bg-black/50 rounded-2xl overflow-hidden mb-12 border border-white/10 group"
+      className="relative w-full aspect-square md:aspect-[4/3] bg-black/50 rounded-2xl overflow-hidden mb-12 border border-white/10 group"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -44,6 +44,7 @@ export function ImageSlider({ images }: { images: string[] }) {
             src={src}
             alt={`Görsel ${idx + 1}`}
             fill
+            sizes="(max-width: 768px) 100vw, 80vw"
             className="object-cover"
             priority={idx === 0}
           />

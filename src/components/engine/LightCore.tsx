@@ -59,11 +59,13 @@ const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.Mutab
   const colorCool = useMemo(() => new THREE.Color("#d8e4ff"), []);
   const colorWarm = useMemo(() => new THREE.Color("#ffb347"), []);
   const targetColor = useMemo(() => new THREE.Color(), []);
+  const timeRef = useRef(0);
 
-  useFrame((state) => {
+  useFrame((state, delta) => {
     if (materialRef.current) {
+      timeRef.current += delta;
       const currentProgress = scrollProgressRef?.current ?? 0;
-      materialRef.current.uniforms.uTime.value = state.clock.elapsedTime;
+      materialRef.current.uniforms.uTime.value = timeRef.current;
       materialRef.current.uniforms.uScroll.value = THREE.MathUtils.lerp(
         materialRef.current.uniforms.uScroll.value,
         currentProgress,

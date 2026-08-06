@@ -46,6 +46,10 @@ section:not(.hero-cv-exclude) {
   contain-intrinsic-size: auto 800px;
 }
 
+body.disable-cv section {
+  content-visibility: visible !important;
+}
+
 /* GlobalPresence section is taller (h-[150vh]) than the generic estimate above */
 #global {
   contain-intrinsic-size: auto 1500px;

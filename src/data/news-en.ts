@@ -473,5 +473,89 @@ export const newsDataEN: NewsItem[] = [
       "Our LED candle bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Use them for security and emergencies at home, in detailed workspaces in offices, or in industrial environments. Add value to your spaces with our high-quality lighting solutions.",
       "Contact us for more information and orders."
     ]
+  },
+  {
+    id: "26",
+    title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED TUBE FLUORESCENT PRODUCTS",
+    date: "August 14, 2024",
+    images: [
+      getAssetPath("/images/haberler/26/kfl-led-tup.jpg")
+    ],
+    content: [
+      "Meet our LED Tube Fluorescent bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Tube Fluorescent bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
+      "K2 Brand LED Tube Fluorescent Bulbs: KFL118, KFL136, KFL136SE, KFL118C, KFL136C, KFL146C",
+      "Why Should You Choose Our LED Tube Fluorescent Bulbs?",
+      "Domestic Production: All our LED tube fluorescent bulbs are domestically produced according to high-quality standards.",
+      "Double-Ended Supply / Ballast Operable Function: Offers practical use and reliable performance with a single-sided glass LED tube supply feature.",
+      "Radar Sensor Feature: Provides energy savings and comfort by offering automatic lighting control.",
+      "Energy Efficiency: Offers environmentally and budget-friendly solutions with the low energy consumption provided by LED technology.",
+      "Our LED tube fluorescent bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Use them for security and emergencies at home, in detailed workspaces in offices, or in industrial environments. Add value to your spaces with our high-quality lighting solutions.",
+      "Contact us for more information and orders."
+    ]
+  },
+  {
+    id: "27",
+    title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED FILAMENT BULBS",
+    date: "August 23, 2024",
+    images: [
+      getAssetPath("/images/haberler/27/flaman-838x622.jpg")
+    ],
+    content: [
+      "Meet our LED Filament bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Filament bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
+      "What is an LED Filament Bulb? An LED filament bulb is an LED lamp designed to resemble a traditional incandescent bulb with visible filaments for aesthetics and light distribution, but with the high efficiency of light-emitting diodes.",
+      "K2 Brand LED Filament Bulbs:",
+      "IC DRIVER CLEAR GLASS: KES501, KES502, KES497, KES505, KES515, KES506, KES507",
+      "IC DRIVER RUSTIC: KES602, KES603, KES604, KES616, KES605, KES615, KES617, KES606, KES607",
+      "IC DRIVER RUSTIC DIMMER: KES620, KES621, KES632, KES630, KES631, KES633, KES634",
+      "Why Should You Choose Our LED Filament Bulbs?",
+      "Domestic Production: All our LED filament bulbs are domestically produced according to high-quality standards.",
+      "Energy Efficiency: Offers environmentally and budget-friendly solutions with the low energy consumption provided by LED technology.",
+      "Our LED filament bulbs are designed to meet all your lighting needs by combining aesthetics and functionality. Use them for security and emergencies at home, in detailed workspaces in offices, or in industrial environments. Add value to your spaces with our high-quality lighting solutions.",
+      "Contact us for more information and orders."
+    ]
+  },
+  {
+    id: "28",
+    title: "OUR NEW QUALITY MANAGER NÜZHET ÜTKÜN YALPUR HAS JOINED US",
+    date: "September 2024", 
+    images: [
+      getAssetPath("/images/haberler/28/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/28/ekle-1.jpg")
+    ],
+    content: [
+      "As Kendal Elektrik takes firm steps forward on the path of continuous growth and development, each new member who joins our team carries great value for us. Nüzhet Ütkün YALPUR, who joined this valuable team as Quality Manager, will work with determination to further improve our company's quality processes, increase efficiency, and ensure excellence in product quality. In addition to working meticulously and devotedly while fulfilling his duty, he will also make a great contribution to the dynamic structure of our team and our company culture.",
+      "We are pleased to know that with his expertise and experience, he will carry our quality goals further and we will accomplish successful projects together. We congratulate Nüzhet Ütkün YALPUR on joining our team and wish him a successful collaboration and a future full of success."
+    ]
+  },
+  {
+    id: "29",
+    title: "WE HELD OUR TRADITIONAL KENDAL ELECTRIC IFTAR DINNER AND AWARD CEREMONY",
+    date: "March 30, 2025",
+    images: [
+      getAssetPath("/images/haberler/29/1-838x622.jpg"),
+      getAssetPath("/images/haberler/29/1.jpg"),
+      getAssetPath("/images/haberler/29/2.jpg"),
+      getAssetPath("/images/haberler/29/3.jpg"),
+      getAssetPath("/images/haberler/29/4.jpg"),
+      getAssetPath("/images/haberler/29/5.jpg"),
+      getAssetPath("/images/haberler/29/6.jpeg"),
+      getAssetPath("/images/haberler/29/6a.jpg"),
+      getAssetPath("/images/haberler/29/7.jpg"),
+      getAssetPath("/images/haberler/29/8.jpg"),
+      getAssetPath("/images/haberler/29/9.jpg"),
+      getAssetPath("/images/haberler/29/10.jpg"),
+      getAssetPath("/images/haberler/29/11.jpg"),
+      getAssetPath("/images/haberler/29/12.jpg"),
+      getAssetPath("/images/haberler/29/13.jpg"),
+      getAssetPath("/images/haberler/29/14.jpg"),
+      getAssetPath("/images/haberler/29/15.jpg"),
+      getAssetPath("/images/haberler/29/16.jpg"),
+      getAssetPath("/images/haberler/29/17.jpg")
+    ],
+    content: [
+      "We came together with our valuable employees at the Traditional Kendal Electric Iftar event that we organize every year.",
+      "We held the last iftar of Ramadan with our Chairman of the Board Mr. F. Kendal Aksoy, our board members, our managers, and all our teammates with a great sense of unity and belonging.",
+      "That same evening, under the management of the OPEX Office and designed by our General Manager M. Kaan Dilber, we presented the Kaizen Champions Awards, one of the proud moments of our continuous improvement journey carried out under the umbrella of EPIS (Integrated Performance Improvement System), to their owners."
+    ]
   }
-];
+]

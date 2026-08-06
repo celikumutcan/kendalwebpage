@@ -473,5 +473,89 @@ export const newsDataTR: NewsItem[] = [
       "LED'li bujili ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. Evde güvenlik ve acil durumlar için, ofislerde detaylı çalışma alanlarında veya endüstriyel ortamlarda kullanın. Yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın.",
       "Daha fazla bilgi ve sipariş için bizimle iletişime geçin."
     ]
+  },
+  {
+    id: "26",
+    title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED TÜP FLORESAN ÜRÜNLERİMİZ",
+    date: "14 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/26/kfl-led-tup.jpg")
+    ],
+    content: [
+      "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Tüp Floresan ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Tüp Floresan ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
+      "K2 Marka LED Tüp Floresan Ampuller: KFL118, KFL136, KFL136SE, KFL118C, KFL136C, KFL146C",
+      "Neden LED Tüp Floresan Ampullerimizi Tercih Etmelisiniz?",
+      "Yerli Üretim: Tüm LED tüp floresan ampullerimiz yerli üretim olup, yüksek kalite standartlarına göre üretilmiştir.",
+      "Çift Uçtan Beslemeli / Balastlı Çalışabilir Fonksiyon: Tek taraflı cam LED tüp besleme özelliği ile pratik kullanım ve güvenilir performans sunar.",
+      "Radar Sensörü Özelliği: Otomatik aydınlatma kontrolü sağlayarak enerji tasarrufu ve konfor sağlar.",
+      "Enerji Verimliliği: LED teknolojisinin sunduğu düşük enerji tüketimi ile hem çevreye hem de bütçenize dost çözümler sunar.",
+      "LED tüp floresan ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. Evde güvenlik ve acil durumlar için, ofislerde detaylı çalışma alanlarında veya endüstriyel ortamlarda kullanın. Yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın.",
+      "Daha fazla bilgi ve sipariş için bizimle iletişime geçin."
+    ]
+  },
+  {
+    id: "27",
+    title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED FLAMANLI AMPULLERİMİZ",
+    date: "23 Ağustos 2024",
+    images: [
+      getAssetPath("/images/haberler/27/flaman-838x622.jpg")
+    ],
+    content: [
+      "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Flamanlı ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Flamanlı ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
+      "LED Flamanlı Ampul Nedir? LED flamanlı ampul, estetik ve ışık dağıtımı amacıyla görünür filamanlara sahip, ancak ışık yayan diyotların yüksek verimliliğine sahip geleneksel akkor ampulü andıracak şekilde tasarlanmış bir LED lambadır.",
+      "K2 Marka LED Flamanlı Ampuller:",
+      "IC DRIVER ŞEFFAF CAM: KES501, KES502, KES497, KES505, KES515, KES506, KES507",
+      "IC DRIVER RUSTIC: KES602, KES603, KES604, KES616, KES605, KES615, KES617, KES606, KES607",
+      "IC DRIVER RUSTIC DİMMER: KES620, KES621, KES632, KES630, KES631, KES633, KES634",
+      "Neden LED Flamanlı Ampullerimizi Tercih Etmelisiniz?",
+      "Yerli Üretim: Tüm LED flamanlı ampullerimiz yerli üretim olup, yüksek kalite standartlarına göre üretilmiştir.",
+      "Enerji Verimliliği: LED teknolojisinin sunduğu düşük enerji tüketimi ile hem çevreye hem de bütçenize dost çözümler sunar.",
+      "LED flamanlı ampullerimiz, estetik ve işlevselliği bir araya getirerek her türlü aydınlatma ihtiyacınızı karşılamak için tasarlandı. Evde güvenlik ve acil durumlar için, ofislerde detaylı çalışma alanlarında veya endüstriyel ortamlarda kullanın. Yüksek kaliteli aydınlatma çözümlerimiz ile mekanlarınıza değer katın.",
+      "Daha fazla bilgi ve sipariş için bizimle iletişime geçin."
+    ]
+  },
+  {
+    id: "28",
+    title: "YENİ KALİTE MÜDÜRÜMÜZ NÜZHET ÜTKÜN YALPUR ARAMIZA KATILDI",
+    date: "Eylül 2024",
+    images: [
+      getAssetPath("/images/haberler/28/aramizakatildi-838x622.jpg"),
+      getAssetPath("/images/haberler/28/ekle-1.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak sürekli büyüme ve gelişme yolunda emin adımlarla ilerlerken, ekibimize katılan her yeni üye bizim için büyük bir değer taşır. Bu değerli ekibe, Kalite Müdürü olarak katılan Nüzhet Ütkün YALPUR, şirketimizin kalite süreçlerini daha da iyileştirmek, verimliliği artırmak ve ürün kalitesinde mükemmelliği sağlamak için kararlılıkla çalışacak. Kendisi, görevini yerine getirirken titizlikle ve özveriyle çalışmanın yanı sıra, ekibimizin dinamik yapısına ve şirket kültürümüze de büyük bir katkı sağlayacaktır.",
+      "Kendisinin uzmanlığı ve deneyimleriyle, kalite hedeflerimizi daha ileriye taşıyacak ve birlikte başarılı projelere imza atacağımızı bilmekten memnuniyet duyuyoruz. Nüzhet Ütkün YALPUR'u ekibimize katılmasından dolayı kutlar, başarılı bir işbirliği ve başarı dolu bir gelecek dileriz."
+    ]
+  },
+  {
+    id: "29",
+    title: "GELENEKSEL KENDAL ELEKTRİK İFTARI ve ÖDÜL TÖRENİ DÜZENLEDİK",
+    date: "30 Mart 2025",
+    images: [
+      getAssetPath("/images/haberler/29/1-838x622.jpg"),
+      getAssetPath("/images/haberler/29/1.jpg"),
+      getAssetPath("/images/haberler/29/2.jpg"),
+      getAssetPath("/images/haberler/29/3.jpg"),
+      getAssetPath("/images/haberler/29/4.jpg"),
+      getAssetPath("/images/haberler/29/5.jpg"),
+      getAssetPath("/images/haberler/29/6.jpeg"),
+      getAssetPath("/images/haberler/29/6a.jpg"),
+      getAssetPath("/images/haberler/29/7.jpg"),
+      getAssetPath("/images/haberler/29/8.jpg"),
+      getAssetPath("/images/haberler/29/9.jpg"),
+      getAssetPath("/images/haberler/29/10.jpg"),
+      getAssetPath("/images/haberler/29/11.jpg"),
+      getAssetPath("/images/haberler/29/12.jpg"),
+      getAssetPath("/images/haberler/29/13.jpg"),
+      getAssetPath("/images/haberler/29/14.jpg"),
+      getAssetPath("/images/haberler/29/15.jpg"),
+      getAssetPath("/images/haberler/29/16.jpg"),
+      getAssetPath("/images/haberler/29/17.jpg")
+    ],
+    content: [
+      "Her yıl düzenlediğimiz Geleneksel Kendal Elektrik İftarı etkinliğinde değerli çalışanlarımız ile bir araya geldik.",
+      "Ramazan'ın son iftarını Yönetim Kurulu Başkanımız Sn. F. Kendal Aksoy, yönetim kurulu üyelerimiz, yöneticilerimiz ve tüm ekip arkadaşlarımızla birlikte büyük bir birlik ve aidiyet duygusuyla gerçekleştirdik.",
+      "Aynı akşam, OPEX Ofisi yönetiminde ve tasarımı Genel Müdürümüz M. Kaan Dilber'e ait olan EPİS (Entegre Performans İyileştirme Sistemi) çatısı altında yürüttüğümüz sürekli iyileştirme yolculuğumuzun gurur anlarından biri olan Kaizen Şampiyonları Ödülleri'ni sahiplerine takdim ettik."
+    ]
   }
-];
+]

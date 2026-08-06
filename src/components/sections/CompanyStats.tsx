@@ -83,7 +83,9 @@ export const CompanyStats = () => {
           {STATS.map((stat, idx) => (
             <div key={idx} className="stat-item flex flex-col items-start border-l border-[var(--brand-red)]/40 pl-6 hover:border-[var(--brand-red)] transition-colors duration-300 group">
               <div className="text-4xl md:text-6xl font-bold text-[var(--global-text)] mb-3 tracking-tighter flex items-center group-hover:scale-105 transition-transform duration-300 origin-left">
-                <span ref={(el) => { numberRefs.current[idx] = el; }}>0</span>
+                <span ref={(el) => { numberRefs.current[idx] = el; }} suppressHydrationWarning>
+                  {stat.value.toLocaleString('tr-TR')}{stat.suffix}
+                </span>
               </div>
               <div className="text-[var(--global-text)] opacity-60 text-sm md:text-base font-semibold tracking-wider uppercase group-hover:opacity-100 transition-opacity duration-300">
                 {stat.label}

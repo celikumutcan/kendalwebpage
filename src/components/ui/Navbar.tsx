@@ -41,6 +41,35 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle hash scrolling on cross-page navigation or initial load
+  useEffect(() => {
+    if (isHome && typeof window !== "undefined" && window.location.hash && lenis) {
+      const targetId = window.location.hash.substring(1);
+      
+      // Delay slightly to ensure layout is ready
+      const timer = setTimeout(() => {
+        const el = document.getElementById(targetId);
+        if (el) {
+          (window as any).isProgrammaticScroll = true;
+          document.body.classList.add('disable-cv');
+          const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
+          document.body.classList.remove('disable-cv');
+          
+          lenis.scrollTo(trueY, { 
+            force: true, 
+            duration: 1.5,
+            onComplete: () => {
+              (window as any).isProgrammaticScroll = false;
+              window.dispatchEvent(new CustomEvent('scroll-refresh'));
+            }
+          });
+        }
+      }, 500);
+      
+      return () => clearTimeout(timer);
+    }
+  }, [isHome, lenis, pathname]);
+
   const navLinks: { id: string; href: string; label: any; external?: boolean }[] = [
     { id: "about", href: "/#about", label: t.nav.about },
     { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
@@ -68,19 +97,36 @@ export const Navbar = () => {
             href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
+            scroll={false}
             onClick={(e) => {
               if (isHome && link.href.startsWith("/#")) {
                 e.preventDefault();
                 const targetId = link.href.substring(2);
                 const el = document.getElementById(targetId);
                 if (el) {
-                  const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                  // Update URL without reloading or jumping
+                  window.history.pushState(null, '', `/#${targetId}`);
+                  
                   if (lenis) {
-                    lenis.scrollTo(y, { force: true, duration: 1.5 });
+                    (window as any).isProgrammaticScroll = true;
+                    
+                    // Temporarily force all sections to render to calculate the TRUE destination Y
+                    document.body.classList.add('disable-cv');
+                    const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
+                    document.body.classList.remove('disable-cv');
+
+                    lenis.scrollTo(trueY, { 
+                      force: true, 
+                      duration: 1.5,
+                      onComplete: () => {
+                        (window as any).isProgrammaticScroll = false;
+                        window.dispatchEvent(new CustomEvent('scroll-refresh'));
+                      }
+                    });
                   } else {
+                    const y = el.getBoundingClientRect().top + window.scrollY - 80;
                     window.scrollTo({ top: y, behavior: "smooth" });
                   }
-                  window.history.pushState(null, "", `#${targetId}`);
                 }
               }
             }}

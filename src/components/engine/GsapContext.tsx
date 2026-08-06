@@ -25,10 +25,16 @@ export const GsapContext = ({ children }: { children: React.ReactNode }) => {
     const sections = document.querySelectorAll("section");
     const handleContentVisibilityChange = (event: Event) => {
       const cvEvent = event as Event & { skipped?: boolean };
-      if (!cvEvent.skipped) {
+      if (!cvEvent.skipped && !(window as any).isProgrammaticScroll) {
         ScrollTrigger.refresh();
       }
     };
+
+    const handleForceRefresh = () => {
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener('scroll-refresh', handleForceRefresh);
 
     sections.forEach((section) => {
       section.addEventListener("contentvisibilityautostatechange", handleContentVisibilityChange);
@@ -38,6 +44,7 @@ export const GsapContext = ({ children }: { children: React.ReactNode }) => {
       sections.forEach((section) => {
         section.removeEventListener("contentvisibilityautostatechange", handleContentVisibilityChange);
       });
+      window.removeEventListener('scroll-refresh', handleForceRefresh);
       // Cleanup all GSAP animations registered in this context
       ctx.current?.revert();
     };

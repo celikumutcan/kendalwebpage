@@ -18,8 +18,15 @@ export const ScrollToTop = () => {
 
   const scrollToTop = () => {
     if (lenis) {
-      // Use absolute 0 and force to ensure it reaches top without locking
-      lenis.scrollTo(0, { duration: 1.5, force: true });
+      (window as any).isProgrammaticScroll = true;
+      lenis.scrollTo(0, { 
+        duration: 1.5, 
+        force: true,
+        onComplete: () => {
+          (window as any).isProgrammaticScroll = false;
+          window.dispatchEvent(new CustomEvent('scroll-refresh'));
+        }
+      });
     } else {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }

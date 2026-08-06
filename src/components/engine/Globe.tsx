@@ -131,6 +131,7 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
 
   const pinRefs = useRef<THREE.Mesh[]>([]);
   const glowPinRefs = useRef<THREE.Mesh[]>([]);
+  const timeRef = useRef(0);
 
   useFrame((state, delta) => {
     const p = getProgress();
@@ -141,10 +142,11 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
     state.camera.position.z = THREE.MathUtils.lerp(state.camera.position.z, targetZ, 0.1);
 
     if (groupRef.current) {
+      timeRef.current += delta;
       // Base rotation centered on Turkey (approx -2.1 rad)
       const baseRotationY = -2.1;
       // Pendulum swing: +/- 0.3 radians based on elapsed time
-      groupRef.current.rotation.y = baseRotationY + Math.sin(state.clock.elapsedTime * 0.4) * 0.3;
+      groupRef.current.rotation.y = baseRotationY + Math.sin(timeRef.current * 0.4) * 0.3;
     }
 
     if (glowRef.current) {
