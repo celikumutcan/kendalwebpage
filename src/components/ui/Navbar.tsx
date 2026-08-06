@@ -20,7 +20,7 @@ export const Navbar = () => {
   // Tracks which section is currently in view to highlight the matching nav link
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "stats", "retail", "global", "projects", "company-video"];
+      const sections = ["about", "stats", "brands", "retail", "global", "projects", "company-video", "catalog"];
       let current = "";
       let maxTop = -Infinity;
 
@@ -93,6 +93,7 @@ export const Navbar = () => {
       links: [
         { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
         { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
+        { id: "catalog", href: "/#catalog", label: (t as any).nav?.catalog || "Katalog & Fiyat Listesi" },
       ]
     }
   ];

@@ -15,7 +15,8 @@
     "group_corporate": "Kurumsal",
     "group_brands": "Markalar & Pazarlar",
     "group_media": "Medya & Referanslar",
-    "brands": "Alt Markalarımız"
+    "brands": "Alt Markalarımız",
+    "catalog": "Katalog & Fiyat Listesi"
   },
   "hero": {
     "badge": "1997'den Beri Küresel Üretici",
@@ -99,9 +100,9 @@
     "subtitle": "Sektördeki liderliğimizi ve kalitemizi destekleyen en önemli unsurlar."
   },
   "catalog": {
-    "title": "2026 Ürün Kataloğumuzu İndirin",
-    "subtitle": "Tüm aydınlatma ve elektrik çözümlerimizi detaylı inceleyin.",
-    "button": "Kataloğu İndir"
+    "title": "2026 Ürün Kataloğu ve Fiyat Listesini İndirin",
+    "subtitle": "Tüm aydınlatma ve elektrik çözümlerimizi, güncel Kendal Elektrik fiyat listesi ile detaylı inceleyin.",
+    "button": "Katalog & Fiyat Listesi İndir"
   },
   "video": {
     "title": "Bizi Tanıyın"
