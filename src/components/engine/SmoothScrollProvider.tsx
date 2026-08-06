@@ -1,17 +1,18 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useRef } from "react";
+import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 
-// Exposes the active Lenis instance so other components (e.g. a "scroll to top"
-// button) can drive scroll through Lenis instead of the native window.scrollTo,
-// which fights with Lenis's own scroll loop and appears to do nothing.
 const LenisContext = createContext<Lenis | null>(null);
+
+// Returns the shared Lenis instance from context
 export const useLenis = () => useContext(LenisContext);
 
+// Creates and provides a single Lenis smooth-scroll instance to the whole app
 export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }) => {
   const lenisRef = useRef<Lenis | null>(null);
+  const [lenisState, setLenisState] = useState<Lenis | null>(null);
 
   useEffect(() => {
     if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
@@ -27,8 +28,8 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
     });
 
     lenisRef.current = lenis;
+    setLenisState(lenis);
 
-    // Throttled scroll updates
     let ticking = false;
     lenis.on("scroll", () => {
       if (!ticking) {
@@ -53,8 +54,9 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
         lenisRef.current.destroy();
         lenisRef.current = null;
       }
+      setLenisState(null);
     };
   }, []);
 
-  return <LenisContext.Provider value={lenisRef.current}>{children}</LenisContext.Provider>;
+  return <LenisContext.Provider value={lenisState}>{children}</LenisContext.Provider>;
 };

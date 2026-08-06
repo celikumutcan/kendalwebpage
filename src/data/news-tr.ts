@@ -557,5 +557,154 @@ export const newsDataTR: NewsItem[] = [
       "Ramazan'ın son iftarını Yönetim Kurulu Başkanımız Sn. F. Kendal Aksoy, yönetim kurulu üyelerimiz, yöneticilerimiz ve tüm ekip arkadaşlarımızla birlikte büyük bir birlik ve aidiyet duygusuyla gerçekleştirdik.",
       "Aynı akşam, OPEX Ofisi yönetiminde ve tasarımı Genel Müdürümüz M. Kaan Dilber'e ait olan EPİS (Entegre Performans İyileştirme Sistemi) çatısı altında yürüttüğümüz sürekli iyileştirme yolculuğumuzun gurur anlarından biri olan Kaizen Şampiyonları Ödülleri'ni sahiplerine takdim ettik."
     ]
+  },
+  {
+    id: "30",
+    title: "YENİ YURTİÇİ SATIŞ VE PAZARLAMA MÜDÜRÜMÜZ AYHAN GÜNAY ARAMIZA KATILDI",
+    date: "20 Haziran 2025",
+    images: [
+      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.jpg"),
+      getAssetPath("/images/haberler/30/ayhan-gonay.jpg")
+    ],
+    content: [
+      "Aydınlatma sektöründeki yenilikçi yaklaşımıyla fark yaratan firmamız, güçlü ve dinamik kadrosuna bir ismi daha ekledi. Sayın Ayhan Günay, Yurtiçi Satış ve Pazarlama Müdürü olarak görevine başlamıştır.",
+      "Ayhan Günay, satış ve pazarlama alanında uzun yılları bulan tecrübeye sahip olup, daha önce aydınlatma, elektrik ve teknoloji sektörlerinde çeşitli lider firmalarda önemli görevler üstlenmiştir. Stratejik satış yönetimi, bayi ağı geliştirme, pazarlama iletişimi ve müşteri ilişkileri konularındaki derin bilgi birikimi ile firmamızın büyüme hedeflerine önemli katkılar sunacağına inanıyoruz.",
+      "Yeni görevinde, ürünlerimizin Türkiye genelinde daha geniş kitlelere ulaşmasını sağlamak, müşteri memnuniyetini artırmak ve markamızı sektörde daha da güçlü bir konuma taşımak adına çalışmalar yürütecektir.",
+      "Kendisine aramıza hoş geldin diyor, yeni görevinde başarılar diliyoruz."
+    ]
+  },
+  {
+    id: "31",
+    title: "KENDAL ELEKTRİK SATIŞ EKİBİNDE BAYRAK DEĞİŞİMİ",
+    date: "27 Haziran 2025",
+    images: [
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.png"),
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.png")
+    ],
+    content: [
+      "Şirketimize uzun yıllardır bilgi, beceri ve azmiyle değer katan Satış Müdürümüz Sn. Lokman KAZANCI Bey bayrağı yeni Yurtiçi Satış ve Pazarlama Müdürümüz Sn. Ayhan GÜNAY Bey'e devretmiştir.",
+      "Aramıza yeni katılan Ayhan Bey'e enerjisi, vizyonu ve liderliğiyle aramıza hoş geldin diyor, Sn. Lokman Bey'e emeği ve bizlere kattığı değerler adına çok teşekkür ediyoruz."
+    ]
+  },
+  {
+    id: "32",
+    title: "TÜRKİYE'NİN İLK YERLİ LED ÇİP HAMLESİ: İTÜ VE KENDAL ELEKTRİK'TEN TEKNOLOJİ ODAĞINDA STRATEJİK ORTAKLIK",
+    date: "21 Temmuz 2025",
+    images: [
+      getAssetPath("/images/haberler/32/itu-1.jpeg"),
+      getAssetPath("/images/haberler/32/itu-2.jpg"),
+      getAssetPath("/images/haberler/32/itu-3.jpg"),
+      getAssetPath("/images/haberler/32/itu-5.jpg"),
+      getAssetPath("/images/haberler/32/itu-6.jpg"),
+      getAssetPath("/images/haberler/32/itu-7.jpg")
+    ],
+    content: [
+      "Türkiye, yüksek teknoloji alanındaki dışa bağımlılığını azaltmak ve mikroelektronik üretiminde küresel ölçekte söz sahibi olmak için kritik bir adım daha attı. İstanbul Teknik Üniversitesi (İTÜ) ile Kendal Elektrik Aydınlatma Sanayi A.Ş. arasında imzalanan stratejik iş birliği protokolüyle, Türkiye'nin ilk yerli LED çip üretim altyapısı kuruluyor.",
+      "Bu stratejik ortaklık; üniversitenin bilimsel birikimi ile sanayinin uygulama gücünü birleştiren, yalnızca üretim değil, aynı zamanda bilgi, vizyon ve kalkınma odaklı bir dönüşüm projesidir.",
+      "Sürecin en başında, İTÜ Rektörü Prof. Dr. Hasan Mandal'ın vizyoner liderliğiyle şekillenen bu iş birliği, İTÜ Nanoteknoloji Uygulama ve Araştırma Merkezi (İTÜ NANO) Müdürü Doç. Dr. Cem Örnek ve Yönetim Kurulu Üyesi Prof. Dr. M. Kürşat Kazmanlı'nın akademik katkılarıyla bilimsel bir zemine oturtuldu.",
+      "Kendal Elektrik Genel Müdürü Murat Kaan Dilber tarafından yaklaşık 6 ay önce başlatılan proje geliştirme süreci, İTÜ NANO öğretim üyeleriyle gerçekleştirilen teknik çalıştaylar ve mühendislik senaryoları ile olgunlaştırıldı. Bugün imzalanan protokol, bu uzun soluklu, disiplinli ve yüksek nitelikli hazırlık sürecinin sonucudur.",
+      "Protokol kapsamında, InGaN/GaN tabanlı epitaksiyel yarı iletken katmanların büyütülmesi, wafer düzeyinde yonga ayrıştırma, metalizasyon, paketleme ve test/doğrulama gibi tüm üretim süreçleri ilk kez Türkiye'de entegre şekilde ve tamamen yerli mühendislik kabiliyetleriyle gerçekleştirilecektir.",
+      "Bu iş birliğiyle İTÜ, sahip olduğu 250 yılı aşkın bilimsel birikimini sahaya taşırken; Kendal Elektrik, 27 yıllık üretim ve ihracat tecrübesini yüksek teknoloji alanına yönlendirerek hem Türkiye'ye hem uluslararası pazarlara katma değerli ürünler sunmayı hedeflemektedir.",
+      "Yalnızca teknolojik üretim değil, aynı zamanda nitelikli insan kaynağı, bilgi tabanlı sanayi modeli ve üniversite merkezli büyüme kültürü de bu iş birliğinin merkezinde yer alıyor.",
+      "Üniversiteye Yapısal Katkılar: Kendal Elektrik, bu stratejik ortaklık kapsamında İstanbul Teknik Üniversitesi'ne şu katkıları sunmayı taahhüt etmektedir: Gerçek dünya stajları ve iş fırsatları, Yüksek lisans ve doktora öğrencileri için aktif Ar-Ge katılımı, 1773 Teknopark projelerinde İTÜ öğretim üyeleri ve öğrencilerine proje önceliği, Sanayiyle entegre tez çalışmaları, İTÜ laboratuvarlarının sanayi test ve validasyon süreçlerine entegre kullanımı, Ders ve seminer içeriklerine teknik saha katkısı, Kendal Elektrik yöneticilerinin ve mühendislerinin proje mentorluk desteği.",
+      "Bu katkılar, yalnızca bir destek alanı değil; Türkiye'deki üniversite-sanayi iş birliği kültürünün geleceğe taşınmasını sağlayacak model önerisidir.",
+      "Bu protokol yalnızca bir teknik mutabakat değil; Türkiye'nin yüksek teknolojili üretimle büyüme kararlılığının bir beyanıdır. Fason üretim mantığından çıkıp; tasarımı, mühendisliği ve markası Türkiye'ye ait teknolojik ürünlerle kilo başına ihracat değerini artırmak, bu iş birliğinin temel stratejik hedefidir.",
+      "Türkiye'nin mikro LED teknolojilerinde sadece tüketici değil, tasarımcı ve üretici bir ülke olması yönünde bu protokol, somut bir dönüm noktasıdır.",
+      "Fırat Kendal Aksoy - Yönetim Kurulu Başkanı, Kendal Elektrik: \"2000 yılında mezunu olduğum bu kıymetli kurumun çatısı altında, bugün Türkiye'nin yüksek teknolojili ihracat yolculuğuna katkı sunacak bir ortaklığı duyurmanın onurunu taşıyorum. Bugün artık sadece üretmek değil; yüksek teknolojili, tasarımı ve mühendisliği bu topraklarda yapılmış ürünlerle dünyanın her noktasına ulaşmak istiyoruz. Türkiye'nin ihracat sepetini fason üretimle değil, kendi geliştirdiği teknolojilerle büyütme iradesiyle hareket ediyoruz.\"",
+      "Murat Kaan Dilber - Genel Müdür, Kendal Elektrik: \"Bu protokol benim için yalnızca bir mühendislik projesi değil; 25 yıl önce İTÜ kampüsünde kurduğum bir hayalin, bilgiyle, disiplinle ve kararlılıkla gerçeğe dönüşmesidir. Sayın Rektörümüz Prof. Dr. Hasan Mandal'a özellikle teşekkür ederim. Bu iş birliği onun vizyonu sayesinde başladı ve gelişti. Cesaret verdi, yolu açtı. Bugün geldiğimiz nokta, yalnızca bir üretim sistemi değil; bilim ve sanayinin birlikte oluşturduğu bir kültürdür. Biz bu ülkenin yalnızca üretim değil, bilgi üretme kapasitesine de yürekten inanıyoruz.\""
+    ]
+  },
+  {
+    id: "33",
+    title: "SAYGI VE MİNNETLE ANIYORUZ",
+    date: "10 Kasım 2025",
+    images: [
+      getAssetPath("/images/haberler/33/20251110_090516-838x622.jpg")
+    ],
+    content: [
+      "Cumhuriyetimizin kurucusu, Ulu Önder Gazi Mustafa Kemal Atatürk'ü, ebediyete irtihalinin yıl dönümünde saygı, minnet ve özlemle anıyoruz.",
+      "Fabrikamız çalışanları olarak, 10 Kasım sabahı saat 09.05'te üretimimize kısa bir ara vererek toplandık. Siren sesinin duyulmasıyla birlikte, Büyük Önder'in manevi huzurunda, tek yürek olarak bir dakikalık saygı duruşunda bulunduk.",
+      "Atatürk'ün \"En büyük eserim\" dediği Türkiye Cumhuriyeti'nin bekası için çalışmak, üretmek ve ülkemizi muasır medeniyetler seviyesine çıkarma gayreti, onun bize bıraktığı en büyük mirastır. Çalışanlarımızın bu anlamlı günde gösterdiği birlik ve beraberlik, Ata'mızın emanetine olan bağlılığımızın en güzel göstergesidir."
+    ]
+  },
+  {
+    id: "34",
+    title: "KENDAL ELEKTRİK İLE ENERJİNİN VE AYDINLATMANIN GELECEĞİ ELF 2025'TE!",
+    date: "10 Kasım 2025",
+    images: [
+      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.jpg")
+    ],
+    content: [
+      "Kendal Elektrik olarak, sektörün en prestijli organizasyonlarından biri olan ELF Elektrik, Elektronik, Enerji, Aydınlatma, Akıllı Ev Fuarı'na katılmaktan gurur duyuyoruz.",
+      "27 - 30 Kasım 2025 tarihleri arasında, Yenikapı Dr. Kadir Topbaş Kültür ve Sanat Merkezi'nde gerçekleşecek bu büyük buluşmada, Enerji Verimliliği, Akıllı LED Sistemleri ve Sürdürülebilir Çözümler odağındaki en son teknoloji ürünlerimizi sergileyeceğiz.",
+      "Vizyonumuzu ve yeni projelerimizi paylaşmak, potansiyel iş birliklerini görüşmek üzere sizleri standımıza davet ediyoruz.",
+      "KENDAL ELEKTRİK Stand Bilgileri:",
+      "Tarih: 27 - 30 Kasım 2025",
+      "Yer: Yenikapı / İstanbul",
+      "Stand No: A-08",
+      "Elektrik, elektronik ve enerji sektörünün yarınlarını birlikte inşa etmek için sizleri standımızda ağırlamaktan mutluluk duyacağız."
+    ]
+  },
+  {
+    id: "35",
+    title: "ELF 2025 ELEKTRİK VE AYDINLATMA FUARI'NA KATILDIK",
+    date: "2 Aralık 2025",
+    images: [
+      getAssetPath("/images/haberler/35/elf-fuari-1.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-2.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-3.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-4.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-5.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-6.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-7.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-8.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-9.jpg")
+    ],
+    content: [
+      "ELF 2025 Fuarı'nda Geleceğin Enerjisine Işık Tuttuk",
+      "27 - 30 Kasım 2025 tarihleri arasında İstanbul Dr. Mimar Kadir Topbaş Avrasya Gösteri ve Sanat Merkezi'nde gerçekleşen ve sektörün en büyük buluşmalarından biri olan ELF Elektrik ve Aydınlatma Fuarı'na Kendal Elektrik olarak başarılı bir katılımla imza attık.",
+      "Dört gün süren bu büyük organizasyonda, elektrik, elektronik, enerji ve aydınlatma sektörlerindeki en son yenilikler, ulusal ve uluslararası yüzlerce profesyonel ziyaretçi ile buluştu. Kendal Elektrik olarak biz de, yüksek kaliteli ürün yelpazemiz ve geleceğe yön veren teknolojilerimizle fuarın dikkat çeken firmaları arasında yer aldık.",
+      "Yenilikçi Ürünlerimizle Yoğun İlgi Gördük",
+      "Kendal Elektrik standı, fuar boyunca sektör profesyonelleri, yatırımcılar ve potansiyel iş ortaklarının yoğun ilgisini çekti. Özellikle enerji verimliliği ve solar üzerine geliştirdiğimiz çözümlerimiz büyük beğeni topladı.",
+      "Yüksek Verimli Güç Ürünleri: Sanayi ve ticari projeler için tasarlanmış, performansı yüksek dağıtım ve koruma ürünlerimizi sergiledik.",
+      "Sürdürülebilirlik Odaklı Çözümler: Yeşil enerjiye geçişi destekleyen, çevre dostu elektrikli bileşenlerimize solar ürünlerimize özel bir bölüm ayırdık.",
+      "Belgeli Ürünler: TSE ve ENEC gibi belgelere sahip olan ürünlerimizi sergiledik.",
+      "Sektörel İş Birlikleri ve Vizyon Paylaşımı",
+      "ELF Fuarı, Kendal Elektrik için sadece bir ürün sergileme platformu olmanın ötesine geçti. Yerli ve yabancı katılımcılar sektörle bir araya gelme fırsatı bularak, küresel trendler ve pazar dinamikleri üzerine değerli görüşmeler gerçekleştirdik. Kurduğumuz yeni iş birlikleri ve güçlendirdiğimiz mevcut ilişkiler, şirketimizin 2026 hedeflerine ulaşmasında önemli bir rol oynayacaktır.",
+      "Teşekkürler",
+      "Kendal Elektrik olarak, standımıza gelerek ilgilerini esirgemeyen tüm ziyaretçilere, değerli iş ortaklarımıza ve fuarın düzenlenmesinde emeği geçen herkese teşekkür ederiz.",
+      "Sektörümüzün geleceğini şekillendirmeye devam ederken, en yeni teknolojilerimizi ve gelişmeleri sizlerle paylaşmayı sürdüreceğiz. Bir sonraki etkinlikte görüşmek dileğiyle!"
+    ]
+  },
+  {
+    id: "36",
+    title: "GELENEKSEL İFTAR YEMEĞİMİZİ DÜZENLEDİK",
+    date: "2 Mart 2026",
+    images: [
+      getAssetPath("/images/haberler/36/IMG_1410.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1412.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1417.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1457.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1465.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1472.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1474.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1477.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1479.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1487.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1503.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1518.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1519.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1522.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1529.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1557.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1562.jpg")
+    ],
+    content: [
+      "Geleneksel İftar Yemeğimizde Bir Araya Geldik.",
+      "Kendal Elektrik olarak her yıl düzenlediğimiz geleneksel iftar buluşmamızı, bu sene de Silivri'deki Şömine Restaurant'ta gerçekleştirdik.",
+      "Yönetim kadromuz ve çalışanlarımızın katılımıyla düzenlenen bu organizasyon, günlük iş akışının dışına çıkarak bir arada vakit geçirmek adına güzel bir fırsat bulduk. Ramazan ayının getirdiği paylaşım ruhuna uygun olarak, ekip içerisindeki iletişimi güçlendirmeyi amaçladığımız akşamda samimi bir ortam hâkimdi.",
+      "Birlikte Daha Güçlüyüz",
+      "Yemek sırasında kısa bir teşekkür konuşması yapan Genel Müdür Sn. M. Kaan DİLBER ve Yönetim Kurulu Başkanımız Sn. Fırat Kendal AKSOY, Kendal Elektrik'in istikrarlı büyümesine katkı sağlayan tüm çalışanlara emekleri için teşekkürlerini iletti. Şirketimizin hedeflerine ulaşmasında ekip ruhunun ve çalışan memnuniyetinin önceliği bir kez daha vurgulandı."
+    ]
   }
 ]

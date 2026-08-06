@@ -6,6 +6,8 @@ import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import Image from "next/image";
 import { getAssetPath } from "@/utils/basePath";
 
+import { useLanguage } from "@/app/i18n/LanguageProvider";
+
 const BRANDS = [
   { name: "K2 LED", logo: getAssetPath("/images/brands/k2-led.jpg") },
   { name: "K2 Plus", logo: getAssetPath("/images/brands/k2-plus.jpg") },
@@ -14,6 +16,7 @@ const BRANDS = [
 ];
 
 export const BrandsStrip = () => {
+  const { t } = useLanguage();
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
 
@@ -36,7 +39,7 @@ export const BrandsStrip = () => {
     <section ref={containerRef} className="w-full bg-white py-20 overflow-hidden border-y border-gray-200 relative">
       <div className="absolute top-6 left-1/2 -translate-x-1/2 z-10 text-center pointer-events-none">
         <h3 className="text-gray-400 text-sm md:text-base font-semibold tracking-[0.2em] uppercase">
-          Alt Markalarımız
+          {(t as any).brands_strip?.title || "Alt Markalarımız"}
         </h3>
         <div className="w-12 h-px bg-[var(--brand-red)] mx-auto mt-2 opacity-50" />
       </div>

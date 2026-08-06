@@ -17,6 +17,7 @@ export const Navbar = () => {
   const isHome = pathname === "/";
   const lenis = useLenis();
 
+  // Tracks which section is currently in view to highlight the matching nav link
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["about", "stats", "retail", "global", "projects", "company-video"];
@@ -41,31 +42,30 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Handle hash scrolling on cross-page navigation or initial load
+  // Scrolls to the matching section when landing on the homepage with a hash in the URL
   useEffect(() => {
     if (isHome && typeof window !== "undefined" && window.location.hash && lenis) {
       const targetId = window.location.hash.substring(1);
-      
-      // Delay slightly to ensure layout is ready
+
       const timer = setTimeout(() => {
         const el = document.getElementById(targetId);
         if (el) {
           (window as any).isProgrammaticScroll = true;
           document.body.classList.add('disable-cv');
           const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
-          document.body.classList.remove('disable-cv');
-          
-          lenis.scrollTo(trueY, { 
-            force: true, 
+
+          lenis.scrollTo(trueY, {
+            force: true,
             duration: 1.5,
             onComplete: () => {
+              document.body.classList.remove('disable-cv');
               (window as any).isProgrammaticScroll = false;
               window.dispatchEvent(new CustomEvent('scroll-refresh'));
             }
           });
         }
       }, 500);
-      
+
       return () => clearTimeout(timer);
     }
   }, [isHome, lenis, pathname]);
@@ -97,28 +97,25 @@ export const Navbar = () => {
             href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
-            scroll={false}
+            scroll={link.href.startsWith("/#") ? false : true}
             onClick={(e) => {
               if (isHome && link.href.startsWith("/#")) {
                 e.preventDefault();
                 const targetId = link.href.substring(2);
                 const el = document.getElementById(targetId);
                 if (el) {
-                  // Update URL without reloading or jumping
                   window.history.pushState(null, '', `/#${targetId}`);
-                  
+
                   if (lenis) {
                     (window as any).isProgrammaticScroll = true;
-                    
-                    // Temporarily force all sections to render to calculate the TRUE destination Y
                     document.body.classList.add('disable-cv');
                     const trueY = el.getBoundingClientRect().top + window.scrollY - 80;
-                    document.body.classList.remove('disable-cv');
 
-                    lenis.scrollTo(trueY, { 
-                      force: true, 
+                    lenis.scrollTo(trueY, {
+                      force: true,
                       duration: 1.5,
                       onComplete: () => {
+                        document.body.classList.remove('disable-cv');
                         (window as any).isProgrammaticScroll = false;
                         window.dispatchEvent(new CustomEvent('scroll-refresh'));
                       }

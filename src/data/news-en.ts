@@ -557,5 +557,154 @@ export const newsDataEN: NewsItem[] = [
       "We held the last iftar of Ramadan with our Chairman of the Board Mr. F. Kendal Aksoy, our board members, our managers, and all our teammates with a great sense of unity and belonging.",
       "That same evening, under the management of the OPEX Office and designed by our General Manager M. Kaan Dilber, we presented the Kaizen Champions Awards, one of the proud moments of our continuous improvement journey carried out under the umbrella of EPIS (Integrated Performance Improvement System), to their owners."
     ]
+  },
+  {
+    id: "30",
+    title: "OUR NEW DOMESTIC SALES AND MARKETING MANAGER AYHAN GÜNAY JOINED US",
+    date: "June 20, 2025",
+    images: [
+      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.jpg"),
+      getAssetPath("/images/haberler/30/ayhan-gonay.jpg")
+    ],
+    content: [
+      "Our company, which makes a difference with its innovative approach in the lighting sector, added another name to its strong and dynamic team. Mr. Ayhan Günay has started his duty as Domestic Sales and Marketing Manager.",
+      "Ayhan Günay has many years of experience in sales and marketing and has previously undertaken important duties in various leading companies in the lighting, electrical and technology sectors. We believe that he will make significant contributions to the growth targets of our company with his deep knowledge in strategic sales management, dealer network development, marketing communication and customer relations.",
+      "In his new role, he will carry out studies to ensure that our products reach wider audiences throughout Turkey, increase customer satisfaction and move our brand to an even stronger position in the sector.",
+      "We welcome him to our team and wish him success in his new role."
+    ]
+  },
+  {
+    id: "31",
+    title: "HANDOVER IN KENDAL ELEKTRİK SALES TEAM",
+    date: "June 27, 2025",
+    images: [
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.png"),
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.png")
+    ],
+    content: [
+      "Our Sales Manager Mr. Lokman KAZANCI, who has added value to our company with his knowledge, skills and perseverance for many years, handed over the flag to our new Domestic Sales and Marketing Manager Mr. Ayhan GÜNAY.",
+      "We welcome Ayhan Bey, who has recently joined us, with his energy, vision and leadership, and thank Lokman Bey very much for his efforts and the values he has added to us."
+    ]
+  },
+  {
+    id: "32",
+    title: "TURKEY'S FIRST DOMESTIC LED CHIP MOVE: STRATEGIC PARTNERSHIP IN TECHNOLOGY FOCUS FROM ITU AND KENDAL ELEKTRİK",
+    date: "July 21, 2025",
+    images: [
+      getAssetPath("/images/haberler/32/itu-1.jpeg"),
+      getAssetPath("/images/haberler/32/itu-2.jpg"),
+      getAssetPath("/images/haberler/32/itu-3.jpg"),
+      getAssetPath("/images/haberler/32/itu-5.jpg"),
+      getAssetPath("/images/haberler/32/itu-6.jpg"),
+      getAssetPath("/images/haberler/32/itu-7.jpg")
+    ],
+    content: [
+      "Turkey has taken another critical step to reduce its foreign dependency in the high-tech field and to have a say in microelectronic production on a global scale. With the strategic cooperation protocol signed between Istanbul Technical University (ITU) and Kendal Elektrik Aydınlatma Sanayi A.Ş., Turkey's first domestic LED chip production infrastructure is being established.",
+      "This strategic partnership is a transformation project that combines the scientific knowledge of the university with the application power of the industry, focusing not only on production but also on knowledge, vision and development.",
+      "At the very beginning of the process, this cooperation, shaped by the visionary leadership of ITU Rector Prof. Dr. Hasan Mandal, was placed on a scientific basis with the academic contributions of ITU Nanotechnology Application and Research Center (ITU NANO) Director Assoc. Prof. Dr. Cem Örnek and Board Member Prof. Dr. M. Kürşat Kazmanlı.",
+      "The project development process, initiated approximately 6 months ago by Kendal Elektrik General Manager Murat Kaan Dilber, was matured with technical workshops and engineering scenarios held with ITU NANO faculty members. The protocol signed today is the result of this long-term, disciplined and highly qualified preparation process.",
+      "Within the scope of the protocol, all production processes such as growing InGaN/GaN-based epitaxial semiconductor layers, wafer-level chip separation, metallization, packaging and testing/validation will be carried out in an integrated manner and completely with domestic engineering capabilities for the first time in Turkey.",
+      "With this cooperation, while ITU brings its scientific background of over 250 years to the field, Kendal Elektrik aims to offer value-added products to both Turkey and international markets by directing its 27 years of production and export experience to the high technology field.",
+      "Not only technological production, but also qualified human resources, knowledge-based industry model and university-centered growth culture are at the center of this cooperation.",
+      "Structural Contributions to the University: Within the scope of this strategic partnership, Kendal Elektrik commits to providing the following contributions to Istanbul Technical University: Real-world internships and job opportunities, Active R&D participation for master's and doctoral students, Project priority for ITU faculty members and students in 1773 Technopark projects, Industry-integrated thesis studies, Integrated use of ITU laboratories for industrial testing and validation processes, Technical field contribution to course and seminar contents, Project mentoring support from Kendal Elektrik managers and engineers.",
+      "These contributions are not only a support area; it is a model proposal that will ensure the university-industry cooperation culture in Turkey is carried to the future.",
+      "This protocol is not only a technical agreement; it is a declaration of Turkey's determination to grow with high-tech production. The main strategic goal of this cooperation is to break away from the contract manufacturing logic and increase the export value per kilogram with technological products whose design, engineering and brand belong to Turkey.",
+      "This protocol is a concrete turning point towards Turkey becoming a designer and producer country, not just a consumer, in micro LED technologies.",
+      "Fırat Kendal Aksoy - Chairman of the Board of Directors, Kendal Elektrik: \"Under the roof of this precious institution that I graduated from in 2000, I carry the honor of announcing a partnership today that will contribute to Turkey's high-tech export journey. Today we want not only to produce but also to reach every part of the world with high-tech products designed and engineered on these lands. We are acting with the will to expand Turkey's export basket not with contract manufacturing, but with the technologies it has developed itself.\"",
+      "Murat Kaan Dilber - General Manager, Kendal Elektrik: \"This protocol is not just an engineering project for me; it is the realization of a dream I founded on the ITU campus 25 years ago, with knowledge, discipline and determination. I would especially like to thank our Rector Prof. Dr. Hasan Mandal. Thanks to his vision, this cooperation started and developed. He gave courage, paved the way. The point we have reached today is not only a production system; it is a culture created by science and industry together. We wholeheartedly believe in this country's capacity not only to produce, but also to produce knowledge.\""
+    ]
+  },
+  {
+    id: "33",
+    title: "WE REMEMBER WITH RESPECT AND GRATITUDE",
+    date: "November 10, 2025",
+    images: [
+      getAssetPath("/images/haberler/33/20251110_090516-838x622.jpg")
+    ],
+    content: [
+      "We remember the founder of our Republic, Great Leader Gazi Mustafa Kemal Atatürk, with respect, gratitude, and longing on the anniversary of his passing to eternity.",
+      "As factory employees, we took a short break from our production and gathered at 09:05 on the morning of November 10. With the sound of the siren, we stood in a moment of silence as a single heart in the spiritual presence of the Great Leader.",
+      "Working for the survival of the Republic of Turkey, which Atatürk called \"My greatest work,\" producing and striving to raise our country to the level of contemporary civilizations is the greatest legacy he left us. The unity and solidarity shown by our employees on this meaningful day is the most beautiful indicator of our loyalty to our Ancestor's trust."
+    ]
+  },
+  {
+    id: "34",
+    title: "THE FUTURE OF ENERGY AND LIGHTING IS AT ELF 2025 WITH KENDAL ELEKTRİK!",
+    date: "November 10, 2025",
+    images: [
+      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.jpg")
+    ],
+    content: [
+      "As Kendal Elektrik, we are proud to participate in ELF Electricity, Electronics, Energy, Lighting, Smart Home Fair, one of the most prestigious organizations of the sector.",
+      "At this great meeting to be held at Yenikapı Dr. Kadir Topbaş Culture and Art Center between November 27 - 30, 2025, we will exhibit our latest technology products focusing on Energy Efficiency, Smart LED Systems and Sustainable Solutions.",
+      "We invite you to our stand to share our vision and new projects and discuss potential collaborations.",
+      "KENDAL ELEKTRİK Stand Information:",
+      "Date: November 27 - 30, 2025",
+      "Location: Yenikapı / Istanbul",
+      "Stand No: A-08",
+      "We will be happy to host you at our stand to build the future of the electricity, electronics and energy sector together."
+    ]
+  },
+  {
+    id: "35",
+    title: "WE PARTICIPATED IN ELF 2025 ELECTRICITY AND LIGHTING FAIR",
+    date: "December 02, 2025",
+    images: [
+      getAssetPath("/images/haberler/35/elf-fuari-1.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-2.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-3.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-4.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-5.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-6.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-7.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-8.jpg"),
+      getAssetPath("/images/haberler/35/elf-fuari-9.jpg")
+    ],
+    content: [
+      "We Shed Light on the Energy of the Future at the ELF 2025 Fair",
+      "As Kendal Elektrik, we made a successful participation in the ELF Electricity and Lighting Fair, one of the biggest meetings of the sector, held at the Istanbul Dr. Architect Kadir Topbaş Eurasia Show and Art Center between November 27 - 30, 2025.",
+      "During this four-day major organization, the latest innovations in the electricity, electronics, energy and lighting sectors met with hundreds of national and international professional visitors. As Kendal Elektrik, we were among the notable companies of the fair with our high-quality product range and technologies shaping the future.",
+      "We Attracted Intense Interest with Our Innovative Products",
+      "The Kendal Elektrik stand attracted intense interest from sector professionals, investors and potential business partners throughout the fair. Especially the solutions we developed on energy efficiency and solar won great appreciation.",
+      "Highly Efficient Power Products: We exhibited our high-performance distribution and protection products designed for industrial and commercial projects.",
+      "Sustainability-Oriented Solutions: We devoted a special section to our solar products and environmentally friendly electrical components that support the transition to green energy.",
+      "Certified Products: We exhibited our products that have certificates such as TSE and ENEC.",
+      "Sectoral Collaborations and Vision Sharing",
+      "The ELF Fair went beyond being just a product display platform for Kendal Elektrik. Local and foreign participants found the opportunity to come together with the sector, and we held valuable meetings on global trends and market dynamics. The new collaborations we have established and the existing relationships we have strengthened will play an important role in our company reaching its 2026 goals.",
+      "Thank You",
+      "As Kendal Elektrik, we would like to thank all visitors who did not spare their interest by visiting our stand, our valuable business partners and everyone who contributed to the organization of the fair.",
+      "While continuing to shape the future of our sector, we will continue to share our newest technologies and developments with you. Hope to see you at the next event!"
+    ]
+  },
+  {
+    id: "36",
+    title: "WE HELD OUR TRADITIONAL IFTAR DINNER",
+    date: "March 02, 2026",
+    images: [
+      getAssetPath("/images/haberler/36/IMG_1410.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1412.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1417.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1457.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1465.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1472.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1474.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1477.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1479.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1487.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1503.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1518.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1519.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1522.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1529.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1557.jpg"),
+      getAssetPath("/images/haberler/36/IMG_1562.jpg")
+    ],
+    content: [
+      "We Came Together at Our Traditional Iftar Dinner.",
+      "As Kendal Elektrik, we held our traditional iftar gathering, which we organize every year, at Şömine Restaurant in Silivri this year as well.",
+      "This organization, held with the participation of our management team and employees, provided a great opportunity to spend time together outside the daily workflow. A sincere atmosphere prevailed during the evening, where we aimed to strengthen communication within the team, in line with the spirit of sharing brought by the month of Ramadan.",
+      "We Are Stronger Together",
+      "General Manager Mr. M. Kaan DİLBER and our Chairman of the Board Mr. Fırat Kendal AKSOY, who made a short thank you speech during the dinner, expressed their gratitude to all employees who contributed to the stable growth of Kendal Elektrik for their efforts. The priority of team spirit and employee satisfaction in our company reaching its goals was emphasized once again."
+    ]
   }
 ]

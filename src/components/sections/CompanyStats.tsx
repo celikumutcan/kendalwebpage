@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import { useLanguage } from "@/app/i18n/LanguageProvider";
 
 const STATS = [
   { value: 29, label: "Yıllık Tecrübe", suffix: "" },
@@ -16,6 +17,8 @@ const STATS = [
 export const CompanyStats = () => {
   const containerRef = useRef<HTMLElement>(null);
   const numberRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  const { t } = useLanguage();
+  const statData = (t as any).company_stats?.stats || STATS;
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -68,13 +71,13 @@ export const CompanyStats = () => {
         <div className="flex flex-col md:flex-row gap-12 md:gap-24 mb-24 items-start">
           <div className="md:w-1/3">
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--global-text)] mb-6 tracking-tight leading-tight">
-              Aydınlatmada <br /> <span className="text-[var(--brand-red)]">Türkiye'nin</span> Gururu
+              {(t as any).company_stats?.title_part1 || "Aydınlatmada"} <br /> <span className="text-[var(--brand-red)]">{(t as any).company_stats?.title_part2 || "Türkiye'nin"}</span> {(t as any).company_stats?.title_part3 || "Gururu"}
             </h2>
             <div className="w-16 h-1 bg-[var(--brand-red)] rounded-full"></div>
           </div>
           <div className="md:w-2/3">
             <p className="text-[var(--global-text)] opacity-70 text-lg md:text-xl leading-relaxed font-light text-justify">
-              Sektördeki yolculuğuna 1997 yılında başlayan Kendal Elektrik A.Ş., bugün geldiği noktada üretim, kalite ve inovasyon gücüyle Türkiye aydınlatma pazarının en büyük üreticilerinden biri konumundadır. Sürekli gelişen teknolojik altyapımız, taviz vermediğimiz kalite standartlarımız ve her geçen gün büyüyen üretim hedeflerimizle; sadece ülkemizde değil, küresel ölçekte de dünya standartlarında bir değer yaratmaya tüm hızımızla devam ediyoruz.
+              {(t as any).company_stats?.desc || "Sektördeki yolculuğuna 1997 yılında başlayan Kendal Elektrik A.Ş., bugün geldiği noktada üretim, kalite ve inovasyon gücüyle Türkiye aydınlatma pazarının en büyük üreticilerinden biri konumundadır. Sürekli gelişen teknolojik altyapımız, taviz vermediğimiz kalite standartlarımız ve her geçen gün büyüyen üretim hedeflerimizle; sadece ülkemizde değil, küresel ölçekte de dünya standartlarında bir değer yaratmaya tüm hızımızla devam ediyoruz."}
             </p>
           </div>
         </div>
@@ -84,11 +87,11 @@ export const CompanyStats = () => {
             <div key={idx} className="stat-item flex flex-col items-start border-l border-[var(--brand-red)]/40 pl-6 hover:border-[var(--brand-red)] transition-colors duration-300 group">
               <div className="text-4xl md:text-6xl font-bold text-[var(--global-text)] mb-3 tracking-tighter flex items-center group-hover:scale-105 transition-transform duration-300 origin-left">
                 <span ref={(el) => { numberRefs.current[idx] = el; }} suppressHydrationWarning>
-                  {stat.value.toLocaleString('tr-TR')}{stat.suffix}
+                  {stat.value.toLocaleString('tr-TR')}{statData[idx]?.suffix || stat.suffix}
                 </span>
               </div>
               <div className="text-[var(--global-text)] opacity-60 text-sm md:text-base font-semibold tracking-wider uppercase group-hover:opacity-100 transition-opacity duration-300">
-                {stat.label}
+                {statData[idx]?.label || stat.label}
               </div>
             </div>
           ))}

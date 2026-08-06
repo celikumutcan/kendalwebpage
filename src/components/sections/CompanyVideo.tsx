@@ -46,7 +46,7 @@ export const CompanyVideo = () => {
             KENDAL ELEKTRİK
           </div>
           <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 pb-2 md:pb-4 leading-normal">
-            Işığın Arkasındaki Gücü Keşfedin
+            {(t as any).company_video?.discover || "Işığın Arkasındaki Gücü Keşfedin"}
           </h2>
         </div>
         

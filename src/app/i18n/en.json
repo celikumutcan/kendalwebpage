@@ -15,8 +15,8 @@
   },
   "hero": {
     "badge": "Global Manufacturer Since 1997",
-    "title_part1": "From Darkness",
-    "title_part2": "to Light",
+    "title_part1": "Illuminating the",
+    "title_part2": "Darkness",
     "subtitle": "Innovative lighting & electrical equipment."
   },
   "about": {
@@ -200,5 +200,43 @@
       "human_rights_title": "Human Rights & Employee Rights Policy",
       "human_rights_desc": "Our commitment to universal values, equality, and workers' rights."
     }
+  },
+  "company_stats": {
+    "title_part1": "Pride of",
+    "title_part2": "Turkey",
+    "title_part3": "in Lighting",
+    "desc": "Starting its journey in the sector in 1997, Kendal Elektrik A.Ş. is today one of the largest manufacturers in the Turkish lighting market with its production, quality, and innovation power. With our constantly developing technological infrastructure, uncompromising quality standards, and ever-growing production targets; we continue to create world-class value at full speed, not only in our country but on a global scale.",
+    "stats": [
+      {
+        "label": "Years of Experience",
+        "suffix": ""
+      },
+      {
+        "label": "m² Closed Area",
+        "suffix": ""
+      },
+      {
+        "label": "Employees",
+        "suffix": "+"
+      },
+      {
+        "label": "Million+ Annual Production Volume",
+        "suffix": ""
+      },
+      {
+        "label": "Different Products",
+        "suffix": "+"
+      },
+      {
+        "label": "Dealers Across Turkey",
+        "suffix": "+"
+      }
+    ]
+  },
+  "brands_strip": {
+    "title": "Our Sub-Brands"
+  },
+  "company_video": {
+    "discover": "Discover the Power Behind the Light"
   }
 }

@@ -200,5 +200,43 @@
       "human_rights_title": "İnsan Hakları ve Çalışan Hakları Politikası",
       "human_rights_desc": "Evrensel değerlere, eşitliğe ve işçi haklarına verdiğimiz önem."
     }
+  },
+  "company_stats": {
+    "title_part1": "Aydınlatmada",
+    "title_part2": "Türkiye'nin",
+    "title_part3": "Gururu",
+    "desc": "Sektördeki yolculuğuna 1997 yılında başlayan Kendal Elektrik A.Ş., bugün geldiği noktada üretim, kalite ve inovasyon gücüyle Türkiye aydınlatma pazarının en büyük üreticilerinden biri konumundadır. Sürekli gelişen teknolojik altyapımız, taviz vermediğimiz kalite standartlarımız ve her geçen gün büyüyen üretim hedeflerimizle; sadece ülkemizde değil, küresel ölçekte de dünya standartlarında bir değer yaratmaya tüm hızımızla devam ediyoruz.",
+    "stats": [
+      {
+        "label": "Yıllık Tecrübe",
+        "suffix": ""
+      },
+      {
+        "label": "m² Kapalı Alan",
+        "suffix": ""
+      },
+      {
+        "label": "İstihdam",
+        "suffix": "+"
+      },
+      {
+        "label": "Milyon+ Yıllık Üretim Hacmi",
+        "suffix": ""
+      },
+      {
+        "label": "Çeşit Farklı Ürün",
+        "suffix": "+"
+      },
+      {
+        "label": "Türkiye Çapında Bayi",
+        "suffix": "+"
+      }
+    ]
+  },
+  "brands_strip": {
+    "title": "Alt Markalarımız"
+  },
+  "company_video": {
+    "discover": "Işığın Arkasındaki Gücü Keşfedin"
   }
 }
