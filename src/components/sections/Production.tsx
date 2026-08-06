@@ -44,7 +44,7 @@ export const Production = () => {
 
         gsap.to(obj, {
           val: targetValue,
-          duration: 2.5,
+          duration: 4.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: statsRef.current,

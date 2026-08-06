@@ -20,7 +20,7 @@ export const Navbar = () => {
   // Tracks which section is currently in view to highlight the matching nav link
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "stats", "brands", "retail", "global", "projects", "company-video", "catalog"];
+      const sections = ["brands", "retail", "projects", "company-video", "catalog"];
       let current = "";
       let maxTop = -Infinity;
 
@@ -74,18 +74,13 @@ export const Navbar = () => {
     {
       label: (t as any).nav?.group_corporate || "Kurumsal",
       links: [
-        { id: "about", href: "/#about", label: t.nav.about },
-        { id: "stats", href: "/#stats", label: (t as any).nav?.production || "Üretim ve İhracat" },
-        { id: "company-video", href: "/#company-video", label: (t as any).nav?.video || "Tanıtım Filmi" },
         { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
       ]
     },
     {
       label: (t as any).nav?.group_brands || "Markalar & Pazarlar",
       links: [
-        { id: "brands", href: "/#brands", label: (t as any).nav?.brands || "Alt Markalarımız" },
         { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
-        { id: "global", href: "/#global", label: t.nav.global },
       ]
     },
     {
@@ -93,7 +88,6 @@ export const Navbar = () => {
       links: [
         { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
         { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
-        { id: "catalog", href: "/#catalog", label: (t as any).nav?.catalog || "Katalog & Fiyat Listesi" },
       ]
     }
   ];
