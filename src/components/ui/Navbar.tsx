@@ -148,8 +148,9 @@ export const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-40 px-4 md:px-6 py-4 flex items-center justify-between bg-black/60 backdrop-blur-md text-white border-b border-white/5 transition-colors duration-300">
-      <Link href="/" className="relative flex items-center hover:opacity-80 transition-opacity z-50">
+    <>
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 flex items-center justify-between bg-black/60 backdrop-blur-md text-white border-b border-white/5 transition-colors duration-300">
+        <Link href="/" className="relative flex items-center hover:opacity-80 transition-opacity z-50">
         <Image src={getAssetPath("/images/kendal-logo.svg")} alt="Kendal Elektrik Logo" width={160} height={48} priority className="h-8 md:h-10 w-auto object-contain" />
       </Link>
 
@@ -227,6 +228,8 @@ export const Navbar = () => {
         </button>
       </div>
 
+      </nav>
+
       {/* Mobile Menu Overlay */}
       <div 
         className={`fixed inset-0 top-[64px] md:top-[72px] bg-black/95 backdrop-blur-xl z-40 transition-all duration-300 ease-in-out lg:hidden overflow-y-auto ${
@@ -289,6 +292,6 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </>
   );
 };
