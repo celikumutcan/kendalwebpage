@@ -74,6 +74,7 @@ export const Navbar = () => {
     {
       label: (t as any).nav?.group_corporate || "Kurumsal",
       links: [
+        { id: "mission_vision", href: "/misyon-ve-vizyon", label: (t as any).nav?.mission_vision || "Misyon ve Vizyon" },
         { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
       ]
     },
