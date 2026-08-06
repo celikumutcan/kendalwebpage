@@ -42,9 +42,6 @@ export const CompanyVideo = () => {
 
       <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center">
         <div className="flex flex-col items-center mb-10 text-center">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-[var(--brand-red)]/30 bg-[var(--brand-red)]/10 backdrop-blur-sm text-sm font-semibold tracking-widest text-[var(--brand-red)] mb-4">
-            KENDAL ELEKTRİK
-          </div>
           <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 pb-2 md:pb-4 leading-normal">
             {(t as any).company_video?.discover || "Işığın Arkasındaki Gücü Keşfedin"}
           </h2>

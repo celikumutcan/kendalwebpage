@@ -10,15 +10,20 @@ export default function HaberlerListesiPage() {
   const { language, t } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="relative min-h-screen bg-[#050505] text-white py-32 px-6 overflow-hidden">
+      {/* Vibrant Spotlight Effects */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
+        <div className="absolute -left-[20%] top-0 w-[600px] h-[600px] bg-gradient-to-br from-emerald-400 to-green-600 blur-[150px] rounded-full mix-blend-screen" />
+        <div className="absolute -right-[20%] bottom-0 w-[700px] h-[700px] bg-gradient-to-bl from-green-400 to-emerald-600 blur-[150px] rounded-full mix-blend-screen" />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-emerald-500/30 blur-[150px] rounded-[100%] mix-blend-screen" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* Header */}
-        <header className="mb-16 text-center">
-          <div className="inline-block px-3 py-1 rounded-full border border-[var(--brand-red)]/30 bg-[var(--brand-red)]/10 text-xs font-semibold tracking-wider text-[var(--brand-red)] mb-4 uppercase">
-            {language === 'en' ? "Media" : "Medya"}
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--global-text)]">
+        <header className="mb-24 text-center">
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
             {(t as any).nav?.news || (language === 'en' ? "Corporate News" : "Kurumsal Haberler")}
           </h1>
           <p className="text-[var(--global-text)] opacity-60 text-lg">

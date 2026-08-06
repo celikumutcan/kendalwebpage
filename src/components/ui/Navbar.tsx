@@ -153,7 +153,11 @@ export const Navbar = () => {
                         }
                       }
                     }}
-                    className={`block px-4 py-2.5 rounded-xl hover:bg-white/10 transition-colors ${activeSection === link.id ? "bg-[var(--brand-red)]/20 text-[var(--brand-red)] font-medium" : "text-white/80 hover:text-white"}`}
+                    className={`block px-4 py-2.5 rounded-xl hover:bg-white/10 transition-colors ${
+                      (activeSection === link.id || pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 2))
+                        ? "bg-[var(--brand-red)]/20 text-[var(--brand-red)] font-medium"
+                        : "text-white/80 hover:text-white"
+                    }`}
                   >
                     {link.label}
                   </Link>

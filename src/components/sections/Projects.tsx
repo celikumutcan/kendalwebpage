@@ -3,8 +3,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+
 import { getAssetPath } from "@/utils/basePath";
 
 const REFERENCE_DATA = [
@@ -57,7 +56,6 @@ export const Projects = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
-  const overlayRef = useRef<HTMLDivElement>(null);
 
   const scrollTrack = (direction: 'left' | 'right') => {
     if (trackRef.current) {
@@ -66,54 +64,6 @@ export const Projects = () => {
     }
   };
 
-  useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-
-      // Title reveal
-      gsap.from(".ref-title", {
-        opacity: 0,
-        y: 30,
-        filter: "blur(10px)",
-        duration: 1,
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "top 75%",
-        }
-      });
-
-      // Cinematic illumination
-      gsap.fromTo(overlayRef.current,
-        { opacity: 0.95 },
-        {
-          opacity: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 65%",
-            end: "top 15%",
-            scrub: true,
-          }
-        }
-      );
-
-      gsap.fromTo(".project-overlay",
-        { opacity: 0.8 },
-        {
-          opacity: 0,
-          ease: "none",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top 65%",
-            end: "top 15%",
-            scrub: true,
-          }
-        }
-      );
-
-    }, containerRef);
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section
@@ -124,7 +74,7 @@ export const Projects = () => {
       <div className="absolute top-0 left-0 w-[50vw] h-full pointer-events-none opacity-40 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at -20% 50%, #8a2be2 0%, transparent 70%)' }} />
       <div className="absolute top-0 right-0 w-[50vw] h-full pointer-events-none opacity-30 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at 120% 50%, #ff00ff 0%, transparent 70%)' }} />
 
-      <div className="max-w-7xl mx-auto px-6 mb-24 text-center ref-title relative z-20">
+      <div className="max-w-7xl mx-auto px-6 mb-24 text-center relative z-20">
         <h2 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
           {(t as any).references?.title || "Türkiye'nin Dört Bir Yanında"}
         </h2>
@@ -134,7 +84,6 @@ export const Projects = () => {
       </div>
 
       <div className="relative group/carousel">
-        <div ref={overlayRef} className="absolute inset-0 bg-[var(--global-bg)] z-10 pointer-events-none" />
 
         {/* Left Arrow */}
         <button 
@@ -181,7 +130,7 @@ export const Projects = () => {
                   loading={isPriority ? "eager" : "lazy"}
                   quality={75}
                 />
-                <div className="project-overlay absolute inset-0 bg-black pointer-events-none" />
+
 
                 <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90 flex flex-col justify-end p-6 pointer-events-none">
                   <h4 className="text-white font-bold text-xl md:text-2xl leading-tight mb-2 drop-shadow-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.name}</h4>

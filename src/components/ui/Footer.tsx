@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
     <footer className="w-full bg-black text-gray-400 py-16 px-6 border-t-2 border-[var(--brand-red)]">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         
         {/* Company Info */}
         <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
@@ -37,7 +37,7 @@ export const Footer = () => {
         </div>
 
         {/* Contact */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start">
+        <div className="text-center md:text-left flex flex-col items-center md:items-start md:justify-self-center">
           <h4 className="text-white font-semibold mb-6">{(t as any).footer?.contact_title}</h4>
           <ul className="space-y-3 text-sm">
             <li>
@@ -60,17 +60,6 @@ export const Footer = () => {
           </ul>
         </div>
 
-        {/* Quick Links */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <h4 className="text-white font-semibold mb-6">{(t as any).footer?.links_title}</h4>
-          <ul className="space-y-3 text-sm">
-            <li><Link href="/#about" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.about}</Link></li>
-            <li><Link href="/#products" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.products}</Link></li>
-            <li><Link href="/#why-us" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.production}</Link></li>
-            <li><Link href="/kariyer" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).nav?.career || "Kariyer"}</Link></li>
-            <li><Link href="/#contact" className="hover:text-[var(--brand-red)] transition-colors">{(t as any).footer?.links?.contact}</Link></li>
-          </ul>
-        </div>
 
         {/* Legal & Social */}
         <div className="text-center md:text-left flex flex-col items-center md:items-start">

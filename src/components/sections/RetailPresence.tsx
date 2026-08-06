@@ -23,7 +23,7 @@ export const RetailPresence = () => {
 
 
   return (
-    <section id="retail" ref={containerRef} className="w-full relative py-24 md:py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
+    <section id="retail" ref={containerRef} className="w-full relative py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
       {/* Vibrant Spotlight Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
         {/* Left top warm glow */}
@@ -36,8 +36,8 @@ export const RetailPresence = () => {
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-500/40 blur-[150px] rounded-[100%] mix-blend-multiply dark:mix-blend-screen" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-[var(--global-text)] opacity-90 tracking-tight">
+      <div className="relative z-10 max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl md:text-6xl font-bold mb-24 text-[var(--global-text)] opacity-90 tracking-tight">
           {(t as any).retail?.title || "Türkiye'nin Önde Gelen Zincir Marketlerinde"}
         </h2>
         
