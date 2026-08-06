@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Kararlı bir sürüm kullanalım
+          node-version: '20' # Kararlı bir sürüm kullanalım
 
       - name: Install dependencies
         run: npm ci
