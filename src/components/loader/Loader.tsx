@@ -130,13 +130,13 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         ref={textContainerRef} 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-6 text-white pointer-events-none mix-blend-exclusion w-full px-4"
       >
-        {/* Enormous Logo */}
-        <div className="relative w-28 h-28 md:w-40 md:h-40 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+        {/* Enormous Full Logo */}
+        <div className="relative w-64 h-24 md:w-80 md:h-28 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
           <Image
-            src={getAssetPath("/kendal-icon.png")}
+            src={getAssetPath("/images/kendal-logo.svg")}
             alt="Kendal Elektrik Logo"
             fill
-            sizes="(max-width: 768px) 112px, 160px"
+            sizes="(max-width: 768px) 256px, 320px"
             className="object-contain"
             priority
           />
@@ -145,11 +145,6 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         {/* Glowing Progress Number */}
         <div className="text-6xl md:text-8xl font-black tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mt-2">
           {progress.toString().padStart(3, "0")}
-        </div>
-        
-        {/* Brand Name */}
-        <div className="text-sm md:text-xl uppercase tracking-[0.4em] md:tracking-[0.8em] opacity-90 font-bold drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] whitespace-nowrap">
-          Kendal Elektrik
         </div>
       </div>
     </div>

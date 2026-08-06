@@ -6,7 +6,7 @@ export const OrganizationSchema = () => {
     "@type": "Organization",
     name: "Kendal Elektrik",
     url: "https://www.kendalelektrik.com.tr",
-    logo: "https://www.kendalelektrik.com.tr/kendal-icon.png",
+    logo: "https://www.kendalelektrik.com.tr/images/kendal-logo.svg",
     foundingDate: "1997",
     description: "Innovative lighting and electrical equipment manufacturer.",
     address: {

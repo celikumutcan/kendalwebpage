@@ -18,7 +18,7 @@ export const NewsArticleSchema = ({ news }: { news: NewsItem }) => {
       name: "Kendal Elektrik",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.kendalelektrik.com.tr/kendal-icon.png"
+        url: "https://www.kendalelektrik.com.tr/images/kendal-logo.svg"
       }
     },
     description: news.content[0]?.slice(0, 155) ?? "",
