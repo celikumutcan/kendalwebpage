@@ -54,3 +54,12 @@ body.disable-cv section {
 #global {
   contain-intrinsic-size: auto 1500px;
 }
+
+/* Hide scrollbar globally to prevent aggressive scrolling that breaks animations */
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
