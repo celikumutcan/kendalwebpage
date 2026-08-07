@@ -86,33 +86,34 @@ export const Projects = () => {
       <div className="relative group/carousel">
 
         {/* Left Arrow */}
-        <button 
+        <button
           onClick={() => scrollTrack('left')}
           className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
           aria-label="Previous Project"
         >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
         </button>
 
         {/* Right Arrow */}
-        <button 
+        <button
           onClick={() => scrollTrack('right')}
           className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
           aria-label="Next Project"
         >
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
         </button>
 
-        <div 
-          className="flex w-full overflow-x-auto snap-x snap-mandatory py-8 px-4 md:px-12 items-center" 
+        <div
+          className="flex w-full overflow-x-auto snap-x snap-mandatory py-8 px-4 md:px-12 items-center"
           ref={trackRef}
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {/* Global styles block to hide scrollbar for webkit browsers */}
-          <style dangerouslySetInnerHTML={{__html: `
+          <style dangerouslySetInnerHTML={{
+            __html: `
             div::-webkit-scrollbar { display: none; }
           `}} />
-          
+
           {REFERENCE_DATA.map((item, idx) => {
             const isPriority = idx < 4;
             return (
@@ -121,7 +122,7 @@ export const Projects = () => {
                 className="flex-shrink-0 snap-center relative w-[80vw] sm:w-[45vw] md:w-[35vw] lg:w-[25vw] aspect-[4/3] mx-3 rounded-xl overflow-hidden group border border-white/5"
               >
                 <Image
-                  src={getAssetPath(`/images/references/turkiye/${item.id}.jpg`)}
+                  src={getAssetPath(`/images/references/turkiye/${item.id}.webp`)}
                   alt={`${item.name} - ${item.location}`}
                   fill
                   sizes="(max-width: 768px) 75vw, (max-width: 1024px) 35vw, 25vw"

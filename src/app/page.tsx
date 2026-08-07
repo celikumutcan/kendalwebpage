@@ -29,13 +29,13 @@ export default function Home() {
         <Hero />
         <AboutUs />
 
-        <Certifications />
+        <BrandsStrip />
         <CompanyStats />
         <CatalogCTA />
         <CompanyVideo />
         <GlobalPresence />
         <NewsPreview />
-        <BrandsStrip />
+        <Certifications />
       </div>
     </main>
   );

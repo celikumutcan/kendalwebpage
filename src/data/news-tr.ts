@@ -14,12 +14,12 @@ export const newsDataTR: NewsItem[] = [
     title: "GELENEKSEL KENDAL ELEKTRİK İFTAR YEMEGİMİZİ DÜZENLEDİK",
     date: "13 Nisan 2024",
     images: [
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.jpg")
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.webp")
     ],
     content: [
       "Her sene geleneksel olarak düzenlemiş olduğumuz iftar yemeği programımızı bu sene de 29 / 03 / 2024 tarihinde çalışanlarımız ile bilrlikte gerçekleştirdik. Ramazan ayının birlik ve berleğini yaşadığıımız iftar yemeğinde çalışanlarımız ile bir araya geldik.",
@@ -31,10 +31,10 @@ export const newsDataTR: NewsItem[] = [
     title: "ALMANYA MESSE FRANKFURT LIGHT + BUILDING FUARINA KATILIM SAĞLADIK",
     date: "23 Mayıs 2024",
     images: [
-      getAssetPath("/images/haberler/2/111121-838x622.jpg"),
-      getAssetPath("/images/haberler/2/22222211.jpg"),
-      getAssetPath("/images/haberler/2/333323332.jpg"),
-      getAssetPath("/images/haberler/2/44444444443.jpg")
+      getAssetPath("/images/haberler/2/111121-838x622.webp"),
+      getAssetPath("/images/haberler/2/22222211.webp"),
+      getAssetPath("/images/haberler/2/333323332.webp"),
+      getAssetPath("/images/haberler/2/44444444443.webp")
     ],
     content: [
       "Kendal Elektrik olarak Messe Frankfurt Light + Building Fuarına katılım sağladık. Almanya’da 3 Mart 2024 – 8 Mart 2024 tarihleri arasında düzenlenen  fuarda en yenilikçi ürünlerimizi ziyaretçilerle buluşturduk.",
@@ -47,9 +47,9 @@ export const newsDataTR: NewsItem[] = [
     title: "AYDINLATMA SEKTÖRÜNDE SON TRENDLER ve TEKNOLOJİK GELİŞMELER",
     date: "27 Mayıs 2024",
     images: [
-      getAssetPath("/images/haberler/3/12131231.jpg"),
-      getAssetPath("/images/haberler/3/2112112312-838x622.jpg"),
-      getAssetPath("/images/haberler/3/32312313.jpg")
+      getAssetPath("/images/haberler/3/12131231.webp"),
+      getAssetPath("/images/haberler/3/2112112312-838x622.webp"),
+      getAssetPath("/images/haberler/3/32312313.webp")
     ],
     content: [
       "Aydınlatma artık sadece bir mekânı aydınlatmakla kalmıyor, aynı zamanda enerji verimliliği, estetik ve kullanıcı konforunu sağlamak için akıllı sistemlerle entegre ediliyor.",
@@ -100,8 +100,8 @@ export const newsDataTR: NewsItem[] = [
     title: "YENİ İNSAN KAYNAKLARI MÜDÜRÜMÜZ ZEHRA ŞİMŞEK ÖZEN ARAMIZA KATILDI",
     date: "01 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/6/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/6/zehrasimsekozen.jpg")
+      getAssetPath("/images/haberler/6/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/6/zehrasimsekozen.webp")
     ],
     content: [
       "Kendal Elektrik olarak sürekli büyüyen ve gelişen yapımızı daha da güçlendirmek adına önemli bir adım attık. İnsan Kaynakları Müdürü olarak göreve başlayan Zehra Şimşek ÖZEN, şirketimizin insan kaynakları stratejilerini güçlendirerek, çalışan memnuniyetini artırmayı ve iş stratejilerimizi insan odaklı yaklaşımlarla desteklemek için kararlılıkla çalışacaktır.",
@@ -113,7 +113,7 @@ export const newsDataTR: NewsItem[] = [
     title: "İYİ AYDINLATMANIN SAĞLIK AÇISINDAN ÖNEMİ",
     date: "11 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.png")
+      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.webp")
     ],
     content: [
       "Göz Sağlığı ve Görme Performansı:",
@@ -134,7 +134,7 @@ export const newsDataTR: NewsItem[] = [
     title: "ARMATÜR NEDİR NERELERDE KULLANILIR?",
     date: "12 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/8/armaturnedir-838x622.jpg")
+      getAssetPath("/images/haberler/8/armaturnedir-838x622.webp")
     ],
     content: [
       "Aydınlatma armatürleri, ışık kaynaklarını yönlendiren ve koruyan bileşenler olarak tanımlanabilir. Genellikle iç ve dış mekanlarda kullanılan bu armatürler, işlevsel ve estetik amaçlar taşır.",
@@ -156,7 +156,7 @@ export const newsDataTR: NewsItem[] = [
     title: "EVİNİZ İÇİN DOĞRU AYDINLATMA ÖNERİLERİ",
     date: "12 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.jpg")
+      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.webp")
     ],
     content: [
       "Aydınlatma sisteminizi düzenlerken, her odanın ya da alanın kendine has bir dokusu olduğunu ve aydınlatmayı da bu dokuya uyumlu şekilde yapmanız gerektiğini unutmayın. Tek bir sisteme bağlı kalmayın.",
@@ -184,8 +184,8 @@ export const newsDataTR: NewsItem[] = [
     title: "YENİ İDARİ İŞLER UZMANIMIZ EREN OKAN ARAMIZA KATILDI",
     date: "12 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/10/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/10/erenokan.jpg")
+      getAssetPath("/images/haberler/10/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/10/erenokan.webp")
     ],
     content: [
       "Kendal Elektrik olarak sürekli büyüme ve gelişme yolunda emin adımlarla ilerlerken, ekibimize katılan her yeni üye bizim için büyük bir değer taşır. İşte bu değerli ekibe, İdari İşler Uzmanı olarak katılan Eren OKAN, şirketimizin idari işler süreçlerini daha da iyileştirmek, verimliliği artırmak ve günlük operasyonlarda mükemmelliği sağlamak için kararlılıkla çalışacak. Kendisi, görevini yerine getirirken titizlikle ve özveriyle çalışmanın yanı sıra, ekibimizin dinamik yapısına ve şirket kültürümüze de büyük bir katkı sağlayacaktır.",
@@ -197,7 +197,7 @@ export const newsDataTR: NewsItem[] = [
     title: "AYDINLATMADA DİM EDİLEBİLİR TERİMİ NEDİR ?",
     date: "16 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/11/dimablee-838x622.jpg")
+      getAssetPath("/images/haberler/11/dimablee-838x622.webp")
     ],
     content: [
       "Dim edilebilir aydınlatma terimi, günümüzde aydınlatma teknolojilerinin esnekliğini ve kullanıcı dostu özelliklerini vurgulayan bir kavramdır. Bu tür aydınlatma sistemleri, kullanıcıların aydınlatma seviyesini istedikleri gibi ayarlayabilmesine olanak tanır. Genellikle evlerden ofislere, otellerden mağazalara kadar birçok farklı mekanda kullanılan bu sistemler, enerji tasarrufu sağlamaları ve konforlu bir ortam yaratmalarıyla ön plandadır.",
@@ -215,7 +215,7 @@ export const newsDataTR: NewsItem[] = [
     title: "AMELİYATHANE LAMBALARI NEDEN GÖLGE OLUŞTURMAZ?",
     date: "18 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/12/amelyatisigi-838x622.jpg")
+      getAssetPath("/images/haberler/12/amelyatisigi-838x622.webp")
     ],
     content: [
       "Ameliyat lambaları, cerrahi operasyonların başarılı bir şekilde gerçekleştirilmesinde kritik bir rol oynar. Modern tıbbın gerektirdiği hassaslık ve detay gereksinimlerini karşılamak için sürekli olarak geliştirilen bu teknoloji, cerrahların ameliyat sırasında net bir görüş elde etmelerini sağlar.",
@@ -230,7 +230,7 @@ export const newsDataTR: NewsItem[] = [
     title: "LED AMPULLERİN ÖMRÜ NASIL UZATILIR?",
     date: "17 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/13/ledampul-838x622.jpg")
+      getAssetPath("/images/haberler/13/ledampul-838x622.webp")
     ],
     content: [
       "LED Ampullerin Ömrünü Uzatma Stratejileri",
@@ -247,7 +247,7 @@ export const newsDataTR: NewsItem[] = [
     title: "Li-Fi TEKNOLOJİSİ NEDİR NE İŞE YARAR?",
     date: "19 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/14/lifi-838x622.jpg")
+      getAssetPath("/images/haberler/14/lifi-838x622.webp")
     ],
     content: [
       "Li-Fi Teknolojisi: Işıkla Hızlı ve Güvenli İletişim",
@@ -264,7 +264,7 @@ export const newsDataTR: NewsItem[] = [
     title: "D50 AYDINLATMA STANDARDI NEDİR? NERELERDE KULLANILIR?",
     date: "22 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/15/d50-838x622.jpg")
+      getAssetPath("/images/haberler/15/d50-838x622.webp")
     ],
     content: [
       "Renk yönetimi, grafik tasarım, basım ve fotoğrafçılık gibi sektörlerde, işlerin kalitesini doğrudan etkileyen bir faktördür. Özellikle matbaa ortamlarında, doğru renklerin doğru şekilde değerlendirilmesi ve basılması, müşteri memnuniyeti ve iş kalitesi için kritik önem taşır. Bu nedenle, ISO 3664:2000 standardına göre belirlenen D50 aydınlatma standartı büyük bir öneme sahiptir.",
@@ -281,7 +281,7 @@ export const newsDataTR: NewsItem[] = [
     title: "SPOT IŞIKLAR ve DOWNLIGHT'LAR ARASINDAKİ FARKLAR",
     date: "23 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/16/SPOTT-838x622.jpg")
+      getAssetPath("/images/haberler/16/SPOTT-838x622.webp")
     ],
     content: [
       "Ev veya işyeri aydınlatmasını planlarken karşınıza çıkan seçeneklerden bazıları spot ışıklar ve downlight'lar olabilir. Her ikisi de farklı aydınlatma ihtiyaçları için tasarlanmış olsa da, özellikleri ve kullanım alanları açısından belirgin farklılıklar gösterirler.",
@@ -296,7 +296,7 @@ export const newsDataTR: NewsItem[] = [
     title: "LED PROJEKTÖR NEDİR?",
     date: "26 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/17/pojector-838x622.jpg")
+      getAssetPath("/images/haberler/17/pojector-838x622.webp")
     ],
     content: [
       "LED projektör, açık hava alanlarında, sahnelerde, etkinliklerde, spor etkinliklerinde ve binaların aydınlatılmasında sıklıkla kullanılan bir aydınlatma cihazıdır. LED (Işık Yayan Diyot) teknolojisiyle çalışan bu projektörler, yüksek yoğunlukta ve yönlendirilmiş ışık üretebilme kapasitesine sahiptir. Geleneksel aydınlatma çözümlerine kıyasla daha verimli ve uzun ömürlü olan LED projektörler, enerji tasarrufu sağlamakla kalmaz, aynı zamanda çevre dostu bir seçenek sunar.",

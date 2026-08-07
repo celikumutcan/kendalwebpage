@@ -18,7 +18,7 @@ export const BrandsStrip = () => {
     <section id="brands" className="w-full bg-white py-16 md:py-24 overflow-hidden border-y border-gray-200 relative flex flex-col items-center">
       <div className="mb-12 text-center pointer-events-none">
         <h3 className="text-gray-900 text-lg md:text-xl font-bold tracking-widest uppercase">
-          {(t as any).brands_strip?.title || "Alt Markalarımız"}
+          {(t as any).brands_strip?.title || "Markalarımız"}
         </h3>
         <div className="w-16 h-1 bg-[var(--brand-red)] rounded-full mx-auto mt-4" />
       </div>

@@ -12,10 +12,12 @@ export default function HaberlerListesiPage() {
   return (
     <div className="relative min-h-screen bg-[#050505] text-white py-32 px-6 overflow-hidden">
       {/* Vibrant Spotlight Effects */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
-        <div className="absolute -left-[20%] top-0 w-[600px] h-[600px] bg-gradient-to-br from-emerald-400 to-green-600 blur-[150px] rounded-full mix-blend-screen" />
-        <div className="absolute -right-[20%] bottom-0 w-[700px] h-[700px] bg-gradient-to-bl from-green-400 to-emerald-600 blur-[150px] rounded-full mix-blend-screen" />
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-emerald-500/30 blur-[150px] rounded-[100%] mix-blend-screen" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        {/* Top center glow */}
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-emerald-500/40 blur-[120px] rounded-full" />
+        
+        {/* Bottom center glow */}
+        <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-[800px] h-[500px] bg-teal-500/40 blur-[120px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">

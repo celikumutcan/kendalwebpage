@@ -18,8 +18,13 @@ export function NewsDetailClient({ id }: { id: string }) {
   }
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">
+      {/* Vibrant Spotlight Effects */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute -left-[10%] top-0 w-[600px] h-[600px] bg-blue-500/30 blur-[120px] rounded-full" />
+        <div className="absolute -right-[10%] bottom-0 w-[600px] h-[600px] bg-cyan-500/30 blur-[120px] rounded-full" />
+      </div>
+      <div className="relative z-10 max-w-4xl mx-auto">
         
         {/* Back Link */}
         <div className="mb-8">
@@ -33,10 +38,7 @@ export function NewsDetailClient({ id }: { id: string }) {
 
         {/* Article Header */}
         <header className="mb-10 text-center">
-          <div className="inline-block px-3 py-1 rounded-full border border-[var(--brand-red)]/30 bg-[var(--brand-red)]/10 text-xs font-semibold tracking-wider text-[var(--brand-red)] mb-6 uppercase">
-            {(t as any).nav?.news || (language === 'en' ? "Corporate News" : "Kurumsal Haberler")}
-          </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
             {news.title}
           </h1>
           <div className="flex items-center justify-center gap-4 text-sm text-gray-400">

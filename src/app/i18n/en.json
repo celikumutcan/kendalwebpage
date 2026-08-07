@@ -16,7 +16,7 @@
     "group_corporate": "Corporate",
     "group_brands": "Brands & Markets",
     "group_media": "Media & References",
-    "brands": "Our Sub-Brands",
+    "brands": "Our Brands",
     "catalog": "Catalog"
   },
   "hero": {
@@ -240,7 +240,7 @@
     ]
   },
   "brands_strip": {
-    "title": "Our Sub-Brands"
+    "title": "Our Brands"
   },
   "company_video": {
     "discover": "Discover the Power Behind the Light"
@@ -252,5 +252,13 @@
   "vision_page": {
     "title": "Vision",
     "content": "To reach a strong position in the global market as a leading lighting brand that sets international standards in customer satisfaction and operational excellence by 2026. With this vision, we aim to grow on the foundations of sustainability, innovation, and reliability, and to stand out in the sector by providing effective solutions and advancing with technological developments."
+  },
+  "production_page": {
+    "title": "Production",
+    "content": [
+      "Kendal Elektrik, in its modern production facility with a closed area of 22,000 m² which became operational in 2017, is among the leading manufacturers of the sector with an annual production capacity of 100 million lighting products. In the production infrastructure supported by high automation technology, LED bulbs, LED panels, filament LED bulbs, candle bulbs, manual assembly lines, SMD assembly systems, and plastic injection production are carried out under a single roof.",
+      "As the only manufacturer producing filament LED bulbs in Turkey, Europe, and the Middle East, Kendal Elektrik bases every stage of production on international quality standards. While all raw materials and semi-finished products coming from suppliers go through IQC (Incoming Quality Control) processes, IPQC (In Process Quality Control) is applied throughout the production, and the final products are inspected again with OQC (Outgoing Quality Control) before shipment.",
+      "Thanks to the production processes carried out in ESD-protected production areas, electronic components are protected against electrostatic discharge, while the products undergo comprehensive quality controls such as electrical safety, mechanical endurance, photometric performance, power consumption, power factor, EMC compliance, driver control, lumen value, color temperature, CRI measurement, insulation resistance, grounding resistance, high voltage, leakage current, aging, lifetime, and drop tests. Supporting digital production management with ERP, MES, and WMS systems, Kendal Elektrik safely delivers innovative lighting solutions produced in Turkey to many countries of the world with its high production capacity, advanced automation infrastructure, traceable processes, and sustainable quality understanding."
+    ]
   }
 }

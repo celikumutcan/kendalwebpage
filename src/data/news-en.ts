@@ -14,12 +14,12 @@ export const newsDataEN: NewsItem[] = [
     title: "WE HOSTED OUR TRADITIONAL KENDAL ELECTRIC IFTAR DINNER",
     date: "Apr 13, 2024",
     images: [
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.jpg"),
-      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.jpg")
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-1.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-2.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-3.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-4.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024-5.webp"),
+      getAssetPath("/images/haberler/1/geleneksel-iftar-yemegi-2024.webp")
     ],
     content: [
       "We held our traditional iftar dinner program on 29 / 03 / 2024 together with our employees. We came together with our employees at the iftar dinner where we experienced the unity and togetherness of the month of Ramadan.",
@@ -31,10 +31,10 @@ export const newsDataEN: NewsItem[] = [
     title: "WE PARTICIPATED IN MESSE FRANKFURT LIGHT + BUILDING FAIR IN GERMANY",
     date: "May 23, 2024",
     images: [
-      getAssetPath("/images/haberler/2/111121-838x622.jpg"),
-      getAssetPath("/images/haberler/2/22222211.jpg"),
-      getAssetPath("/images/haberler/2/333323332.jpg"),
-      getAssetPath("/images/haberler/2/44444444443.jpg")
+      getAssetPath("/images/haberler/2/111121-838x622.webp"),
+      getAssetPath("/images/haberler/2/22222211.webp"),
+      getAssetPath("/images/haberler/2/333323332.webp"),
+      getAssetPath("/images/haberler/2/44444444443.webp")
     ],
     content: [
       "As Kendal Electric, we participated in the Messe Frankfurt Light + Building Fair. We introduced our most innovative products to visitors at the fair held in Germany between March 3, 2024 - March 8, 2024.",
@@ -47,9 +47,9 @@ export const newsDataEN: NewsItem[] = [
     title: "LATEST TRENDS AND TECHNOLOGICAL DEVELOPMENTS IN THE LIGHTING SECTOR",
     date: "May 27, 2024",
     images: [
-      getAssetPath("/images/haberler/3/12131231.jpg"),
-      getAssetPath("/images/haberler/3/2112112312-838x622.jpg"),
-      getAssetPath("/images/haberler/3/32312313.jpg")
+      getAssetPath("/images/haberler/3/12131231.webp"),
+      getAssetPath("/images/haberler/3/2112112312-838x622.webp"),
+      getAssetPath("/images/haberler/3/32312313.webp")
     ],
     content: [
       "Lighting no longer merely illuminates a space, but is also integrated with smart systems to provide energy efficiency, aesthetics, and user comfort.",
@@ -100,8 +100,8 @@ export const newsDataEN: NewsItem[] = [
     title: "OUR NEW HUMAN RESOURCES MANAGER ZEHRA ŞİMŞEK ÖZEN HAS JOINED US",
     date: "Jul 01, 2024",
     images: [
-      getAssetPath("/images/haberler/6/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/6/zehrasimsekozen.jpg")
+      getAssetPath("/images/haberler/6/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/6/zehrasimsekozen.webp")
     ],
     content: [
       "As Kendal Electric, we have taken an important step to further strengthen our constantly growing and developing structure. Zehra Şimşek ÖZEN, who has started working as Human Resources Manager, will work with determination to increase employee satisfaction and support our business strategies with human-oriented approaches by strengthening our company's human resources strategies.",
@@ -113,7 +113,7 @@ export const newsDataEN: NewsItem[] = [
     title: "THE IMPORTANCE OF GOOD LIGHTING FOR HEALTH",
     date: "Jul 11, 2024",
     images: [
-      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.png")
+      getAssetPath("/images/haberler/7/dogruaydınlatma-838x622.webp")
     ],
     content: [
       "Eye Health and Visual Performance:",
@@ -134,7 +134,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS A LIGHTING FIXTURE AND WHERE IS IT USED?",
     date: "Jul 12, 2024",
     images: [
-      getAssetPath("/images/haberler/8/armaturnedir-838x622.jpg")
+      getAssetPath("/images/haberler/8/armaturnedir-838x622.webp")
     ],
     content: [
       "Lighting fixtures can be defined as components that direct and protect light sources. These fixtures, generally used indoors and outdoors, serve functional and aesthetic purposes.",
@@ -156,7 +156,7 @@ export const newsDataEN: NewsItem[] = [
     title: "PROPER LIGHTING SUGGESTIONS FOR YOUR HOME",
     date: "Jul 12, 2024",
     images: [
-      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.jpg")
+      getAssetPath("/images/haberler/9/aydinlatmaoneri-838x622.webp")
     ],
     content: [
       "When arranging your lighting system, remember that every room or area has its own unique texture and you need to light it in harmony with this texture. Do not stick to a single system.",
@@ -184,8 +184,8 @@ export const newsDataEN: NewsItem[] = [
     title: "OUR NEW ADMINISTRATIVE AFFAIRS SPECIALIST EREN OKAN HAS JOINED US",
     date: "Jul 12, 2024",
     images: [
-      getAssetPath("/images/haberler/10/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/10/erenokan.jpg")
+      getAssetPath("/images/haberler/10/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/10/erenokan.webp")
     ],
     content: [
       "As Kendal Electric takes firm steps towards continuous growth and development, every new member joining our team carries great value for us. Eren OKAN, who joined this valuable team as an Administrative Affairs Specialist, will work with determination to further improve our company's administrative affairs processes, increase efficiency, and ensure excellence in daily operations. He will not only work meticulously and selflessly while performing his duties, but will also make a great contribution to the dynamic structure of our team and our company culture.",
@@ -197,7 +197,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS THE TERM DIMMABLE IN LIGHTING?",
     date: "Jul 16, 2024",
     images: [
-      getAssetPath("/images/haberler/11/dimablee-838x622.jpg")
+      getAssetPath("/images/haberler/11/dimablee-838x622.webp")
     ],
     content: [
       "The term dimmable lighting is a concept that emphasizes the flexibility and user-friendly features of today's lighting technologies. Such lighting systems allow users to adjust the lighting level as they wish. Generally used in many different venues from homes to offices, hotels to stores, these systems come to the forefront by providing energy savings and creating a comfortable environment.",
@@ -215,7 +215,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHY DO OPERATING ROOM LIGHTS NOT CREATE SHADOWS?",
     date: "Jul 18, 2024",
     images: [
-      getAssetPath("/images/haberler/12/amelyatisigi-838x622.jpg")
+      getAssetPath("/images/haberler/12/amelyatisigi-838x622.webp")
     ],
     content: [
       "Operating room lights play a critical role in the successful performance of surgical operations. This technology, which is continuously developed to meet the precision and detail requirements required by modern medicine, allows surgeons to obtain a clear view during surgery.",
@@ -230,7 +230,7 @@ export const newsDataEN: NewsItem[] = [
     title: "HOW TO EXTEND THE LIFE OF LED BULBS?",
     date: "Jul 17, 2024",
     images: [
-      getAssetPath("/images/haberler/13/ledampul-838x622.jpg")
+      getAssetPath("/images/haberler/13/ledampul-838x622.webp")
     ],
     content: [
       "Strategies to Extend the Life of LED Bulbs",
@@ -247,7 +247,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS Li-Fi TECHNOLOGY AND WHAT DOES IT DO?",
     date: "Jul 19, 2024",
     images: [
-      getAssetPath("/images/haberler/14/lifi-838x622.jpg")
+      getAssetPath("/images/haberler/14/lifi-838x622.webp")
     ],
     content: [
       "Li-Fi Technology: Fast and Secure Communication with Light",
@@ -264,7 +264,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS THE D50 LIGHTING STANDARD? WHERE IS IT USED?",
     date: "Jul 22, 2024",
     images: [
-      getAssetPath("/images/haberler/15/d50-838x622.jpg")
+      getAssetPath("/images/haberler/15/d50-838x622.webp")
     ],
     content: [
       "It is a factor that directly affects the quality of work in sectors such as color management, graphic design, printing, and photography. Especially in printing environments, accurately evaluating and printing the correct colors is of critical importance for customer satisfaction and work quality. For this reason, the D50 lighting standard determined according to the ISO 3664:2000 standard is of great importance.",
@@ -281,7 +281,7 @@ export const newsDataEN: NewsItem[] = [
     title: "DIFFERENCES BETWEEN SPOTLIGHTS AND DOWNLIGHTS",
     date: "Jul 23, 2024",
     images: [
-      getAssetPath("/images/haberler/16/SPOTT-838x622.jpg")
+      getAssetPath("/images/haberler/16/SPOTT-838x622.webp")
     ],
     content: [
       "Some of the options you come across when planning home or workplace lighting may be spotlights and downlights. Although both are designed for different lighting needs, they show significant differences in terms of their features and usage areas.",
@@ -296,7 +296,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS AN LED PROJECTOR?",
     date: "Jul 26, 2024",
     images: [
-      getAssetPath("/images/haberler/17/pojector-838x622.jpg")
+      getAssetPath("/images/haberler/17/pojector-838x622.webp")
     ],
     content: [
       "An LED projector is a lighting device frequently used in outdoor areas, stages, events, sports events, and building illumination. Operating with LED (Light Emitting Diode) technology, these projectors have the capacity to produce high-intensity and directed light. Being more efficient and longer-lasting compared to traditional lighting solutions, LED projectors not only save energy but also offer an environmentally friendly option.",

@@ -16,7 +16,7 @@
     "group_corporate": "Kurumsal",
     "group_brands": "Markalar & Pazarlar",
     "group_media": "Medya & Referanslar",
-    "brands": "Alt Markalarımız",
+    "brands": "Markalarımız",
     "catalog": "Katalog & Fiyat Listesi"
   },
   "hero": {
@@ -240,7 +240,7 @@
     ]
   },
   "brands_strip": {
-    "title": "Alt Markalarımız"
+    "title": "Markalarımız"
   },
   "company_video": {
     "discover": "Işığın Arkasındaki Gücü Keşfedin"
@@ -252,5 +252,13 @@
   "vision_page": {
     "title": "Vizyon",
     "content": "2026 yılına kadar, müşteri memnuniyeti ve operasyonel mükemmellikte uluslararası standartları belirleyen lider bir aydınlatma markası olarak küresel pazarda güçlü bir konuma ulaşmak. Bu vizyonla, sürdürülebilirlik, yenilikçilik ve güvenilirlik temelleri üzerinde büyümeyi ve etkili çözümler sunarak ve teknolojik gelişmelerle ilerleyerek sektörde öne çıkmayı hedefliyoruz."
+  },
+  "production_page": {
+    "title": "Üretim",
+    "content": [
+      "Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde, yıllık 100 milyon adet aydınlatma ürünü üretim kapasitesiyle sektörün öncü üreticileri arasında yer almaktadır. Yüksek otomasyon teknolojisiyle desteklenen üretim altyapısında LED ampul, LED panel, filament LED ampul, mum ampul, manuel montaj hatları, SMD dizgi sistemleri ve plastik enjeksiyon üretimi tek çatı altında gerçekleştirilmektedir.",
+      "Türkiye, Avrupa ve Orta Doğu'da filament LED ampul üreten tek üretici olma özelliğine sahip olan Kendal Elektrik, üretimin her aşamasında uluslararası kalite standartlarını esas almaktadır. Tedarikçilerden gelen tüm hammaddeler ve yarı mamuller IQC (Incoming Quality Control) süreçlerinden geçirilirken, üretim boyunca IPQC (In Process Quality Control) kontrolleri uygulanmakta, sevkiyat öncesinde ise OQC (Outgoing Quality Control) ile nihai ürünler tekrar denetlenmektedir.",
+      "ESD korumalı üretim alanlarında gerçekleştirilen üretim süreçleri sayesinde elektronik bileşenler elektrostatik deşarja karşı korunurken, ürünler elektriksel güvenlik, mekanik dayanım, fotometrik performans, güç tüketimi, güç faktörü, EMC uyumluluğu, sürücü kontrolü, lümen değeri, renk sıcaklığı, CRI ölçümü, izolasyon direnci, topraklama direnci, yüksek gerilim, kaçak akım, yaşlandırma, ömür ve düşme testleri gibi kapsamlı kalite kontrollerinden geçirilmektedir. Dijital üretim yönetimini ERP, MES ve WMS sistemleriyle destekleyen Kendal Elektrik; yüksek üretim kapasitesi, ileri otomasyon altyapısı, izlenebilir süreçleri ve sürdürülebilir kalite anlayışıyla Türkiye'de ürettiği yenilikçi aydınlatma çözümlerini dünyanın birçok ülkesine güvenle ulaştırmaktadır."
+    ]
   }
 }
