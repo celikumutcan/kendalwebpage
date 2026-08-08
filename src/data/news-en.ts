@@ -64,7 +64,7 @@ export const newsDataEN: NewsItem[] = [
     title: "CAMPAIGN ON FIBER AND CAT6 CABLE PRODUCTS",
     date: "May 31, 2024",
     images: [
-      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.jpg")
+      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.webp")
     ],
     content: [
       "As Kendal Electric, we are happy to announce a special campaign just for you! We offer special prices and conditions for our KKC107 Fiber Cable and KKC106 CAT6 Cable products in our stock. These products are offered with limited stocks, and you can contact your regional manager to learn the campaign prices and conditions.",
@@ -87,7 +87,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WE MADE AN AESTHETIC UPDATE BY RENEWING OUR PACKAGING DESIGNS",
     date: "Jun 24, 2024",
     images: [
-      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.jpg")
+      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.webp")
     ],
     content: [
       "As Kendal Electric, we aim to improve the customer experience by renewing our product packaging. The new box designs offer an aesthetic update with a minimalist approach and highlight the natural appeal of the products.",

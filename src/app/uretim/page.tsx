@@ -33,7 +33,11 @@ export default function UretimPage() {
         </header>
 
         {/* Image Gallery Slider */}
-        <ImageSlider images={images} />
+        <ImageSlider 
+          images={images} 
+          altPrefix="Kendal Elektrik Üretim Tesisi Görsel"
+          titlePrefix="Kendal Elektrik Üretim Aşaması"
+        />
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed mt-12 text-justify">

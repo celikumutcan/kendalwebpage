@@ -32,7 +32,7 @@ export const Footer = () => {
             rel="noopener noreferrer"
             className="text-sm opacity-60 hover:opacity-100 hover:text-[var(--brand-red)] transition-colors inline-block"
           >
-            {(t as any).footer?.address}
+            Adres: {(t as any).footer?.address}
           </a>
         </div>
 
@@ -42,15 +42,21 @@ export const Footer = () => {
           <ul className="space-y-3 text-sm">
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.phone_label || "İletişim Hattı"}</span>
-              {(t as any).footer?.phone}
+              <a href={`tel:${(t as any).footer?.phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.phone}
+              </a>
             </li>
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.sales_phone_label || "Satış Destek Hattı"}</span>
-              {(t as any).footer?.sales_phone}
+              <a href={`tel:${(t as any).footer?.sales_phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.sales_phone}
+              </a>
             </li>
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.support_phone_label || "Teknik Servis Hattı"}</span>
-              {(t as any).footer?.support_phone}
+              <a href={`tel:${(t as any).footer?.support_phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.support_phone}
+              </a>
             </li>
             <li className="pt-2">
               <a href="mailto:info@kendalelektrik.com.tr" className="hover:text-[var(--brand-red)] transition-colors">

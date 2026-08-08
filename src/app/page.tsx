@@ -9,7 +9,6 @@ import { CompanyStats } from "@/components/sections/CompanyStats";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
 import { CompanyVideo } from "@/components/sections/CompanyVideo";
 import { NewsTicker } from "@/components/sections/NewsTicker";
-import { BrandsStrip } from "@/components/sections/BrandsStrip";
 import { NewsPreview } from "@/components/sections/NewsPreview";
 
 import { Certifications } from "@/components/sections/Certifications";
@@ -29,7 +28,6 @@ export default function Home() {
         <Hero />
         <AboutUs />
 
-        <BrandsStrip />
         <CompanyStats />
         <CatalogCTA />
         <CompanyVideo />

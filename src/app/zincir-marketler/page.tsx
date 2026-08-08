@@ -5,7 +5,7 @@ import { RetailPresence } from "@/components/sections/RetailPresence";
 
 export default function ZincirMarketlerPage() {
   return (
-    <div className="min-h-screen bg-[#050505] pt-0 pb-0">
+    <div className="bg-[#050505] pt-0 pb-0">
       <RetailPresence />
     </div>
   );

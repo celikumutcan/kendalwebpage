@@ -64,7 +64,7 @@ export const newsDataTR: NewsItem[] = [
     title: "FİBER ve CAT6 KABLO ÜRÜNLERİNDE KAMPANYA",
     date: "31 Mayıs 2024",
     images: [
-      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.jpg")
+      getAssetPath("/images/haberler/4/kampanya (838 x 622 piksel)-838x622.webp")
     ],
     content: [
       "Kendal Elektrik olarak, size özel bir kampanya duyurusu yapmaktan mutluluk duyuyoruz! Stoklarımızda bulunan KKC107 Fiber Kablo ve KKC106 CAT6 Kablo ürünlerimiz için özel fiyatlar ve koşullar sunuyoruz. Bu ürünler sınırlı stoklarla sunulmaktadır ve kampanya kapsamındaki fiyat ve koşulları öğrenmek için bölge yöneticinizle iletişime geçebilirsiniz.",
@@ -87,7 +87,7 @@ export const newsDataTR: NewsItem[] = [
     title: "AMBALAJ TASARIMLARIMIZI YENİLEYEREK ESTETİK BİR GÜNCELLEME YAPTIK.",
     date: "24 Haziran 2024",
     images: [
-      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.jpg")
+      getAssetPath("/images/haberler/5/K2 YENİ KUTU Kopyası (838 x 622 piksel) (2)-838x622.webp")
     ],
     content: [
       "Kendal Elektrik olarak, ürün ambalajlarını yenileyerek müşteri deneyimini iyileştirmeyi hedefliyoruz. Yeni kutu tasarımları, minimalist bir yaklaşımla estetik bir güncelleme sunuyor ve ürünlerin doğal çekiciliğini ön plana çıkarıyor.",

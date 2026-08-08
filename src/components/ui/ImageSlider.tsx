@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-export function ImageSlider({ images }: { images: string[] }) {
+export function ImageSlider({ images, altPrefix = "Görsel", titlePrefix = "" }: { images: string[], altPrefix?: string, titlePrefix?: string }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -42,7 +42,8 @@ export function ImageSlider({ images }: { images: string[] }) {
         >
           <Image 
             src={src}
-            alt={`Görsel ${idx + 1}`}
+            alt={`${altPrefix} ${idx + 1}`}
+            title={titlePrefix ? `${titlePrefix} ${idx + 1}` : undefined}
             fill
             sizes="(max-width: 768px) 100vw, 80vw"
             className="object-cover"

@@ -23,7 +23,7 @@ export const RetailPresence = () => {
 
 
   return (
-    <section id="retail" ref={containerRef} className="w-full relative py-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
+    <section id="retail" ref={containerRef} className="w-full relative pt-32 pb-16 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
       {/* Vibrant Spotlight Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
         {/* Left top warm glow */}
@@ -47,10 +47,11 @@ export const RetailPresence = () => {
               key={idx}
               className="retail-logo w-full aspect-video rounded-2xl border border-[var(--global-text)]/10 flex items-center justify-center p-6 transition-all duration-300 bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] group"
             >
-              <div className="relative w-[85%] h-[85%] flex items-center justify-center">
+              <div className="relative w-full h-full max-h-[80px] max-w-[160px] flex items-center justify-center">
                 <Image
                   src={retailer.logo}
-                  alt={retailer.name}
+                  alt={`${retailer.name} - Kendal Elektrik Zincir Marketler`}
+                  title={`${retailer.name} - Kendal Elektrik`}
                   fill
                   className="object-contain object-center transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, 25vw"

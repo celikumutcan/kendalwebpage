@@ -79,7 +79,7 @@ export const Projects = () => {
           {(t as any).references?.title || "Türkiye'nin Dört Bir Yanında"}
         </h2>
         <p className="text-[var(--global-text)] opacity-60 text-lg md:text-xl max-w-2xl mx-auto font-light">
-          {(t as any).references?.subtitle || "81 ilde sayısız projeyi aydınlatmaya devam ediyoruz."}
+          {(t as any).references?.subtitle || "81 ilde sayısız projeyi Kendal Elektrik kalitesiyle aydınlatmaya devam ediyoruz."}
         </p>
       </div>
 

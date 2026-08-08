@@ -131,19 +131,58 @@ export const Navbar = () => {
         { id: "mission_vision", href: "/misyon-ve-vizyon", label: (t as any).nav?.mission_vision || "Misyon ve Vizyon" },
         { id: "production", href: "/uretim", label: (t as any).nav?.production || "Üretim" },
         { id: "career", href: "/kariyer", label: (t as any).nav?.career || "Kariyer" },
-      ]
-    },
-    {
-      label: (t as any).nav?.group_brands || "Markalar & Pazarlar",
-      links: [
-        { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
-      ]
-    },
-    {
-      label: (t as any).nav?.group_media || "Medya & Referanslar",
-      links: [
         { id: "news", href: "/haberler", label: (t as any).nav?.news || "Haberler" },
+      ]
+    },
+    {
+      label: (t as any).nav?.brands || "Markalarımız",
+      links: [
+        { 
+          id: "brand_k2", 
+          href: "#", 
+          isStatic: true,
+          label: (
+            <div className="flex items-center gap-3">
+              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
+                <Image src={getAssetPath("/images/brands/k2-logo.svg")} alt="K2" width={40} height={20} className="object-contain w-full h-full" />
+              </div>
+              <span className="font-semibold tracking-wide">K2</span>
+            </div>
+          )
+        },
+        { 
+          id: "brand_vanti", 
+          href: "#", 
+          isStatic: true,
+          label: (
+            <div className="flex items-center gap-3">
+              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
+                <Image src={getAssetPath("/images/brands/vanti-logo.svg")} alt="Vanti" width={40} height={20} className="object-contain w-full h-full" />
+              </div>
+              <span className="font-semibold tracking-wide">Vanti</span>
+            </div>
+          )
+        },
+        { 
+          id: "brand_global", 
+          href: "#", 
+          isStatic: true,
+          label: (
+            <div className="flex items-center gap-3">
+              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
+                <Image src={getAssetPath("/images/brands/global-logo.svg")} alt="Global" width={40} height={20} className="object-contain w-full h-full" />
+              </div>
+              <span className="font-semibold tracking-wide">Global</span>
+            </div>
+          )
+        }
+      ]
+    },
+    {
+      label: "Hizmet Ağımız",
+      links: [
         { id: "projects", href: "/projeler", label: t.nav.projects || "Referanslar" },
+        { id: "retail", href: "/zincir-marketler", label: (t as any).nav?.retail || "Zincir Marketler" },
       ]
     }
   ];
@@ -169,23 +208,32 @@ export const Navbar = () => {
             {/* Dropdown Menu */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 min-w-[220px]">
               <div className="bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl flex flex-col gap-1">
-                {group.links.map((link) => (
-                  <Link
-                    key={link.id}
-                    href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
-                    target={(link as any).external ? "_blank" : undefined}
-                    rel={(link as any).external ? "noopener noreferrer" : undefined}
-                    scroll={link.href.startsWith("/#") ? false : true}
-                    onClick={(e) => handleLinkClick(e, link.href)}
-                    className={`block px-4 py-2.5 rounded-xl hover:bg-white/10 transition-colors ${
-                      (activeSection === link.id || pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 2))
-                        ? "bg-[var(--brand-red)]/20 text-[var(--brand-red)] font-medium"
-                        : "text-white/80 hover:text-white"
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+                {group.links.map((link) => {
+                  const isActive = activeSection === link.id || pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 2);
+                  const className = `block px-4 py-2.5 rounded-xl transition-colors ${(link as any).isStatic ? 'cursor-default text-white' : 'hover:bg-white/10 text-white/80 hover:text-white'} ${isActive && !(link as any).isStatic ? 'bg-[var(--brand-red)]/20 text-[var(--brand-red)] font-medium' : ''}`;
+                  
+                  if ((link as any).isStatic) {
+                    return (
+                      <div key={link.id} className={className}>
+                        {link.label}
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <Link
+                      key={link.id}
+                      href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
+                      target={(link as any).external ? "_blank" : undefined}
+                      rel={(link as any).external ? "noopener noreferrer" : undefined}
+                      scroll={link.href.startsWith("/#") ? false : true}
+                      onClick={(e) => handleLinkClick(e, link.href)}
+                      className={className}
+                    >
+                      {link.label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -259,23 +307,32 @@ export const Navbar = () => {
                 className={`overflow-hidden transition-all duration-300 ${openMobileGroup === gIdx ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}
               >
                 <div className="flex flex-col gap-3 pl-4 border-l border-white/20">
-                  {group.links.map((link) => (
-                    <Link
-                      key={link.id}
-                      href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
-                      target={(link as any).external ? "_blank" : undefined}
-                      rel={(link as any).external ? "noopener noreferrer" : undefined}
-                      scroll={link.href.startsWith("/#") ? false : true}
-                      className={`text-base py-2 block transition-colors ${
-                        (activeSection === link.id || pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 2))
-                          ? "text-[var(--brand-red)] font-medium"
-                          : "text-white/70 hover:text-white"
-                      }`}
-                      onClick={(e) => handleLinkClick(e, link.href)}
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  {group.links.map((link) => {
+                    const isActive = activeSection === link.id || pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href) && link.href.length > 2);
+                    const className = `text-base py-2 block transition-colors ${(link as any).isStatic ? 'cursor-default text-white' : 'text-white/70 hover:text-white'} ${isActive && !(link as any).isStatic ? 'text-[var(--brand-red)] font-medium' : ''}`;
+                    
+                    if ((link as any).isStatic) {
+                      return (
+                        <div key={link.id} className={className}>
+                          {link.label}
+                        </div>
+                      );
+                    }
+
+                    return (
+                      <Link
+                        key={link.id}
+                        href={isHome && link.href.startsWith("/#") ? link.href.substring(1) : link.href}
+                        target={(link as any).external ? "_blank" : undefined}
+                        rel={(link as any).external ? "noopener noreferrer" : undefined}
+                        scroll={link.href.startsWith("/#") ? false : true}
+                        className={className}
+                        onClick={(e) => handleLinkClick(e, link.href)}
+                      >
+                        {link.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               </div>
             </div>
