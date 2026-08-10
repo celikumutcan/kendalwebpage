@@ -1,5 +1,6 @@
 import productsData from "./products.json";
 import slugMapData from "./slug-map.json";
+import { getAssetPath } from "@/utils/basePath";
 
 export interface ProductAttribute {
   label: string;
@@ -32,5 +33,5 @@ export function getAllSlugs(): string[] {
 }
 
 export function getProductImageUrl(image: string): string {
-  return '/images/' + image;
+  return getAssetPath('/images/' + image);
 }

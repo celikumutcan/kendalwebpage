@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { newsDataTR, newsDataEN } from "@/data/news";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { getAssetPath } from "@/utils/basePath";
 
 export default function HaberlerListesiPage() {
   const { language, t } = useLanguage();
@@ -44,7 +45,7 @@ export default function HaberlerListesiPage() {
                 {/* Thumbnail */}
                 <div className="relative w-full aspect-video overflow-hidden">
                   <Image
-                    src={news.images[0] || "/images/references/turkiye/ref-01.jpg"} // fallback if no image
+                    src={news.images[0] || getAssetPath("/images/references/turkiye/ref-01.jpg")} // fallback if no image
                     alt={news.title}
                     title={news.title}
                     fill
