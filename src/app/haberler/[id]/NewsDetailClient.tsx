@@ -47,7 +47,7 @@ export function NewsDetailClient({ id }: { id: string }) {
         </header>
 
         {/* Dynamic Image Slider Component (Client Side) */}
-        <ImageSlider images={news.images} />
+        <ImageSlider images={news.images} altPrefix={news.title} titlePrefix={news.title} />
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed mt-12 text-justify">
@@ -57,7 +57,7 @@ export function NewsDetailClient({ id }: { id: string }) {
               return (
                 <div key={idx} className="my-8 flex justify-center">
                   <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg max-w-sm w-full">
-                    <img src={src} alt="News Illustration" className="w-full h-auto object-contain bg-white/5" />
+                    <img src={src} alt={`${news.title} Haber Görseli`} title={news.title} loading="lazy" className="w-full h-auto object-contain bg-white/5" />
                   </div>
                 </div>
               );

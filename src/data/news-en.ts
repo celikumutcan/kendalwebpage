@@ -310,7 +310,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS IP PROTECTION IN LIGHTING FIXTURES?",
     date: "Jul 24, 2024",
     images: [
-      getAssetPath("/images/haberler/18/ip-838x622.jpg")
+      getAssetPath("/images/haberler/18/ip-838x622.webp")
     ],
     content: [
       "Since lighting fixtures are used in various environments, they must be protected against various external factors. This protection level is called the IP protection class. IP stands for 'Ingress Protection' and determines the resistance of a lighting fixture against solid and liquid objects.",
@@ -326,7 +326,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WHAT IS A LINEAR LED?",
     date: "July 29, 2024",
     images: [
-      getAssetPath("/images/haberler/19/beyazled-838x622.jpg")
+      getAssetPath("/images/haberler/19/beyazled-838x622.webp")
     ],
     content: [
       "Linear LED, as the name suggests, refers to a long and thin LED light source. This design is created by arranging LEDs in a linear format. It usually comes in a tube or panel format and provides continuous lighting over a certain length.",
@@ -350,7 +350,7 @@ export const newsDataEN: NewsItem[] = [
     title: "OUR DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED BULB PRODUCTS",
     date: "July 30, 2024",
     images: [
-      getAssetPath("/images/haberler/20/LINAER-838x622.jpg")
+      getAssetPath("/images/haberler/20/LINAER-838x622.webp")
     ],
     content: [
       "Meet our LED bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in the workplace, our LED bulbs stand out with their high performance and long lifespan. We ensure you experience impressive lighting in every space with energy efficiency, modern design, and superior technology.",
@@ -369,7 +369,7 @@ export const newsDataEN: NewsItem[] = [
     title: "HOW TO CONNECT KCL040 SMART RGB LED STRIP TO THE TUYA SMART APP?",
     date: "July 31, 2024",
     images: [
-      getAssetPath("/images/haberler/21/kes180-838x622.jpg")
+      getAssetPath("/images/haberler/21/kes180-838x622.webp")
     ],
     content: [
       "Changing the atmosphere of your home is now very easy with your KCL040 smart RGB LED strip. You can control this strip and adjust its colors and effects from your mobile device via the Tuya Smart app.",
@@ -381,7 +381,7 @@ export const newsDataEN: NewsItem[] = [
     title: "HOW TO CONNECT KCL040 SMART RGB LED STRIP TO THE TUYA SMART APP? (STEP BY STEP GUIDE)",
     date: "August 01, 2024",
     images: [
-      getAssetPath("/images/haberler/22/tuya-838x622.jpg")
+      getAssetPath("/images/haberler/22/tuya-838x622.webp")
     ],
     content: [
       "Changing the atmosphere of your home is now very easy with your KCL040 smart RGB LED strip. You can control this strip and adjust its colors and effects from your mobile device via the Tuya Smart app. Here is how to connect your KCL040 LED strip to the Tuya Smart app step by step:",
@@ -389,23 +389,23 @@ export const newsDataEN: NewsItem[] = [
       "First, plug your KCL040 LED strip into an outlet. Let it stay plugged in for a short while to ensure it works correctly. Plug and unplug the LED strip a few times and wait for it to enter pairing mode. When the LED strip starts flashing, the device is ready to connect.",
       "Step 2: Open the Tuya Smart App",
       "If you haven't downloaded the Tuya Smart app yet, download and install it from the App Store or Google Play Store. Open the app and log into your account. If you don't have an account, create a new one.",
-      "[IMAGE]/images/haberler/22/tuya-2.png",
+      "[IMAGE]/images/haberler/22/tuya-2.webp",
       "Step 3: Add a New Device",
       "On the main screen of the app, click the \"+\" or \"Add Device\" option at the top of the screen.",
-      "[IMAGE]/images/haberler/22/tuya-3.png",
+      "[IMAGE]/images/haberler/22/tuya-3.webp",
       "In the window that opens, select the \"Smart Strip Light of Kendal\" product in the Nearby devices section. This will identify your LED strip.",
-      "[IMAGE]/images/haberler/22/tuya-4.png",
+      "[IMAGE]/images/haberler/22/tuya-4.webp",
       "Step 4: Wi-Fi Network and Password Settings",
       "You will now be asked to select your Wi-Fi network. Select your home Wi-Fi network to connect the LED strip. Enter the password for your selected Wi-Fi network correctly. Be careful and make sure it is correct.",
       "After entering the password, press the \"Next\" button. The app will start connecting your LED strip to your Wi-Fi network.",
-      "[IMAGE]/images/haberler/22/tuya-5.png",
+      "[IMAGE]/images/haberler/22/tuya-5.webp",
       "Step 5: Connection and Completion",
       "The connection process may take a few minutes. The LED strip will connect to your device depending on your network's connection speed. Follow the flashing pattern of the LED strip during this process.",
-      "[IMAGE]/images/haberler/22/tuya-6.png",
+      "[IMAGE]/images/haberler/22/tuya-6.webp",
       "When the connection is successful, the app will notify you that the process is complete and ask you to click the \"Done\" button.",
-      "[IMAGE]/images/haberler/22/tuya-7.png",
+      "[IMAGE]/images/haberler/22/tuya-7.webp",
       "You can now use your mobile device as a remote control. You can turn your LED strip on and off, change its colors, and adjust various effects via the app.",
-      "[IMAGE]/images/haberler/22/tuya-8.png",
+      "[IMAGE]/images/haberler/22/tuya-8.webp",
       "By following these steps, you can easily connect your KCL040 smart RGB LED strip to the Tuya Smart app and arrange the atmosphere of your home as you wish. If you encounter any problems, you can consult the help section of the app."
     ]
   },
@@ -414,7 +414,7 @@ export const newsDataEN: NewsItem[] = [
     title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED TORCH BULB PRODUCTS",
     date: "August 05, 2024",
     images: [
-      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.jpg")
+      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.webp")
     ],
     content: [
       "Meet our LED Torch bulbs that offer innovative and reliable solutions for today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Torch bulbs stand out with their high performance and long life. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
@@ -433,7 +433,7 @@ export const newsDataEN: NewsItem[] = [
     title: "HOW LONG IS THE LIFESPAN OF LED LIGHTS?",
     date: "August 08, 2024",
     images: [
-      getAssetPath("/images/haberler/24/ledomru-838x622.jpg")
+      getAssetPath("/images/haberler/24/ledomru-838x622.webp")
     ],
     content: [
       "LED (Light Emitting Diode) lights attract attention with their energy efficiency, long lifespan, and low maintenance requirements. However, many people wonder how long LED lights can last, which factors affect their lifespan, and what the advantages of LEDs are.",
@@ -460,7 +460,7 @@ export const newsDataEN: NewsItem[] = [
     title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED CANDLE BULB PRODUCTS",
     date: "August 12, 2024",
     images: [
-      getAssetPath("/images/haberler/25/2-838x622.jpg")
+      getAssetPath("/images/haberler/25/2-838x622.webp")
     ],
     content: [
       "Meet our LED Candle bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Candle bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
@@ -479,7 +479,7 @@ export const newsDataEN: NewsItem[] = [
     title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED TUBE FLUORESCENT PRODUCTS",
     date: "August 14, 2024",
     images: [
-      getAssetPath("/images/haberler/26/kfl-led-tup.jpg")
+      getAssetPath("/images/haberler/26/kfl-led-tup.webp")
     ],
     content: [
       "Meet our LED Tube Fluorescent bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Tube Fluorescent bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
@@ -498,7 +498,7 @@ export const newsDataEN: NewsItem[] = [
     title: "DOMESTICALLY PRODUCED HIGH-PERFORMANCE LED FILAMENT BULBS",
     date: "August 23, 2024",
     images: [
-      getAssetPath("/images/haberler/27/flaman-838x622.jpg")
+      getAssetPath("/images/haberler/27/flaman-838x622.webp")
     ],
     content: [
       "Meet our LED Filament bulbs that offer innovative and reliable solutions to today's lighting needs. Designed to provide perfect lighting both at home and in various professional areas, our LED Filament bulbs stand out with their high performance and long lifespan. With energy efficiency, modern design, and superior technology, we ensure you experience an impressive lighting experience in every space.",
@@ -519,8 +519,8 @@ export const newsDataEN: NewsItem[] = [
     title: "OUR NEW QUALITY MANAGER NÜZHET ÜTKÜN YALPUR HAS JOINED US",
     date: "September 2024", 
     images: [
-      getAssetPath("/images/haberler/28/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/28/ekle-1.jpg")
+      getAssetPath("/images/haberler/28/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/28/ekle-1.webp")
     ],
     content: [
       "As Kendal Elektrik takes firm steps forward on the path of continuous growth and development, each new member who joins our team carries great value for us. Nüzhet Ütkün YALPUR, who joined this valuable team as Quality Manager, will work with determination to further improve our company's quality processes, increase efficiency, and ensure excellence in product quality. In addition to working meticulously and devotedly while fulfilling his duty, he will also make a great contribution to the dynamic structure of our team and our company culture.",
@@ -532,25 +532,25 @@ export const newsDataEN: NewsItem[] = [
     title: "WE HELD OUR TRADITIONAL KENDAL ELECTRIC IFTAR DINNER AND AWARD CEREMONY",
     date: "March 30, 2025",
     images: [
-      getAssetPath("/images/haberler/29/1-838x622.jpg"),
-      getAssetPath("/images/haberler/29/1.jpg"),
-      getAssetPath("/images/haberler/29/2.jpg"),
-      getAssetPath("/images/haberler/29/3.jpg"),
-      getAssetPath("/images/haberler/29/4.jpg"),
-      getAssetPath("/images/haberler/29/5.jpg"),
-      getAssetPath("/images/haberler/29/6.jpeg"),
-      getAssetPath("/images/haberler/29/6a.jpg"),
-      getAssetPath("/images/haberler/29/7.jpg"),
-      getAssetPath("/images/haberler/29/8.jpg"),
-      getAssetPath("/images/haberler/29/9.jpg"),
-      getAssetPath("/images/haberler/29/10.jpg"),
-      getAssetPath("/images/haberler/29/11.jpg"),
-      getAssetPath("/images/haberler/29/12.jpg"),
-      getAssetPath("/images/haberler/29/13.jpg"),
-      getAssetPath("/images/haberler/29/14.jpg"),
-      getAssetPath("/images/haberler/29/15.jpg"),
-      getAssetPath("/images/haberler/29/16.jpg"),
-      getAssetPath("/images/haberler/29/17.jpg")
+      getAssetPath("/images/haberler/29/1-838x622.webp"),
+      getAssetPath("/images/haberler/29/1.webp"),
+      getAssetPath("/images/haberler/29/2.webp"),
+      getAssetPath("/images/haberler/29/3.webp"),
+      getAssetPath("/images/haberler/29/4.webp"),
+      getAssetPath("/images/haberler/29/5.webp"),
+      getAssetPath("/images/haberler/29/6.webp"),
+      getAssetPath("/images/haberler/29/6a.webp"),
+      getAssetPath("/images/haberler/29/7.webp"),
+      getAssetPath("/images/haberler/29/8.webp"),
+      getAssetPath("/images/haberler/29/9.webp"),
+      getAssetPath("/images/haberler/29/10.webp"),
+      getAssetPath("/images/haberler/29/11.webp"),
+      getAssetPath("/images/haberler/29/12.webp"),
+      getAssetPath("/images/haberler/29/13.webp"),
+      getAssetPath("/images/haberler/29/14.webp"),
+      getAssetPath("/images/haberler/29/15.webp"),
+      getAssetPath("/images/haberler/29/16.webp"),
+      getAssetPath("/images/haberler/29/17.webp")
     ],
     content: [
       "We came together with our valuable employees at the Traditional Kendal Electric Iftar event that we organize every year.",
@@ -563,8 +563,8 @@ export const newsDataEN: NewsItem[] = [
     title: "OUR NEW DOMESTIC SALES AND MARKETING MANAGER AYHAN GÜNAY JOINED US",
     date: "June 20, 2025",
     images: [
-      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.jpg"),
-      getAssetPath("/images/haberler/30/ayhan-gonay.jpg")
+      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.webp"),
+      getAssetPath("/images/haberler/30/ayhan-gonay.webp")
     ],
     content: [
       "Our company, which makes a difference with its innovative approach in the lighting sector, added another name to its strong and dynamic team. Mr. Ayhan Günay has started his duty as Domestic Sales and Marketing Manager.",
@@ -578,8 +578,8 @@ export const newsDataEN: NewsItem[] = [
     title: "HANDOVER IN KENDAL ELEKTRİK SALES TEAM",
     date: "June 27, 2025",
     images: [
-      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.png"),
-      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.png")
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.webp"),
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.webp")
     ],
     content: [
       "Our Sales Manager Mr. Lokman KAZANCI, who has added value to our company with his knowledge, skills and perseverance for many years, handed over the flag to our new Domestic Sales and Marketing Manager Mr. Ayhan GÜNAY.",
@@ -591,12 +591,12 @@ export const newsDataEN: NewsItem[] = [
     title: "TURKEY'S FIRST DOMESTIC LED CHIP MOVE: STRATEGIC PARTNERSHIP IN TECHNOLOGY FOCUS FROM ITU AND KENDAL ELEKTRİK",
     date: "July 21, 2025",
     images: [
-      getAssetPath("/images/haberler/32/itu-1.jpeg"),
-      getAssetPath("/images/haberler/32/itu-2.jpg"),
-      getAssetPath("/images/haberler/32/itu-3.jpg"),
-      getAssetPath("/images/haberler/32/itu-5.jpg"),
-      getAssetPath("/images/haberler/32/itu-6.jpg"),
-      getAssetPath("/images/haberler/32/itu-7.jpg")
+      getAssetPath("/images/haberler/32/itu-1.webp"),
+      getAssetPath("/images/haberler/32/itu-2.webp"),
+      getAssetPath("/images/haberler/32/itu-3.webp"),
+      getAssetPath("/images/haberler/32/itu-5.webp"),
+      getAssetPath("/images/haberler/32/itu-6.webp"),
+      getAssetPath("/images/haberler/32/itu-7.webp")
     ],
     content: [
       "Turkey has taken another critical step to reduce its foreign dependency in the high-tech field and to have a say in microelectronic production on a global scale. With the strategic cooperation protocol signed between Istanbul Technical University (ITU) and Kendal Elektrik Aydınlatma Sanayi A.Ş., Turkey's first domestic LED chip production infrastructure is being established.",
@@ -619,7 +619,7 @@ export const newsDataEN: NewsItem[] = [
     title: "WE REMEMBER WITH RESPECT AND GRATITUDE",
     date: "November 10, 2025",
     images: [
-      getAssetPath("/images/haberler/33/20251110_090516-838x622.jpg")
+      getAssetPath("/images/haberler/33/20251110_090516-838x622.webp")
     ],
     content: [
       "We remember the founder of our Republic, Great Leader Gazi Mustafa Kemal Atatürk, with respect, gratitude, and longing on the anniversary of his passing to eternity.",
@@ -632,7 +632,7 @@ export const newsDataEN: NewsItem[] = [
     title: "THE FUTURE OF ENERGY AND LIGHTING IS AT ELF 2025 WITH KENDAL ELEKTRİK!",
     date: "November 10, 2025",
     images: [
-      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.jpg")
+      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.webp")
     ],
     content: [
       "As Kendal Elektrik, we are proud to participate in ELF Electricity, Electronics, Energy, Lighting, Smart Home Fair, one of the most prestigious organizations of the sector.",
@@ -650,15 +650,15 @@ export const newsDataEN: NewsItem[] = [
     title: "WE PARTICIPATED IN ELF 2025 ELECTRICITY AND LIGHTING FAIR",
     date: "December 02, 2025",
     images: [
-      getAssetPath("/images/haberler/35/elf-fuari-1.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-2.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-3.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-4.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-5.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-6.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-7.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-8.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-9.jpg")
+      getAssetPath("/images/haberler/35/elf-fuari-1.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-2.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-3.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-4.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-5.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-6.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-7.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-8.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-9.webp")
     ],
     content: [
       "We Shed Light on the Energy of the Future at the ELF 2025 Fair",
@@ -681,23 +681,23 @@ export const newsDataEN: NewsItem[] = [
     title: "WE HELD OUR TRADITIONAL IFTAR DINNER",
     date: "March 02, 2026",
     images: [
-      getAssetPath("/images/haberler/36/IMG_1410.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1412.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1417.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1457.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1465.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1472.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1474.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1477.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1479.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1487.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1503.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1518.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1519.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1522.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1529.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1557.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1562.jpg")
+      getAssetPath("/images/haberler/36/IMG_1410.webp"),
+      getAssetPath("/images/haberler/36/IMG_1412.webp"),
+      getAssetPath("/images/haberler/36/IMG_1417.webp"),
+      getAssetPath("/images/haberler/36/IMG_1457.webp"),
+      getAssetPath("/images/haberler/36/IMG_1465.webp"),
+      getAssetPath("/images/haberler/36/IMG_1472.webp"),
+      getAssetPath("/images/haberler/36/IMG_1474.webp"),
+      getAssetPath("/images/haberler/36/IMG_1477.webp"),
+      getAssetPath("/images/haberler/36/IMG_1479.webp"),
+      getAssetPath("/images/haberler/36/IMG_1487.webp"),
+      getAssetPath("/images/haberler/36/IMG_1503.webp"),
+      getAssetPath("/images/haberler/36/IMG_1518.webp"),
+      getAssetPath("/images/haberler/36/IMG_1519.webp"),
+      getAssetPath("/images/haberler/36/IMG_1522.webp"),
+      getAssetPath("/images/haberler/36/IMG_1529.webp"),
+      getAssetPath("/images/haberler/36/IMG_1557.webp"),
+      getAssetPath("/images/haberler/36/IMG_1562.webp")
     ],
     content: [
       "We Came Together at Our Traditional Iftar Dinner.",

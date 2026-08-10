@@ -60,9 +60,11 @@ export const NewsPreview = () => {
                     <Image
                       src={item.images[0]}
                       alt={item.title}
+                      title={item.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                      loading="lazy"
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">

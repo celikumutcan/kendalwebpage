@@ -14,7 +14,7 @@ export default function UretimPage() {
     content: "Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde..."
   };
 
-  const images = Array.from({ length: 10 }, (_, i) => `/images/uretim/uretim-${i + 1}.webp`);
+  const images = Array.from({ length: 10 }, (_, i) => getAssetPath(`/images/uretim/uretim-${i + 1}.webp`));
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">

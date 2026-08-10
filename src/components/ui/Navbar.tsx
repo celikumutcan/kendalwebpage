@@ -143,8 +143,8 @@ export const Navbar = () => {
           isStatic: true,
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
-                <Image src={getAssetPath("/images/brands/k2-logo.svg")} alt="K2" width={40} height={20} className="object-contain w-full h-full" />
+              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+                <Image src={getAssetPath("/images/brands/k2-logo.svg")} alt="K2" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">K2</span>
             </div>
@@ -156,8 +156,8 @@ export const Navbar = () => {
           isStatic: true,
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
-                <Image src={getAssetPath("/images/brands/vanti-logo.svg")} alt="Vanti" width={40} height={20} className="object-contain w-full h-full" />
+              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+                <Image src={getAssetPath("/images/brands/vanti-logo.svg")} alt="Vanti" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">Vanti</span>
             </div>
@@ -169,8 +169,8 @@ export const Navbar = () => {
           isStatic: true,
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-12 h-8 flex items-center justify-center shrink-0">
-                <Image src={getAssetPath("/images/brands/global-logo.svg")} alt="Global" width={40} height={20} className="object-contain w-full h-full" />
+              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+                <Image src={getAssetPath("/images/brands/global-logo.svg")} alt="Global" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">Global</span>
             </div>

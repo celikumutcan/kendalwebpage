@@ -310,7 +310,7 @@ export const newsDataTR: NewsItem[] = [
     title: "AYDINLATMA ARMATÜRLERİNDE IP KORUMA NEDİR?",
     date: "24 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/18/ip-838x622.jpg")
+      getAssetPath("/images/haberler/18/ip-838x622.webp")
     ],
     content: [
       "Aydınlatma armatürleri, çeşitli ortamlarda kullanıldıkları için çeşitli dış etkenlere karşı korunmalıdır. Bu koruma seviyesi, IP koruma sınıfı olarak adlandırılır. IP, 'Ingress Protection' kelimelerinin baş harflerinden oluşur ve bir aydınlatma armatürünün katı ve sıvı cisimlere karşı direncini belirler.",
@@ -326,7 +326,7 @@ export const newsDataTR: NewsItem[] = [
     title: "LİNEER LED NEDİR?",
     date: "29 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/19/beyazled-838x622.jpg")
+      getAssetPath("/images/haberler/19/beyazled-838x622.webp")
     ],
     content: [
       "Linear LED, adından da anlaşılacağı gibi, uzun ve ince bir yapıdaki LED ışık kaynağını ifade eder. Bu tasarım, LED'lerin bir araya getirilerek doğrusal bir formda düzenlenmesiyle oluşur. Genellikle boru şeklinde veya panel formatında bulunur ve belirli bir uzunluk boyunca sürekli aydınlatma sağlar.",
@@ -350,7 +350,7 @@ export const newsDataTR: NewsItem[] = [
     title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED AMPUL ÜRÜNLERİMİZ",
     date: "30 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/20/LINAER-838x622.jpg")
+      getAssetPath("/images/haberler/20/LINAER-838x622.webp")
     ],
     content: [
       "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED ampullerimizle tanışın. Hem evde hem de iş yerlerinde mükemmel aydınlatma sağlamak için tasarladığımız LED ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
@@ -369,7 +369,7 @@ export const newsDataTR: NewsItem[] = [
     title: "KCL040 AKILLI RGB LED ŞERİT TUYA SMART UYGULAMASINA NASIL BAĞLANIR?",
     date: "31 Temmuz 2024",
     images: [
-      getAssetPath("/images/haberler/21/kes180-838x622.jpg")
+      getAssetPath("/images/haberler/21/kes180-838x622.webp")
     ],
     content: [
       "KCL040 akıllı RGB LED şeridinizle evinizin atmosferini değiştirmek artık çok kolay. Tuya Smart uygulaması üzerinden bu şeridi kontrol edebilir, renklerini ve efektlerini mobil cihazınızdan ayarlayabilirsiniz.",
@@ -381,7 +381,7 @@ export const newsDataTR: NewsItem[] = [
     title: "KCL040 AKILLI RGB LED ŞERİT TUYA SMART UYGULAMASINA NASIL BAĞLANIR? (ADIM ADIM REHBER)",
     date: "01 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/22/tuya-838x622.jpg")
+      getAssetPath("/images/haberler/22/tuya-838x622.webp")
     ],
     content: [
       "KCL040 akıllı RGB LED şeridinizle evinizin atmosferini değiştirmek artık çok kolay. Tuya Smart uygulaması üzerinden bu şeridi kontrol edebilir, renklerini ve efektlerini mobil cihazınızdan ayarlayabilirsiniz. İşte adım adım KCL040 LED şeridinizi Tuya Smart uygulamasına nasıl bağlayacağınız:",
@@ -389,23 +389,23 @@ export const newsDataTR: NewsItem[] = [
       "KCL040 LED şeridinizi ilk olarak bir prize takın. Şeridin doğru çalıştığından emin olmak için kısa bir süre prizde kalmasını sağlayın. LED şeridi prize birkaç kez takıp çıkararak bağlantı moduna geçmesini bekleyin. LED şerit yanıp sönmeye başladığında, cihaz bağlanmaya hazır demektir.",
       "Adım 2: Tuya Smart Uygulamasını Açın",
       "Eğer Tuya Smart uygulamasını henüz indirmediyseniz, App Store veya Google Play Store üzerinden uygulamayı indirip yükleyin. Uygulamayı açın ve hesabınıza giriş yapın. Hesabınız yoksa, yeni bir hesap oluşturun.",
-      "[IMAGE]/images/haberler/22/tuya-2.png",
+      "[IMAGE]/images/haberler/22/tuya-2.webp",
       "Adım 3: Yeni Cihaz Ekleme",
       "Uygulamanın ana ekranında, ekranın üst kısmında bulunan \"+\" veya \"Cihaz Ekle\" seçeneğine tıklayın.",
-      "[IMAGE]/images/haberler/22/tuya-3.png",
+      "[IMAGE]/images/haberler/22/tuya-3.webp",
       "Açılan pencerede Yakındaki cihazlar bölümünde \"Smart Strip Light of Kendal\" ürününü seçin. Bu, LED şeridinizi tanımlayacaktır.",
-      "[IMAGE]/images/haberler/22/tuya-4.png",
+      "[IMAGE]/images/haberler/22/tuya-4.webp",
       "Adım 4: Wi-Fi Ağ ve Şifre Ayarları",
       "Şimdi Wi-Fi ağınızı seçmeniz istenecektir. LED şeridi bağlamak için evinizdeki Wi-Fi ağını seçin. Seçtiğiniz Wi-Fi ağının şifresini doğru bir şekilde girin. Şifrenizi girerken dikkatli olun ve doğru olduğundan emin olun.",
       "Şifreyi girdikten sonra \"İleri\" butonuna basın. Uygulama, LED şeridinizi Wi-Fi ağına bağlamaya başlayacaktır.",
-      "[IMAGE]/images/haberler/22/tuya-5.png",
+      "[IMAGE]/images/haberler/22/tuya-5.webp",
       "Adım 5: Bağlantı ve Tamamlama",
       "Bağlantı işlemi birkaç dakika sürebilir. LED şerit, ağınızın bağlantı hızına göre cihazınıza bağlanacaktır. Bu süreçte LED şeridin yanıp sönme hareketini takip edin.",
-      "[IMAGE]/images/haberler/22/tuya-6.png",
+      "[IMAGE]/images/haberler/22/tuya-6.webp",
       "Bağlantı başarılı olduğunda, uygulama size işlemin tamamlandığını bildirecek ve \"Tamamlandı\" butonuna tıklamanızı isteyecektir.",
-      "[IMAGE]/images/haberler/22/tuya-7.png",
+      "[IMAGE]/images/haberler/22/tuya-7.webp",
       "Artık mobil cihazınızı uzaktan kumanda olarak kullanabilirsiniz. Uygulama üzerinden LED şeridinizi açıp kapatabilir, renklerini değiştirebilir ve çeşitli efektleri ayarlayabilirsiniz.",
-      "[IMAGE]/images/haberler/22/tuya-8.png",
+      "[IMAGE]/images/haberler/22/tuya-8.webp",
       "Bu adımları takip ederek KCL040 akıllı RGB LED şeridinizi kolayca Tuya Smart uygulamasına bağlayabilir ve evinizin atmosferini istediğiniz gibi düzenleyebilirsiniz. Herhangi bir sorunla karşılaşırsanız, uygulamanın yardım bölümüne başvurabilirsiniz."
     ]
   },
@@ -414,7 +414,7 @@ export const newsDataTR: NewsItem[] = [
     title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED TORCH AMPUL ÜRÜNLERİMİZ",
     date: "05 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.jpg")
+      getAssetPath("/images/haberler/23/GES TORCH SERİSİ (1023 x 464 piksel)-838x622.webp")
     ],
     content: [
       "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Torch ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Torch ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
@@ -433,7 +433,7 @@ export const newsDataTR: NewsItem[] = [
     title: "LED IŞIKLARIN ÖMRÜ NE KADAR?",
     date: "08 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/24/ledomru-838x622.jpg")
+      getAssetPath("/images/haberler/24/ledomru-838x622.webp")
     ],
     content: [
       "LED (Light Emitting Diode) ışıklar, enerji verimliliği, uzun ömürleri ve düşük bakım gereksinimleri ile dikkat çekiyor. Ancak, birçok kişi LED ışıkların ne kadar dayanabileceğini, hangi faktörlerin ömrünü etkilediğini ve LED’lerin avantajlarını merak ediyor.",
@@ -460,7 +460,7 @@ export const newsDataTR: NewsItem[] = [
     title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED'Lİ BUJİ AMPUL ÜRÜNLERİMİZ",
     date: "12 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/25/2-838x622.jpg")
+      getAssetPath("/images/haberler/25/2-838x622.webp")
     ],
     content: [
       "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED'li Bujili ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED'li Bujili ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
@@ -479,7 +479,7 @@ export const newsDataTR: NewsItem[] = [
     title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED TÜP FLORESAN ÜRÜNLERİMİZ",
     date: "14 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/26/kfl-led-tup.jpg")
+      getAssetPath("/images/haberler/26/kfl-led-tup.webp")
     ],
     content: [
       "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Tüp Floresan ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Tüp Floresan ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
@@ -498,7 +498,7 @@ export const newsDataTR: NewsItem[] = [
     title: "YERLİ ÜRETİM YÜKSEK PERFORMANSLI LED FLAMANLI AMPULLERİMİZ",
     date: "23 Ağustos 2024",
     images: [
-      getAssetPath("/images/haberler/27/flaman-838x622.jpg")
+      getAssetPath("/images/haberler/27/flaman-838x622.webp")
     ],
     content: [
       "Günümüzün aydınlatma ihtiyaçlarına yenilikçi ve güvenilir çözümler sunan LED Flamanlı ampullerimizle tanışın. Hem evde hem de çeşitli profesyonel alanlarda mükemmel aydınlatma sağlamak için tasarladığımız LED Flamanlı ampuller, yüksek performansı ve uzun ömrü ile dikkat çekiyor. Enerji verimliliği, modern tasarım ve üstün teknoloji ile her mekanda etkileyici bir aydınlatma deneyimi yaşamanızı sağlıyoruz.",
@@ -519,8 +519,8 @@ export const newsDataTR: NewsItem[] = [
     title: "YENİ KALİTE MÜDÜRÜMÜZ NÜZHET ÜTKÜN YALPUR ARAMIZA KATILDI",
     date: "Eylül 2024",
     images: [
-      getAssetPath("/images/haberler/28/aramizakatildi-838x622.jpg"),
-      getAssetPath("/images/haberler/28/ekle-1.jpg")
+      getAssetPath("/images/haberler/28/aramizakatildi-838x622.webp"),
+      getAssetPath("/images/haberler/28/ekle-1.webp")
     ],
     content: [
       "Kendal Elektrik olarak sürekli büyüme ve gelişme yolunda emin adımlarla ilerlerken, ekibimize katılan her yeni üye bizim için büyük bir değer taşır. Bu değerli ekibe, Kalite Müdürü olarak katılan Nüzhet Ütkün YALPUR, şirketimizin kalite süreçlerini daha da iyileştirmek, verimliliği artırmak ve ürün kalitesinde mükemmelliği sağlamak için kararlılıkla çalışacak. Kendisi, görevini yerine getirirken titizlikle ve özveriyle çalışmanın yanı sıra, ekibimizin dinamik yapısına ve şirket kültürümüze de büyük bir katkı sağlayacaktır.",
@@ -532,25 +532,25 @@ export const newsDataTR: NewsItem[] = [
     title: "GELENEKSEL KENDAL ELEKTRİK İFTARI ve ÖDÜL TÖRENİ DÜZENLEDİK",
     date: "30 Mart 2025",
     images: [
-      getAssetPath("/images/haberler/29/1-838x622.jpg"),
-      getAssetPath("/images/haberler/29/1.jpg"),
-      getAssetPath("/images/haberler/29/2.jpg"),
-      getAssetPath("/images/haberler/29/3.jpg"),
-      getAssetPath("/images/haberler/29/4.jpg"),
-      getAssetPath("/images/haberler/29/5.jpg"),
-      getAssetPath("/images/haberler/29/6.jpeg"),
-      getAssetPath("/images/haberler/29/6a.jpg"),
-      getAssetPath("/images/haberler/29/7.jpg"),
-      getAssetPath("/images/haberler/29/8.jpg"),
-      getAssetPath("/images/haberler/29/9.jpg"),
-      getAssetPath("/images/haberler/29/10.jpg"),
-      getAssetPath("/images/haberler/29/11.jpg"),
-      getAssetPath("/images/haberler/29/12.jpg"),
-      getAssetPath("/images/haberler/29/13.jpg"),
-      getAssetPath("/images/haberler/29/14.jpg"),
-      getAssetPath("/images/haberler/29/15.jpg"),
-      getAssetPath("/images/haberler/29/16.jpg"),
-      getAssetPath("/images/haberler/29/17.jpg")
+      getAssetPath("/images/haberler/29/1-838x622.webp"),
+      getAssetPath("/images/haberler/29/1.webp"),
+      getAssetPath("/images/haberler/29/2.webp"),
+      getAssetPath("/images/haberler/29/3.webp"),
+      getAssetPath("/images/haberler/29/4.webp"),
+      getAssetPath("/images/haberler/29/5.webp"),
+      getAssetPath("/images/haberler/29/6.webp"),
+      getAssetPath("/images/haberler/29/6a.webp"),
+      getAssetPath("/images/haberler/29/7.webp"),
+      getAssetPath("/images/haberler/29/8.webp"),
+      getAssetPath("/images/haberler/29/9.webp"),
+      getAssetPath("/images/haberler/29/10.webp"),
+      getAssetPath("/images/haberler/29/11.webp"),
+      getAssetPath("/images/haberler/29/12.webp"),
+      getAssetPath("/images/haberler/29/13.webp"),
+      getAssetPath("/images/haberler/29/14.webp"),
+      getAssetPath("/images/haberler/29/15.webp"),
+      getAssetPath("/images/haberler/29/16.webp"),
+      getAssetPath("/images/haberler/29/17.webp")
     ],
     content: [
       "Her yıl düzenlediğimiz Geleneksel Kendal Elektrik İftarı etkinliğinde değerli çalışanlarımız ile bir araya geldik.",
@@ -563,8 +563,8 @@ export const newsDataTR: NewsItem[] = [
     title: "YENİ YURTİÇİ SATIŞ VE PAZARLAMA MÜDÜRÜMÜZ AYHAN GÜNAY ARAMIZA KATILDI",
     date: "20 Haziran 2025",
     images: [
-      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.jpg"),
-      getAssetPath("/images/haberler/30/ayhan-gonay.jpg")
+      getAssetPath("/images/haberler/30/aramizakatildi-838x622-838x622.webp"),
+      getAssetPath("/images/haberler/30/ayhan-gonay.webp")
     ],
     content: [
       "Aydınlatma sektöründeki yenilikçi yaklaşımıyla fark yaratan firmamız, güçlü ve dinamik kadrosuna bir ismi daha ekledi. Sayın Ayhan Günay, Yurtiçi Satış ve Pazarlama Müdürü olarak görevine başlamıştır.",
@@ -578,8 +578,8 @@ export const newsDataTR: NewsItem[] = [
     title: "KENDAL ELEKTRİK SATIŞ EKİBİNDE BAYRAK DEĞİŞİMİ",
     date: "27 Haziran 2025",
     images: [
-      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.png"),
-      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.png")
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-838x622.webp"),
+      getAssetPath("/images/haberler/31/satis-gorev-degisimi-3.webp")
     ],
     content: [
       "Şirketimize uzun yıllardır bilgi, beceri ve azmiyle değer katan Satış Müdürümüz Sn. Lokman KAZANCI Bey bayrağı yeni Yurtiçi Satış ve Pazarlama Müdürümüz Sn. Ayhan GÜNAY Bey'e devretmiştir.",
@@ -591,12 +591,12 @@ export const newsDataTR: NewsItem[] = [
     title: "TÜRKİYE'NİN İLK YERLİ LED ÇİP HAMLESİ: İTÜ VE KENDAL ELEKTRİK'TEN TEKNOLOJİ ODAĞINDA STRATEJİK ORTAKLIK",
     date: "21 Temmuz 2025",
     images: [
-      getAssetPath("/images/haberler/32/itu-1.jpeg"),
-      getAssetPath("/images/haberler/32/itu-2.jpg"),
-      getAssetPath("/images/haberler/32/itu-3.jpg"),
-      getAssetPath("/images/haberler/32/itu-5.jpg"),
-      getAssetPath("/images/haberler/32/itu-6.jpg"),
-      getAssetPath("/images/haberler/32/itu-7.jpg")
+      getAssetPath("/images/haberler/32/itu-1.webp"),
+      getAssetPath("/images/haberler/32/itu-2.webp"),
+      getAssetPath("/images/haberler/32/itu-3.webp"),
+      getAssetPath("/images/haberler/32/itu-5.webp"),
+      getAssetPath("/images/haberler/32/itu-6.webp"),
+      getAssetPath("/images/haberler/32/itu-7.webp")
     ],
     content: [
       "Türkiye, yüksek teknoloji alanındaki dışa bağımlılığını azaltmak ve mikroelektronik üretiminde küresel ölçekte söz sahibi olmak için kritik bir adım daha attı. İstanbul Teknik Üniversitesi (İTÜ) ile Kendal Elektrik Aydınlatma Sanayi A.Ş. arasında imzalanan stratejik iş birliği protokolüyle, Türkiye'nin ilk yerli LED çip üretim altyapısı kuruluyor.",
@@ -619,7 +619,7 @@ export const newsDataTR: NewsItem[] = [
     title: "SAYGI VE MİNNETLE ANIYORUZ",
     date: "10 Kasım 2025",
     images: [
-      getAssetPath("/images/haberler/33/20251110_090516-838x622.jpg")
+      getAssetPath("/images/haberler/33/20251110_090516-838x622.webp")
     ],
     content: [
       "Cumhuriyetimizin kurucusu, Ulu Önder Gazi Mustafa Kemal Atatürk'ü, ebediyete irtihalinin yıl dönümünde saygı, minnet ve özlemle anıyoruz.",
@@ -632,7 +632,7 @@ export const newsDataTR: NewsItem[] = [
     title: "KENDAL ELEKTRİK İLE ENERJİNİN VE AYDINLATMANIN GELECEĞİ ELF 2025'TE!",
     date: "10 Kasım 2025",
     images: [
-      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.jpg")
+      getAssetPath("/images/haberler/34/elf-fuar-gorsel-838x622.webp")
     ],
     content: [
       "Kendal Elektrik olarak, sektörün en prestijli organizasyonlarından biri olan ELF Elektrik, Elektronik, Enerji, Aydınlatma, Akıllı Ev Fuarı'na katılmaktan gurur duyuyoruz.",
@@ -650,15 +650,15 @@ export const newsDataTR: NewsItem[] = [
     title: "ELF 2025 ELEKTRİK VE AYDINLATMA FUARI'NA KATILDIK",
     date: "2 Aralık 2025",
     images: [
-      getAssetPath("/images/haberler/35/elf-fuari-1.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-2.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-3.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-4.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-5.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-6.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-7.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-8.jpg"),
-      getAssetPath("/images/haberler/35/elf-fuari-9.jpg")
+      getAssetPath("/images/haberler/35/elf-fuari-1.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-2.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-3.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-4.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-5.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-6.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-7.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-8.webp"),
+      getAssetPath("/images/haberler/35/elf-fuari-9.webp")
     ],
     content: [
       "ELF 2025 Fuarı'nda Geleceğin Enerjisine Işık Tuttuk",
@@ -681,23 +681,23 @@ export const newsDataTR: NewsItem[] = [
     title: "GELENEKSEL İFTAR YEMEĞİMİZİ DÜZENLEDİK",
     date: "2 Mart 2026",
     images: [
-      getAssetPath("/images/haberler/36/IMG_1410.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1412.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1417.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1457.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1465.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1472.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1474.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1477.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1479.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1487.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1503.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1518.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1519.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1522.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1529.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1557.jpg"),
-      getAssetPath("/images/haberler/36/IMG_1562.jpg")
+      getAssetPath("/images/haberler/36/IMG_1410.webp"),
+      getAssetPath("/images/haberler/36/IMG_1412.webp"),
+      getAssetPath("/images/haberler/36/IMG_1417.webp"),
+      getAssetPath("/images/haberler/36/IMG_1457.webp"),
+      getAssetPath("/images/haberler/36/IMG_1465.webp"),
+      getAssetPath("/images/haberler/36/IMG_1472.webp"),
+      getAssetPath("/images/haberler/36/IMG_1474.webp"),
+      getAssetPath("/images/haberler/36/IMG_1477.webp"),
+      getAssetPath("/images/haberler/36/IMG_1479.webp"),
+      getAssetPath("/images/haberler/36/IMG_1487.webp"),
+      getAssetPath("/images/haberler/36/IMG_1503.webp"),
+      getAssetPath("/images/haberler/36/IMG_1518.webp"),
+      getAssetPath("/images/haberler/36/IMG_1519.webp"),
+      getAssetPath("/images/haberler/36/IMG_1522.webp"),
+      getAssetPath("/images/haberler/36/IMG_1529.webp"),
+      getAssetPath("/images/haberler/36/IMG_1557.webp"),
+      getAssetPath("/images/haberler/36/IMG_1562.webp")
     ],
     content: [
       "Geleneksel İftar Yemeğimizde Bir Araya Geldik.",

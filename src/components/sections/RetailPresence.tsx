@@ -47,7 +47,7 @@ export const RetailPresence = () => {
               key={idx}
               className="retail-logo w-full aspect-video rounded-2xl border border-[var(--global-text)]/10 flex items-center justify-center p-6 transition-all duration-300 bg-white hover:shadow-[0_10px_30px_rgba(0,0,0,0.05)] group"
             >
-              <div className="relative w-full h-full max-h-[80px] max-w-[160px] flex items-center justify-center">
+              <div className="relative w-full h-full max-h-[120px] max-w-[200px] flex items-center justify-center">
                 <Image
                   src={retailer.logo}
                   alt={`${retailer.name} - Kendal Elektrik Zincir Marketler`}
