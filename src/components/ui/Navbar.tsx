@@ -139,8 +139,8 @@ export const Navbar = () => {
       links: [
         { 
           id: "brand_k2", 
-          href: "http://k2.localhost:3000", 
-          external: true, // We want it to behave like an external link to trigger full navigation to subdomain
+          href: process.env.NODE_ENV === "production" ? "/brand/k2" : "http://k2.localhost:3000", 
+          external: process.env.NODE_ENV !== "production", // We want it to behave like an external link in dev to trigger full navigation to subdomain
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
@@ -152,8 +152,8 @@ export const Navbar = () => {
         },
         { 
           id: "brand_vanti", 
-          href: "http://vanti.localhost:3000", 
-          external: true,
+          href: process.env.NODE_ENV === "production" ? "/brand/vanti" : "http://vanti.localhost:3000", 
+          external: process.env.NODE_ENV !== "production",
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
