@@ -260,5 +260,52 @@
       "Türkiye, Avrupa ve Orta Doğu'da filament LED ampul üreten tek üretici olma özelliğine sahip olan Kendal Elektrik, üretimin her aşamasında uluslararası kalite standartlarını esas almaktadır. Tedarikçilerden gelen tüm hammaddeler ve yarı mamuller IQC (Incoming Quality Control) süreçlerinden geçirilirken, üretim boyunca IPQC (In Process Quality Control) kontrolleri uygulanmakta, sevkiyat öncesinde ise OQC (Outgoing Quality Control) ile nihai ürünler tekrar denetlenmektedir.",
       "ESD korumalı üretim alanlarında gerçekleştirilen üretim süreçleri sayesinde elektronik bileşenler elektrostatik deşarja karşı korunurken, ürünler elektriksel güvenlik, mekanik dayanım, fotometrik performans, güç tüketimi, güç faktörü, EMC uyumluluğu, sürücü kontrolü, lümen değeri, renk sıcaklığı, CRI ölçümü, izolasyon direnci, topraklama direnci, yüksek gerilim, kaçak akım, yaşlandırma, ömür ve düşme testleri gibi kapsamlı kalite kontrollerinden geçirilmektedir. Dijital üretim yönetimini ERP, MES ve WMS sistemleriyle destekleyen Kendal Elektrik; yüksek üretim kapasitesi, ileri otomasyon altyapısı, izlenebilir süreçleri ve sürdürülebilir kalite anlayışıyla Türkiye'de ürettiği yenilikçi aydınlatma çözümlerini dünyanın birçok ülkesine güvenle ulaştırmaktadır."
     ]
+  },
+  "brand_info": {
+    "k2": {
+      "title": "K2 Hakkında",
+      "description": "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Aydınlatmanın Zirvesi' olma vizyonuyla hareket etmektedir. Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eden K2; endüstriyel ve mimari ihtiyaçlar için en zorlu koşullarda bile üst düzey kalite ve dayanıklılık sunar."
+    },
+    "vanti": {
+      "title": "Vanti Hakkında",
+      "description": "Vanti, Kendal Elektrik'in havalandırma, iklimlendirme ve modern yaşam çözümleri alanındaki uzman markasıdır. Akıllı LED aydınlatmalı tavan vantilatörleri, sanayi tipi ayaklı vantilatörler, duvar tipi ve taşınabilir fanlardan oluşan geniş ürün yelpazesiyle Vanti; evler, ofisler ve ticari ortamlar için ferah ve serin yaşam alanları sağlamak üzere güçlü hava akışını sesli komut ve uzaktan kumanda gibi yenilikçi özelliklerle birleştirir."
+    }
+  },
+  "brand_pages": {
+    "navbar": {
+      "home": "Ana Sayfa",
+      "products": "Ürünler",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "k2_title": "Profesyonel Aydınlatma Çözümleri",
+      "k2_desc": "K2 markası ile endüstriyel ve mimari aydınlatmada en yüksek kalite standartlarını sunuyoruz.",
+      "vanti_title": "Ferah ve Serin Yaşam Alanları",
+      "vanti_desc": "Vanti ile ev ve ofisleriniz için yenilikçi, modern ve güçlü vantilatör teknolojilerini keşfedin.",
+      "view_products": "Ürünleri İncele"
+    },
+    "products_page": {
+      "title": "Tüm Ürünlerimiz",
+      "k2_desc": "K2 LED SYSTEMS güvencesiyle sunduğumuz tüm aydınlatma ürünlerini aşağıdan inceleyebilirsiniz.",
+      "vanti_desc": "VANTİ ile yaşam alanlarınıza değer katan tüm ürünlerimiz."
+    },
+    "showcase": {
+      "product_count": "Ürün",
+      "back_to_categories": "Kategorilere Dön",
+      "products_found": "adet ürün bulundu.",
+      "view": "İncele",
+      "model": "Model:"
+    },
+    "footer": {
+      "address_prefix": "Adres: ",
+      "contact_title": "İletişim",
+      "contact_line": "İletişim Hattı",
+      "sales_line": "Satış Destek Hattı",
+      "tech_line": "Teknik Servis Hattı",
+      "legal_title": "Yasal",
+      "kvkk": "KVKK Aydınlatma Metni",
+      "privacy": "Gizlilik ve Çerez Politikası",
+      "copyright": "- Kendal Elektrik A.Ş. kuruluşudur. Tüm hakları saklıdır."
+    }
   }
 }

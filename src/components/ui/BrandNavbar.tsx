@@ -4,12 +4,15 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
+import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
+import { useLanguage } from "@/app/i18n/LanguageProvider";
 
 interface BrandNavbarProps {
   brandName: string; // 'k2' or 'vanti'
 }
 
 export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
+  const { t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isK2 = brandName === "k2";
   const logoSrc = isK2 
@@ -37,12 +40,13 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center h-full">
-          <Link href={homeHref} className="hover:text-zinc-500 transition-colors font-medium">Ana Sayfa</Link>
-          <Link href={urunlerHref} className="hover:text-zinc-500 transition-colors font-medium">Ürünler</Link>
-          <Link href={`${homeHref}#iletisim`} className="hover:text-zinc-500 transition-colors font-medium">İletişim</Link>
+          <Link href={homeHref} className="hover:text-zinc-500 transition-colors font-medium">{(t as any).brand_pages?.navbar?.home || "Ana Sayfa"}</Link>
+          <Link href={urunlerHref} className="hover:text-zinc-500 transition-colors font-medium">{(t as any).brand_pages?.navbar?.products || "Ürünler"}</Link>
+          <Link href={`${homeHref}#iletisim`} className="hover:text-zinc-500 transition-colors font-medium">{(t as any).brand_pages?.navbar?.contact || "İletişim"}</Link>
         </div>
 
         <div className="relative flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0 z-50">
+          <LanguageSwitcher />
           <a
             href="https://www.kendalelektrik.com.tr"
             className="hidden sm:inline-flex text-xs sm:text-sm font-medium border border-zinc-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 hover:bg-zinc-100 transition-all duration-300 whitespace-nowrap text-zinc-900"
@@ -76,9 +80,9 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
         }`}
       >
         <div className="flex flex-col p-6 gap-6 pt-8 text-center text-xl">
-          <Link href={homeHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ana Sayfa</Link>
-          <Link href={urunlerHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ürünler</Link>
-          <Link href={`${homeHref}#iletisim`} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>İletişim</Link>
+          <Link href={homeHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>{(t as any).brand_pages?.navbar?.home || "Ana Sayfa"}</Link>
+          <Link href={urunlerHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>{(t as any).brand_pages?.navbar?.products || "Ürünler"}</Link>
+          <Link href={`${homeHref}#iletisim`} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>{(t as any).brand_pages?.navbar?.contact || "İletişim"}</Link>
           
           <a
             href="https://www.kendalelektrik.com.tr"

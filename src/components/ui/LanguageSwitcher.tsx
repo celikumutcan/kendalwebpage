@@ -11,14 +11,14 @@ export const LanguageSwitcher = () => {
     <div className="flex items-center gap-2 text-sm font-medium">
       <button
         onClick={() => setLanguage("tr")}
-        className={`transition-colors ${language === "tr" ? "text-white" : "text-gray-500 hover:text-white"}`}
+        className={`transition-opacity ${language === "tr" ? "font-bold opacity-100" : "opacity-60 hover:opacity-100"}`}
       >
         TR
       </button>
-      <span className="text-gray-700">|</span>
+      <span className="opacity-40">|</span>
       <button
         onClick={() => setLanguage("en")}
-        className={`transition-colors ${language === "en" ? "text-white" : "text-gray-500 hover:text-white"}`}
+        className={`transition-opacity ${language === "en" ? "font-bold opacity-100" : "opacity-60 hover:opacity-100"}`}
       >
         EN
       </button>

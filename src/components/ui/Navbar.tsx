@@ -143,7 +143,7 @@ export const Navbar = () => {
           external: process.env.NODE_ENV !== "production", // We want it to behave like an external link in dev to trigger full navigation to subdomain
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
+              <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
                 <Image src={getAssetPath("/images/brands/k2-logo.svg")} alt="K2" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">K2</span>
@@ -156,7 +156,7 @@ export const Navbar = () => {
           external: process.env.NODE_ENV !== "production",
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
+              <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
                 <Image src={getAssetPath("/images/brands/vanti-logo.svg")} alt="Vanti" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">Vanti</span>
@@ -169,7 +169,7 @@ export const Navbar = () => {
           isStatic: true,
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+              <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:bg-white transition-colors">
                 <Image src={getAssetPath("/images/brands/global-logo.svg")} alt="Global" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">Global</span>

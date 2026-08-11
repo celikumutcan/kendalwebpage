@@ -260,5 +260,52 @@
       "As the only manufacturer producing filament LED bulbs in Turkey, Europe, and the Middle East, Kendal Elektrik bases every stage of production on international quality standards. While all raw materials and semi-finished products coming from suppliers go through IQC (Incoming Quality Control) processes, IPQC (In Process Quality Control) is applied throughout the production, and the final products are inspected again with OQC (Outgoing Quality Control) before shipment.",
       "Thanks to the production processes carried out in ESD-protected production areas, electronic components are protected against electrostatic discharge, while the products undergo comprehensive quality controls such as electrical safety, mechanical endurance, photometric performance, power consumption, power factor, EMC compliance, driver control, lumen value, color temperature, CRI measurement, insulation resistance, grounding resistance, high voltage, leakage current, aging, lifetime, and drop tests. Supporting digital production management with ERP, MES, and WMS systems, Kendal Elektrik safely delivers innovative lighting solutions produced in Turkey to many countries of the world with its high production capacity, advanced automation infrastructure, traceable processes, and sustainable quality understanding."
     ]
+  },
+  "brand_info": {
+    "k2": {
+      "title": "About K2",
+      "description": "Taking its name from K2, one of the most challenging and prestigious mountains for climbers to summit, our brand operates with the vision of being the 'Peak of Lighting'. Representing Kendal Elektrik's comprehensive range of professional LED lighting systems and energy-efficient solutions, K2 delivers top-tier quality and durability for industrial and architectural needs, even under the most demanding conditions."
+    },
+    "vanti": {
+      "title": "About Vanti",
+      "description": "Vanti is Kendal Elektrik's specialized brand for ventilation, climate control, and modern lifestyle solutions. Featuring an extensive lineup of ceiling fans with smart LED lighting, industrial standing fans, wall-mounted fans, and portable solutions, Vanti combines powerful airflow with innovative features like voice control and remote operation to provide fresh and cool living spaces for homes, offices, and commercial environments."
+    }
+  },
+  "brand_pages": {
+    "navbar": {
+      "home": "Home",
+      "products": "Products",
+      "contact": "Contact"
+    },
+    "hero": {
+      "k2_title": "Professional Lighting Solutions",
+      "k2_desc": "With the K2 brand, we offer the highest quality standards in industrial and architectural lighting.",
+      "vanti_title": "Fresh and Cool Living Spaces",
+      "vanti_desc": "Discover innovative, modern, and powerful fan technologies for your home and office with Vanti.",
+      "view_products": "View Products"
+    },
+    "products_page": {
+      "title": "All Our Products",
+      "k2_desc": "You can view all the lighting products we offer with the assurance of K2 LED SYSTEMS below.",
+      "vanti_desc": "All our products that add value to your living spaces with VANTI."
+    },
+    "showcase": {
+      "product_count": "Products",
+      "back_to_categories": "Back to Categories",
+      "products_found": "products found.",
+      "view": "View",
+      "model": "Model:"
+    },
+    "footer": {
+      "address_prefix": "Address: ",
+      "contact_title": "Contact",
+      "contact_line": "Contact Line",
+      "sales_line": "Sales Support Line",
+      "tech_line": "Technical Service Line",
+      "legal_title": "Legal",
+      "kvkk": "KVKK Clarification Text",
+      "privacy": "Privacy and Cookie Policy",
+      "copyright": "is a Kendal Elektrik A.Ş. establishment. All rights reserved."
+    }
   }
 }

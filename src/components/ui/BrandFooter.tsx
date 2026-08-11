@@ -1,13 +1,17 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
+import { useLanguage } from "@/app/i18n/LanguageProvider";
 
 interface BrandFooterProps {
   brandName: string;
 }
 
 export const BrandFooter = ({ brandName }: BrandFooterProps) => {
+  const { t } = useLanguage();
   const isK2 = brandName === "k2";
   const logoSrc = isK2 
     ? getAssetPath("/images/brands/k2-logo.svg") 
@@ -31,28 +35,28 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
             rel="noopener noreferrer"
             className="text-sm opacity-80 hover:opacity-100 hover:text-[var(--brand-red)] transition-colors inline-block"
           >
-            Adres: Selimpaşa Org. San. Böl. 5008 Sokak No:6 Selimpaşa Silivri/İSTANBUL
+            {(t as any).brand_pages?.footer?.address_prefix || "Adres: "}Selimpaşa Org. San. Böl. 5008 Sokak No:6 Selimpaşa Silivri/İSTANBUL
           </a>
         </div>
 
         {/* Contact */}
         <div className="text-center md:text-left flex flex-col items-center md:items-start md:justify-self-center">
-          <h4 className="text-zinc-900 font-semibold mb-6">İletişim</h4>
+          <h4 className="text-zinc-900 font-semibold mb-6">{(t as any).brand_pages?.footer?.contact_title || "İletişim"}</h4>
           <ul className="space-y-3 text-sm">
             <li>
-              <span className="opacity-60 block text-xs mb-1">İletişim Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.contact_line || "İletişim Hattı"}</span>
               <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
                 +90 212 723 70 70
               </a>
             </li>
             <li>
-              <span className="opacity-60 block text-xs mb-1">Satış Destek Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.sales_line || "Satış Destek Hattı"}</span>
               <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
                 +90 212 723 70 70
               </a>
             </li>
             <li>
-              <span className="opacity-60 block text-xs mb-1">Teknik Servis Hattı</span>
+              <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.tech_line || "Teknik Servis Hattı"}</span>
               <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
                 +90 212 723 70 70
               </a>
@@ -67,16 +71,16 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
 
         {/* Legal & Social */}
         <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <h4 className="text-zinc-900 font-semibold mb-6">Yasal</h4>
+          <h4 className="text-zinc-900 font-semibold mb-6">{(t as any).brand_pages?.footer?.legal_title || "Yasal"}</h4>
           <ul className="space-y-3 text-sm mb-8">
             <li>
               <a href="https://www.kendalelektrik.com.tr/kvkk" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand-red)] transition-colors">
-                KVKK Aydınlatma Metni
+                {(t as any).brand_pages?.footer?.kvkk || "KVKK Aydınlatma Metni"}
               </a>
             </li>
             <li>
               <a href="https://www.kendalelektrik.com.tr/gizlilik-cerez-politikasi" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand-red)] transition-colors">
-                Gizlilik ve Çerez Politikası
+                {(t as any).brand_pages?.footer?.privacy || "Gizlilik ve Çerez Politikası"}
               </a>
             </li>
           </ul>
@@ -96,7 +100,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
       </div>
       
       <div className="pt-8 border-t border-zinc-200 text-center text-xs opacity-60">
-        <p>&copy; {new Date().getFullYear()} {isK2 ? "K2 LED SYSTEMS" : "VANTİ"} - Kendal Elektrik A.Ş. kuruluşudur. Tüm hakları saklıdır.</p>
+        <p>&copy; {new Date().getFullYear()} {isK2 ? "K2 LED SYSTEMS" : "VANTİ"} {(t as any).brand_pages?.footer?.copyright || "- Kendal Elektrik A.Ş. kuruluşudur. Tüm hakları saklıdır."}</p>
       </div>
     </footer>
   );
