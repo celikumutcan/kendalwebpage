@@ -151952,8 +151952,234 @@
       "en": "KES007 SMD LEDLİ G4 AMPUL DC12V 2W SARI"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "1.5W"
+        },
+        {
+          "label": "Renk",
+          "value": "6500K, 3000K"
+        },
+        {
+          "label": "Duy",
+          "value": "G4"
+        },
+        {
+          "label": "Lumen",
+          "value": "90LM"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "NDLS"
+        },
+        {
+          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
+          "value": "G4"
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "MLS"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "2kWh/1000 h"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "G"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "90lm in Sphere"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3000K"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "2W"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": ">80"
+        },
+        {
+          "label": "Dış boyutlar",
+          "value": "37x11mm"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "95%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "0,97"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "0,7"
+        },
+        {
+          "label": "McAdam elipslerinde renk tutarlılığı",
+          "value": "<3"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "0,05"
+        },
+        {
+          "label": "Stroboskopik etki metriği",
+          "value": "0,02"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "1.5W"
+        },
+        {
+          "label": "Color",
+          "value": "6500K, 3000K"
+        },
+        {
+          "label": "Socket",
+          "value": "G4"
+        },
+        {
+          "label": "Lumen",
+          "value": "90LM"
+        },
+        {
+          "label": "Light source technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional light source",
+          "value": "NDLS"
+        },
+        {
+          "label": "Light source cap-type (or other electrical interface)",
+          "value": "G4"
+        },
+        {
+          "label": "Mains or non-mains light source",
+          "value": "MLS"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour tunable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "On mode power consumption",
+          "value": "2kWh/1000 h"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "G"
+        },
+        {
+          "label": "Beam angle reference",
+          "value": "90lm in Sphere"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3000K"
+        },
+        {
+          "label": "On mode power",
+          "value": "2W"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": ">80"
+        },
+        {
+          "label": "Outer dimensions",
+          "value": "37x11mm"
+        },
+        {
+          "label": "Equivalent power claim",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Survival factor",
+          "value": "95%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "0,97"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "0,7"
+        },
+        {
+          "label": "Colour consistency (in MacAdam ellipses)",
+          "value": "<3"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "0,05"
+        },
+        {
+          "label": "Stroboscopic effect metric",
+          "value": "0,02"
+        }
+      ]
     }
   },
   "7685": {
@@ -153012,8 +153238,234 @@
       "en": "KES006 SMD LEDLİ G4 AMPUL AC 1,5W SARI"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "2W"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz, Sarı"
+        },
+        {
+          "label": "Duy",
+          "value": "G4"
+        },
+        {
+          "label": "Lumen",
+          "value": "90LM"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "NDLS"
+        },
+        {
+          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
+          "value": "G4"
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "MLS"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "2kWh/1000 h"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "G"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "90lm in Sphere"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3000K"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "2W"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": ">80"
+        },
+        {
+          "label": "Dış boyutlar",
+          "value": "37x11mm"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "95%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "0,97"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "0,9"
+        },
+        {
+          "label": "McAdam elipslerinde renk tutarlılığı",
+          "value": "<5"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "0,05"
+        },
+        {
+          "label": "Stroboskopik etki metriği",
+          "value": "0,02"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "2W"
+        },
+        {
+          "label": "Color",
+          "value": "White, Yellow"
+        },
+        {
+          "label": "Socket",
+          "value": "G4"
+        },
+        {
+          "label": "Lumen",
+          "value": "90LM"
+        },
+        {
+          "label": "Light source technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional light source",
+          "value": "NDLS"
+        },
+        {
+          "label": "Light source cap-type (or other electrical interface)",
+          "value": "G4"
+        },
+        {
+          "label": "Mains or non-mains light source",
+          "value": "MLS"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour tunable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "On mode power consumption",
+          "value": "2kWh/1000 h"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "G"
+        },
+        {
+          "label": "Beam angle reference",
+          "value": "90lm in Sphere"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3000K"
+        },
+        {
+          "label": "On mode power",
+          "value": "2W"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": ">80"
+        },
+        {
+          "label": "Outer dimensions",
+          "value": "37x11mm"
+        },
+        {
+          "label": "Equivalent power claim",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Survival factor",
+          "value": "95%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "0,97"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "0,9"
+        },
+        {
+          "label": "Colour consistency (in MacAdam ellipses)",
+          "value": "<5"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "0,05"
+        },
+        {
+          "label": "Stroboscopic effect metric",
+          "value": "0,02"
+        }
+      ]
     }
   },
   "7697": {
@@ -154233,8 +154685,82 @@
       "en": "KCL050 2835 SLICONE 120 LED STRIP"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100 Mt."
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "24W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "23.4W"
+        },
+        {
+          "label": "Işık Akısı (Lümen)",
+          "value": "2040 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
+        }
+      ],
+      "en": [
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100 Mt."
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "24W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "23.4W"
+        },
+        {
+          "label": "Işık Akısı (Lümen)",
+          "value": "2040 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
+        }
+      ]
     }
   },
   "7721": {
@@ -154246,8 +154772,90 @@
       "en": "KCL120 8MM 320 LED STRIP"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Lümen",
+          "value": "20Lm/Chip, 2400Lm/1Mt."
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100 Mt."
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "15W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "14.4W"
+        },
+        {
+          "label": "Işık Akısı (Faydalı)",
+          "value": "1600 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
+        }
+      ],
+      "en": [
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Lümen",
+          "value": "20Lm/Chip, 2400Lm/1Mt."
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100 Mt."
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "15W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "14.4W"
+        },
+        {
+          "label": "Işık Akısı (Faydalı)",
+          "value": "1600 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
+        }
+      ]
     }
   },
   "7722": {
@@ -154259,8 +154867,66 @@
       "en": "KBA785 LED SOLAR WALL LAMP"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Kontrol Modu",
+          "value": "Işık Kontrolü ve Anahtar Ayarlamalı"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Solar Panel",
+          "value": "5.5V - 1.6W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 1500mAh Lithium Battery"
+        },
+        {
+          "label": "LED Rengi",
+          "value": "Beyaz - Günışığı"
+        },
+        {
+          "label": "Materyal",
+          "value": "ABS"
+        },
+        {
+          "label": "IP Sınıfı",
+          "value": "IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Control Mode",
+          "value": "Light Control and Switch Adjustable"
+        },
+        {
+          "label": "Charging Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Solar Panel",
+          "value": "5.5V - 1.6W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 1500mAh Lithium Battery"
+        },
+        {
+          "label": "LED Color",
+          "value": "White - Daylight"
+        },
+        {
+          "label": "Material",
+          "value": "ABS"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        }
+      ]
     }
   },
   "7724": {

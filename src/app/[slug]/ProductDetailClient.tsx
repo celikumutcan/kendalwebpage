@@ -67,11 +67,11 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
               <div className="divide-y divide-white/5">
                 {attributes && attributes.length > 0 ? (
                   attributes.map((attr, index) => (
-                    <div key={index} className="flex flex-col sm:flex-row sm:items-center px-6 py-4 hover:bg-white/5 transition-colors duration-300">
-                      <span className="text-sm font-medium text-gray-400 sm:w-1/3 mb-1 sm:mb-0">
+                    <div key={index} className="flex flex-col sm:flex-row sm:items-start px-6 py-4 hover:bg-white/5 transition-colors duration-300 gap-1 sm:gap-6">
+                      <span className="text-sm font-medium text-gray-400 sm:w-1/3 shrink-0 pr-4">
                         {attr.label}
                       </span>
-                      <span className="text-sm font-medium text-gray-100 sm:w-2/3">
+                      <span className="text-sm font-medium text-gray-100 sm:w-2/3 whitespace-pre-wrap break-words">
                         {attr.value}
                       </span>
                     </div>
@@ -83,7 +83,8 @@ export function ProductDetailClient({ product }: ProductDetailClientProps) {
                 )}
               </div>
             </div>
-            
+
+
           </div>
         </div>
       </div>
