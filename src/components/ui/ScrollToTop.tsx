@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { useLenis } from "@/components/engine/SmoothScrollProvider";
 
-export const ScrollToTop = () => {
+export const ScrollToTop = ({ colorClass = "bg-[var(--brand-red)] hover:bg-[var(--brand-red-deep)] shadow-[0_0_15px_rgba(227,0,15,0.5)]" }: { colorClass?: string }) => {
   const [isVisible, setIsVisible] = useState(false);
   const lenis = useLenis();
 
@@ -43,8 +43,7 @@ export const ScrollToTop = () => {
     <button
       onClick={scrollToTop}
       aria-label="Yukarı Çık"
-      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full bg-[var(--brand-red)] text-white shadow-[0_0_15px_rgba(227,0,15,0.5)] transition-all duration-300 hover:bg-[var(--brand-red-deep)] hover:scale-110 focus:outline-none ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"
-        }`}
+      className={`fixed bottom-6 right-6 z-50 p-3 rounded-full text-white transition-all duration-300 hover:scale-110 focus:outline-none ${colorClass} ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"}`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

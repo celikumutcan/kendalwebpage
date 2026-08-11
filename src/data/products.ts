@@ -13,6 +13,8 @@ export interface Product {
   image: string; // relative path, e.g. "catalog/image/catalog/urunler/kes1205wbeyaz.jpg"
   name: { tr: string; en: string };
   attributes: { tr: ProductAttribute[]; en: ProductAttribute[] };
+  category?: { tr: string[]; en: string[] };
+  brand?: string;
 }
 
 // id -> Product
@@ -34,4 +36,9 @@ export function getAllSlugs(): string[] {
 
 export function getProductImageUrl(image: string): string {
   return getAssetPath('/images/' + image);
+}
+
+export function getSlugByProductId(id: string): string | undefined {
+  // Return the first matching slug (usually TR is first, or we just grab any)
+  return Object.keys(slugMap).find(slug => slugMap[slug] === id);
 }

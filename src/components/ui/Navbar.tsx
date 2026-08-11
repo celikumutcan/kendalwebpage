@@ -139,11 +139,11 @@ export const Navbar = () => {
       links: [
         { 
           id: "brand_k2", 
-          href: "#", 
-          isStatic: true,
+          href: "http://k2.localhost:3000", 
+          external: true, // We want it to behave like an external link to trigger full navigation to subdomain
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
                 <Image src={getAssetPath("/images/brands/k2-logo.svg")} alt="K2" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">K2</span>
@@ -152,11 +152,11 @@ export const Navbar = () => {
         },
         { 
           id: "brand_vanti", 
-          href: "#", 
-          isStatic: true,
+          href: "http://vanti.localhost:3000", 
+          external: true,
           label: (
             <div className="flex items-center gap-3">
-              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative">
+              <div className="bg-white rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform">
                 <Image src={getAssetPath("/images/brands/vanti-logo.svg")} alt="Vanti" fill sizes="64px" className="object-contain p-1.5" />
               </div>
               <span className="font-semibold tracking-wide">Vanti</span>
@@ -238,6 +238,17 @@ export const Navbar = () => {
             </div>
           </div>
         ))}
+        
+        {/* Direct Link for Contact */}
+        <div className="group relative py-2 cursor-pointer">
+          <Link 
+            href="/#iletisim" 
+            onClick={(e) => handleLinkClick(e, "/#iletisim")} 
+            className="flex items-center gap-1 hover:opacity-100 opacity-80 transition-opacity"
+          >
+            İletişim
+          </Link>
+        </div>
       </div>
 
       <div className="relative flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0 z-50">
@@ -337,6 +348,12 @@ export const Navbar = () => {
               </div>
             </div>
           ))}
+          
+          <div className="border-b border-white/10 pb-4">
+             <Link href="/#iletisim" onClick={(e) => handleLinkClick(e, "/#iletisim")} className="flex items-center justify-between w-full text-lg font-medium text-white mb-2 hover:text-[var(--brand-red)] transition-colors">
+                İletişim
+             </Link>
+          </div>
           
           <div className="flex flex-col gap-4 mt-4 sm:hidden">
              <a

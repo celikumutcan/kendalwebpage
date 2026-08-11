@@ -5,10 +5,6 @@ import { LanguageProvider } from "./i18n/LanguageProvider";
 import { SmoothScrollProvider } from "@/components/engine/SmoothScrollProvider";
 import { GsapContext } from "@/components/engine/GsapContext";
 import { LightTemperatureProvider } from "@/lib/LightTemperatureProvider";
-import { Navbar } from "@/components/ui/Navbar";
-import { Footer } from "@/components/ui/Footer";
-import { CookieConsentBanner } from "@/components/ui/CookieConsentBanner";
-import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 
 import { OrganizationSchema } from "@/components/shared/OrganizationSchema";
@@ -55,11 +51,7 @@ export default function RootLayout({
               <GsapContext>
                 <OrganizationSchema />
                 <CustomCursor />
-                <Navbar />
-                <main>{children}</main>
-                <Footer />
-                <CookieConsentBanner />
-                <ScrollToTop />
+                {children}
               </GsapContext>
             </LightTemperatureProvider>
           </SmoothScrollProvider>
