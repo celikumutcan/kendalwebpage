@@ -43,7 +43,7 @@ export default async function BrandPage({
               : "Vanti ile ev ve ofisleriniz için yenilikçi, modern ve güçlü vantilatör teknolojilerini keşfedin."}
           </p>
           <Link 
-            href="/urunler" 
+            href={process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler"}
             className={`inline-flex items-center px-8 py-4 rounded-full bg-white font-medium transition-transform hover:scale-105 shadow-2xl ${isK2 ? "text-orange-600" : "text-blue-600"}`}
           >
             Ürünleri İncele

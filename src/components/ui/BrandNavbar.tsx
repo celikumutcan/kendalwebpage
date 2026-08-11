@@ -18,10 +18,13 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
 
   const brandColor = isK2 ? "#FF6600" : "#2563EB"; // Orange for K2, Blue for Vanti
 
+  const homeHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}` : "/";
+  const urunlerHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler";
+
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 flex items-center justify-between bg-white/90 backdrop-blur-md text-zinc-900 border-b border-zinc-200 transition-colors duration-300 shadow-sm">
-        <Link href="/" className="relative flex items-center hover:opacity-80 transition-opacity z-50">
+        <Link href={homeHref} className="relative flex items-center hover:opacity-80 transition-opacity z-50">
           <Image 
             src={logoSrc} 
             alt={`${brandName} Logo`} 
@@ -34,9 +37,9 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center h-full">
-          <Link href="/" className="hover:text-zinc-500 transition-colors font-medium">Ana Sayfa</Link>
-          <a href="/urunler" className="hover:text-zinc-500 transition-colors font-medium">Ürünler</a>
-          <Link href="#iletisim" className="hover:text-zinc-500 transition-colors font-medium">İletişim</Link>
+          <Link href={homeHref} className="hover:text-zinc-500 transition-colors font-medium">Ana Sayfa</Link>
+          <Link href={urunlerHref} className="hover:text-zinc-500 transition-colors font-medium">Ürünler</Link>
+          <Link href={`${homeHref}#iletisim`} className="hover:text-zinc-500 transition-colors font-medium">İletişim</Link>
         </div>
 
         <div className="relative flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0 z-50">
@@ -73,9 +76,9 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
         }`}
       >
         <div className="flex flex-col p-6 gap-6 pt-8 text-center text-xl">
-          <Link href="/" className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ana Sayfa</Link>
-          <a href="/urunler" className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ürünler</a>
-          <Link href="#iletisim" className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>İletişim</Link>
+          <Link href={homeHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ana Sayfa</Link>
+          <Link href={urunlerHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>Ürünler</Link>
+          <Link href={`${homeHref}#iletisim`} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>İletişim</Link>
           
           <a
             href="https://www.kendalelektrik.com.tr"
