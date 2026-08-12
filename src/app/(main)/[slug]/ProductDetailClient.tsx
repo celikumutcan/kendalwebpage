@@ -150,7 +150,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                     const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
                     const variantSlug = getSlugByProductId(variant.id) || variant.id;
 
-                    const variantUrl = isLight
+                    const variantUrl = isLight && process.env.NODE_ENV === "production"
                       ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
                       : `/urunler/${categorySlug}/${variantSlug}`;
 

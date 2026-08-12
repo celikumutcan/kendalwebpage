@@ -261,7 +261,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 const categoryName = product.category?.tr?.[0];
                 const categorySlug = categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
                 
-                const productUrl = isBrandRoute && brandName 
+                const productUrl = isBrandRoute && brandName && process.env.NODE_ENV === "production"
                   ? `/brand/${brandName}/urunler/${categorySlug}/${slug}`
                   : `/urunler/${categorySlug}/${slug}`;
                   
