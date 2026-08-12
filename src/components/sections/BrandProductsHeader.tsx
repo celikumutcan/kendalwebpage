@@ -19,18 +19,12 @@ export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => 
   };
 
   const title = headerTexts.title;
-  let desc = headerTexts.k2_desc;
-  if (brandName === "vanti") desc = headerTexts.vanti_desc;
-  else if (brandName === "global") desc = headerTexts.global_desc;
 
   return (
-    <div className="text-center mb-16">
-      <h1 className="text-4xl md:text-5xl font-bold mb-4">
+    <div className="text-center mb-0">
+      <h1 className="text-4xl md:text-5xl font-bold">
         {title}
       </h1>
-      <p className="text-zinc-500 max-w-2xl mx-auto">
-        {desc}
-      </p>
     </div>
   );
 };

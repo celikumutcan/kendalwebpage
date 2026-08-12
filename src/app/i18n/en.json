@@ -294,7 +294,12 @@
       "back_to_categories": "Back to Categories",
       "products_found": "products found.",
       "view": "View",
-      "model": "Model:"
+      "model": "Model:",
+      "search_placeholder": "Search by product name or model code...",
+      "search_results_title": "Search Results",
+      "search_for": "for",
+      "search_no_results_title": "No Results Found",
+      "search_no_results_desc": "We couldn't find any products matching your search criteria. Please try again with different keywords."
     },
     "footer": {
       "address_prefix": "Address: ",

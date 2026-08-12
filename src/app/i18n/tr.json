@@ -294,7 +294,12 @@
       "back_to_categories": "Kategorilere Dön",
       "products_found": "adet ürün bulundu.",
       "view": "İncele",
-      "model": "Model:"
+      "model": "Model:",
+      "search_placeholder": "Ürün adı veya model kodu ile arayın...",
+      "search_results_title": "Arama Sonuçları",
+      "search_for": "için",
+      "search_no_results_title": "Sonuç Bulunamadı",
+      "search_no_results_desc": "Aradığınız kriterlere uygun ürün bulamadık. Lütfen farklı kelimelerle tekrar deneyin."
     },
     "footer": {
       "address_prefix": "Adres: ",

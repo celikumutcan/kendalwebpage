@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
 import { Product, getSlugByProductId } from "@/data/products";
+import { useLanguage } from "@/app/i18n/LanguageProvider";
 
 interface CategoryFirstShowcaseProps {
   products: Product[];
@@ -12,9 +13,24 @@ interface CategoryFirstShowcaseProps {
 }
 
 export default function CategoryFirstShowcase({ products, brandName }: CategoryFirstShowcaseProps) {
+  const { t, language } = useLanguage();
+  const showcaseTexts = (t as any).brand_pages?.showcase || {
+    product_count: "Ürün",
+    back_to_categories: "Kategorilere Dön",
+    products_found: "adet ürün bulundu.",
+    view: "İncele",
+    model: "Model:",
+    search_placeholder: "Ürün adı veya model kodu ile arayın...",
+    search_results_title: "Arama Sonuçları",
+    search_for: "için",
+    search_no_results_title: "Sonuç Bulunamadı",
+    search_no_results_desc: "Aradığınız kriterlere uygun ürün bulamadık. Lütfen farklı kelimelerle tekrar deneyin."
+  };
+
   const isK2 = brandName === "k2";
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState<number>(1);
+  const [searchQuery, setSearchQuery] = useState("");
   const itemsPerPage = 12;
 
   // Generate pagination array with ellipses
@@ -77,17 +93,48 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     return Array.from(uniqueGroups.values());
   }, [products, activeCategory]);
 
-  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+  const searchedProducts = useMemo(() => {
+    if (!searchQuery.trim()) return [];
+    const query = searchQuery.toLowerCase().trim();
+    
+    const uniqueGroups = new Map<string, Product>();
+    
+    for (const p of products) {
+      const model = (p.model || "").toLowerCase();
+      const name = (p.name?.tr || "").toLowerCase();
+      
+      if (model.includes(query) || name.includes(query)) {
+        const baseModel = (p.name?.tr || "").split(' ')[0];
+        if (!uniqueGroups.has(baseModel)) {
+          uniqueGroups.set(baseModel, p);
+        }
+      }
+    }
+    
+    return Array.from(uniqueGroups.values());
+  }, [products, searchQuery]);
+
+  const isSearching = searchQuery.trim().length > 0;
+  const currentViewProducts = isSearching ? searchedProducts : filteredProducts;
+
+  const totalPages = Math.ceil(currentViewProducts.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const displayedProducts = filteredProducts.slice(startIndex, startIndex + itemsPerPage);
+  const displayedProducts = currentViewProducts.slice(startIndex, startIndex + itemsPerPage);
 
   const handleCategoryClick = (cat: string) => {
     setSelectedCategory(cat);
     setCurrentPage(1);
+    setSearchQuery("");
   };
 
   const handleBack = () => {
     setSelectedCategory(null);
+    setCurrentPage(1);
+    setSearchQuery("");
+  };
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
     setCurrentPage(1);
   };
 
@@ -98,11 +145,44 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
       : "bg-[#FFDA51] text-zinc-900 shadow-[#FFDA51]/30 border-[#FFDA51]";
 
   return (
-    <section className="py-12 px-6">
+    <section className="pt-4 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
         
+        {/* SEARCH BAR */}
+        <div className="mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
+          <div className="relative max-w-2xl mx-auto group">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg className={`h-6 w-6 transition-colors duration-300 ${isK2 ? "text-orange-300 group-focus-within:text-orange-500" : brandName === "vanti" ? "text-blue-300 group-focus-within:text-blue-500" : "text-[#FFDA51]/60 group-focus-within:text-[#FFDA51]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              placeholder={showcaseTexts.search_placeholder}
+              className={`w-full pl-12 pr-12 py-4 rounded-2xl border-2 bg-white/90 backdrop-blur-md shadow-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-4 transition-all duration-300 text-lg
+                ${isK2 
+                  ? "border-orange-100/50 focus:border-orange-500 focus:ring-orange-500/20" 
+                  : brandName === "vanti" 
+                    ? "border-blue-100/50 focus:border-blue-500 focus:ring-blue-500/20" 
+                    : "border-zinc-200 focus:border-[#FFDA51] focus:ring-[#FFDA51]/20"}`}
+            />
+            {searchQuery && (
+              <button 
+                onClick={() => { setSearchQuery(""); setCurrentPage(1); }}
+                className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 transition-colors"
+              >
+                <svg className="h-5 w-5 bg-zinc-100 rounded-full p-1 hover:bg-zinc-200 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
+
         {/* VIEW 1: CATEGORY CARDS */}
-        {!activeCategory && (
+        {!activeCategory && !isSearching && (
           <div className="animate-in fade-in zoom-in duration-500">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {categoriesData.map((cat) => (
@@ -124,11 +204,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                   />
                   
                   <div className="relative z-20 p-8">
-                    <div className="mb-2">
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider ${isK2 ? 'bg-orange-500 text-white' : brandName === 'vanti' ? 'bg-blue-600 text-white' : 'bg-[#FFDA51] text-zinc-900'}`}>
-                        {cat.count} Ürün
-                      </span>
-                    </div>
+
                     <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
                       {cat.name}
                     </h3>
@@ -139,12 +215,12 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
           </div>
         )}
 
-        {/* VIEW 2: PRODUCT GRID FOR SELECTED CATEGORY */}
-        {activeCategory && (
+        {/* VIEW 2: PRODUCT GRID FOR SELECTED CATEGORY OR SEARCH */}
+        {(activeCategory || isSearching) && (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <div className="flex items-center justify-between mb-12">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
               <div>
-                {showBackButton && (
+                {!isSearching && showBackButton && (
                   <button 
                     onClick={handleBack}
                     className="flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-4 group"
@@ -152,15 +228,28 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                     <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                     </svg>
-                    Kategorilere Dön
+                    {showcaseTexts.back_to_categories}
                   </button>
                 )}
-                <h2 className="text-3xl md:text-4xl font-bold">{activeCategory}</h2>
-                <p className="text-zinc-500 mt-2">{filteredProducts.length} adet ürün bulundu.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
+                  {isSearching ? showcaseTexts.search_results_title : activeCategory}
+                </h2>
+
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {currentViewProducts.length === 0 && isSearching ? (
+              <div className="text-center py-24 bg-white/50 backdrop-blur-sm rounded-3xl border border-zinc-100 shadow-sm animate-in fade-in duration-500">
+                <div className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-6 ${isK2 ? "bg-orange-50 text-orange-400" : brandName === "vanti" ? "bg-blue-50 text-blue-400" : "bg-zinc-50 text-zinc-400"}`}>
+                  <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-zinc-900 mb-3">{showcaseTexts.search_no_results_title}</h3>
+                <p className="text-zinc-500 text-lg max-w-md mx-auto">{showcaseTexts.search_no_results_desc}</p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {displayedProducts.map((product) => {
                 const slug = getSlugByProductId(product.id) || product.id;
                 
@@ -179,7 +268,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                     <div className="relative aspect-square p-6 bg-white flex items-center justify-center border-b border-zinc-50 overflow-hidden">
                       <Image 
                         src={getAssetPath('/images/' + product.image)} 
-                        alt={product.name.tr} 
+                        alt={product.name[language as keyof typeof product.name] || product.name.tr} 
                         fill 
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out" 
@@ -187,13 +276,13 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                     </div>
                     <div className="p-6 flex flex-col flex-grow justify-between">
                       <div>
-                        <div className="text-xs font-medium text-zinc-400 mb-1">Model: {product.model}</div>
-                        <h4 className="font-bold text-sm md:text-base mb-2 line-clamp-2 text-zinc-800" title={product.name.tr}>
-                          {product.name.tr}
+                        <div className="text-xs font-medium text-zinc-400 mb-1">{showcaseTexts.model} {product.model}</div>
+                        <h4 className="font-bold text-sm md:text-base mb-2 line-clamp-2 text-zinc-800" title={product.name[language as keyof typeof product.name] || product.name.tr}>
+                          {product.name[language as keyof typeof product.name] || product.name.tr}
                         </h4>
                       </div>
                       <div className={`text-xs font-bold mt-4 flex items-center ${isK2 ? "text-orange-500" : "text-blue-500"}`}>
-                        İncele
+                        {showcaseTexts.view}
                         <svg className="w-4 h-4 ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
@@ -203,6 +292,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 )
               })}
             </div>
+            )}
 
             {/* Pagination Controls */}
             {totalPages > 1 && (
