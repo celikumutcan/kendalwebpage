@@ -13,12 +13,22 @@ export const BrandAbout = ({ brandName }: BrandAboutProps) => {
   
   // Use 'any' to bypass strict TS checking for dynamically accessed nested keys
   const brandInfo = (t as any).brand_info?.[brandName] || {
-    title: isK2 ? "K2 Hakkında" : "Vanti Hakkında",
-    description: "Marka bilgisi yükleniyor..."
+    title: isK2 ? "K2 Hakkında" : brandName === "vanti" ? "Vanti Hakkında" : "Global Hakkında",
+    description: brandName === "global" 
+      ? "Kendal Elektrik güvencesiyle üretilen Global markası, geniş ürün yelpazesiyle yaşam alanlarınız ve endüstriyel projeleriniz için yüksek kaliteli, yenilikçi ve güvenilir aydınlatma çözümleri sunmaktadır." 
+      : "Marka bilgisi yükleniyor..."
   };
 
-  const accentColor = isK2 ? "text-[var(--brand-red, #E60000)]" : "text-[#2563EB]";
-  const bgAccent = isK2 ? "bg-[var(--brand-red, #E60000)]" : "bg-[#2563EB]";
+  let accentColor = "text-[var(--brand-red, #E60000)]";
+  let bgAccent = "bg-[var(--brand-red, #E60000)]";
+  
+  if (brandName === "vanti") {
+    accentColor = "text-[#2563EB]";
+    bgAccent = "bg-[#2563EB]";
+  } else if (brandName === "global") {
+    accentColor = "text-[#FFDA51]"; 
+    bgAccent = "bg-[#FFDA51]";
+  }
 
   return (
     <section className="py-20 px-6 bg-white w-full">

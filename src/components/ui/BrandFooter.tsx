@@ -15,19 +15,21 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
   const isK2 = brandName === "k2";
   const logoSrc = isK2 
     ? getAssetPath("/images/brands/k2-logo.svg") 
-    : getAssetPath("/images/brands/vanti-logo.svg");
+    : brandName === "vanti" 
+      ? getAssetPath("/images/brands/vanti-logo.svg")
+      : getAssetPath("/images/brands/global-logo.svg");
 
   return (
     <footer className="w-full bg-zinc-50 text-zinc-600 py-16 px-6 border-t-2 border-zinc-200" id="iletisim">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         
         {/* Company Info */}
-        <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
-          <Link href={process.env.NODE_ENV === "production" ? `/brand/${brandName}` : "/"} className="font-bold text-2xl md:text-3xl tracking-tight mb-6 flex flex-col sm:flex-row items-center gap-4 hover:opacity-80 transition-opacity">
+        <div className="md:col-span-1 text-center flex flex-col items-center">
+          <Link href={process.env.NODE_ENV === "production" ? `/brand/${brandName}` : "/"} className="font-bold text-2xl md:text-3xl tracking-tight mb-6 flex flex-col items-center gap-4 hover:opacity-80 transition-opacity">
             <div className="bg-white p-3 rounded-2xl shadow-sm border border-zinc-100">
               <Image src={logoSrc} alt={brandName} width={180} height={60} className="h-14 w-auto object-contain" />
             </div>
-            <span className={isK2 ? "text-orange-500" : "text-blue-600"}>{isK2 ? "K2 LED SYSTEMS" : "VANTİ"}</span>
+
           </Link>
           <a 
             href="https://www.google.com/maps/search/?api=1&query=Selimpaşa+Org.+San.+Böl.+5008+Sokak+No:6+Selimpaşa+Silivri/İSTANBUL" 
@@ -100,7 +102,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
       </div>
       
       <div className="pt-8 border-t border-zinc-200 text-center text-xs opacity-60">
-        <p>&copy; {new Date().getFullYear()} {isK2 ? "K2 LED SYSTEMS" : "VANTİ"} {(t as any).brand_pages?.footer?.copyright || "- Kendal Elektrik A.Ş. kuruluşudur. Tüm hakları saklıdır."}</p>
+        <p>&copy; {new Date().getFullYear()} {isK2 ? "K2 LED SYSTEMS" : brandName === "vanti" ? "VANTİ" : "GLOBAL"} {(t as any).brand_pages?.footer?.copyright || "- Kendal Elektrik A.Ş. kuruluşudur. Tüm hakları saklıdır."}</p>
       </div>
     </footer>
   );

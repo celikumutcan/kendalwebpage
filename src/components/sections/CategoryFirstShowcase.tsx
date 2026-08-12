@@ -29,16 +29,21 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
   // Group products by category
   const categoriesData = useMemo(() => {
-    const cats = new Map<string, { count: number; sampleImage: string }>();
+    const cats = new Map<string, { count: number; sampleImage: string; uniqueModels: Set<string> }>();
     
     products.forEach(p => {
       if (p.category?.tr && p.category.tr.length > 0) {
         const topCat = p.category.tr[0];
+        const baseModel = (p.name.tr || "").split(' ')[0];
+
         if (!cats.has(topCat)) {
-          cats.set(topCat, { count: 1, sampleImage: p.image });
+          cats.set(topCat, { count: 1, sampleImage: p.image, uniqueModels: new Set([baseModel]) });
         } else {
           const existing = cats.get(topCat)!;
-          existing.count += 1;
+          if (!existing.uniqueModels.has(baseModel)) {
+            existing.uniqueModels.add(baseModel);
+            existing.count += 1;
+          }
           cats.set(topCat, existing);
         }
       }
@@ -46,7 +51,8 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     
     return Array.from(cats.entries()).map(([name, data]) => ({
       name,
-      ...data
+      count: data.count,
+      sampleImage: data.sampleImage
     }));
   }, [products]);
 
@@ -54,10 +60,21 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
   const activeCategory = selectedCategory || (categoriesData.length === 1 ? categoriesData[0].name : null);
   const showBackButton = categoriesData.length > 1;
 
-  // Filter products by selected category
+  // Filter products by selected category and group them by base model
   const filteredProducts = useMemo(() => {
     if (!activeCategory) return [];
-    return products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
+    const categoryProducts = products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
+    
+    // Group products by their base model (first word of name, e.g. "GDL414" from "GDL414 25W...")
+    const uniqueGroups = new Map<string, Product>();
+    for (const p of categoryProducts) {
+      const baseModel = (p.name.tr || "").split(' ')[0];
+      if (!uniqueGroups.has(baseModel)) {
+        uniqueGroups.set(baseModel, p);
+      }
+    }
+    
+    return Array.from(uniqueGroups.values());
   }, [products, activeCategory]);
 
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
@@ -76,7 +93,9 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
   const activeColorClasses = isK2 
     ? "bg-orange-500 text-white shadow-orange-500/30 border-orange-500" 
-    : "bg-blue-600 text-white shadow-blue-500/30 border-blue-600";
+    : brandName === "vanti" 
+      ? "bg-blue-600 text-white shadow-blue-500/30 border-blue-600"
+      : "bg-[#FFDA51] text-zinc-900 shadow-[#FFDA51]/30 border-[#FFDA51]";
 
   return (
     <section className="py-12 px-6">
@@ -85,31 +104,32 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
         {/* VIEW 1: CATEGORY CARDS */}
         {!activeCategory && (
           <div className="animate-in fade-in zoom-in duration-500">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {categoriesData.map((cat) => (
                 <button
                   key={cat.name}
                   onClick={() => handleCategoryClick(cat.name)}
-                  className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-zinc-100 hover:shadow-2xl transition-all duration-500 text-left h-64 flex flex-col justify-end"
+                  className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-zinc-100 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] transition-all duration-300 text-left h-[280px] flex flex-col justify-end"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+                  {/* Dark gradient for text readability at the bottom */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
                   
-                  {/* Background Image (blurred/zoomed slightly) */}
+                  {/* Background Image (Vivid, no zoom) */}
                   <Image 
                     src={getAssetPath('/images/' + cat.sampleImage)} 
                     alt={cat.name}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    className="object-cover object-center opacity-40 group-hover:opacity-60 group-hover:scale-110 transition-all duration-700"
+                    className="object-cover object-center opacity-100 z-0"
                   />
                   
                   <div className="relative z-20 p-8">
                     <div className="mb-2">
-                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider ${isK2 ? 'bg-orange-500 text-white' : 'bg-blue-600 text-white'}`}>
+                      <span className={`inline-block px-3 py-1 rounded-full text-xs font-bold tracking-wider ${isK2 ? 'bg-orange-500 text-white' : brandName === 'vanti' ? 'bg-blue-600 text-white' : 'bg-[#FFDA51] text-zinc-900'}`}>
                         {cat.count} Ürün
                       </span>
                     </div>
-                    <h3 className="text-2xl font-bold text-white group-hover:-translate-y-1 transition-transform duration-300">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
                       {cat.name}
                     </h3>
                   </div>
@@ -146,7 +166,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 
                 const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                 const categoryName = product.category?.tr?.[0];
-                const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
+                const categorySlug = categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
                 
                 const productUrl = `/urunler/${categorySlug}/${slug}`;
 
@@ -201,7 +221,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                       }}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${
                         currentPage === pageNum 
-                          ? (isK2 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : "bg-blue-600 text-white shadow-lg shadow-blue-500/30")
+                          ? (isK2 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : brandName === "vanti" ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" : "bg-[#FFDA51] text-zinc-900 shadow-lg shadow-[#FFDA51]/30")
                           : "bg-white text-zinc-600 hover:bg-zinc-100 border border-zinc-200"
                       }`}
                     >

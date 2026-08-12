@@ -19,7 +19,7 @@ export function proxy(req: NextRequest) {
   const hostname = req.headers.get('host') || '';
 
   // Define our brand subdomains
-  const brands = ['k2', 'vanti'];
+  const brands = ['k2', 'vanti', 'global'];
 
   // Check if the current hostname starts with one of our brand subdomains
   // e.g. k2.localhost:3000 or k2.kendalelektrik.com.tr

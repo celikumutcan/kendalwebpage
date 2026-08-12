@@ -9,7 +9,8 @@ import { BrandHero } from "@/components/sections/BrandHero";
 export function generateStaticParams() {
   return [
     { brandName: "k2" },
-    { brandName: "vanti" }
+    { brandName: "vanti" },
+    { brandName: "global" }
   ];
 }
 

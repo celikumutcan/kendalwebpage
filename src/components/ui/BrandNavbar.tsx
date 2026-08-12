@@ -17,9 +17,11 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
   const isK2 = brandName === "k2";
   const logoSrc = isK2 
     ? getAssetPath("/images/brands/k2-logo.svg") 
-    : getAssetPath("/images/brands/vanti-logo.svg");
+    : brandName === "vanti"
+      ? getAssetPath("/images/brands/vanti-logo.svg")
+      : getAssetPath("/images/brands/global-logo.svg");
 
-  const brandColor = isK2 ? "#FF6600" : "#2563EB"; // Orange for K2, Blue for Vanti
+  const brandColor = isK2 ? "#FF6600" : brandName === "vanti" ? "#2563EB" : "#FFDA51"; // Orange for K2, Blue for Vanti, Yellow for Global
 
   const homeHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}` : "/";
   const urunlerHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler";

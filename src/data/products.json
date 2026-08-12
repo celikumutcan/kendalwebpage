@@ -63,7 +63,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4207": {
     "id": "4207",
@@ -129,7 +129,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4208": {
     "id": "4208",
@@ -195,7 +195,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4209": {
     "id": "4209",
@@ -459,7 +459,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4213": {
     "id": "4213",
@@ -525,7 +525,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4214": {
     "id": "4214",
@@ -591,7 +591,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4215": {
     "id": "4215",
@@ -657,7 +657,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4216": {
     "id": "4216",
@@ -723,7 +723,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4217": {
     "id": "4217",
@@ -789,7 +789,7 @@
         "Led Backlight Panel Lights"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4218": {
     "id": "4218",
@@ -8395,11 +8395,11 @@
         "220 v Şerit Ledler"
       ],
       "en": [
-        "Led Strips &amp; Led Neon Hoses",
+        "Led Strips & Led Neon Hoses",
         "220V Led Strips"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4401": {
     "id": "4401",
@@ -8935,11 +8935,11 @@
         "Neon Led Hortumlar"
       ],
       "en": [
-        "Led Strips &amp; Led Neon Hoses",
+        "Led Strips & Led Neon Hoses",
         "Neon Led Hoses"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "4425": {
     "id": "4425",
@@ -185665,7 +185665,7 @@
         "Led Bulbs"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7712": {
     "id": "7712",
@@ -185739,7 +185739,7 @@
         "Led Bulbs"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7713": {
     "id": "7713",
@@ -185813,7 +185813,7 @@
         "Led Bulbs"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7714": {
     "id": "7714",
@@ -185828,10 +185828,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7715": {
     "id": "7715",
@@ -185846,10 +185852,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7716": {
     "id": "7716",
@@ -185864,10 +185876,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7717": {
     "id": "7717",
@@ -185882,10 +185900,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7718": {
     "id": "7718",
@@ -185900,10 +185924,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7719": {
     "id": "7719",
@@ -185993,13 +186023,13 @@
     },
     "category": {
       "tr": [
-        "Dış Mekan Şerit Led, Neon ve Ledli Hortumlar"
+        "Dış Mekan Led Şeritler"
       ],
       "en": [
         "Led Strip Lights (Outside)"
       ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7721": {
     "id": "7721",
@@ -186788,10 +186818,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7733": {
     "id": "7733",
@@ -187916,10 +187952,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Şerit Led, Neon ve Ledli Hortumlar",
+        "Neon Led Hortumlar"
+      ],
+      "en": [
+        "Led Strips and Led Neon Hoses",
+        "Neon Led Hoses"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7760": {
     "id": "7760",
@@ -194748,10 +194790,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "İç Aydınlatma",
+        "Ray Spotlar"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Track Spotlights"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7906": {
     "id": "7906",
@@ -194808,10 +194856,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "İç Aydınlatma",
+        "Ray Spotlar"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Track Spotlights"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7907": {
     "id": "7907",
@@ -195868,10 +195922,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "İç Aydınlatma",
+        "Sinek Öldürücü Armatürler"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Bug Zapper Fixtures"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7930": {
     "id": "7930",
@@ -195912,10 +195972,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "İç Aydınlatma",
+        "Sinek Öldürücü Armatürler"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Bug Zapper Fixtures"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7931": {
     "id": "7931",
@@ -195956,10 +196022,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "İç Aydınlatma",
+        "Sinek Öldürücü Armatürler"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Bug Zapper Fixtures"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7932": {
     "id": "7932",
@@ -198106,10 +198178,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7969": {
     "id": "7969",
@@ -198166,10 +198244,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7970": {
     "id": "7970",
@@ -198218,10 +198302,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7971": {
     "id": "7971",
@@ -198668,10 +198758,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Şerit Led, Neon ve Ledli Hortumlar",
+        "Neon Led Hortumlar"
+      ],
+      "en": [
+        "Led Strips and Led Neon Hoses",
+        "Neon Led Hoses"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7982": {
     "id": "7982",
@@ -198856,10 +198952,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Şerit Led, Neon ve Ledli Hortumlar",
+        "Neon Led Hortumlar"
+      ],
+      "en": [
+        "Led Strips and Led Neon Hoses",
+        "Neon Led Hoses"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7983": {
     "id": "7983",
@@ -199244,10 +199346,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7989": {
     "id": "7989",
@@ -199288,10 +199396,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "7990": {
     "id": "7990",
@@ -199584,10 +199698,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8005": {
     "id": "8005",
@@ -199628,10 +199748,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8006": {
     "id": "8006",
@@ -199672,10 +199798,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8007": {
     "id": "8007",
@@ -200054,10 +200186,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8023": {
     "id": "8023",
@@ -200098,10 +200236,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8024": {
     "id": "8024",
@@ -200142,10 +200286,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8025": {
     "id": "8025",
@@ -200186,10 +200336,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8026": {
     "id": "8026",
@@ -200230,10 +200386,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8027": {
     "id": "8027",
@@ -200804,10 +200966,16 @@
       "en": []
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Ampuller",
+        "Led Ampuller"
+      ],
+      "en": [
+        "Bulbs",
+        "Led Bulbs"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8054": {
     "id": "8054",
@@ -201124,10 +201292,14 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Diğer Ürünler"
+      ],
+      "en": [
+        "Other Products"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8059": {
     "id": "8059",
@@ -203222,10 +203394,16 @@
       ]
     },
     "category": {
-      "tr": [],
-      "en": []
+      "tr": [
+        "Dış Mekan Aydınlatma",
+        "Led Projektörler"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Projectors"
+      ]
     },
-    "brand": "k2"
+    "brand": "global"
   },
   "8110": {
     "id": "8110",

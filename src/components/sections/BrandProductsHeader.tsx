@@ -14,11 +14,14 @@ export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => 
   const headerTexts = (t as any).brand_pages?.products_page || {
     title: "Tüm Ürünlerimiz",
     k2_desc: "K2 LED SYSTEMS güvencesiyle sunduğumuz tüm aydınlatma ürünlerini aşağıdan inceleyebilirsiniz.",
-    vanti_desc: "VANTİ ile yaşam alanlarınıza değer katan tüm ürünlerimiz."
+    vanti_desc: "VANTİ ile yaşam alanlarınıza değer katan tüm ürünlerimiz.",
+    global_desc: "Global markasıyla dünyanın dört bir yanına sunduğumuz kaliteli ürünlerimizi aşağıdan inceleyebilirsiniz."
   };
 
   const title = headerTexts.title;
-  const desc = isK2 ? headerTexts.k2_desc : headerTexts.vanti_desc;
+  let desc = headerTexts.k2_desc;
+  if (brandName === "vanti") desc = headerTexts.vanti_desc;
+  else if (brandName === "global") desc = headerTexts.global_desc;
 
   return (
     <div className="text-center mb-16">

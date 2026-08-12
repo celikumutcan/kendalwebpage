@@ -14,7 +14,7 @@ export function generateStaticParams() {
     const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
     const brandName = p.brand || "k2";
     const categoryName = p.category?.tr?.[0];
-    const category = categoryName ? slugify(categoryName) : (brandName === "k2" ? "aydinlatma" : "vantilator");
+    const category = categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
     
     params.push({
       brandName: brandName,
@@ -41,5 +41,5 @@ export default async function BrandProductDetailPage({
   
   // Here we re-use the exact same UI as the main site for the product detail.
   // The layout wrapper will automatically provide the BrandNavbar and BrandFooter.
-  return <ProductDetailClient product={product} brandName={resolvedParams.brandName as "k2" | "vanti"} />;
+  return <ProductDetailClient product={product} brandName={resolvedParams.brandName as "k2" | "vanti" | "global"} />;
 }

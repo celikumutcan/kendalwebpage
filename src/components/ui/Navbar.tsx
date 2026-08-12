@@ -165,8 +165,8 @@ export const Navbar = () => {
         },
         { 
           id: "brand_global", 
-          href: "#", 
-          isStatic: true,
+          href: process.env.NODE_ENV === "production" ? "/brand/global" : "http://global.localhost:3000", 
+          external: process.env.NODE_ENV !== "production",
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:bg-white transition-colors">

@@ -38,7 +38,15 @@ export function getProductImageUrl(image: string): string {
   return getAssetPath('/images/' + image);
 }
 
+// Pre-compute an inverted map for O(1) lookups by ID
+const idToSlugMap: Record<string, string> = {};
+for (const slug of Object.keys(slugMap)) {
+  const id = slugMap[slug];
+  if (!idToSlugMap[id]) {
+    idToSlugMap[id] = slug;
+  }
+}
+
 export function getSlugByProductId(id: string): string | undefined {
-  // Return the first matching slug (usually TR is first, or we just grab any)
-  return Object.keys(slugMap).find(slug => slugMap[slug] === id);
+  return idToSlugMap[id];
 }
