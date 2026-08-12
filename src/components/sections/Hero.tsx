@@ -71,7 +71,7 @@ export const Hero = () => {
         <div className="absolute bottom-[10%] right-[-10%] w-[60%] h-[70%] rounded-full bg-[radial-gradient(circle_at_center,rgba(179,0,12,0.2)_0%,transparent_60%)]" />
       </div>
 
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
+      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24">
         <LightCore scrollProgressRef={scrollProgressRef} />
 
         <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.4)_0%,_transparent_70%)] pointer-events-none" />

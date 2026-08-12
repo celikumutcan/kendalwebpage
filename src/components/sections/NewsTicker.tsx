@@ -29,7 +29,7 @@ export const NewsTicker = () => {
   if (newsItems.length === 0) return null;
 
   return (
-    <div className="w-full bg-white/5 border-b border-white/10 py-1.5 overflow-hidden text-xs md:text-sm font-medium tracking-wide text-white/70 backdrop-blur-sm relative z-30 pt-20">
+    <div className="w-full bg-white/5 border-b border-white/10 py-1.5 overflow-hidden text-xs md:text-sm font-medium tracking-wide text-white/70 backdrop-blur-sm relative z-30 pt-28">
       <div className="flex w-max" ref={trackRef}>
         {[...newsItems, ...newsItems].map((item, idx) => (
           <div key={idx} className="flex items-center px-6">

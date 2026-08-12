@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { Product, getProductImageUrl, products, getSlugByProductId } from "@/data/products";
 
@@ -12,6 +13,7 @@ interface ProductDetailClientProps {
 }
 
 export function ProductDetailClient({ product, brandName }: ProductDetailClientProps) {
+  const router = useRouter();
   const { language } = useLanguage();
   const name = product.name[language] || product.name.tr;
   const attributes = product.attributes[language] || product.attributes.tr;
@@ -79,8 +81,24 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
       )}
 
       <div className="relative z-10 container mx-auto max-w-7xl px-6">
+        
+        {/* Elegant Back Button */}
+        <button 
+          onClick={() => router.back()}
+          className={`group flex items-center gap-3 w-fit mb-8 transition-colors ${isLight ? "text-zinc-500 hover:text-zinc-900" : "text-white/60 hover:text-white"}`}
+        >
+          <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${isLight ? "bg-white shadow-sm border border-zinc-200 group-hover:bg-zinc-100" : "bg-white/5 border border-white/10 group-hover:bg-white/10"}`}>
+            <svg className="w-5 h-5 -translate-x-0.5 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </div>
+          <span className="font-semibold tracking-wide text-sm">
+            {language === "en" ? "Go Back" : "Geri Dön"}
+          </span>
+        </button>
+
         {/* Title at the Top Center */}
-        <div className="flex flex-col items-center text-center mb-16 mt-4">
+        <div className="flex flex-col items-center text-center mb-16">
           <h1 className={`text-2xl md:text-4xl font-extrabold tracking-tight leading-tight max-w-5xl ${isLight ? "text-zinc-900" : "text-white"}`}>
             {name}
           </h1>

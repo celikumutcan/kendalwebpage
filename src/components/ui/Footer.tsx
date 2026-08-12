@@ -17,11 +17,14 @@ export const Footer = () => {
         
         {/* Company Info */}
         <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
-          <Link href="/" className="font-bold text-2xl tracking-tight text-white mb-6 flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <Image src={getAssetPath("/kendal-icon.png")} alt="Kendal Logo" width={32} height={32} className="w-8 h-8 object-contain min-w-[32px]" />
-            <div>
-              KENDAL ELEKTRİK
-            </div>
+          <Link href="/" className="mb-6 self-center hover:opacity-80 transition-opacity flex justify-center w-full">
+            <Image 
+              src={getAssetPath("/images/kendal-logo.svg")} 
+              alt="Kendal Elektrik Logo" 
+              width={200} 
+              height={60} 
+              className="h-10 md:h-12 w-auto object-contain mx-auto" 
+            />
           </Link>
           <p className="text-sm leading-relaxed mb-4">
             {(t as any).footer?.company}
