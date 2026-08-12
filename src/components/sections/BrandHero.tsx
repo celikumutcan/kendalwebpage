@@ -44,10 +44,10 @@ export const BrandHero = ({ brandName }: BrandHeroProps) => {
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mt-10">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-8 tracking-tight drop-shadow-xl text-white">
+        <h1 className={`text-4xl md:text-6xl font-extrabold mb-8 tracking-tight drop-shadow-xl ${brandName === 'global' ? 'text-zinc-900' : 'text-white'}`}>
           {title}
         </h1>
-        <p className="text-lg md:text-xl text-white/90 mb-10 max-w-4xl mx-auto font-light leading-relaxed">
+        <p className={`text-lg md:text-xl mb-10 max-w-4xl mx-auto leading-relaxed ${brandName === 'global' ? 'text-zinc-800 font-medium' : 'text-white/90 font-light'}`}>
           {brandInfo.description}
         </p>
       </div>

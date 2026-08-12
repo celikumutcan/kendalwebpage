@@ -21,7 +21,7 @@ export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => 
   const title = headerTexts.title;
 
   return (
-    <div className="text-center mb-0">
+    <div className="text-center mb-0 mt-8">
       <h1 className="text-4xl md:text-5xl font-bold">
         {title}
       </h1>
