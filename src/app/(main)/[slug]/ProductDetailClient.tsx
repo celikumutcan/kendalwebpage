@@ -184,7 +184,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
               {attributes && attributes.length > 0 ? (
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {attributes.map((attr, index) => (
-                    <div key={index} className={`flex flex-col p-5 rounded-3xl border transition-transform duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/10 hover:bg-white/10"}`}>
+                    <div key={index} className={`flex flex-col items-center text-center p-5 rounded-3xl border transition-transform duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/10 hover:bg-white/10"}`}>
                       <span className={`text-xs font-semibold uppercase tracking-wider mb-2 ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
                         {attr.label}
                       </span>

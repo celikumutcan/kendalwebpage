@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
 import { products, getSlugByProductId } from "@/data/products";
-import { BrandAbout } from "@/components/sections/BrandAbout";
 import { BrandHero } from "@/components/sections/BrandHero";
 // Server component
 export function generateStaticParams() {
@@ -32,8 +31,6 @@ export default async function BrandPage({
     <div className="w-full text-zinc-900 bg-zinc-50">
       {/* HERO SECTION */}
       <BrandHero brandName={brandName} />
-
-      <BrandAbout brandName={brandName} />
     </div>
   );
 }

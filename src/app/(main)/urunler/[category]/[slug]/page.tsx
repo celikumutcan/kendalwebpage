@@ -38,7 +38,5 @@ export default async function MainProductDetailPage({
     notFound();
   }
   
-  const brandName = product.brand || "global";
-  
-  return <ProductDetailClient product={product} brandName={brandName as "k2" | "vanti" | "global"} />;
+  return <ProductDetailClient product={product} />;
 }
