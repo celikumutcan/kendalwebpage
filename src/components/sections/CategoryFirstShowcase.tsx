@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { getAssetPath } from "@/utils/basePath";
 import { Product, getSlugByProductId } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
@@ -13,6 +14,9 @@ interface CategoryFirstShowcaseProps {
 }
 
 export default function CategoryFirstShowcase({ products, brandName }: CategoryFirstShowcaseProps) {
+  const pathname = usePathname() || "";
+  const isBrandRoute = pathname.includes("/brand/");
+  
   const { t, language } = useLanguage();
   const showcaseTexts = (t as any).brand_pages?.showcase || {
     product_count: "Ürün",
@@ -257,8 +261,10 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 const categoryName = product.category?.tr?.[0];
                 const categorySlug = categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
                 
-                const productUrl = `/urunler/${categorySlug}/${slug}`;
-
+                const productUrl = isBrandRoute && brandName 
+                  ? `/brand/${brandName}/urunler/${categorySlug}/${slug}`
+                  : `/urunler/${categorySlug}/${slug}`;
+                  
                 return (
                   <Link 
                     href={productUrl} 

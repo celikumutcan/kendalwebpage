@@ -66,7 +66,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
   const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
   return (
-    <div className={`relative min-h-screen pt-24 pb-24 overflow-hidden ${isLight ? "bg-[#f8f9fa] text-zinc-900" : "bg-[#050505] text-white"}`}>
+    <div className={`relative min-h-screen pb-24 overflow-hidden ${isLight ? "pt-24 bg-[#f8f9fa] text-zinc-900" : "pt-32 md:pt-40 bg-[#050505] text-white"}`}>
       
       {/* Background ambient light */}
       {isLight ? (
@@ -184,18 +184,23 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                 </h3>
               </div>
 
-              {attributes && attributes.length > 0 ? (
+              {attributes && attributes.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A").length > 0 ? (
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                  {attributes.map((attr, index) => (
-                    <div key={index} className={`flex flex-col items-center text-center p-5 rounded-3xl border transition-transform duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/10 hover:bg-white/10"}`}>
-                      <span className={`text-xs font-semibold uppercase tracking-wider mb-2 ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
-                        {attr.label}
-                      </span>
-                      <span className={`text-base font-black tracking-tight ${isLight ? "text-zinc-900" : "text-white"}`}>
-                        {attr.value}
-                      </span>
-                    </div>
-                  ))}
+                  {attributes
+                    .filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A")
+                    .map((attr, index) => {
+                      const decodedValue = String(attr.value).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+                      return (
+                        <div key={index} className={`flex flex-col items-center text-center p-5 rounded-3xl border transition-transform duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/10 hover:bg-white/10"}`}>
+                          <span className={`text-xs font-semibold uppercase tracking-wider mb-2 ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                            {attr.label}
+                          </span>
+                          <span className={`text-base font-black tracking-tight ${isLight ? "text-zinc-900" : "text-white"}`}>
+                            {decodedValue}
+                          </span>
+                        </div>
+                      );
+                    })}
                 </div>
               ) : (
                 <div className={`p-8 rounded-3xl border border-dashed flex items-center justify-center ${isLight ? "bg-white/50 border-zinc-200 text-zinc-400" : "bg-white/5 border-white/10 text-zinc-500"}`}>
