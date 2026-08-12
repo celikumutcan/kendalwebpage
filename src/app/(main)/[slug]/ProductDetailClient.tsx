@@ -151,8 +151,8 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                     const variantSlug = getSlugByProductId(variant.id) || variant.id;
 
                     const variantUrl = isLight
-                      ? `/urunler/${categorySlug}/${variantSlug}`
-                      : `/${variantSlug}`;
+                      ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
+                      : `/urunler/${categorySlug}/${variantSlug}`;
 
                     return (
                       <Link
