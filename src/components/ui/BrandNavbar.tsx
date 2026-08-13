@@ -49,13 +49,7 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
 
         <div className="relative flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0 z-50">
           <LanguageSwitcher />
-          <a
-            href="https://www.kendalelektrik.com.tr"
-            className="hidden sm:inline-flex text-xs sm:text-sm font-medium border border-zinc-200 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 hover:bg-zinc-100 transition-all duration-300 whitespace-nowrap text-zinc-900"
-          >
-            Kendal Elektrik
-          </a>
-          
+
           {/* Mobile Menu Toggle Button */}
           <button 
             className="lg:hidden p-2 -mr-2 text-zinc-600 hover:text-zinc-900 transition-colors"
@@ -86,12 +80,6 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
           <Link href={urunlerHref} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>{(t as any).brand_pages?.navbar?.products || "Ürünler"}</Link>
           <Link href={`${homeHref}#iletisim`} className="text-white hover:text-white/70" onClick={() => setIsMobileMenuOpen(false)}>{(t as any).brand_pages?.navbar?.contact || "İletişim"}</Link>
           
-          <a
-            href="https://www.kendalelektrik.com.tr"
-            className="mt-8 text-sm font-medium border border-white/20 rounded-full px-6 py-3 hover:bg-white/10 transition-all duration-300 mx-auto text-white"
-          >
-            Kendal Elektrik
-          </a>
         </div>
       </div>
     </>

@@ -140,7 +140,7 @@ export const Navbar = () => {
         { 
           id: "brand_k2", 
           href: process.env.NODE_ENV === "production" ? "/brand/k2" : "http://k2.localhost:3000", 
-          external: process.env.NODE_ENV !== "production", // We want it to behave like an external link in dev to trigger full navigation to subdomain
+          external: true, // Always open in new tab
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
@@ -153,7 +153,7 @@ export const Navbar = () => {
         { 
           id: "brand_vanti", 
           href: process.env.NODE_ENV === "production" ? "/brand/vanti" : "http://vanti.localhost:3000", 
-          external: process.env.NODE_ENV !== "production",
+          external: true, // Always open in new tab
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
@@ -166,7 +166,7 @@ export const Navbar = () => {
         { 
           id: "brand_global", 
           href: process.env.NODE_ENV === "production" ? "/brand/global" : "http://global.localhost:3000", 
-          external: process.env.NODE_ENV !== "production",
+          external: true, // Always open in new tab
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:bg-white transition-colors">
