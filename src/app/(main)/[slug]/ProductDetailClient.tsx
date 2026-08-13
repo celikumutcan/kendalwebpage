@@ -165,7 +165,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                     </svg>
                   </div>
                   <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                    {language === "tr" ? "Seçenekler" : "Options"}
+                    {language === "tr" ? "Renk Seçenekleri" : "Color Options"}
                   </h3>
                 </div>
 
@@ -190,10 +190,11 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                       else if (nameUpper.includes("BAKIR")) detectedCasing = "Bakır Kasa";
                       else if (nameUpper.includes("BRONZ")) detectedCasing = "Bronz Kasa";
                       else if (nameUpper.includes("KAHVE")) detectedCasing = "Kahve Kasa";
-                      else if (nameUpper.includes("MAVİ") || nameUpper.includes("MAVI")) detectedCasing = "Mavi Kasa/Dekor";
-                      else if (nameUpper.includes("YEŞİL") || nameUpper.includes("YESIL")) detectedCasing = "Yeşil Kasa/Dekor";
-                      else if (nameUpper.includes("KIRMIZI")) detectedCasing = "Kırmızı Kasa/Dekor";
-                      else if (nameUpper.includes("PEMBE")) detectedCasing = "Pembe Kasa/Dekor";
+                      else if (nameUpper.includes("MAVİ") || nameUpper.includes("MAVI")) detectedCasing = "Mavi";
+                      else if (nameUpper.includes("YEŞİL") || nameUpper.includes("YESIL")) detectedCasing = "Yeşil";
+                      else if (nameUpper.includes("KIRMIZI")) detectedCasing = "Kırmızı";
+                      else if (nameUpper.includes("PEMBE")) detectedCasing = "Pembe";
+                      else if (nameUpper.includes("TURUNCU")) detectedCasing = "Turuncu";
                       else if (nameUpper.match(/BEYAZ.*BEYAZ/) || (nameUpper.includes("BEYAZ") && !variant.model.toUpperCase().includes("BEYAZ"))) detectedCasing = "Beyaz Kasa";
 
                       let colorTemp = variant.model;
@@ -232,6 +233,11 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                         else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) dotColor = 'bg-yellow-400';
                         else if (ctUpper.includes("BAKIR")) dotColor = 'bg-orange-600';
                         else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) dotColor = 'bg-yellow-700';
+                        else if (ctUpper.includes("MAVİ") || ctUpper.includes("MAVI")) dotColor = 'bg-blue-500';
+                        else if (ctUpper.includes("YEŞİL") || ctUpper.includes("YESIL")) dotColor = 'bg-green-500';
+                        else if (ctUpper.includes("KIRMIZI")) dotColor = 'bg-red-500';
+                        else if (ctUpper.includes("PEMBE")) dotColor = 'bg-pink-500';
+                        else if (ctUpper.includes("TURUNCU")) dotColor = 'bg-orange-500';
                       }
 
                       // Extract Wattage
