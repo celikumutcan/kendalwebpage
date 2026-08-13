@@ -49,7 +49,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
   // Group products by category
   const categoriesData = useMemo(() => {
-    const cats = new Map<string, { count: number; sampleImage: string; uniqueModels: Set<string> }>();
+    const cats = new Map<string, { count: number; sampleImage: string; uniqueModels: Set<string>; enName?: string }>();
     
     products.forEach(p => {
       if (p.category?.tr && p.category.tr.length > 0) {
@@ -57,12 +57,20 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
         const baseModel = (p.name.tr || "").split(' ')[0];
 
         if (!cats.has(topCat)) {
-          cats.set(topCat, { count: 1, sampleImage: p.image, uniqueModels: new Set([baseModel]) });
+          cats.set(topCat, { 
+            count: 1, 
+            sampleImage: p.image, 
+            uniqueModels: new Set([baseModel]),
+            enName: p.category.en?.[0] 
+          });
         } else {
           const existing = cats.get(topCat)!;
           if (!existing.uniqueModels.has(baseModel)) {
             existing.uniqueModels.add(baseModel);
             existing.count += 1;
+          }
+          if (!existing.enName && p.category.en?.[0]) {
+            existing.enName = p.category.en[0];
           }
           cats.set(topCat, existing);
         }
@@ -71,10 +79,11 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     
     return Array.from(cats.entries()).map(([name, data]) => ({
       name,
+      displayName: language === 'en' && data.enName ? data.enName : name,
       count: data.count,
       sampleImage: data.sampleImage
     }));
-  }, [products]);
+  }, [products, language]);
 
   // Auto-select if there is only 1 category
   const activeCategory = selectedCategory || (categoriesData.length === 1 ? categoriesData[0].name : null);
@@ -210,7 +219,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                   <div className="relative z-20 p-8">
 
                     <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
-                      {cat.name}
+                      {cat.displayName}
                     </h3>
                   </div>
                 </button>
@@ -236,7 +245,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                   </button>
                 )}
                 <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
-                  {isSearching ? showcaseTexts.search_results_title : activeCategory}
+                  {isSearching ? showcaseTexts.search_results_title : (categoriesData.find(c => c.name === activeCategory)?.displayName || activeCategory)}
                 </h2>
 
               </div>

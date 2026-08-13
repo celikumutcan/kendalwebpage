@@ -16,7 +16,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         
         {/* Company Info */}
-        <div className="md:col-span-1 text-center md:text-left flex flex-col items-center md:items-start">
+        <div className="md:col-span-1 text-center flex flex-col items-center">
           <Link href="/" className="mb-6 self-center hover:opacity-80 transition-opacity flex justify-center w-full">
             <Image 
               src={getAssetPath("/images/kendal-logo.svg")} 
@@ -40,8 +40,8 @@ export const Footer = () => {
         </div>
 
         {/* Contact */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start md:justify-self-center">
-          <h4 className="text-white font-semibold mb-6">{(t as any).footer?.contact_title}</h4>
+        <div className="text-center flex flex-col items-center md:justify-self-center">
+          <h4 className="text-white font-semibold mb-6 text-center w-full">{(t as any).footer?.contact_title}</h4>
           <ul className="space-y-3 text-sm">
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).footer?.phone_label || "İletişim Hattı"}</span>
@@ -71,8 +71,8 @@ export const Footer = () => {
 
 
         {/* Legal & Social */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <h4 className="text-white font-semibold mb-6">{(t as any).footer?.legal_title}</h4>
+        <div className="text-center flex flex-col items-center">
+          <h4 className="text-white font-semibold mb-6 text-center w-full">{(t as any).footer?.legal_title}</h4>
           <ul className="space-y-3 text-sm mb-8">
             <li>
               <Link href="/kvkk" className="hover:text-[var(--brand-red)] transition-colors">

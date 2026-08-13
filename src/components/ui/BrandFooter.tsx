@@ -42,8 +42,8 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
         </div>
 
         {/* Contact */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start md:justify-self-center">
-          <h4 className="text-zinc-900 font-semibold mb-6">{(t as any).brand_pages?.footer?.contact_title || "İletişim"}</h4>
+        <div className="text-center flex flex-col items-center md:justify-self-center">
+          <h4 className="text-zinc-900 font-semibold mb-6 text-center w-full">{(t as any).brand_pages?.footer?.contact_title || "İletişim"}</h4>
           <ul className="space-y-3 text-sm">
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.contact_line || "İletişim Hattı"}</span>
@@ -72,8 +72,8 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
         </div>
 
         {/* Legal & Social */}
-        <div className="text-center md:text-left flex flex-col items-center md:items-start">
-          <h4 className="text-zinc-900 font-semibold mb-6">{(t as any).brand_pages?.footer?.legal_title || "Yasal"}</h4>
+        <div className="text-center flex flex-col items-center">
+          <h4 className="text-zinc-900 font-semibold mb-6 text-center w-full">{(t as any).brand_pages?.footer?.legal_title || "Yasal"}</h4>
           <ul className="space-y-3 text-sm mb-8">
             <li>
               <a href="https://www.kendalelektrik.com.tr/kvkk" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand-red)] transition-colors">
