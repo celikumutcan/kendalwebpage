@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
-
 import Image from "next/image";
 import { getAssetPath } from "@/utils/basePath";
 
@@ -12,134 +11,148 @@ const STATS = [
   { value: 29, label: "Yıllık Tecrübe", suffix: "" },
   { value: 22000, label: "m² Kapalı Alan", suffix: "" },
   { value: 350, label: "İstihdam", suffix: "+" },
-  { value: 80, label: "Milyon+ Yıllık Üretim Kapasitesi", suffix: "" },
+  { value: 80, label: "Yıllık Üretim Kapasitesi", suffix: " Milyon+" },
   { value: 1000, label: "Çeşit Farklı Ürün", suffix: "+" },
   { value: 540, label: "Türkiye Çapında Bayi", suffix: "+" },
 ];
 
 export const CompanyStats = () => {
   const containerRef = useRef<HTMLElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
   const numberRefs = useRef<(HTMLSpanElement | null)[]>([]);
   const { t } = useLanguage();
   const statData = (t as any).company_stats?.stats || STATS;
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Parallax effect for the background
-      if (bgRef.current) {
-        gsap.to(bgRef.current, {
-          yPercent: 20,
-          ease: "none",
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: true
-          }
-        });
-      }
-
+      // Counter Animation
       STATS.forEach((stat, index) => {
         const el = numberRefs.current[index];
         if (el) {
           const obj = { val: 0 };
           gsap.to(obj, {
             val: stat.value,
-            duration: 7.0,
+            duration: 4.0,
             ease: "power3.out",
             scrollTrigger: {
-              trigger: containerRef.current,
-              start: "top 75%",
+              trigger: ".stats-grid",
+              start: "top 85%",
             },
             onUpdate: () => {
               if (el) {
-                el.innerHTML = Math.round(obj.val).toLocaleString('tr-TR') + stat.suffix;
+                el.innerHTML = Math.round(obj.val).toLocaleString('tr-TR') + (statData[index]?.suffix || stat.suffix);
               }
             }
           });
         }
       });
 
+      // Photo Parallax & Fade-in
       gsap.fromTo(
-        ".stat-item",
-        { opacity: 0, y: 30 },
+        ".photo-card",
+        { opacity: 0, y: 40, scale: 0.98 },
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
-          stagger: 0.1,
-          ease: "power2.out",
+          scale: 1,
+          duration: 1.2,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: containerRef.current,
             start: "top 75%",
           }
         }
       );
+
+      // Stats Grid Animation
+      gsap.fromTo(
+        ".stat-card",
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.1,
+          ease: "back.out(1.2)",
+          scrollTrigger: {
+            trigger: ".stats-grid",
+            start: "top 85%",
+          }
+        }
+      );
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [statData]);
 
   return (
-    <section id="stats" ref={containerRef} className="py-24 md:py-32 min-h-[70vh] md:min-h-[750px] flex items-center relative border-y border-white/10 overflow-hidden bg-black text-white w-full">
-      {/* Background Image with Parallax */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div ref={bgRef} className="absolute -top-[20%] -bottom-[20%] -left-[10%] -right-[10%] w-[120%] h-[140%]">
-          <Image 
-            src={getAssetPath("/images/fabric-photo.png")}
-            alt="Factory Background"
-            fill
-            sizes="100vw"
-            quality={75}
-            className="object-cover opacity-90"
-          />
-        </div>
-        {/* Subtle uniform overlay for text readability without obscuring any specific part of the photo */}
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full">
+    <section id="stats" ref={containerRef} className="py-24 md:py-32 bg-[#050505] text-white relative w-full border-y border-white/5 overflow-hidden">
+      
+      {/* Background ambient glow */}
+      <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
+      
+      <div className="max-w-[90rem] mx-auto px-6 lg:px-12 relative z-10">
         
-        {/* Top Text Section */}
-        <div className="flex flex-col mb-16 items-center md:items-start">
-          <div className="inline-flex flex-col bg-black/40 backdrop-blur-xl px-8 py-5 rounded-3xl border border-[var(--brand-red)]/30 shadow-[0_8px_32px_rgba(227,0,15,0.15)] transition-all duration-500 hover:bg-black/50 hover:border-[var(--brand-red)]/60 hover:shadow-[0_8px_32px_rgba(227,0,15,0.3)]">
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-3 tracking-tight leading-tight drop-shadow-xl whitespace-nowrap">
-              {(t as any).company_stats?.title_part1 || "Aydınlatmada"} <span className="text-[var(--brand-red)]">{(t as any).company_stats?.title_part2 || "Türkiye'nin"}</span> {(t as any).company_stats?.title_part3 || "Gururu"}
-            </h2>
-            <div className="w-16 h-1 bg-[var(--brand-red)] rounded-full shadow-[0_0_10px_rgba(227,0,15,0.5)]"></div>
+        {/* Title Section */}
+        <div className="flex flex-col items-center text-center mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
+            {(t as any).company_stats?.title_part1 || "Aydınlatmada"} <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-red)] to-red-500">{(t as any).company_stats?.title_part2 || "Türkiye'nin"}</span> {(t as any).company_stats?.title_part3 || "Gururu"}
+          </h2>
+          <div className="w-24 h-1.5 bg-gradient-to-r from-[var(--brand-red)] to-transparent rounded-full mx-auto"></div>
+        </div>
+
+        {/* Jumbo Cinematic Photo */}
+        <div className="photo-card relative w-full aspect-[16/9] lg:aspect-[21/9] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 mb-12 lg:mb-20 group">
+          <Image 
+            src={getAssetPath("/images/fabric-photo.webp")}
+            alt="Kendal Elektrik Factory"
+            fill
+            className="object-cover transition-transform duration-[2000ms] ease-out group-hover:scale-105"
+            quality={100}
+            priority
+          />
+          {/* Subtle vignette/gradient for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+          
+          <div className="absolute bottom-6 left-6 md:bottom-10 md:left-12 flex flex-col">
+            <span className="text-white font-bold text-2xl md:text-4xl tracking-tight drop-shadow-lg mb-2">Kendal Elektrik</span>
+            <span className="text-white/80 font-medium text-sm md:text-lg tracking-wide flex items-center gap-2">
+              <svg className="w-5 h-5 text-[var(--brand-red)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              {(t as any).company_stats?.location_label || "İstanbul, Türkiye Üretim Tesisleri"}
+            </span>
           </div>
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="stats-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {STATS.map((stat, idx) => {
-            const cardStyles = [
-              { border: "border-[var(--brand-red)]/30", hoverBorder: "hover:border-[var(--brand-red)]/70", shadow: "shadow-[0_8px_32px_rgba(227,0,15,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(227,0,15,0.3)]", glow: "from-[var(--brand-red)]/20", line: "border-[var(--brand-red)]" },
-              { border: "border-blue-500/30", hoverBorder: "hover:border-blue-500/70", shadow: "shadow-[0_8px_32px_rgba(59,130,246,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(59,130,246,0.3)]", glow: "from-blue-500/20", line: "border-blue-500" },
-              { border: "border-emerald-500/30", hoverBorder: "hover:border-emerald-500/70", shadow: "shadow-[0_8px_32px_rgba(16,185,129,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(16,185,129,0.3)]", glow: "from-emerald-500/20", line: "border-emerald-500" },
-              { border: "border-amber-500/30", hoverBorder: "hover:border-amber-500/70", shadow: "shadow-[0_8px_32px_rgba(245,158,11,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(245,158,11,0.3)]", glow: "from-amber-500/20", line: "border-amber-500" },
-              { border: "border-purple-500/30", hoverBorder: "hover:border-purple-500/70", shadow: "shadow-[0_8px_32px_rgba(168,85,247,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(168,85,247,0.3)]", glow: "from-purple-500/20", line: "border-purple-500" },
-              { border: "border-cyan-500/30", hoverBorder: "hover:border-cyan-500/70", shadow: "shadow-[0_8px_32px_rgba(6,182,212,0.15)]", hoverShadow: "hover:shadow-[0_8px_32px_rgba(6,182,212,0.3)]", glow: "from-cyan-500/20", line: "border-cyan-500" }
-            ];
-            const style = cardStyles[idx % cardStyles.length];
-            
+            const isHighlight = idx === 0;
             return (
-            <div key={idx} className={`bg-black/40 backdrop-blur-xl p-6 md:p-8 rounded-3xl border ${style.border} ${style.hoverBorder} hover:bg-black/50 ${style.shadow} ${style.hoverShadow} transition-all duration-500 group relative overflow-hidden hover:-translate-y-1`}>
-              <div className={`absolute -inset-x-0 -bottom-1/2 h-full bg-gradient-to-t ${style.glow} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}></div>
-              <div className={`stat-item flex flex-col items-start border-l-4 ${style.line} pl-5 relative z-10`}>
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 tracking-tighter flex items-center group-hover:scale-105 transition-transform duration-300 origin-left drop-shadow-lg">
-                  <span ref={(el) => { numberRefs.current[idx] = el; }} suppressHydrationWarning>
-                    {stat.value.toLocaleString('tr-TR')}{statData[idx]?.suffix || stat.suffix}
-                  </span>
-                </div>
-                <div className="text-white/70 text-xs md:text-sm font-semibold tracking-wider uppercase group-hover:text-white transition-colors duration-300 drop-shadow-md">
-                  {statData[idx]?.label || stat.label}
+              <div 
+                key={idx} 
+                className="stat-card group relative bg-white/[0.02] backdrop-blur-3xl hover:bg-white/[0.05] border border-white/5 hover:border-white/15 rounded-[1.5rem] overflow-hidden transition-all duration-500 flex flex-col justify-end items-start p-6 md:p-8 min-h-[140px] md:min-h-[160px]"
+              >
+                {/* Inner glow on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-red)]/0 via-transparent to-white/0 group-hover:from-[var(--brand-red)]/10 transition-colors duration-700"></div>
+                
+                <div className="relative z-10 w-full">
+                  <div className={`font-black tracking-tighter mb-2 md:mb-3 transition-transform duration-500 group-hover:scale-105 origin-bottom-left ${isHighlight ? 'text-5xl md:text-6xl text-[var(--brand-red)]' : 'text-4xl md:text-5xl text-white'}`}>
+                    <span ref={(el) => { numberRefs.current[idx] = el; }} suppressHydrationWarning>
+                      {/* GSAP fills this */}
+                    </span>
+                  </div>
+                  <div className="w-12 h-0.5 bg-white/20 mb-2 md:mb-3 group-hover:bg-[var(--brand-red)]/50 transition-colors duration-500"></div>
+                  <div className={`text-white/70 uppercase tracking-widest transition-colors duration-300 group-hover:text-white ${isHighlight ? 'text-sm md:text-base font-bold' : 'text-xs md:text-sm font-medium'}`}>
+                    {statData[idx]?.label || stat.label}
+                  </div>
                 </div>
               </div>
-            </div>
-          )})}
+            );
+          })}
         </div>
+
       </div>
     </section>
   );

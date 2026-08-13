@@ -211,6 +211,7 @@
     "title_part1": "Aydınlatmada",
     "title_part2": "Türkiye'nin",
     "title_part3": "Gururu",
+    "location_label": "İstanbul, Türkiye Üretim Tesisleri",
     "desc": "Sektördeki yolculuğuna 1997 yılında başlayan Kendal Elektrik A.Ş., bugün geldiği noktada üretim, kalite ve inovasyon gücüyle Türkiye aydınlatma pazarının en büyük üreticilerinden biri konumundadır. Sürekli gelişen teknolojik altyapımız, taviz vermediğimiz kalite standartlarımız ve her geçen gün büyüyen üretim hedeflerimizle; sadece ülkemizde değil, küresel ölçekte de dünya standartlarında bir değer yaratmaya tüm hızımızla devam ediyoruz.",
     "stats": [
       {
@@ -226,7 +227,7 @@
         "suffix": "+"
       },
       {
-        "label": "Milyon+ Yıllık Üretim Kapasitesi",
+        "label": "Yıllık Üretim Kapasitesi",
         "suffix": ""
       },
       {
