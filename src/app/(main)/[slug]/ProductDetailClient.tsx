@@ -171,95 +171,40 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
 
                 <div className="flex flex-wrap gap-3">
                   {(() => {
-                    // Pre-process all variations to determine if we need to append Watt/Socket
-                    const hasLightColors = variations.some(v => {
-                      const n = (v.name.tr || "").toUpperCase();
-                      return n.match(/\b\d{4}K\b/) || n.includes("SARI") || n.includes("GÜN") || n.includes("GUN") || n.includes("ILIK") || n.includes("ARA");
-                    });
-
                     const variantData = variations.map(variant => {
-                      const name = (variant.name.tr || "").toUpperCase();
-                      const nameUpper = name.toUpperCase();
-                      let detectedCasing = "";
-                      if (nameUpper.includes("KROM")) detectedCasing = "Krom Kasa";
-                      else if (nameUpper.includes("ESKİTME") || nameUpper.includes("ESKITME")) detectedCasing = "Eskitme Kasa";
-                      else if (nameUpper.includes("SILVER") || nameUpper.includes("GÜMÜŞ") || nameUpper.includes("GUMUS")) detectedCasing = "Silver Kasa";
-                      else if (nameUpper.includes("SATEN")) detectedCasing = "Saten Kasa";
-                      else if (nameUpper.includes("SİYAH") || nameUpper.includes("SIYAH")) detectedCasing = "Siyah Kasa";
-                      else if (nameUpper.includes("GOLD") || nameUpper.includes("ALTIN")) detectedCasing = "Gold Kasa";
-                      else if (nameUpper.includes("BAKIR")) detectedCasing = "Bakır Kasa";
-                      else if (nameUpper.includes("BRONZ")) detectedCasing = "Bronz Kasa";
-                      else if (nameUpper.includes("KAHVE")) detectedCasing = "Kahve Kasa";
-                      else if (nameUpper.includes("MAVİ") || nameUpper.includes("MAVI")) detectedCasing = "Mavi";
-                      else if (nameUpper.includes("YEŞİL") || nameUpper.includes("YESIL")) detectedCasing = "Yeşil";
-                      else if (nameUpper.includes("KIRMIZI")) detectedCasing = "Kırmızı";
-                      else if (nameUpper.includes("PEMBE")) detectedCasing = "Pembe";
-                      else if (nameUpper.includes("TURUNCU")) detectedCasing = "Turuncu";
-                      else if (nameUpper.match(/BEYAZ.*BEYAZ/) || (nameUpper.includes("BEYAZ") && !variant.model.toUpperCase().includes("BEYAZ"))) detectedCasing = "Beyaz Kasa";
-
-                      let colorTemp = variant.model;
-                      let dotColor = 'bg-zinc-200';
-                      
-                      const match = name.match(/\b(\d{4})K\b/);
-                      if (match) {
-                        colorTemp = match[0];
-                        if (colorTemp.includes('2700K')) { colorTemp = 'Sıcak Işık (2700K)'; dotColor = 'bg-[#FFA957]'; }
-                        else if (colorTemp.includes('3000K')) { colorTemp = 'Günışığı (3000K)'; dotColor = 'bg-[#FFB46B]'; }
-                        else if (colorTemp.includes('4000K')) { colorTemp = 'Ararenk (4000K)'; dotColor = 'bg-[#FFEDC2]'; }
-                        else if (colorTemp.includes('6500K')) { colorTemp = 'Beyaz (6500K)'; dotColor = 'bg-[#E4F1FE]'; }
-                      } else if (hasLightColors && (name.includes("SARI") || name.includes("GÜN") || name.includes("GUN"))) {
-                        colorTemp = "Günışığı (3000K)";
-                        dotColor = 'bg-[#FFB46B]';
-                      } else if (hasLightColors && (name.includes("ILIK") || name.includes("ARA"))) {
-                        colorTemp = "Ararenk (4000K)";
-                        dotColor = 'bg-[#FFEDC2]';
-                      } else if (hasLightColors && name.includes("BEYAZ")) {
-                        colorTemp = "Beyaz (6500K)";
-                        dotColor = 'bg-[#E4F1FE]';
-                      } else {
-                        if (detectedCasing) {
-                          colorTemp = detectedCasing;
-                          detectedCasing = ""; // Clear so it isn't appended twice
+                      const opts = variant.variantOptions || { light: null, casing: null, watt: null, socket: null };
+                      let colorTemp = opts.light || opts.casing;
+                      if (!colorTemp) {
+                        const nameParts = (variant.name.tr || "").trim().split(' ');
+                        const lastWord = nameParts[nameParts.length - 1];
+                        if (lastWord && !lastWord.match(/\d+W/i) && !variant.model.includes(lastWord)) {
+                          colorTemp = lastWord.charAt(0).toUpperCase() + lastWord.slice(1).toLowerCase();
                         } else {
-                          const words = name.trim().split(' ');
-                          colorTemp = words[words.length - 1].replace(/[^a-zA-ZğüşıöçĞÜŞİÖÇ]/g, '');
+                          colorTemp = "Standart";
                         }
-
-                        const ctUpper = colorTemp.toUpperCase();
-                        if (ctUpper.includes("BEYAZ")) dotColor = 'bg-white border-zinc-200';
-                        else if (ctUpper.includes("KROM")) dotColor = 'bg-slate-300';
-                        else if (ctUpper.includes("SATEN") || ctUpper.includes("SILVER")) dotColor = 'bg-stone-300';
-                        else if (ctUpper.includes("SİYAH") || ctUpper.includes("SIYAH")) dotColor = 'bg-zinc-900';
-                        else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) dotColor = 'bg-yellow-400';
-                        else if (ctUpper.includes("BAKIR")) dotColor = 'bg-orange-600';
-                        else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) dotColor = 'bg-yellow-700';
-                        else if (ctUpper.includes("MAVİ") || ctUpper.includes("MAVI")) dotColor = 'bg-blue-500';
-                        else if (ctUpper.includes("YEŞİL") || ctUpper.includes("YESIL")) dotColor = 'bg-green-500';
-                        else if (ctUpper.includes("KIRMIZI")) dotColor = 'bg-red-500';
-                        else if (ctUpper.includes("PEMBE")) dotColor = 'bg-pink-500';
-                        else if (ctUpper.includes("TURUNCU")) dotColor = 'bg-orange-500';
                       }
-
-                      // Extract Wattage
-                      let watt = "";
-                      const wattMatch = name.match(/\b(\d+W)\b/i);
-                      if (wattMatch) watt = wattMatch[1];
-                      else {
-                        const wattAttr = variant.attributes?.tr?.find(a => a.label === "Watt" || a.label === "Güç");
-                        if (wattAttr && wattAttr.value && wattAttr.value !== "N/A") watt = wattAttr.value.toUpperCase();
-                      }
-                      watt = watt.replace(/\s+W$/, 'W');
-
-                      // Extract Socket
-                      let socket = "";
-                      const socketMatch = name.match(/\b(E14|E27|GU10|GU\s*5\.3|G9|G4)\b/i);
-                      if (socketMatch) socket = socketMatch[1].replace(/\s+/g, '');
-                      else {
-                        const socketAttr = variant.attributes?.tr?.find(a => a.label === "Duy");
-                        if (socketAttr && socketAttr.value && socketAttr.value !== "N/A") socket = socketAttr.value.toUpperCase().replace(/\s+/g, '');
-                      }
-
-                      // Return final object
+                      const detectedCasing = opts.casing || "";
+                      const watt = opts.watt || "";
+                      const socket = opts.socket || "";
+                      
+                      let dotColor = 'bg-zinc-200';
+                      const ctUpper = colorTemp.toUpperCase();
+                      if (ctUpper.includes("2700K")) dotColor = 'bg-[#FFA957]';
+                      else if (ctUpper.includes("3000K") || ctUpper.includes("GÜNIŞIĞI") || ctUpper.includes("GUNISIGI") || ctUpper.includes("GÜN IŞIĞI")) dotColor = 'bg-[#FFB46B]';
+                      else if (ctUpper.includes("4000K") || ctUpper.includes("ARARENK")) dotColor = 'bg-[#FFEDC2]';
+                      else if (ctUpper.includes("6500K")) dotColor = 'bg-[#E4F1FE]';
+                      else if (ctUpper.includes("BEYAZ")) dotColor = 'bg-white border-zinc-200';
+                      else if (ctUpper.includes("KROM")) dotColor = 'bg-slate-300';
+                      else if (ctUpper.includes("SATEN") || ctUpper.includes("SILVER") || ctUpper.includes("GÜMÜŞ") || ctUpper.includes("GUMUS")) dotColor = 'bg-stone-300';
+                      else if (ctUpper.includes("SİYAH") || ctUpper.includes("SIYAH")) dotColor = 'bg-zinc-900';
+                      else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) dotColor = 'bg-yellow-400';
+                      else if (ctUpper.includes("BAKIR")) dotColor = 'bg-orange-600';
+                      else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) dotColor = 'bg-yellow-700';
+                      else if (ctUpper.includes("MAVİ") || ctUpper.includes("MAVI")) dotColor = 'bg-blue-500';
+                      else if (ctUpper.includes("YEŞİL") || ctUpper.includes("YESIL")) dotColor = 'bg-green-500';
+                      else if (ctUpper.includes("KIRMIZI")) dotColor = 'bg-red-500';
+                      else if (ctUpper.includes("PEMBE")) dotColor = 'bg-pink-500';
+                      else if (ctUpper.includes("TURUNCU")) dotColor = 'bg-orange-500';
 
                       return { variant, colorTemp, dotColor, watt, socket, detectedCasing };
                     });
@@ -285,11 +230,11 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                       let finalLabel = colorTemp;
                       if (colorCounts[colorTemp] > 1) {
                         const parts = [];
-                        if (watt) parts.push(watt);
-                        if (detectedCasing) parts.push(detectedCasing);
-                        if (socket) parts.push(socket);
+                        if (watt && watt !== colorTemp) parts.push(watt);
+                        if (detectedCasing && detectedCasing !== colorTemp) parts.push(detectedCasing);
+                        if (socket && socket !== colorTemp) parts.push(socket);
                         parts.push(colorTemp);
-                        finalLabel = parts.join(' - ');
+                        finalLabel = Array.from(new Set(parts)).join(' - ');
                       }
 
                       return (

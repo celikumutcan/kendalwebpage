@@ -15,6 +15,12 @@ export interface Product {
   attributes: { tr: ProductAttribute[]; en: ProductAttribute[] };
   category?: { tr: string[]; en: string[] };
   brand?: string;
+  variantOptions?: {
+    watt: string | null;
+    socket: string | null;
+    light: string | null;
+    casing: string | null;
+  };
 }
 
 // id -> Product
