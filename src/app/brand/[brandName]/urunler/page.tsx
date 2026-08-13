@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
@@ -30,7 +30,9 @@ export default async function BrandProductsPage({
       <div className="max-w-7xl mx-auto">
         <BrandProductsHeader brandName={brandName} />
 
-        <CategoryFirstShowcase products={allProducts} brandName={brandName} />
+        <Suspense fallback={<div className="py-24 text-center text-zinc-500">Ürünler Yükleniyor...</div>}>
+          <CategoryFirstShowcase products={allProducts} brandName={brandName} />
+        </Suspense>
       </div>
     </div>
   );
