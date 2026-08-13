@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -12,17 +12,43 @@ interface ProductDetailClientProps {
   brandName?: "k2" | "vanti" | "global";
 }
 
+const VANTI_VIDEOS: Record<string, string> = {
+  "KCF271": "4OztFcGyGwQ",
+  "KCF272L": "MHKlz9hlICs",
+  "KCF272ST": "6LXjmS5rIIA",
+  "KCF272": "rfhARix9Sxk",
+  "KCF276K": "fIa_DqQUTw4",
+  "KCF276": "q8hgLksbSyM",
+  "KCF273": "PdILKXirxbo",
+  "KCF278": "L7lYf_aqNgs",
+  "KCF279": "Qq1gsLUXjv0",
+  "KCF473": "16yMkTg7xhk",
+  "KCF281": "1Go55UTa7cw",
+  "KCF283": "6-V_VxyO1rA",
+  "KCF284": "seizCrmSe94",
+  "KCF285": "Rkp7jKK--6o",
+  "KCF288": "qEEGqMZmeeY",
+  "KCF290": "q9yFUANQ_eU",
+  "KCF295": "J4z5qYJlPdM",
+  "KCF303": "pS72bT__0hY",
+  "KCF321": "yF6iRNek5b4"
+};
+
 export function ProductDetailClient({ product, brandName }: ProductDetailClientProps) {
   const router = useRouter();
   const { language } = useLanguage();
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const name = product.name[language] || product.name.tr;
   const attributes = product.attributes[language] || product.attributes.tr;
   const imageUrl = getProductImageUrl(product.image);
 
-  const isLight = !!brandName;
   const isK2 = brandName === "k2";
   const isVanti = brandName === "vanti";
   const isGlobal = brandName === "global";
+  const isLight = isK2 || isVanti;
+  
+  const videoMatchKey = Object.keys(VANTI_VIDEOS).find(key => product.model.includes(key) || name.includes(key));
+  const videoId = videoMatchKey ? VANTI_VIDEOS[videoMatchKey] : null;
 
   // Dynamic Theme Colors
   let themeColor = "bg-white/20"; // default for dark
@@ -139,34 +165,142 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                     </svg>
                   </div>
                   <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                    {language === "tr" ? "Mevcut Modeller" : "Available Models"}
+                    {language === "tr" ? "Seçenekler" : "Options"}
                   </h3>
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  {variations.map(variant => {
-                    const isSelected = variant.id === product.id;
-                    const categoryName = variant.category?.tr?.[0];
-                    const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
-                    const variantSlug = getSlugByProductId(variant.id) || variant.id;
+                  {(() => {
+                    // Pre-process all variations to determine if we need to append Watt/Socket
+                    const hasLightColors = variations.some(v => {
+                      const n = (v.name.tr || "").toUpperCase();
+                      return n.match(/\b\d{4}K\b/) || n.includes("SARI") || n.includes("GÜN") || n.includes("GUN") || n.includes("ILIK") || n.includes("ARA");
+                    });
 
-                    const variantUrl = isLight && process.env.NODE_ENV === "production"
-                      ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
-                      : `/urunler/${categorySlug}/${variantSlug}`;
+                    const variantData = variations.map(variant => {
+                      const name = (variant.name.tr || "").toUpperCase();
+                      const nameUpper = name.toUpperCase();
+                      let detectedCasing = "";
+                      if (nameUpper.includes("KROM")) detectedCasing = "Krom Kasa";
+                      else if (nameUpper.includes("ESKİTME") || nameUpper.includes("ESKITME")) detectedCasing = "Eskitme Kasa";
+                      else if (nameUpper.includes("SILVER") || nameUpper.includes("GÜMÜŞ") || nameUpper.includes("GUMUS")) detectedCasing = "Silver Kasa";
+                      else if (nameUpper.includes("SATEN")) detectedCasing = "Saten Kasa";
+                      else if (nameUpper.includes("SİYAH") || nameUpper.includes("SIYAH")) detectedCasing = "Siyah Kasa";
+                      else if (nameUpper.includes("GOLD") || nameUpper.includes("ALTIN")) detectedCasing = "Gold Kasa";
+                      else if (nameUpper.includes("BAKIR")) detectedCasing = "Bakır Kasa";
+                      else if (nameUpper.includes("BRONZ")) detectedCasing = "Bronz Kasa";
+                      else if (nameUpper.includes("KAHVE")) detectedCasing = "Kahve Kasa";
+                      else if (nameUpper.includes("MAVİ") || nameUpper.includes("MAVI")) detectedCasing = "Mavi Kasa/Dekor";
+                      else if (nameUpper.includes("YEŞİL") || nameUpper.includes("YESIL")) detectedCasing = "Yeşil Kasa/Dekor";
+                      else if (nameUpper.includes("KIRMIZI")) detectedCasing = "Kırmızı Kasa/Dekor";
+                      else if (nameUpper.includes("PEMBE")) detectedCasing = "Pembe Kasa/Dekor";
+                      else if (nameUpper.match(/BEYAZ.*BEYAZ/) || (nameUpper.includes("BEYAZ") && !variant.model.toUpperCase().includes("BEYAZ"))) detectedCasing = "Beyaz Kasa";
 
-                    return (
-                      <Link
-                        key={variant.id}
-                        href={variantUrl}
-                        className={`px-5 py-3 rounded-2xl text-sm font-bold transition-all duration-300 border ${isSelected
-                          ? (isLight ? `${themeColor} text-white border-transparent ${themeGlow} scale-[1.02]` : "bg-white text-black border-transparent shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-[1.02]")
-                          : (isLight ? "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:scale-[1.02]" : "bg-zinc-900/50 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white")
-                          }`}
-                      >
-                        {variant.model}
-                      </Link>
-                    );
-                  })}
+                      let colorTemp = variant.model;
+                      let dotColor = 'bg-zinc-200';
+                      
+                      const match = name.match(/\b(\d{4})K\b/);
+                      if (match) {
+                        colorTemp = match[0];
+                        if (colorTemp.includes('2700K')) { colorTemp = 'Sıcak Işık (2700K)'; dotColor = 'bg-[#FFA957]'; }
+                        else if (colorTemp.includes('3000K')) { colorTemp = 'Günışığı (3000K)'; dotColor = 'bg-[#FFB46B]'; }
+                        else if (colorTemp.includes('4000K')) { colorTemp = 'Ararenk (4000K)'; dotColor = 'bg-[#FFEDC2]'; }
+                        else if (colorTemp.includes('6500K')) { colorTemp = 'Beyaz (6500K)'; dotColor = 'bg-[#E4F1FE]'; }
+                      } else if (hasLightColors && (name.includes("SARI") || name.includes("GÜN") || name.includes("GUN"))) {
+                        colorTemp = "Günışığı (3000K)";
+                        dotColor = 'bg-[#FFB46B]';
+                      } else if (hasLightColors && (name.includes("ILIK") || name.includes("ARA"))) {
+                        colorTemp = "Ararenk (4000K)";
+                        dotColor = 'bg-[#FFEDC2]';
+                      } else if (hasLightColors && name.includes("BEYAZ")) {
+                        colorTemp = "Beyaz (6500K)";
+                        dotColor = 'bg-[#E4F1FE]';
+                      } else {
+                        if (detectedCasing) {
+                          colorTemp = detectedCasing;
+                          detectedCasing = ""; // Clear so it isn't appended twice
+                        } else {
+                          const words = name.trim().split(' ');
+                          colorTemp = words[words.length - 1].replace(/[^a-zA-ZğüşıöçĞÜŞİÖÇ]/g, '');
+                        }
+
+                        const ctUpper = colorTemp.toUpperCase();
+                        if (ctUpper.includes("BEYAZ")) dotColor = 'bg-white border-zinc-200';
+                        else if (ctUpper.includes("KROM")) dotColor = 'bg-slate-300';
+                        else if (ctUpper.includes("SATEN") || ctUpper.includes("SILVER")) dotColor = 'bg-stone-300';
+                        else if (ctUpper.includes("SİYAH") || ctUpper.includes("SIYAH")) dotColor = 'bg-zinc-900';
+                        else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) dotColor = 'bg-yellow-400';
+                        else if (ctUpper.includes("BAKIR")) dotColor = 'bg-orange-600';
+                        else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) dotColor = 'bg-yellow-700';
+                      }
+
+                      // Extract Wattage
+                      let watt = "";
+                      const wattMatch = name.match(/\b(\d+W)\b/i);
+                      if (wattMatch) watt = wattMatch[1];
+                      else {
+                        const wattAttr = variant.attributes?.tr?.find(a => a.label === "Watt" || a.label === "Güç");
+                        if (wattAttr && wattAttr.value && wattAttr.value !== "N/A") watt = wattAttr.value.toUpperCase();
+                      }
+                      watt = watt.replace(/\s+W$/, 'W');
+
+                      // Extract Socket
+                      let socket = "";
+                      const socketMatch = name.match(/\b(E14|E27|GU10|GU\s*5\.3|G9|G4)\b/i);
+                      if (socketMatch) socket = socketMatch[1].replace(/\s+/g, '');
+                      else {
+                        const socketAttr = variant.attributes?.tr?.find(a => a.label === "Duy");
+                        if (socketAttr && socketAttr.value && socketAttr.value !== "N/A") socket = socketAttr.value.toUpperCase().replace(/\s+/g, '');
+                      }
+
+                      // Return final object
+
+                      return { variant, colorTemp, dotColor, watt, socket, detectedCasing };
+                    });
+
+                    // Count colorTemp occurrences
+                    const colorCounts: Record<string, number> = {};
+                    variantData.forEach(d => {
+                      colorCounts[d.colorTemp] = (colorCounts[d.colorTemp] || 0) + 1;
+                    });
+
+                    // Render variations with dynamic labels
+                    return variantData.map(({ variant, colorTemp, dotColor, watt, socket, detectedCasing }) => {
+                      const isSelected = variant.id === product.id;
+                      const categoryName = variant.category?.tr?.[0];
+                      const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
+                      const variantSlug = getSlugByProductId(variant.id) || variant.id;
+
+                      const variantUrl = isLight && process.env.NODE_ENV === "production"
+                        ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
+                        : `/urunler/${categorySlug}/${variantSlug}`;
+
+                      // Build the final label dynamically
+                      let finalLabel = colorTemp;
+                      if (colorCounts[colorTemp] > 1) {
+                        const parts = [];
+                        if (watt) parts.push(watt);
+                        if (detectedCasing) parts.push(detectedCasing);
+                        if (socket) parts.push(socket);
+                        parts.push(colorTemp);
+                        finalLabel = parts.join(' - ');
+                      }
+
+                      return (
+                        <Link
+                          key={variant.id}
+                          href={variantUrl}
+                          className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-bold transition-all duration-300 border ${isSelected
+                            ? (isLight ? `${themeColor} text-white border-transparent ${themeGlow} scale-[1.02]` : "bg-white text-black border-transparent shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-[1.02]")
+                            : (isLight ? "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:scale-[1.02]" : "bg-zinc-900/50 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white")
+                            }`}
+                        >
+                          <span className={`w-3 h-3 rounded-full ${dotColor} border border-black/10 shadow-sm flex-shrink-0`} />
+                          <span>{finalLabel}</span>
+                        </Link>
+                      );
+                    });
+                  })()}
                 </div>
               </div>
             )}
@@ -184,10 +318,10 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                 </h3>
               </div>
 
-              {attributes && attributes.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A").length > 0 ? (
+              {attributes && attributes.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color").length > 0 ? (
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {attributes
-                    .filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A")
+                    .filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color")
                     .map((attr, index) => {
                       const decodedValue = String(attr.value).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
                       return (
@@ -210,6 +344,54 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                 </div>
               )}
             </div>
+            
+            {/* Vanti Video Section */}
+            {videoId && (
+              <div className="mt-16 w-full">
+                <div className="flex items-center mb-6">
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
+                    <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
+                    {language === "tr" ? "Kurulum Videosu" : "Installation Video"}
+                  </h3>
+                </div>
+
+                <div className="w-full relative group">
+                  <div className={`absolute -inset-2 md:-inset-4 ${isLight ? 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100' : 'bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)]'} rounded-[2.5rem] md:rounded-[3rem] opacity-50 blur-2xl md:blur-3xl transition-opacity duration-700 animate-pulse pointer-events-none`} />
+                  
+                  <div className="w-full aspect-video rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.1)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsVideoPlaying(true)}>
+                    {!isVideoPlaying ? (
+                      <>
+                        <img 
+                          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                          alt="Video Thumbnail"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105 opacity-80 group-hover/video:opacity-100"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className={`w-20 h-20 ${isLight ? 'bg-blue-600' : 'bg-[var(--brand-red)]'} rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(0,0,0,0.6)] transform transition-transform duration-300 group-hover/video:scale-110`}>
+                            <svg className="w-8 h-8 text-white translate-x-[2px]" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </div>
+                        </div>
+                      </>
+                    ) : (
+                      <iframe
+                        className="w-full h-full object-cover"
+                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`}
+                        title="Kurulum Videosu"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
 
           </div>
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { getAssetPath } from "@/utils/basePath";
 import { Product, getSlugByProductId } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
@@ -15,6 +15,8 @@ interface CategoryFirstShowcaseProps {
 
 export default function CategoryFirstShowcase({ products, brandName }: CategoryFirstShowcaseProps) {
   const pathname = usePathname() || "";
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const isBrandRoute = pathname.includes("/brand/");
   
   const { t, language } = useLanguage();
@@ -32,9 +34,41 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
   };
 
   const isK2 = brandName === "k2";
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const [searchQuery, setSearchQuery] = useState("");
+  
+  const urlCategory = searchParams?.get("category") || null;
+  const urlPage = parseInt(searchParams?.get("page") || "1", 10) || 1;
+  const urlQuery = searchParams?.get("q") || "";
+
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(urlCategory);
+  const [currentPage, setCurrentPage] = useState<number>(urlPage);
+  const [searchQuery, setSearchQuery] = useState(urlQuery);
+
+  useEffect(() => {
+    const cat = searchParams?.get("category") || null;
+    const page = parseInt(searchParams?.get("page") || "1", 10) || 1;
+    const q = searchParams?.get("q") || "";
+    
+    setSelectedCategory(cat);
+    setCurrentPage(page);
+    setSearchQuery(q);
+  }, [searchParams]);
+
+  const updateUrl = (cat: string | null, page: number, query: string) => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      if (cat) params.set("category", cat);
+      else params.delete("category");
+
+      if (page > 1) params.set("page", page.toString());
+      else params.delete("page");
+
+      if (query) params.set("q", query);
+      else params.delete("q");
+
+      router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+    }
+  };
+
   const itemsPerPage = 12;
 
   // Generate pagination array with ellipses
@@ -95,11 +129,13 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     const categoryProducts = products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
     
     // Group products by their base model (first word of name, e.g. "GDL414" from "GDL414 25W...")
-    const uniqueGroups = new Map<string, Product>();
+    const uniqueGroups = new Map<string, { product: Product, variants: Product[] }>();
     for (const p of categoryProducts) {
       const baseModel = (p.name.tr || "").split(' ')[0];
       if (!uniqueGroups.has(baseModel)) {
-        uniqueGroups.set(baseModel, p);
+        uniqueGroups.set(baseModel, { product: p, variants: [p] });
+      } else {
+        uniqueGroups.get(baseModel)!.variants.push(p);
       }
     }
     
@@ -110,7 +146,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     if (!searchQuery.trim()) return [];
     const query = searchQuery.toLowerCase().trim();
     
-    const uniqueGroups = new Map<string, Product>();
+    const uniqueGroups = new Map<string, { product: Product, variants: Product[] }>();
     
     for (const p of products) {
       const model = (p.model || "").toLowerCase();
@@ -119,7 +155,9 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
       if (model.includes(query) || name.includes(query)) {
         const baseModel = (p.name?.tr || "").split(' ')[0];
         if (!uniqueGroups.has(baseModel)) {
-          uniqueGroups.set(baseModel, p);
+          uniqueGroups.set(baseModel, { product: p, variants: [p] });
+        } else {
+          uniqueGroups.get(baseModel)!.variants.push(p);
         }
       }
     }
@@ -138,25 +176,24 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     setSelectedCategory(cat);
     setCurrentPage(1);
     setSearchQuery("");
+    updateUrl(cat, 1, "");
   };
 
   const handleBack = () => {
     setSelectedCategory(null);
     setCurrentPage(1);
     setSearchQuery("");
+    updateUrl(null, 1, "");
   };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(e.target.value);
+    const val = e.target.value;
+    setSearchQuery(val);
     setCurrentPage(1);
+    updateUrl(selectedCategory, 1, val);
   };
 
   const activeColorClasses = isK2 
-    ? "bg-orange-500 text-white shadow-orange-500/30 border-orange-500" 
-    : brandName === "vanti" 
-      ? "bg-blue-600 text-white shadow-blue-500/30 border-blue-600"
-      : "bg-[#FFDA51] text-zinc-900 shadow-[#FFDA51]/30 border-[#FFDA51]";
-
   return (
     <section className="pt-4 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
@@ -183,7 +220,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
             />
             {searchQuery && (
               <button 
-                onClick={() => { setSearchQuery(""); setCurrentPage(1); }}
+                onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedCategory, 1, ""); }}
                 className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 transition-colors"
               >
                 <svg className="h-5 w-5 bg-zinc-100 rounded-full p-1 hover:bg-zinc-200 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -263,7 +300,9 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              {displayedProducts.map((product) => {
+              {displayedProducts.map((group) => {
+                const product = group.product;
+                const variants = group.variants;
                 const slug = getSlugByProductId(product.id) || product.id;
                 
                 const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -296,6 +335,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                           {product.name[language as keyof typeof product.name] || product.name.tr}
                         </h4>
                       </div>
+
                       <div className={`text-xs font-bold mt-4 flex items-center ${isK2 ? "text-orange-500" : "text-blue-500"}`}>
                         {showcaseTexts.view}
                         <svg className="w-4 h-4 ml-1 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -322,6 +362,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                       key={i} 
                       onClick={() => {
                         setCurrentPage(pageNum as number);
+                        updateUrl(selectedCategory, pageNum as number, searchQuery);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${
