@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug, getAllSlugs } from "@/data/products";
+import { getProductPdfFile } from "@/lib/getProductPdfForm";
 import { ProductDetailClient } from "./ProductDetailClient"; // Client component
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -37,6 +38,8 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   if (!product) {
     notFound();
   }
-  
-  return <ProductDetailClient product={product} />;
+
+  const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
+
+  return <ProductDetailClient product={product} pdfFormFile={pdfFormFile} />;
 }

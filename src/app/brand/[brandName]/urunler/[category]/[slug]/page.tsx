@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug } from "@/data/products";
+import { getProductPdfFile } from "@/lib/getProductPdfForm";
 import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient"; // Re-using the main client component
 
 export function generateStaticParams() {
@@ -38,8 +39,10 @@ export default async function BrandProductDetailPage({
   if (!product) {
     notFound();
   }
-  
+
+  const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
+
   // Here we re-use the exact same UI as the main site for the product detail.
   // The layout wrapper will automatically provide the BrandNavbar and BrandFooter.
-  return <ProductDetailClient product={product} brandName={resolvedParams.brandName as "k2" | "vanti" | "global"} />;
+  return <ProductDetailClient product={product} brandName={resolvedParams.brandName as "k2" | "vanti" | "global"} pdfFormFile={pdfFormFile} />;
 }

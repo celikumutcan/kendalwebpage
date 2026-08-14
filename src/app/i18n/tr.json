@@ -290,7 +290,8 @@
     "products_page": {
       "title": "Tüm Ürünlerimiz",
       "k2_desc": "K2 LED SYSTEMS güvencesiyle sunduğumuz tüm aydınlatma ürünlerini aşağıdan inceleyebilirsiniz.",
-      "vanti_desc": "VANTİ ile yaşam alanlarınıza değer katan tüm ürünlerimiz."
+      "vanti_desc": "VANTİ ile yaşam alanlarınıza değer katan tüm ürünlerimiz.",
+      "global_desc": "Global markasıyla dünyanın dört bir yanına sunduğumuz kaliteli ürünlerimizi aşağıdan inceleyebilirsiniz."
     },
     "showcase": {
       "product_count": "Ürün",

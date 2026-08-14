@@ -2,7 +2,8 @@ import React from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug } from "@/data/products";
-import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient"; 
+import { getProductPdfFile } from "@/lib/getProductPdfForm";
+import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient";
 
 export function generateStaticParams() {
   const { products, getSlugByProductId } = require("@/data/products");
@@ -37,6 +38,8 @@ export default async function MainProductDetailPage({
   if (!product) {
     notFound();
   }
-  
-  return <ProductDetailClient product={product} />;
+
+  const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
+
+  return <ProductDetailClient product={product} pdfFormFile={pdfFormFile} />;
 }

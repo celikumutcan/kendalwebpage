@@ -69,7 +69,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     }
   };
 
-  const itemsPerPage = 12;
+  const itemsPerPage = 15;
 
   // Generate pagination array with ellipses
   const getVisiblePages = (current: number, total: number) => {
@@ -259,7 +259,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
   return (
     <section className="pt-4 pb-12 px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1440px] mx-auto">
         
         {/* SEARCH BAR */}
         <div className="mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
@@ -297,7 +297,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
         {/* VIEW 1: CATEGORY CARDS */}
         {!activeCategory && !isSearching && (
           <div className="animate-in fade-in zoom-in duration-500">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
               {categoriesData.map((cat) => (
                 <button
                   key={cat.name}
@@ -354,91 +354,103 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 <div className="animate-in fade-in duration-700 relative sm:static">
                   <button
                     onClick={() => setIsFiltersOpen(!isFiltersOpen)}
-                    className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all duration-300 bg-white text-zinc-700 border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 shadow-sm hover:shadow`}
+                    className={`group flex items-center gap-2.5 px-5 py-3 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm ${
+                      isFiltersOpen
+                        ? (isK2 ? "bg-orange-600 text-white border-orange-600 shadow-lg shadow-orange-600/25" : "bg-blue-600 text-white border-blue-600 shadow-lg shadow-blue-600/25")
+                        : "bg-white/90 backdrop-blur-md text-zinc-700 border-zinc-200 hover:border-zinc-300 hover:-translate-y-0.5 hover:shadow-md"
+                    }`}
                   >
-                    <svg className="w-5 h-5 text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className={`w-4 h-4 transition-transform duration-300 ${isFiltersOpen ? "rotate-180 text-white" : "text-zinc-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                     </svg>
                     {(t as any).brand_pages?.showcase?.filters || "Filtrele"}
                     {(selectedCasings.length > 0 || selectedWatts.length > 0 || selectedSockets.length > 0) && (
-                      <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
-                        isK2 ? "bg-orange-100 text-orange-600" : brandName === "vanti" ? "bg-blue-100 text-blue-600" : "bg-yellow-100 text-yellow-700"
+                      <span className={`min-w-[1.25rem] h-5 px-1.5 rounded-full text-[11px] flex items-center justify-center ${
+                        isFiltersOpen ? "bg-white/25 text-white" : (isK2 ? "bg-orange-100 text-orange-600" : brandName === "vanti" ? "bg-blue-100 text-blue-600" : "bg-yellow-100 text-yellow-700")
                       }`}>
                         {selectedCasings.length + selectedWatts.length + selectedSockets.length}
                       </span>
                     )}
                   </button>
-                  
+
                   {isFiltersOpen && (
                     <>
-                      <div className="fixed inset-0 z-[90]" onClick={() => setIsFiltersOpen(false)}></div>
-                      <div className="absolute top-full left-0 sm:left-auto sm:right-0 mt-3 z-[100] bg-white rounded-[2rem] w-[calc(100vw-2rem)] max-w-4xl max-h-[80vh] flex flex-col shadow-2xl border border-zinc-200 animate-in slide-in-from-top-4 fade-in duration-200 overflow-hidden">
+                      <div className="fixed inset-0 z-[90] bg-zinc-900/10 backdrop-blur-[2px] animate-in fade-in duration-200" onClick={() => setIsFiltersOpen(false)}></div>
+                      <div className="absolute top-full left-0 sm:left-auto sm:right-0 mt-3 z-[100] bg-white/95 backdrop-blur-2xl rounded-[1.75rem] w-[calc(100vw-2rem)] max-w-3xl max-h-[80vh] flex flex-col shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] border border-zinc-100 ring-1 ring-black/[0.02] animate-in slide-in-from-top-3 fade-in zoom-in-95 duration-200 overflow-hidden">
                       {/* Header */}
-                      <div className="flex items-center justify-between p-5 border-b border-zinc-100">
-                        <h3 className="text-xl font-bold text-zinc-900">{(t as any).brand_pages?.showcase?.filters || "Filtreler"}</h3>
+                      <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100">
+                        <div>
+                          <h3 className="text-lg font-bold text-zinc-900 tracking-tight">{(t as any).brand_pages?.showcase?.filters || "Filtreler"}</h3>
+                          <p className="text-xs text-zinc-400 mt-0.5">
+                            {selectedCasings.length + selectedWatts.length + selectedSockets.length > 0
+                              ? `${selectedCasings.length + selectedWatts.length + selectedSockets.length} filtre seçili`
+                              : "Ürünleri daraltmak için filtre seçin"}
+                          </p>
+                        </div>
                         <button onClick={() => setIsFiltersOpen(false)} className="p-2 text-zinc-400 hover:text-zinc-700 bg-zinc-50 hover:bg-zinc-100 rounded-full transition-colors">
-                          <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                           </svg>
                         </button>
                       </div>
 
-                      {/* Tabs Header */}
-                      <div className="flex border-b border-zinc-100 px-5 gap-6">
-                        {[
-                          { id: "casings", label: "Renkler", show: availableFilters.casings.length > 0, count: selectedCasings.length },
-                          { id: "watts", label: "Güç", show: availableFilters.watts.length > 0, count: selectedWatts.length },
-                          { id: "sockets", label: "Duy Tipi", show: availableFilters.sockets.length > 0, count: selectedSockets.length }
-                        ].filter(t => t.show).map(tab => (
-                          <button
-                            key={tab.id}
-                            onClick={() => setActiveFilterTab(tab.id as any)}
-                            className={`py-4 text-sm font-bold transition-all relative ${
-                              activeFilterTab === tab.id ? (isK2 ? "text-orange-600" : "text-blue-600") : "text-zinc-500 hover:text-zinc-800"
-                            }`}
-                          >
-                            {tab.label}
-                            {tab.count > 0 && (
-                              <span className={`ml-1.5 px-1.5 py-0.5 rounded-full text-[10px] ${
-                                activeFilterTab === tab.id 
-                                  ? (isK2 ? "bg-orange-100 text-orange-700" : "bg-blue-100 text-blue-700") 
-                                  : "bg-zinc-100 text-zinc-600"
-                              }`}>
-                                {tab.count}
-                              </span>
-                            )}
-                            {activeFilterTab === tab.id && (
-                              <div className={`absolute bottom-0 left-0 right-0 h-0.5 rounded-t-full ${isK2 ? "bg-orange-600" : "bg-blue-600"}`} />
-                            )}
-                          </button>
-                        ))}
+                      {/* Tabs Header — segmented control */}
+                      <div className="px-6 pt-5">
+                        <div className="flex gap-1 p-1 bg-zinc-100/80 rounded-full">
+                          {[
+                            { id: "casings", label: "Renkler", show: availableFilters.casings.length > 0, count: selectedCasings.length },
+                            { id: "watts", label: "Güç", show: availableFilters.watts.length > 0, count: selectedWatts.length },
+                            { id: "sockets", label: "Duy Tipi", show: availableFilters.sockets.length > 0, count: selectedSockets.length }
+                          ].filter(t => t.show).map(tab => (
+                            <button
+                              key={tab.id}
+                              onClick={() => setActiveFilterTab(tab.id as any)}
+                              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
+                                activeFilterTab === tab.id
+                                  ? "bg-white text-zinc-900 shadow-sm"
+                                  : "text-zinc-500 hover:text-zinc-700"
+                              }`}
+                            >
+                              {tab.label}
+                              {tab.count > 0 && (
+                                <span className={`px-1.5 py-0.5 rounded-full text-[10px] leading-none ${
+                                  activeFilterTab === tab.id
+                                    ? (isK2 ? "bg-orange-100 text-orange-700" : "bg-blue-100 text-blue-700")
+                                    : "bg-zinc-200 text-zinc-600"
+                                }`}>
+                                  {tab.count}
+                                </span>
+                              )}
+                            </button>
+                          ))}
+                        </div>
                       </div>
 
                       {/* Body */}
-                      <div className="flex-1 overflow-y-auto p-5 scrollbar-thin scrollbar-thumb-zinc-200">
-                        
+                      <div className="flex-1 overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-zinc-200">
+
                         {/* Renkler Tab */}
                         {activeFilterTab === "casings" && availableFilters.casings.length > 0 && (
                           <div className="space-y-4 animate-in fade-in zoom-in-95 duration-200">
                             <div className="relative">
-                              <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                               </svg>
-                              <input 
-                                type="text" 
-                                placeholder="Renk ara..." 
+                              <input
+                                type="text"
+                                placeholder="Renk ara..."
                                 value={casingSearchQuery}
                                 onChange={(e) => setCasingSearchQuery(e.target.value)}
-                                className="w-full pl-9 pr-3 py-3 bg-zinc-50 border border-zinc-200 rounded-xl text-sm focus:outline-none focus:border-blue-400 focus:bg-white transition-colors"
+                                className="w-full pl-10 pr-4 py-3 bg-zinc-50 border border-zinc-200 rounded-full text-sm focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-400 focus:bg-white transition-all"
                               />
                             </div>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 pr-1">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pr-1">
                               {availableFilters.casings
                                 .filter(c => c.toLowerCase().includes(casingSearchQuery.toLowerCase()))
                                 .map(casing => (
-                                  <label key={casing} className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-colors border ${selectedCasings.includes(casing) ? (isK2 ? "border-orange-500 bg-orange-50" : "border-blue-600 bg-blue-50") : "border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"}`}>
-                                    <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${
-                                      selectedCasings.includes(casing) 
+                                  <label key={casing} className={`flex items-center gap-3 p-3.5 rounded-2xl cursor-pointer transition-all duration-200 border ${selectedCasings.includes(casing) ? (isK2 ? "border-orange-500/60 bg-orange-50 shadow-sm" : "border-blue-500/60 bg-blue-50 shadow-sm") : "border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"}`}>
+                                    <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-colors flex-shrink-0 ${
+                                      selectedCasings.includes(casing)
                                         ? (isK2 ? "bg-orange-500 border-orange-500" : "bg-blue-600 border-blue-600")
                                         : "border-zinc-300 bg-white"
                                     }`}>
@@ -451,7 +463,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                                     <span className={`text-sm flex-1 ${selectedCasings.includes(casing) ? "font-semibold text-zinc-900" : "text-zinc-600"}`}>
                                       {casing}
                                     </span>
-                                    <input 
+                                    <input
                                       type="checkbox"
                                       className="sr-only"
                                       checked={selectedCasings.includes(casing)}
@@ -470,11 +482,11 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                             </div>
                           </div>
                         )}
-                        
+
                         {/* Watts Tab */}
                         {activeFilterTab === "watts" && availableFilters.watts.length > 0 && (
                           <div className="animate-in fade-in zoom-in-95 duration-200">
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2.5">
                               {availableFilters.watts.map(watt => (
                                 <button
                                   key={watt}
@@ -482,10 +494,10 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                                     setSelectedWatts(prev => prev.includes(watt) ? prev.filter(w => w !== watt) : [...prev, watt]);
                                     setCurrentPage(1);
                                   }}
-                                  className={`px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 border ${
+                                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border ${
                                     selectedWatts.includes(watt)
-                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md" : "bg-blue-600 text-white border-blue-600 shadow-md"
-                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"
+                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md shadow-orange-600/20 scale-[1.03]" : "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20 scale-[1.03]"
+                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:-translate-y-0.5"
                                   }`}
                                 >
                                   {watt}
@@ -498,7 +510,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                         {/* Sockets Tab */}
                         {activeFilterTab === "sockets" && availableFilters.sockets.length > 0 && (
                           <div className="animate-in fade-in zoom-in-95 duration-200">
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2.5">
                               {availableFilters.sockets.map(socket => (
                                 <button
                                   key={socket}
@@ -506,10 +518,10 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                                     setSelectedSockets(prev => prev.includes(socket) ? prev.filter(s => s !== socket) : [...prev, socket]);
                                     setCurrentPage(1);
                                   }}
-                                  className={`px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 border ${
+                                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border ${
                                     selectedSockets.includes(socket)
-                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md" : "bg-blue-600 text-white border-blue-600 shadow-md"
-                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"
+                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md shadow-orange-600/20 scale-[1.03]" : "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20 scale-[1.03]"
+                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:-translate-y-0.5"
                                   }`}
                                 >
                                   {socket}
@@ -522,22 +534,22 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                       </div>
 
                       {/* Footer */}
-                      <div className="p-5 border-t border-zinc-100 flex gap-3 bg-zinc-50/50 rounded-b-[2rem]">
-                        <button 
+                      <div className="p-5 border-t border-zinc-100 flex gap-3 bg-zinc-50/60">
+                        <button
                           onClick={() => {
                             setSelectedCasings([]);
                             setSelectedWatts([]);
                             setSelectedSockets([]);
                             setCasingSearchQuery("");
                             setCurrentPage(1);
-                          }} 
-                          className="px-5 py-3 rounded-xl font-bold bg-white border border-zinc-200 text-zinc-700 hover:bg-zinc-50 transition-colors"
+                          }}
+                          className="px-5 py-3 rounded-full font-bold text-sm bg-white border border-zinc-200 text-zinc-700 hover:bg-zinc-100 hover:border-zinc-300 transition-colors"
                         >
                           Temizle
                         </button>
-                        <button 
-                          onClick={() => setIsFiltersOpen(false)} 
-                          className={`flex-1 px-5 py-3 rounded-xl font-bold text-white transition-colors shadow-lg ${isK2 ? "bg-orange-600 hover:bg-orange-700 shadow-orange-600/30" : "bg-blue-600 hover:bg-blue-700 shadow-blue-600/30"}`}
+                        <button
+                          onClick={() => setIsFiltersOpen(false)}
+                          className={`flex-1 px-5 py-3 rounded-full font-bold text-sm text-white transition-all duration-300 shadow-lg hover:-translate-y-0.5 ${isK2 ? "bg-orange-600 hover:bg-orange-700 shadow-orange-600/25" : "bg-blue-600 hover:bg-blue-700 shadow-blue-600/25"}`}
                         >
                           Uygula ({selectedCasings.length + selectedWatts.length + selectedSockets.length})
                         </button>
@@ -561,7 +573,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                 <p className="text-zinc-500 text-lg max-w-md mx-auto">{showcaseTexts.search_no_results_desc}</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
               {displayedProducts.map((group) => {
                 const product = group.product;
                 const variants = group.variants;

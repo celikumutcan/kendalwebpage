@@ -6,10 +6,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { Product, getProductImageUrl, products, getSlugByProductId } from "@/data/products";
+import { getAssetPath } from "@/utils/basePath";
 
 interface ProductDetailClientProps {
   product: Product;
   brandName?: "k2" | "vanti" | "global";
+  pdfFormFile?: string | null;
 }
 
 const VANTI_VIDEOS: Record<string, string> = {
@@ -34,7 +36,7 @@ const VANTI_VIDEOS: Record<string, string> = {
   "KCF321": "yF6iRNek5b4"
 };
 
-export function ProductDetailClient({ product, brandName }: ProductDetailClientProps) {
+export function ProductDetailClient({ product, brandName, pdfFormFile }: ProductDetailClientProps) {
   const router = useRouter();
   const { language } = useLanguage();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -101,10 +103,21 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
   const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
   const SectionDivider = () => (
-    <div className="w-full flex items-center justify-center opacity-80 -my-5 lg:-my-7">
-      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/40'}`}></div>
-      <div className={`w-2.5 h-2.5 rounded-full mx-5 shadow-sm ${isLight ? 'bg-zinc-400' : 'bg-white/40'}`}></div>
-      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-l ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/40'}`}></div>
+    <div className="w-full flex items-center justify-center opacity-90 -my-5 lg:-my-7">
+      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/35'}`}></div>
+      <div className={`w-2 h-2 rounded-full mx-5 ${isLight ? 'bg-zinc-400' : 'bg-white/40'}`}></div>
+      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-l ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/35'}`}></div>
+    </div>
+  );
+
+  const SectionHeader = ({ icon, title }: { icon: React.ReactNode; title: string }) => (
+    <div className="flex items-center gap-3 py-3 mb-8 justify-center">
+      <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white"}`}>
+        {icon}
+      </div>
+      <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
+        {title}
+      </h3>
     </div>
   );
 
@@ -208,70 +221,102 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
       <div className="relative z-10 container mx-auto max-w-7xl px-6">
 
         {/* Header Section: Back Button + Title */}
-        <div className="flex flex-col md:flex-row items-center justify-center relative mb-6 md:mb-8 gap-6 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center justify-center relative mb-8 md:mb-10 gap-6 md:gap-0">
 
           {/* Elegant Back Button */}
           <button
             onClick={() => router.back()}
-            className={`group flex items-center gap-3 w-fit transition-all duration-300 md:absolute md:left-0 z-20 ${isLight ? 'text-zinc-500 hover:text-zinc-900' : 'text-white/60 hover:text-white'}`}
+            className={`group flex items-center gap-2.5 w-fit rounded-full pl-2 pr-4 py-2 transition-all duration-300 md:absolute md:left-0 z-20 ${isLight ? 'text-zinc-500 hover:text-zinc-900 bg-white/70 hover:bg-white border border-zinc-200/80 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.08)]' : 'text-white/60 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/10'}`}
           >
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 ${isLight ? 'bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-zinc-200' : 'bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.05)]'}`}>
-              <svg className="w-5 h-5 -translate-x-0.5 group-hover:-translate-x-1.5 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-6 h-6 rounded-full flex items-center justify-center">
+              <svg className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <span className="font-semibold tracking-wide text-sm uppercase opacity-80 group-hover:opacity-100 transition-opacity">
+            <span className="font-semibold tracking-wide text-xs uppercase">
               {language === 'en' ? 'Go Back' : 'Geri Dön'}
             </span>
           </button>
 
-          {/* Epic Title with Gradient Fill & Shine */}
-          <h1 
-            itemProp="name" 
-            className={`text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight max-w-4xl text-center px-4 relative z-20 transition-all duration-500
-            ${isLight 
-              ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-700 to-zinc-900 drop-shadow-sm' 
-              : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-300 to-zinc-500 drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]'}`}
-          >
-            {name}
-          </h1>
+          <div className="flex flex-col items-center gap-3">
+            {/* Kicker */}
+            <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/70"}`}>
+              <span className={`w-1.5 h-1.5 rounded-full ${isLight ? themeColor : "bg-white"}`} />
+              {product.model}
+            </span>
+
+            {/* Title with Gradient Fill */}
+            <h1
+              itemProp="name"
+              className={`text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] max-w-4xl text-center px-4 relative z-20
+              ${isLight
+                ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-600'
+                : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-200 to-zinc-500 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]'}`}
+            >
+              {name}
+            </h1>
+          </div>
 
         </div>
 
         <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full max-w-5xl mx-auto gap-10 lg:gap-14">
 
           {/* 3. 3D PEDESTAL & PREMIUM IMAGE SHOWCASE */}
-          <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4">
-            
+          <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4 group/showcase">
+
             {/* The Floating Glow Behind Product */}
-            <div className="absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] bg-white/40 blur-[100px] rounded-full pointer-events-none z-0" />
-            
+            <div className={`absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] blur-[110px] rounded-full pointer-events-none z-0 transition-opacity duration-700 ${isLight ? 'bg-white/60' : 'bg-white/[0.07]'}`} />
+
             {/* The 3D Pedestal Floor (Reflective surface beneath the product) */}
-            <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[80%] max-w-[600px] h-[100px] rounded-[100%] blur-md z-0 opacity-60" 
-                 style={{ 
-                   background: isLight ? 'radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, transparent 70%)',
-                   transform: 'rotateX(75deg)' 
-                 }} 
+            <div className="absolute bottom-[-6%] left-1/2 -translate-x-1/2 w-[70%] max-w-[520px] h-[80px] rounded-[100%] blur-md z-0 opacity-70"
+                 style={{
+                   background: isLight ? 'radial-gradient(ellipse at center, rgba(0,0,0,0.12) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(255,255,255,0.12) 0%, transparent 70%)',
+                   transform: 'rotateX(75deg)'
+                 }}
             />
 
             {/* The Glassmorphism Box */}
-            <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-6 md:p-8 z-10 transition-all duration-700
-              ${isLight 
-                ? 'bg-white/50 backdrop-blur-3xl rounded-[3rem] border border-white shadow-[0_30px_80px_-20px_rgba(0,0,0,0.1)]' 
-                : 'bg-black/20 backdrop-blur-3xl rounded-[3rem] border border-white/10 shadow-[0_0_100px_rgba(0,0,0,0.8)] inset-0'
+            <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-8 md:p-10 z-10 rounded-[2.5rem] transition-all duration-500 group-hover/showcase:-translate-y-1.5
+              ${isLight
+                ? 'bg-white/60 backdrop-blur-2xl border border-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.15)]'
+                : 'bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_100px_-20px_rgba(0,0,0,0.9)]'
               }`}
             >
-              {/* Inner glowing accent for the product image box */}
-              <div className={`absolute inset-0 rounded-[3rem] opacity-30 bg-gradient-to-br ${isLight ? 'from-white via-transparent to-black/5' : 'from-white/20 via-transparent to-black'} pointer-events-none`} />
-              
+              {/* Subtle top sheen */}
+              <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/70 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
+
+              {/* Corner accent brackets */}
+              <div className={`absolute top-5 left-5 w-5 h-5 border-t-2 border-l-2 rounded-tl-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
+              <div className={`absolute bottom-5 right-5 w-5 h-5 border-b-2 border-r-2 rounded-br-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
+
               <img
                 itemProp="image"
                 src={imageUrl}
                 alt={name}
-                className={`w-full h-auto object-contain relative z-20 ${isLight ? 'mix-blend-multiply drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]'}`}
+                className={`w-full h-auto object-contain relative z-20 transition-transform duration-500 group-hover/showcase:scale-[1.03] ${isLight ? 'mix-blend-multiply drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)]'}`}
               />
             </div>
           </div>
+
+          {/* Ürün Bilgi Formu (PDF) */}
+          {pdfFormFile && (
+            <a
+              href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
+              download={pdfFormFile}
+              className={`group -mt-6 inline-flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm hover:-translate-y-0.5 ${isLight ? "bg-white text-zinc-800 border-zinc-200 hover:border-zinc-300 hover:shadow-md" : "bg-white/[0.04] text-white border-white/10 hover:bg-white/[0.08] hover:border-white/20"}`}
+            >
+              <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isLight ? themePillBg : "bg-white/10"}`}>
+                <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H8a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              <span>{language === "tr" ? "Ürün Bilgi Formu İndir" : "Download Product Info Sheet"}</span>
+              <svg className="w-4 h-4 opacity-40 -translate-x-1 group-hover:opacity-90 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          )}
+
           {/* Product Info & Specifications */}
           {variations.length > 1 && (
             <div className="w-full max-w-3xl flex flex-col items-center">
@@ -357,13 +402,18 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                   <Link
                     key={match.variant.id + "-" + label}
                     href={variantUrl}
-                    className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-bold transition-all duration-300 border ${isSelected
-                      ? (isLight ? `${themeColor} text-white border-transparent ${themeGlow} scale-[1.02]` : "bg-white text-black border-transparent shadow-[0_0_20px_rgba(255,255,255,0.2)] scale-[1.02]")
-                      : (isLight ? "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:scale-[1.02]" : "bg-zinc-900/50 text-zinc-400 border-zinc-800 hover:border-zinc-600 hover:text-white")
+                    className={`flex items-center gap-2.5 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${isSelected
+                      ? (isLight ? `${themeColor} text-white border-transparent ${themeGlow} scale-[1.03]` : "bg-white text-black border-transparent shadow-[0_0_25px_rgba(255,255,255,0.15)] scale-[1.03]")
+                      : (isLight ? "bg-white/70 text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-white hover:-translate-y-0.5" : "bg-white/[0.03] text-zinc-400 border-white/10 hover:border-white/25 hover:text-white hover:-translate-y-0.5")
                       }`}
                   >
                     {showColorDot && <span className={`w-3 h-3 rounded-full ${match.dotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
                     <span>{label}</span>
+                    {isSelected && (
+                      <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    )}
                   </Link>
                 );
               };
@@ -373,16 +423,14 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                   {/* Renk Seçenekleri */}
                   {uniqueColors.length > 1 && (
                     <div className="flex flex-col items-center">
-                      <div className="flex items-center mb-6">
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                          <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <SectionHeader
+                        title={language === "tr" ? "Renk Seçenekleri" : "Color Options"}
+                        icon={
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                           </svg>
-                        </div>
-                        <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                          {language === "tr" ? "Renk Seçenekleri" : "Color Options"}
-                        </h3>
-                      </div>
+                        }
+                      />
                       <div className="flex flex-wrap justify-center gap-3">
                         {uniqueColors.map(color => {
                           const match = getBestVariantMatch('colorTemp', color);
@@ -396,16 +444,14 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                   {/* Watt Seçenekleri */}
                   {uniqueWatts.length > 1 && (
                     <div className="flex flex-col items-center">
-                      <div className="flex items-center mb-6">
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                          <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <SectionHeader
+                        title={language === "tr" ? "Watt Seçenekleri" : "Wattage Options"}
+                        icon={
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                           </svg>
-                        </div>
-                        <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                          {language === "tr" ? "Watt Seçenekleri" : "Wattage Options"}
-                        </h3>
-                      </div>
+                        }
+                      />
                       <div className="flex flex-wrap justify-center gap-3">
                         {uniqueWatts.map(watt => {
                           const match = getBestVariantMatch('watt', watt);
@@ -419,16 +465,14 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                   {/* Duy Seçenekleri */}
                   {uniqueSockets.length > 1 && (
                     <div className="flex flex-col items-center">
-                      <div className="flex items-center mb-6">
-                        <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                          <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <SectionHeader
+                        title={language === "tr" ? "Duy Seçenekleri" : "Socket Options"}
+                        icon={
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                           </svg>
-                        </div>
-                        <h3 className={`text-lg font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                          {language === "tr" ? "Duy Seçenekleri" : "Socket Options"}
-                        </h3>
-                      </div>
+                        }
+                      />
                       <div className="flex flex-wrap justify-center gap-3">
                         {uniqueSockets.map(socket => {
                           const match = getBestVariantMatch('socket', socket);
@@ -449,7 +493,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
             const allAttrs = attributes || [];
             const rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
 
-            const featureLabels = ["Özellik", "Feature", "Açıklama", "Description"];
+            const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions"];
 
             const featureAttrs = rawSpecs.filter(attr => featureLabels.includes(attr.label));
             const specAttrs = rawSpecs.filter(attr => !featureLabels.includes(attr.label));
@@ -468,46 +512,70 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                 <SectionDivider />
 
                 {/* Technical Specs - Bento Box Grid */}
-                <div className="w-full">
-                  <div className="flex items-center mb-8 justify-center">
-                    <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                      <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-full pb-3">
+                  <SectionHeader
+                    title={language === "tr" ? "Teknik Detaylar" : "Technical Details"}
+                    icon={
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                       </svg>
-                    </div>
-                    <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                      {language === "tr" ? "Teknik Detaylar" : "Technical Details"}
-                    </h3>
-                  </div>
+                    }
+                  />
 
-                  {specAttrs.length > 0 ? (
-                    <dl className="flex flex-wrap justify-center gap-4 lg:gap-6">
-                      {specAttrs.map((attr, index) => {
-                        let decodedValue = String(attr.value).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+                  {specAttrs.length > 0 ? (() => {
+                    const opts = product.variantOptions || { light: null, casing: null, watt: null, socket: null };
+                    const preparedSpecs = specAttrs.map((attr) => {
+                      let decodedValue = String(attr.value).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+                      const labelLower = attr.label.toLowerCase();
+                      if ((labelLower.includes("duy") || labelLower.includes("socket")) && opts.socket) {
+                        decodedValue = opts.socket;
+                      }
+                      if ((labelLower.includes("güç") || labelLower.includes("guc") || labelLower.includes("watt")) && opts.watt) {
+                        decodedValue = opts.watt;
+                      }
+                      return { attr, decodedValue };
+                    });
 
-                        // Dinamik varyant ezmesi
-                        const opts = product.variantOptions || { light: null, casing: null, watt: null, socket: null };
-                        const labelLower = attr.label.toLowerCase();
-                        if ((labelLower.includes("duy") || labelLower.includes("socket")) && opts.socket) {
-                          decodedValue = opts.socket;
-                        }
-                        if ((labelLower.includes("güç") || labelLower.includes("guc") || labelLower.includes("watt")) && opts.watt) {
-                          decodedValue = opts.watt;
-                        }
+                    // Uzun cümle içeren değerler (örn. "Kullanım Alanları") dar kartlara sığmıyor,
+                    // bu yüzden geniş, tam satır kartlarda ayrı gösteriliyor.
+                    const compactSpecs = preparedSpecs.filter((s) => s.decodedValue.length <= 40);
+                    const longSpecs = preparedSpecs.filter((s) => s.decodedValue.length > 40);
 
-                        return (
-                          <div key={index} className={`flex-1 min-w-[150px] max-w-[250px] flex flex-col items-center justify-center text-center p-5 rounded-3xl border transition-transform duration-300 hover:-translate-y-2 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/10 hover:bg-white/10"}`}>
-                            <dt className={`text-[10px] md:text-xs font-bold uppercase tracking-widest mb-2 ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
-                              {attr.label}
-                            </dt>
-                            <dd className={`text-base md:text-lg font-black tracking-tight m-0 ${isLight ? "text-zinc-900" : "text-white"}`}>
-                              {decodedValue}
-                            </dd>
-                          </div>
-                        );
-                      })}
-                    </dl>
-                  ) : (
+                    return (
+                      <div className="flex flex-col gap-4">
+                        {compactSpecs.length > 0 && (
+                          <dl className="flex flex-wrap justify-center gap-3 lg:gap-4">
+                            {compactSpecs.map(({ attr, decodedValue }, index) => (
+                              <div key={index} className={`group relative flex-1 min-w-[150px] max-w-[260px] flex flex-col items-center justify-center text-center gap-2 p-5 rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
+                                <span className={`absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[3px] rounded-full transition-all duration-300 group-hover:w-14 ${isLight ? themeColor : "bg-white/25"}`} />
+                                <dt className={`text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                                  {attr.label}
+                                </dt>
+                                <dd className={`m-0 text-[15px] md:text-base font-semibold leading-snug tracking-normal ${isLight ? "text-zinc-800" : "text-white"}`}>
+                                  {decodedValue}
+                                </dd>
+                              </div>
+                            ))}
+                          </dl>
+                        )}
+
+                        {longSpecs.length > 0 && (
+                          <dl className="flex flex-col gap-3 max-w-2xl mx-auto w-full">
+                            {longSpecs.map(({ attr, decodedValue }, index) => (
+                              <div key={index} className={`flex flex-col gap-1.5 p-5 rounded-2xl border text-left ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.03] border-white/[0.07]"}`}>
+                                <dt className={`text-center text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                                  {attr.label}
+                                </dt>
+                                <dd className={`m-0 text-sm md:text-[15px] font-medium leading-relaxed ${isLight ? "text-zinc-700" : "text-zinc-300"}`}>
+                                  {decodedValue}
+                                </dd>
+                              </div>
+                            ))}
+                          </dl>
+                        )}
+                      </div>
+                    );
+                  })() : (
                     <div className={`p-8 rounded-3xl border border-dashed flex items-center justify-center max-w-2xl mx-auto ${isLight ? "bg-white/50 border-zinc-200 text-zinc-400" : "bg-white/5 border-white/10 text-zinc-500"}`}>
                       <span className="font-medium text-sm">
                         {language === "tr" ? "Bu ürüne ait detaylı teknik veri bulunmamaktadır." : "No detailed technical data available."}
@@ -521,21 +589,19 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                   <>
                     <SectionDivider />
                     <div className="w-full">
-                      <div className="flex items-center mb-8 justify-center">
-                      <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                        <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                      <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                        {language === "tr" ? "Öne Çıkan Özellikler" : "Key Features"}
-                      </h3>
-                    </div>
+                      <SectionHeader
+                        title={language === "tr" ? "Öne Çıkan Özellikler" : "Key Features"}
+                        icon={
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                          </svg>
+                        }
+                      />
 
                     <ul className="flex flex-wrap justify-center gap-4 lg:gap-6">
                       {featuresList.map((feat, idx) => (
-                        <li key={idx} className={`flex-1 min-w-[280px] max-w-sm flex items-start gap-4 p-6 rounded-3xl border transition-all duration-300 ${isLight ? "bg-white border-zinc-100 shadow-sm hover:shadow-md" : "bg-white/5 border-white/5 hover:bg-white/10"}`}>
-                          <div className={`mt-0.5 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${isLight ? themePillBg : "bg-white/10"}`}>
+                        <li key={idx} className={`flex-1 min-w-[280px] max-w-sm flex items-start gap-4 p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
+                          <div className={`mt-0.5 flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${isLight ? themePillBg : "bg-white/[0.06] border border-white/10"}`}>
                             <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                             </svg>
@@ -557,20 +623,18 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
             <>
               <SectionDivider />
               <div className="w-full max-w-3xl mx-auto">
-                <div className="flex items-center mb-8 justify-center">
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                    <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="currentColor" viewBox="0 0 24 24">
+                <SectionHeader
+                  title={language === "tr" ? "Kurulum Videosu" : "Installation Video"}
+                  icon={
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M8 5v14l11-7z" />
                     </svg>
-                  </div>
-                  <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                    {language === "tr" ? "Kurulum Videosu" : "Installation Video"}
-                  </h3>
-                </div>
+                  }
+                />
 
                 <div className="w-full relative group">
-                  <div className={`absolute -inset-2 md:-inset-4 ${isLight ? 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100' : 'bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)]'} rounded-[2.5rem] md:rounded-[3rem] opacity-30 blur-2xl transition-opacity duration-700 animate-pulse pointer-events-none`} />
-                  
+                  <div className={`absolute -inset-2 md:-inset-4 ${isLight ? 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100' : 'bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)]'} rounded-[2.5rem] md:rounded-[3rem] opacity-20 blur-2xl transition-opacity duration-700 group-hover:opacity-40 pointer-events-none`} />
+
                   <div className="w-full aspect-video rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.1)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsVideoPlaying(true)}>
                     {!isVideoPlaying ? (
                       <>

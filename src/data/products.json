@@ -7479,130 +7479,6 @@
       "casing": "Yeşi̇l"
     }
   },
-  "4345": {
-    "id": "4345",
-    "model": "KCF272-80WVANT",
-    "image": "urunler/kcf272-80wvant.webp",
-    "name": {
-      "tr": "KCF272 Sac Vantilatör 80W",
-      "en": "KCF272 Sac Vantilatör 80W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "80W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "6"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "83"
-        },
-        {
-          "label": "Ürün",
-          "value": "56” (142cm) Sac Tavan Vantilatörü"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "80W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "6"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "83"
-        },
-        {
-          "label": "Product",
-          "value": "56” (142cm) Sac Tavan Vantilatörü"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "80W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "4346": {
-    "id": "4346",
-    "model": "KCF272L50WVANT",
-    "image": "urunler/kcf272l50wvant.webp",
-    "name": {
-      "tr": "KCF272L Ayaklı Vantilatör 50W",
-      "en": "KCF272L Ayaklı Vantilatör 50W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "6"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "83"
-        },
-        {
-          "label": "Ürün",
-          "value": "16” (40cm) Ayaklı Vantilatör"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "6"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "83"
-        },
-        {
-          "label": "Product",
-          "value": "16” (40cm) Ayaklı Vantilatör"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "50W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
   "4347": {
     "id": "4347",
     "model": "KCF272ST50WVNT",
@@ -7722,472 +7598,6 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "85W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "4349": {
-    "id": "4349",
-    "model": "KCF278-60WVANT",
-    "image": "urunler/kcf278-60wvant.webp",
-    "name": {
-      "tr": "KCF278 Avizeli Vantilatör 60W",
-      "en": "KCF278 Avizeli Vantilatör 60W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "82"
-        },
-        {
-          "label": "Ürün",
-          "value": "30” Beyaz Nikel Tavan Vantilatör"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "82"
-        },
-        {
-          "label": "Product",
-          "value": "30” Beyaz Nikel Tavan Vantilatör"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "4350": {
-    "id": "4350",
-    "model": "KCF280-60WVANT",
-    "image": "urunler/kcf280-60wvant.webp",
-    "name": {
-      "tr": "KCF280 Avizeli Vantilatör 60W",
-      "en": "KCF280 Avizeli Vantilatör 60W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "82"
-        },
-        {
-          "label": "Ürün",
-          "value": "30” Ahşap Tavan Vantilatör"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "82"
-        },
-        {
-          "label": "Product",
-          "value": "30” Ahşap Tavan Vantilatör"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "4351": {
-    "id": "4351",
-    "model": "KCF281-60WVANT",
-    "image": "urunler/kcf281-60wvant.webp",
-    "name": {
-      "tr": "KCF281 Avizeli Vantilatör 60W",
-      "en": "KCF281 Avizeli Vantilatör 60W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "82"
-        },
-        {
-          "label": "Ürün",
-          "value": "30” Beyaz Ahşap Tavan Vantilatör"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "82"
-        },
-        {
-          "label": "Product",
-          "value": "30” Beyaz Ahşap Tavan Vantilatör"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "4352": {
-    "id": "4352",
-    "model": "KCF282-60WVANT",
-    "image": "urunler/kcf282-60wvant.webp",
-    "name": {
-      "tr": "KCF282 Avizeli Vantilatör 60W",
-      "en": "KCF282 Avizeli Vantilatör 60W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "82"
-        },
-        {
-          "label": "Ürün",
-          "value": "30” Silver Tavan Vantilatör"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "82"
-        },
-        {
-          "label": "Product",
-          "value": "30” Silver Tavan Vantilatör"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "4353": {
-    "id": "4353",
-    "model": "KCF290130WVANT",
-    "image": "urunler/kcf290130wvant.webp",
-    "name": {
-      "tr": "KCF290 130W Sanayi Tipi Vantilatör",
-      "en": "KCF290 130W Sanayi Tipi Vantilatör"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "130W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "84"
-        },
-        {
-          "label": "Ürün",
-          "value": "20” Sanayi Tipi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "130W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "84"
-        },
-        {
-          "label": "Product",
-          "value": "20” Sanayi Tipi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "130W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "4354": {
-    "id": "4354",
-    "model": "KCF291160WVANT",
-    "image": "urunler/kcf291160wvant.webp",
-    "name": {
-      "tr": "KCF291 160W Sanayi Tipi Vantilatör",
-      "en": "KCF291 160W Sanayi Tipi Vantilatör"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "160W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "650"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "84"
-        },
-        {
-          "label": "Ürün",
-          "value": "26” Sanayi Tipi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "160W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "650"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "84"
-        },
-        {
-          "label": "Product",
-          "value": "26” Sanayi Tipi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "160W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "4355": {
-    "id": "4355",
-    "model": "KCF292180WVANT",
-    "image": "urunler/kcf292180wvant.webp",
-    "name": {
-      "tr": "KCF292 180W Sanayi Tipi Vantilatör",
-      "en": "KCF292 180W Sanayi Tipi Vantilatör"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "180W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "750"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "84"
-        },
-        {
-          "label": "Ürün",
-          "value": "30” Sanayi Tipi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "180W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "750"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "84"
-        },
-        {
-          "label": "Product",
-          "value": "30” Sanayi Tipi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Vantilatör"
-      ],
-      "en": [
-        "Fan"
-      ]
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": "180W",
       "socket": null,
       "light": null,
       "casing": null
@@ -71591,174 +71001,6 @@
     "variantOptions": {
       "watt": null,
       "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "5371": {
-    "id": "5371",
-    "model": "KSP100-15W-ASP",
-    "image": "urunler/ksp100-15w-asp.webp",
-    "name": {
-      "tr": "KSP100 Q100 15W Aspirator",
-      "en": "KSP100 Q100 15W Aspirator"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "73"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "73"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Aspiratör"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Aspirators"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "15W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "5372": {
-    "id": "5372",
-    "model": "KSP120-20W-ASP",
-    "image": "urunler/ksp120-20w-asp.webp",
-    "name": {
-      "tr": "KSP120 Q120 20W Aspirator",
-      "en": "KSP120 Q120 20W Aspirator"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "73"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "73"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Aspiratör"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Aspirators"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "5373": {
-    "id": "5373",
-    "model": "KSP150-25W-ASP",
-    "image": "urunler/ksp150-25w-asp.webp",
-    "name": {
-      "tr": "KSP150 Q150 25W Aspirator",
-      "en": "KSP150 Q150 25W Aspirator"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Katalog Sayfası",
-          "value": "73"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Catalog Page",
-          "value": "73"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Aspiratör"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Aspirators"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "25W",
-      "socket": null,
       "light": null,
       "casing": null
     }
@@ -203985,56 +203227,6 @@
       "casing": null
     }
   },
-  "7735": {
-    "id": "7735",
-    "model": "240429113230",
-    "image": "urunler/kcf285-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF285 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF285 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "G9"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "G9"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "G9",
-      "light": null,
-      "casing": null
-    }
-  },
   "7736": {
     "id": "7736",
     "model": "240429113646",
@@ -204261,106 +203453,6 @@
       "casing": null
     }
   },
-  "7741": {
-    "id": "7741",
-    "model": "240429120243",
-    "image": "urunler/kcf283-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF283 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF283 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "E27",
-      "light": null,
-      "casing": null
-    }
-  },
-  "7742": {
-    "id": "7742",
-    "model": "240429120623",
-    "image": "urunler/kcf284-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF284 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF284 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "3xE27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "3xE27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "3xE27",
-      "light": null,
-      "casing": null
-    }
-  },
   "7743": {
     "id": "7743",
     "model": "240429120932",
@@ -204457,98 +203549,6 @@
     "variantOptions": {
       "watt": "10W",
       "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "7745": {
-    "id": "7745",
-    "model": "240429122436",
-    "image": "urunler/kcf286-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF286 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF286 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "7746": {
-    "id": "7746",
-    "model": "240429122918",
-    "image": "urunler/kcf287-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF287 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF287 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "2xE27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "2xE27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "2xE27",
       "light": null,
       "casing": null
     }
@@ -204999,56 +203999,6 @@
     "variantOptions": {
       "watt": "10W",
       "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "7756": {
-    "id": "7756",
-    "model": "240429130840",
-    "image": "urunler/kcf288-tavan-vantilator.webp",
-    "name": {
-      "tr": "KCF288 60W Dekoratif Tavan Vantilatör",
-      "en": "KCF288 60W Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Duy",
-          "value": "2xE27"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Socket",
-          "value": "2xE27"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W",
-      "socket": "2xE27",
       "light": null,
       "casing": null
     }
@@ -206083,48 +205033,6 @@
       "socket": null,
       "light": null,
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "7775": {
-    "id": "7775",
-    "model": "240502051229",
-    "image": "urunler/kcf276-vantilator.webp",
-    "name": {
-      "tr": "KCF276 130W Ayaklı Vantilatör Duvar Ve Masa Kullanımlı",
-      "en": "KCF276 130W Standıng &amp; Wall Fan"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "130W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "6"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "130W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "6"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "130W",
-      "socket": null,
-      "light": null,
-      "casing": null
     }
   },
   "7776": {
@@ -214017,48 +212925,6 @@
       "casing": null
     }
   },
-  "7927": {
-    "id": "7927",
-    "model": "240503052925",
-    "image": "urunler/ksp100-baca-aspiratoru.webp",
-    "name": {
-      "tr": "KSP100 15W Banyo Duvar Baca Aspiratörü",
-      "en": "KSP100 15W Bathroom Fans"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "15W",
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
   "7928": {
     "id": "7928",
     "model": "240503053126",
@@ -219445,342 +218311,6 @@
       "casing": null
     }
   },
-  "8038": {
-    "id": "8038",
-    "model": "250422084522",
-    "image": "urunler/kcf301.webp",
-    "name": {
-      "tr": "KCF301 Uzaktan Kumandalı Hasır Tavan Vantilatör",
-      "en": "KCF301 Wıcker Ceılıng Fan Wıth Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8039": {
-    "id": "8039",
-    "model": "250422084931",
-    "image": "urunler/kcf300.webp",
-    "name": {
-      "tr": "KCF300 Uzaktan Kumandalı Hasır Tavan Vantilatör",
-      "en": "KCF300 Wıcker Ceılıng Fan Wıth Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8040": {
-    "id": "8040",
-    "model": "250422085006",
-    "image": "urunler/kcf305.webp",
-    "name": {
-      "tr": "KCF305 Uzaktan Kumandalı Hasır Tavan Vantilatör",
-      "en": "KCF305 Wıcker Ceılıng Fan Wıth Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8041": {
-    "id": "8041",
-    "model": "250422085204",
-    "image": "urunler/kcf302.webp",
-    "name": {
-      "tr": "KCF302 Uzaktan Kumandalı Metal Dekoratif Tavan Vantilatör",
-      "en": "KCF302 Remote Controlled Metal Decoratıve Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8042": {
-    "id": "8042",
-    "model": "250422092147",
-    "image": "urunler/kcf296.webp",
-    "name": {
-      "tr": "KCF296 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
-      "en": "KCF296 Modern Ceılıng Fan Wıth LED Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8043": {
-    "id": "8043",
-    "model": "250422092333",
-    "image": "urunler/kcf297.webp",
-    "name": {
-      "tr": "KCF297 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
-      "en": "KCF297 Modern Ceılıng Fan Wıth LED Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8044": {
-    "id": "8044",
-    "model": "250422092516",
-    "image": "urunler/kcf298.webp",
-    "name": {
-      "tr": "KCF298 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
-      "en": "KCF298 Modern Ceılıng Fan Wıth LED Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8045": {
-    "id": "8045",
-    "model": "250422092937",
-    "image": "urunler/kcf306.webp",
-    "name": {
-      "tr": "KCF306 Uzaktan Kumandalı Ledli Sesli Komutlu Smart Tavan Vantilatör",
-      "en": "KCF306 Remote Controlled LED Voıce Command Smart Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8046": {
-    "id": "8046",
-    "model": "250422093212",
-    "image": "urunler/kcf307.webp",
-    "name": {
-      "tr": "KCF307 Uzaktan Kumandalı Ledli Sesli Komutlu Smart Tavan Vantilatör",
-      "en": "KCF307 Remote Controlled LED Voıce Command Smart Ceılıng Fan"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8047": {
-    "id": "8047",
-    "model": "250422093341",
-    "image": "urunler/kcf303.webp",
-    "name": {
-      "tr": "KCF303 Uzaktan Kumandalı Dekoratif Tavan Vantilatör",
-      "en": "KCF303 Decoratıve Ceılıng Fan Wıth Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8048": {
-    "id": "8048",
-    "model": "250422093501",
-    "image": "urunler/kcf304.webp",
-    "name": {
-      "tr": "KCF304 Uzaktan Kumandalı Dekoratif Tavan Vantilatör",
-      "en": "KCF304 Decoratıve Ceılıng Fan Wıth Remote Control"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8049": {
-    "id": "8049",
-    "model": "250422093649",
-    "image": "urunler/kcf295.webp",
-    "name": {
-      "tr": "KCF295 Masaüstü Fan",
-      "en": "KCF295 Desktop Fan"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8050": {
-    "id": "8050",
-    "model": "250422094017",
-    "image": "urunler/kcf271.webp",
-    "name": {
-      "tr": "KCF271 Kut Fan",
-      "en": "KCF271 Box Fan"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
-  "8051": {
-    "id": "8051",
-    "model": "250422094150",
-    "image": "urunler/kcf308.webp",
-    "name": {
-      "tr": "KCF308 Mobil Sulu Hava Soğutucu",
-      "en": "KCF308 Mobıle Water Aır Cooler"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "vanti",
-    "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
-    }
-  },
   "8052": {
     "id": "8052",
     "model": "250610113039",
@@ -223934,14 +222464,6 @@
         {
           "label": "Özellik",
           "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Özellik",
-          "value": "Beyaz Nikel / Alternatif Hız Seçenekleri"
-        },
-        {
-          "label": "Özellik",
-          "value": "6 Pervaneli / İç Mekan Kullanım"
         }
       ],
       "en": [
@@ -223964,14 +222486,6 @@
         {
           "label": "Description",
           "value": "30” White Nickel Ceiling Fan"
-        },
-        {
-          "label": "Feature",
-          "value": "White Nickel / Alternative Speed Options"
-        },
-        {
-          "label": "Feature",
-          "value": "6 Blades / Indoor Use"
         },
         {
           "label": "Feature",
@@ -224032,14 +222546,6 @@
         {
           "label": "Özellik",
           "value": "5 Farklı Hız Ayarı / Hız Kontrol Anahtarı"
-        },
-        {
-          "label": "Özellik",
-          "value": "Korumalı Metal Izgara / Güçlendirilmiş Metal Kanatalar"
-        },
-        {
-          "label": "Özellik",
-          "value": "5 Farklı Hız Ayarı / Hız Kontrol Anahtar"
         }
       ],
       "en": [
@@ -224062,14 +222568,6 @@
         {
           "label": "Feature",
           "value": "Protected Metal Grill / Reinforced Metal Blades"
-        },
-        {
-          "label": "Feature",
-          "value": "5 Different Speed Settings / Speed Control Switch"
-        },
-        {
-          "label": "Feature",
-          "value": "Protected Metal Grille / Reinforced Metal Blades"
         },
         {
           "label": "Feature",
@@ -224126,14 +222624,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224152,14 +222642,6 @@
         {
           "label": "Description",
           "value": "26” Stand Type"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
         },
         {
           "label": "Feature",
@@ -224220,14 +222702,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224250,14 +222724,6 @@
         {
           "label": "Feature",
           "value": "Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -224314,14 +222780,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224344,14 +222802,6 @@
         {
           "label": "Feature",
           "value": "Remote Controlled / Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -224408,14 +222858,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224434,14 +222876,6 @@
         {
           "label": "Description",
           "value": "30” Stand Type"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
         },
         {
           "label": "Feature",
@@ -224502,14 +222936,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224532,14 +222958,6 @@
         {
           "label": "Feature",
           "value": "Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -224596,14 +223014,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224626,14 +223036,6 @@
         {
           "label": "Feature",
           "value": "Remote Controlled / Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -224690,14 +223092,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ayarlanabilir Yükseklik / Aşırı Isınmaya Karşı / Korumalı Motor"
-        },
-        {
-          "label": "Özellik",
-          "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
         }
       ],
       "en": [
@@ -224716,14 +223110,6 @@
         {
           "label": "Description",
           "value": "20” Stand Type"
-        },
-        {
-          "label": "Feature",
-          "value": "Adjustable Height / Overheating Protection / Protected Motor"
-        },
-        {
-          "label": "Feature",
-          "value": "3 Different Speed Settings (Low-Medium-High)"
         },
         {
           "label": "Feature",
@@ -224788,18 +223174,6 @@
         {
           "label": "Özellik",
           "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ahşap Desen / Alternatif Hız Seçenekleri"
-        },
-        {
-          "label": "Özellik",
-          "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT 3 Renk Fonksiyonu (3000K - 4000K - 6500K)"
         }
       ],
       "en": [
@@ -224830,18 +223204,6 @@
         {
           "label": "Feature",
           "value": "6 Blades / Indoor Use"
-        },
-        {
-          "label": "Feature",
-          "value": "Wood Pattern / Alternative Speed Options"
-        },
-        {
-          "label": "Feature",
-          "value": "6 Blades / Indoor Use"
-        },
-        {
-          "label": "Light Color",
-          "value": "CCT 3 Color Function (3000K - 4000K - 6500K)"
         }
       ]
     },
@@ -225086,18 +223448,6 @@
         {
           "label": "Özellik",
           "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ahşap Desen / Alternatif Hız Seçenekleri"
-        },
-        {
-          "label": "Özellik",
-          "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT 3 Renk Fonksiyonu (3000K - 4000K - 6500K)"
         }
       ],
       "en": [
@@ -225128,18 +223478,6 @@
         {
           "label": "Feature",
           "value": "6 Blades / Indoor Use"
-        },
-        {
-          "label": "Feature",
-          "value": "Wood Pattern / Alternative Speed Options"
-        },
-        {
-          "label": "Feature",
-          "value": "6 Blades / Indoor Use"
-        },
-        {
-          "label": "Light Color",
-          "value": "CCT 3 Color Function (3000K - 4000K - 6500K)"
         }
       ]
     },
@@ -227770,14 +226108,6 @@
         {
           "label": "Özellik",
           "value": "6 Pervaneli / İç Mekan Kullanımı"
-        },
-        {
-          "label": "Özellik",
-          "value": "Ahşap Desen / Alternatif Hız Seçenekleri"
-        },
-        {
-          "label": "Özellik",
-          "value": "6 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -227800,14 +226130,6 @@
         {
           "label": "Description",
           "value": "30” Wooden Ceiling Fan"
-        },
-        {
-          "label": "Feature",
-          "value": "Wood Pattern / Alternative Speed Options"
-        },
-        {
-          "label": "Feature",
-          "value": "6 Blades / Indoor Use"
         },
         {
           "label": "Feature",
