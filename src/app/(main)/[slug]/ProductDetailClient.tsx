@@ -100,6 +100,14 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
 
   const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
+  const SectionDivider = () => (
+    <div className="w-full flex items-center justify-center opacity-80 -my-5 lg:-my-7">
+      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/40'}`}></div>
+      <div className={`w-2.5 h-2.5 rounded-full mx-5 shadow-sm ${isLight ? 'bg-zinc-400' : 'bg-white/40'}`}></div>
+      <div className={`w-full max-w-[200px] md:max-w-md h-[2px] bg-gradient-to-l ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/40'}`}></div>
+    </div>
+  );
+
   return (
     <div className={`relative min-h-screen pb-24 overflow-hidden ${isLight ? "pt-24 bg-[#f8f9fa] text-zinc-900" : "pt-32 md:pt-40 bg-[#050505] text-white"}`}>
 
@@ -348,7 +356,8 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
             );
 
             return (
-              <div className="flex flex-col gap-8 lg:gap-12 w-full">
+              <div className="flex flex-col gap-10 lg:gap-14 w-full">
+                <SectionDivider />
 
                 {/* Technical Specs - Bento Box Grid */}
                 <div className="w-full">
@@ -401,8 +410,10 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
 
                 {/* Sözel Özellikler (Highlights) */}
                 {featuresList.length > 0 && (
-                  <div className="w-full">
-                    <div className="flex items-center mb-8 justify-center">
+                  <>
+                    <SectionDivider />
+                    <div className="w-full">
+                      <div className="flex items-center mb-8 justify-center">
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
                         <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
@@ -428,56 +439,60 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
                       ))}
                     </ul>
                   </div>
+                  </>
                 )}
               </div>
             );
           })()}
           {/* Vanti Video Section */}
           {videoId && (
-            <div className="w-full max-w-5xl mx-auto pt-8">
-              <div className="flex items-center mb-8 justify-center">
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
-                  <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+            <>
+              <SectionDivider />
+              <div className="w-full max-w-5xl mx-auto">
+                <div className="flex items-center mb-8 justify-center">
+                  <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
+                    <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
+                    {language === "tr" ? "Kurulum Videosu" : "Installation Video"}
+                  </h3>
                 </div>
-                <h3 className={`text-xl lg:text-2xl font-bold tracking-tight ${isLight ? "text-zinc-800" : "text-white"}`}>
-                  {language === "tr" ? "Kurulum Videosu" : "Installation Video"}
-                </h3>
-              </div>
 
-              <div className="w-full relative group">
-                <div className={`absolute -inset-2 md:-inset-4 ${isLight ? 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100' : 'bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)]'} rounded-[2.5rem] md:rounded-[3rem] opacity-30 blur-2xl transition-opacity duration-700 animate-pulse pointer-events-none`} />
-                
-                <div className="w-full aspect-video rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.1)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsVideoPlaying(true)}>
-                  {!isVideoPlaying ? (
-                    <>
-                      <img 
-                        src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
-                        alt="Video Thumbnail"
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105 opacity-80 group-hover/video:opacity-100"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className={`w-24 h-24 ${isLight ? 'bg-blue-600' : 'bg-[var(--brand-red)]'} rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(0,0,0,0.6)] transform transition-transform duration-300 group-hover/video:scale-110`}>
-                          <svg className="w-10 h-10 text-white translate-x-[3px]" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                          </svg>
+                <div className="w-full relative group">
+                  <div className={`absolute -inset-2 md:-inset-4 ${isLight ? 'bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100' : 'bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)]'} rounded-[2.5rem] md:rounded-[3rem] opacity-30 blur-2xl transition-opacity duration-700 animate-pulse pointer-events-none`} />
+                  
+                  <div className="w-full aspect-video rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.1)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsVideoPlaying(true)}>
+                    {!isVideoPlaying ? (
+                      <>
+                        <img 
+                          src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
+                          alt="Video Thumbnail"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105 opacity-80 group-hover/video:opacity-100"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                          <div className={`w-24 h-24 ${isLight ? 'bg-blue-600' : 'bg-[var(--brand-red)]'} rounded-full flex items-center justify-center shadow-[0_0_40px_rgba(0,0,0,0.6)] transform transition-transform duration-300 group-hover/video:scale-110`}>
+                            <svg className="w-10 h-10 text-white translate-x-[3px]" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M8 5v14l11-7z" />
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                    </>
-                  ) : (
-                    <iframe
-                      className="w-full h-full object-cover"
-                      src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`}
-                      title="Kurulum Videosu"
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen
-                    ></iframe>
-                  )}
+                      </>
+                    ) : (
+                      <iframe
+                        className="w-full h-full object-cover"
+                        src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0&modestbranding=1`}
+                        title="Kurulum Videosu"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    )}
+                  </div>
                 </div>
               </div>
-            </div>
+            </>
           )}
 
         </article>

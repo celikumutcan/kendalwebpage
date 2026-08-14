@@ -3,6 +3,7 @@
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/utils/basePath";
 
 const brands = [
   {
@@ -48,7 +49,7 @@ export const OurBrands = () => {
             >
               <div className="relative w-full h-full p-2">
                 <Image
-                  src={brand.logo}
+                  src={getAssetPath(brand.logo)}
                   alt={brand.name}
                   fill
                   className="object-contain"

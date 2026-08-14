@@ -2,7 +2,7 @@
   "4206": {
     "id": "4206",
     "model": "GDL41425WPANARA",
-    "image": "urunler/GDL414.webp",
+    "image": "urunler/gdl414.webp",
     "name": {
       "tr": "GDL414 25W Backlıght  Panel 4000k",
       "en": "GDL414 25W Backlıght  Panel 4000k"
@@ -74,7 +74,7 @@
   "4207": {
     "id": "4207",
     "model": "GDL41425WPANBYZ",
-    "image": "urunler/GDL414.webp",
+    "image": "urunler/gdl414.webp",
     "name": {
       "tr": "GDL414 25W Backlıght  Panel 6500k",
       "en": "GDL414 25W Backlıght  Panel 6500k"
@@ -146,7 +146,7 @@
   "4208": {
     "id": "4208",
     "model": "GDL41425WPANGNI",
-    "image": "urunler/GDL414.webp",
+    "image": "urunler/gdl414.webp",
     "name": {
       "tr": "GDL414 25W Backlıght  Panel 3000k",
       "en": "GDL414 25W Backlıght  Panel 3000k"
@@ -13070,7 +13070,7 @@
   "4492": {
     "id": "4492",
     "model": "KDL1015WBYZBYZ",
-    "image": "urunler/KDL1015WBYZBYZ.webp",
+    "image": "urunler/kdl1015wbyzbyz.webp",
     "name": {
       "tr": "KDL101 Beyaz 2835smd Ledli Spot 5W Beyaz",
       "en": "KDL101 Beyaz 2835smd Ledli Spot 5W Beyaz"
@@ -16518,7 +16518,7 @@
   "4538": {
     "id": "4538",
     "model": "KDL400S6WBEYAZ",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL400S Saten Kasa Ledlı Down. Arm. 6W Beyaz",
       "en": "KDL400S Saten Kasa Ledlı Down. Arm. 6W Beyaz"
@@ -16590,7 +16590,7 @@
   "4539": {
     "id": "4539",
     "model": "KDL400S6WGNISK",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL400S Saten Kasa Ledlı Down. Arm. 6W Günışığı",
       "en": "KDL400S Saten Kasa Ledlı Down. Arm. 6W Günışığı"
@@ -16870,7 +16870,7 @@
   "4543": {
     "id": "4543",
     "model": "KDL401S12WBYAZ",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL401S Saten Kasa Ledlı Down. Arm.12w Beyaz",
       "en": "KDL401S Saten Kasa Ledlı Down. Arm.12w Beyaz"
@@ -16942,7 +16942,7 @@
   "4544": {
     "id": "4544",
     "model": "KDL401S12WGNSK",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL401S Saten Kasa Ledlı Down.arm.12w Günışığı",
       "en": "KDL401S Saten Kasa Ledlı Down.arm.12w Günışığı"
@@ -17230,7 +17230,7 @@
   "4548": {
     "id": "4548",
     "model": "KDL402S15WBYAZ",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL402S Saten Kasa Ledlı Down. Arm.15w Beyaz",
       "en": "KDL402S Saten Kasa Ledlı Down. Arm.15w Beyaz"
@@ -17302,7 +17302,7 @@
   "4549": {
     "id": "4549",
     "model": "KDL402S15WGNSK",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL402S Saten Kasa Ledlı Down. Arm.15w Günışığı",
       "en": "KDL402S Saten Kasa Ledlı Down. Arm.15w Günışığı"
@@ -17374,7 +17374,7 @@
   "4550": {
     "id": "4550",
     "model": "KDL40318WARARENK",
-    "image": "urunler/KDL40318WBEYAZ.webp",
+    "image": "urunler/kdl40318wbeyaz.webp",
     "name": {
       "tr": "KDL403 SMD Ledlı Down.arm.18w Ararenk",
       "en": "KDL403 SMD Ledlı Down.arm.18w Ararenk"
@@ -17662,7 +17662,7 @@
   "4554": {
     "id": "4554",
     "model": "KDL403S18WGNSK",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL403S Saten Kasa Ledlı Down. Arm.18w Günışığı",
       "en": "KDL403S Saten Kasa Ledlı Down. Arm.18w Günışığı"
@@ -17734,7 +17734,7 @@
   "4555": {
     "id": "4555",
     "model": "KDL404-3WARARENK",
-    "image": "urunler/KDL404-3WGNISK.webp",
+    "image": "urunler/kdl404-3wgnisk.webp",
     "name": {
       "tr": "KDL404 SMD Ledlı Down.arm.3w Ararenk",
       "en": "KDL404 SMD Ledlı Down.arm.3w Ararenk"
@@ -17934,7 +17934,7 @@
   "4558": {
     "id": "4558",
     "model": "KDL404S3WBEYAZ",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL404S Saten Kasa Ledlı Down. Arm. 3W Beyaz",
       "en": "KDL404S Saten Kasa Ledlı Down. Arm. 3W Beyaz"
@@ -18006,7 +18006,7 @@
   "4559": {
     "id": "4559",
     "model": "KDL404S3WGNISK",
-    "image": "urunler/KDL403S18WGNSK-EK.webp",
+    "image": "urunler/kdl403s18wgnsk-ek.webp",
     "name": {
       "tr": "KDL404S Saten Kasa Ledlı Down. Arm. 3W Günışığı",
       "en": "KDL404S Saten Kasa Ledlı Down. Arm. 3W Günışığı"
@@ -18462,7 +18462,7 @@
   "4566": {
     "id": "4566",
     "model": "KDL40922WARARENK",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL409 SMD Ledlı Down. Arm. 18W Ararenk",
       "en": "KDL409 SMD Ledlı Down. Arm. 22W Ararenk"
@@ -18534,7 +18534,7 @@
   "4567": {
     "id": "4567",
     "model": "KDL40922WBEYAZ",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL409 SMD Ledlı Down. Arm. 18W Beyaz",
       "en": "KDL409 SMD Ledlı Down. Arm. 22W Beyaz"
@@ -18606,7 +18606,7 @@
   "4568": {
     "id": "4568",
     "model": "KDL40922WGNISK",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL409 SMD Ledlı Down. Arm. 18W Günışığı",
       "en": "KDL409 SMD Ledlı Down. Arm. 22W Günışığı"
@@ -18678,7 +18678,7 @@
   "4569": {
     "id": "4569",
     "model": "KDL410-3WARARENK",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL410 SMD Ledlı Down. Arm. 3W Ararenk",
       "en": "KDL410 SMD Ledlı Down. Arm. 3W Ararenk"
@@ -18758,7 +18758,7 @@
   "4570": {
     "id": "4570",
     "model": "KDL410-3WBEYAZ",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL410 SMD Ledlı Down. Arm. 3W Beyaz",
       "en": "KDL410 SMD Ledlı Down. Arm. 3W Beyaz"
@@ -18838,7 +18838,7 @@
   "4571": {
     "id": "4571",
     "model": "KDL410-3WGNSIK",
-    "image": "urunler/KDL410-3WARARENK-EK.webp",
+    "image": "urunler/kdl410-3wararenk-ek.webp",
     "name": {
       "tr": "KDL410 SMD Ledlı Down. Arm. 3W Günışığı",
       "en": "KDL410 SMD Ledlı Down. Arm. 3W Günışığı"
@@ -30502,7 +30502,7 @@
   "4781": {
     "id": "4781",
     "model": "KES0485W-GUNISIGI",
-    "image": "urunler/KES0485W-GUNISIGI-EK.webp",
+    "image": "urunler/kes0485w-gunisigi-ek.webp",
     "name": {
       "tr": "KES048 SMD Ledli Lensli GU10 Amp. 5W Gunışığı",
       "en": "KES048 SMD Ledli Lensli GU10 Amp. 5W Gunışığı"
@@ -30566,7 +30566,7 @@
   "4782": {
     "id": "4782",
     "model": "KES048B5W-BEYAZ",
-    "image": "urunler/KES048B5W-ARARENK-EK.webp",
+    "image": "urunler/kes048b5w-ararenk-ek.webp",
     "name": {
       "tr": "KES048B SMD Ledli Lensli G5,3 Amp. 5W Beyaz",
       "en": "KES048B SMD Ledli Lensli G5,3 Amp. 5W Beyaz"
@@ -30710,7 +30710,7 @@
   "4784": {
     "id": "4784",
     "model": "KES0497W-BEYAZ",
-    "image": "urunler/KES0497W-BEYAZ-EK.webp",
+    "image": "urunler/kes0497w-beyaz-ek.webp",
     "name": {
       "tr": "KES049 SMD Ledli Lensli GU10 Amp. 7W Beyaz",
       "en": "KES049 SMD Ledli Lensli GU10 Amp. 7W Beyaz"
@@ -30782,7 +30782,7 @@
   "4785": {
     "id": "4785",
     "model": "KES0497W-GUNISIGI",
-    "image": "urunler/KES0497W-GUNISIGI-EK.webp",
+    "image": "urunler/kes0497w-gunisigi-ek.webp",
     "name": {
       "tr": "KES049 SMD Ledli Lensli GU10 Amp. 7W Gunışığı",
       "en": "KES049 SMD Ledli Lensli GU10 Amp. 7W Gunışığı"
@@ -30854,7 +30854,7 @@
   "4786": {
     "id": "4786",
     "model": "KES049R-7W-AMB",
-    "image": "urunler/KES049R-7W-AMB-EK.webp",
+    "image": "urunler/kes049r-7w-amb-ek.webp",
     "name": {
       "tr": "KES049R GU10 Ampul 7W Amber",
       "en": "KES049R GU10 Ampul 7W Amber"
@@ -30926,7 +30926,7 @@
   "4787": {
     "id": "4787",
     "model": "KES049R-7W-KRM",
-    "image": "urunler/KES049R-7W-KRM-EK.webp",
+    "image": "urunler/kes049r-7w-krm-ek.webp",
     "name": {
       "tr": "KES049R GU10 Ampul 7W Kırmızı",
       "en": "KES049R GU10 Ampul 7W Kırmızı"
@@ -30998,7 +30998,7 @@
   "4788": {
     "id": "4788",
     "model": "KES049R-7W-MVI",
-    "image": "urunler/KES049R-7W-MVI-EK.webp",
+    "image": "urunler/kes049r-7w-mvi-ek.webp",
     "name": {
       "tr": "KES049R GU10 Ampul 7W Mavi",
       "en": "KES049R GU10 Ampul 7W Mavi"
@@ -31070,7 +31070,7 @@
   "4789": {
     "id": "4789",
     "model": "KES049R-7W-YSL",
-    "image": "urunler/KES049R-7W-YSL-EK.webp",
+    "image": "urunler/kes049r-7w-ysl-ek.webp",
     "name": {
       "tr": "KES049R GU10 Ampul 7W Yeşil",
       "en": "KES049R GU10 Ampul 7W Yeşil"
@@ -37278,7 +37278,7 @@
   "4865": {
     "id": "4865",
     "model": "KES2055WE14BYZ",
-    "image": "urunler/KES2055WE14BYZ-EK.webp",
+    "image": "urunler/kes2055we14byz-ek.webp",
     "name": {
       "tr": "KES205 5W Candle LED Amp. E14 K2 Beyaz",
       "en": "KES205 5W Candle LED Amp. E14 K2 Beyaz"
@@ -37350,7 +37350,7 @@
   "4866": {
     "id": "4866",
     "model": "KES2055WE14GNI",
-    "image": "urunler/KES2055WE14GNI-EK.webp",
+    "image": "urunler/kes2055we14gni-ek.webp",
     "name": {
       "tr": "KES205 5W Candle LED Amp. E14 K2 Gunısıgı",
       "en": "KES205 5W Candle LED Amp. E14 K2 Gunısıgı"
@@ -37422,7 +37422,7 @@
   "4867": {
     "id": "4867",
     "model": "KES2065WE14BYZ",
-    "image": "urunler/KES2065WE14BYZ-EK.webp",
+    "image": "urunler/kes2065we14byz-ek.webp",
     "name": {
       "tr": "KES206 5W Candle LED Amp. E14 K2 Beyaz",
       "en": "KES206 5W Candle LED Amp. E14 K2 Beyaz"
@@ -37494,7 +37494,7 @@
   "4868": {
     "id": "4868",
     "model": "KES2065WE14GNI",
-    "image": "urunler/KES2065WE14GNI-EK.webp",
+    "image": "urunler/kes2065we14gni-ek.webp",
     "name": {
       "tr": "KES206 5W Candle LED Amp. E14 K2 Gunısıgı",
       "en": "KES206 5W Candle LED Amp. E14 K2 Gunısıgı"
@@ -40382,7 +40382,7 @@
   "4921": {
     "id": "4921",
     "model": "KES471-45WKNTBYZ",
-    "image": "urunler/KES471.webp",
+    "image": "urunler/kes471.webp",
     "name": {
       "tr": "KES471 45W Kanatlı LED Ampul E27 Beyaz",
       "en": "KES471 45W Kanatlı LED Ampul E27 Beyaz"
@@ -41942,7 +41942,7 @@
   "4929": {
     "id": "4929",
     "model": "KES4994WGUNISK",
-    "image": "urunler/KES499.webp",
+    "image": "urunler/kes499.webp",
     "name": {
       "tr": "KES499 LED Flamanlı Bujı Amp. 4W E14 Gunısıgı",
       "en": "KES499 LED Flamanlı Bujı Amp. 4W E14 Gunısıgı"
@@ -51324,7 +51324,7 @@
   "5044": {
     "id": "5044",
     "model": "KHL09010WG612V",
-    "image": "urunler/KHL09010WG612V.webp",
+    "image": "urunler/khl09010wg612v.webp",
     "name": {
       "tr": "KHL090 Hlj Kapsul 220*10w G6",
       "en": "KHL090 Hlj Kapsul 220*10w G6"
@@ -57748,7 +57748,7 @@
   "5138": {
     "id": "5138",
     "model": "KLF177200WBYAZ",
-    "image": "urunler/KLF177200WBYAZ-EK.webp",
+    "image": "urunler/klf177200wbyaz-ek.webp",
     "name": {
       "tr": "KLF177 SMD LED Döküm 200W Beyaz",
       "en": "KLF177 SMD LED Döküm 200W Beyaz"
@@ -57804,7 +57804,7 @@
   "5139": {
     "id": "5139",
     "model": "KLF177200WGISK",
-    "image": "urunler/KLF177200WGISK-EK.webp",
+    "image": "urunler/klf177200wgisk-ek.webp",
     "name": {
       "tr": "KLF177 SMD LED Döküm 200W Gnısk",
       "en": "KLF177 SMD LED Döküm 200W Gnısk"
@@ -57860,7 +57860,7 @@
   "5140": {
     "id": "5140",
     "model": "KLF177200WYESL",
-    "image": "urunler/KLF177200WYESL-EK.webp",
+    "image": "urunler/klf177200wyesl-ek.webp",
     "name": {
       "tr": "KLF177 SMD LED Döküm 200W Yesil",
       "en": "KLF177 SMD LED Döküm 200W Yesil"
@@ -57916,7 +57916,7 @@
   "5141": {
     "id": "5141",
     "model": "KLF177PLUS200WBYAZ",
-    "image": "urunler/KLF177PLUS200WBYAZ.webp",
+    "image": "urunler/klf177plus200wbyaz.webp",
     "name": {
       "tr": "KLF177 Plus SMD LED Döküm 200W Beyaz",
       "en": "KLF177 Plus SMD LED Döküm 200W Beyaz"
@@ -57988,7 +57988,7 @@
   "5142": {
     "id": "5142",
     "model": "KLF177PLUS200WGISK",
-    "image": "urunler/KLF177PLUS200WGISK.webp",
+    "image": "urunler/klf177plus200wgisk.webp",
     "name": {
       "tr": "KLF177 Plus SMD LED Döküm 200W Gnısk",
       "en": "KLF177 Plus SMD LED Döküm 200W Gnısk"
@@ -58132,7 +58132,7 @@
   "5144": {
     "id": "5144",
     "model": "KLF178300WBYAZ",
-    "image": "urunler/KLF178300WBYAZ-EK.webp",
+    "image": "urunler/klf178300wbyaz-ek.webp",
     "name": {
       "tr": "KLF178 SMD LED Döküm 300W Beyaz",
       "en": "KLF178 SMD LED Döküm 300W Beyaz"
@@ -58188,7 +58188,7 @@
   "5145": {
     "id": "5145",
     "model": "KLF178300WGISK",
-    "image": "urunler/KLF178300WGISK-EK.webp",
+    "image": "urunler/klf178300wgisk-ek.webp",
     "name": {
       "tr": "KLF178 SMD LED Döküm 300W Gnısk",
       "en": "KLF178 SMD LED Döküm 300W Gnısk"
@@ -58244,7 +58244,7 @@
   "5146": {
     "id": "5146",
     "model": "KLF178300WYESL",
-    "image": "urunler/KLF178300WYESL-EK.webp",
+    "image": "urunler/klf178300wyesl-ek.webp",
     "name": {
       "tr": "KLF178 SMD LED Döküm 300W Yesil",
       "en": "KLF178 SMD LED Döküm 300W Yesil"
@@ -58300,7 +58300,7 @@
   "5147": {
     "id": "5147",
     "model": "KLF178PLUS300WBYAZ",
-    "image": "urunler/KLF178300WBYAZ.webp",
+    "image": "urunler/klf178300wbyaz.webp",
     "name": {
       "tr": "KLF178 Plus SMD LED Döküm 300W Beyaz",
       "en": "KLF178 Plus SMD LED Döküm 300W Beyaz"
@@ -58372,7 +58372,7 @@
   "5148": {
     "id": "5148",
     "model": "KLF178PLUS300WGISK",
-    "image": "urunler/KLF178300WGISK.webp",
+    "image": "urunler/klf178300wgisk.webp",
     "name": {
       "tr": "KLF178 Plus SMD LED Döküm 300W Gnısk",
       "en": "KLF178 Plus SMD LED Döküm 300W Gnısk"
@@ -58444,7 +58444,7 @@
   "5149": {
     "id": "5149",
     "model": "KLF178PLUS300WYESL",
-    "image": "urunler/KLF178300WYESL.webp",
+    "image": "urunler/klf178300wyesl.webp",
     "name": {
       "tr": "KLF178 Plus SMD LED Döküm 300W Yesil",
       "en": "KLF178 Plus SMD LED Döküm 300W Yesil"
@@ -59588,7 +59588,7 @@
   "5165": {
     "id": "5165",
     "model": "KLF19350WBEYAZ",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF193 SMD LED Döküm 50W Beyaz",
       "en": "KLF193 SMD LED Döküm 50W Beyaz"
@@ -59652,7 +59652,7 @@
   "5166": {
     "id": "5166",
     "model": "KLF19350WGNISK",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF193 SMD LED Döküm 50W Günışığı",
       "en": "KLF193 SMD LED Döküm 50W Günışığı"
@@ -59716,7 +59716,7 @@
   "5167": {
     "id": "5167",
     "model": "KLF19350WYESIL",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF193 SMD LED Döküm 50W Yesıl",
       "en": "KLF193 SMD LED Döküm 50W Yesıl"
@@ -59780,7 +59780,7 @@
   "5168": {
     "id": "5168",
     "model": "KLF195100WBEYAZ",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF195 SMD LED Döküm 100W Beyaz",
       "en": "KLF195 SMD LED Döküm 100W Beyaz"
@@ -59844,7 +59844,7 @@
   "5169": {
     "id": "5169",
     "model": "KLF195100WGUNIS",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF195 SMD LED Döküm 100W Gunışığı",
       "en": "KLF195 SMD LED Döküm 100W Gunışığı"
@@ -59908,7 +59908,7 @@
   "5170": {
     "id": "5170",
     "model": "KLF195100WYESIL",
-    "image": "urunler/KLF195.webp",
+    "image": "urunler/klf195.webp",
     "name": {
       "tr": "KLF195 SMD LED Döküm 100W Yeşil",
       "en": "KLF195 SMD LED Döküm 100W Yeşil"
@@ -68702,7 +68702,7 @@
   "5329": {
     "id": "5329",
     "model": "KSL133LEDAPLIK",
-    "image": "urunler/KSL133LEDAPLIK.webp",
+    "image": "urunler/ksl133ledaplik.webp",
     "name": {
       "tr": "KSL133 Ledli Resim Aplik 9W 4200k",
       "en": "KSL133 Ledli Resim Aplik 9W 4200k"
@@ -68934,7 +68934,7 @@
   "5332": {
     "id": "5332",
     "model": "KSL143LEDAPLIK",
-    "image": "yeni-urunler/KSL143.webp",
+    "image": "yeni-urunler/ksl143.webp",
     "name": {
       "tr": "KSL143 Ledli Resim Aplik 9W 4200k",
       "en": "KSL143 Ledli Resim Aplik 9W 4200k"
@@ -71342,7 +71342,7 @@
   "5367": {
     "id": "5367",
     "model": "KSL428DEKSARARM",
-    "image": "urunler/KSL428DEKSARARM.webp",
+    "image": "urunler/ksl428deksararm.webp",
     "name": {
       "tr": "KSL428 Dekoratif Sarkit Armatür",
       "en": "KSL428 Dekoratif Sarkit Armatür"
@@ -72414,7 +72414,7 @@
   "5383": {
     "id": "5383",
     "model": "KST20750WBEYAZ",
-    "image": "urunler/KST209.webp",
+    "image": "urunler/kst209.webp",
     "name": {
       "tr": "KST207 50W Ledli Sokak Armatürü ( Lensli )",
       "en": "KST207 50W LED Street Lıghts"
@@ -88258,7 +88258,7 @@
   "6030": {
     "id": "6030",
     "model": "KDL423B24WSYH-ARARENK",
-    "image": "urunler/KDL422B18WSYH-ARARENK.webp",
+    "image": "urunler/kdl422b18wsyh-ararenk.webp",
     "name": {
       "tr": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*ararenk",
       "en": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*ararenk"
@@ -88330,7 +88330,7 @@
   "6031": {
     "id": "6031",
     "model": "KDL423B24WSYH-BYZ",
-    "image": "urunler/KDL422B18WSYH-ARARENK.webp",
+    "image": "urunler/kdl422b18wsyh-ararenk.webp",
     "name": {
       "tr": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*beyaz",
       "en": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*beyaz"
@@ -88394,7 +88394,7 @@
   "6032": {
     "id": "6032",
     "model": "KDL423B24WSYH-GNISK",
-    "image": "urunler/KDL422B18WSYH-ARARENK.webp",
+    "image": "urunler/kdl422b18wsyh-ararenk.webp",
     "name": {
       "tr": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*gün Işığı",
       "en": "KDL423B SMD Ledlı S.ü Yuv.24w Siyah*gün Işığı"
@@ -89882,7 +89882,7 @@
   "6053": {
     "id": "6053",
     "model": "KDL44416WKRM-BYZ",
-    "image": "urunler/KDL44416WKRMBYZ.webp",
+    "image": "urunler/kdl44416wkrmbyz.webp",
     "name": {
       "tr": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*beyaz",
       "en": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*beyaz"
@@ -89954,7 +89954,7 @@
   "6054": {
     "id": "6054",
     "model": "KDL44416WKRM-GNI",
-    "image": "urunler/KDL44416WKRM-BYZ.webp",
+    "image": "urunler/kdl44416wkrm-byz.webp",
     "name": {
       "tr": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*günışığı",
       "en": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*günışığı"
@@ -92610,7 +92610,7 @@
   "6089": {
     "id": "6089",
     "model": "KDL525C-DKR-SU-PNL-ARM-KROM",
-    "image": "urunler/KDL525C-DKR-SU-PNL-ARM-KROM.webp",
+    "image": "urunler/kdl525c-dkr-su-pnl-arm-krom.webp",
     "name": {
       "tr": "KDL525C Dekoratif Sıva Üstü LED Tavan Arm.krom",
       "en": "KDL525C Dekoratif Sıva Üstü LED Tavan Arm.krom"
@@ -94882,7 +94882,7 @@
   "6122": {
     "id": "6122",
     "model": "KES0497W-ARARENK",
-    "image": "urunler/KES0497W-ARARENK-EK.webp",
+    "image": "urunler/kes0497w-ararenk-ek.webp",
     "name": {
       "tr": "KES049 SMD Ledli Lensli GU10 Amp. 7W Ararenk",
       "en": "KES049 SMD Ledli Lensli GU10 Amp. 7W Ararenk"
@@ -97578,7 +97578,7 @@
   "6166": {
     "id": "6166",
     "model": "KHF174-150WBYB",
-    "image": "urunler/KHF174-150WBYB.webp",
+    "image": "urunler/khf174-150wbyb.webp",
     "name": {
       "tr": "KHF174 Boş Metal Hal. Projektör 150W Beyaz",
       "en": "KHF174 Boş Metal Hal. Projektör 150W Beyaz"
@@ -98142,7 +98142,7 @@
   "6175": {
     "id": "6175",
     "model": "KLF158B20WYESÝL",
-    "image": "urunler/KLF158B20WYESL.webp",
+    "image": "urunler/klf158b20wyesl.webp",
     "name": {
       "tr": "KLF158B COB LED Döküm Sensör 20W Yeşil",
       "en": "KLF158B COB LED Döküm Sensör 20W Yeşil"
@@ -158110,7 +158110,7 @@
   "7023": {
     "id": "7023",
     "model": "KSL6002-40W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 40W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6002 40W Dekoratif Sarkıt Linear Ararenk"
@@ -158174,7 +158174,7 @@
   "7024": {
     "id": "7024",
     "model": "KSL6002-40W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 40W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6002 40W Dekoratif Sarkıt Linear Beyaz"
@@ -158238,7 +158238,7 @@
   "7025": {
     "id": "7025",
     "model": "KSL6002-40W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 40W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6002 40W Dekoratif Sarkıt Linear Günışığı"
@@ -159646,7 +159646,7 @@
   "7056": {
     "id": "7056",
     "model": "KSL6010-40W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 40W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6010 40W Dekoratif Sarkıt Linear Ararenk"
@@ -159710,7 +159710,7 @@
   "7057": {
     "id": "7057",
     "model": "KSL6010-40W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 40W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6010 40W Dekoratif Sarkıt Linear Beyaz"
@@ -159774,7 +159774,7 @@
   "7058": {
     "id": "7058",
     "model": "KSL6010-40W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 40W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6010 40W Dekoratif Sarkıt Linear Günışığı"
@@ -159838,7 +159838,7 @@
   "7059": {
     "id": "7059",
     "model": "KSL6010-45W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 45W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6010 45W Dekoratif Sarkıt Linear Ararenk"
@@ -159902,7 +159902,7 @@
   "7060": {
     "id": "7060",
     "model": "KSL6010-45W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 45W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6010 45W Dekoratif Sarkıt Linear Beyaz"
@@ -159966,7 +159966,7 @@
   "7061": {
     "id": "7061",
     "model": "KSL6010-45W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6010.webp",
+    "image": "yeni-urunler/ksl6010.webp",
     "name": {
       "tr": "KSL6010 45W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6010 45W Dekoratif Sarkıt Linear Günışığı"
@@ -160030,7 +160030,7 @@
   "7062": {
     "id": "7062",
     "model": "KSL6011-40W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 40W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6011 40W Dekoratif Sarkıt Linear Ararenk"
@@ -160094,7 +160094,7 @@
   "7063": {
     "id": "7063",
     "model": "KSL6011-40W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 40W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6011 40W Dekoratif Sarkıt Linear Beyaz"
@@ -160158,7 +160158,7 @@
   "7064": {
     "id": "7064",
     "model": "KSL6011-40W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 40W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6011 40W Dekoratif Sarkıt Linear Günışığı"
@@ -160222,7 +160222,7 @@
   "7065": {
     "id": "7065",
     "model": "KSL6011-75W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 75W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6011 75W Dekoratif Sarkıt Linear Ararenk"
@@ -160286,7 +160286,7 @@
   "7066": {
     "id": "7066",
     "model": "KSL6011-75W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 75W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6011 75W Dekoratif Sarkıt Linear Beyaz"
@@ -160350,7 +160350,7 @@
   "7067": {
     "id": "7067",
     "model": "KSL6011-75W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6011.webp",
+    "image": "yeni-urunler/ksl6011.webp",
     "name": {
       "tr": "KSL6011 75W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6011 75W Dekoratif Sarkıt Linear Günışığı"
@@ -170460,7 +170460,7 @@
   "7221": {
     "id": "7221",
     "model": "KSL6002-30W-DKR-SRK-ARN",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 30W Dekoratif Sarkıt Linear Ararenk",
       "en": "KSL6002 30W Dekoratif Sarkıt Linear Ararenk"
@@ -170524,7 +170524,7 @@
   "7222": {
     "id": "7222",
     "model": "KSL6002-30W-DKR-SRK-BYZ",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 30W Dekoratif Sarkıt Linear Beyaz",
       "en": "KSL6002 30W Dekoratif Sarkıt Linear Beyaz"
@@ -170588,7 +170588,7 @@
   "7223": {
     "id": "7223",
     "model": "KSL6002-30W-DKR-SRK-GNI",
-    "image": "yeni-urunler/KSL6002.webp",
+    "image": "yeni-urunler/ksl6002.webp",
     "name": {
       "tr": "KSL6002 30W Dekoratif Sarkıt Linear Günışığı",
       "en": "KSL6002 30W Dekoratif Sarkıt Linear Günışığı"
@@ -200538,7 +200538,7 @@
   "7689": {
     "id": "7689",
     "model": "KES18512WBEYAZ",
-    "image": "urunler/KES185.webp",
+    "image": "urunler/kes185.webp",
     "name": {
       "tr": "KES185 12W / 220v LED Ampul Beyaz",
       "en": "KES185 12W / 220v LED Ampul Beyaz"
@@ -200618,7 +200618,7 @@
   "7690": {
     "id": "7690",
     "model": "KES18512WARARENK",
-    "image": "urunler/KES185.webp",
+    "image": "urunler/kes185.webp",
     "name": {
       "tr": "KES185 12W / 220v LED Ampul Ararenk",
       "en": "KES185 12W / 220v LED Ampul Ararenk"
@@ -200698,7 +200698,7 @@
   "7691": {
     "id": "7691",
     "model": "KES18512WGUNISIGI",
-    "image": "urunler/KES185.webp",
+    "image": "urunler/kes185.webp",
     "name": {
       "tr": "KES185 12W / 220v LED Ampul Günışığı",
       "en": "KES185 12W / 220v LED Ampul Günışığı"
@@ -202770,7 +202770,7 @@
   "7714": {
     "id": "7714",
     "model": "240214062825",
-    "image": "yeni-urunler/GES232.webp",
+    "image": "yeni-urunler/ges232.webp",
     "name": {
       "tr": "GES232 40W Torch LED Ampul Beyaz",
       "en": "GES232 40W Torch LED Bulb Whıte"
@@ -202800,7 +202800,7 @@
   "7715": {
     "id": "7715",
     "model": "240214070416",
-    "image": "yeni-urunler/GES231.webp",
+    "image": "yeni-urunler/ges231.webp",
     "name": {
       "tr": "GES231 30W Torch LED Ampul Beyaz",
       "en": "GES231 30W Torch LED Bulb Whıte"
@@ -202830,7 +202830,7 @@
   "7716": {
     "id": "7716",
     "model": "240214072814",
-    "image": "yeni-urunler/GES233.webp",
+    "image": "yeni-urunler/ges233.webp",
     "name": {
       "tr": "GES233 50W Torch LED Ampul Beyaz",
       "en": "GES233 50W Torch LED Bulb Whıte"
@@ -202860,7 +202860,7 @@
   "7717": {
     "id": "7717",
     "model": "240222051933",
-    "image": "yeni-urunler/KES170.webp",
+    "image": "yeni-urunler/kes170.webp",
     "name": {
       "tr": "Global KES170 9 5W / 230v LED Ampul Beyaz",
       "en": "Global KES170 9 5W / 230v LED Bulb Whıte"
@@ -202890,7 +202890,7 @@
   "7718": {
     "id": "7718",
     "model": "240222053522",
-    "image": "yeni-urunler/KES170.webp",
+    "image": "yeni-urunler/kes170.webp",
     "name": {
       "tr": "Global KES170 9 5W / 230v LED Ampul Günışığı",
       "en": "Global KES170 9 5W / 230v LED Ampul Warm Whıte"
@@ -203850,7 +203850,7 @@
   "7731": {
     "id": "7731",
     "model": "240415053254",
-    "image": "yeni-urunler/GES230.webp",
+    "image": "yeni-urunler/ges230.webp",
     "name": {
       "tr": "GES230 20W Torch LED Ampul Beyaz",
       "en": "GES230 20W Torch LED Bulb Whıte"
@@ -205914,7 +205914,7 @@
   "7772": {
     "id": "7772",
     "model": "240429144421",
-    "image": "urunler/KDA752.webp",
+    "image": "urunler/kda752.webp",
     "name": {
       "tr": "KDA752 6W Star LED Aplik",
       "en": "KDA752 6W LED Wall Fıxtures"
@@ -208054,7 +208054,7 @@
   "7814": {
     "id": "7814",
     "model": "240502074403",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec25wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec25w 6500k Slım Backlıght Panels"
@@ -208112,7 +208112,7 @@
   "7815": {
     "id": "7815",
     "model": "240502075614",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl25wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl25w 6500k Slım Backlıght Panels"
@@ -208170,7 +208170,7 @@
   "7816": {
     "id": "7816",
     "model": "240502075825",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec25wgunısk 3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec25w 3000k Slım Backlıght Panels"
@@ -208228,7 +208228,7 @@
   "7817": {
     "id": "7817",
     "model": "240502081023",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl25wgunısk  3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl25w 3000k Slım Backlıght Panels"
@@ -208286,7 +208286,7 @@
   "7818": {
     "id": "7818",
     "model": "240502081305",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec30wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec30w 6500k Slım Backlıght Panels"
@@ -208344,7 +208344,7 @@
   "7819": {
     "id": "7819",
     "model": "240502081934",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec30wgunısk 3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec30w 3000k Slım Backlıght Panels"
@@ -208402,7 +208402,7 @@
   "7820": {
     "id": "7820",
     "model": "240502082251",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl30wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl30w 6500k Slım Backlıght Panels"
@@ -208460,7 +208460,7 @@
   "7821": {
     "id": "7821",
     "model": "240502082617",
-    "image": "urunler/KDL4140-ENEC25WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl30wgunısk 4000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl30w 4000k Slım Backlıght Panels"
@@ -208518,7 +208518,7 @@
   "7822": {
     "id": "7822",
     "model": "240502082915",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec40wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec40w 6500k Slım Backlıght Panels"
@@ -208576,7 +208576,7 @@
   "7823": {
     "id": "7823",
     "model": "240502083506",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec40wgunısk 3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-enec40w 3000k Slım Backlıght Panels"
@@ -208634,7 +208634,7 @@
   "7824": {
     "id": "7824",
     "model": "240502083842",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl40wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl40w 6500k Slım Backlıght Panels"
@@ -208692,7 +208692,7 @@
   "7825": {
     "id": "7825",
     "model": "240502084117",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl40wgunısk  3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-phl40w 3000k Slım Backlıght Panels"
@@ -208750,7 +208750,7 @@
   "7826": {
     "id": "7826",
     "model": "240502084442",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-k240wbeyaz 6500k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-k240w 6500k Slım Backlıght Panels"
@@ -208808,7 +208808,7 @@
   "7827": {
     "id": "7827",
     "model": "240502084703",
-    "image": "urunler/KDL4140-ENEC40WBEYAZ-armatur.webp",
+    "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-k240wgunısk 3000k Slım Backlıght Sıva Altı Armatür",
       "en": "Kdl4140-k240w 3000k Slım Backlıght Panels"
@@ -209548,7 +209548,7 @@
   "7841": {
     "id": "7841",
     "model": "240502103003",
-    "image": "urunler/KST209.webp",
+    "image": "urunler/kst209.webp",
     "name": {
       "tr": "KST208 100W Ledli Sokak Armatürü ( Lensli )",
       "en": "KST208 100W LED Street Lıghts "
@@ -209598,7 +209598,7 @@
   "7842": {
     "id": "7842",
     "model": "240502103210",
-    "image": "urunler/KST209.webp",
+    "image": "urunler/kst209.webp",
     "name": {
       "tr": "KST209 150W Ledli Sokak Armatürü ( Lensli )",
       "en": "KST209 150W LED Street Lıghts "
@@ -215282,7 +215282,7 @@
   "7953": {
     "id": "7953",
     "model": "240503063424",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2820 (30x50x70) 210W Kare Saturn Çift Yönlü Lınear",
       "en": "Kslcy2820 (30x50x70) 210W Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -215332,7 +215332,7 @@
   "7954": {
     "id": "7954",
     "model": "240503063732",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2821 (40x60x80) 250W Kare Saturn Çift Yönlü Lınear",
       "en": "Kslcy2821 (40x60x80) 250W Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -215382,7 +215382,7 @@
   "7955": {
     "id": "7955",
     "model": "240503063900",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2822 (50x70x90) 315W Kare Saturn Çift Yönlü Lınear",
       "en": "Kslcy2822 (50x70x90) 315W Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -215432,7 +215432,7 @@
   "7956": {
     "id": "7956",
     "model": "240503064126",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2823 (60x80x100) 345W  Kare Saturn Çift Yönlü Lınear",
       "en": "Kslcy2823 (60x80x100) 345W  Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -215482,7 +215482,7 @@
   "7957": {
     "id": "7957",
     "model": "240503064331",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2824 (70x90x110) 380W Kare Saturn Çift Yönlü Lınear",
       "en": "Kslcy2824 (70x90x110) 380W Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -215532,7 +215532,7 @@
   "7959": {
     "id": "7959",
     "model": "240503072056",
-    "image": "urunler/kslcy2820-21-22-23-24-25-KARE-SATURN-cıFT-YoNLu-LINEAR.webp",
+    "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kscyl2825 (80x100x120) 430W Kare Saturn Çift Yönlü Lınear",
       "en": "Kscyl2825 (80x100x120) 430W Square Saturn Lınear Fıxtures ( Double Sıde )"
@@ -216486,7 +216486,7 @@
   "7967": {
     "id": "7967",
     "model": "240906135215",
-    "image": "urunler/KES075.webp",
+    "image": "urunler/kes075.webp",
     "name": {
       "tr": "KES077 Şarjlı LED",
       "en": "KES077 Re-chargeable LED"
@@ -216680,7 +216680,7 @@
   "7970": {
     "id": "7970",
     "model": "241017073604",
-    "image": "urunler/KES13020WBEYAZ.webp",
+    "image": "urunler/kes13020wbeyaz.webp",
     "name": {
       "tr": "GES234 60W Torch LED Ampul",
       "en": "GES234 60W LED T Bulb"
@@ -216744,7 +216744,7 @@
   "7971": {
     "id": "7971",
     "model": "241022062336",
-    "image": "urunler/KBA816.webp",
+    "image": "urunler/kba816.webp",
     "name": {
       "tr": "KBA816 Sensörlü LED Koridor Armatürü",
       "en": "KBA816 LED Step Lıght"
@@ -216802,7 +216802,7 @@
   "7972": {
     "id": "7972",
     "model": "241022062654",
-    "image": "urunler/KBA817.webp",
+    "image": "urunler/kba817.webp",
     "name": {
       "tr": "KBA817 Sensörlü LED Koridor Armatürü",
       "en": "KBA817 Sensor LED Strp Lıght"
@@ -216860,7 +216860,7 @@
   "7973": {
     "id": "7973",
     "model": "241022063007",
-    "image": "urunler/KBA818.webp",
+    "image": "urunler/kba818.webp",
     "name": {
       "tr": "KBA818 Sensörlü LED Koridor Armatürü",
       "en": "KBA818 Sensor LED Step Lıght"
@@ -216918,7 +216918,7 @@
   "7974": {
     "id": "7974",
     "model": "241022075719",
-    "image": "urunler/KSL176.webp",
+    "image": "urunler/ksl176.webp",
     "name": {
       "tr": "KSL176 Yatak Başı LED Aplik",
       "en": "KSL176 Indoor LED Wall Fıxture"
@@ -216968,7 +216968,7 @@
   "7975": {
     "id": "7975",
     "model": "241022082854",
-    "image": "urunler/KSK175.webp",
+    "image": "urunler/ksk175.webp",
     "name": {
       "tr": "KSL175 Yatak Başı LED Aplik",
       "en": "KSL175 Indoor LED Wall Fıxture"
@@ -217018,7 +217018,7 @@
   "7976": {
     "id": "7976",
     "model": "241022083909",
-    "image": "urunler/KSL177.webp",
+    "image": "urunler/ksl177.webp",
     "name": {
       "tr": "KSL177 Yatak Başı LED Aplik",
       "en": "KSL177 Indoor LED Wall Fıxture"
@@ -217068,7 +217068,7 @@
   "7978": {
     "id": "7978",
     "model": "241022114006",
-    "image": "urunler/KDA757.webp",
+    "image": "urunler/kda757.webp",
     "name": {
       "tr": "KDA757 LED Dış Mekan Duvar Armatürü",
       "en": "KDA757 Outdoor Wall Fıxture"
@@ -217126,7 +217126,7 @@
   "7980": {
     "id": "7980",
     "model": "241108134639",
-    "image": "urunler/KES472-2025.webp",
+    "image": "urunler/kes472-2025.webp",
     "name": {
       "tr": "KES472 Fanlı LED Ampul",
       "en": "KES472 LED Bulb Wıth Fan"
@@ -217698,7 +217698,7 @@
   "7985": {
     "id": "7985",
     "model": "250223181603",
-    "image": "urunler/KDL550.webp",
+    "image": "urunler/kdl550.webp",
     "name": {
       "tr": "KDL550 Sensörlü 20W Sıva Üstü Yuvarlak LED Panel",
       "en": "KDL550 20W Surface Mounted Round LED Panel Wıth Sensor"
@@ -217756,7 +217756,7 @@
   "7986": {
     "id": "7986",
     "model": "250227141252",
-    "image": "urunler/KFL150.webp",
+    "image": "urunler/kfl150.webp",
     "name": {
       "tr": "KFL150 54W LED Yatay Bant Armatür",
       "en": "KFL150 54W LED Wall Fıxture"
@@ -217814,7 +217814,7 @@
   "7987": {
     "id": "7987",
     "model": "250407141237",
-    "image": "urunler/GES240.webp",
+    "image": "urunler/ges240.webp",
     "name": {
       "tr": "GES240 20W LED Kristal Torch Ampul",
       "en": "GES240 20W LED Crystal Torch Bulb"
@@ -217870,7 +217870,7 @@
   "7989": {
     "id": "7989",
     "model": "250407141657",
-    "image": "urunler/GES240.webp",
+    "image": "urunler/ges240.webp",
     "name": {
       "tr": "GES241 30W LED Kristal Torch Ampul",
       "en": "GES241 30W LED Crystal Torch Bulb"
@@ -217926,7 +217926,7 @@
   "7990": {
     "id": "7990",
     "model": "250421153928",
-    "image": "urunler/KDL050.webp",
+    "image": "urunler/kdl050.webp",
     "name": {
       "tr": "KDL050 6W Sıva Altı Yuvarlak LED Backlıght Panel",
       "en": "KDL050 6W Recessed Round LED Backlıght Panel"
@@ -217950,7 +217950,7 @@
   "7991": {
     "id": "7991",
     "model": "250421154138",
-    "image": "urunler/KDL050.webp",
+    "image": "urunler/kdl050.webp",
     "name": {
       "tr": "KDL052 12W Sıva Altı Yuvarlak LED Backlıght Panel",
       "en": "KDL052 12W Recessed Round LED Backlıght Panel"
@@ -217974,7 +217974,7 @@
   "7992": {
     "id": "7992",
     "model": "250421154255",
-    "image": "urunler/KDL050.webp",
+    "image": "urunler/kdl050.webp",
     "name": {
       "tr": "KDL053 18W Sıva Altı Yuvarlak LED Backlıght Panel",
       "en": "KDL053 18W Recessed Round LED Backlıght Panel"
@@ -217998,7 +217998,7 @@
   "7993": {
     "id": "7993",
     "model": "250421154402",
-    "image": "urunler/KDL050.webp",
+    "image": "urunler/kdl050.webp",
     "name": {
       "tr": "KDL054 24W Sıva Altı Yuvarlak LED Backlıght Panel",
       "en": "KDL054 24W Recessed Round LED Backlıght Panel"
@@ -218022,7 +218022,7 @@
   "7994": {
     "id": "7994",
     "model": "250421154647",
-    "image": "urunler/KDL055.webp",
+    "image": "urunler/kdl055.webp",
     "name": {
       "tr": "KDL055 6W Sıva Altı Kare LED Backlıght Panel",
       "en": "KDL055 6W Recessed Square LED Backlıght Panel"
@@ -218046,7 +218046,7 @@
   "7995": {
     "id": "7995",
     "model": "250421154930",
-    "image": "urunler/KDL055.webp",
+    "image": "urunler/kdl055.webp",
     "name": {
       "tr": "KDL057 12W Sıva Altı Kare LED Backlıght Panel",
       "en": "KDL057 12W Recessed Square LED Backlıght Panel"
@@ -218070,7 +218070,7 @@
   "7996": {
     "id": "7996",
     "model": "250421155048",
-    "image": "urunler/KDL055.webp",
+    "image": "urunler/kdl055.webp",
     "name": {
       "tr": "KDL058 18W Sıva Altı Kare LED Backlıght Panel",
       "en": "KDL058 18W Recessed Square LED Backlıght Panel"
@@ -218094,7 +218094,7 @@
   "7997": {
     "id": "7997",
     "model": "250421155157",
-    "image": "urunler/KDL055.webp",
+    "image": "urunler/kdl055.webp",
     "name": {
       "tr": "KDL059 24W Sıva Altı Kare LED Backlıght Panel",
       "en": "KDL059 24W Recessed Square LED Backlıght Panel"
@@ -218118,7 +218118,7 @@
   "7998": {
     "id": "7998",
     "model": "250421155335",
-    "image": "urunler/KDL061.webp",
+    "image": "urunler/kdl061.webp",
     "name": {
       "tr": "KDL061 12W Sıva Üstü Yuvarlak LED Backlıght Panel",
       "en": "KDL061 12W Surface Mounted Round LED Backlıght Panel"
@@ -218142,7 +218142,7 @@
   "7999": {
     "id": "7999",
     "model": "250421155701",
-    "image": "urunler/KDL061.webp",
+    "image": "urunler/kdl061.webp",
     "name": {
       "tr": "KDL062 18W Sıva Üstü Yuvarlak LED Backlıght Panel",
       "en": "KDL062 18W Surface Mounted Round LED Backlıght Panel"
@@ -218166,7 +218166,7 @@
   "8000": {
     "id": "8000",
     "model": "250421155810",
-    "image": "urunler/KDL061.webp",
+    "image": "urunler/kdl061.webp",
     "name": {
       "tr": "KDL063 24W Sıva Üstü Yuvarlak LED Backlıght Panel",
       "en": "KDL063 24W Surface Mounted Round LED Backlıght Panel"
@@ -218190,7 +218190,7 @@
   "8001": {
     "id": "8001",
     "model": "250421155926",
-    "image": "urunler/KDL081.webp",
+    "image": "urunler/kdl081.webp",
     "name": {
       "tr": "KDL081 12W Sıva Üstü Kare LED Backlıght Panel",
       "en": "KDL081 12W Surface Mounted Square LED Backlıght Panel"
@@ -218214,7 +218214,7 @@
   "8002": {
     "id": "8002",
     "model": "250421160122",
-    "image": "urunler/KDL081.webp",
+    "image": "urunler/kdl081.webp",
     "name": {
       "tr": "KDL082 18W Sıva Üstü Kare LED Backlıght Panel",
       "en": "KDL082 18W Surface Mounted Square LED Backlıght Panel"
@@ -218238,7 +218238,7 @@
   "8003": {
     "id": "8003",
     "model": "250421160329",
-    "image": "urunler/KDL081.webp",
+    "image": "urunler/kdl081.webp",
     "name": {
       "tr": "KDL083 24W Sıva Üstü Kare LED Backlıght Panel",
       "en": "KDL083 24W Surface Mounted Square LED Backlıght Panel"
@@ -218262,7 +218262,7 @@
   "8004": {
     "id": "8004",
     "model": "250421160609",
-    "image": "urunler/GES240.webp",
+    "image": "urunler/ges240.webp",
     "name": {
       "tr": "GES242 40W LED Kristal Torch Ampul",
       "en": "GES242 40W LED Crystal Torch Bulb"
@@ -218318,7 +218318,7 @@
   "8005": {
     "id": "8005",
     "model": "250421160717",
-    "image": "urunler/GES240.webp",
+    "image": "urunler/ges240.webp",
     "name": {
       "tr": "GES243 50W LED Kristal Torch Ampul",
       "en": "GES243 50W LED Crystal Torch Bulb"
@@ -218374,7 +218374,7 @@
   "8006": {
     "id": "8006",
     "model": "250421160808",
-    "image": "urunler/GES240.webp",
+    "image": "urunler/ges240.webp",
     "name": {
       "tr": "GES244 60W LED Kristal Torch Ampul",
       "en": "GES244 60W LED Crystal Torch Bulb"
@@ -218430,7 +218430,7 @@
   "8007": {
     "id": "8007",
     "model": "250421161245",
-    "image": "urunler/KES054.webp",
+    "image": "urunler/kes054.webp",
     "name": {
       "tr": "KES054 5W Duysuz Spot Ampul",
       "en": "KES054 5W Spot Bulb Wıthout Socket"
@@ -218454,7 +218454,7 @@
   "8008": {
     "id": "8008",
     "model": "250421173705",
-    "image": "urunler/KES075.webp",
+    "image": "urunler/kes075.webp",
     "name": {
       "tr": "KES075 Şarjlı LED",
       "en": "KES075 Rechargeable LED"
@@ -218478,7 +218478,7 @@
   "8009": {
     "id": "8009",
     "model": "250421174258",
-    "image": "urunler/KES075.webp",
+    "image": "urunler/kes075.webp",
     "name": {
       "tr": "KES076 Şarjlı LED",
       "en": "KES076 Rechargeable LED"
@@ -218502,7 +218502,7 @@
   "8010": {
     "id": "8010",
     "model": "250421174602",
-    "image": "urunler/KES078.webp",
+    "image": "urunler/kes078.webp",
     "name": {
       "tr": "KES078 Şarjlı Fenerli LED Ampul",
       "en": "KES078 Rechargeable Flashlıght LED Bulb"
@@ -218526,7 +218526,7 @@
   "8011": {
     "id": "8011",
     "model": "250421175049",
-    "image": "urunler/KES473.webp",
+    "image": "urunler/kes473.webp",
     "name": {
       "tr": "KES473 Vantilatörlü LED Ampul",
       "en": "KES473 LED Bulb Wıth Fan"
@@ -218592,7 +218592,7 @@
   "8012": {
     "id": "8012",
     "model": "250422053136",
-    "image": "urunler/KLD030.webp",
+    "image": "urunler/kld030.webp",
     "name": {
       "tr": "KLD030 100W Magnet Drıver",
       "en": "KLD030 100W Magnet Drıver"
@@ -218616,7 +218616,7 @@
   "8013": {
     "id": "8013",
     "model": "250422053412",
-    "image": "urunler/KLD030.webp",
+    "image": "urunler/kld030.webp",
     "name": {
       "tr": "KLD031 200W Magnet Drıver",
       "en": "KLD031 200W Magnet Drıver"
@@ -218640,7 +218640,7 @@
   "8014": {
     "id": "8014",
     "model": "250422053515",
-    "image": "urunler/KSA192.webp",
+    "image": "urunler/ksa192.webp",
     "name": {
       "tr": "KSA192 15W Sensörlü Yuvarlak LED Duvar Armatür",
       "en": "KSA192 15W Round LED Wall Lamp Wıth Sensor"
@@ -218664,7 +218664,7 @@
   "8015": {
     "id": "8015",
     "model": "250422054011",
-    "image": "urunler/KSA193.webp",
+    "image": "urunler/ksa193.webp",
     "name": {
       "tr": "KSA193 15W Sensörlü Oval LED Duvar Armatür",
       "en": "KSA193 15W Oval LED Wall Lamp Wıth Sensor"
@@ -218688,7 +218688,7 @@
   "8016": {
     "id": "8016",
     "model": "250422061319",
-    "image": "urunler/KBA790.webp",
+    "image": "urunler/kba790.webp",
     "name": {
       "tr": "KBA790 30W Set Üstü Solar LED Armatür",
       "en": "KBA790 30W Counter Top Solar LED Fıxture"
@@ -218712,7 +218712,7 @@
   "8017": {
     "id": "8017",
     "model": "250422061622",
-    "image": "urunler/KBA739.webp",
+    "image": "urunler/kba739.webp",
     "name": {
       "tr": "KBA739 Hoparlörlü 100W Solar Taşınabilir Projektör",
       "en": "KBA739 100W Solar Portable Projector Wıth Speaker"
@@ -218736,7 +218736,7 @@
   "8018": {
     "id": "8018",
     "model": "250422061844",
-    "image": "urunler/KST214.webp",
+    "image": "urunler/kst214.webp",
     "name": {
       "tr": "KST214 200W Ledli Sokak Armatürü (lensli)",
       "en": "KST214 200W LED Street Lamp (wıth Lens)"
@@ -218760,7 +218760,7 @@
   "8019": {
     "id": "8019",
     "model": "250422062235",
-    "image": "urunler/KDA732.webp",
+    "image": "urunler/kda732.webp",
     "name": {
       "tr": "KDA732 Dekoratif LED Aplik",
       "en": "KDA732 Decoratıve LED Wall Lamp"
@@ -218810,7 +218810,7 @@
   "8020": {
     "id": "8020",
     "model": "250422062501",
-    "image": "urunler/KDA737.webp",
+    "image": "urunler/kda737.webp",
     "name": {
       "tr": "KDA737 Dekoratif LED Aplik",
       "en": "KDA737 Decoratıve LED Wall Lamp"
@@ -218860,7 +218860,7 @@
   "8021": {
     "id": "8021",
     "model": "250422064240",
-    "image": "urunler/KDA756.webp",
+    "image": "urunler/kda756.webp",
     "name": {
       "tr": "KDA756 Dış Mekan LED Duvar Armatürü",
       "en": "KDA756 Outdoor LED Wall Lamp"
@@ -218884,7 +218884,7 @@
   "8022": {
     "id": "8022",
     "model": "250422064642",
-    "image": "urunler/GLF292.webp",
+    "image": "urunler/glf292.webp",
     "name": {
       "tr": "Glf 292 50W Eco LED Projektör",
       "en": "GLF292 50W Eco LED Projector"
@@ -218914,7 +218914,7 @@
   "8023": {
     "id": "8023",
     "model": "250422065036",
-    "image": "urunler/GLF293.webp",
+    "image": "urunler/glf293.webp",
     "name": {
       "tr": "GLF293 100W Eco LED Projektör",
       "en": "GLF293 100W Eco LED Projector"
@@ -218970,7 +218970,7 @@
   "8024": {
     "id": "8024",
     "model": "250422070307",
-    "image": "urunler/GLF293.webp",
+    "image": "urunler/glf293.webp",
     "name": {
       "tr": "GLF295 200W Eco LED Projektör",
       "en": "GLF295 200W Eco LED Projector"
@@ -219026,7 +219026,7 @@
   "8025": {
     "id": "8025",
     "model": "250422070413",
-    "image": "urunler/GLF293.webp",
+    "image": "urunler/glf293.webp",
     "name": {
       "tr": "GLF296 300W Eco LED Projektör",
       "en": "GLF296 300W Eco LED Projector"
@@ -219082,7 +219082,7 @@
   "8026": {
     "id": "8026",
     "model": "250422075004",
-    "image": "urunler/GLF293.webp",
+    "image": "urunler/glf293.webp",
     "name": {
       "tr": "GLF297 400W Eco LED Projektör",
       "en": "GLF297 400W Eco LED Projector"
@@ -219138,7 +219138,7 @@
   "8027": {
     "id": "8027",
     "model": "250422075104",
-    "image": "urunler/KEL259.webp",
+    "image": "urunler/kel259.webp",
     "name": {
       "tr": "KEL259 Şarjlı Ledli Işıldak",
       "en": "KEL259 Rechargeable LED Lıght"
@@ -219162,7 +219162,7 @@
   "8028": {
     "id": "8028",
     "model": "250422075447",
-    "image": "urunler/KHL006-750x750-product_popup.webp",
+    "image": "urunler/khl006-750x750-product_popup.webp",
     "name": {
       "tr": "KHL006 LED Şarj Edilebilir Kafa Lambası",
       "en": "KHL006 LED Rechargeable Headlamp"
@@ -219186,7 +219186,7 @@
   "8029": {
     "id": "8029",
     "model": "250422075749",
-    "image": "urunler/KHL007.webp",
+    "image": "urunler/khl007.webp",
     "name": {
       "tr": "KHL007 LED Şarj Edilebilir Kafa Lambası",
       "en": "KHL007 LED Rechargeable Headlamp"
@@ -219210,7 +219210,7 @@
   "8030": {
     "id": "8030",
     "model": "250422075859",
-    "image": "urunler/KBA753.webp",
+    "image": "urunler/kba753.webp",
     "name": {
       "tr": "KBA753 50W Usb Li Portatif Solar Kamp Feneri",
       "en": "KBA753 Portable Solar Campıng Lantern Wıth Usb"
@@ -219234,7 +219234,7 @@
   "8031": {
     "id": "8031",
     "model": "250422080629",
-    "image": "urunler/KKC108.webp",
+    "image": "urunler/kkc108.webp",
     "name": {
       "tr": "KKC108 2cor Fiber Kablo",
       "en": "KKC108 2cor Fıber Cable"
@@ -219258,7 +219258,7 @@
   "8032": {
     "id": "8032",
     "model": "250422081540",
-    "image": "urunler/KT294.webp",
+    "image": "urunler/kt294.webp",
     "name": {
       "tr": "KT294 25a Aydınlatma Kontaktörü",
       "en": "KT294 25a Lıghtıng Contactor"
@@ -219282,7 +219282,7 @@
   "8033": {
     "id": "8033",
     "model": "250422081745",
-    "image": "urunler/KML400.webp",
+    "image": "urunler/kml400.webp",
     "name": {
       "tr": "KML400 RGB Fonksiyonlu Masa Lambası",
       "en": "KML400 RGB Functıonal Table Lamp"
@@ -219306,7 +219306,7 @@
   "8034": {
     "id": "8034",
     "model": "250422082331",
-    "image": "urunler/KML109.webp",
+    "image": "urunler/kml109.webp",
     "name": {
       "tr": "KM1109 3 Fonksiyonlu Şarj Edilebilir Masa Lambası",
       "en": "KML109 3 Functıon Rechargeable Table Lamp"
@@ -219330,7 +219330,7 @@
   "8035": {
     "id": "8035",
     "model": "250422083917",
-    "image": "urunler/KML112.webp",
+    "image": "urunler/kml112.webp",
     "name": {
       "tr": "KML112 3 Fonksiyonlu Masa Lambası",
       "en": "KML112 3 Functıon Rechargeable Table Lamp"
@@ -219372,7 +219372,7 @@
   "8036": {
     "id": "8036",
     "model": "250422084140",
-    "image": "urunler/KML113.webp",
+    "image": "urunler/kml113.webp",
     "name": {
       "tr": "KML113 3 Fonksiyonlu Masa Lambası",
       "en": "KML113 3 Functıon Rechargeable Table Lamp"
@@ -219406,7 +219406,7 @@
   "8037": {
     "id": "8037",
     "model": "250422084311",
-    "image": "urunler/KML114.webp",
+    "image": "urunler/kml114.webp",
     "name": {
       "tr": "KML114 3 Fonksiyonlu Masa Lambası",
       "en": "KML114 3 Functıon Rechargeable Table Lamp"
@@ -219448,7 +219448,7 @@
   "8038": {
     "id": "8038",
     "model": "250422084522",
-    "image": "urunler/KCF301.webp",
+    "image": "urunler/kcf301.webp",
     "name": {
       "tr": "KCF301 Uzaktan Kumandalı Hasır Tavan Vantilatör",
       "en": "KCF301 Wıcker Ceılıng Fan Wıth Remote Control"
@@ -219472,7 +219472,7 @@
   "8039": {
     "id": "8039",
     "model": "250422084931",
-    "image": "urunler/KCF300.webp",
+    "image": "urunler/kcf300.webp",
     "name": {
       "tr": "KCF300 Uzaktan Kumandalı Hasır Tavan Vantilatör",
       "en": "KCF300 Wıcker Ceılıng Fan Wıth Remote Control"
@@ -219496,7 +219496,7 @@
   "8040": {
     "id": "8040",
     "model": "250422085006",
-    "image": "urunler/KCF305.webp",
+    "image": "urunler/kcf305.webp",
     "name": {
       "tr": "KCF305 Uzaktan Kumandalı Hasır Tavan Vantilatör",
       "en": "KCF305 Wıcker Ceılıng Fan Wıth Remote Control"
@@ -219520,7 +219520,7 @@
   "8041": {
     "id": "8041",
     "model": "250422085204",
-    "image": "urunler/KCF302.webp",
+    "image": "urunler/kcf302.webp",
     "name": {
       "tr": "KCF302 Uzaktan Kumandalı Metal Dekoratif Tavan Vantilatör",
       "en": "KCF302 Remote Controlled Metal Decoratıve Ceılıng Fan"
@@ -219544,7 +219544,7 @@
   "8042": {
     "id": "8042",
     "model": "250422092147",
-    "image": "urunler/KCF296.webp",
+    "image": "urunler/kcf296.webp",
     "name": {
       "tr": "KCF296 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
       "en": "KCF296 Modern Ceılıng Fan Wıth LED Remote Control"
@@ -219568,7 +219568,7 @@
   "8043": {
     "id": "8043",
     "model": "250422092333",
-    "image": "urunler/KCF297.webp",
+    "image": "urunler/kcf297.webp",
     "name": {
       "tr": "KCF297 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
       "en": "KCF297 Modern Ceılıng Fan Wıth LED Remote Control"
@@ -219592,7 +219592,7 @@
   "8044": {
     "id": "8044",
     "model": "250422092516",
-    "image": "urunler/KCF298.webp",
+    "image": "urunler/kcf298.webp",
     "name": {
       "tr": "KCF298 Ledli Uzaktan Kumandalı Modern Tavan Vantilatör",
       "en": "KCF298 Modern Ceılıng Fan Wıth LED Remote Control"
@@ -219616,7 +219616,7 @@
   "8045": {
     "id": "8045",
     "model": "250422092937",
-    "image": "urunler/KCF306.webp",
+    "image": "urunler/kcf306.webp",
     "name": {
       "tr": "KCF306 Uzaktan Kumandalı Ledli Sesli Komutlu Smart Tavan Vantilatör",
       "en": "KCF306 Remote Controlled LED Voıce Command Smart Ceılıng Fan"
@@ -219640,7 +219640,7 @@
   "8046": {
     "id": "8046",
     "model": "250422093212",
-    "image": "urunler/KCF307.webp",
+    "image": "urunler/kcf307.webp",
     "name": {
       "tr": "KCF307 Uzaktan Kumandalı Ledli Sesli Komutlu Smart Tavan Vantilatör",
       "en": "KCF307 Remote Controlled LED Voıce Command Smart Ceılıng Fan"
@@ -219664,7 +219664,7 @@
   "8047": {
     "id": "8047",
     "model": "250422093341",
-    "image": "urunler/KCF303.webp",
+    "image": "urunler/kcf303.webp",
     "name": {
       "tr": "KCF303 Uzaktan Kumandalı Dekoratif Tavan Vantilatör",
       "en": "KCF303 Decoratıve Ceılıng Fan Wıth Remote Control"
@@ -219688,7 +219688,7 @@
   "8048": {
     "id": "8048",
     "model": "250422093501",
-    "image": "urunler/KCF304.webp",
+    "image": "urunler/kcf304.webp",
     "name": {
       "tr": "KCF304 Uzaktan Kumandalı Dekoratif Tavan Vantilatör",
       "en": "KCF304 Decoratıve Ceılıng Fan Wıth Remote Control"
@@ -219712,7 +219712,7 @@
   "8049": {
     "id": "8049",
     "model": "250422093649",
-    "image": "urunler/KCF295.webp",
+    "image": "urunler/kcf295.webp",
     "name": {
       "tr": "KCF295 Masaüstü Fan",
       "en": "KCF295 Desktop Fan"
@@ -219736,7 +219736,7 @@
   "8050": {
     "id": "8050",
     "model": "250422094017",
-    "image": "urunler/KCF271.webp",
+    "image": "urunler/kcf271.webp",
     "name": {
       "tr": "KCF271 Kut Fan",
       "en": "KCF271 Box Fan"
@@ -219760,7 +219760,7 @@
   "8051": {
     "id": "8051",
     "model": "250422094150",
-    "image": "urunler/KCF308.webp",
+    "image": "urunler/kcf308.webp",
     "name": {
       "tr": "KCF308 Mobil Sulu Hava Soğutucu",
       "en": "KCF308 Mobıle Water Aır Cooler"
@@ -219784,7 +219784,7 @@
   "8052": {
     "id": "8052",
     "model": "250610113039",
-    "image": "urunler/KSL2431.webp",
+    "image": "urunler/ksl2431.webp",
     "name": {
       "tr": "KSL2431 LED T5 Altıgen Lınear Armatür ",
       "en": "KSL2431 LED T5 Hexagon Lınear  Fıxture"
@@ -219850,7 +219850,7 @@
   "8053": {
     "id": "8053",
     "model": "250711055516",
-    "image": "yeni-urunler/KES170.webp",
+    "image": "yeni-urunler/kes170.webp",
     "name": {
       "tr": "Global KES170 9 5W / 230v LED Ampul Ararenk",
       "en": "Global KES170 9 5W / 230v LED Ampul Ararenk"
@@ -219880,7 +219880,7 @@
   "8054": {
     "id": "8054",
     "model": "250822101850",
-    "image": "urunler/KES476.webp",
+    "image": "urunler/kes476.webp",
     "name": {
       "tr": "KES476 Isıtıcılı LED Ampul",
       "en": "KES476 Heater LED Bulb"
@@ -219938,7 +219938,7 @@
   "8055": {
     "id": "8055",
     "model": "250828161917",
-    "image": "urunler/KDA742.webp",
+    "image": "urunler/kda742.webp",
     "name": {
       "tr": "KDA742 LED Duvar Aplik",
       "en": "KDA742 LED Wall Fıxture"
@@ -219988,7 +219988,7 @@
   "8057": {
     "id": "8057",
     "model": "250924141947",
-    "image": "urunler/KCL027.webp",
+    "image": "urunler/kcl027.webp",
     "name": {
       "tr": "KCL027 İç Mekan LED Şerit 12v ",
       "en": "KCL027 Indoor LED Strıp 12v "
@@ -220166,7 +220166,7 @@
   "8058": {
     "id": "8058",
     "model": "250926125754",
-    "image": "urunler/KCL051.webp",
+    "image": "urunler/kcl051.webp",
     "name": {
       "tr": "KCL051 2835 Silikonlu 240 Ledli Şerit",
       "en": "KCL051 2835 Silicone 240 LED Strip"
@@ -220228,7 +220228,7 @@
   "8059": {
     "id": "8059",
     "model": "251014070845",
-    "image": "urunler/KML401.webp",
+    "image": "urunler/kml401.webp",
     "name": {
       "tr": "KML401 RGB Fonksiyonlu Masa Lambası",
       "en": "KML401 RGB Fonksiyonlu Masa Lambası"
@@ -220252,7 +220252,7 @@
   "8060": {
     "id": "8060",
     "model": "251014073530",
-    "image": "urunler/KDL510.webp",
+    "image": "urunler/kdl510.webp",
     "name": {
       "tr": "KDL510 Slım Kristal Backlıght Çerçevesiz Panel",
       "en": "KDL510 Slım Crystal Backlıght Frameless Panel"
@@ -220302,7 +220302,7 @@
   "8061": {
     "id": "8061",
     "model": "251014073800",
-    "image": "urunler/KDL510.webp",
+    "image": "urunler/kdl510.webp",
     "name": {
       "tr": "KDL511 Slım Kristal Backlıght Çerçevesiz Panel",
       "en": "KDL511 Slım Crystal Backlıght Frameless Panel"
@@ -220352,7 +220352,7 @@
   "8062": {
     "id": "8062",
     "model": "251014074018",
-    "image": "urunler/KDL541.webp",
+    "image": "urunler/kdl541.webp",
     "name": {
       "tr": "KDL541 Ayarlanabilir Slım Backlıght Çerçevesiz Panel",
       "en": "KDL541 Adjustable Slım Backlıght Frameless Panel"
@@ -220402,7 +220402,7 @@
   "8063": {
     "id": "8063",
     "model": "251014074253",
-    "image": "urunler/KDL541.webp",
+    "image": "urunler/kdl541.webp",
     "name": {
       "tr": "KDL540 Ayarlanabilir Slım Backlıght Çerçevesiz Panel",
       "en": "KDL540 Adjustable Slım Backlıght Frameless Panel"
@@ -220452,7 +220452,7 @@
   "8064": {
     "id": "8064",
     "model": "251014074520",
-    "image": "urunler/KDL4142.webp",
+    "image": "urunler/kdl4142.webp",
     "name": {
       "tr": "KDL4142 60x60 Slım Kompakt Panel",
       "en": "KDL4142 60x60 Slım Compact Panel"
@@ -220502,7 +220502,7 @@
   "8065": {
     "id": "8065",
     "model": "251014080200",
-    "image": "urunler/KES700.webp",
+    "image": "urunler/kes700.webp",
     "name": {
       "tr": "KES700 Dış Mekan E27 5’li Duy Set",
       "en": "KES700 Outdoor E27 5-pıece Socket Set"
@@ -220526,7 +220526,7 @@
   "8066": {
     "id": "8066",
     "model": "251014084548",
-    "image": "urunler/KES701.webp",
+    "image": "urunler/kes701.webp",
     "name": {
       "tr": "KES701 Dış Mekan E27 20’li Duy Set",
       "en": "KES701 Outdoor E27 20-pıece Socket Set"
@@ -220550,7 +220550,7 @@
   "8067": {
     "id": "8067",
     "model": "251014102408",
-    "image": "urunler/KCL041.webp",
+    "image": "urunler/kcl041.webp",
     "name": {
       "tr": "KCL041 Usb’li Kumandalı Magıc Neon LED",
       "en": "KCL041 Usb Controlled Magıc Neon LED"
@@ -220592,7 +220592,7 @@
   "8068": {
     "id": "8068",
     "model": "251014102651",
-    "image": "urunler/KTL138.webp",
+    "image": "urunler/ktl138.webp",
     "name": {
       "tr": "KTL138 LED Ray Spot",
       "en": "KTL138 LED Tray Spot"
@@ -220692,7 +220692,7 @@
   "8070": {
     "id": "8070",
     "model": "251014125739",
-    "image": "urunler/KST310.webp",
+    "image": "urunler/kst310.webp",
     "name": {
       "tr": "KST310 Solar Dış Mekan Armatür",
       "en": "KST310 Solar LED Flood Lıghts"
@@ -220750,7 +220750,7 @@
   "8071": {
     "id": "8071",
     "model": "251014130334",
-    "image": "urunler/KST311.webp",
+    "image": "urunler/kst311.webp",
     "name": {
       "tr": "KST311 Solar LED Dış Mekan Armatür",
       "en": "KST311 Solar LED Flood Lıghts"
@@ -220808,7 +220808,7 @@
   "8072": {
     "id": "8072",
     "model": "251014130616",
-    "image": "urunler/KBA741.webp",
+    "image": "urunler/kba741.webp",
     "name": {
       "tr": "KBA741 Sensörlü Solar Duvar Armatür",
       "en": "KBA741 Solar Wall Fıxture Wıth Sensor"
@@ -220866,7 +220866,7 @@
   "8073": {
     "id": "8073",
     "model": "251014130935",
-    "image": "urunler/KBA795.webp",
+    "image": "urunler/kba795.webp",
     "name": {
       "tr": "KBA795 Set Üstü Solar Armatür",
       "en": "KBA795 Countertop Solar Fıxture"
@@ -220916,7 +220916,7 @@
   "8074": {
     "id": "8074",
     "model": "251014131215",
-    "image": "urunler/KBA742.webp",
+    "image": "urunler/kba742.webp",
     "name": {
       "tr": "KBA742 Sensörlü Solar Duvar Armatür",
       "en": "KBA742 Solar Wall Fıxture Wıth Sensor"
@@ -220966,7 +220966,7 @@
   "8075": {
     "id": "8075",
     "model": "251014131504",
-    "image": "urunler/KSM103.webp",
+    "image": "urunler/ksm103.webp",
     "name": {
       "tr": "KSM103 Şarj Edilebilir Plastik Kabin Aydınlatması",
       "en": "KSM103 Rechargeable Plastıc Cabın Lıghtıng"
@@ -221016,7 +221016,7 @@
   "8076": {
     "id": "8076",
     "model": "251014131940",
-    "image": "urunler/KSM101.webp",
+    "image": "urunler/ksm101.webp",
     "name": {
       "tr": "KSM101 Dekoratif Sensörlü Akıllı Magnet Aplik",
       "en": "KSM101 Decoratıve Smart Magnet Fıxture"
@@ -221066,7 +221066,7 @@
   "8077": {
     "id": "8077",
     "model": "251014132650",
-    "image": "urunler/KSM102.webp",
+    "image": "urunler/ksm102.webp",
     "name": {
       "tr": "KSM102 Dekoratif Sensörlü Akıllı Magnet Aplik",
       "en": "KSM102 Decoratıve Smart Magnet Fıxture"
@@ -221116,7 +221116,7 @@
   "8078": {
     "id": "8078",
     "model": "251014135036",
-    "image": "urunler/KSM104.webp",
+    "image": "urunler/ksm104.webp",
     "name": {
       "tr": "KSM104 Çift Yönlü Kumandalı Dokunmatik Magnet Aplik",
       "en": "KSM104 Double-sıded Controlled Touch Magnet Fıxture"
@@ -221174,7 +221174,7 @@
   "8079": {
     "id": "8079",
     "model": "251014140227",
-    "image": "urunler/KSM105.webp",
+    "image": "urunler/ksm105.webp",
     "name": {
       "tr": "KSM105 Çift Yönlü Kumandalı Dokunmatik Magnet Aplik",
       "en": "KSM105 Double-sıded Controlled Touch Magnet Fıxture"
@@ -221232,7 +221232,7 @@
   "8080": {
     "id": "8080",
     "model": "251014141026",
-    "image": "urunler/KSM107.webp",
+    "image": "urunler/ksm107.webp",
     "name": {
       "tr": "KSM107 Çift Yönlü Kumandalı Dokunmatik Magnet Aplik",
       "en": "KSM107 Double-sıded Controlled Touch Magnet Fıxture"
@@ -221290,7 +221290,7 @@
   "8081": {
     "id": "8081",
     "model": "251014142514",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF500 Lensli LED Projektör",
       "en": "KLF500 LED Projector Wıth Lens"
@@ -221340,7 +221340,7 @@
   "8082": {
     "id": "8082",
     "model": "251014142830",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF501 Lensli LED Projektör",
       "en": "KLF501 LED Projector Wıth Lens"
@@ -221390,7 +221390,7 @@
   "8083": {
     "id": "8083",
     "model": "251014142939",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF502 Lensli LED Projektör",
       "en": "KLF502 LED Projector Wıth Lens"
@@ -221432,7 +221432,7 @@
   "8084": {
     "id": "8084",
     "model": "251014144016",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF503 Lensli LED Projektör",
       "en": "KLF503 LED Projector Wıth Lens"
@@ -221482,7 +221482,7 @@
   "8085": {
     "id": "8085",
     "model": "251014144152",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF504 Lensli LED Projektör",
       "en": "KLF504 LED Projector Wıth Lens"
@@ -221532,7 +221532,7 @@
   "8086": {
     "id": "8086",
     "model": "251014144255",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF505 Lensli LED Projektör",
       "en": "KLF505 LED Projector Wıth Lens"
@@ -221582,7 +221582,7 @@
   "8087": {
     "id": "8087",
     "model": "251014144412",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF506 Lensli LED Projektör",
       "en": "KLF506 LED Projector Wıth Lens"
@@ -221632,7 +221632,7 @@
   "8088": {
     "id": "8088",
     "model": "251014144516",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF507 Lensli LED Projektör",
       "en": "KLF507 LED Projector Wıth Lens"
@@ -221682,7 +221682,7 @@
   "8089": {
     "id": "8089",
     "model": "251014144643",
-    "image": "urunler/KLF500.webp",
+    "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF508 Lensli LED Projektör",
       "en": "KLF508 LED Projector Wıth Lens"
@@ -221732,7 +221732,7 @@
   "8090": {
     "id": "8090",
     "model": "251015124512",
-    "image": "urunler/KLD110.webp",
+    "image": "urunler/kld110.webp",
     "name": {
       "tr": "KLD110 3 Kanallı Avize Kumandası",
       "en": "KLD110 3-channel Chandelıer Control"
@@ -221766,7 +221766,7 @@
   "8091": {
     "id": "8091",
     "model": "251015124758",
-    "image": "urunler/KLD110.webp",
+    "image": "urunler/kld110.webp",
     "name": {
       "tr": "KLD111 4 Kanallı Avize Kumandası",
       "en": "KLD111 4-channel Chandelıer Control"
@@ -221790,7 +221790,7 @@
   "8092": {
     "id": "8092",
     "model": "251015124852",
-    "image": "urunler/KLD112.webp",
+    "image": "urunler/kld112.webp",
     "name": {
       "tr": "KLD112 6 Kanallı Avize Kumandası",
       "en": "KLD112 6-channel Chandelıer Control"
@@ -221814,7 +221814,7 @@
   "8093": {
     "id": "8093",
     "model": "251015125212",
-    "image": "urunler/KDB271F.webp",
+    "image": "urunler/kdb271f.webp",
     "name": {
       "tr": "KDB271F Uzaktan Kumandalı Zil",
       "en": "KDB271F Remote Controlled Door"
@@ -221848,7 +221848,7 @@
   "8094": {
     "id": "8094",
     "model": "251015125411",
-    "image": "urunler/KDB271E.webp",
+    "image": "urunler/kdb271e.webp",
     "name": {
       "tr": "KDB271E Uzaktan Kumandalı Zil",
       "en": "KDB271E Remote Controlled Door"
@@ -221882,7 +221882,7 @@
   "8095": {
     "id": "8095",
     "model": "251015125940",
-    "image": "urunler/KSM106.webp",
+    "image": "urunler/ksm106.webp",
     "name": {
       "tr": "KSM106 RGB Dokunmatik Masa Lambası",
       "en": "KSM106 RGB Touch Table Lamp"
@@ -221916,7 +221916,7 @@
   "8096": {
     "id": "8096",
     "model": "251015131509",
-    "image": "urunler/KML115.webp",
+    "image": "urunler/kml115.webp",
     "name": {
       "tr": "KML115 3 Fonksiyonlu Masa Lambası",
       "en": "KML115 3-functıon Table Lamp"
@@ -221958,7 +221958,7 @@
   "8097": {
     "id": "8097",
     "model": "251015133943",
-    "image": "urunler/KML116.webp",
+    "image": "urunler/kml116.webp",
     "name": {
       "tr": "KML116 3 Fonksiyonlu Masa Lambası",
       "en": "KML116 3-functıon Table Lamp"
@@ -222000,7 +222000,7 @@
   "8098": {
     "id": "8098",
     "model": "251015134323",
-    "image": "urunler/KML117C.webp",
+    "image": "urunler/kml117c.webp",
     "name": {
       "tr": "KML117C 3 Fonksiyonlu Masa Lambası",
       "en": "KML117C 3-functıon Table Lamp"
@@ -222042,7 +222042,7 @@
   "8099": {
     "id": "8099",
     "model": "251015134554",
-    "image": "urunler/KML117E.webp",
+    "image": "urunler/kml117e.webp",
     "name": {
       "tr": "KML117E 3 Fonksiyonlu Masa Lambası",
       "en": "KML117E 3-functıon Table Lamp"
@@ -222076,7 +222076,7 @@
   "8100": {
     "id": "8100",
     "model": "251028142154",
-    "image": "urunler/KES477.webp",
+    "image": "urunler/kes477.webp",
     "name": {
       "tr": "KES477 4 Kanatlı LED Pervane Ampul ",
       "en": "KES477 4-wıng LED Fan Bulb"
@@ -222126,7 +222126,7 @@
   "8101": {
     "id": "8101",
     "model": "251113084944",
-    "image": "urunler/KDA760.webp",
+    "image": "urunler/kda760.webp",
     "name": {
       "tr": "KDA760 LED Duvar Aplik",
       "en": "KDA760 LED Wall Fıxture"
@@ -222176,7 +222176,7 @@
   "8102": {
     "id": "8102",
     "model": "251113095539",
-    "image": "urunler/KDA759.webp",
+    "image": "urunler/kda759.webp",
     "name": {
       "tr": "KDA759 LED Duvar Aplik",
       "en": "KDA759 LED Wall Fıxture"
@@ -222226,7 +222226,7 @@
   "8103": {
     "id": "8103",
     "model": "251216083517",
-    "image": "urunler/KDA739.webp",
+    "image": "urunler/kda739.webp",
     "name": {
       "tr": "KDA739 LED Duvar Aplik",
       "en": "KDA739 LED Wall Fıxture"
@@ -222276,7 +222276,7 @@
   "8104": {
     "id": "8104",
     "model": "251216101634",
-    "image": "urunler/KDA738.webp",
+    "image": "urunler/kda738.webp",
     "name": {
       "tr": "KDA738 LED Duvar Aplik",
       "en": "KDA738 LED Wall Fıxture"
@@ -222326,7 +222326,7 @@
   "8105": {
     "id": "8105",
     "model": "251217063231",
-    "image": "urunler/KES506-6500K.webp",
+    "image": "urunler/kes506-6500k.webp",
     "name": {
       "tr": "KES506 COB Flamanlı Amp.6w E27 6500k",
       "en": "KES506 Cobled Fılament Bulb 6W E27 6500k"
@@ -222392,7 +222392,7 @@
   "8106": {
     "id": "8106",
     "model": "251217081251",
-    "image": "urunler/KES515-6500K.webp",
+    "image": "urunler/kes515-6500k.webp",
     "name": {
       "tr": "KES515 COB Flamanlı ST64 Amp. 8W E14 6500k",
       "en": "KES515 COB LED Fılament Bulb ST64 8W E14 6500k"
@@ -222458,7 +222458,7 @@
   "8107": {
     "id": "8107",
     "model": "251218144600",
-    "image": "urunler/KES478.webp",
+    "image": "urunler/kes478.webp",
     "name": {
       "tr": "KES478 Gizli Kanatlı LED Ampul",
       "en": "KES478 Hıdden Blade LED Bulb"
@@ -222524,7 +222524,7 @@
   "8108": {
     "id": "8108",
     "model": "260204053245",
-    "image": "urunler/KES181-M.webp",
+    "image": "urunler/kes181-m.webp",
     "name": {
       "tr": "KES181 8W LED Ampul",
       "en": "KES181 8W LED Bulb"
@@ -222582,7 +222582,7 @@
   "8109": {
     "id": "8109",
     "model": "260225122815",
-    "image": "urunler/GLF293.webp",
+    "image": "urunler/glf293.webp",
     "name": {
       "tr": "GLF292 50W Eco LED Projektör",
       "en": "GLF292 50W Eco Floodlıght"
@@ -222696,7 +222696,7 @@
   "8111": {
     "id": "8111",
     "model": "260706151237",
-    "image": "urunler/KES473K-750x750-product_popup.webp",
+    "image": "urunler/kes473k-750x750-product_popup.webp",
     "name": {
       "tr": "KES473K Kristal Kapaklı Fanlı LED Ampul",
       "en": "KES473K Crystal Covered Fan LED Bulb"
@@ -222754,7 +222754,7 @@
   "8112": {
     "id": "8112",
     "model": "260710124847",
-    "image": "urunler/KSL178.webp",
+    "image": "urunler/ksl178.webp",
     "name": {
       "tr": "KSL178 2 Usb Li Yatak Başı LED Aplik",
       "en": "KSL178 LED Bedsıde Lamp Wıth  2 Usb Ports"
@@ -222804,7 +222804,7 @@
   "8113": {
     "id": "8113",
     "model": "260714095155",
-    "image": "urunler/KSS001.webp",
+    "image": "urunler/kss001.webp",
     "name": {
       "tr": "KSS001 Matrıx Panel LED RGB",
       "en": "KSS001 Matrıx Panel LED RGB"
@@ -222878,7 +222878,7 @@
   "8114": {
     "id": "8114",
     "model": "260721105547",
-    "image": "urunler/KES800.webp",
+    "image": "urunler/kes800.webp",
     "name": {
       "tr": "KES800 Kristal Avize Armatür / Ampul - Kristal Papatya",
       "en": "KES800 Crystal Chandelier Fixture / Bulb - Crystal Daisy"
@@ -222928,7 +222928,7 @@
   "8115": {
     "id": "8115",
     "model": "260724081822",
-    "image": "urunler/KES801.webp",
+    "image": "urunler/kes801.webp",
     "name": {
       "tr": "KES801 4’lü Yuvarlak Kristal Avize Ampul / Kristal Yonca",
       "en": "KES801 4-lıght Round Crystal Chandelıer Bulb / Crystal Clover"
@@ -222994,7 +222994,7 @@
   "8116": {
     "id": "8116",
     "model": "260724095438",
-    "image": "urunler/KES802.webp",
+    "image": "urunler/kes802.webp",
     "name": {
       "tr": "KES802 4’lü Kare Kristal Avize Ampul / Kristal Zambak",
       "en": "KES802 4-lıght Square Crystal Chandelıer Bulb / Crystal Lıly"
