@@ -47,7 +47,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const isK2 = brandName === "k2";
   const isVanti = brandName === "vanti";
   const isGlobal = brandName === "global";
-  const isLight = isK2 || isVanti;
+  const isLight = isK2 || isVanti || isGlobal;
 
   const videoMatchKey = Object.keys(VANTI_VIDEOS).find(key => product.model.includes(key) || name.includes(key));
   const videoId = videoMatchKey ? VANTI_VIDEOS[videoMatchKey] : null;
@@ -174,7 +174,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </>
         )}
 
-        {/* === GLOBAL BRAND (SOLAR, WARM, ELEGANT) === */}
+        {/* === GLOBAL BRAND (SOLAR, WARM, ELEGANT, DYNAMIC) === */}
         {isGlobal && (
           <>
             {/* Massive Soft Yellow Ambient Glows */}
@@ -188,7 +188,21 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
             {/* Faint Grid Texture for depth */}
             <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(#FFDA51 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
             
-            {/* Subtle Diagonal Accent Lines (not sharp lasers) */}
+            {/* Morphing Liquid Sun & Expanding Solar Flares */}
+            <div className="absolute -right-[10%] top-[5%] w-[800px] h-[800px] bg-gradient-to-tr from-[#FFDA51]/20 to-amber-200/5 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] animate-[spin_25s_linear_infinite] blur-[40px]" />
+            <div className="absolute -right-[5%] top-[10%] w-[700px] h-[700px] bg-gradient-to-bl from-amber-400/15 to-yellow-100/10 rounded-[60%_40%_30%_70%/50%_60%_40%_50%] animate-[spin_35s_linear_infinite_reverse] blur-[30px]" />
+            <div className="absolute right-[0%] top-[15%] w-[600px] h-[600px] border-[2px] border-amber-300/30 rounded-[50%_50%_30%_70%/60%_40%_60%_40%] animate-[spin_45s_linear_infinite] blur-[1px] shadow-[0_0_50px_rgba(251,191,36,0.2)]" />
+            
+            {/* Elegant Sun Ripples */}
+            <div className="absolute -right-[5%] top-[10%] w-[800px] h-[800px] rounded-full border-[1px] border-amber-200/20 animate-[ping_10s_cubic-bezier(0,0,0.2,1)_infinite]" />
+            <div className="absolute -right-[5%] top-[10%] w-[800px] h-[800px] rounded-full border-[1.5px] border-yellow-300/10 animate-[ping_14s_cubic-bezier(0,0,0.2,1)_infinite_4s]" />
+            
+            {/* Floating Light Particles / Embers */}
+            <div className="absolute left-[20%] top-[35%] w-2 h-2 rounded-full bg-yellow-300 blur-[1px] animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
+            <div className="absolute right-[35%] top-[55%] w-3 h-3 rounded-full bg-amber-400 blur-[2px] animate-[ping_6s_cubic-bezier(0,0,0.2,1)_infinite_reverse]" />
+            <div className="absolute left-[55%] bottom-[25%] w-2.5 h-2.5 rounded-full bg-[#FFDA51] blur-[1.5px] animate-[ping_5s_cubic-bezier(0,0,0.2,1)_infinite]" />
+
+            {/* Subtle Diagonal Accent Lines */}
             <div className="absolute left-[15%] top-[-10%] w-[400px] h-[600px] bg-gradient-to-br from-yellow-200/10 to-transparent -rotate-12 blur-[40px] rounded-[100%]" />
             <div className="absolute right-[5%] bottom-[10%] w-[500px] h-[500px] bg-gradient-to-bl from-amber-300/10 to-transparent rotate-12 blur-[50px] rounded-[100%]" />
           </>

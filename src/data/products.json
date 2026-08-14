@@ -226336,5 +226336,3685 @@
       "light": null,
       "casing": null
     }
+  },
+  "GDL420": {
+    "id": "GDL420",
+    "model": "GDL420",
+    "image": "urunler/gdl420.webp",
+    "name": {
+      "tr": "GDL420 SIVA ÜSTÜ BACKLIGHT LED PANEL",
+      "en": "GDL420 SURFACE MOUNT BACKLIGHT LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3200"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "59,5 cm x 59,5 cm x 3,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Kendinden Clip-In / Sıva Üstü 60x60 Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3200"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "59.5 cm x 59.5 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Self Clip-In / Surface Mount 60x60 LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Led Panel"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Led Panel"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "60W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "GDL418": {
+    "id": "GDL418",
+    "model": "GDL418",
+    "image": "urunler/gdl418.webp",
+    "name": {
+      "tr": "GDL418 SLIM BACKLIGHT SIVA ALTI PANEL",
+      "en": "GDL418 SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3000"
+        },
+        {
+          "label": "Açıklama",
+          "value": "60x60"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "59,5 cm x 59,5 cm x 3 cm (Derinlik)"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / 3 Yıl Garanti / SMD 2835 Lensli / Sıva Altı 60x60 Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3000"
+        },
+        {
+          "label": "Description",
+          "value": "60x60"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "59.5 cm x 59.5 cm x 3 cm (Depth)"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / 3 Years Warranty / SMD 2835 with Lens / Recessed 60x60 LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Led Panel"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Led Panel"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "40W",
+      "socket": null,
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "GDL419": {
+    "id": "GDL419",
+    "model": "GDL419",
+    "image": "urunler/gdl419.webp",
+    "name": {
+      "tr": "GDL419 SLIM BACKLIGHT SIVA ALTI PANEL",
+      "en": "GDL419 SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "48W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3600"
+        },
+        {
+          "label": "Açıklama",
+          "value": "60x60"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "59,5 cm x 59,5 cm x 3 cm (Derinlik)"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / 3 Yıl Garanti / SMD 2835 Lensli / Sıva Altı 60x60 Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "48W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3600"
+        },
+        {
+          "label": "Description",
+          "value": "60x60"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "59.5 cm x 59.5 cm x 3 cm (Depth)"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / 3 Years Warranty / SMD 2835 with Lens / Recessed 60x60 LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Led Panel"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Led Panel"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "48W",
+      "socket": null,
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "GDL414": {
+    "id": "GDL414",
+    "model": "GDL414",
+    "image": "urunler/gdl414.webp",
+    "name": {
+      "tr": "GDL414 SLIM BACKLIGHT SIVA ALTI PANEL",
+      "en": "GDL414 SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2300"
+        },
+        {
+          "label": "Açıklama",
+          "value": "30x30"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30 cm x 30 cm x 3 cm (Derinlik)"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / 3 Yıl Garanti / PS LGP 2 mm / SMD 4014 Led Chip / Kendinden Clip-in"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2300"
+        },
+        {
+          "label": "Description",
+          "value": "30x30"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30 cm x 30 cm x 3 cm (Depth)"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / 3 Years Warranty / PS LGP 2 mm / SMD 4014 Led Chip / Self Clip-in"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Led Panel"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Led Panel"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "25W",
+      "socket": null,
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "KES170": {
+    "id": "KES170",
+    "model": "KES170",
+    "image": "urunler/kes170.webp",
+    "name": {
+      "tr": "KES170 LED AMPUL (LINEAR)",
+      "en": "KES170 LED BULB (LINEAR)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "9.5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6 cm x 10,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "9.5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6 cm x 10.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Led Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Led Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "9.5W",
+      "socket": "E27",
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "KES171": {
+    "id": "KES171",
+    "model": "KES171",
+    "image": "urunler/kes171.webp",
+    "name": {
+      "tr": "KES171 LED AMPUL (LINEAR)",
+      "en": "KES171 LED BULB (LINEAR)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6 cm x 11,2 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6 cm x 11.2 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Led Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Led Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "12W",
+      "socket": "E27",
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "KES172": {
+    "id": "KES172",
+    "model": "KES172",
+    "image": "urunler/kes172.webp",
+    "name": {
+      "tr": "KES172 LED AMPUL (LINEAR)",
+      "en": "KES172 LED BULB (LINEAR)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1050"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6,6 cm x 12,9 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1050"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6.6 cm x 12.9 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Led Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Led Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "15W",
+      "socket": "E27",
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "KES173": {
+    "id": "KES173",
+    "model": "KES173",
+    "image": "urunler/kes173.webp",
+    "name": {
+      "tr": "KES173 LED AMPUL (LINEAR)",
+      "en": "KES173 LED BULB (LINEAR)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "A70"
+        },
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1150"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "7,1 cm x 13,8 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "A70"
+        },
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1150"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "7.1 cm x 13.8 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Led Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Led Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "18W",
+      "socket": "E27",
+      "light": "3000K-4000K-6500K",
+      "casing": null
+    }
+  },
+  "GES230": {
+    "id": "GES230",
+    "model": "GES230",
+    "image": "urunler/ges230.webp",
+    "name": {
+      "tr": "GES230 LED TORCH AMPUL",
+      "en": "GES230 LED TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "8 cm x 14,3 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "8 cm x 14.3 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "20W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES231": {
+    "id": "GES231",
+    "model": "GES231",
+    "image": "urunler/ges231.webp",
+    "name": {
+      "tr": "GES231 LED TORCH AMPUL",
+      "en": "GES231 LED TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2700"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 18 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2700"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 18 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "30W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES232": {
+    "id": "GES232",
+    "model": "GES232",
+    "image": "urunler/ges232.webp",
+    "name": {
+      "tr": "GES232 LED TORCH AMPUL",
+      "en": "GES232 LED TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3600"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "30"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11,5 cm x 21,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3600"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 21.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "40W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES233": {
+    "id": "GES233",
+    "model": "GES233",
+    "image": "urunler/ges233.webp",
+    "name": {
+      "tr": "GES233 LED TORCH AMPUL",
+      "en": "GES233 LED TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4500"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "13,5 cm x 24,2 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4500"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "13.5 cm x 24.2 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "50W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES234": {
+    "id": "GES234",
+    "model": "GES234",
+    "image": "urunler/ges234.webp",
+    "name": {
+      "tr": "GES234 LED TORCH AMPUL",
+      "en": "GES234 LED TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T135"
+        },
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lümen",
+          "value": "5400"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "15 cm x 26 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T135"
+        },
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lumen",
+          "value": "5400"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "15 cm x 26 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "60W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES240": {
+    "id": "GES240",
+    "model": "GES240",
+    "image": "urunler/ges240.webp",
+    "name": {
+      "tr": "GES240 LED KRİSTAL TORCH AMPUL",
+      "en": "GES240 LED CRYSTAL TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "8 cm x 10,0 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "8 cm x 10.0 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "20W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES241": {
+    "id": "GES241",
+    "model": "GES241",
+    "image": "urunler/ges241.webp",
+    "name": {
+      "tr": "GES241 LED KRİSTAL TORCH AMPUL",
+      "en": "GES241 LED CRYSTAL TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2700"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 12,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2700"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 12.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "30W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES242": {
+    "id": "GES242",
+    "model": "GES242",
+    "image": "urunler/ges242.webp",
+    "name": {
+      "tr": "GES242 LED KRİSTAL TORCH AMPUL",
+      "en": "GES242 LED CRYSTAL TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3600"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11,5 cm x 13,7 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3600"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 13.7 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "40W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES243": {
+    "id": "GES243",
+    "model": "GES243",
+    "image": "urunler/ges243.webp",
+    "name": {
+      "tr": "GES243 LED KRİSTAL TORCH AMPUL",
+      "en": "GES243 LED CRYSTAL TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4500"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "12,5 cm x 14,4 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4500"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "12.5 cm x 14.4 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "50W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "GES244": {
+    "id": "GES244",
+    "model": "GES244",
+    "image": "urunler/ges244.webp",
+    "name": {
+      "tr": "GES244 LED KRİSTAL TORCH AMPUL",
+      "en": "GES244 LED CRYSTAL TORCH BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T135"
+        },
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lümen",
+          "value": "5400"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "13,5 cm x 15,3 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T135"
+        },
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Lumen",
+          "value": "5400"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "13.5 cm x 15.3 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Ampul",
+        "Torch Ampul"
+      ],
+      "en": [
+        "Bulb",
+        "Torch Bulb"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "60W",
+      "socket": "E27",
+      "light": "3000K-6500K",
+      "casing": null
+    }
+  },
+  "KCL016": {
+    "id": "KCL016",
+    "model": "KCL016",
+    "image": "urunler/kcl016.webp",
+    "name": {
+      "tr": "KCL016 220V NEON LED",
+      "en": "KCL016 220V NEON LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "7x15mm (120 Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "7x15mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "100 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Green"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL016-RGB": {
+    "id": "KCL016-RGB",
+    "model": "KCL016-RGB",
+    "image": "urunler/kcl016-rgb.webp",
+    "name": {
+      "tr": "KCL016 220V NEON LED (RGB)",
+      "en": "KCL016 220V NEON LED (RGB)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10x19mm (72 Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10x19mm (72 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "100 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "RGB",
+      "casing": null
+    }
+  },
+  "KCL060": {
+    "id": "KCL060",
+    "model": "KCL060",
+    "image": "urunler/kcl060.webp",
+    "name": {
+      "tr": "KCL060 220V COB NEON LED",
+      "en": "KCL060 220V COB NEON LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x10mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "50 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Yeşil, Mavi, Mor"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x10mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "50 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Green, Blue, Purple"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL007": {
+    "id": "KCL007",
+    "model": "KCL007",
+    "image": "urunler/kcl007.webp",
+    "name": {
+      "tr": "KCL007 220V DIŞ MEKAN LED ŞERİTLER",
+      "en": "KCL007 220V OUTDOOR LED STRIPS"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "250 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6mm (60 Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "1 Mt Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "250 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6mm (60 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "1 Mt Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Green"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Dış Mekan Şerit Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Outdoor Strip Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "6W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL007-RGB": {
+    "id": "KCL007-RGB",
+    "model": "KCL007-RGB",
+    "image": "urunler/kcl007-rgb.webp",
+    "name": {
+      "tr": "KCL007 220V DIŞ MEKAN LED ŞERİTLER (RGB)",
+      "en": "KCL007 220V OUTDOOR LED STRIPS (RGB)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "250 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6mm (60 Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "1 Mt Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "250 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6mm (60 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "1 Mt Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Dış Mekan Şerit Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Outdoor Strip Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "6W",
+      "socket": null,
+      "light": "RGB",
+      "casing": null
+    }
+  },
+  "KCL050": {
+    "id": "KCL050",
+    "model": "KCL050",
+    "image": "urunler/kcl050.webp",
+    "name": {
+      "tr": "KCL050 220V DIŞ MEKAN TRAFOSUZ LED ŞERİT",
+      "en": "KCL050 220V OUTDOOR TRANSFORMERLESS LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2040"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "120 LEDLİ"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2040"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Description",
+          "value": "120 LEDs"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Green"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Dış Mekan Şerit Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Outdoor Strip Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "24W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL051": {
+    "id": "KCL051",
+    "model": "KCL051",
+    "image": "urunler/kcl051.webp",
+    "name": {
+      "tr": "KCL051 220V DIŞ MEKAN TRAFOSUZ LED ŞERİT",
+      "en": "KCL051 220V OUTDOOR TRANSFORMERLESS LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "48W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4080"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "240 LEDLİ"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Yeşil"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "48W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4080"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Description",
+          "value": "240 LEDs"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Green"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Dış Mekan Şerit Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Outdoor Strip Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "48W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL013": {
+    "id": "KCL013",
+    "model": "KCL013",
+    "image": "urunler/kcl013.webp",
+    "name": {
+      "tr": "KCL013 12V NEON LED",
+      "en": "KCL013 12V NEON LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "1 Rulo / 5 Mt"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x12mm (120Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "2.5 Cm Kesim"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Açık Mavi, Yeşil, Pembe"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "12V"
+        },
+        {
+          "label": "Description",
+          "value": "1 Roll / 5 Mt"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x12mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "2.5 cm Cut"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Light Blue, Green, Pink"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KCL013-RGB": {
+    "id": "KCL013-RGB",
+    "model": "KCL013-RGB",
+    "image": "urunler/kcl013-rgb.webp",
+    "name": {
+      "tr": "KCL013 12V NEON LED (RGB)",
+      "en": "KCL013 12V NEON LED (RGB)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "1 Rulo / 5 Mt"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x12mm (120Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "2.5 Cm Kesim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "300 / 1mt"
+        },
+        {
+          "label": "Voltage",
+          "value": "12V"
+        },
+        {
+          "label": "Description",
+          "value": "1 Roll / 5 Mt"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x12mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "2.5 cm Cut"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "RGB",
+      "casing": null
+    }
+  },
+  "KCL019": {
+    "id": "KCL019",
+    "model": "KCL019",
+    "image": "urunler/kcl019.webp",
+    "name": {
+      "tr": "KCL019 12V NEON LED",
+      "en": "KCL019 12V NEON LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "1 Rulo / 25 Mt"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x12mm (120Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "2.5 Cm Kesim"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Mor, Pembe"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Voltage",
+          "value": "12V"
+        },
+        {
+          "label": "Description",
+          "value": "1 Roll / 25 Mt"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x12mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "2.5 cm Cut"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Purple, Pink"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Şerit Led",
+        "Neon Led"
+      ],
+      "en": [
+        "Strip Led",
+        "Neon Led"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "10W",
+      "socket": null,
+      "light": "Renk Seçenekleri",
+      "casing": null
+    }
+  },
+  "KTL180": {
+    "id": "KTL180",
+    "model": "KTL180",
+    "image": "urunler/ktl180.webp",
+    "name": {
+      "tr": "KTL180 GLOBAL ECO RAY SPOT",
+      "en": "KTL180 GLOBAL ECO TRACK LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Ray Spot"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Track Light"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "30W",
+      "socket": null,
+      "light": "3200K-6400K",
+      "casing": "Siyah Kasa"
+    }
+  },
+  "KTL181": {
+    "id": "KTL181",
+    "model": "KTL181",
+    "image": "urunler/ktl181.webp",
+    "name": {
+      "tr": "KTL181 GLOBAL ECO RAY SPOT",
+      "en": "KTL181 GLOBAL ECO TRACK LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "İç Aydınlatma",
+        "Ray Spot"
+      ],
+      "en": [
+        "Indoor Lighting",
+        "Track Light"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "30W",
+      "socket": null,
+      "light": "3200K-6400K",
+      "casing": "Beyaz Kasa"
+    }
+  },
+  "GLF292": {
+    "id": "GLF292",
+    "model": "GLF292",
+    "image": "urunler/glf292.webp",
+    "name": {
+      "tr": "GLF292 ECO LED PROJEKTÖR",
+      "en": "GLF292 ECO LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3500"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "20"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "160mm x 120mm x 30mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3500"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "160mm x 120mm x 30mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Dış Aydınlatma",
+        "Led Projektör"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Floodlight"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "50W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "GLF293": {
+    "id": "GLF293",
+    "model": "GLF293",
+    "image": "urunler/glf293.webp",
+    "name": {
+      "tr": "GLF293 ECO LED PROJEKTÖR",
+      "en": "GLF293 ECO LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lümen",
+          "value": "7000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "205mm x 146mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lumen",
+          "value": "7000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "205mm x 146mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Dış Aydınlatma",
+        "Led Projektör"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Floodlight"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "100W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "GLF295": {
+    "id": "GLF295",
+    "model": "GLF295",
+    "image": "urunler/glf295.webp",
+    "name": {
+      "tr": "GLF295 ECO LED PROJEKTÖR",
+      "en": "GLF295 ECO LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lümen",
+          "value": "14000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "275mm x 217mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lumen",
+          "value": "14000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "275mm x 217mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Dış Aydınlatma",
+        "Led Projektör"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Floodlight"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "200W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "GLF296": {
+    "id": "GLF296",
+    "model": "GLF296",
+    "image": "urunler/glf296.webp",
+    "name": {
+      "tr": "GLF296 ECO LED PROJEKTÖR",
+      "en": "GLF296 ECO LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Lümen",
+          "value": "21000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "335mm x 230mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Lumen",
+          "value": "21000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "335mm x 230mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Dış Aydınlatma",
+        "Led Projektör"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Floodlight"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "300W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "GLF297": {
+    "id": "GLF297",
+    "model": "GLF297",
+    "image": "urunler/glf297.webp",
+    "name": {
+      "tr": "GLF297 ECO LED PROJEKTÖR",
+      "en": "GLF297 ECO LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Lümen",
+          "value": "28000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "380mm x 276mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Lumen",
+          "value": "28000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "380mm x 276mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Dış Aydınlatma",
+        "Led Projektör"
+      ],
+      "en": [
+        "Outdoor Lighting",
+        "Led Floodlight"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "400W",
+      "socket": null,
+      "light": "6500K",
+      "casing": null
+    }
+  },
+  "KKP285A": {
+    "id": "KKP285A",
+    "model": "KKP285A",
+    "image": "urunler/kkp285a.webp",
+    "name": {
+      "tr": "KKP285A SİNEK ÖLDÜRÜCÜ ARMATÜR",
+      "en": "KKP285A INSECT KILLER FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x390"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar (Güneş Enerjili) / 6-8 Saat Çalışma Süresi"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x390"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar Powered / 6-8 Hours Working Time"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Armatür",
+        "Sinek Öldürücü Armatür"
+      ],
+      "en": [
+        "Fixture",
+        "Insect Killer Fixture"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "20W",
+      "socket": null,
+      "light": null,
+      "casing": null
+    }
+  },
+  "KKP285B": {
+    "id": "KKP285B",
+    "model": "KKP285B",
+    "image": "urunler/kkp285b.webp",
+    "name": {
+      "tr": "KKP285B SİNEK ÖLDÜRÜCÜ ARMATÜR",
+      "en": "KKP285B INSECT KILLER FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x490"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar (Güneş Enerjili) / 6-8 Saat Çalışma Süresi"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x490"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar Powered / 6-8 Hours Working Time"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Armatür",
+        "Sinek Öldürücü Armatür"
+      ],
+      "en": [
+        "Fixture",
+        "Insect Killer Fixture"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "30W",
+      "socket": null,
+      "light": null,
+      "casing": null
+    }
+  },
+  "KKP285C": {
+    "id": "KKP285C",
+    "model": "KKP285C",
+    "image": "urunler/kkp285c.webp",
+    "name": {
+      "tr": "KKP285C SİNEK ÖLDÜRÜCÜ ARMATÜR",
+      "en": "KKP285C INSECT KILLER FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x640"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar (Güneş Enerjili) / 6-8 Saat Çalışma Süresi"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x640"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar Powered / 6-8 Hours Working Time"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Armatür",
+        "Sinek Öldürücü Armatür"
+      ],
+      "en": [
+        "Fixture",
+        "Insect Killer Fixture"
+      ]
+    },
+    "brand": "global",
+    "variantOptions": {
+      "watt": "40W",
+      "socket": null,
+      "light": null,
+      "casing": null
+    }
   }
 }
