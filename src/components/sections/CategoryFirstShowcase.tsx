@@ -106,6 +106,12 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
           if (!existing.enName && p.category.en?.[0]) {
             existing.enName = p.category.en[0];
           }
+          
+          // Ampuller kategorisinin kapak fotoğrafını sabit KES180 Ararenk yapmak için
+          if (topCat.toLowerCase().includes("ampul")) {
+            existing.sampleImage = "urunler/kes180-8wararenk.webp";
+          }
+          
           cats.set(topCat, existing);
         }
       }

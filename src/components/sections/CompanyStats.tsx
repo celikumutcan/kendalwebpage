@@ -87,8 +87,11 @@ export const CompanyStats = () => {
   return (
     <section id="stats" ref={containerRef} className="py-24 md:py-32 bg-[#050505] text-white relative w-full border-y border-white/5 overflow-hidden">
       
-      {/* Background ambient glow */}
-      <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none" />
+      {/* Background ambient glows */}
+      <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
+      
+      {/* Blue light from the right shining on stats */}
+      <div className="absolute top-[50%] -right-[200px] w-[1200px] h-[900px] bg-blue-500/25 blur-[180px] rounded-[100%] mix-blend-screen pointer-events-none z-0" />
       
       <div className="max-w-[90rem] mx-auto px-6 lg:px-12 relative z-10">
         
@@ -132,13 +135,22 @@ export const CompanyStats = () => {
             return (
               <div 
                 key={idx} 
-                className="stat-card group relative bg-white/[0.02] backdrop-blur-3xl hover:bg-white/[0.05] border border-white/5 hover:border-white/15 rounded-[1.5rem] overflow-hidden transition-all duration-500 flex flex-col justify-end items-start p-6 md:p-8 min-h-[140px] md:min-h-[160px]"
+                className="stat-card group relative bg-black/40 backdrop-blur-2xl border border-white/5 hover:border-[var(--brand-red)]/60 shadow-[0_0_30px_rgba(255,0,0,0.08)] hover:shadow-[0_0_50px_rgba(255,0,0,0.3)] rounded-[1.5rem] overflow-hidden transition-all duration-700 flex flex-col justify-end items-start p-6 md:p-8 min-h-[140px] md:min-h-[160px]"
               >
-                {/* Inner glow on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-red)]/0 via-transparent to-white/0 group-hover:from-[var(--brand-red)]/10 transition-colors duration-700"></div>
+                {/* Constant light source effect from top right */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[var(--brand-red)]/20 via-[#100505]/40 to-transparent opacity-80 group-hover:from-[var(--brand-red)]/40 group-hover:opacity-100 transition-all duration-700 pointer-events-none z-0"></div>
+                
+                {/* Subtle blue highlight on the right edge mimicking the global light source */}
+                <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-blue-500/15 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none z-0"></div>
+                
+                {/* Intense Inner glow on hover */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-[var(--brand-red)]/0 via-transparent to-white/0 group-hover:from-[var(--brand-red)]/30 group-hover:to-[var(--brand-red)]/5 transition-all duration-700"></div>
+                
+                {/* Subtle top highlight */}
+                <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-[var(--brand-red)]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-[1px]"></div>
                 
                 <div className="relative z-10 w-full">
-                  <div className={`font-black tracking-tighter mb-2 md:mb-3 transition-transform duration-500 group-hover:scale-105 origin-bottom-left ${isHighlight ? 'text-5xl md:text-6xl text-[var(--brand-red)]' : 'text-4xl md:text-5xl text-white'}`}>
+                  <div className={`font-black tracking-tighter mb-2 md:mb-3 transition-transform duration-500 group-hover:scale-105 origin-bottom-left ${isHighlight ? 'text-5xl md:text-6xl text-[var(--brand-red)] drop-shadow-[0_0_20px_rgba(255,0,0,0.6)]' : 'text-4xl md:text-5xl text-white group-hover:text-red-50 group-hover:drop-shadow-[0_0_15px_rgba(255,50,50,0.4)]'}`}>
                     <span ref={(el) => { numberRefs.current[idx] = el; }} suppressHydrationWarning>
                       {/* GSAP fills this */}
                     </span>

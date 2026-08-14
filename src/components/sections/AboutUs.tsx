@@ -81,7 +81,10 @@ export const AboutUs = () => {
       ref={containerRef}
       className="relative w-full py-24 md:py-32 px-6 bg-black text-white overflow-hidden"
     >
-      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[var(--brand-red)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[var(--brand-red)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none z-0" />
+      
+      {/* Cyan light from right */}
+      <div className="absolute top-[20%] -right-[10%] w-[600px] h-[600px] bg-cyan-400/30 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
       
       <div className="relative max-w-7xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         {/* Left Column: Intro Text */}

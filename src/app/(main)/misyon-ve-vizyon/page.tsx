@@ -78,12 +78,12 @@ export default function MissionVisionPage() {
       </div>
 
       {/* Right Image Side */}
-      <div className="w-full lg:w-[45%] relative min-h-[400px] lg:min-h-screen">
+      <div className="w-full lg:w-[45%] relative min-h-[400px] lg:min-h-screen bg-[#050505]">
         <Image 
           src={getAssetPath("/images/factory-bg.webp")}
           alt="Factory Building"
           fill
-          className="object-cover object-center"
+          className="object-contain object-center"
           priority
         />
         {/* Subtle gradient to blend image with the left side seamlessly */}
