@@ -160,6 +160,14 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     };
   }, [products, activeCategory]);
 
+  useEffect(() => {
+    if (availableFilters[activeFilterTab].length === 0) {
+      if (availableFilters.casings.length > 0) setActiveFilterTab("casings");
+      else if (availableFilters.watts.length > 0) setActiveFilterTab("watts");
+      else if (availableFilters.sockets.length > 0) setActiveFilterTab("sockets");
+    }
+  }, [availableFilters, activeFilterTab]);
+
   // Filter products by selected category, apply filters, and group them by base model
   const filteredProducts = useMemo(() => {
     if (!activeCategory) return [];
@@ -407,7 +415,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                       </div>
 
                       {/* Body */}
-                      <div className="flex-1 overflow-y-auto p-5 scrollbar-thin scrollbar-thumb-zinc-200 min-h-[300px]">
+                      <div className="flex-1 overflow-y-auto p-5 scrollbar-thin scrollbar-thumb-zinc-200">
                         
                         {/* Renkler Tab */}
                         {activeFilterTab === "casings" && availableFilters.casings.length > 0 && (
