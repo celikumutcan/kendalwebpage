@@ -109,42 +109,130 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
   );
 
   return (
-    <div className={`relative min-h-screen pb-24 overflow-hidden ${isLight ? "pt-24 bg-[#f8f9fa] text-zinc-900" : "pt-32 md:pt-40 bg-[#050505] text-white"}`}>
+    <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-24 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#030303] text-white"}`}>
+      
+      {/* 1. CINEMATIC VIGNETTE & GRAIN NOISE */}
+      <div className="absolute inset-0 pointer-events-none z-[1]" style={{ boxShadow: isLight ? 'inset 0 0 150px rgba(0,0,0,0.03)' : 'inset 0 0 200px rgba(0,0,0,0.8)' }} />
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-[2]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }} />
 
-      {/* Background ambient light */}
-      {isLight ? (
-        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 flex items-start justify-center">
-          <div className={`absolute top-[-10%] w-[1000px] h-[1000px] rounded-full blur-[150px] opacity-30 ${ambientGlow}`} />
-        </div>
-      ) : (
-        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-          <div className="absolute -left-[10%] top-0 w-[600px] h-[600px] bg-blue-500/10 blur-[120px] rounded-full" />
-          <div className="absolute -right-[10%] bottom-0 w-[600px] h-[600px] bg-[var(--brand-red)]/10 blur-[120px] rounded-full" />
-        </div>
-      )}
+      {/* 2. OVER-THE-TOP PREMIUM DECORATIVE BACKGROUNDS (GPU ACCELERATED) */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        
+        {/* === K2 BRAND (DYNAMIC, LAVA, SPORTY) === */}
+        {isK2 && (
+          <>
+            {/* Massive Lava Ambient Glows */}
+            <div className="absolute -left-[20%] top-[-10%] w-[1200px] h-[1200px] rounded-full bg-orange-600/15 blur-[160px] animate-[pulse_10s_ease-in-out_infinite]" />
+            <div className="absolute right-[-10%] top-[30%] w-[1000px] h-[1000px] rounded-full bg-red-600/10 blur-[150px] animate-[pulse_14s_ease-in-out_infinite_reverse]" />
+            <div className="absolute left-[30%] bottom-[-20%] w-[800px] h-[800px] rounded-full bg-amber-500/15 blur-[120px] animate-[pulse_8s_ease-in-out_infinite]" />
+            
+            {/* Cinematic Spotlight from Top */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[500px] bg-gradient-to-b from-orange-300/30 via-orange-400/5 to-transparent blur-3xl opacity-60" />
+
+            {/* Floating Embers / Particles */}
+            <div className="absolute left-[15%] top-[25%] w-2 h-2 rounded-full bg-orange-400 blur-[1px] animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
+            <div className="absolute right-[25%] top-[45%] w-3 h-3 rounded-full bg-red-400 blur-[2px] animate-[ping_6s_cubic-bezier(0,0,0.2,1)_infinite_reverse]" />
+            <div className="absolute left-[45%] bottom-[35%] w-1.5 h-1.5 rounded-full bg-yellow-400 blur-[1px] animate-[ping_5s_cubic-bezier(0,0,0.2,1)_infinite]" />
+            
+            {/* Angled Dynamic Speed Lines */}
+            <div className="absolute -left-[10%] top-[10%] w-[400px] h-[800px] border-l-[120px] border-orange-500/5 -rotate-45 blur-[10px]" />
+            <div className="absolute right-[5%] top-[50%] w-[300px] h-[1000px] border-r-[80px] border-red-500/5 rotate-45 blur-[8px]" />
+          </>
+        )}
+
+        {/* === VANTI BRAND (AERO, WIND TUNNEL, ICE) === */}
+        {isVanti && (
+          <>
+            {/* Massive Ambient Breezes */}
+            <div className="absolute -left-[10%] top-[-10%] w-[1200px] h-[1200px] rounded-full bg-blue-500/15 blur-[160px] animate-[pulse_12s_ease-in-out_infinite]" />
+            <div className="absolute right-[-20%] top-[20%] w-[1400px] h-[1400px] rounded-full bg-cyan-400/10 blur-[150px] animate-[pulse_15s_ease-in-out_infinite_reverse]" />
+            
+            {/* Cinematic Spotlight */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1000px] h-[600px] bg-gradient-to-b from-cyan-200/30 via-blue-300/5 to-transparent blur-3xl opacity-60" />
+            
+            {/* Wind Tunnel Sweeps (Curved SVGs or Gradients) */}
+            <div className="absolute top-[20%] left-[-20%] right-[-20%] h-[300px] bg-gradient-to-r from-transparent via-blue-400/5 to-transparent -rotate-6 blur-[40px] rounded-[100%]" />
+            <div className="absolute top-[60%] left-[-20%] right-[-20%] h-[400px] bg-gradient-to-r from-transparent via-cyan-400/5 to-transparent rotate-3 blur-[50px] rounded-[100%]" />
+            
+            {/* Spinning Concentric Fan Rings - Ultra Premium */}
+            <div className="absolute -left-[10%] top-[10%] w-[800px] h-[800px] rounded-full border-[1px] border-blue-400/20 shadow-[0_0_100px_rgba(59,130,246,0.1)] animate-[spin_40s_linear_infinite]" />
+            <div className="absolute -left-[5%] top-[15%] w-[700px] h-[700px] rounded-full border-[2px] border-dashed border-cyan-400/15 animate-[spin_30s_linear_infinite_reverse]" />
+            <div className="absolute left-[0%] top-[20%] w-[600px] h-[600px] rounded-full border-[4px] border-dotted border-blue-300/10 animate-[spin_20s_linear_infinite]" />
+          </>
+        )}
+
+        {/* === GLOBAL BRAND (SOLAR, WARM, ELEGANT) === */}
+        {isGlobal && (
+          <>
+            {/* Massive Soft Yellow Ambient Glows */}
+            <div className="absolute -left-[10%] top-[-10%] w-[1000px] h-[1000px] rounded-full bg-[#FFDA51]/15 blur-[150px] animate-[pulse_10s_ease-in-out_infinite]" />
+            <div className="absolute right-[-10%] top-[30%] w-[1200px] h-[1200px] rounded-full bg-yellow-400/10 blur-[150px] animate-[pulse_14s_ease-in-out_infinite_reverse]" />
+            <div className="absolute left-[20%] bottom-[-20%] w-[800px] h-[800px] rounded-full bg-amber-300/15 blur-[120px] animate-[pulse_12s_ease-in-out_infinite]" />
+            
+            {/* Elegant Golden Spotlight (Top down) */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[500px] bg-gradient-to-b from-yellow-300/20 via-amber-200/5 to-transparent blur-3xl opacity-60" />
+            
+            {/* Faint Grid Texture for depth */}
+            <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(#FFDA51 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+            
+            {/* Subtle Diagonal Accent Lines (not sharp lasers) */}
+            <div className="absolute left-[15%] top-[-10%] w-[400px] h-[600px] bg-gradient-to-br from-yellow-200/10 to-transparent -rotate-12 blur-[40px] rounded-[100%]" />
+            <div className="absolute right-[5%] bottom-[10%] w-[500px] h-[500px] bg-gradient-to-bl from-amber-300/10 to-transparent rotate-12 blur-[50px] rounded-[100%]" />
+          </>
+        )}
+
+        {/* === KENDAL (CYBERPUNK, DEEP SPACE, NEON) === */}
+        {!isLight && (
+          <>
+            {/* Deep Space Nebula Glows */}
+            <div className="absolute -left-[20%] top-[-10%] w-[1400px] h-[1400px] rounded-full bg-blue-600/15 blur-[180px] animate-[pulse_15s_ease-in-out_infinite]" />
+            <div className="absolute right-[-20%] top-[30%] w-[1200px] h-[1200px] rounded-full bg-[var(--brand-red)]/15 blur-[180px] animate-[pulse_12s_ease-in-out_infinite_reverse]" />
+            
+            {/* Holographic Center Stage Spotlight */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-[-10%] w-[1000px] h-[800px] bg-gradient-to-b from-indigo-500/20 via-purple-500/5 to-transparent blur-3xl opacity-50" />
+            
+            {/* High-Tech Perspective Grid Floor */}
+            <div className="absolute bottom-0 left-0 right-0 h-[40vh] opacity-20" style={{ backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '100px 40px', transform: 'perspective(500px) rotateX(60deg)', transformOrigin: 'bottom' }} />
+            
+            {/* Glowing Neon Laser Lines */}
+            <div className="absolute left-[15%] top-[-10%] w-[2px] h-[120%] bg-gradient-to-b from-transparent via-blue-400/40 to-transparent shadow-[0_0_20px_rgba(96,165,250,0.8)]" />
+            <div className="absolute right-[15%] top-[-10%] w-[2px] h-[120%] bg-gradient-to-b from-transparent via-[var(--brand-red)]/40 to-transparent shadow-[0_0_20px_rgba(220,38,38,0.8)]" />
+            
+            {/* Floating Dust / Stars */}
+            <div className="absolute left-[30%] top-[20%] w-1 h-1 rounded-full bg-white shadow-[0_0_10px_white] animate-[ping_3s_ease-in-out_infinite]" />
+            <div className="absolute right-[30%] top-[40%] w-1.5 h-1.5 rounded-full bg-blue-300 shadow-[0_0_15px_#93c5fd] animate-[ping_5s_ease-in-out_infinite_reverse]" />
+          </>
+        )}
+      </div>
 
       <div className="relative z-10 container mx-auto max-w-7xl px-6">
 
         {/* Header Section: Back Button + Title */}
-        <div className="flex flex-col md:flex-row items-center justify-center relative mb-12 md:mb-16 gap-6 md:gap-0">
+        <div className="flex flex-col md:flex-row items-center justify-center relative mb-6 md:mb-8 gap-6 md:gap-0">
 
           {/* Elegant Back Button */}
           <button
             onClick={() => router.back()}
-            className={`group flex items-center gap-3 w-fit transition-colors md:absolute md:left-0 ${isLight ? "text-zinc-500 hover:text-zinc-900" : "text-white/60 hover:text-white"}`}
+            className={`group flex items-center gap-3 w-fit transition-all duration-300 md:absolute md:left-0 z-20 ${isLight ? 'text-zinc-500 hover:text-zinc-900' : 'text-white/60 hover:text-white'}`}
           >
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${isLight ? "bg-white shadow-sm border border-zinc-200 group-hover:bg-zinc-100" : "bg-white/5 border border-white/10 group-hover:bg-white/10"}`}>
-              <svg className="w-5 h-5 -translate-x-0.5 group-hover:-translate-x-1 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 ${isLight ? 'bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-zinc-200' : 'bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_0_20px_rgba(255,255,255,0.05)]'}`}>
+              <svg className="w-5 h-5 -translate-x-0.5 group-hover:-translate-x-1.5 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </div>
-            <span className="font-semibold tracking-wide text-sm">
-              {language === "en" ? "Go Back" : "Geri Dön"}
+            <span className="font-semibold tracking-wide text-sm uppercase opacity-80 group-hover:opacity-100 transition-opacity">
+              {language === 'en' ? 'Go Back' : 'Geri Dön'}
             </span>
           </button>
 
-          {/* Title */}
-          <h1 itemProp="name" className={`text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight max-w-4xl text-center px-4 ${isLight ? "text-zinc-900" : "text-white"}`}>
+          {/* Epic Title with Gradient Fill & Shine */}
+          <h1 
+            itemProp="name" 
+            className={`text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight max-w-4xl text-center px-4 relative z-20 transition-all duration-500
+            ${isLight 
+              ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-700 to-zinc-900 drop-shadow-sm' 
+              : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-300 to-zinc-500 drop-shadow-[0_0_30px_rgba(255,255,255,0.2)]'}`}
+          >
             {name}
           </h1>
 
@@ -152,18 +240,38 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
 
         <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full max-w-5xl mx-auto gap-10 lg:gap-14">
 
-          {/* Premium Image Showcase */}
-          <div className="w-full flex justify-center">
-            <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center ${isLight ? "" : "bg-white rounded-[2.5rem] p-4 md:p-6 shadow-[0_0_50px_rgba(0,0,0,0.5)]"}`}>
+          {/* 3. 3D PEDESTAL & PREMIUM IMAGE SHOWCASE */}
+          <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4">
+            
+            {/* The Floating Glow Behind Product */}
+            <div className="absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] bg-white/40 blur-[100px] rounded-full pointer-events-none z-0" />
+            
+            {/* The 3D Pedestal Floor (Reflective surface beneath the product) */}
+            <div className="absolute bottom-[-10%] left-1/2 -translate-x-1/2 w-[80%] max-w-[600px] h-[100px] rounded-[100%] blur-md z-0 opacity-60" 
+                 style={{ 
+                   background: isLight ? 'radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(255,255,255,0.15) 0%, transparent 70%)',
+                   transform: 'rotateX(75deg)' 
+                 }} 
+            />
+
+            {/* The Glassmorphism Box */}
+            <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-6 md:p-8 z-10 transition-all duration-700
+              ${isLight 
+                ? 'bg-white/50 backdrop-blur-3xl rounded-[3rem] border border-white shadow-[0_30px_80px_-20px_rgba(0,0,0,0.1)]' 
+                : 'bg-black/20 backdrop-blur-3xl rounded-[3rem] border border-white/10 shadow-[0_0_100px_rgba(0,0,0,0.8)] inset-0'
+              }`}
+            >
+              {/* Inner glowing accent for the product image box */}
+              <div className={`absolute inset-0 rounded-[3rem] opacity-30 bg-gradient-to-br ${isLight ? 'from-white via-transparent to-black/5' : 'from-white/20 via-transparent to-black'} pointer-events-none`} />
+              
               <img
                 itemProp="image"
                 src={imageUrl}
                 alt={name}
-                className={`w-full h-auto object-contain relative z-10 transition-transform duration-700 ${isLight ? "mix-blend-multiply" : ""}`}
+                className={`w-full h-auto object-contain relative z-20 ${isLight ? 'mix-blend-multiply drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)]'}`}
               />
             </div>
           </div>
-
           {/* Product Info & Specifications */}
           {variations.length > 1 && (
             <div className="w-full max-w-3xl flex flex-col items-center">
@@ -448,7 +556,7 @@ export function ProductDetailClient({ product, brandName }: ProductDetailClientP
           {videoId && (
             <>
               <SectionDivider />
-              <div className="w-full max-w-5xl mx-auto">
+              <div className="w-full max-w-3xl mx-auto">
                 <div className="flex items-center mb-8 justify-center">
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 ${isLight ? themePillBg : "bg-zinc-800"}`}>
                     <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="currentColor" viewBox="0 0 24 24">
