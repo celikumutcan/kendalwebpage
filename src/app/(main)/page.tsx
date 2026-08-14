@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Loader } from "@/components/loader/Loader";
 import { Hero } from "@/components/sections/Hero";
 import { AboutUs } from "@/components/sections/AboutUs";
+import { OurBrands } from "@/components/sections/OurBrands";
 
 import { CompanyStats } from "@/components/sections/CompanyStats";
 import { GlobalPresence } from "@/components/sections/GlobalPresence";
@@ -27,6 +28,7 @@ export default function Home() {
         <NewsTicker />
         <Hero />
         <AboutUs />
+        <OurBrands />
 
         <CompanyStats />
         <CatalogCTA />
