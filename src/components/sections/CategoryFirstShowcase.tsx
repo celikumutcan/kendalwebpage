@@ -34,6 +34,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
   };
 
   const isK2 = brandName === "k2";
+  const isGlobal = brandName === "global";
   
   const urlCategory = searchParams?.get("category") || null;
   const urlPage = parseInt(searchParams?.get("page") || "1", 10) || 1;
@@ -587,6 +588,19 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                   ? `/brand/${brandName}/urunler/${categorySlug}/${slug}`
                   : `/urunler/${categorySlug}/${slug}`;
                   
+                let displayName = product.name[language as keyof typeof product.name] || product.name.tr;
+                if (isGlobal) {
+                  const words = displayName.trim().split(' ');
+                  displayName = words.filter((w: string) => {
+                    const upper = w.toUpperCase();
+                    if (upper.match(/^\d+W$/i)) return false;
+                    if (upper.match(/^\d{3,5}K$/i)) return false;
+                    if (['SARI', 'BEYAZ', 'ARARENK', 'GÜNIŞIĞI', 'MAVİ', 'YEŞİL', 'KIRMIZI', 'AMBER', 'GÜN', 'IŞIĞI', 'CCT'].includes(upper)) return false;
+                    if (upper.match(/^(E14|E27|GU10|G9|R7S)$/i)) return false;
+                    return true;
+                  }).join(' ');
+                }
+
                 return (
                   <Link 
                     href={productUrl} 
@@ -596,7 +610,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                     <div className="relative aspect-square p-6 bg-white flex items-center justify-center border-b border-zinc-50 overflow-hidden">
                       <Image 
                         src={getAssetPath('/images/' + product.image)} 
-                        alt={product.name[language as keyof typeof product.name] || product.name.tr} 
+                        alt={displayName} 
                         fill 
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out" 
@@ -605,8 +619,8 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                     <div className="p-6 flex flex-col flex-grow justify-between">
                       <div>
                         <div className="text-xs font-medium text-zinc-400 mb-1">{showcaseTexts.model} {product.model}</div>
-                        <h4 className="font-bold text-sm md:text-base mb-2 line-clamp-2 text-zinc-800" title={product.name[language as keyof typeof product.name] || product.name.tr}>
-                          {product.name[language as keyof typeof product.name] || product.name.tr}
+                        <h4 className="font-bold text-sm md:text-base mb-2 line-clamp-2 text-zinc-800" title={displayName}>
+                          {displayName}
                         </h4>
                       </div>
 

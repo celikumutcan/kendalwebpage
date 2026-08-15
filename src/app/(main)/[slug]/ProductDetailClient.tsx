@@ -49,6 +49,19 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const isGlobal = brandName === "global";
   const isLight = isK2 || isVanti || isGlobal;
 
+  let displayName = name;
+  if (isGlobal) {
+    const words = name.trim().split(' ');
+    displayName = words.filter((w: string) => {
+      const upper = w.toUpperCase();
+      if (upper.match(/^\d+W$/i)) return false;
+      if (upper.match(/^\d{3,5}K$/i)) return false;
+      if (['SARI', 'BEYAZ', 'ARARENK', 'GÜNIŞIĞI', 'MAVİ', 'YEŞİL', 'KIRMIZI', 'AMBER', 'GÜN', 'IŞIĞI', 'CCT'].includes(upper)) return false;
+      if (upper.match(/^(E14|E27|GU10|G9|R7S)$/i)) return false;
+      return true;
+    }).join(' ');
+  }
+
   const videoMatchKey = Object.keys(VANTI_VIDEOS).find(key => product.model.includes(key) || name.includes(key));
   const videoId = videoMatchKey ? VANTI_VIDEOS[videoMatchKey] : null;
 
@@ -267,7 +280,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-600'
                 : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-200 to-zinc-500 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]'}`}
             >
-              {name}
+              {displayName}
             </h1>
           </div>
 
@@ -411,6 +424,20 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 const variantUrl = isLight && process.env.NODE_ENV === "production"
                   ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
                   : `/urunler/${categorySlug}/${variantSlug}`;
+
+                if (isGlobal) {
+                  return (
+                    <div
+                      key={match.variant.id + "-" + label}
+                      className={`flex items-center gap-2.5 px-5 py-2.5 rounded-full text-sm font-bold border ${
+                        isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] cursor-default" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)] cursor-default"
+                        }`}
+                    >
+                      {showColorDot && <span className={`w-3.5 h-3.5 rounded-full ${match.dotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
+                      <span>{label}</span>
+                    </div>
+                  );
+                }
 
                 return (
                   <Link
