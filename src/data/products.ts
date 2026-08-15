@@ -16,15 +16,15 @@ export interface Product {
   category?: { tr: string[]; en: string[] };
   brand?: string;
   variantOptions?: {
-    watt: string | null;
-    socket: string | null;
-    light: string | null;
-    casing: string | null;
+    watt?: string | null;
+    socket?: string | null;
+    light?: string | null;
+    casing?: string | null;
   };
 }
 
 // id -> Product
-export const products: Record<string, Product> = productsData as Record<string, Product>;
+export const products: Record<string, Product> = productsData as unknown as Record<string, Product>;
 
 // slug -> id. Includes BOTH legacy TR and EN slugs (they sometimes differ
 // slightly, e.g. "sarı" vs "sari"), so every old QR / bookmarked link
