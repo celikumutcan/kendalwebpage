@@ -58,6 +58,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       if (upper.match(/^\d{3,5}K$/i)) return false;
       if (['SARI', 'BEYAZ', 'ARARENK', 'GÜNIŞIĞI', 'MAVİ', 'YEŞİL', 'KIRMIZI', 'AMBER', 'GÜN', 'IŞIĞI', 'CCT'].includes(upper)) return false;
       if (upper.match(/^(E14|E27|GU10|G9|R7S)$/i)) return false;
+      if (upper.match(/^\d+[\*xX]\d+$/)) return false;
       return true;
     }).join(' ');
   }

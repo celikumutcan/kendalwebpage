@@ -175604,8 +175604,82 @@
       "en": "GES232 40W Torch LED Bulb Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3600"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "30"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11,5 cm x 21,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T115"
+        },
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3600"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 21.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -175633,8 +175707,82 @@
       "en": "GES231 30W Torch LED Bulb Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2700"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 18 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T100"
+        },
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2700"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 18 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -175662,8 +175810,82 @@
       "en": "GES233 50W Torch LED Bulb Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4500"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "13,5 cm x 24,2 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T125"
+        },
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4500"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "13.5 cm x 24.2 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -175691,8 +175913,50 @@
       "en": "Global KES170 9 5W / 230v LED Bulb Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Renk",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lümen",
+          "value": "1050"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Color",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lumen",
+          "value": "1050"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -175720,8 +175984,50 @@
       "en": "Global KES170 9 5W / 230v LED Ampul Warm Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Renk",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lümen",
+          "value": "1050"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Color",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lumen",
+          "value": "1050"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -176658,8 +176964,82 @@
       "en": "GES230 20W Torch LED Bulb Whıte"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Kasa",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "8 cm x 14,3 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        }
+      ],
+      "en": [
+        {
+          "label": "Casing",
+          "value": "T80"
+        },
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "8 cm x 14.3 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -177574,6 +177954,30 @@
         {
           "label": "Watt",
           "value": "10W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "1 Rulo / 5 Mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x12mm (120Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "2.5 Cm Kesim"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Açık Mavi, Yeşil, Pembe"
         }
       ],
       "en": [
@@ -177592,6 +177996,34 @@
         {
           "label": "Power",
           "value": "10W"
+        },
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Voltage",
+          "value": "12V"
+        },
+        {
+          "label": "Description",
+          "value": "1 Roll / 5 Mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x12mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "2.5 cm Cut"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Light Blue, Green, Pink"
         }
       ]
     },
@@ -185848,6 +186280,14 @@
         {
           "label": "Özellik",
           "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x390"
         }
       ],
       "en": [
@@ -185866,6 +186306,14 @@
         {
           "label": "Feature",
           "value": "Has Solar Panel / 6-8 Hours Working Time"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x390"
         }
       ]
     },
@@ -185909,6 +186357,14 @@
         {
           "label": "Özellik",
           "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x490"
         }
       ],
       "en": [
@@ -185927,6 +186383,14 @@
         {
           "label": "Feature",
           "value": "Has Solar Panel / 6-8 Hours Working Time"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x490"
         }
       ]
     },
@@ -185970,6 +186434,14 @@
         {
           "label": "Özellik",
           "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "245x60x640"
         }
       ],
       "en": [
@@ -185988,6 +186460,14 @@
         {
           "label": "Feature",
           "value": "Has Solar Panel / 6-8 Hours Working Time"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Dimensions",
+          "value": "245x60x640"
         }
       ]
     },
@@ -188331,6 +188811,30 @@
         {
           "label": "Lümen",
           "value": "5400Lm"
+        },
+        {
+          "label": "Kasa",
+          "value": "T135"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "40"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "15 cm x 26 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -188349,6 +188853,30 @@
         {
           "label": "Lumen",
           "value": "5400Lm"
+        },
+        {
+          "label": "Casing",
+          "value": "T135"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "15 cm x 26 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -188824,6 +189352,34 @@
         {
           "label": "Lümen",
           "value": "800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "1 Rulo / 25 Mt"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6x12mm (120Ledli)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "2.5 Cm Kesim"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Mavi, Mor, Pembe"
         }
       ],
       "en": [
@@ -188838,6 +189394,34 @@
         {
           "label": "Lumen",
           "value": "800"
+        },
+        {
+          "label": "Voltage",
+          "value": "12V"
+        },
+        {
+          "label": "Description",
+          "value": "1 Roll / 25 Mt"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6x12mm (120 LEDs)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "2.5 cm Cut"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Blue, Purple, Pink"
         }
       ]
     },
@@ -189427,6 +190011,34 @@
         {
           "label": "Lümen",
           "value": "1800"
+        },
+        {
+          "label": "Kasa",
+          "value": "T80"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "8 cm x 10,0 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -189441,6 +190053,34 @@
         {
           "label": "Lumen",
           "value": "1800"
+        },
+        {
+          "label": "Casing",
+          "value": "T80"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "8 cm x 10.0 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -189481,6 +190121,34 @@
         {
           "label": "Lümen",
           "value": "2700"
+        },
+        {
+          "label": "Kasa",
+          "value": "T100"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 12,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -189495,6 +190163,34 @@
         {
           "label": "Lumen",
           "value": "2700"
+        },
+        {
+          "label": "Casing",
+          "value": "T100"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 12.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -189829,6 +190525,34 @@
         {
           "label": "Lümen",
           "value": "3600"
+        },
+        {
+          "label": "Kasa",
+          "value": "T115"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11,5 cm x 13,7 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -189843,6 +190567,34 @@
         {
           "label": "Lumen",
           "value": "3600"
+        },
+        {
+          "label": "Casing",
+          "value": "T115"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 13.7 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -189883,6 +190635,34 @@
         {
           "label": "Lümen",
           "value": "4500"
+        },
+        {
+          "label": "Kasa",
+          "value": "T125"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "12,5 cm x 14,4 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -189897,6 +190677,34 @@
         {
           "label": "Lumen",
           "value": "4500"
+        },
+        {
+          "label": "Casing",
+          "value": "T125"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "12.5 cm x 14.4 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -189937,6 +190745,34 @@
         {
           "label": "Lümen",
           "value": "5400"
+        },
+        {
+          "label": "Kasa",
+          "value": "T135"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "13,5 cm x 15,3 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
@@ -189951,6 +190787,34 @@
         {
           "label": "Lumen",
           "value": "5400"
+        },
+        {
+          "label": "Casing",
+          "value": "T135"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "13.5 cm x 15.3 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -190373,39 +191237,12 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "8022": {
-    "id": "8022",
-    "model": "250422064642",
-    "image": "urunler/glf292.webp",
-    "name": {
-      "tr": "Glf 292 50W Eco LED Projektör",
-      "en": "GLF292 50W Eco LED Projector"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "50W"
-    }
-  },
   "8023": {
     "id": "8023",
     "model": "250422065036",
     "image": "urunler/glf293.webp",
     "name": {
-      "tr": "GLF293 100W Eco LED Projektör",
+      "tr": "GLF293 100W ECO LED PROJEKTÖR",
       "en": "GLF293 100W Eco LED Projector"
     },
     "attributes": {
@@ -190421,6 +191258,30 @@
         {
           "label": "Lümen",
           "value": "7000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "205mm x 146mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -190435,6 +191296,30 @@
         {
           "label": "Lumen",
           "value": "7000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "205mm x 146mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
         }
       ]
     },
@@ -190459,7 +191344,7 @@
     "model": "250422070307",
     "image": "urunler/glf293.webp",
     "name": {
-      "tr": "GLF295 200W Eco LED Projektör",
+      "tr": "GLF295 200W ECO LED PROJEKTÖR",
       "en": "GLF295 200W Eco LED Projector"
     },
     "attributes": {
@@ -190475,6 +191360,30 @@
         {
           "label": "Lümen",
           "value": "14000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "275mm x 217mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -190489,6 +191398,30 @@
         {
           "label": "Lumen",
           "value": "14000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "275mm x 217mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
         }
       ]
     },
@@ -190513,7 +191446,7 @@
     "model": "250422070413",
     "image": "urunler/glf293.webp",
     "name": {
-      "tr": "GLF296 300W Eco LED Projektör",
+      "tr": "GLF296 300W ECO LED PROJEKTÖR",
       "en": "GLF296 300W Eco LED Projector"
     },
     "attributes": {
@@ -190529,6 +191462,30 @@
         {
           "label": "Lümen",
           "value": "21000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "335mm x 230mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -190543,6 +191500,30 @@
         {
           "label": "Lumen",
           "value": "21000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "335mm x 230mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
         }
       ]
     },
@@ -190567,7 +191548,7 @@
     "model": "250422075004",
     "image": "urunler/glf293.webp",
     "name": {
-      "tr": "GLF297 400W Eco LED Projektör",
+      "tr": "GLF297 400W ECO LED PROJEKTÖR",
       "en": "GLF297 400W Eco LED Projector"
     },
     "attributes": {
@@ -190583,6 +191564,30 @@
         {
           "label": "Lümen",
           "value": "28000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "10"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "380mm x 276mm x 35mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -190597,6 +191602,30 @@
         {
           "label": "Lumen",
           "value": "28000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "380mm x 276mm x 35mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
         }
       ]
     },
@@ -190946,8 +191975,50 @@
       "en": "Global KES170 9 5W / 230v LED Ampul Ararenk"
     },
     "attributes": {
-      "tr": [],
-      "en": []
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Renk",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lümen",
+          "value": "1050"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Color",
+          "value": "3000K-4000K-6500K"
+        },
+        {
+          "label": "Lumen",
+          "value": "1050"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
     },
     "category": {
       "tr": [
@@ -191270,6 +192341,34 @@
         {
           "label": "IP",
           "value": "IP65"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220V"
+        },
+        {
+          "label": "Açıklama",
+          "value": "240 LEDLİ"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "100mt"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
+        },
+        {
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Kırmızı, Yeşil"
         }
       ],
       "en": [
@@ -191288,6 +192387,34 @@
         {
           "label": "IP",
           "value": "IP65"
+        },
+        {
+          "label": "Voltage",
+          "value": "220V"
+        },
+        {
+          "label": "Description",
+          "value": "240 LEDs"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Dimensions",
+          "value": "5x9mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
+        },
+        {
+          "label": "Color Options",
+          "value": "White, Yellow, Red, Green"
         }
       ]
     },
@@ -193526,7 +194653,7 @@
     "model": "260225122815",
     "image": "urunler/glf293.webp",
     "name": {
-      "tr": "GLF292 50W Eco LED Projektör",
+      "tr": "GLF292 50W ECO LED PROJEKTÖR",
       "en": "GLF292 50W Eco Floodlıght"
     },
     "attributes": {
@@ -193542,6 +194669,30 @@
         {
           "label": "Lümen",
           "value": "3500"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adeti",
+          "value": "20"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "160mm x 120mm x 30mm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -193556,6 +194707,30 @@
         {
           "label": "Lumen",
           "value": "3500"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "160mm x 120mm x 30mm"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
         }
       ]
     },
@@ -199111,6 +200286,10 @@
         {
           "label": "Özellik",
           "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
         }
       ],
       "en": [
@@ -199149,6 +200328,10 @@
         {
           "label": "Feature",
           "value": "Domestic Production / Aluminum Heat Transfer Module"
+        },
+        {
+          "label": "Color",
+          "value": "Beyaz (6500K)"
         }
       ]
     },
@@ -200446,6 +201629,106 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        },
+        {
+          "label": "Renk",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "YÖNSÜZ"
+        },
+        {
+          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
+          "value": " "
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "Şebeke"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "6W"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "1600LM"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "N/A"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "6"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Dış boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
+          "value": " "
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "100%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Stroboskopik etki metriği",
+          "value": "&lt;0,4"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "0,7"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3200K"
         }
       ],
       "en": [
@@ -200480,6 +201763,106 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Red, Blue, Green"
+        },
+        {
+          "label": "Color",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
+        },
+        {
+          "label": "Lighting technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional",
+          "value": "Non-Directional"
+        },
+        {
+          "label": "Light source cap-type (or other electric interface)",
+          "value": " "
+        },
+        {
+          "label": "Mains or non-mains",
+          "value": "Mains"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour-tuneable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "Energy consumption in on-mode",
+          "value": "6W"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "1600LM"
+        },
+        {
+          "label": "Beam angle correspondence",
+          "value": "N/A"
+        },
+        {
+          "label": "On-mode power",
+          "value": "6"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Outer dimensions",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Claim of equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Spectral power distribution in the range 250 nm to 800 nm",
+          "value": " "
+        },
+        {
+          "label": "Survival factor",
+          "value": "100%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Stroboscopic effect metric",
+          "value": "&lt;0,4"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "0,7"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3200K"
         }
       ]
     },
@@ -200540,6 +201923,106 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        },
+        {
+          "label": "Renk",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "YÖNSÜZ"
+        },
+        {
+          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
+          "value": " "
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "Şebeke"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "6W"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "1600LM"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "N/A"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "6"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Dış boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
+          "value": " "
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "100%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Stroboskopik etki metriği",
+          "value": "&lt;0,4"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "0,7"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3200K"
         }
       ],
       "en": [
@@ -200574,6 +202057,106 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Red, Blue, Green"
+        },
+        {
+          "label": "Color",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
+        },
+        {
+          "label": "Lighting technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional",
+          "value": "Non-Directional"
+        },
+        {
+          "label": "Light source cap-type (or other electric interface)",
+          "value": " "
+        },
+        {
+          "label": "Mains or non-mains",
+          "value": "Mains"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour-tuneable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "Energy consumption in on-mode",
+          "value": "6W"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "1600LM"
+        },
+        {
+          "label": "Beam angle correspondence",
+          "value": "N/A"
+        },
+        {
+          "label": "On-mode power",
+          "value": "6"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Outer dimensions",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Claim of equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Spectral power distribution in the range 250 nm to 800 nm",
+          "value": " "
+        },
+        {
+          "label": "Survival factor",
+          "value": "100%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Stroboscopic effect metric",
+          "value": "&lt;0,4"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "0,7"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3200K"
         }
       ]
     },
@@ -200634,6 +202217,78 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Yeşil, Mavi, Mor"
+        },
+        {
+          "label": "Renk",
+          "value": "3000K / 6500K / AMBER / MAVİ / YEŞİL"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "YÖNSÜZ"
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "Şebeke"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "10"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "700LM"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "N/A"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "100%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "&lt;1"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3000K"
         }
       ],
       "en": [
@@ -200668,6 +202323,78 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Green, Blue, Purple"
+        },
+        {
+          "label": "Color",
+          "value": "3000K / 6500K / AMBER / BLUE / GREEN"
+        },
+        {
+          "label": "Lighting technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional",
+          "value": "Non-Directional"
+        },
+        {
+          "label": "Mains or non-mains",
+          "value": "Mains"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour-tuneable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "Energy consumption in on-mode",
+          "value": "10"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "700LM"
+        },
+        {
+          "label": "Beam angle correspondence",
+          "value": "N/A"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Claim of equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Survival factor",
+          "value": "100%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "&gt;%94"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3000K"
         }
       ]
     },
@@ -200728,6 +202455,94 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        },
+        {
+          "label": "Renk",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "Yönsüz"
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "Şebeke"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "6"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "250M"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "N/A"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "3,6"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renklilik koordinatı",
+          "value": "0,3243/0,3447"
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "100%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "0,95"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "1"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3200K"
         }
       ],
       "en": [
@@ -200762,6 +202577,94 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Red, Blue, Green"
+        },
+        {
+          "label": "Color",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
+        },
+        {
+          "label": "Lighting technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional",
+          "value": "Non-Directional"
+        },
+        {
+          "label": "Mains or non-mains",
+          "value": "Mains"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour-tuneable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "Energy consumption in on-mode",
+          "value": "6"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "250LM"
+        },
+        {
+          "label": "Beam angle correspondence",
+          "value": "N/A"
+        },
+        {
+          "label": "On-mode power",
+          "value": "3,6"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Claim of equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Chromaticity coordinate",
+          "value": "0,3243/0,3447"
+        },
+        {
+          "label": "Survival factor",
+          "value": "100%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "0,95"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "1"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3200K"
         }
       ]
     },
@@ -200822,6 +202725,94 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        },
+        {
+          "label": "Renk",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
+        },
+        {
+          "label": "Kullanılan aydınlatma teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Yönsüz veya yönlü",
+          "value": "Yönsüz"
+        },
+        {
+          "label": "Şebeke veya şebeke dışı",
+          "value": "Şebeke"
+        },
+        {
+          "label": "Bağlı ışık kaynağı (CLS)",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renk ayarlı ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Yüksek parlaklıkta ışık kaynağı",
+          "value": "Hayır"
+        },
+        {
+          "label": "Parlama önleyici kalkan",
+          "value": "Hayır"
+        },
+        {
+          "label": "Açık modda enerji tüketimi",
+          "value": "6"
+        },
+        {
+          "label": "Faydalı ışık akısı",
+          "value": "250M"
+        },
+        {
+          "label": "Işın açısı yazışmaları",
+          "value": "N/A"
+        },
+        {
+          "label": "Açık güç modu",
+          "value": "3,6"
+        },
+        {
+          "label": "Hazırda bekleme gücü",
+          "value": "N/A"
+        },
+        {
+          "label": "Renk oluşturma indeksi",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Eşdeğer güç talebi",
+          "value": "Hayır"
+        },
+        {
+          "label": "Eşdeğer güç",
+          "value": "Hayır"
+        },
+        {
+          "label": "Renklilik koordinatı",
+          "value": "0,3243/0,3447"
+        },
+        {
+          "label": "Hayatta kalma faktörü",
+          "value": "100%"
+        },
+        {
+          "label": "Lümen bakım faktörü",
+          "value": "0,95"
+        },
+        {
+          "label": "Titreme metriği",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Yer değiştirme faktörü",
+          "value": "1"
+        },
+        {
+          "label": "İlişkili renk sıcaklığı",
+          "value": "6500K - 3200K"
         }
       ],
       "en": [
@@ -200856,6 +202847,94 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Red, Blue, Green"
+        },
+        {
+          "label": "Color",
+          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
+        },
+        {
+          "label": "Lighting technology used",
+          "value": "LED"
+        },
+        {
+          "label": "Non-directional or directional",
+          "value": "Non-Directional"
+        },
+        {
+          "label": "Mains or non-mains",
+          "value": "Mains"
+        },
+        {
+          "label": "Connected light source (CLS)",
+          "value": "No"
+        },
+        {
+          "label": "Colour-tuneable light source",
+          "value": "No"
+        },
+        {
+          "label": "High luminance light source",
+          "value": "No"
+        },
+        {
+          "label": "Anti-glare shield",
+          "value": "No"
+        },
+        {
+          "label": "Energy consumption in on-mode",
+          "value": "6"
+        },
+        {
+          "label": "Useful luminous flux",
+          "value": "250LM"
+        },
+        {
+          "label": "Beam angle correspondence",
+          "value": "N/A"
+        },
+        {
+          "label": "On-mode power",
+          "value": "3,6"
+        },
+        {
+          "label": "Standby power",
+          "value": "N/A"
+        },
+        {
+          "label": "Colour rendering index",
+          "value": "&gt;80"
+        },
+        {
+          "label": "Claim of equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Equivalent power",
+          "value": "No"
+        },
+        {
+          "label": "Chromaticity coordinate",
+          "value": "0,3243/0,3447"
+        },
+        {
+          "label": "Survival factor",
+          "value": "100%"
+        },
+        {
+          "label": "Lumen maintenance factor",
+          "value": "0,95"
+        },
+        {
+          "label": "Flicker metric",
+          "value": "&lt;1"
+        },
+        {
+          "label": "Displacement factor",
+          "value": "1"
+        },
+        {
+          "label": "Correlated colour temperature",
+          "value": "6500K - 3200K"
         }
       ]
     },
@@ -200920,6 +202999,38 @@
         {
           "label": "Renk Seçenekleri",
           "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "24W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "23.4W"
+        },
+        {
+          "label": "Işık Akısı (Lümen)",
+          "value": "2040 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
         }
       ],
       "en": [
@@ -200958,6 +203069,38 @@
         {
           "label": "Color Options",
           "value": "White, Yellow, Red, Blue, Green"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Aydınlatma Teknolojisi",
+          "value": "LED"
+        },
+        {
+          "label": "Enerji Tüketimi",
+          "value": "24W"
+        },
+        {
+          "label": "Açık Güç Modu",
+          "value": "23.4W"
+        },
+        {
+          "label": "Işık Akısı (Lümen)",
+          "value": "2040 LM"
+        },
+        {
+          "label": "Dış Boyutlar",
+          "value": "16x8mm"
+        },
+        {
+          "label": "Renk Oluşturma İndeksi (CRI)",
+          "value": ">80"
+        },
+        {
+          "label": "Yönlülük",
+          "value": "Yönsüz"
         }
       ]
     },
@@ -201516,6 +203659,10 @@
         {
           "label": "Özellik",
           "value": "Yerli Üretim"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz (6500K)"
         }
       ],
       "en": [
@@ -201550,6 +203697,10 @@
         {
           "label": "Feature",
           "value": "Domestic Production"
+        },
+        {
+          "label": "Color",
+          "value": "Beyaz (6500K)"
         }
       ]
     },
