@@ -31,7 +31,7 @@ export const NewsPreview = () => {
       
       {/* max-w-7xl to match the rest of the page */}
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-white/10 pb-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 border-b border-white/10 pb-6">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold text-[var(--global-text)] tracking-tight">
               {title}

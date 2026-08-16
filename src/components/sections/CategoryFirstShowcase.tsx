@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -39,6 +40,9 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
   const urlCategory = searchParams?.get("category") || null;
   const urlPage = parseInt(searchParams?.get("page") || "1", 10) || 1;
   const urlQuery = searchParams?.get("q") || "";
+
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
   const [selectedCategory, setSelectedCategory] = useState<string | null>(urlCategory);
   const [currentPage, setCurrentPage] = useState<number>(urlPage);
@@ -331,7 +335,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
         {/* VIEW 2: PRODUCT GRID FOR SELECTED CATEGORY OR SEARCH */}
         {(activeCategory || isSearching) && (
-          <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <div className="animate-in fade-in duration-500">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4 relative">
               <div>
                 {!isSearching && showBackButton && (
@@ -376,8 +380,8 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
                   {isFiltersOpen && (
                     <>
-                      <div className="fixed inset-0 z-[90] bg-zinc-900/10 backdrop-blur-[2px] animate-in fade-in duration-200" onClick={() => setIsFiltersOpen(false)}></div>
-                      <div className="absolute top-full left-0 sm:left-auto sm:right-0 mt-3 z-[100] bg-white/95 backdrop-blur-2xl rounded-[1.75rem] w-[calc(100vw-2rem)] max-w-3xl max-h-[80vh] flex flex-col shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] border border-zinc-100 ring-1 ring-black/[0.02] animate-in slide-in-from-top-3 fade-in zoom-in-95 duration-200 overflow-hidden">
+                      {/* Desktop Modal Inline */}
+                      <div className="hidden sm:block absolute top-full left-0 sm:left-auto sm:right-0 mt-3 z-[100] bg-white/95 backdrop-blur-2xl rounded-[1.75rem] w-max min-w-[300px] max-w-md max-h-[80vh] flex-col shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] border border-zinc-100 ring-1 ring-black/[0.02] animate-in slide-in-from-top-3 fade-in zoom-in-95 duration-200 overflow-hidden pointer-events-auto">
                       {/* Header */}
                       <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100">
                         <div>
@@ -555,9 +559,196 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                           Uygula ({selectedCasings.length + selectedWatts.length + selectedSockets.length})
                         </button>
                       </div>
-                    </div>
-                  </>
-                )}
+                      </div>
+                      
+                      {/* Mobile Modal via Portal */}
+                      {mounted && typeof window !== 'undefined' && createPortal(
+                        <div className="fixed inset-0 z-[100] flex items-center justify-center sm:hidden">
+                          <div className="fixed inset-0 bg-zinc-900/10 backdrop-blur-[2px] animate-in fade-in duration-200" onClick={() => setIsFiltersOpen(false)}></div>
+                          <div className="relative z-10 bg-white/95 backdrop-blur-2xl rounded-[1.75rem] w-[calc(100vw-2rem)] max-h-[85vh] flex flex-col shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] border border-zinc-100 ring-1 ring-black/[0.02] animate-in fade-in zoom-in-95 duration-200 overflow-hidden pointer-events-auto">
+                      {/* Header */}
+                      <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100">
+                        <div>
+                          <h3 className="text-lg font-bold text-zinc-900 tracking-tight">{(t as any).brand_pages?.showcase?.filters || "Filtreler"}</h3>
+                          <p className="text-xs text-zinc-400 mt-0.5">
+                            {selectedCasings.length + selectedWatts.length + selectedSockets.length > 0
+                              ? `${selectedCasings.length + selectedWatts.length + selectedSockets.length} filtre seçili`
+                              : "Ürünleri daraltmak için filtre seçin"}
+                          </p>
+                        </div>
+                        <button onClick={() => setIsFiltersOpen(false)} className="p-2 text-zinc-400 hover:text-zinc-700 bg-zinc-50 hover:bg-zinc-100 rounded-full transition-colors">
+                          <svg className="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                        </button>
+                      </div>
+
+                      {/* Tabs Header — segmented control */}
+                      <div className="px-6 pt-5">
+                        <div className="flex gap-1 p-1 bg-zinc-100/80 rounded-full">
+                          {[
+                            { id: "casings", label: "Renkler", show: availableFilters.casings.length > 0, count: selectedCasings.length },
+                            { id: "watts", label: "Güç", show: availableFilters.watts.length > 0, count: selectedWatts.length },
+                            { id: "sockets", label: "Duy Tipi", show: availableFilters.sockets.length > 0, count: selectedSockets.length }
+                          ].filter(t => t.show).map(tab => (
+                            <button
+                              key={tab.id}
+                              onClick={() => setActiveFilterTab(tab.id as any)}
+                              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 ${
+                                activeFilterTab === tab.id
+                                  ? "bg-white text-zinc-900 shadow-sm"
+                                  : "text-zinc-500 hover:text-zinc-700"
+                              }`}
+                            >
+                              {tab.label}
+                              {tab.count > 0 && (
+                                <span className={`px-1.5 py-0.5 rounded-full text-[10px] leading-none ${
+                                  activeFilterTab === tab.id
+                                    ? (isK2 ? "bg-orange-100 text-orange-700" : "bg-blue-100 text-blue-700")
+                                    : "bg-zinc-200 text-zinc-600"
+                                }`}>
+                                  {tab.count}
+                                </span>
+                              )}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Body */}
+                      <div className="flex-1 overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-zinc-200">
+
+                        {/* Renkler Tab */}
+                        {activeFilterTab === "casings" && availableFilters.casings.length > 0 && (
+                          <div className="space-y-4 animate-in fade-in zoom-in-95 duration-200">
+                            <div className="relative">
+                              <svg className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-zinc-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              </svg>
+                              <input
+                                type="text"
+                                placeholder="Renk ara..."
+                                value={casingSearchQuery}
+                                onChange={(e) => setCasingSearchQuery(e.target.value)}
+                                className="w-full pl-10 pr-4 py-3 bg-zinc-50 border border-zinc-200 rounded-full text-sm focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-400 focus:bg-white transition-all"
+                              />
+                            </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 pr-1">
+                              {availableFilters.casings
+                                .filter(c => c.toLowerCase().includes(casingSearchQuery.toLowerCase()))
+                                .map(casing => (
+                                  <label key={casing} className={`flex items-center gap-3 p-3.5 rounded-2xl cursor-pointer transition-all duration-200 border ${selectedCasings.includes(casing) ? (isK2 ? "border-orange-500/60 bg-orange-50 shadow-sm" : "border-blue-500/60 bg-blue-50 shadow-sm") : "border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50"}`}>
+                                    <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-colors flex-shrink-0 ${
+                                      selectedCasings.includes(casing)
+                                        ? (isK2 ? "bg-orange-500 border-orange-500" : "bg-blue-600 border-blue-600")
+                                        : "border-zinc-300 bg-white"
+                                    }`}>
+                                      {selectedCasings.includes(casing) && (
+                                        <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                      )}
+                                    </div>
+                                    <span className={`text-sm flex-1 ${selectedCasings.includes(casing) ? "font-semibold text-zinc-900" : "text-zinc-600"}`}>
+                                      {casing}
+                                    </span>
+                                    <input
+                                      type="checkbox"
+                                      className="sr-only"
+                                      checked={selectedCasings.includes(casing)}
+                                      onChange={() => {
+                                        setSelectedCasings(prev => prev.includes(casing) ? prev.filter(c => c !== casing) : [...prev, casing]);
+                                        setCurrentPage(1);
+                                      }}
+                                    />
+                                  </label>
+                              ))}
+                              {availableFilters.casings.filter(c => c.toLowerCase().includes(casingSearchQuery.toLowerCase())).length === 0 && (
+                                <div className="p-4 text-center text-sm text-zinc-500 col-span-full">
+                                  Sonuç bulunamadı.
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Watts Tab */}
+                        {activeFilterTab === "watts" && availableFilters.watts.length > 0 && (
+                          <div className="animate-in fade-in zoom-in-95 duration-200">
+                            <div className="flex flex-wrap gap-2.5">
+                              {availableFilters.watts.map(watt => (
+                                <button
+                                  key={watt}
+                                  onClick={() => {
+                                    setSelectedWatts(prev => prev.includes(watt) ? prev.filter(w => w !== watt) : [...prev, watt]);
+                                    setCurrentPage(1);
+                                  }}
+                                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border ${
+                                    selectedWatts.includes(watt)
+                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md shadow-orange-600/20 scale-[1.03]" : "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20 scale-[1.03]"
+                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:-translate-y-0.5"
+                                  }`}
+                                >
+                                  {watt}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Sockets Tab */}
+                        {activeFilterTab === "sockets" && availableFilters.sockets.length > 0 && (
+                          <div className="animate-in fade-in zoom-in-95 duration-200">
+                            <div className="flex flex-wrap gap-2.5">
+                              {availableFilters.sockets.map(socket => (
+                                <button
+                                  key={socket}
+                                  onClick={() => {
+                                    setSelectedSockets(prev => prev.includes(socket) ? prev.filter(s => s !== socket) : [...prev, socket]);
+                                    setCurrentPage(1);
+                                  }}
+                                  className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 border ${
+                                    selectedSockets.includes(socket)
+                                      ? isK2 ? "bg-orange-600 text-white border-orange-600 shadow-md shadow-orange-600/20 scale-[1.03]" : "bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-600/20 scale-[1.03]"
+                                      : "bg-white text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 hover:-translate-y-0.5"
+                                  }`}
+                                >
+                                  {socket}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+                        )}
+
+                      </div>
+
+                      {/* Footer */}
+                      <div className="p-5 border-t border-zinc-100 flex gap-3 bg-zinc-50/60">
+                        <button
+                          onClick={() => {
+                            setSelectedCasings([]);
+                            setSelectedWatts([]);
+                            setSelectedSockets([]);
+                            setCasingSearchQuery("");
+                            setCurrentPage(1);
+                          }}
+                          className="px-5 py-3 rounded-full font-bold text-sm bg-white border border-zinc-200 text-zinc-700 hover:bg-zinc-100 hover:border-zinc-300 transition-colors"
+                        >
+                          Temizle
+                        </button>
+                        <button
+                          onClick={() => setIsFiltersOpen(false)}
+                          className={`flex-1 px-5 py-3 rounded-full font-bold text-sm text-white transition-all duration-300 shadow-lg hover:-translate-y-0.5 ${isK2 ? "bg-orange-600 hover:bg-orange-700 shadow-orange-600/25" : "bg-blue-600 hover:bg-blue-700 shadow-blue-600/25"}`}
+                        >
+                          Uygula ({selectedCasings.length + selectedWatts.length + selectedSockets.length})
+                        </button>
+                      </div>
+                          </div>
+                        </div>,
+                        document.body
+                      )}
+                    </>
+                  )}
               </div>
             )}
             

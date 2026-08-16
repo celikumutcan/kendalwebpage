@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { newsDataTR, newsDataEN } from "@/data/news";
@@ -9,6 +9,12 @@ import { getAssetPath } from "@/utils/basePath";
 
 export default function HaberlerListesiPage() {
   const { language, t } = useLanguage();
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+
+  const allNews = [...(language === 'en' ? newsDataEN : newsDataTR)].sort((a, b) => parseInt(b.id) - parseInt(a.id));
+  const totalPages = Math.ceil(allNews.length / itemsPerPage);
+  const currentNews = allNews.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white py-32 px-6 overflow-hidden">
@@ -38,7 +44,7 @@ export default function HaberlerListesiPage() {
 
         {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[...(language === 'en' ? newsDataEN : newsDataTR)].sort((a, b) => parseInt(b.id) - parseInt(a.id)).map((news) => (
+          {currentNews.map((news) => (
             <Link href={`/haberler/${news.id}`} key={news.id} className="group block">
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[var(--brand-red)]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.1)] hover:-translate-y-1 h-full flex flex-col">
 
@@ -78,9 +84,58 @@ export default function HaberlerListesiPage() {
           ))}
         </div>
 
-        {(language === 'en' ? newsDataEN : newsDataTR).length === 0 && (
+        {allNews.length === 0 && (
           <div className="text-center py-24 text-gray-500">
             {language === 'en' ? "No news added yet." : "Henüz eklenmiş bir haber bulunmuyor."}
+          </div>
+        )}
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex justify-center items-center mt-16 gap-2">
+            <button
+              onClick={() => {
+                setCurrentPage(prev => Math.max(prev - 1, 1));
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              disabled={currentPage === 1}
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:bg-white/10 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              aria-label="Previous page"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            
+            {Array.from({ length: totalPages }).map((_, idx) => {
+              const pageNumber = idx + 1;
+              return (
+                <button
+                  key={pageNumber}
+                  onClick={() => {
+                    setCurrentPage(pageNumber);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
+                  className={`w-10 h-10 flex items-center justify-center rounded-full border transition-all ${
+                    currentPage === pageNumber 
+                      ? 'border-[var(--brand-red)] bg-[var(--brand-red)] text-white font-bold' 
+                      : 'border-white/20 text-white/70 hover:bg-white/10 hover:text-white'
+                  }`}
+                >
+                  {pageNumber}
+                </button>
+              );
+            })}
+
+            <button
+              onClick={() => {
+                setCurrentPage(prev => Math.min(prev + 1, totalPages));
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              disabled={currentPage === totalPages}
+              className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 text-white/70 hover:bg-white/10 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              aria-label="Next page"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
           </div>
         )}
 
