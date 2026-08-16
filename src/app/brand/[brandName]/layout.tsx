@@ -2,6 +2,7 @@ import { BrandNavbar } from "@/components/ui/BrandNavbar";
 import { BrandFooter } from "@/components/ui/BrandFooter";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
 import { getAssetPath } from "@/utils/basePath";
+import { LenisProvider } from "@/components/providers/LenisProvider";
 
 export async function generateMetadata({ params }: { params: Promise<{ brandName: string }> }) {
   const resolvedParams = await params;
@@ -46,7 +47,9 @@ export default async function BrandLayout({
       <BrandNavbar brandName={brandName} />
 
       <main className="flex-grow pt-20">
-        {children}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
       </main>
 
       <BrandFooter brandName={brandName} />

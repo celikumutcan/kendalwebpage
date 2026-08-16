@@ -1,9 +1,10 @@
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { getAssetPath } from "@/utils/basePath";
-import { products, getSlugByProductId } from "@/data/products";
+import { products } from "@/data/products";
 import { BrandHero } from "@/components/sections/BrandHero";
+import { K2CreativePage } from "@/components/brand/k2/K2CreativePage";
+import { GlobalCreativePage } from "@/components/brand/global/GlobalCreativePage";
+import { VantiCreativePage } from "@/components/brand/vanti/VantiCreativePage";
+
 // Server component
 export function generateStaticParams() {
   return [
@@ -20,13 +21,23 @@ export default async function BrandPage({
 }) {
   const resolvedParams = await params;
   const { brandName } = resolvedParams;
-  const isK2 = brandName === "k2";
-
-  const brandColor = isK2 ? "bg-[var(--brand-red, #E60000)]" : "bg-[#FF6600]";
-  const brandTextColor = isK2 ? "text-[var(--brand-red, #E60000)]" : "text-[#FF6600]";
-
+  
   const allProducts = Object.values(products).filter(p => p.brand === brandName);
 
+  if (brandName === "k2") {
+    // Return the new creative GSAP page for K2
+    return <K2CreativePage products={allProducts} />;
+  }
+  
+  if (brandName === "global") {
+    return <GlobalCreativePage products={allProducts} />;
+  }
+
+  if (brandName === "vanti") {
+    return <VantiCreativePage products={allProducts} />;
+  }
+
+  // Regular page for Vanti and Global
   return (
     <div className="w-full text-zinc-900 bg-zinc-50">
       {/* HERO SECTION */}

@@ -20,7 +20,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
       : getAssetPath("/images/brands/global-logo.svg");
 
   return (
-    <footer className="w-full bg-zinc-50 text-zinc-600 py-16 px-6 border-t-2 border-zinc-200" id="iletisim">
+    <footer className="relative z-10 w-full bg-zinc-50 text-zinc-600 py-16 px-6 border-t-2 border-zinc-200" id="iletisim">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         
         {/* Company Info */}
