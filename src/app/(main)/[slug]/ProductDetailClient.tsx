@@ -346,7 +346,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           )}
 
           {/* Product Info & Specifications */}
-          {variations.length > 1 && (
+          {((variations.length > 1) || (variations.length === 1 && (product.variantOptions?.light?.includes(',') || product.variantOptions?.casing?.includes(',')))) && (
             <div className="w-full max-w-3xl flex flex-col items-center">
               {/* Variations */}
               {(() => {
@@ -383,6 +383,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 else if (ctUpper.includes("KIRMIZI")) dotColor = 'bg-red-500';
                 else if (ctUpper.includes("PEMBE")) dotColor = 'bg-pink-500';
                 else if (ctUpper.includes("TURUNCU")) dotColor = 'bg-orange-500';
+                else if (ctUpper.includes("RGB")) dotColor = 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500';
 
                 return { variant, colorTemp, dotColor, watt, socket, detectedCasing };
               });
@@ -391,10 +392,13 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               const uniqueWatts = Array.from(new Set(variantData.map(v => v.watt).filter(w => w)));
               const uniqueSockets = Array.from(new Set(variantData.filter(v => !currentVariantData.watt || v.watt === currentVariantData.watt).map(v => v.socket).filter(s => s)));
-              const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).map(v => v.colorTemp).filter(c => c && c !== "Standart")));
+              
+              // To support comma-separated string options on single products, we flatMap them
+              const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => v.colorTemp ? v.colorTemp.split(',').map((c: string) => c.trim()) : []).filter((c: string) => c && c !== "Standart")));
 
               const getBestVariantMatch = (targetAttr: 'watt' | 'socket' | 'colorTemp', value: string) => {
-                const candidates = variantData.filter(v => v[targetAttr] === value);
+                // For colorTemp, allow matching if the value is part of a comma-separated string
+                const candidates = variantData.filter(v => targetAttr === 'colorTemp' ? v[targetAttr]?.includes(value) : v[targetAttr] === value);
                 if (candidates.length === 0) return null;
 
                 candidates.sort((a, b) => {
@@ -418,7 +422,10 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               };
 
               const renderVariantLink = (match: any, label: string, showColorDot: boolean) => {
-                const isSelected = match.variant.id === product.id;
+                // Determine if this is a virtual link (we have 1 product, but multiple comma-separated colors)
+                const isVirtual = variations.length === 1 && match.variant.id === product.id;
+                
+                const isSelected = match.variant.id === product.id && !isVirtual;
                 const categoryName = match.variant.category?.tr?.[0];
                 const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
                 const variantSlug = getSlugByProductId(match.variant.id) || match.variant.id;
@@ -426,7 +433,28 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
                   : `/urunler/${categorySlug}/${variantSlug}`;
 
-                if (isGlobal) {
+                // Calculate the specific dot color for this label, because match.dotColor might represent the whole string
+                let specificDotColor = 'bg-zinc-200';
+                const ctUpper = label.toUpperCase();
+                if (ctUpper.includes("2700K")) specificDotColor = 'bg-[#FFA957]';
+                else if (ctUpper.includes("3000K") || ctUpper.includes("GÜNIŞIĞI") || ctUpper.includes("GUNISIGI") || ctUpper.includes("GÜN IŞIĞI")) specificDotColor = 'bg-[#FFB46B]';
+                else if (ctUpper.includes("4000K") || ctUpper.includes("ARARENK")) specificDotColor = 'bg-[#FFEDC2]';
+                else if (ctUpper.includes("6500K")) specificDotColor = 'bg-[#E4F1FE]';
+                else if (ctUpper.includes("BEYAZ")) specificDotColor = 'bg-white border-zinc-200';
+                else if (ctUpper.includes("KROM")) specificDotColor = 'bg-slate-300';
+                else if (ctUpper.includes("SATEN") || ctUpper.includes("SILVER") || ctUpper.includes("GÜMÜŞ") || ctUpper.includes("GUMUS")) specificDotColor = 'bg-stone-300';
+                else if (ctUpper.includes("SİYAH") || ctUpper.includes("SIYAH")) specificDotColor = 'bg-zinc-900';
+                else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) specificDotColor = 'bg-yellow-400';
+                else if (ctUpper.includes("BAKIR")) specificDotColor = 'bg-orange-600';
+                else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) specificDotColor = 'bg-yellow-700';
+                else if (ctUpper.includes("MAVİ") || ctUpper.includes("MAVI")) specificDotColor = 'bg-blue-500';
+                else if (ctUpper.includes("YEŞİL") || ctUpper.includes("YESIL") || ctUpper.includes("YEŞIL")) specificDotColor = 'bg-green-500';
+                else if (ctUpper.includes("KIRMIZI")) specificDotColor = 'bg-red-500';
+                else if (ctUpper.includes("PEMBE")) specificDotColor = 'bg-pink-500';
+                else if (ctUpper.includes("TURUNCU")) specificDotColor = 'bg-orange-500';
+                else if (ctUpper.includes("RGB")) specificDotColor = 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500';
+
+                if (isGlobal || isVirtual) {
                   return (
                     <div
                       key={match.variant.id + "-" + label}
@@ -434,7 +462,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                         isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] cursor-default" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)] cursor-default"
                         }`}
                     >
-                      {showColorDot && <span className={`w-3.5 h-3.5 rounded-full ${match.dotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
+                      {showColorDot && <span className={`w-3.5 h-3.5 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
                       <span>{label}</span>
                     </div>
                   );
@@ -449,7 +477,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                       : (isLight ? "bg-white/70 text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-white hover:-translate-y-0.5" : "bg-white/[0.03] text-zinc-400 border-white/10 hover:border-white/25 hover:text-white hover:-translate-y-0.5")
                       }`}
                   >
-                    {showColorDot && <span className={`w-3 h-3 rounded-full ${match.dotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
+                    {showColorDot && <span className={`w-3 h-3 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
                     <span>{label}</span>
                     {isSelected && (
                       <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -646,7 +674,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                         return (
                           <li key={idx} className={`flex-1 min-w-[280px] max-w-sm flex ${isYerliUretim ? 'items-center justify-center' : 'items-start'} gap-4 p-6 rounded-2xl border transition-all duration-300 hover:-translate-y-1 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
                             {isYerliUretim ? (
-                              <div className="relative w-[210px] h-[75px]">
+                              <div className="relative w-[160px] h-[57px]">
                                 <Image
                                   src={getAssetPath('/images/yerli-uretim-logo-cropped.webp')}
                                   alt="Yerli Üretim"

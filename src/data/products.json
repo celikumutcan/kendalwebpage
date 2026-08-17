@@ -7469,276 +7469,6 @@
       "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Yeşi̇l"
     }
   },
-  "4394": {
-    "id": "4394",
-    "model": "KCL007LED",
-    "image": "urunler/kcl007ledbeyaz.webp",
-    "name": {
-      "tr": "KCL007 (3535) 220v 3çipli Silikonlu 60ledlı Şerit",
-      "en": "KCL007 (3535) 220v 3çipli Silikonlu 60ledlı Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "250"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "250M"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "3,6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "6,7"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220V"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "6mm (60 Ledli)"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "1 Mt Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "250"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "250LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "3,6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "6,7"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
-        },
-        {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Dimensions",
-          "value": "6mm (60 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "1 Mt Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips & Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
-    }
-  },
   "4401": {
     "id": "4401",
     "model": "KCL008LEDBEYAZ",
@@ -8029,301 +7759,6 @@
     "brand": "k2",
     "variantOptions": {
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "4414": {
-    "id": "4414",
-    "model": "KCL016NEONLED",
-    "image": "urunler/kcl016neonledbyz.webp",
-    "name": {
-      "tr": "KCL016 (2835) 220v Neon LED Şerit Beyaz",
-      "en": "KCL016 (2835) 220v Neon LED Şerit Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "20Lm/Chip, 2400/1Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": " "
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1600LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": " "
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,7"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220V"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "7x15mm (120 Ledli)"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "20Lm/Chip, 2400/1Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": " "
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1600LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": " "
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,7"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
-        },
-        {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Dimensions",
-          "value": "7x15mm (120 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "100 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips & Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "6W/1Mt.",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz Kasa"
     }
   },
   "4425": {
@@ -8905,49 +8340,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "4451": {
-    "id": "4451",
-    "model": "KCL369LEDSTRIP",
-    "image": "urunler/kcl369ledstrip.webp",
-    "name": {
-      "tr": "KCL369 220v LED Strıp Kablo",
-      "en": "KCL369 220v LED Strıp Kablo"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "200"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Led Neon Fişi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "200"
-        },
-        {
-          "label": "Description",
-          "value": "Led Neon Fişi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
   "4452": {
     "id": "4452",
     "model": "KCL370DUYFIS",
@@ -9007,51 +8399,6 @@
     "brand": "k2",
     "variantOptions": {
       "socket": "E27"
-    }
-  },
-  "4453": {
-    "id": "4453",
-    "model": "KCL371LEDSTRIP",
-    "image": "urunler/kcl371ledstrip.webp",
-    "name": {
-      "tr": "KCL371 220v Neon LED Strıp Kablo RGB",
-      "en": "KCL371 220v Neon LED Strıp Kablo RGB"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "200"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Led RGB Fişi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "200"
-        },
-        {
-          "label": "Description",
-          "value": "Led RGB Fişi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Rgb"
     }
   },
   "4454": {
@@ -175909,52 +175256,84 @@
     "model": "240222051933",
     "image": "yeni-urunler/kes170.webp",
     "name": {
-      "tr": "Global KES170 9 5W / 230v LED Ampul Beyaz",
-      "en": "Global KES170 9 5W / 230v LED Bulb Whıte"
+      "tr": "KES170 LED Ampul Beyaz",
+      "en": "KES170 LED Bulb White"
     },
     "attributes": {
       "tr": [
         {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
         },
         {
           "label": "Duy",
           "value": "E27"
         },
         {
-          "label": "Renk",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lümen",
-          "value": "1050"
+          "label": "Gerilim",
+          "value": "220-240V"
         },
         {
           "label": "Koli Adeti",
           "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6 cm x 10,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
         {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
         },
         {
           "label": "Socket",
           "value": "E27"
         },
         {
-          "label": "Color",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lumen",
-          "value": "1050"
+          "label": "Voltage",
+          "value": "220-240V"
         },
         {
           "label": "Package Quantity",
           "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6 cm x 10.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -175980,52 +175359,84 @@
     "model": "240222053522",
     "image": "yeni-urunler/kes170.webp",
     "name": {
-      "tr": "Global KES170 9 5W / 230v LED Ampul Günışığı",
-      "en": "Global KES170 9 5W / 230v LED Ampul Warm Whıte"
+      "tr": "KES170 LED Ampul Günışığı",
+      "en": "KES170 LED Bulb Warm White"
     },
     "attributes": {
       "tr": [
         {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
         },
         {
           "label": "Duy",
           "value": "E27"
         },
         {
-          "label": "Renk",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lümen",
-          "value": "1050"
+          "label": "Gerilim",
+          "value": "220-240V"
         },
         {
           "label": "Koli Adeti",
           "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6 cm x 10,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
         {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
         },
         {
           "label": "Socket",
           "value": "E27"
         },
         {
-          "label": "Color",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lumen",
-          "value": "1050"
+          "label": "Voltage",
+          "value": "220-240V"
         },
         {
           "label": "Package Quantity",
           "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6 cm x 10.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -176043,105 +175454,6 @@
     "variantOptions": {
       "watt": "5W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "7719": {
-    "id": "7719",
-    "model": "240223141044",
-    "image": "urunler/kcl050-120-led-serit.webp",
-    "name": {
-      "tr": "KCL050 2835 Silikonlu 120 Ledli Şerit",
-      "en": "KCL050 2835 Slıcone 120 LED Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100 Mt."
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "24W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "23.4W"
-        },
-        {
-          "label": "Işık Akısı (Lümen)",
-          "value": "2040 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
-        }
-      ],
-      "en": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100 Mt."
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "24W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "23.4W"
-        },
-        {
-          "label": "Işık Akısı (Lümen)",
-          "value": "2040 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led"
-      ],
-      "en": [
-        "Strip LED"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "casing": "Beyaz (6500K)"
     }
   },
   "7721": {
@@ -177927,120 +177239,6 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "8W"
-    }
-  },
-  "7759": {
-    "id": "7759",
-    "model": "240429133853",
-    "image": "urunler/kcl013-rgb-neon-led.webp",
-    "name": {
-      "tr": "KCL013 10W 12v Neon LED",
-      "en": "KCL013 10W 12v Neon LED Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "3000K - 6500K AMBER - MAVİ - YEŞİL - BUZ MAVİ - PEMBE - KIRMIZI - RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Gerilim",
-          "value": "12V"
-        },
-        {
-          "label": "Açıklama",
-          "value": "1 Rulo / 5 Mt"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "6x12mm (120Ledli)"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "2.5 Cm Kesim"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Açık Mavi, Yeşil, Pembe"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Power",
-          "value": "10W"
-        },
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Voltage",
-          "value": "12V"
-        },
-        {
-          "label": "Description",
-          "value": "1 Roll / 5 Mt"
-        },
-        {
-          "label": "Dimensions",
-          "value": "6x12mm (120 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "2.5 cm Cut"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Light Blue, Green, Pink"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips and Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "3000K-6500K Amber-Mavi̇-Yeşi̇l-Buz Mavi̇-Pembe-Kırmızı-Rgb"
     }
   },
   "7760": {
@@ -186255,237 +185453,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "7929": {
-    "id": "7929",
-    "model": "240503053412",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
-    "name": {
-      "tr": "KKP285A 20W Sinek Öldürücü Armatür",
-      "en": "KKP285A 20W Mosquıto Kıller Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x390"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x390"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x390"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x390"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sinek Öldürücü Armatürler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Bug Zapper Fixtures"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "20W"
-    }
-  },
-  "7930": {
-    "id": "7930",
-    "model": "240503053603",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
-    "name": {
-      "tr": "KKP285B 30W Sinek Öldürücü Armatür",
-      "en": "KKP285B 30W Mosquıto Kıller Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x490"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x490"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x490"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x490"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sinek Öldürücü Armatürler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Bug Zapper Fixtures"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7931": {
-    "id": "7931",
-    "model": "240503053719",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
-    "name": {
-      "tr": "KKP285C 40W Sinek Öldürücü Armatür",
-      "en": "KKP285C 40W Mosquıto Kıller Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "8"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x640"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x640"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "8"
-        },
-        {
-          "label": "Ölçü",
-          "value": "245x60x640"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x640"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sinek Öldürücü Armatürler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Bug Zapper Fixtures"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "40W"
-    }
-  },
   "7932": {
     "id": "7932",
     "model": "240503053944",
@@ -188318,220 +187285,6 @@
       "casing": "Beyaz (6500K)"
     }
   },
-  "7965": {
-    "id": "7965",
-    "model": "240612133228",
-    "image": "urunler/kcl016neonledguni-750x750-product_popup.webp",
-    "name": {
-      "tr": "KCL016 (2835) 220v Neon LED Şerit",
-      "en": "KCL016 (2835) 220v Neon LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "300LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "10"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,7"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "300LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "10"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,7"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Ararenk, Rgb"
-    }
-  },
   "7966": {
     "id": "7966",
     "model": "240801051655",
@@ -189329,313 +188082,6 @@
       "watt": "30W",
       "socket": "E27",
       "casing": "CCT (3000K-4000K-6500K)"
-    }
-  },
-  "7981": {
-    "id": "7981",
-    "model": "241219111701",
-    "image": "urunler/kcl019.webp",
-    "name": {
-      "tr": "KCL019 (2835) 12v Neon LED Şerit",
-      "en": "KCL019 (2835) 12v Neon LED Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Renk",
-          "value": "3000K - 6500K AMBER - MAVİ - YEŞİL - BUZ MAVİ - PEMBE - KIRMIZI "
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Gerilim",
-          "value": "12V"
-        },
-        {
-          "label": "Açıklama",
-          "value": "1 Rulo / 25 Mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "6x12mm (120Ledli)"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "2.5 Cm Kesim"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Mor, Pembe"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Color",
-          "value": "3000K - 6500K AMBER - MAVİ - YEŞİL - BUZ MAVİ - PEMBE - KIRMIZI "
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Voltage",
-          "value": "12V"
-        },
-        {
-          "label": "Description",
-          "value": "1 Roll / 25 Mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Dimensions",
-          "value": "6x12mm (120 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "2.5 cm Cut"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Purple, Pink"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips and Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "3000K-6500K Amber-Mavi̇-Yeşi̇l-Buz Mavi̇-Pembe-Kırmızı"
-    }
-  },
-  "7982": {
-    "id": "7982",
-    "model": "241219175457",
-    "image": "urunler/kcl060.webp",
-    "name": {
-      "tr": "KCL060 220v COB Neon LED Şerit",
-      "en": "KCL060 220v COB Neon LED Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Renk",
-          "value": "3000K / 6500K / AMBER / MAVİ / YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "10"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "700LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "16,9"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3000K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Color",
-          "value": "3000K / 6500K / AMBER / BLUE / GREEN"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "10"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "700LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "16,9"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3000K"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips and Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "10W"
     }
   },
   "7983": {
@@ -191237,414 +189683,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "8023": {
-    "id": "8023",
-    "model": "250422065036",
-    "image": "urunler/glf293.webp",
-    "name": {
-      "tr": "GLF293 100W ECO LED PROJEKTÖR",
-      "en": "GLF293 100W Eco LED Projector"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "7000"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "205mm x 146mm x 35mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "7000"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "205mm x 146mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "100W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8024": {
-    "id": "8024",
-    "model": "250422070307",
-    "image": "urunler/glf293.webp",
-    "name": {
-      "tr": "GLF295 200W ECO LED PROJEKTÖR",
-      "en": "GLF295 200W Eco LED Projector"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "14000"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "275mm x 217mm x 35mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "14000"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "275mm x 217mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "200W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8025": {
-    "id": "8025",
-    "model": "250422070413",
-    "image": "urunler/glf293.webp",
-    "name": {
-      "tr": "GLF296 300W ECO LED PROJEKTÖR",
-      "en": "GLF296 300W Eco LED Projector"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "21000"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "335mm x 230mm x 35mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "21000"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "335mm x 230mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "300W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8026": {
-    "id": "8026",
-    "model": "250422075004",
-    "image": "urunler/glf293.webp",
-    "name": {
-      "tr": "GLF297 400W ECO LED PROJEKTÖR",
-      "en": "GLF297 400W Eco LED Projector"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "400W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "28000"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "380mm x 276mm x 35mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "400W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "28000"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "380mm x 276mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "400W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
   "8027": {
     "id": "8027",
     "model": "250422075104",
@@ -191971,52 +190009,84 @@
     "model": "250711055516",
     "image": "yeni-urunler/kes170.webp",
     "name": {
-      "tr": "Global KES170 9 5W / 230v LED Ampul Ararenk",
-      "en": "Global KES170 9 5W / 230v LED Ampul Ararenk"
+      "tr": "KES170 LED Ampul Ararenk",
+      "en": "KES170 LED Bulb Neutral White"
     },
     "attributes": {
       "tr": [
         {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
         },
         {
           "label": "Duy",
           "value": "E27"
         },
         {
-          "label": "Renk",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lümen",
-          "value": "1050"
+          "label": "Gerilim",
+          "value": "220-240V"
         },
         {
           "label": "Koli Adeti",
           "value": "100"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "6 cm x 10,5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
         }
       ],
       "en": [
         {
+          "label": "Casing",
+          "value": "A60"
+        },
+        {
           "label": "Watt",
-          "value": "15W"
+          "value": "9.5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
         },
         {
           "label": "Socket",
           "value": "E27"
         },
         {
-          "label": "Color",
-          "value": "3000K-4000K-6500K"
-        },
-        {
-          "label": "Lumen",
-          "value": "1050"
+          "label": "Voltage",
+          "value": "220-240V"
         },
         {
           "label": "Package Quantity",
           "value": "100"
+        },
+        {
+          "label": "Working Hours",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Dimensions",
+          "value": "6 cm x 10.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production / Aluminum Heat Transfer Module"
         }
       ]
     },
@@ -192314,121 +190384,6 @@
     "variantOptions": {
       "watt": "12W",
       "casing": "CCT + Amber"
-    }
-  },
-  "8058": {
-    "id": "8058",
-    "model": "250926125754",
-    "image": "urunler/kcl051.webp",
-    "name": {
-      "tr": "KCL051 2835 Silikonlu 240 Ledli Şerit",
-      "en": "KCL051 2835 Silicone 240 LED Strip"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "48W"
-        },
-        {
-          "label": "Renk",
-          "value": "3000K/4000K/6500K"
-        },
-        {
-          "label": "Lümen",
-          "value": "4080LM"
-        },
-        {
-          "label": "IP",
-          "value": "IP65"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220V"
-        },
-        {
-          "label": "Açıklama",
-          "value": "240 LEDLİ"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "5x9mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Yeşil"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "48W"
-        },
-        {
-          "label": "Color",
-          "value": "3000K/4000K/6500K"
-        },
-        {
-          "label": "Lumen",
-          "value": "4080LM"
-        },
-        {
-          "label": "IP",
-          "value": "IP65"
-        },
-        {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Description",
-          "value": "240 LEDs"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
-        },
-        {
-          "label": "Dimensions",
-          "value": "5x9mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Green"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led"
-      ],
-      "en": [
-        "Strip LED"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "48W"
     }
   },
   "8059": {
@@ -194646,108 +192601,6 @@
       "watt": "8W",
       "socket": "E27",
       "casing": "CCT (3000K-4000K-6500K)"
-    }
-  },
-  "8109": {
-    "id": "8109",
-    "model": "260225122815",
-    "image": "urunler/glf293.webp",
-    "name": {
-      "tr": "GLF292 50W ECO LED PROJEKTÖR",
-      "en": "GLF292 50W Eco Floodlıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3500"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "160mm x 120mm x 30mm"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3500"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "160mm x 120mm x 30mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektörler"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Projectors"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "50W",
-      "casing": "Beyaz (6500K)"
     }
   },
   "8110": {
@@ -200138,109 +197991,6 @@
       "watt": "25W"
     }
   },
-  "KES170": {
-    "id": "KES170",
-    "model": "KES170",
-    "image": "urunler/kes170.webp",
-    "name": {
-      "tr": "KES170 LED AMPUL (LINEAR)",
-      "en": "KES170 LED BULB (LINEAR)"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Kasa",
-          "value": "A60"
-        },
-        {
-          "label": "Watt",
-          "value": "9.5W"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "6 cm x 10,5 cm"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim / Alüminyum Isı Transfer Modülü"
-        }
-      ],
-      "en": [
-        {
-          "label": "Casing",
-          "value": "A60"
-        },
-        {
-          "label": "Watt",
-          "value": "9.5W"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "6 cm x 10.5 cm"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production / Aluminum Heat Transfer Module"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Bulb",
-        "Led Bulb"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "9.5W",
-      "socket": "E27",
-      "light": "3000K-4000K-6500K"
-    }
-  },
   "KES171": {
     "id": "KES171",
     "model": "KES171",
@@ -201624,111 +199374,7 @@
         },
         {
           "label": "Özellik",
-          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": " "
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1600LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": " "
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,7"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
+          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu, Bağlantı Aparatları vb.)"
         }
       ],
       "en": [
@@ -201759,110 +199405,6 @@
         {
           "label": "Feature",
           "value": "100 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": " "
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1600LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": " "
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,7"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
         }
       ]
     },
@@ -201879,13 +199421,15 @@
     "brand": "global",
     "variantOptions": {
       "watt": "10W",
-      "light": "Renk Seçenekleri"
+      "socket": null,
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu",
+      "casing": null
     }
   },
   "KCL016-RGB": {
     "id": "KCL016-RGB",
     "model": "KCL016-RGB",
-    "image": "urunler/kcl016neonledbyz.webp",
+    "image": "urunler/kcl016neonledrgb.webp",
     "name": {
       "tr": "KCL016 220V NEON LED (RGB)",
       "en": "KCL016 220V NEON LED (RGB)"
@@ -201918,111 +199462,11 @@
         },
         {
           "label": "Özellik",
-          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
+          "value": "100 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu, Bağlantı Aparatları vb.)"
         },
         {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": " "
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1600LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": " "
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,7"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
+          "label": "Işık Rengi",
+          "value": "RGB"
         }
       ],
       "en": [
@@ -202055,108 +199499,8 @@
           "value": "100 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
         },
         {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, ARARENK, RGB"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": " "
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1600LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": " "
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,7"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
+          "label": "Light Color",
+          "value": "RGB"
         }
       ]
     },
@@ -202173,7 +199517,9 @@
     "brand": "global",
     "variantOptions": {
       "watt": "10W",
-      "light": "RGB"
+      "socket": null,
+      "light": "RGB",
+      "casing": null
     }
   },
   "KCL060": {
@@ -202195,100 +199541,28 @@
           "value": "700"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
+          "label": "Renk Seçenekleri",
+          "value": "Beyaz, Sarı, Yeşil, Mavi, Turuncu"
         },
         {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
+          "label": "Ölçü",
           "value": "6x10mm"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "50 cm"
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
         },
         {
+          "label": "Koli Miktarı",
+          "value": "100 mt"
+        },
+        {
           "label": "Özellik",
-          "value": "50 Cm Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Yeşil, Mavi, Mor"
-        },
-        {
-          "label": "Renk",
-          "value": "3000K / 6500K / AMBER / MAVİ / YEŞİL"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "YÖNSÜZ"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "10"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "700LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3000K"
+          "value": "Her Koli 5 Adet Tam Aksesuar İçerir. (Güç Kablosu, Bağlantı Aparatları vb.)"
         }
       ],
       "en": [
@@ -202301,117 +199575,44 @@
           "value": "700"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
+          "label": "Color Options",
+          "value": "White, Yellow, Green, Blue, Orange"
         },
         {
           "label": "Dimensions",
           "value": "6x10mm"
         },
         {
-          "label": "Protection Class",
+          "label": "Cutting Length",
+          "value": "50 cm"
+        },
+        {
+          "label": "IP Rating",
           "value": "IP65"
         },
         {
+          "label": "Package Quantity",
+          "value": "100 mt"
+        },
+        {
           "label": "Feature",
-          "value": "50 cm Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Green, Blue, Purple"
-        },
-        {
-          "label": "Color",
-          "value": "3000K / 6500K / AMBER / BLUE / GREEN"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "10"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "700LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3000K"
+          "value": "Each Carton Contains 5 Full Accessory Sets. (Power Cable, Connectors, etc.)"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led",
-        "Neon Led"
+        "Aydınlatma",
+        "Neon LED"
       ],
       "en": [
-        "Strip Led",
-        "Neon Led"
+        "Lighting",
+        "Neon LED"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "10W",
-      "light": "Renk Seçenekleri"
+      "watt": "10W"
     }
   },
   "KCL007": {
@@ -202433,116 +199634,24 @@
           "value": "250 / 1mt"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
+          "label": "Ölçü",
           "value": "6mm (60 Ledli)"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "1 Mt."
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
         },
         {
+          "label": "Koli Miktarı",
+          "value": "100mt"
+        },
+        {
           "label": "Özellik",
-          "value": "1 Mt Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "250M"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "3,6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
+          "value": "Her Koli 5 Adet Tam Aksesuar İçerir. (Güç Kablosu, Bağlantı Aparatları vb.)"
         }
       ],
       "en": [
@@ -202555,403 +199664,41 @@
           "value": "250 / 1mt"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
+          "label": "Dimensions",
+          "value": "6mm (60 LEDs)"
+        },
+        {
+          "label": "Cutting Length",
+          "value": "1 Mt."
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
         },
         {
           "label": "Package Quantity",
           "value": "100mt"
         },
         {
-          "label": "Dimensions",
-          "value": "6mm (60 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
           "label": "Feature",
-          "value": "1 Mt Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "250LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "3,6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
+          "value": "Each Carton Contains 5 Full Accessory Sets. (Power Cable, Connectors, etc.)"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led",
-        "Dış Mekan Şerit Led"
+        "Aydınlatma",
+        "Dış Mekan LED Şeritler"
       ],
       "en": [
-        "Strip Led",
-        "Outdoor Strip Led"
+        "Lighting",
+        "Outdoor LED Strips"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "6W",
-      "light": "Renk Seçenekleri"
-    }
-  },
-  "KCL007-RGB": {
-    "id": "KCL007-RGB",
-    "model": "KCL007-RGB",
-    "image": "urunler/kcl007ledbeyaz.webp",
-    "name": {
-      "tr": "KCL007 220V DIŞ MEKAN LED ŞERİTLER (RGB)",
-      "en": "KCL007 220V OUTDOOR LED STRIPS (RGB)"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W / 1mt"
-        },
-        {
-          "label": "Lümen",
-          "value": "250 / 1mt"
-        },
-        {
-          "label": "Gerilim",
-          "value": "220V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "6mm (60 Ledli)"
-        },
-        {
-          "label": "Koruma Sınıfı",
-          "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "1 Mt Kesim / Her Koli 5 Adet Tam Aksesuar İçerir (Güç Kablosu vb.)"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "250M"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "3,6"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "6500K - 3200K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W / 1mt"
-        },
-        {
-          "label": "Lumen",
-          "value": "250 / 1mt"
-        },
-        {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
-        },
-        {
-          "label": "Dimensions",
-          "value": "6mm (60 LEDs)"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "1 Mt Cut / Each Package Includes 5 Full Accessories (Power Cable, etc.)"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "250LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "3,6"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3243/0,3447"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        },
-        {
-          "label": "Correlated colour temperature",
-          "value": "6500K - 3200K"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit Led",
-        "Dış Mekan Şerit Led"
-      ],
-      "en": [
-        "Strip Led",
-        "Outdoor Strip Led"
-      ]
-    },
-    "brand": "global",
-    "variantOptions": {
-      "watt": "6W",
-      "light": "RGB"
+      "watt": "6W / 1mt",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu, RGB"
     }
   },
   "KCL050": {
@@ -202973,64 +199720,32 @@
           "value": "2040"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
+          "label": "LED Sayısı",
+          "value": "120 Ledli"
         },
         {
-          "label": "Açıklama",
-          "value": "120 LEDLİ"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
+          "label": "Ölçü",
           "value": "5x9mm"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "10 Cm."
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
         },
         {
+          "label": "Koli Miktarı",
+          "value": "100mt"
+        },
+        {
           "label": "Özellik",
-          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
+          "value": "Kendinden Yapışkanlı"
         },
         {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "24W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "23.4W"
-        },
-        {
-          "label": "Işık Akısı (Lümen)",
-          "value": "2040 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
+          "label": "Ekstra Özellik",
+          "value": "Her Koli 5 Adet Tam Aksesuar İçerir. (Güç Kablosu, Bağlantı Aparatları vb.)"
         }
       ],
       "en": [
@@ -203043,79 +199758,49 @@
           "value": "2040"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Description",
+          "label": "LED Quantity",
           "value": "120 LEDs"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
         },
         {
           "label": "Dimensions",
           "value": "5x9mm"
         },
         {
-          "label": "Protection Class",
+          "label": "Cutting Length",
+          "value": "10 Cm."
+        },
+        {
+          "label": "IP Rating",
           "value": "IP65"
         },
         {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
           "label": "Feature",
-          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
+          "value": "Self-Adhesive"
         },
         {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Green"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "24W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "23.4W"
-        },
-        {
-          "label": "Işık Akısı (Lümen)",
-          "value": "2040 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
+          "label": "Extra Feature",
+          "value": "Each Carton Contains 5 Full Accessory Sets. (Power Cable, Connectors, etc.)"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led"
+        "Aydınlatma",
+        "Dış Mekan LED Şeritler"
       ],
       "en": [
-        "Strip LED"
+        "Lighting",
+        "Outdoor LED Strips"
       ]
     },
     "brand": "global",
     "variantOptions": {
       "watt": "24W",
-      "light": "Renk Seçenekleri"
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
     }
   },
   "KCL051": {
@@ -203137,32 +199822,36 @@
           "value": "4080"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
+          "label": "LED Sayısı",
+          "value": "240 Ledli"
         },
         {
-          "label": "Açıklama",
-          "value": "240 LEDLİ"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        },
-        {
-          "label": "Ölçüler",
+          "label": "Ölçü",
           "value": "5x9mm"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "10 Cm."
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
         },
         {
-          "label": "Özellik",
-          "value": "10 Cm Kesim / Kendinden Yapışkanlı / Her Koli 5 Adet Tam Aksesuar İçerir"
+          "label": "Koli Miktarı",
+          "value": "100mt"
         },
         {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Yeşil"
+          "label": "Özellik",
+          "value": "Kendinden Yapışkanlı"
+        },
+        {
+          "label": "Ekstra Özellik",
+          "value": "Her Koli 5 Adet Tam Aksesuar İçerir. (Güç Kablosu, Bağlantı Aparatları vb.)"
+        },
+        {
+          "label": "Durum",
+          "value": "Yeni"
         }
       ],
       "en": [
@@ -203175,47 +199864,53 @@
           "value": "4080"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
-        },
-        {
-          "label": "Description",
+          "label": "LED Quantity",
           "value": "240 LEDs"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
         },
         {
           "label": "Dimensions",
           "value": "5x9mm"
         },
         {
-          "label": "Protection Class",
+          "label": "Cutting Length",
+          "value": "10 Cm."
+        },
+        {
+          "label": "IP Rating",
           "value": "IP65"
         },
         {
-          "label": "Feature",
-          "value": "10 cm Cut / Self Adhesive / Each Package Includes 5 Full Accessories"
+          "label": "Package Quantity",
+          "value": "100mt"
         },
         {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Green"
+          "label": "Feature",
+          "value": "Self-Adhesive"
+        },
+        {
+          "label": "Extra Feature",
+          "value": "Each Carton Contains 5 Full Accessory Sets. (Power Cable, Connectors, etc.)"
+        },
+        {
+          "label": "Status",
+          "value": "New"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led"
+        "Aydınlatma",
+        "Dış Mekan LED Şeritler"
       ],
       "en": [
-        "Strip LED"
+        "Lighting",
+        "Outdoor LED Strips"
       ]
     },
     "brand": "global",
     "variantOptions": {
       "watt": "48W",
-      "light": "Renk Seçenekleri"
+      "light": "Beyaz, Günışığı, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
     }
   },
   "KCL013": {
@@ -203237,32 +199932,24 @@
           "value": "300 / 1mt"
         },
         {
-          "label": "Gerilim",
-          "value": "12V"
-        },
-        {
-          "label": "Açıklama",
-          "value": "1 Rulo / 5 Mt"
-        },
-        {
-          "label": "Koli Adeti",
+          "label": "Koli Adedi",
           "value": "40"
         },
         {
-          "label": "Ölçüler",
-          "value": "6x12mm (120Ledli)"
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Mt."
+        },
+        {
+          "label": "Ölçü",
+          "value": "6x12mm (120 Ledli)"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "2.5 Cm."
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "2.5 Cm Kesim"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Açık Mavi, Yeşil, Pembe"
         }
       ],
       "en": [
@@ -203275,49 +199962,41 @@
           "value": "300 / 1mt"
         },
         {
-          "label": "Voltage",
-          "value": "12V"
-        },
-        {
-          "label": "Description",
-          "value": "1 Roll / 5 Mt"
-        },
-        {
           "label": "Package Quantity",
           "value": "40"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Mt."
         },
         {
           "label": "Dimensions",
           "value": "6x12mm (120 LEDs)"
         },
         {
-          "label": "Protection Class",
+          "label": "Cutting Length",
+          "value": "2.5 Cm."
+        },
+        {
+          "label": "IP Rating",
           "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "2.5 cm Cut"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Light Blue, Green, Pink"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led",
-        "Neon Led"
+        "Aydınlatma",
+        "Neon LED"
       ],
       "en": [
-        "Strip Led",
-        "Neon Led"
+        "Lighting",
+        "Neon LED"
       ]
     },
     "brand": "global",
     "variantOptions": {
       "watt": "10W",
-      "light": "Renk Seçenekleri"
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu, Açık Mavi, Pembe"
     }
   },
   "KCL013-RGB": {
@@ -203441,32 +200120,24 @@
           "value": "800"
         },
         {
-          "label": "Gerilim",
-          "value": "12V"
-        },
-        {
-          "label": "Açıklama",
-          "value": "1 Rulo / 25 Mt"
-        },
-        {
-          "label": "Koli Adeti",
+          "label": "Koli Adedi",
           "value": "50"
         },
         {
-          "label": "Ölçüler",
-          "value": "6x12mm (120Ledli)"
+          "label": "Paketleme",
+          "value": "1 Rulo / 25 Mt."
+        },
+        {
+          "label": "Ölçü",
+          "value": "6x12mm (120 Ledli)"
+        },
+        {
+          "label": "Kesme Aralığı",
+          "value": "2.5 Cm."
         },
         {
           "label": "Koruma Sınıfı",
           "value": "IP65"
-        },
-        {
-          "label": "Özellik",
-          "value": "2.5 Cm Kesim"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Mor, Pembe"
         }
       ],
       "en": [
@@ -203479,49 +200150,41 @@
           "value": "800"
         },
         {
-          "label": "Voltage",
-          "value": "12V"
-        },
-        {
-          "label": "Description",
-          "value": "1 Roll / 25 Mt"
-        },
-        {
           "label": "Package Quantity",
           "value": "50"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 25 Mt."
         },
         {
           "label": "Dimensions",
           "value": "6x12mm (120 LEDs)"
         },
         {
-          "label": "Protection Class",
+          "label": "Cutting Length",
+          "value": "2.5 Cm."
+        },
+        {
+          "label": "IP Rating",
           "value": "IP65"
-        },
-        {
-          "label": "Feature",
-          "value": "2.5 cm Cut"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Purple, Pink"
         }
       ]
     },
     "category": {
       "tr": [
-        "Şerit Led",
-        "Neon Led"
+        "Aydınlatma",
+        "Neon LED"
       ],
       "en": [
-        "Strip Led",
-        "Neon Led"
+        "Lighting",
+        "Neon LED"
       ]
     },
     "brand": "global",
     "variantOptions": {
       "watt": "10W",
-      "light": "Renk Seçenekleri"
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu, Açık Mavi, Pembe"
     }
   },
   "GLF292": {
@@ -203547,20 +200210,24 @@
           "value": "220-240V"
         },
         {
-          "label": "Koli Adeti",
-          "value": "20"
+          "label": "Renk Sıcaklığı",
+          "value": "6500K"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
-          "label": "Ölçüler",
-          "value": "160mm x 120mm x 30mm"
-        },
-        {
           "label": "Koruma Sınıfı",
           "value": "IP65"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "160x120x30mm"
         },
         {
           "label": "Özellik",
@@ -203581,20 +200248,24 @@
           "value": "220-240V"
         },
         {
+          "label": "Color Temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
           "label": "Package Quantity",
           "value": "20"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "160mm x 120mm x 30mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
+          "value": "160x120x30mm"
         },
         {
           "label": "Feature",
@@ -203604,18 +200275,17 @@
     },
     "category": {
       "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektör"
+        "Aydınlatma",
+        "Projektör"
       ],
       "en": [
-        "Outdoor Lighting",
-        "Led Floodlight"
+        "Lighting",
+        "Floodlight"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "50W",
-      "light": "Beyaz (6500K)"
+      "watt": "50W"
     }
   },
   "GLF293": {
@@ -203641,28 +200311,28 @@
           "value": "220-240V"
         },
         {
-          "label": "Koli Adeti",
-          "value": "10"
+          "label": "Renk Sıcaklığı",
+          "value": "6500K"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
-          "label": "Ölçüler",
-          "value": "205mm x 146mm x 35mm"
-        },
-        {
           "label": "Koruma Sınıfı",
           "value": "IP65"
         },
         {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
+          "label": "Koli Adedi",
+          "value": "10"
         },
         {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
+          "label": "Ölçüler",
+          "value": "205x146x35mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
         }
       ],
       "en": [
@@ -203679,45 +200349,44 @@
           "value": "220-240V"
         },
         {
+          "label": "Color Temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
           "label": "Package Quantity",
           "value": "10"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "205mm x 146mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
+          "value": "205x146x35mm"
         },
         {
           "label": "Feature",
           "value": "Domestic Production"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
         }
       ]
     },
     "category": {
       "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektör"
+        "Aydınlatma",
+        "Projektör"
       ],
       "en": [
-        "Outdoor Lighting",
-        "Led Floodlight"
+        "Lighting",
+        "Floodlight"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "100W",
-      "light": "Beyaz (6500K)"
+      "watt": "100W"
     }
   },
   "GLF295": {
@@ -203743,20 +200412,24 @@
           "value": "220-240V"
         },
         {
-          "label": "Koli Adeti",
-          "value": "10"
+          "label": "Renk Sıcaklığı",
+          "value": "6500K"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
-          "label": "Ölçüler",
-          "value": "275mm x 217mm x 35mm"
-        },
-        {
           "label": "Koruma Sınıfı",
           "value": "IP65"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "275x217x35mm"
         },
         {
           "label": "Özellik",
@@ -203777,20 +200450,24 @@
           "value": "220-240V"
         },
         {
+          "label": "Color Temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
           "label": "Package Quantity",
           "value": "10"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "275mm x 217mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
+          "value": "275x217x35mm"
         },
         {
           "label": "Feature",
@@ -203800,18 +200477,17 @@
     },
     "category": {
       "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektör"
+        "Aydınlatma",
+        "Projektör"
       ],
       "en": [
-        "Outdoor Lighting",
-        "Led Floodlight"
+        "Lighting",
+        "Floodlight"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "200W",
-      "light": "Beyaz (6500K)"
+      "watt": "200W"
     }
   },
   "GLF296": {
@@ -203837,20 +200513,24 @@
           "value": "220-240V"
         },
         {
-          "label": "Koli Adeti",
-          "value": "10"
+          "label": "Renk Sıcaklığı",
+          "value": "6500K"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
-          "label": "Ölçüler",
-          "value": "335mm x 230mm x 35mm"
-        },
-        {
           "label": "Koruma Sınıfı",
           "value": "IP65"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "335x230x35mm"
         },
         {
           "label": "Özellik",
@@ -203871,20 +200551,24 @@
           "value": "220-240V"
         },
         {
+          "label": "Color Temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
           "label": "Package Quantity",
           "value": "10"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "335mm x 230mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
+          "value": "335x230x35mm"
         },
         {
           "label": "Feature",
@@ -203894,18 +200578,17 @@
     },
     "category": {
       "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektör"
+        "Aydınlatma",
+        "Projektör"
       ],
       "en": [
-        "Outdoor Lighting",
-        "Led Floodlight"
+        "Lighting",
+        "Floodlight"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "300W",
-      "light": "Beyaz (6500K)"
+      "watt": "300W"
     }
   },
   "GLF297": {
@@ -203931,20 +200614,24 @@
           "value": "220-240V"
         },
         {
-          "label": "Koli Adeti",
-          "value": "10"
+          "label": "Renk Sıcaklığı",
+          "value": "6500K"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
-          "label": "Ölçüler",
-          "value": "380mm x 276mm x 35mm"
-        },
-        {
           "label": "Koruma Sınıfı",
           "value": "IP65"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "380x276x35mm"
         },
         {
           "label": "Özellik",
@@ -203965,20 +200652,24 @@
           "value": "220-240V"
         },
         {
+          "label": "Color Temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
           "label": "Package Quantity",
           "value": "10"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "380mm x 276mm x 35mm"
-        },
-        {
-          "label": "Protection Class",
-          "value": "IP65"
+          "value": "380x276x35mm"
         },
         {
           "label": "Feature",
@@ -203988,24 +200679,23 @@
     },
     "category": {
       "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Projektör"
+        "Aydınlatma",
+        "Projektör"
       ],
       "en": [
-        "Outdoor Lighting",
-        "Led Floodlight"
+        "Lighting",
+        "Floodlight"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "400W",
-      "light": "Beyaz (6500K)"
+      "watt": "400W"
     }
   },
   "KKP285A": {
     "id": "KKP285A",
     "model": "KKP285A",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
+    "image": "urunler/kkp285a.webp",
     "name": {
       "tr": "KKP285A SİNEK ÖLDÜRÜCÜ ARMATÜR",
       "en": "KKP285A INSECT KILLER FIXTURE"
@@ -204017,20 +200707,12 @@
           "value": "20W"
         },
         {
-          "label": "Gerilim",
-          "value": "220-240V"
+          "label": "Ölçü",
+          "value": "245x60x390 mm"
         },
         {
-          "label": "Koli Adeti",
+          "label": "Koli Adedi",
           "value": "10"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x390"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
         }
       ],
       "en": [
@@ -204039,31 +200721,23 @@
           "value": "20W"
         },
         {
-          "label": "Voltage",
-          "value": "220-240V"
+          "label": "Dimensions",
+          "value": "245x60x390 mm"
         },
         {
           "label": "Package Quantity",
           "value": "10"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x390"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
         }
       ]
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatür"
+        "Aydınlatma",
+        "Sinek Öldürücü Armatürler"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixture"
+        "Lighting",
+        "Insect Killer Fixtures"
       ]
     },
     "brand": "global",
@@ -204074,7 +200748,7 @@
   "KKP285B": {
     "id": "KKP285B",
     "model": "KKP285B",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
+    "image": "urunler/kkp285b.webp",
     "name": {
       "tr": "KKP285B SİNEK ÖLDÜRÜCÜ ARMATÜR",
       "en": "KKP285B INSECT KILLER FIXTURE"
@@ -204086,20 +200760,12 @@
           "value": "30W"
         },
         {
-          "label": "Gerilim",
-          "value": "220-240V"
+          "label": "Ölçü",
+          "value": "245x60x490 mm"
         },
         {
-          "label": "Koli Adeti",
+          "label": "Koli Adedi",
           "value": "10"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x490"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
         }
       ],
       "en": [
@@ -204108,31 +200774,23 @@
           "value": "30W"
         },
         {
-          "label": "Voltage",
-          "value": "220-240V"
+          "label": "Dimensions",
+          "value": "245x60x490 mm"
         },
         {
           "label": "Package Quantity",
           "value": "10"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x490"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
         }
       ]
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatür"
+        "Aydınlatma",
+        "Sinek Öldürücü Armatürler"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixture"
+        "Lighting",
+        "Insect Killer Fixtures"
       ]
     },
     "brand": "global",
@@ -204143,7 +200801,7 @@
   "KKP285C": {
     "id": "KKP285C",
     "model": "KKP285C",
-    "image": "urunler/kkp285a-sinek-oldurucu.webp",
+    "image": "urunler/kkp285c.webp",
     "name": {
       "tr": "KKP285C SİNEK ÖLDÜRÜCÜ ARMATÜR",
       "en": "KKP285C INSECT KILLER FIXTURE"
@@ -204155,20 +200813,12 @@
           "value": "40W"
         },
         {
-          "label": "Gerilim",
-          "value": "220-240V"
+          "label": "Ölçü",
+          "value": "245x60x640 mm"
         },
         {
-          "label": "Koli Adeti",
+          "label": "Koli Adedi",
           "value": "10"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "245x60x640"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
         }
       ],
       "en": [
@@ -204177,31 +200827,23 @@
           "value": "40W"
         },
         {
-          "label": "Voltage",
-          "value": "220-240V"
+          "label": "Dimensions",
+          "value": "245x60x640 mm"
         },
         {
           "label": "Package Quantity",
           "value": "10"
-        },
-        {
-          "label": "Dimensions",
-          "value": "245x60x640"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
         }
       ]
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatür"
+        "Aydınlatma",
+        "Sinek Öldürücü Armatürler"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixture"
+        "Lighting",
+        "Insect Killer Fixtures"
       ]
     },
     "brand": "global",
@@ -204209,20 +200851,16 @@
       "watt": "40W"
     }
   },
-  "KTL180-3200K": {
-    "id": "KTL180-3200K",
-    "model": "KTL180 3200K",
-    "image": "urunler/ktl180-ray-spot.webp",
+  "KTL180": {
+    "id": "KTL180",
+    "model": "KTL180",
+    "image": "urunler/ktl180.webp",
     "name": {
-      "tr": "KTL180 GLOBAL ECO RAY SPOT 3200K",
-      "en": "KTL180 GLOBAL ECO TRACK LIGHT 3200K"
+      "tr": "KTL180 GLOBAL ECO RAY SPOT",
+      "en": "KTL180 GLOBAL ECO TRACK LIGHT"
     },
     "attributes": {
       "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3200K)"
-        },
         {
           "label": "Watt",
           "value": "30W"
@@ -204232,20 +200870,28 @@
           "value": "1800"
         },
         {
-          "label": "Gerilim",
-          "value": "220-240V"
+          "label": "Kasa Rengi",
+          "value": "Siyah"
         },
         {
-          "label": "Koli Adeti",
-          "value": "50"
+          "label": "Renk Sıcaklığı",
+          "value": "3200K - 6400K"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
           "label": "Ölçüler",
-          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
+          "value": "80x150x110 mm"
         },
         {
           "label": "Özellik",
@@ -204253,10 +200899,6 @@
         }
       ],
       "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3200K)"
-        },
         {
           "label": "Watt",
           "value": "30W"
@@ -204266,20 +200908,28 @@
           "value": "1800"
         },
         {
+          "label": "Body Color",
+          "value": "Black"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "3200K - 6400K"
+        },
+        {
           "label": "Voltage",
           "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
         },
         {
           "label": "Package Quantity",
           "value": "50"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
+          "value": "80x150x110 mm"
         },
         {
           "label": "Feature",
@@ -204289,34 +200939,29 @@
     },
     "category": {
       "tr": [
-        "İç Aydınlatma",
+        "Aydınlatma",
         "Ray Spot"
       ],
       "en": [
-        "Indoor Lighting",
+        "Lighting",
         "Track Light"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3200K)"
+      "watt": "30W"
     }
   },
-  "KTL180-6400K": {
-    "id": "KTL180-6400K",
-    "model": "KTL180 6400K",
-    "image": "urunler/ktl180-ray-spot.webp",
+  "KTL181": {
+    "id": "KTL181",
+    "model": "KTL181",
+    "image": "urunler/ktl181.webp",
     "name": {
-      "tr": "KTL180 GLOBAL ECO RAY SPOT 6400K",
-      "en": "KTL180 GLOBAL ECO TRACK LIGHT 6400K"
+      "tr": "KTL181 GLOBAL ECO RAY SPOT",
+      "en": "KTL181 GLOBAL ECO TRACK LIGHT"
     },
     "attributes": {
       "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6400K)"
-        },
         {
           "label": "Watt",
           "value": "30W"
@@ -204326,20 +200971,28 @@
           "value": "1800"
         },
         {
-          "label": "Gerilim",
-          "value": "220-240V"
+          "label": "Kasa Rengi",
+          "value": "Beyaz"
         },
         {
-          "label": "Koli Adeti",
-          "value": "50"
+          "label": "Renk Sıcaklığı",
+          "value": "3200K - 6400K"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
         },
         {
           "label": "Çalışma Ömrü",
           "value": "20000 Saat"
         },
         {
+          "label": "Koli Adeti",
+          "value": "50"
+        },
+        {
           "label": "Ölçüler",
-          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
+          "value": "80x150x110 mm"
         },
         {
           "label": "Özellik",
@@ -204347,10 +201000,6 @@
         }
       ],
       "en": [
-        {
-          "label": "Color",
-          "value": "Beyaz (6400K)"
-        },
         {
           "label": "Watt",
           "value": "30W"
@@ -204360,20 +201009,28 @@
           "value": "1800"
         },
         {
+          "label": "Body Color",
+          "value": "White"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "3200K - 6400K"
+        },
+        {
           "label": "Voltage",
           "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
         },
         {
           "label": "Package Quantity",
           "value": "50"
         },
         {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
           "label": "Dimensions",
-          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
+          "value": "80x150x110 mm"
         },
         {
           "label": "Feature",
@@ -204383,206 +201040,113 @@
     },
     "category": {
       "tr": [
-        "İç Aydınlatma",
+        "Aydınlatma",
         "Ray Spot"
       ],
       "en": [
-        "Indoor Lighting",
+        "Lighting",
         "Track Light"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6400K)"
+      "watt": "30W"
     }
   },
-  "KTL181-3200K": {
-    "id": "KTL181-3200K",
-    "model": "KTL181 3200K",
-    "image": "urunler/ktl181-ray-spot.webp",
+  "KCL369": {
+    "id": "KCL369",
+    "model": "KCL369",
+    "image": "urunler/kcl369ledstrip.webp",
     "name": {
-      "tr": "KTL181 GLOBAL ECO RAY SPOT 3200K",
-      "en": "KTL181 GLOBAL ECO TRACK LIGHT 3200K"
+      "tr": "KCL369 220V NEON LED GÜÇ KABLOSU",
+      "en": "KCL369 220V NEON LED POWER CABLE"
     },
     "attributes": {
       "tr": [
         {
-          "label": "Renk",
-          "value": "Günışığı (3200K)"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
+          "label": "Açıklama",
+          "value": "220V Neon Led Tek Renk Güç Kablosu"
         },
         {
           "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
+          "value": "220V"
         }
       ],
       "en": [
         {
-          "label": "Color",
-          "value": "Günışığı (3200K)"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
+          "label": "Description",
+          "value": "220V Neon Led Single Color Power Cable"
         },
         {
           "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
+          "value": "220V"
         }
       ]
     },
     "category": {
       "tr": [
-        "İç Aydınlatma",
-        "Ray Spot"
+        "Aksesuar",
+        "Led Aksesuarları"
       ],
       "en": [
-        "Indoor Lighting",
-        "Track Light"
+        "Accessory",
+        "Led Accessories"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3200K)"
+      "watt": null,
+      "socket": null,
+      "light": null,
+      "casing": null
     }
   },
-  "KTL181-6400K": {
-    "id": "KTL181-6400K",
-    "model": "KTL181 6400K",
-    "image": "urunler/ktl181-ray-spot.webp",
+  "KCL371": {
+    "id": "KCL371",
+    "model": "KCL371",
+    "image": "urunler/kcl371ledstrip.webp",
     "name": {
-      "tr": "KTL181 GLOBAL ECO RAY SPOT 6400K",
-      "en": "KTL181 GLOBAL ECO TRACK LIGHT 6400K"
+      "tr": "KCL371 220V NEON LED RGB GÜÇ KABLOSU",
+      "en": "KCL371 220V NEON LED RGB POWER CABLE"
     },
     "attributes": {
       "tr": [
         {
-          "label": "Renk",
-          "value": "Beyaz (6400K)"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
+          "label": "Açıklama",
+          "value": "220V Neon Led RGB Güç Kablosu / Kontrolcü"
         },
         {
           "label": "Gerilim",
-          "value": "220-240V"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Çalışma Ömrü",
-          "value": "20000 Saat"
-        },
-        {
-          "label": "Ölçüler",
-          "value": "Yükseklik: 150mm, Spot Genişliği: 110mm, Arka Aparat: 80mm"
-        },
-        {
-          "label": "Özellik",
-          "value": "Yerli Üretim"
+          "value": "220V"
         }
       ],
       "en": [
         {
-          "label": "Color",
-          "value": "Beyaz (6400K)"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
+          "label": "Description",
+          "value": "220V Neon Led RGB Power Cable / Controller"
         },
         {
           "label": "Voltage",
-          "value": "220-240V"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Working Hours",
-          "value": "20000 Hours"
-        },
-        {
-          "label": "Dimensions",
-          "value": "Height: 150mm, Spot Width: 110mm, Back Bracket: 80mm"
-        },
-        {
-          "label": "Feature",
-          "value": "Domestic Production"
+          "value": "220V"
         }
       ]
     },
     "category": {
       "tr": [
-        "İç Aydınlatma",
-        "Ray Spot"
+        "Aksesuar",
+        "Led Aksesuarları"
       ],
       "en": [
-        "Indoor Lighting",
-        "Track Light"
+        "Accessory",
+        "Led Accessories"
       ]
     },
     "brand": "global",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6400K)"
+      "watt": null,
+      "socket": null,
+      "light": null,
+      "casing": null
     }
   }
 }

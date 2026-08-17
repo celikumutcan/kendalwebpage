@@ -1,5 +1,5 @@
 import productsData from "./products.json";
-import slugMapData from "./slug-map.json";
+import slugMapData from "./slug-map.json"; // trigger update 22
 import { getAssetPath } from "@/utils/basePath";
 
 export interface ProductAttribute {
