@@ -346,7 +346,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           )}
 
           {/* Product Info & Specifications */}
-          {((variations.length > 1) || (variations.length === 1 && (product.variantOptions?.light?.includes(',') || product.variantOptions?.casing?.includes(',')))) && (
+          {((variations.length > 1) || (variations.length === 1 && (product.variantOptions?.light || product.variantOptions?.casing || product.variantOptions?.watt))) && (
             <div className="w-full max-w-3xl flex flex-col items-center">
               {/* Variations */}
               {(() => {
@@ -491,7 +491,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               return (
                 <div className="w-full flex flex-col gap-10 items-center text-center">
                   {/* Renk Seçenekleri */}
-                  {uniqueColors.length > 1 && (
+                  {uniqueColors.length > 0 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
                         title={language === "tr" ? "Renk Seçenekleri" : "Color Options"}
