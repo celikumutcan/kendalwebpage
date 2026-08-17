@@ -447,6 +447,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 else if (ctUpper.includes("GOLD") || ctUpper.includes("ALTIN")) specificDotColor = 'bg-yellow-400';
                 else if (ctUpper.includes("BAKIR")) specificDotColor = 'bg-orange-600';
                 else if (ctUpper.includes("ESKİTME") || ctUpper.includes("ESKITME")) specificDotColor = 'bg-yellow-700';
+                else if (ctUpper.includes("SARI")) specificDotColor = 'bg-yellow-300';
                 else if (ctUpper.includes("MAVİ") || ctUpper.includes("MAVI")) specificDotColor = 'bg-blue-500';
                 else if (ctUpper.includes("YEŞİL") || ctUpper.includes("YESIL") || ctUpper.includes("YEŞIL")) specificDotColor = 'bg-green-500';
                 else if (ctUpper.includes("KIRMIZI")) specificDotColor = 'bg-red-500';
