@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 
+import { getAssetPath } from "@/utils/basePath";
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -98,7 +100,7 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
         <div ref={heroTextRef} className="text-center flex flex-col items-center p-8 md:p-16 rounded-[3rem] bg-white/40 backdrop-blur-2xl border border-white/50 shadow-[0_8px_32px_rgba(0,0,0,0.05)] -mt-40">
           <img 
-            src="/images/brands/global-logo.svg" 
+            src={getAssetPath("/images/brands/global-logo.svg")}
             alt="Global Logo" 
             className="h-24 md:h-36 lg:h-48 mx-auto opacity-90 drop-shadow-sm" 
           />

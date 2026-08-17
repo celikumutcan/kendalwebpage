@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 
+import { getAssetPath } from "@/utils/basePath";
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -100,7 +102,7 @@ export function K2CreativePage({ products }: K2CreativePageProps) {
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
         <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-48">
           <img 
-            src="/images/brands/k2-logo.svg" 
+            src={getAssetPath("/images/brands/k2-logo.svg")}
             alt="K2 Logo" 
             className="h-32 md:h-48 lg:h-56 mx-auto drop-shadow-2xl opacity-95" 
           />

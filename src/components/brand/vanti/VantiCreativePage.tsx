@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 
+import { getAssetPath } from "@/utils/basePath";
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -98,7 +100,7 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
         <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-40">
           <img 
-            src="/images/brands/vanti-logo.svg" 
+            src={getAssetPath("/images/brands/vanti-logo.svg")}
             alt="Vanti Logo" 
             className="h-28 md:h-40 lg:h-48 mx-auto mb-2 opacity-90 drop-shadow-md" 
           />
