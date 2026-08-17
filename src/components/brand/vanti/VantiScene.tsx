@@ -1,26 +1,50 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Sparkles, Environment } from "@react-three/drei";
 import * as THREE from "three";
 
 // A modern, high-end fan rotor design
 function AeroBlades() {
-  const groupRef = useRef<THREE.Group>(null);
-  
-  useFrame((state) => {
-    if (groupRef.current) {
-      // Fan rotation is now completely tied to the user's scroll position!
-      const scrollY = window.scrollY || 0;
-      
-      // Adjust the multiplier to control how fast it spins when scrolling
-      // Using lerp for a smoother deceleration would be nice, but direct mapping is snappier
-      groupRef.current.rotation.z = -(scrollY * 0.003);
-      
+  const pedestalRef = useRef<THREE.Group>(null);
+  const bladeRef = useRef<THREE.Group>(null);
+  const velocityRef = useRef(0);
+  const lastScrollRef = useRef(0);
+  const mouseXRef = useRef(0);
+
+  useEffect(() => {
+    lastScrollRef.current = window.scrollY || 0;
+    const handleMouseMove = (e: MouseEvent) => {
+      mouseXRef.current = (e.clientX / window.innerWidth) * 2 - 1;
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  useFrame((state, delta) => {
+    // Scrolling gives the blades a push rather than pinning rotation directly to
+    // scroll position, so the fan spins up and coasts back down like a real motor
+    // instead of snapping to a stop the instant scrolling stops.
+    const scrollY = window.scrollY || 0;
+    const scrollDelta = scrollY - lastScrollRef.current;
+    lastScrollRef.current = scrollY;
+
+    velocityRef.current += scrollDelta * 0.004;
+    velocityRef.current = THREE.MathUtils.clamp(velocityRef.current, -0.12, 0.12);
+    velocityRef.current *= Math.pow(0.9, delta * 60);
+
+    if (bladeRef.current) {
+      bladeRef.current.rotation.z -= velocityRef.current;
       // Slight floating/wobble effect based on time to keep it alive even when stopped
-      groupRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
-      groupRef.current.rotation.y = Math.cos(state.clock.elapsedTime * 0.3) * 0.05;
+      bladeRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
+    }
+
+    if (pedestalRef.current) {
+      // Classic oscillating-fan sweep, gently nudged toward wherever the cursor is
+      const sweep = Math.sin(state.clock.elapsedTime * 0.25) * 0.25;
+      const target = sweep + mouseXRef.current * 0.2;
+      pedestalRef.current.rotation.y += (target - pedestalRef.current.rotation.y) * 0.03;
     }
   });
 
@@ -44,21 +68,23 @@ function AeroBlades() {
   });
 
   return (
-    <group ref={groupRef} position={[0, 0, -8]} scale={1.5}>
-      {/* The Central Hub */}
-      <mesh rotation={[Math.PI / 2, 0, 0]} castShadow receiveShadow>
-        <cylinderGeometry args={[1.5, 1.5, 0.5, 32]} />
-        <meshStandardMaterial color="#f8fafc" roughness={0.3} metalness={0.5} />
-      </mesh>
-      
-      {/* The Inner Hub detailing */}
-      <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0.26]}>
-        <cylinderGeometry args={[1.2, 1.2, 0.05, 32]} />
-        <meshStandardMaterial color="#e2e8f0" roughness={0.5} metalness={0.8} />
-      </mesh>
+    <group ref={pedestalRef} position={[0, 0, -8]} scale={1.5}>
+      <group ref={bladeRef}>
+        {/* The Central Hub */}
+        <mesh rotation={[Math.PI / 2, 0, 0]} castShadow receiveShadow>
+          <cylinderGeometry args={[1.5, 1.5, 0.5, 32]} />
+          <meshStandardMaterial color="#f8fafc" roughness={0.3} metalness={0.5} />
+        </mesh>
 
-      {/* The Blades */}
-      {blades}
+        {/* The Inner Hub detailing */}
+        <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0.26]}>
+          <cylinderGeometry args={[1.2, 1.2, 0.05, 32]} />
+          <meshStandardMaterial color="#e2e8f0" roughness={0.5} metalness={0.8} />
+        </mesh>
+
+        {/* The Blades */}
+        {blades}
+      </group>
     </group>
   );
 }
