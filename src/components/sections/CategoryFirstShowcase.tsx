@@ -8,13 +8,21 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { getAssetPath } from "@/utils/basePath";
 import { Product, getSlugByProductId } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
+import ProductCompareModal from "./ProductCompareModal";
+
+const MAX_COMPARE = 3;
 
 interface CategoryFirstShowcaseProps {
   products: Product[];
   brandName: string;
+  // True only when `products` has already been filtered down to a single brand
+  // (the real /brand/[brandName]/urunler route). The generic /urunler catalog page
+  // passes brandName="global" purely for theming while mixing all brands together,
+  // so that prop alone can't be used to gate brand-scoped features like comparison.
+  isBrandScoped?: boolean;
 }
 
-export default function CategoryFirstShowcase({ products, brandName }: CategoryFirstShowcaseProps) {
+export default function CategoryFirstShowcase({ products, brandName, isBrandScoped = false }: CategoryFirstShowcaseProps) {
   const pathname = usePathname() || "";
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -36,6 +44,30 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
 
   const isK2 = brandName === "k2";
   const isGlobal = brandName === "global";
+
+  const compareTexts = language === 'en' ? {
+    add: "Compare",
+    added: "Added",
+    max_reached: "You can compare up to 3 products",
+    tray_hint: "Select 2-3 products from this category to compare",
+    compare_button: "Compare",
+    clear: "Clear",
+    modal_title: "Product Comparison",
+    view: "View",
+    model: "Model:",
+    no_value: "—"
+  } : {
+    add: "Karşılaştır",
+    added: "Eklendi",
+    max_reached: "En fazla 3 ürün karşılaştırabilirsiniz",
+    tray_hint: "Bu kategoriden karşılaştırmak için 2-3 ürün seçin",
+    compare_button: "Karşılaştır",
+    clear: "Temizle",
+    modal_title: "Ürün Karşılaştırma",
+    view: "İncele",
+    model: "Model:",
+    no_value: "—"
+  };
   
   const urlCategory = searchParams?.get("category") || null;
   const urlPage = parseInt(searchParams?.get("page") || "1", 10) || 1;
@@ -133,6 +165,36 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
   // Auto-select if there is only 1 category
   const activeCategory = selectedCategory || (categoriesData.length === 1 ? categoriesData[0].name : null);
   const showBackButton = categoriesData.length > 1;
+
+  // Compare feature (brand routes only — comparison stays within a single brand's catalog)
+  const [compareIds, setCompareIds] = useState<string[]>([]);
+  const [isCompareOpen, setIsCompareOpen] = useState(false);
+
+  const toggleCompare = (product: Product) => {
+    setCompareIds(prev => {
+      if (prev.includes(product.id)) return prev.filter(id => id !== product.id);
+      if (prev.length >= MAX_COMPARE) return prev;
+      return [...prev, product.id];
+    });
+  };
+
+  const productById = useMemo(() => new Map(products.map(p => [p.id, p])), [products]);
+
+  const compareItems = useMemo(() => {
+    const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+    return compareIds
+      .map(id => productById.get(id))
+      .filter((p): p is Product => !!p)
+      .map(product => {
+        const slug = getSlugByProductId(product.id) || product.id;
+        const categoryName = product.category?.tr?.[0];
+        const categorySlug = categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
+        const url = isBrandRoute && brandName && process.env.NODE_ENV === "production"
+          ? `/brand/${brandName}/urunler/${categorySlug}/${slug}`
+          : `/urunler/${categorySlug}/${slug}`;
+        return { product, url };
+      });
+  }, [compareIds, productById, brandName, isBrandRoute]);
 
   // Filter States
   const [selectedCasings, setSelectedCasings] = useState<string[]>([]);
@@ -242,6 +304,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     setSelectedCasings([]);
     setSelectedWatts([]);
     setSelectedSockets([]);
+    setCompareIds([]);
     updateUrl(cat, 1, "");
   };
 
@@ -252,6 +315,7 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
     setSelectedCasings([]);
     setSelectedWatts([]);
     setSelectedSockets([]);
+    setCompareIds([]);
     updateUrl(null, 1, "");
   };
 
@@ -793,19 +857,47 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
                   }).join(' ');
                 }
 
+                const canCompare = isBrandScoped && activeCategory && !isSearching;
+                const isCompared = compareIds.includes(product.id);
+                const isCompareMaxed = compareIds.length >= MAX_COMPARE && !isCompared;
+
                 return (
-                  <Link 
-                    href={productUrl} 
-                    key={product.id} 
-                    className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-zinc-100/80 flex flex-col"
+                  <Link
+                    href={productUrl}
+                    key={product.id}
+                    className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group border border-zinc-100/80 flex flex-col relative"
                   >
                     <div className="relative aspect-square p-6 bg-white flex items-center justify-center border-b border-zinc-50 overflow-hidden">
-                      <Image 
-                        src={getAssetPath('/images/' + product.image)} 
-                        alt={displayName} 
-                        fill 
+                      {canCompare && (
+                        <button
+                          type="button"
+                          title={isCompareMaxed ? compareTexts.max_reached : compareTexts.add}
+                          disabled={isCompareMaxed}
+                          onClick={(e) => { e.preventDefault(); e.stopPropagation(); toggleCompare(product); }}
+                          className={`absolute top-3 left-3 z-20 flex items-center gap-1.5 pl-1.5 pr-2.5 py-1.5 rounded-full text-[11px] font-bold border shadow-sm transition-all duration-200 ${
+                            isCompared
+                              ? (isK2 ? "bg-orange-500 border-orange-500 text-white" : brandName === "vanti" ? "bg-blue-600 border-blue-600 text-white" : "bg-[#FFDA51] border-[#FFDA51] text-zinc-900")
+                              : isCompareMaxed
+                                ? "bg-white/80 border-zinc-200 text-zinc-300 cursor-not-allowed"
+                                : "bg-white/90 backdrop-blur-sm border-zinc-200 text-zinc-500 hover:border-zinc-300 hover:text-zinc-700"
+                          }`}
+                        >
+                          <span className={`w-3.5 h-3.5 rounded-full border flex items-center justify-center flex-shrink-0 ${isCompared ? "bg-white/25 border-white/60" : "border-zinc-300"}`}>
+                            {isCompared && (
+                              <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                              </svg>
+                            )}
+                          </span>
+                          {isCompared ? compareTexts.added : compareTexts.add}
+                        </button>
+                      )}
+                      <Image
+                        src={getAssetPath('/images/' + product.image)}
+                        alt={displayName}
+                        fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out" 
+                        className="object-contain p-4 group-hover:scale-110 transition-transform duration-700 ease-out"
                       />
                     </div>
                     <div className="p-6 flex flex-col flex-grow justify-between">
@@ -860,6 +952,77 @@ export default function CategoryFirstShowcase({ products, brandName }: CategoryF
           </div>
         )}
       </div>
+
+      {/* Compare Tray (brand routes only) */}
+      {mounted && typeof window !== 'undefined' && isBrandScoped && compareItems.length > 0 && createPortal(
+        <div className="fixed bottom-0 left-0 right-0 z-[150] flex justify-center px-4 pb-4 pointer-events-none">
+          <div className="pointer-events-auto bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-zinc-100 ring-1 ring-black/[0.02] px-4 py-3 flex items-center gap-4 max-w-[calc(100vw-2rem)] overflow-x-auto animate-in slide-in-from-bottom-4 fade-in duration-300">
+            <div className="flex items-center gap-2 flex-shrink-0">
+              {compareItems.map(({ product }) => {
+                const name = product.name[language as keyof typeof product.name] || product.name.tr;
+                return (
+                  <div key={product.id} className="relative w-12 h-12 rounded-lg overflow-hidden border border-zinc-200 bg-white flex-shrink-0" title={name}>
+                    <Image src={getAssetPath('/images/' + product.image)} alt={name} fill sizes="48px" className="object-contain p-1" />
+                    <button
+                      onClick={() => toggleCompare(product)}
+                      className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-zinc-800 text-white flex items-center justify-center"
+                    >
+                      <svg className="w-2.5 h-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                );
+              })}
+              {Array.from({ length: MAX_COMPARE - compareItems.length }).map((_, i) => (
+                <div key={`empty-${i}`} className="w-12 h-12 rounded-lg border border-dashed border-zinc-200 flex-shrink-0" />
+              ))}
+            </div>
+
+            {compareItems.length < 2 && (
+              <div className="hidden sm:block text-xs text-zinc-400 max-w-[160px] flex-shrink-0">
+                {compareTexts.tray_hint}
+              </div>
+            )}
+
+            <div className="flex items-center gap-2 flex-shrink-0">
+              <button
+                onClick={() => setCompareIds([])}
+                className="px-4 py-2.5 rounded-full text-sm font-bold text-zinc-500 hover:text-zinc-800 hover:bg-zinc-100 transition-colors"
+              >
+                {compareTexts.clear}
+              </button>
+              <button
+                onClick={() => setIsCompareOpen(true)}
+                disabled={compareItems.length < 2}
+                className={`px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all duration-300 shadow-lg ${
+                  compareItems.length < 2
+                    ? "bg-zinc-300 cursor-not-allowed shadow-none"
+                    : isK2
+                      ? "bg-orange-600 hover:bg-orange-700 shadow-orange-600/25 hover:-translate-y-0.5"
+                      : brandName === "vanti"
+                        ? "bg-blue-600 hover:bg-blue-700 shadow-blue-600/25 hover:-translate-y-0.5"
+                        : "bg-zinc-900 hover:bg-zinc-800 shadow-zinc-900/25 hover:-translate-y-0.5"
+                }`}
+              >
+                {compareTexts.compare_button} ({compareItems.length})
+              </button>
+            </div>
+          </div>
+        </div>,
+        document.body
+      )}
+
+      {isCompareOpen && compareItems.length >= 2 && (
+        <ProductCompareModal
+          items={compareItems}
+          language={language}
+          brandName={brandName}
+          texts={compareTexts}
+          onClose={() => setIsCompareOpen(false)}
+          onRemove={(id) => setCompareIds(prev => prev.filter(cid => cid !== id))}
+        />
+      )}
     </section>
   );
 }

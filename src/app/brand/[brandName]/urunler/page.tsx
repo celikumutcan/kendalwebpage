@@ -39,7 +39,7 @@ export default async function BrandProductsPage({
         <BrandProductsHeader brandName={brandName} />
 
         <Suspense fallback={<div className="py-24 text-center text-zinc-500">Ürünler Yükleniyor...</div>}>
-          <CategoryFirstShowcase products={allProducts} brandName={brandName} />
+          <CategoryFirstShowcase products={allProducts} brandName={brandName} isBrandScoped />
         </Suspense>
       </div>
     </div>
