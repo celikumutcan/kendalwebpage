@@ -99,13 +99,18 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   }
 
   // Calculate variations
+  // "60X60", "30*120" gibi ölçü belirten ikinci kelimeler base model'e dahil
+  // edilir; aksi halde aynı model kodlu ama farklı boyutlardaki ürünler
+  // (örn. KDL4140 60X60 / 30X30 / 30X60) birbirinin varyantı sanılıp
+  // yanlışlıkla tek üründe birleştiriliyor.
+  const isDimensionToken = (token: string) => /^\d+[x*×]\d+$/i.test(token || "");
   const getBaseName = (name: string) => {
     const words = (name || "").trim().split(' ');
     const firstWordUpper = words[0]?.toUpperCase();
     if (firstWordUpper === "K2" || firstWordUpper === "GLOBAL" || firstWordUpper === "VANTİ" || firstWordUpper === "VANTI") {
       return words.filter((w: string) => !w.match(/^\d+W$/i) && !w.match(/^(E14|E27|GU10|G9|R7S)$/i) && !['SARI', 'BEYAZ', 'ARARENK', 'GÜNIŞIĞI', 'MAVİ', 'YEŞİL', 'KIRMIZI', 'AMBER', 'GÜN IŞIĞI'].includes(w.toUpperCase())).join(' ');
     }
-    return words[0];
+    return isDimensionToken(words[1]) ? `${words[0]} ${words[1]}` : words[0];
   };
 
   const baseModel = getBaseName(product.name.tr);
@@ -132,6 +137,17 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       .map(s => s.trim())
       .filter(s => s)
   );
+
+  // Ürünün ayrı bir "Özellik" alanı yoksa, Teknik Detaylar tek başına altta
+  // yalnız kalıp şık durmuyor. Bu durumda teknik detayları Öne Çıkan
+  // Özellikler alanında gösteriyoruz, alttaki Teknik Detaylar bölümünü atlıyoruz.
+  const hasDedicatedFeatures = featuresList.length > 0;
+  const displayFeaturesList = hasDedicatedFeatures
+    ? featuresList
+    : specAttrs.map(attr => {
+        const decodedValue = String(attr.value).replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+        return `${attr.label}: ${decodedValue}`;
+      });
 
   const SectionDivider = () => (
     <div className="w-full flex items-center justify-center opacity-90 -my-5 lg:-my-7">
@@ -565,7 +581,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           )}
 
             {/* Öne Çıkan Özellikler (Key Features) */}
-            {featuresList.length > 0 && (
+            {displayFeaturesList.length > 0 && (
               <>
                 <SectionDivider />
                 <div className="w-full -mt-3">
@@ -579,7 +595,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   />
 
                   <ul className="grid grid-cols-2 gap-2.5 -mt-4">
-                    {featuresList.map((feat, idx) => {
+                    {displayFeaturesList.map((feat, idx) => {
                       const isYerliUretim = feat.trim().toLowerCase() === "yerli üretim" || feat.trim().toLowerCase() === "domestic production";
                       return (
                         <li key={idx} className={`flex ${isYerliUretim ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-2.5 rounded-xl border transition-colors duration-300 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:border-zinc-200" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
@@ -616,6 +632,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </div>
 
           {/* Technical Specs - Bento Box Grid (full width, below image & variant options) */}
+          {/* Özellik yoksa teknik detaylar zaten Öne Çıkan Özellikler alanında gösterildi, burada tekrar etmiyoruz. */}
+          {(hasDedicatedFeatures || specAttrs.length === 0) && (
           <div className="w-full flex flex-col gap-10 lg:gap-14">
             <SectionDivider />
 
@@ -691,6 +709,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               )}
             </div>
           </div>
+          )}
 
           {/* Vanti Video Section */}
           {videoId && (

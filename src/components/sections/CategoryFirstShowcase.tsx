@@ -12,6 +12,15 @@ import ProductCompareModal from "./ProductCompareModal";
 
 const MAX_COMPARE = 3;
 
+// "60X60", "30*120" gibi ölçü belirten ikinci kelime varsa base model'e dahil
+// edilir; aksi halde aynı model kodlu ama farklı boyutlardaki ürünler
+// (örn. KDL4140 60X60 / 30X30 / 30X60) yanlışlıkla tek grupta birleştiriliyor.
+const isDimensionToken = (token: string) => /^\d+[x*×]\d+$/i.test(token || "");
+const getBaseModelKey = (name: string) => {
+  const words = (name || "").trim().split(' ');
+  return isDimensionToken(words[1]) ? `${words[0]} ${words[1]}` : words[0];
+};
+
 interface CategoryFirstShowcaseProps {
   products: Product[];
   brandName: string;
@@ -241,9 +250,12 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     let categoryProducts = products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
     
     // Group products by their base model (first word of name, e.g. "GDL414" from "GDL414 25W...")
+    // "60X60" gibi ölçü belirten ikinci kelime varsa base model'e dahil edilir,
+    // yoksa aynı model kodlu farklı boyutlardaki ürünler (örn. KDL4140 60X60 /
+    // 30X30 / 30X60) yanlışlıkla tek karta birleştiriliyor.
     const uniqueGroups = new Map<string, { product: Product, variants: Product[] }>();
     for (const p of categoryProducts) {
-      const baseModel = (p.name.tr || "").split(' ')[0];
+      const baseModel = getBaseModelKey(p.name.tr);
       if (!uniqueGroups.has(baseModel)) {
         uniqueGroups.set(baseModel, { product: p, variants: [p] });
       } else {
@@ -278,7 +290,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       const name = (p.name?.tr || "").toLowerCase();
       
       if (model.includes(query) || name.includes(query)) {
-        const baseModel = (p.name?.tr || "").split(' ')[0];
+        const baseModel = getBaseModelKey(p.name?.tr || "");
         if (!uniqueGroups.has(baseModel)) {
           uniqueGroups.set(baseModel, { product: p, variants: [p] });
         } else {

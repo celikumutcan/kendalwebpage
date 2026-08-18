@@ -43,7 +43,11 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
     const { redirect } = require("next/navigation");
-    redirect(`/${canonicalSlug}`);
+    // Some legacy canonical slugs still contain raw Turkish characters
+    // (ş/ı/ğ, code points > 255). An un-encoded redirect() target with such
+    // a character crashes static export with a ByteString conversion error,
+    // so always percent-encode the segment.
+    redirect(`/${encodeURIComponent(canonicalSlug)}`);
   }
 
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);

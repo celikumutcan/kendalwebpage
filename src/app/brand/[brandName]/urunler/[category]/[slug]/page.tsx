@@ -44,7 +44,13 @@ export default async function BrandProductDetailPage({
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
     const { redirect } = require("next/navigation");
-    redirect(`/brand/${resolvedParams.brandName}/urunler/${resolvedParams.category}/${canonicalSlug}`);
+    // Host-relative path: k2.localhost/urunler/... proxy.ts rewrites this to
+    // /brand/k2/urunler/... internally. Redirecting to the /brand/... path
+    // directly here gets rewritten a second time (double-nested) and 404s.
+    // Some legacy canonical slugs still contain raw Turkish characters
+    // (ş/ı/ğ, code points > 255); an un-encoded redirect() target crashes
+    // static export with a ByteString conversion error, so always encode.
+    redirect(`/urunler/${resolvedParams.category}/${encodeURIComponent(canonicalSlug)}`);
   }
 
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
