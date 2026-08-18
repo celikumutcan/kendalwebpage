@@ -275,192 +275,6 @@
       "light": "Günışığı (3000K)"
     }
   },
-  "4209": {
-    "id": "4209",
-    "model": "GDL41530WPANARA",
-    "image": "urunler/gdl41530wpanara.webp",
-    "name": {
-      "tr": "GDL415 30W Backlight  Panel 4000k.",
-      "en": "GDL415 30W Backlight  Panel 4000k."
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2760"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2760"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Ararenk (4000K)"
-    }
-  },
-  "4210": {
-    "id": "4210",
-    "model": "GDL41530WPANBYZ",
-    "image": "urunler/gdl41530wpanbyz.webp",
-    "name": {
-      "tr": "GDL415 30W Backlight 30*60  Panel 6500k.",
-      "en": "GDL415 30W Backlight 30*60  Panel 6500k."
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2760"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2760"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4211": {
-    "id": "4211",
-    "model": "GDL41530WPANGNIS",
-    "image": "urunler/gdl41530wpangnis.webp",
-    "name": {
-      "tr": "GDL415 30W Backlight  Panel 3000k.",
-      "en": "GDL415 30W Backlight  Panel 3000k."
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2760"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2760"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)"
-    }
-  },
   "4212": {
     "id": "4212",
     "model": "GDL41840WPANARA",
@@ -1387,192 +1201,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "4224": {
-    "id": "4224",
-    "model": "GDL42540WPANARA",
-    "image": "urunler/gdl42540wpanara.webp",
-    "name": {
-      "tr": "GDL425 40W Backlight 60*60 LED Panel 4000k",
-      "en": "GDL425 40W Backlight 60*60 LED Panel 4000k"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3680"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3680"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "light": "Ararenk (4000K)"
-    }
-  },
-  "4225": {
-    "id": "4225",
-    "model": "GDL42540WPANBYZ",
-    "image": "urunler/gdl42540wpanbyz.webp",
-    "name": {
-      "tr": "GDL425 40W Backlight 60*60 LED Panel 6500k",
-      "en": "GDL425 40W Backlight 60*60 LED Panel 6500k"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3680"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3680"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4226": {
-    "id": "4226",
-    "model": "GDL42540WPANGNI",
-    "image": "urunler/gdl42540wpangni.webp",
-    "name": {
-      "tr": "GDL425 40W Backlight 60*60 LED Panel 3000k",
-      "en": "GDL425 40W Backlight 60*60 LED Panel 3000k"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3680"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3680"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Backlight Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Backlight Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "light": "Günışığı (3000K)"
-    }
-  },
   "4232": {
     "id": "4232",
     "model": "GES01411WE27SR",
@@ -2253,76 +1881,6 @@
         {
           "label": "Package Quantity",
           "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Panel Kasaları"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Panel Bodies &amp; Accesories"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "4263": {
-    "id": "4263",
-    "model": "HAN013BLEDPANEL",
-    "image": "urunler/han013bledpanel.webp",
-    "name": {
-      "tr": "HAN013B LED Panel Askı Aparatı Demonte",
-      "en": "HAN013B LED Panel Askı Aparatı Demonte"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Panel Kasaları"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Panel Bodies &amp; Accesories"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "4264": {
-    "id": "4264",
-    "model": "HAN013CLEDPANEL",
-    "image": "urunler/han013cledpanel.webp",
-    "name": {
-      "tr": "HAN013C LED Panel Askı Aparatı Klipin",
-      "en": "HAN013C LED Panel Askı Aparatı Klipin"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "20"
         }
       ]
     },
@@ -15534,193 +15092,6 @@
     "variantOptions": {
       "watt": "25W",
       "light": "Günışığı (3000K)"
-    }
-  },
-  "4581": {
-    "id": "4581",
-    "model": "KDL41418WARARENK",
-    "image": "urunler/kdl41418w.webp",
-    "name": {
-      "tr": "KDL414  SMD Ledli Panel Down. 18W Ararenk Sılver Kasa",
-      "en": "KDL414  SMD Ledli Panel Down. 18W Ararenk Sılver Kasa"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1500"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1500"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Si̇lver Kasa"
-    }
-  },
-  "4582": {
-    "id": "4582",
-    "model": "KDL41418WBEYAZ",
-    "image": "urunler/kdl41418w.webp",
-    "name": {
-      "tr": "KDL414  SMD Ledli Panel Down. 18W Beyaz Sılver Kasa",
-      "en": "KDL414  SMD Ledli Panel Down. 18W Beyaz Sılver Kasa"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1500"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1500"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)",
-      "casing": "Si̇lver Kasa"
-    }
-  },
-  "4583": {
-    "id": "4583",
-    "model": "KDL41418WGNISK",
-    "image": "urunler/kdl41418w.webp",
-    "name": {
-      "tr": "KDL414  SMD Ledli Panel Down. 18W Günışığı Sılver Kasa",
-      "en": "KDL414  SMD Ledli Panel Down. 18W Günışığı Sılver Kasa"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1500"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1500"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Si̇lver Kasa"
     }
   },
   "4584": {
@@ -150870,192 +150241,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "7429": {
-    "id": "7429",
-    "model": "KDL414040WARARENK",
-    "image": "urunler/kdl414040w.webp",
-    "name": {
-      "tr": "KDL4140 LED Backlight Arm. 40W Ararenk",
-      "en": "KDL4140 LED Backlight Arm. 40W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Dekoratif Sarkıt Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Pendant Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "7430": {
-    "id": "7430",
-    "model": "KDL414040WBEYAZ",
-    "image": "urunler/kdl414040w.webp",
-    "name": {
-      "tr": "KDL4140 LED Backlight Arm. 40W Beyaz",
-      "en": "KDL4140 LED Backlight Arm. 40W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "40000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "6"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "40000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "6"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Dekoratif Sarkıt Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Pendant Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "7431": {
-    "id": "7431",
-    "model": "KDL414040WGNISK",
-    "image": "urunler/kdl414040w.webp",
-    "name": {
-      "tr": "KDL4140 LED Backlight Arm. 40W Günışığı",
-      "en": "KDL4140 LED Backlight Arm. 40W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "40W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Dekoratif Sarkıt Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Pendant Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "40W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
   "7432": {
     "id": "7432",
     "model": "KDL49610WLEDBYZ",
@@ -197362,5 +196547,3121 @@
       "watt": "36W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
+  },
+  "KDL540": {
+    "id": "KDL540",
+    "model": "KDL540",
+    "image": "urunler/kdl540.webp",
+    "name": {
+      "tr": "KDL540 AYARLANABİLİR SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL540 ADJUSTABLE SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2040"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø170mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Plastik Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2040"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø170mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Plastic Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL541": {
+    "id": "KDL541",
+    "model": "KDL541",
+    "image": "urunler/kdl541.webp",
+    "name": {
+      "tr": "KDL541 AYARLANABİLİR SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL541 ADJUSTABLE SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2880"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Plastik Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2880"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Plastic Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL061": {
+    "id": "KDL061",
+    "model": "KDL061",
+    "image": "urunler/kdl061.webp",
+    "name": {
+      "tr": "KDL061 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL061 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "760"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "80"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø170mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "760"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "80"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø170mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL062": {
+    "id": "KDL062",
+    "model": "KDL062",
+    "image": "urunler/kdl062.webp",
+    "name": {
+      "tr": "KDL062 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL062 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1120"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1120"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL063": {
+    "id": "KDL063",
+    "model": "KDL063",
+    "image": "urunler/kdl063.webp",
+    "name": {
+      "tr": "KDL063 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL063 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1865"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø295mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1865"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø295mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL081": {
+    "id": "KDL081",
+    "model": "KDL081",
+    "image": "urunler/kdl081.webp",
+    "name": {
+      "tr": "KDL081 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL081 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "760"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170x170 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "760"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170x170 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL082": {
+    "id": "KDL082",
+    "model": "KDL082",
+    "image": "urunler/kdl082.webp",
+    "name": {
+      "tr": "KDL082 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL082 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1150"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "220x220 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1150"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "220x220 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL083": {
+    "id": "KDL083",
+    "model": "KDL083",
+    "image": "urunler/kdl083.webp",
+    "name": {
+      "tr": "KDL083 SIVA ÜSTÜ BACKLİGHT PANEL",
+      "en": "KDL083 SURFACE MOUNTED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1880"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "295x295 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1880"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "295x295 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL050": {
+    "id": "KDL050",
+    "model": "KDL050",
+    "image": "urunler/kdl050.webp",
+    "name": {
+      "tr": "KDL050 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL050 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "330"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø120mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "330"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø120mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL052": {
+    "id": "KDL052",
+    "model": "KDL052",
+    "image": "urunler/kdl052.webp",
+    "name": {
+      "tr": "KDL052 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL052 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "760"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø170mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "760"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø170mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL053": {
+    "id": "KDL053",
+    "model": "KDL053",
+    "image": "urunler/kdl053.webp",
+    "name": {
+      "tr": "KDL053 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL053 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1140"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1140"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL054": {
+    "id": "KDL054",
+    "model": "KDL054",
+    "image": "urunler/kdl054.webp",
+    "name": {
+      "tr": "KDL054 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL054 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1840"
+        },
+        {
+          "label": "Şekil",
+          "value": "Yuvarlak"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø295mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1840"
+        },
+        {
+          "label": "Shape",
+          "value": "Round"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø295mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL055": {
+    "id": "KDL055",
+    "model": "KDL055",
+    "image": "urunler/kdl055.webp",
+    "name": {
+      "tr": "KDL055 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL055 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "345"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "120x120 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "345"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "120x120 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL057": {
+    "id": "KDL057",
+    "model": "KDL057",
+    "image": "urunler/kdl057.webp",
+    "name": {
+      "tr": "KDL057 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL057 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "795"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "90"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170x170 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "795"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "90"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170x170 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL058": {
+    "id": "KDL058",
+    "model": "KDL058",
+    "image": "urunler/kdl058.webp",
+    "name": {
+      "tr": "KDL058 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL058 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1190"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "220x220 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1190"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "220x220 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDL059": {
+    "id": "KDL059",
+    "model": "KDL059",
+    "image": "urunler/kdl059.webp",
+    "name": {
+      "tr": "KDL059 SIVA ALTI BACKLİGHT PANEL",
+      "en": "KDL059 RECESSED BACKLIGHT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1900"
+        },
+        {
+          "label": "Şekil",
+          "value": "Kare"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "295x295 mm, Kalınlık: 25mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "PVC Gövde, Metal Taban"
+        },
+        {
+          "label": "Özellik",
+          "value": "DOB / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1900"
+        },
+        {
+          "label": "Shape",
+          "value": "Square"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "295x295 mm, Thickness: 25mm"
+        },
+        {
+          "label": "Body",
+          "value": "PVC Body, Metal Base"
+        },
+        {
+          "label": "Feature",
+          "value": "DOB / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "GDL415": {
+    "id": "GDL415",
+    "model": "GDL415",
+    "image": "urunler/gdl415.webp",
+    "name": {
+      "tr": "GDL415 30X60 BACKLİGHT LED PANEL",
+      "en": "GDL415 30X60 BACKLIGHT LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2300"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 4014 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 2 mm / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2300"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 4014 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 2 mm / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "25W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "GDL425": {
+    "id": "GDL425",
+    "model": "GDL425",
+    "image": "urunler/gdl425.webp",
+    "name": {
+      "tr": "GDL425 30X120 BACKLİGHT LED PANEL",
+      "en": "GDL425 30X120 BACKLIGHT LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 4014 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 2 mm / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 4014 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 2 mm / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "40W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL414": {
+    "id": "KDL414",
+    "model": "KDL414",
+    "image": "urunler/kdl414.webp",
+    "name": {
+      "tr": "KDL414 30X30 CLİP-İN SLİM PANEL",
+      "en": "KDL414 30X30 CLIP-IN SLIM PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2300"
+        },
+        {
+          "label": "Ölçü",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl Garanti / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2300"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years Warranty / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "25W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL4142": {
+    "id": "KDL4142",
+    "model": "KDL4142",
+    "image": "urunler/kdl4142.webp",
+    "name": {
+      "tr": "KDL4142 60X60 SLİM KOMPAKT PANEL",
+      "en": "KDL4142 60X60 SLIM COMPACT PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "50000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "59,5x59,5 cm, Derinlik: 2,5 cm"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP20"
+        },
+        {
+          "label": "Özellik",
+          "value": "5 Yıl Garanti / Kompakt Driver Özelliği / Alçak Tavanlara Uygun / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "50000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "59.5x59.5 cm, Depth: 2.5 cm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Feature",
+          "value": "5 Years Warranty / Compact Driver Feature / Suitable for Low Ceilings / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL4140_60X60": {
+    "id": "KDL4140_60X60",
+    "model": "KDL4140_60X60",
+    "image": "urunler/kdl4140_60x60.webp",
+    "name": {
+      "tr": "KDL4140 60X60 ENEC VE TSE BELGELİ SLİM BACKLİGHT SIVA ALTI PANEL",
+      "en": "KDL4140 60X60 ENEC AND TSE CERTIFIED SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "50000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "59,5x59,5 cm, Derinlik: 3 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "Güç Faktörü (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP40"
+        },
+        {
+          "label": "Sürücü",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Özellik",
+          "value": "ENEC 13, TSE / 5 Yıl Garanti / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "50000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "59.5x59.5 cm, Depth: 3 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "Power Factor (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Driver",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Feature",
+          "value": "ENEC 13, TSE / 5 Years Warranty / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "40W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL4140_30X30": {
+    "id": "KDL4140_30X30",
+    "model": "KDL4140_30X30",
+    "image": "urunler/kdl4140_30x30.webp",
+    "name": {
+      "tr": "KDL4140 30X30 ENEC VE TSE BELGELİ SLİM BACKLİGHT SIVA ALTI PANEL",
+      "en": "KDL4140 30X30 ENEC AND TSE CERTIFIED SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2500"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "50000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm, Derinlik: 3 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "Güç Faktörü (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP40"
+        },
+        {
+          "label": "Sürücü",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Özellik",
+          "value": "ENEC 13, TSE / 5 Yıl Garanti / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2500"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "50000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm, Depth: 3 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "Power Factor (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Driver",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Feature",
+          "value": "ENEC 13, TSE / 5 Years Warranty / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "25W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL4140_30X60": {
+    "id": "KDL4140_30X60",
+    "model": "KDL4140_30X60",
+    "image": "urunler/kdl4140_30x60.webp",
+    "name": {
+      "tr": "KDL4140 30X60 ENEC VE TSE BELGELİ SLİM BACKLİGHT SIVA ALTI PANEL",
+      "en": "KDL4140 30X60 ENEC AND TSE CERTIFIED SLIM BACKLIGHT RECESSED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3000"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "50000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm, Derinlik: 3 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "Güç Faktörü (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP40"
+        },
+        {
+          "label": "Sürücü",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Özellik",
+          "value": "ENEC 13, TSE / 5 Yıl Garanti / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3000"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "50000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm, Depth: 3 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "Power Factor (PF)",
+          "value": "0.9"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Driver",
+          "value": "ENEC Driver"
+        },
+        {
+          "label": "Feature",
+          "value": "ENEC 13, TSE / 5 Years Warranty / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "HAN013A": {
+    "id": "HAN013A",
+    "model": "HAN013A",
+    "image": "urunler/han013a.webp",
+    "name": {
+      "tr": "HAN013A 60X60 YEKPARE KASA PANEL ÇERÇEVESİ",
+      "en": "HAN013A 60X60 ONE-PIECE BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Yekpare Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "One-Piece Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN013B": {
+    "id": "HAN013B",
+    "model": "HAN013B",
+    "image": "urunler/han013b.webp",
+    "name": {
+      "tr": "HAN013B 60X60 DEMONTE PANEL ÇERÇEVESİ",
+      "en": "HAN013B 60X60 DISASSEMBLED PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Demonte"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "60"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Disassembled"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "60"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN013C": {
+    "id": "HAN013C",
+    "model": "HAN013C",
+    "image": "urunler/han013c.webp",
+    "name": {
+      "tr": "HAN013C 60X60 CLİP-İN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN013C 60X60 CLIP-IN BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Clip-in Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Clip-in Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN013D": {
+    "id": "HAN013D",
+    "model": "HAN013D",
+    "image": "urunler/han013d.webp",
+    "name": {
+      "tr": "HAN013D 60X60 ALÇIPAN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN013D 60X60 DRYWALL BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Alçıpan Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "60x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Drywall Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN015": {
+    "id": "HAN015",
+    "model": "HAN015",
+    "image": "urunler/han015.webp",
+    "name": {
+      "tr": "HAN015 30X30 CLİP-İN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN015 30X30 CLIP-IN BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Clip-in Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Clip-in Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN015A": {
+    "id": "HAN015A",
+    "model": "HAN015A",
+    "image": "urunler/han015a.webp",
+    "name": {
+      "tr": "HAN015A 30X60 CLİP-İN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN015A 30X60 CLIP-IN BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Clip-in Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Clip-in Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN015B": {
+    "id": "HAN015B",
+    "model": "HAN015B",
+    "image": "urunler/han015b.webp",
+    "name": {
+      "tr": "HAN015B 30X120 CLİP-İN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN015B 30X120 CLIP-IN BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Clip-in Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Clip-in Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN016": {
+    "id": "HAN016",
+    "model": "HAN016",
+    "image": "urunler/han016.webp",
+    "name": {
+      "tr": "HAN016 30X30 DEMONTE PANEL ÇERÇEVESİ",
+      "en": "HAN016 30X30 DISASSEMBLED PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Demonte"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "60"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Disassembled"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "60"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN016A": {
+    "id": "HAN016A",
+    "model": "HAN016A",
+    "image": "urunler/han016a.webp",
+    "name": {
+      "tr": "HAN016A 30X60 DEMONTE PANEL ÇERÇEVESİ",
+      "en": "HAN016A 30X60 DISASSEMBLED PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Demonte"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "60"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Disassembled"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "60"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN022": {
+    "id": "HAN022",
+    "model": "HAN022",
+    "image": "urunler/han022.webp",
+    "name": {
+      "tr": "HAN022 30X120 DEMONTE PANEL ÇERÇEVESİ",
+      "en": "HAN022 30X120 DISASSEMBLED PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Demonte"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Disassembled"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN017": {
+    "id": "HAN017",
+    "model": "HAN017",
+    "image": "urunler/han017.webp",
+    "name": {
+      "tr": "HAN017 30X30 ALÇIPAN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN017 30X30 DRYWALL BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Alçıpan Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Drywall Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN017A": {
+    "id": "HAN017A",
+    "model": "HAN017A",
+    "image": "urunler/han017a.webp",
+    "name": {
+      "tr": "HAN017A 30X60 ALÇIPAN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN017A 30X60 DRYWALL BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Alçıpan Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Drywall Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN017B": {
+    "id": "HAN017B",
+    "model": "HAN017B",
+    "image": "urunler/han017b.webp",
+    "name": {
+      "tr": "HAN017B 30X120 ALÇIPAN KASA PANEL ÇERÇEVESİ",
+      "en": "HAN017B 30X120 DRYWALL BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Alçıpan Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "Drywall Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN018": {
+    "id": "HAN018",
+    "model": "HAN018",
+    "image": "urunler/han018.webp",
+    "name": {
+      "tr": "HAN018 30X30 YEKPARE KASA PANEL ÇERÇEVESİ",
+      "en": "HAN018 30X30 ONE-PIECE BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Yekpare Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "One-Piece Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN018A": {
+    "id": "HAN018A",
+    "model": "HAN018A",
+    "image": "urunler/han018a.webp",
+    "name": {
+      "tr": "HAN018A 30X60 YEKPARE KASA PANEL ÇERÇEVESİ",
+      "en": "HAN018A 30X60 ONE-PIECE BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Yekpare Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x60 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "One-Piece Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN018B": {
+    "id": "HAN018B",
+    "model": "HAN018B",
+    "image": "urunler/han018b.webp",
+    "name": {
+      "tr": "HAN018B 30X120 YEKPARE KASA PANEL ÇERÇEVESİ",
+      "en": "HAN018B 30X120 ONE-PIECE BODY PANEL FRAME"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Ölçüler",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Kasa Tipi",
+          "value": "Yekpare Kasa"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Dimensions",
+          "value": "30x120 cm"
+        },
+        {
+          "label": "Body Type",
+          "value": "One-Piece Body"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
+  },
+  "HAN019": {
+    "id": "HAN019",
+    "model": "HAN019",
+    "image": "urunler/han019.webp",
+    "name": {
+      "tr": "HAN019 BİRLEŞTİRME APARATI",
+      "en": "HAN019 JOINING APPARATUS"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Açıklama",
+          "value": "Birleştirme Aparatı"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        }
+      ],
+      "en": [
+        {
+          "label": "Description",
+          "value": "Joining Apparatus"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2"
   }
 }

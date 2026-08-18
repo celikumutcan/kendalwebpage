@@ -17,14 +17,16 @@ description: Use when fixing, enriching, or auditing product data in kendalwebpa
 3. **EU Energy Label gibi spec tabloları açıklama HTML'i içine gömülü** (örn. KES007G4SARI, KES006G4SARI gibi ürünlerde ~28 attribute). Bunları attribute listesine çıkarırken tabloyu parse et, düz metne indirgeme.
 4. **SEO URL / slug** `oc_seo_url` tablosundan gelir; `slug-map.json`'daki değerle eşleşmediğinde QR kod linkleri kırılır — her düzenlemeden sonra slug eşleşmesini kontrol et.
 
-## Standart iş akışı
-1. Önce hangi ürünlerin eksik olduğunu tespit et (örn. `attributes_bos_urunler.csv` tarzı bir rapor üret veya var olanı kullan).
-2. Eksik veri MySQL'den geliyorsa: SQL join'leri phpMyAdmin'de çalıştır, ham sonucu CSV/JSON olarak dışa aktar.
-3. HTML temizliği/parse gereken alanlar için Python (BeautifulSoup) kullan, SQL içinde regex'e güvenme.
-4. `products.json`'a yazmadan önce: aynı ürün için TR/EN isim, attribute sayısı, kategori, slug alanlarının hepsinin dolu olduğunu doğrula.
-5. Değişikliği küçük, test edilebilir parçalar halinde uygula — büyük toplu yazma yapmadan önce örnek 2-3 üründe sonucu göster ve onay al (Umutcan'ın tercih ettiği çalışma şekli budur).
-6. Slug değişmişse `slug-map.json`'ı da güncelle ve eşleşmeyi doğrula.
+## Standart İş Akışı 1: Yeni Ürün Ekleme (Manuel JSON)
+Kullanıcı chat'e ham JSON ve "fotoğrafları yükledim" dediğinde uygulanacak adımlar:
+1. **JSON Temizliği:** JSON'da `Özellik 1`, `Özellik 2`, `Garanti` vb. dağınık etiketler varsa, bunları aralarına " / " koyarak tek bir `Özellik` (veya `Feature`) satırında birleştir.
+2. **Bağımsız Model ID'si:** Kullanıcı aynı ürünün farklı boyutlarını (örn. `KDL4140_30x30`, `KDL4140_60x60`) tek model altında ("KDL4140") atsa bile, bunların varyant olarak gruplanmasını ÖNLEMEK için herbirinin `model` değerini KESİNLİKLE kendi `id` değeriyle eşitle (Örn: `model: "KDL4140_60X60"`).
+3. **Eski Link / Slug Taşıma:** Kullanıcı eski bir linkin çalışmasını istiyorsa veya `%C3%BC` gibi URL encoded link atarsa, o linkin hem raw halini hem de decode/encode edilmiş halini `slug-map.json`'da yeni ürüne bağla. Eski ID'si olan ürünler varsa onları `products.json`'dan SİL.
+4. **Fotoğraf İşleme:** Kök dizindeki yeni `.jpg` fotoğrafları bul. Node.js `sharp` ile `width: 800, height: 800, fit: 'inside', withoutEnlargement: true` ve `quality: 80` ayarlarıyla `public/images/urunler/<isim>.webp` olarak kaydet ve eski JPG'yi sil.
+5. **Temizlik:** Kullandığın gecici Node scriptlerini root'tan sil ve `.next` cache'ini temizle (`Remove-Item -Recurse -Force .next`).
 
-## Çıktı beklentisi
-- Değişiklik sonrası hangi ürünlerin güncellendiğini, kaç attribute eklendiğini kısa bir özet olarak raporla.
-- Kalıcı, tekrar kullanılabilir bir düzeltme ise (yeni bir join deseni, yeni bir parse fonksiyonu) bunu kısa not olarak belirt ki sonraki oturumda tekrar keşfetmek gerekmesin.
+## Standart İş Akışı 2: MySQL Veri Çekme
+1. Önce hangi ürünlerin eksik olduğunu tespit et (örn. `attributes_bos_urunler.csv` tarzı bir rapor üret).
+2. SQL join'leri phpMyAdmin'de çalıştır, ham sonucu dışa aktar. HTML temizliği için Python kullan.
+3. Değişikliği küçük, test edilebilir parçalar halinde uygula (2-3 üründe onay al).
+4. Değişiklik sonrası rapor ver.
