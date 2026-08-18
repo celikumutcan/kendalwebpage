@@ -481,37 +481,16 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 else if (ctUpper.includes("TURUNCU")) specificDotColor = 'bg-orange-500';
                 else if (ctUpper.includes("RGB")) specificDotColor = 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500';
 
-                if (isGlobal || isVirtual) {
-                  return (
-                    <div
-                      key={match.variant.id + "-" + label}
-                      className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold border whitespace-nowrap ${
-                        isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] cursor-default" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)] cursor-default"
-                        }`}
-                    >
-                      {showColorDot && <span className={`w-3 h-3 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
-                      <span>{label}</span>
-                    </div>
-                  );
-                }
-
                 return (
-                  <Link
+                  <div
                     key={match.variant.id + "-" + label}
-                    href={variantUrl}
-                    className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-semibold transition-all duration-300 border whitespace-nowrap ${isSelected
-                      ? (isLight ? `${themeColor} text-white border-transparent ${themeGlow} scale-[1.03]` : "bg-white text-black border-transparent shadow-[0_0_25px_rgba(255,255,255,0.15)] scale-[1.03]")
-                      : (isLight ? "bg-white/70 text-zinc-600 border-zinc-200 hover:border-zinc-300 hover:bg-white hover:-translate-y-0.5" : "bg-white/[0.03] text-zinc-400 border-white/10 hover:border-white/25 hover:text-white hover:-translate-y-0.5")
+                    className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold border whitespace-nowrap cursor-default ${
+                      isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)]" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)]"
                       }`}
                   >
-                    {showColorDot && <span className={`w-2.5 h-2.5 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
+                    {showColorDot && <span className={`w-3 h-3 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
                     <span>{label}</span>
-                    {isSelected && (
-                      <svg className="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                      </svg>
-                    )}
-                  </Link>
+                  </div>
                 );
               };
 

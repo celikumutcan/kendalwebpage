@@ -40,6 +40,13 @@ export default async function BrandProductDetailPage({
     notFound();
   }
 
+  const { getSlugByProductId } = require("@/data/products");
+  const canonicalSlug = getSlugByProductId(product.id);
+  if (canonicalSlug && canonicalSlug !== decodedSlug) {
+    const { redirect } = require("next/navigation");
+    redirect(`/brand/${resolvedParams.brandName}/urunler/${resolvedParams.category}/${canonicalSlug}`);
+  }
+
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
 
   // Here we re-use the exact same UI as the main site for the product detail.

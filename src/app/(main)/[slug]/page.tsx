@@ -39,6 +39,13 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  const { getSlugByProductId } = require("@/data/products");
+  const canonicalSlug = getSlugByProductId(product.id);
+  if (canonicalSlug && canonicalSlug !== decodedSlug) {
+    const { redirect } = require("next/navigation");
+    redirect(`/${canonicalSlug}`);
+  }
+
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
 
   return <ProductDetailClient product={product} pdfFormFile={pdfFormFile} />;

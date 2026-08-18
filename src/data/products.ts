@@ -47,12 +47,21 @@ export function getProductImageUrl(image: string): string {
 // Pre-compute an inverted map for O(1) lookups by ID
 const idToSlugMap: Record<string, string> = {};
 for (const slug of Object.keys(slugMap)) {
-  const id = slugMap[slug];
+  const id = slugMap[slug as keyof typeof slugMap];
   if (!idToSlugMap[id]) {
     idToSlugMap[id] = slug;
   }
 }
 
+const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+
 export function getSlugByProductId(id: string): string | undefined {
+  const product = products[id as keyof typeof products];
+  if (product) {
+    const canonical = slugify(product.name.tr);
+    if (slugMap[canonical as keyof typeof slugMap] === id) {
+      return canonical;
+    }
+  }
   return idToSlugMap[id];
 }
