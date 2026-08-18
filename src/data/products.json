@@ -2027,31 +2027,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "4269": {
-    "id": "4269",
-    "model": "HAN018LEDPANEL",
-    "image": "urunler/han018ledpanel.webp",
-    "name": {
-      "tr": "HAN018 KDL491 Çerçeve Aparat",
-      "en": "HAN018 KDL491 Çerçeve Aparat"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Panel Kasaları"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Panel Bodies &amp; Accesories"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
   "4270": {
     "id": "4270",
     "model": "KBA70760WE27SF",
@@ -65325,41 +65300,6 @@
       "watt": "3W",
       "casing": "Saten Kasa"
     }
-  },
-  "5915": {
-    "id": "5915",
-    "model": "HAN019LEDPANEL",
-    "image": "urunler/han019ledpanel.webp",
-    "name": {
-      "tr": "HAN019 Bant Arm.birliştirme Aparatı",
-      "en": "HAN019 Bant Arm.birliştirme Aparatı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Panel Kasaları"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Panel Bodies &amp; Accesories"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
   },
   "5916": {
     "id": "5916",
