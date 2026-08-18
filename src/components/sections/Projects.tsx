@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 
@@ -56,12 +56,42 @@ export const Projects = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  const isPausedRef = useRef(false);
+  const resumeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const scrollTrack = (direction: 'left' | 'right') => {
     if (trackRef.current) {
       const scrollAmount = window.innerWidth > 768 ? window.innerWidth / 3 : window.innerWidth * 0.8;
       trackRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
     }
+  };
+
+  // Auto-advance the carousel on its own ("tık tık tık"), pausing while the
+  // user hovers/touches it so manual scrolling never fights the timer.
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const track = trackRef.current;
+      if (!track || isPausedRef.current) return;
+      const maxScroll = track.scrollWidth - track.clientWidth;
+      if (track.scrollLeft >= maxScroll - 10) {
+        track.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        scrollTrack('right');
+      }
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  const pauseAutoplay = () => {
+    isPausedRef.current = true;
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+  };
+
+  const scheduleResumeAutoplay = () => {
+    if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+    resumeTimeoutRef.current = setTimeout(() => {
+      isPausedRef.current = false;
+    }, 4000);
   };
 
 
@@ -107,6 +137,10 @@ export const Projects = () => {
           className="flex w-full overflow-x-auto snap-x snap-mandatory py-8 px-4 md:px-12 items-center"
           ref={trackRef}
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          onMouseEnter={pauseAutoplay}
+          onMouseLeave={scheduleResumeAutoplay}
+          onTouchStart={pauseAutoplay}
+          onTouchEnd={scheduleResumeAutoplay}
         >
           {/* Global styles block to hide scrollbar for webkit browsers */}
           <style dangerouslySetInnerHTML={{
