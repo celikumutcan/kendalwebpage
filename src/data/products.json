@@ -17017,1680 +17017,6 @@
       "watt": "48W"
     }
   },
-  "4618": {
-    "id": "4618",
-    "model": "KDL430-6WARARENK",
-    "image": "urunler/kdl430.webp",
-    "name": {
-      "tr": "KDL430 Kare SMD Ledlı Down. Arm. 6W Ararenk",
-      "en": "KDL430 Kare SMD Ledlı Down. Arm. 6W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "4619": {
-    "id": "4619",
-    "model": "KDL430-6WBEYAZ",
-    "image": "urunler/kdl430.webp",
-    "name": {
-      "tr": "KDL430 Kare SMD Ledlı Down. Arm. 6W Beyaz",
-      "en": "KDL430 Kare SMD Ledlı Down. Arm. 6W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4620": {
-    "id": "4620",
-    "model": "KDL430-6WGNSIK",
-    "image": "urunler/kdl430.webp",
-    "name": {
-      "tr": "KDL430 Kare SMD Ledlı Down. Arm. 6W Günışığı",
-      "en": "KDL430 Kare SMD Ledlı Down. Arm. 6W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4621": {
-    "id": "4621",
-    "model": "KDL43112WARARENK",
-    "image": "urunler/kdl43112w.webp",
-    "name": {
-      "tr": "KDL431 Kare SMD Ledlı Down. Arm. 12W Ararenk",
-      "en": "KDL431 Kare SMD Ledlı Down. Arm. 12W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "4622": {
-    "id": "4622",
-    "model": "KDL43112WBEYAZ",
-    "image": "urunler/kdl43112w.webp",
-    "name": {
-      "tr": "KDL431 Kare SMD Ledlı Down. Arm. 12W Beyaz",
-      "en": "KDL431 Kare SMD Ledlı Down. Arm. 12W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "840"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "840"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4623": {
-    "id": "4623",
-    "model": "KDL43112WGNSIK",
-    "image": "urunler/kdl43112w.webp",
-    "name": {
-      "tr": "KDL431 Kare SMD Ledlı Down. Arm. 12W Günışığı",
-      "en": "KDL431 Kare SMD Ledlı Down. Arm. 12W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4624": {
-    "id": "4624",
-    "model": "KDL43222WARARENK",
-    "image": "urunler/kdl43222w.webp",
-    "name": {
-      "tr": "KDL432 Kare SMD Ledlı Down. Arm. 22W Ararenk",
-      "en": "KDL432 Kare SMD Ledlı Down. Arm. 22W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "22W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "4625": {
-    "id": "4625",
-    "model": "KDL43222WBEYAZ",
-    "image": "urunler/kdl43222w.webp",
-    "name": {
-      "tr": "KDL432 Kare SMD Ledlı Down. Arm. 22W Beyaz",
-      "en": "KDL432 Kare SMD Ledlı Down. Arm. 22W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1350"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1350"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "22W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4626": {
-    "id": "4626",
-    "model": "KDL43222WGNISK",
-    "image": "urunler/kdl43222w.webp",
-    "name": {
-      "tr": "KDL432 Kare SMD Ledlı Down. Arm. 22W Günışığı",
-      "en": "KDL432 Kare SMD Ledlı Down. Arm. 22W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "22W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4627": {
-    "id": "4627",
-    "model": "KDL43326WARARENK",
-    "image": "urunler/kdl43326w.webp",
-    "name": {
-      "tr": "KDL433 Kare SMD Ledlı Down. Arm. 26W Ararenk",
-      "en": "KDL433 Kare SMD Ledlı Down. Arm. 26W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1920"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1920"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "4628": {
-    "id": "4628",
-    "model": "KDL43326WBEYAZ",
-    "image": "urunler/kdl43326w.webp",
-    "name": {
-      "tr": "KDL433 Kare SMD Ledlı Down. Arm. 26W Beyaz",
-      "en": "KDL433 Kare SMD Ledlı Down. Arm. 26W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1920"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1920"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4629": {
-    "id": "4629",
-    "model": "KDL43326WGNISK",
-    "image": "urunler/kdl43326w.webp",
-    "name": {
-      "tr": "KDL433 Kare SMD Ledlı Down. Arm. 26W Gunısıgı",
-      "en": "KDL433 Kare SMD Ledlı Down. Arm. 26W Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1920"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1920"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W"
-    }
-  },
-  "4630": {
-    "id": "4630",
-    "model": "KDL4407WBEYAZ",
-    "image": "urunler/kdl4407w.webp",
-    "name": {
-      "tr": "KDL440 SMD Ledlı Down. Arm. 7W Beyaz",
-      "en": "KDL440 SMD Ledlı Down. Arm. 7W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "580"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "580"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4631": {
-    "id": "4631",
-    "model": "KDL4407WGNISK",
-    "image": "urunler/kdl4407w.webp",
-    "name": {
-      "tr": "KDL440 SMD Ledlı Down. Arm. 7W Günışığı",
-      "en": "KDL440 SMD Ledlı Down. Arm. 7W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "580"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "580"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4634": {
-    "id": "4634",
-    "model": "KDL44110WBEYAZ",
-    "image": "urunler/kdl44110w.webp",
-    "name": {
-      "tr": "KDL441 SMD Ledlı Down. Arm. 10W Beyaz",
-      "en": "KDL441 SMD Ledlı Down. Arm. 10W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "850"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "850"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4635": {
-    "id": "4635",
-    "model": "KDL44110WGNISK",
-    "image": "urunler/kdl44110w.webp",
-    "name": {
-      "tr": "KDL441 SMD Ledlı Down. Arm. 10W Günışığı",
-      "en": "KDL441 SMD Ledlı Down. Arm. 10W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "850"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "850"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4637": {
-    "id": "4637",
-    "model": "KDL44110WKRMGNI",
-    "image": "urunler/kdl44110w.webp",
-    "name": {
-      "tr": "KDL441 SMD Ledli Down. Arm.10w Kırmızı*günışığı",
-      "en": "KDL441 SMD Ledli Down. Arm.10w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "850"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "850"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "Kırmızı"
-    }
-  },
-  "4638": {
-    "id": "4638",
-    "model": "KDL44218WBEYAZ",
-    "image": "urunler/kdl44218w.webp",
-    "name": {
-      "tr": "KDL442 SMD Ledlı Down. Arm. 18W Beyaz",
-      "en": "KDL442 SMD Ledlı Down. Arm. 18W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4639": {
-    "id": "4639",
-    "model": "KDL44218WGNISK",
-    "image": "urunler/kdl44218w.webp",
-    "name": {
-      "tr": "KDL442 SMD Ledlı Down. Arm. 18W Günışığı",
-      "en": "KDL442 SMD Ledlı Down. Arm. 18W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4640": {
-    "id": "4640",
-    "model": "KDL44218WKRMBYZ",
-    "image": "urunler/kdl44218w.webp",
-    "name": {
-      "tr": "KDL442 SMD Ledli Down. Arm.18w Kırmızı*beyaz",
-      "en": "KDL442 SMD Ledli Down. Arm.18w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "4642": {
-    "id": "4642",
-    "model": "KDL44326WBEYAZ",
-    "image": "urunler/kdl44326w.webp",
-    "name": {
-      "tr": "KDL443 SMD Ledlı Down. Arm. 26W Beyaz",
-      "en": "KDL443 SMD Ledlı Down. Arm. 26W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4643": {
-    "id": "4643",
-    "model": "KDL44326WGNISK",
-    "image": "urunler/kdl44326w.webp",
-    "name": {
-      "tr": "KDL443 SMD Ledlı Down. Arm. 26W Günışığı",
-      "en": "KDL443 SMD Ledlı Down. Arm. 26W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4646": {
-    "id": "4646",
-    "model": "KDL44416WBEYAZ",
-    "image": "urunler/kdl44416w.webp",
-    "name": {
-      "tr": "KDL444 SMD Ledlı Down. Arm. 16W Beyaz",
-      "en": "KDL444 SMD Ledlı Down. Arm. 16W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "16W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4647": {
-    "id": "4647",
-    "model": "KDL44416WGNISK",
-    "image": "urunler/kdl44416w.webp",
-    "name": {
-      "tr": "KDL444 SMD Ledlı Down. Arm. 16W Günışığı",
-      "en": "KDL444 SMD Ledlı Down. Arm. 16W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "16W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4650": {
-    "id": "4650",
-    "model": "KDL44524WBEYAZ",
-    "image": "urunler/kdl44524w.webp",
-    "name": {
-      "tr": "KDL445 SMD Ledlı Down. Arm. 24W Beyaz",
-      "en": "KDL445 SMD Ledlı Down. Arm. 24W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4651": {
-    "id": "4651",
-    "model": "KDL44524WGNISK",
-    "image": "urunler/kdl44524w.webp",
-    "name": {
-      "tr": "KDL445 SMD Ledlı Down. Arm. 24W Günışığı",
-      "en": "KDL445 SMD Ledlı Down. Arm. 24W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4653": {
-    "id": "4653",
-    "model": "KDL44524WKRMGNI",
-    "image": "urunler/kdl44524w.webp",
-    "name": {
-      "tr": "KDL445 SMD Ledli Down. Arm.24w Kırmızı*günışığı",
-      "en": "KDL445 SMD Ledli Down. Arm.24w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Kırmızı"
-    }
-  },
   "4654": {
     "id": "4654",
     "model": "KDL460-9WBEYAZ",
@@ -19179,478 +17505,6 @@
       "en": [
         "Indoor Lighting",
         "Led Slim Frameless Panel Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "36W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4662": {
-    "id": "4662",
-    "model": "KDL465-9WBEYAZ",
-    "image": "urunler/kdl465.webp",
-    "name": {
-      "tr": "KDL465 Slim LED Çerçevesiz Panel 9W Beyaz",
-      "en": "KDL465 Slim LED Çerçevesiz Panel 9W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "765"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "765"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4663": {
-    "id": "4663",
-    "model": "KDL465-9WGNISK",
-    "image": "urunler/kdl465.webp",
-    "name": {
-      "tr": "KDL465 Slim LED Çerçevesiz Panel 9W Günışığı",
-      "en": "KDL465 Slim LED Çerçevesiz Panel 9W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "900"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "900"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4664": {
-    "id": "4664",
-    "model": "KDL466-18WBEYAZ",
-    "image": "urunler/kdl466.webp",
-    "name": {
-      "tr": "KDL466 Slim LED Çerçevesiz Panel 18W Beyaz",
-      "en": "KDL466 Slim LED Çerçevesiz Panel 18W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1530"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1530"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4665": {
-    "id": "4665",
-    "model": "KDL466-18WGNISK",
-    "image": "urunler/kdl466.webp",
-    "name": {
-      "tr": "KDL466 Slim LED Çerçevesiz Panel 18W Günışığı",
-      "en": "KDL466 Slim LED Çerçevesiz Panel 18W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4666": {
-    "id": "4666",
-    "model": "KDL467-24WBEYAZ",
-    "image": "urunler/kdl467.webp",
-    "name": {
-      "tr": "KDL467 Slim LED Çerçevesiz Panel 24W Beyaz",
-      "en": "KDL467 Slim LED Çerçevesiz Panel 24W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) - Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2040"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) - Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2040"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4667": {
-    "id": "4667",
-    "model": "KDL467-24WGNISK",
-    "image": "urunler/kdl467.webp",
-    "name": {
-      "tr": "KDL467 Slim LED Çerçevesiz Panel 24W Günışığı",
-      "en": "KDL467 Slim LED Çerçevesiz Panel 24W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4668": {
-    "id": "4668",
-    "model": "KDL468-36WBEYAZ",
-    "image": "urunler/kdl468.webp",
-    "name": {
-      "tr": "KDL468 Slim LED Çerçevesiz Panel 36W Beyaz",
-      "en": "KDL468 Slim LED Çerçevesiz Panel 36W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2880"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2880"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "36W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4669": {
-    "id": "4669",
-    "model": "KDL468-36WGNISK",
-    "image": "urunler/kdl468.webp",
-    "name": {
-      "tr": "KDL468 Slim LED Çerçevesiz Panel 36W Günışığı",
-      "en": "KDL468 Slim LED Çerçevesiz Panel 36W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2880"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2880"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
       ]
     },
     "brand": "k2",
@@ -72468,1732 +70322,6 @@
     "variantOptions": {
       "watt": "5W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "6033": {
-    "id": "6033",
-    "model": "KDL430B6WSYH-ARARENK",
-    "image": "urunler/kdl430b.webp",
-    "name": {
-      "tr": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*ararenk",
-      "en": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6034": {
-    "id": "6034",
-    "model": "KDL430B6WSYH-BYZ",
-    "image": "urunler/kdl430b.webp",
-    "name": {
-      "tr": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*beyaz",
-      "en": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "light": "Beyaz (6500K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6035": {
-    "id": "6035",
-    "model": "KDL430B6WSYH-GNISK",
-    "image": "urunler/kdl430b.webp",
-    "name": {
-      "tr": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*gün Işığı",
-      "en": "KDL430B SMD Ledlı S.ü Kare.6w Siyah*gün Işığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "510"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "510"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "light": "Günışığı (3000K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6036": {
-    "id": "6036",
-    "model": "KDL431B12WSYH-ARARENK",
-    "image": "urunler/kdl431b.webp",
-    "name": {
-      "tr": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*ararenk",
-      "en": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6037": {
-    "id": "6037",
-    "model": "KDL431B12WSYH-BYZ",
-    "image": "urunler/kdl431b.webp",
-    "name": {
-      "tr": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*beyaz",
-      "en": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "light": "Beyaz (6500K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6038": {
-    "id": "6038",
-    "model": "KDL431B12WSYH-GNISK",
-    "image": "urunler/kdl431b.webp",
-    "name": {
-      "tr": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*gün Işığı",
-      "en": "KDL431B SMD Ledlı S.ü Kare.12w Siyah*gün Işığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "light": "Günışığı (3000K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6039": {
-    "id": "6039",
-    "model": "KDL432B18WSYH-ARARENK",
-    "image": "urunler/kdl432b.webp",
-    "name": {
-      "tr": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*ararenk",
-      "en": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6040": {
-    "id": "6040",
-    "model": "KDL432B18WSYH-BYZ",
-    "image": "urunler/kdl432b.webp",
-    "name": {
-      "tr": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*beyaz",
-      "en": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1350"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1350"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6041": {
-    "id": "6041",
-    "model": "KDL432B18WSYH-GNISK",
-    "image": "urunler/kdl432b.webp",
-    "name": {
-      "tr": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*gün Işığı",
-      "en": "KDL432B SMD Ledlı S.ü Kare.18w Siyah*gün Işığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Günışığı (3000K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6042": {
-    "id": "6042",
-    "model": "KDL433B24WSYH-ARARENK",
-    "image": "urunler/kdl433b.webp",
-    "name": {
-      "tr": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*ararenk",
-      "en": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1920"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1920"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6043": {
-    "id": "6043",
-    "model": "KDL433B24WSYH-BYZ",
-    "image": "urunler/kdl433b.webp",
-    "name": {
-      "tr": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*beyaz",
-      "en": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1450"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1450"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "light": "Beyaz (6500K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6044": {
-    "id": "6044",
-    "model": "KDL433B24WSYH-GNISK",
-    "image": "urunler/kdl433b.webp",
-    "name": {
-      "tr": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*gün Işığı",
-      "en": "KDL433B SMD Ledlı S.ü Kare.24w Siyah*gün Işığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1920"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1920"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "light": "Günışığı (3000K)",
-      "casing": "Siyah Kasa"
-    }
-  },
-  "6045": {
-    "id": "6045",
-    "model": "KDL4407WKRM-BYZ",
-    "image": "urunler/kdl4407w.webp",
-    "name": {
-      "tr": "KDL440 SMD Ledlı Down. Arm. 7W Kırmızı*beyaz",
-      "en": "KDL440 SMD Ledlı Down. Arm. 7W Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "580"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "580"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6046": {
-    "id": "6046",
-    "model": "KDL4407WKRM-GNI",
-    "image": "urunler/kdl4407w.webp",
-    "name": {
-      "tr": "KDL440 SMD Ledlı Down. Arm. 7W Kırmızı*günışığı",
-      "en": "KDL440 SMD Ledlı Down. Arm. 7W Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "580"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W+3W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "580"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6047": {
-    "id": "6047",
-    "model": "KDL44110WKRM-BYZ",
-    "image": "urunler/kdl44110w.webp",
-    "name": {
-      "tr": "KDL441 SMD Ledlı Down. Arm.10w Kırmızı*beyaz",
-      "en": "KDL441 SMD Ledlı Down. Arm.10w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "850"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "850"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6048": {
-    "id": "6048",
-    "model": "KDL44110WKRM-GNI",
-    "image": "urunler/kdl44110w.webp",
-    "name": {
-      "tr": "KDL441 SMD Ledlı Down. Arm.10w Kırmızı*günışığı",
-      "en": "KDL441 SMD Ledlı Down. Arm.10w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "850"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "850"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6049": {
-    "id": "6049",
-    "model": "KDL44218WKRM-BYZ",
-    "image": "urunler/kdl44218w.webp",
-    "name": {
-      "tr": "KDL442 SMD Ledlı Down. Arm.18w Kırmızı*beyaz",
-      "en": "KDL442 SMD Ledlı Down. Arm.18w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6050": {
-    "id": "6050",
-    "model": "KDL44218WKRM-GNI",
-    "image": "urunler/kdl44218w.webp",
-    "name": {
-      "tr": "KDL442 SMD Ledlı Down. Arm.18w Kırmızı*günışığı",
-      "en": "KDL442 SMD Ledlı Down. Arm.18w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6051": {
-    "id": "6051",
-    "model": "KDL44326WKRM-BYZ",
-    "image": "urunler/kdl44326w.webp",
-    "name": {
-      "tr": "KDL443 SMD Ledlı Down. Arm.26w Kırmızı*beyaz",
-      "en": "KDL443 SMD Ledlı Down. Arm.26w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6052": {
-    "id": "6052",
-    "model": "KDL44326WKRM-GNI",
-    "image": "urunler/kdl44326w.webp",
-    "name": {
-      "tr": "KDL443 SMD Ledlı Down. Arm.26w Kırmızı*günışığı",
-      "en": "KDL443 SMD Ledlı Down. Arm.26w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2020"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2020"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Slim Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Slim Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6053": {
-    "id": "6053",
-    "model": "KDL44416WKRM-BYZ",
-    "image": "urunler/kdl44416w.webp",
-    "name": {
-      "tr": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*beyaz",
-      "en": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "16W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6054": {
-    "id": "6054",
-    "model": "KDL44416WKRM-GNI",
-    "image": "urunler/kdl44416w.webp",
-    "name": {
-      "tr": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*günışığı",
-      "en": "KDL444 SMD Ledlı Down. Arm.16w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W+4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "16W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6055": {
-    "id": "6055",
-    "model": "KDL44524WKRM-BYZ",
-    "image": "urunler/kdl44524w.webp",
-    "name": {
-      "tr": "KDL445 SMD Ledlı Down. Arm.24w Kırmızı*beyaz",
-      "en": "KDL445 SMD Ledlı Down. Arm.24w Kırmızı*beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "light": "Beyaz (6500K)",
-      "casing": "Kırmızı"
-    }
-  },
-  "6056": {
-    "id": "6056",
-    "model": "KDL44524WKRM-GNI",
-    "image": "urunler/kdl44524w.webp",
-    "name": {
-      "tr": "KDL445 SMD Ledlı Down. Arm.24w Kırmızı*günışığı",
-      "en": "KDL445 SMD Ledlı Down. Arm.24w Kırmızı*günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W+6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Panels"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Kırmızı"
-    }
-  },
-  "6057": {
-    "id": "6057",
-    "model": "KDL465-9WARARENK",
-    "image": "urunler/kdl465.webp",
-    "name": {
-      "tr": "KDL465 Slim LED Çerçevesiz Panel 9W Ararenk",
-      "en": "KDL465 Slim LED Çerçevesiz Panel 9W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "900"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "900"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "6058": {
-    "id": "6058",
-    "model": "KDL466-18WARARENK",
-    "image": "urunler/kdl466.webp",
-    "name": {
-      "tr": "KDL466 Slim LED Çerçevesiz Panel 18W Ararenk",
-      "en": "KDL466 Slim LED Çerçevesiz Panel 18W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "6059": {
-    "id": "6059",
-    "model": "KDL467-24WARARENK",
-    "image": "urunler/kdl467.webp",
-    "name": {
-      "tr": "KDL467 Slim LED Çerçevesiz Panel 24W Ararenk",
-      "en": "KDL467 Slim LED Çerçevesiz Panel 24W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        },
-        {
-          "label": "Ürün",
-          "value": "32 Mealodi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        },
-        {
-          "label": "Product",
-          "value": "32 Mealodi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W",
-      "casing": "Ararenk (4000K)"
-    }
-  },
-  "6060": {
-    "id": "6060",
-    "model": "KDL468-36WARARENK",
-    "image": "urunler/kdl468.webp",
-    "name": {
-      "tr": "KDL468 Slim LED Çerçevesiz Panel 36W Ararenk",
-      "en": "KDL468 Slim LED Çerçevesiz Panel 36W Ararenk"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Renk",
-          "value": "Ilık Beyaz (Ararenk (4000K))"
-        },
-        {
-          "label": "Lümen",
-          "value": "2880"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Color",
-          "value": "Ilık Beyaz (Ararenk (4000K))"
-        },
-        {
-          "label": "Lumen",
-          "value": "2880"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Altı Çerçevesiz Ayarlanabilir Led Paneller"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Led Slim Frameless Panel Lights - Rotatable"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "36W",
-      "casing": "Ararenk (4000K)"
     }
   },
   "6061": {
@@ -198464,6 +194592,2774 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "20W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL430": {
+    "id": "KDL430",
+    "model": "KDL430",
+    "image": "urunler/kdl430.webp",
+    "name": {
+      "tr": "KDL430 SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL430 SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "510"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "12x12 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Beyaz Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "510"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "12x12 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "White Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL431": {
+    "id": "KDL431",
+    "model": "KDL431",
+    "image": "urunler/kdl431.webp",
+    "name": {
+      "tr": "KDL431 SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL431 SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "840"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "16x16 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Beyaz Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "840"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "16x16 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "White Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL432": {
+    "id": "KDL432",
+    "model": "KDL432",
+    "image": "urunler/kdl432.webp",
+    "name": {
+      "tr": "KDL432 SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL432 SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1350"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "21x21 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Beyaz Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1350"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "21x21 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "White Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL433": {
+    "id": "KDL433",
+    "model": "KDL433",
+    "image": "urunler/kdl433.webp",
+    "name": {
+      "tr": "KDL433 SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL433 SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1450"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Beyaz Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1450"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "White Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL430B": {
+    "id": "KDL430B",
+    "model": "KDL430B",
+    "image": "urunler/kdl430b.webp",
+    "name": {
+      "tr": "KDL430B SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL430B SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "510"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "12x12 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Siyah Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "510"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "12x12 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "Black Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL431B": {
+    "id": "KDL431B",
+    "model": "KDL431B",
+    "image": "urunler/kdl431b.webp",
+    "name": {
+      "tr": "KDL431B SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL431B SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "840"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "16x16 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Siyah Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "840"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "16x16 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "Black Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL432B": {
+    "id": "KDL432B",
+    "model": "KDL432B",
+    "image": "urunler/kdl432b.webp",
+    "name": {
+      "tr": "KDL432B SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL432B SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1350"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "21x21 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Siyah Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1350"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "21x21 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "Black Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL433B": {
+    "id": "KDL433B",
+    "model": "KDL433B",
+    "image": "urunler/kdl433b.webp",
+    "name": {
+      "tr": "KDL433B SIVA ÜSTÜ KARE LED PANEL",
+      "en": "KDL433B SURFACE MOUNTED SQUARE LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1450"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "30x30 cm, Kalınlık: 2,5 cm"
+        },
+        {
+          "label": "Kasa Rengi",
+          "value": "Siyah Kasa"
+        },
+        {
+          "label": "Kasa Malzemesi",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1450"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "30x30 cm, Thickness: 2.5 cm"
+        },
+        {
+          "label": "Body Color",
+          "value": "Black Body"
+        },
+        {
+          "label": "Body Material",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL440": {
+    "id": "KDL440",
+    "model": "KDL440",
+    "image": "urunler/kdl440.webp",
+    "name": {
+      "tr": "KDL440 SIVA ALTI ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL440 RECESSED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W+3W"
+        },
+        {
+          "label": "Lümen",
+          "value": "580"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "İç Çap: 7 cm, Dış Çap: 10,5 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W+3W"
+        },
+        {
+          "label": "Lumen",
+          "value": "580"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Inner Diameter: 7 cm, Outer Diameter: 10.5 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W+3W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL441": {
+    "id": "KDL441",
+    "model": "KDL441",
+    "image": "urunler/kdl441.webp",
+    "name": {
+      "tr": "KDL441 SIVA ALTI ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL441 RECESSED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W+4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "850"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "İç Çap: 10,5 cm, Dış Çap: 14,5 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W+4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "850"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Inner Diameter: 10.5 cm, Outer Diameter: 14.5 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W+4W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL442": {
+    "id": "KDL442",
+    "model": "KDL442",
+    "image": "urunler/kdl442.webp",
+    "name": {
+      "tr": "KDL442 SIVA ALTI ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL442 RECESSED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W+6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1300"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "İç Çap: 15 cm, Dış Çap: 19 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W+6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1300"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Inner Diameter: 15 cm, Outer Diameter: 19 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W+6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL443": {
+    "id": "KDL443",
+    "model": "KDL443",
+    "image": "urunler/kdl443.webp",
+    "name": {
+      "tr": "KDL443 SIVA ALTI ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL443 RECESSED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W+6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2020"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "İç Çap: 20 cm, Dış Çap: 24,5 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W+6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2020"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Inner Diameter: 20 cm, Outer Diameter: 24.5 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W+6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL444": {
+    "id": "KDL444",
+    "model": "KDL444",
+    "image": "urunler/kdl444.webp",
+    "name": {
+      "tr": "KDL444 SIVA ÜSTÜ ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL444 SURFACE MOUNTED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W+4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Dış Çap: 19 cm, Kalınlık: 3,5 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W+4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Outer Diameter: 19 cm, Thickness: 3.5 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W+4W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL445": {
+    "id": "KDL445",
+    "model": "KDL445",
+    "image": "urunler/kdl445.webp",
+    "name": {
+      "tr": "KDL445 SIVA ÜSTÜ ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
+      "en": "KDL445 SURFACE MOUNTED DUAL COLOR 3 FUNCTION LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W+6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2200"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Dış Çap: 24 cm, Kalınlık: 3,5 cm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Alüminyum Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        },
+        {
+          "label": "Özellik",
+          "value": "PS LGP 3 mm / Çift Renkli 3 Fonksiyonlu / Gece Modunda Mavi Yanar"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W+6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2200"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Outer Diameter: 24 cm, Thickness: 3.5 cm"
+        },
+        {
+          "label": "Body",
+          "value": "Aluminum Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        },
+        {
+          "label": "Feature",
+          "value": "PS LGP 3 mm / Dual Color 3 Functions / Lights Blue in Night Mode"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W+6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL485": {
+    "id": "KDL485",
+    "model": "KDL485",
+    "image": "urunler/kdl485.webp",
+    "name": {
+      "tr": "KDL485 SLİM BACKLİGHT ÇERÇEVELİ PANEL",
+      "en": "KDL485 SLIM BACKLIGHT FRAMED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "360"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø100mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "360"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø100mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL486": {
+    "id": "KDL486",
+    "model": "KDL486",
+    "image": "urunler/kdl486.webp",
+    "name": {
+      "tr": "KDL486 SLİM BACKLİGHT ÇERÇEVELİ PANEL",
+      "en": "KDL486 SLIM BACKLIGHT FRAMED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "60"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø115mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "60"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø115mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "8W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL487": {
+    "id": "KDL487",
+    "model": "KDL487",
+    "image": "urunler/kdl487.webp",
+    "name": {
+      "tr": "KDL487 SLİM BACKLİGHT ÇERÇEVELİ PANEL",
+      "en": "KDL487 SLIM BACKLIGHT FRAMED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lümen",
+          "value": "900"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø175mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lumen",
+          "value": "900"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø175mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "15W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL488": {
+    "id": "KDL488",
+    "model": "KDL488",
+    "image": "urunler/kdl488.webp",
+    "name": {
+      "tr": "KDL488 SLİM BACKLİGHT ÇERÇEVELİ PANEL",
+      "en": "KDL488 SLIM BACKLIGHT FRAMED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1350"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø230mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1350"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø230mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL560": {
+    "id": "KDL560",
+    "model": "KDL560",
+    "image": "urunler/kdl560.webp",
+    "name": {
+      "tr": "KDL560 SIVA ÜSTÜ LED PANEL",
+      "en": "KDL560 SURFACE MOUNTED LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4350"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220 mm, Kalınlık: 30 mm"
+        },
+        {
+          "label": "Durum",
+          "value": "Yeni"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "40W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4350"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220 mm, Thickness: 30 mm"
+        },
+        {
+          "label": "Status",
+          "value": "New"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "40W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KDL561": {
+    "id": "KDL561",
+    "model": "KDL561",
+    "image": "urunler/kdl561.webp",
+    "name": {
+      "tr": "KDL561 SIVA ÜSTÜ LED PANEL",
+      "en": "KDL561 SURFACE MOUNTED LED PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "55W"
+        },
+        {
+          "label": "Lümen",
+          "value": "6600"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø285 mm, Kalınlık: 30 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "55W"
+        },
+        {
+          "label": "Lumen",
+          "value": "6600"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø285 mm, Thickness: 30 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "55W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KDL465": {
+    "id": "KDL465",
+    "model": "KDL465",
+    "image": "urunler/kdl465.webp",
+    "name": {
+      "tr": "KDL465 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL465 SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lümen",
+          "value": "765"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø85mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lumen",
+          "value": "765"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø85mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL466": {
+    "id": "KDL466",
+    "model": "KDL466",
+    "image": "urunler/kdl466.webp",
+    "name": {
+      "tr": "KDL466 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL466 SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1530"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø120mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1530"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø120mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL467": {
+    "id": "KDL467",
+    "model": "KDL467",
+    "image": "urunler/kdl467.webp",
+    "name": {
+      "tr": "KDL467 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL467 SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2040"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø170mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2040"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø170mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL468": {
+    "id": "KDL468",
+    "model": "KDL468",
+    "image": "urunler/kdl468.webp",
+    "name": {
+      "tr": "KDL468 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL468 SLIM BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2880"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2880"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL510": {
+    "id": "KDL510",
+    "model": "KDL510",
+    "image": "urunler/kdl510.webp",
+    "name": {
+      "tr": "KDL510 SLİM KRİSTAL BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL510 SLIM CRYSTAL BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2400"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø170mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "Difüzör",
+          "value": "Polikarbon Difüzör"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2400"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø170mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "Diffuser",
+          "value": "Polycarbonate Diffuser"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDL511": {
+    "id": "KDL511",
+    "model": "KDL511",
+    "image": "urunler/kdl511.webp",
+    "name": {
+      "tr": "KDL511 SLİM KRİSTAL BACKLİGHT ÇERÇEVESİZ PANEL",
+      "en": "KDL511 SLIM CRYSTAL BACKLIGHT FRAMELESS PANEL"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3600"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø220mm, Kalınlık: 20mm"
+        },
+        {
+          "label": "Kasa",
+          "value": "Metal Kasa"
+        },
+        {
+          "label": "Difüzör",
+          "value": "Polikarbon Difüzör"
+        },
+        {
+          "label": "LED Çip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir / Yüksek Lümen / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3600"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø220mm, Thickness: 20mm"
+        },
+        {
+          "label": "Body",
+          "value": "Metal Body"
+        },
+        {
+          "label": "Diffuser",
+          "value": "Polycarbonate Diffuser"
+        },
+        {
+          "label": "LED Chip",
+          "value": "SMD 2835 Led Chip"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable / High Lumen / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Panel"
+      ],
+      "en": [
+        "LED Panel"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   }
