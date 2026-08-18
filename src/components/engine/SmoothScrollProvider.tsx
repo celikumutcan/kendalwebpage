@@ -4,7 +4,7 @@ import React, { createContext, useContext, useEffect, useRef, useState } from "r
 import Lenis from "lenis";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 
-const LenisContext = createContext<Lenis | null>(null);
+export const LenisContext = createContext<Lenis | null>(null);
 
 // Returns the shared Lenis instance from context
 export const useLenis = () => useContext(LenisContext);
