@@ -9,17 +9,17 @@ const brands = [
   {
     name: "K2",
     logo: "/images/brands/k2-logo.svg",
-    href: "/brand/k2",
+    href: process.env.NODE_ENV === "production" ? "/brand/k2" : "http://k2.localhost:3000",
   },
   {
     name: "Vanti",
     logo: "/images/brands/vanti-logo.svg",
-    href: "/brand/vanti",
+    href: process.env.NODE_ENV === "production" ? "/brand/vanti" : "http://vanti.localhost:3000",
   },
   {
     name: "Global",
     logo: "/images/brands/global-logo.svg",
-    href: "/brand/global",
+    href: process.env.NODE_ENV === "production" ? "/brand/global" : "http://global.localhost:3000",
   },
 ];
 

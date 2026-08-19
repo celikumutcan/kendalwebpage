@@ -35,7 +35,7 @@ Kullanıcı "şu link de çalışsın" diyerek sana bir URL attığında (Örn: 
 
 ## 4. Temizlik ve Otomasyon
 
-- Çalıştırmak için kök dizinde (root) `add_...js` gibi node scriptleri üretiyoruz. **İşin bitince bu JS dosyalarını root klasöründe çöp olarak bırakma, sil.** (Örn: Kodun en sonuna `fs.unlinkSync(__filename)` ekleyebilirsin).
+- Çalıştırmak için kök dizinde (root) `add_...js` gibi node scriptleri üretiyoruz. **ÖNEMLİ GÜNCELLEME:** Sürekli yeni dosya oluşturma izni (Allow) istenmesini engellemek için, dosyaları işlem bitince `fs.unlinkSync` ile SİLME. Bunun yerine `add_products.js` ve `cleanup_products.js` gibi sabit isimli dosyalar kullan ve her yeni işlemde bu dosyaların içeriğini güncelleyerek (üzerine yazarak) tekrar çalıştır. En son tüm ürün girişleri bittiğinde silebilirsin.
 - Yeni ürün eklendikten sonra eğer IDE hata veriyor veya sitede yansımıyorsa, Next.js'in meşhur cache sorunudur. Terminalde `Remove-Item -Recurse -Force .next` çalıştırıp sunucuyu yeniden başlatmasını söyle.
 
 ## 5. "CCT (Renk Sıcaklığı)" Fazla Rozeti Sorunu (Legacy Duplicate Ürünler)
@@ -49,10 +49,11 @@ Kullanıcı bir ürün sayfasında "Renk Seçenekleri" altında 3 doğru seçene
   - `variantOptions.casing` alanında 3 rengi TEK STRING olarak birleştirilmiş halde tutar: `"CCT (Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K))"`.
 - **Neden 4. rozet çıkıyor:** `ProductDetailClient.tsx`'teki `variations` hesaplaması, aynı `baseModel`'e (ismin ilk kelimesi, örn. "KDL510") sahip **tüm** ürünleri tarar — sadece o an açık olan ürünü değil. Bu legacy kopya da aynı baseModel'e sahip olduğu için, onun `casing` alanındaki birleşik string, kanonik ürünün 3 doğru `variantOptions.light` rengine **4. seçenek olarak** ekleniyor. Bu yüzden hem legacy URL'de hem de kanonik URL'de aynı anda görünür.
 - **Tespit:** `grep -i "8060\|8061\|8062\|..." src/data/products.json` yerine daha pratik yöntem: sorunlu ürünün model kodunu (örn. `KDL510`) `slug-map.json`'da ara, aynı isme yakın ama sayısal `id`'ye giden başka slug'lar var mı bak (örn. `"kdl510-...": "8060"`).
-- **Çözüm (standart 3 adım):**
+- **Çözüm (standart 4 adım):**
   1. `slug-map.json`'da o sayısal id'ye giden **tüm** slug'ları kanonik `id`'ye yönlendir (örn. `"8060"` → `"KDL510"`).
-  2. `products.json`'dan o sayısal id'li kaydı **tamamen sil**.
-  3. Test et: hem eski (legacy) URL hem kanonik URL 200 dönmeli ve içerikte `"CCT"` string'i **hiç geçmemeli**.
+  2. `products.json`'dan o sayısal id'li kaydı **tamamen sil**. (Bu adımları manuel yapmak yerine Node.js scripti ile otomatik yapmayı tercih et).
+  3. **Eksik Fotoğraf Kurtarma:** Eğer yeni JSON dosyasında örneğin `kes120.webp` isteniyorsa ama sistemde sadece eski legacy ürünlerin `kes1205wbeyaz.webp` gibi varyant fotoğrafları varsa, bu fotoğraflardan uygun olanı (örn. beyaz olanı) kanonik isimle (`kes120.webp`) kopyalamayı unutma.
+  4. Test et: hem eski (legacy) URL hem kanonik URL 200 dönmeli ve içerikte `"CCT"` string'i **hiç geçmemeli**.
 - **Önemli:** Bu temizliği yaparken kanonik ürünün gerçekten var olduğundan emin ol (`grep "\"KDL510\":" products.json`) — yoksa önce kanonik ürünü oluşturman gerekir, legacy kaydı silme.
 - Bu pattern'i şu ürünlerde bulup düzelttik: KDL540/541, KDL510/511, KDL487, KDL4142, KDL4140 — aynı ailede bir tanesini bulunca genelde **kardeş üründe de aynı sorun var** (örn. KDL510 sorununu ararken KDL511'de de aynısını bulduk), o yüzden watt/id kardeşlerini de kontrol et.
 
