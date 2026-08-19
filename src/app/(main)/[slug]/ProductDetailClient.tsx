@@ -41,7 +41,10 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const name = product.name[language] || product.name.tr;
   const attributes = product.attributes[language] || product.attributes.tr;
-  const imageUrl = getProductImageUrl(product.image);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const currentImage = selectedImage || product.image;
+  const imageUrl = getProductImageUrl(currentImage);
+  const allImages = [product.image, ...(product.images || [])].filter((val, i, arr) => arr.indexOf(val) === i); // unique
 
   const isK2 = brandName === "k2";
   const isVanti = brandName === "vanti";
@@ -364,6 +367,30 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 </div>
               </div>
 
+              {/* THUMBNAIL GALLERY */}
+              {allImages.length > 1 && (
+                <div className="flex flex-wrap justify-center gap-3 mt-2 mb-4 w-full max-w-sm">
+                  {allImages.map((imgUrl, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setSelectedImage(imgUrl)}
+                      className={`relative w-14 h-14 md:w-16 md:h-16 rounded-xl border-2 overflow-hidden transition-all duration-300 ${
+                        currentImage === imgUrl 
+                          ? (isLight ? "border-zinc-800 scale-110 shadow-md" : "border-white scale-110 shadow-[0_0_15px_rgba(255,255,255,0.3)]") 
+                          : (isLight ? "border-zinc-200/60 hover:border-zinc-400 opacity-70 hover:opacity-100" : "border-white/10 hover:border-white/40 opacity-50 hover:opacity-100")
+                      } ${isLight ? 'bg-white/80' : 'bg-white/5'}`}
+                    >
+                      <Image 
+                        src={getProductImageUrl(imgUrl)} 
+                        alt={`${name} thumbnail ${idx + 1}`} 
+                        fill 
+                        className={`object-contain p-1.5 ${isLight ? 'mix-blend-multiply' : ''}`}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
+
               {/* Ürün Bilgi Formu (PDF) */}
               {pdfFormFile && (
                 <a
@@ -438,7 +465,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               const uniqueSockets = Array.from(new Set(variantData.filter(v => !currentVariantData.watt || v.watt === currentVariantData.watt).map(v => v.socket).filter(s => s)));
               
               // To support comma-separated string options on single products, we flatMap them
-              const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => v.colorTemp ? v.colorTemp.split(',').map((c: string) => c.trim()) : []).filter((c: string) => c && c !== "Standart")));
+              const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
+                if (!v.colorTemp) return [];
+                if (v.colorTemp.startsWith("CCT")) return [v.colorTemp];
+                return v.colorTemp.split(',').map((c: string) => c.trim());
+              }).filter((c: string) => c && c !== "Standart")));
 
               const getBestVariantMatch = (targetAttr: 'watt' | 'socket' | 'colorTemp', value: string) => {
                 // For colorTemp, allow matching if the value is part of a comma-separated string
@@ -499,6 +530,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 else if (ctUpper.includes("KIRMIZI")) specificDotColor = 'bg-red-500';
                 else if (ctUpper.includes("PEMBE")) specificDotColor = 'bg-pink-500';
                 else if (ctUpper.includes("TURUNCU")) specificDotColor = 'bg-orange-500';
+                else if (ctUpper.includes("CCT")) specificDotColor = 'bg-gradient-to-r from-[#FFB46B] via-[#E4F1FE] to-[#FFEDC2]';
                 else if (ctUpper.includes("RGB")) specificDotColor = 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500';
 
                 return (

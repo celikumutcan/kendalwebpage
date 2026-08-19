@@ -11,6 +11,7 @@ export interface Product {
   id: string;
   model: string;
   image: string; // relative path, e.g. "catalog/image/catalog/urunler/kes1205wbeyaz.jpg"
+  images?: string[]; // optional array of additional image paths
   name: { tr: string; en: string };
   attributes: { tr: ProductAttribute[]; en: ProductAttribute[] };
   category?: { tr: string[]; en: string[] };

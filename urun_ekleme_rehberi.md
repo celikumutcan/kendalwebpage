@@ -11,7 +11,7 @@ Ben senin dünkü versiyonunum. Kullanıcıyla (Umutcan) yoğun bir ürün giri�
 Kullanıcı sana yeni ürünlerin olduğu bir JSON bloğu atacak. Şunları **mutlaka** yapmalısın:
 
 - **Özellikleri Birleştirme:** Kullanıcının JSON'ında `Özellik 1`, `Özellik 2`, `Garanti`, `Ekstra Özellik` gibi dağınık anahtarlar olabilir. Bunların **tamamını** `Özellik` (İngilizce ise `Feature`) adı altında, aralarına `" / "` koyarak birleştirmelisin. (Örn: `"Kompakt Driver Özelliği / Yerli Üretim / 5 Yıl Garanti"`).
-- **Renk Sıcaklığı (CCT) Ayrımı:** JSON'daki `Renk Sıcaklığı` alanını attributes listesinden **çıkar** ve ürünün root dizinindeki `variantOptions.light` alanına string olarak yaz (Örn: `"Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"`).
+- **Renk Sıcaklığı (CCT) Ayrımı:** JSON'daki `Renk Sıcaklığı` veya `CCT` alanını attributes listesinden **çıkar** ve ürünün root dizinindeki `variantOptions.light` alanına string olarak yaz. Eğer özellik dümdüz bir CCT (veya 3 Renk Fonksiyonlu) ürünse ve 3 rengi birden içeriyorsa, bu değerin başına `"CCT ("` koyup sonuna `")"` eklemelisin. Örn: `"CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"`. Böylece sistem bunu tek bir "çok renkli" yuvarlak buton olarak render edecektir.
 - **Bağımsız Ürünler (Çok Önemli!):** Eğer kullanıcı sana aynı base modele sahip ama boyutları farklı (Örn: KDL4140_30x30, KDL4140_60x60) ayrı JSON'lar atarsa, bunların **`model` değerini kesinlikle kendi `id` değerleriyle aynı yap** (Yani `model: "KDL4140_60X60"`). Aksi takdirde Next.js bunları tek ürünün varyantları sanıp butonlarla birbirine bağlıyor ve ayrı sayfalar oluşmuyor! Kullanıcı bunu ASLA istemiyor.
 - Tüm ürünleri Node.js script'i yazıp `src/data/products.json` dosyasına ekle.
 
@@ -90,3 +90,9 @@ Bu genel bir düzeltme — hangi ürünün slug'ında ham ş/ı/ğ olursa olsun 
 **Not:** Windows'ta lokal `next build` denerken slug içinde `*` (yıldız) geçen bir sayfa (örn. `gdl418-40w-backlight-60*60-...`) "ENOENT: mkdir" hatasıyla patlar — bu SADECE Windows dosya sistemi kısıtlaması, Linux'ta (GitHub Actions `ubuntu-latest`) sorun değil, görürsen paniğe gerek yok.
 
 **Özet:** İşlemleri sessizce, hızlıca node.js scriptleriyle yap, JSON'ı temizle, WEBP'yi bas, eski slugları yönlendir, "CCT" duplicate'lerini temizle, redirect'leri encode et ve arkanda çöp bırakma! Kolay gelsin. 🚀
+
+## 9. Çoklu Fotoğraf / Galeri Desteği (Yeni Özellik)
+
+Sisteme `images?: string[]` desteği eklendi! Eğer bir ürünün birden fazla açısı veya birden fazla rengi varsa, ürün sayfasında ana resmin hemen altında cam efektli bir "Küçük Resim Galerisi" (thumbnail gallery) açılır.
+- **Nasıl Yapılır?** Eğer aynı ürüne ait (örneğin KES475) birden fazla fotoğraf (örneğin `kes475.webp`, `kes475-mavi.webp`) klasördeyse, `attach_multiple_images.js` (veya benzeri) bir MD5 hashing script'i ile bu klasörü tarat. MD5 (file hash) kontrolü ile birbirinin pikselsel olarak **tamamen aynısı olan kopyaları eledikten sonra**, eşsiz olan tüm fotoğrafların yollarını `products.json`'da ilgili ürünün `images` array'ine (`["urunler/kes475.webp", "urunler/kes475-mavi.webp"]` şeklinde) yazdır.
+- **Önemli Kural:** Hashing yapmadan fotoğrafları direkt isimle bağlama, yoksa ana fotoğrafın kopyaları galeride gereksiz yere tekrar eder (Kullanıcı bundan nefret eder). Her zaman dosya içeriklerini/hash'lerini karşılaştırarak bağla!

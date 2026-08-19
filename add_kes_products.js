@@ -2,273 +2,141 @@ const fs = require('fs');
 const path = require('path');
 
 const newProductsInput = {
-  "KES602": {
-    "id": "KES602",
-    "model": "KES602",
-    "image": "urunler/kes602.webp",
+  "KES010": {
+    "id": "KES010",
+    "model": "KES010",
+    "image": "urunler/kes010.webp",
     "name": {
-      "tr": "KES602 LED FLAMANLI AMPUL (G45) (RUSTİK)",
-      "en": "KES602 LED FILAMENT BULB (G45) (RUSTIC)"
+      "tr": "KES010 G9 DUY LEDLİ AMPUL",
+      "en": "KES010 G9 SOCKET LED BULB"
     },
     "attributes": {
       "tr": [
-        { "label": "Watt", "value": "4W" },
-        { "label": "Lümen", "value": "430" },
-        { "label": "Kasa", "value": "G45" },
-        { "label": "Duy", "value": "E27" },
-        { "label": "Renk Sıcaklığı", "value": "Amber" },
+        { "label": "Watt", "value": "2W" },
+        { "label": "Lümen", "value": "200" },
+        { "label": "Duy", "value": "G9" },
         { "label": "Gerilim", "value": "220-240V" },
+        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
         { "label": "Çalışma Ömrü", "value": "20000 Saat" },
         { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "7.5 cm x 4.5 cm" },
-        { "label": "Garanti", "value": "3 Yıl" },
-        { "label": "Özellik", "value": "IC Driver" },
-        { "label": "Özellik", "value": "Rustik" },
-        { "label": "Ekstra Özellik", "value": "Yerli Üretim" }
+        { "label": "Ölçüler", "value": "55 mm x 16 mm" },
+        { "label": "Açıklama", "value": "COB Led" }
       ],
       "en": [
-        { "label": "Watt", "value": "4W" },
-        { "label": "Lumen", "value": "430" },
-        { "label": "Case", "value": "G45" },
-        { "label": "Socket", "value": "E27" },
-        { "label": "Color Temperature", "value": "Amber" },
+        { "label": "Watt", "value": "2W" },
+        { "label": "Lumen", "value": "200" },
+        { "label": "Socket", "value": "G9" },
         { "label": "Voltage", "value": "220-240V" },
+        { "label": "Color Temperature", "value": "3000K, 6500K" },
         { "label": "Life Span", "value": "20000 Hours" },
         { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "7.5 cm x 4.5 cm" },
-        { "label": "Warranty", "value": "3 Years" },
-        { "label": "Feature", "value": "IC Driver" },
-        { "label": "Feature", "value": "Rustic" },
-        { "label": "Extra Feature", "value": "Domestic Production" }
+        { "label": "Dimensions", "value": "55 mm x 16 mm" },
+        { "label": "Description", "value": "COB Led" }
       ]
     },
     "category": {
       "tr": [
-        "LED Flaman Ampul"
+        "LED Ampul"
       ],
       "en": [
-        "LED Filament Bulb"
+        "LED Bulb"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "4W"
+      "watt": "2W"
     }
   },
-  "KES603": {
-    "id": "KES603",
-    "model": "KES603",
-    "image": "urunler/kes603.webp",
+  "KES016": {
+    "id": "KES016",
+    "model": "KES016",
+    "image": "urunler/kes016.webp",
     "name": {
-      "tr": "KES603 LED FLAMANLI AMPUL (A60) (RUSTİK)",
-      "en": "KES603 LED FILAMENT BULB (A60) (RUSTIC)"
+      "tr": "KES016 G9 DUY LEDLİ AMPUL - DİM",
+      "en": "KES016 G9 SOCKET LED BULB - DIMMABLE"
     },
     "attributes": {
       "tr": [
-        { "label": "Watt", "value": "6W" },
-        { "label": "Lümen", "value": "600" },
-        { "label": "Kasa", "value": "A60" },
-        { "label": "Duy", "value": "E27" },
-        { "label": "Renk Sıcaklığı", "value": "Amber" },
+        { "label": "Watt", "value": "5W" },
+        { "label": "Lümen", "value": "270" },
+        { "label": "Duy", "value": "G9" },
         { "label": "Gerilim", "value": "220-240V" },
+        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
         { "label": "Çalışma Ömrü", "value": "20000 Saat" },
         { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "10.6 cm x 6 cm" },
-        { "label": "Garanti", "value": "3 Yıl" },
-        { "label": "Özellik", "value": "IC Driver" },
-        { "label": "Özellik", "value": "Rustik" },
-        { "label": "Ekstra Özellik", "value": "Yerli Üretim" }
-      ],
-      "en": [
-        { "label": "Watt", "value": "6W" },
-        { "label": "Lumen", "value": "600" },
-        { "label": "Case", "value": "A60" },
-        { "label": "Socket", "value": "E27" },
-        { "label": "Color Temperature", "value": "Amber" },
-        { "label": "Voltage", "value": "220-240V" },
-        { "label": "Life Span", "value": "20000 Hours" },
-        { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "10.6 cm x 6 cm" },
-        { "label": "Warranty", "value": "3 Years" },
-        { "label": "Feature", "value": "IC Driver" },
-        { "label": "Feature", "value": "Rustic" },
-        { "label": "Extra Feature", "value": "Domestic Production" }
-      ]
-    },
-    "category": {
-      "tr": [
-        "LED Flaman Ampul"
-      ],
-      "en": [
-        "LED Filament Bulb"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
-    }
-  },
-  "KES604": {
-    "id": "KES604",
-    "model": "KES604",
-    "image": "urunler/kes604.webp",
-    "name": {
-      "tr": "KES604 LED FLAMANLI AMPUL (A60) (RUSTİK)",
-      "en": "KES604 LED FILAMENT BULB (A60) (RUSTIC)"
-    },
-    "attributes": {
-      "tr": [
-        { "label": "Watt", "value": "8W" },
-        { "label": "Lümen", "value": "800" },
-        { "label": "Kasa", "value": "A60" },
-        { "label": "Duy", "value": "E27" },
-        { "label": "Renk Sıcaklığı", "value": "Amber" },
-        { "label": "Gerilim", "value": "220-240V" },
-        { "label": "Çalışma Ömrü", "value": "20000 Saat" },
-        { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "10.6 cm x 6 cm" },
-        { "label": "Garanti", "value": "3 Yıl" },
-        { "label": "Özellik", "value": "IC Driver" },
-        { "label": "Özellik", "value": "Rustik" },
-        { "label": "Ekstra Özellik", "value": "Yerli Üretim" }
-      ],
-      "en": [
-        { "label": "Watt", "value": "8W" },
-        { "label": "Lumen", "value": "800" },
-        { "label": "Case", "value": "A60" },
-        { "label": "Socket", "value": "E27" },
-        { "label": "Color Temperature", "value": "Amber" },
-        { "label": "Voltage", "value": "220-240V" },
-        { "label": "Life Span", "value": "20000 Hours" },
-        { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "10.6 cm x 6 cm" },
-        { "label": "Warranty", "value": "3 Years" },
-        { "label": "Feature", "value": "IC Driver" },
-        { "label": "Feature", "value": "Rustic" },
-        { "label": "Extra Feature", "value": "Domestic Production" }
-      ]
-    },
-    "category": {
-      "tr": [
-        "LED Flaman Ampul"
-      ],
-      "en": [
-        "LED Filament Bulb"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W"
-    }
-  },
-  "KES630": {
-    "id": "KES630",
-    "model": "KES630",
-    "image": "urunler/kes630.webp",
-    "name": {
-      "tr": "KES630 LED FLAMANLI AMPUL (A60) (RUSTİK) - DİM",
-      "en": "KES630 LED FILAMENT BULB (A60) (RUSTIC) - DIMMABLE"
-    },
-    "attributes": {
-      "tr": [
-        { "label": "Watt", "value": "4W" },
-        { "label": "Lümen", "value": "440" },
-        { "label": "Kasa", "value": "A60" },
-        { "label": "Duy", "value": "E27" },
-        { "label": "Renk Sıcaklığı", "value": "Amber" },
-        { "label": "Gerilim", "value": "220-240V" },
-        { "label": "Çalışma Ömrü", "value": "20000 Saat" },
-        { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "10.6 cm x 6 cm" },
-        { "label": "Garanti", "value": "3 Yıl" },
+        { "label": "Ölçüler", "value": "46 mm x 16 mm" },
         { "label": "Özellik", "value": "Dimlenebilir" },
-        { "label": "Özellik", "value": "IC Driver" },
-        { "label": "Özellik", "value": "Rustik" },
-        { "label": "Ekstra Özellik", "value": "Yerli Üretim" }
+        { "label": "Açıklama", "value": "COB Led" }
       ],
       "en": [
-        { "label": "Watt", "value": "4W" },
-        { "label": "Lumen", "value": "440" },
-        { "label": "Case", "value": "A60" },
-        { "label": "Socket", "value": "E27" },
-        { "label": "Color Temperature", "value": "Amber" },
+        { "label": "Watt", "value": "5W" },
+        { "label": "Lumen", "value": "270" },
+        { "label": "Socket", "value": "G9" },
         { "label": "Voltage", "value": "220-240V" },
+        { "label": "Color Temperature", "value": "3000K, 6500K" },
         { "label": "Life Span", "value": "20000 Hours" },
         { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "10.6 cm x 6 cm" },
-        { "label": "Warranty", "value": "3 Years" },
+        { "label": "Dimensions", "value": "46 mm x 16 mm" },
         { "label": "Feature", "value": "Dimmable" },
-        { "label": "Feature", "value": "IC Driver" },
-        { "label": "Feature", "value": "Rustic" },
-        { "label": "Extra Feature", "value": "Domestic Production" }
+        { "label": "Description", "value": "COB Led" }
       ]
     },
     "category": {
       "tr": [
-        "LED Flaman Ampul"
+        "LED Ampul"
       ],
       "en": [
-        "LED Filament Bulb"
+        "LED Bulb"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "4W"
+      "watt": "5W"
     }
   },
-  "KES631": {
-    "id": "KES631",
-    "model": "KES631",
-    "image": "urunler/kes631.webp",
+  "KES110": {
+    "id": "KES110",
+    "model": "KES110",
+    "image": "urunler/kes110.webp",
     "name": {
-      "tr": "KES631 LED FLAMANLI AMPUL (A60) (RUSTİK) - DİM",
-      "en": "KES631 LED FILAMENT BULB (A60) (RUSTIC) - DIMMABLE"
+      "tr": "KES110 G9 DUY LEDLİ AMPUL",
+      "en": "KES110 G9 SOCKET LED BULB"
     },
     "attributes": {
       "tr": [
-        { "label": "Watt", "value": "6W" },
-        { "label": "Lümen", "value": "540" },
-        { "label": "Kasa", "value": "A60" },
-        { "label": "Duy", "value": "E27" },
-        { "label": "Renk Sıcaklığı", "value": "Amber" },
+        { "label": "Watt", "value": "3W" },
+        { "label": "Lümen", "value": "200" },
+        { "label": "Duy", "value": "G9" },
         { "label": "Gerilim", "value": "220-240V" },
+        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
         { "label": "Çalışma Ömrü", "value": "20000 Saat" },
         { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "10.6 cm x 6 cm" },
-        { "label": "Garanti", "value": "3 Yıl" },
-        { "label": "Özellik", "value": "Dimlenebilir" },
-        { "label": "Özellik", "value": "IC Driver" },
-        { "label": "Özellik", "value": "Rustik" },
-        { "label": "Ekstra Özellik", "value": "Yerli Üretim" }
+        { "label": "Ölçüler", "value": "55 mm x 16 mm" },
+        { "label": "Açıklama", "value": "SMD Led" }
       ],
       "en": [
-        { "label": "Watt", "value": "6W" },
-        { "label": "Lumen", "value": "540" },
-        { "label": "Case", "value": "A60" },
-        { "label": "Socket", "value": "E27" },
-        { "label": "Color Temperature", "value": "Amber" },
+        { "label": "Watt", "value": "3W" },
+        { "label": "Lumen", "value": "200" },
+        { "label": "Socket", "value": "G9" },
         { "label": "Voltage", "value": "220-240V" },
+        { "label": "Color Temperature", "value": "3000K, 6500K" },
         { "label": "Life Span", "value": "20000 Hours" },
         { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "10.6 cm x 6 cm" },
-        { "label": "Warranty", "value": "3 Years" },
-        { "label": "Feature", "value": "Dimmable" },
-        { "label": "Feature", "value": "IC Driver" },
-        { "label": "Feature", "value": "Rustic" },
-        { "label": "Extra Feature", "value": "Domestic Production" }
+        { "label": "Dimensions", "value": "55 mm x 16 mm" },
+        { "label": "Description", "value": "SMD Led" }
       ]
     },
     "category": {
       "tr": [
-        "LED Flaman Ampul"
+        "LED Ampul"
       ],
       "en": [
-        "LED Filament Bulb"
+        "LED Bulb"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "6W"
+      "watt": "3W"
     }
   }
 };
@@ -302,11 +170,19 @@ for (const key of Object.keys(newProductsInput)) {
     const processAttributes = (lang) => {
         let attrs = newProduct.attributes[lang] || [];
         
-        const lightAttrIndex = attrs.findIndex(a => a.label === "Renk Sıcaklığı" || a.label === "Color Temperature");
+        // Add CCT support
+        const lightAttrIndex = attrs.findIndex(a => a.label === "Renk Sıcaklığı" || a.label === "Color Temperature" || a.label === "CCT");
         if (lightAttrIndex !== -1) {
+            const isCCT = attrs[lightAttrIndex].label === "CCT";
             const lightStr = attrs[lightAttrIndex].value;
             newProduct.variantOptions = newProduct.variantOptions || {};
-            newProduct.variantOptions.light = mapColorStr(lightStr);
+            
+            const mappedStr = mapColorStr(lightStr);
+            if (isCCT || (lightStr.split(',').length > 1 && attrs.some(a => a.value.includes("3 Renk Fonksiyonu") || a.value.includes("3 Color Function")))) {
+                newProduct.variantOptions.light = "CCT (" + mappedStr + ")";
+            } else {
+                newProduct.variantOptions.light = mappedStr;
+            }
             attrs.splice(lightAttrIndex, 1);
         }
 
@@ -322,7 +198,7 @@ for (const key of Object.keys(newProductsInput)) {
         let remainingAttrs = [];
         
         for (const attr of attrs) {
-            if (attr.label.includes("Özellik") || attr.label.includes("Feature") || attr.label.includes("Garanti") || attr.label.includes("Warranty")) {
+            if (attr.label.includes("Özellik") || attr.label.includes("Feature") || attr.label.includes("Açıklama") || attr.label.includes("Description") || attr.label.includes("Garanti") || attr.label.includes("Warranty")) {
                 mergedFeatures.push(attr.value);
             } else {
                 remainingAttrs.push(attr);
