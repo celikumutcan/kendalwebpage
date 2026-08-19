@@ -75,6 +75,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   let themePillBg = "bg-white/10";
   let badgeColor = "bg-zinc-800 text-zinc-300 border-zinc-700";
   let ambientGlow = "bg-white/10";
+  let themeImageBg = "bg-white/[0.03]";
 
   if (isLight) {
     if (isK2) {
@@ -84,6 +85,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themePillBg = "bg-orange-50";
       badgeColor = "bg-orange-100 text-orange-700 border-orange-200";
       ambientGlow = "bg-orange-200";
+      themeImageBg = "bg-orange-50/80";
     } else if (isVanti) {
       themeColor = "bg-blue-600";
       themeText = "text-blue-600";
@@ -91,6 +93,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themePillBg = "bg-blue-50";
       badgeColor = "bg-blue-100 text-blue-700 border-blue-200";
       ambientGlow = "bg-blue-200";
+      themeImageBg = "bg-blue-50/80";
     } else if (isGlobal) {
       themeColor = "bg-[#FFDA51]";
       themeText = "text-amber-600";
@@ -98,6 +101,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themePillBg = "bg-amber-50";
       badgeColor = "bg-amber-100 text-amber-700 border-amber-200";
       ambientGlow = "bg-[#FFDA51]/30";
+      themeImageBg = "bg-amber-50/80";
     }
   }
 
@@ -125,7 +129,37 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
   // Split Attributes into Specs and Features
   const allAttrs = attributes || [];
-  const rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
+  let rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
+
+  // Include CCT if it was filtered out by the "Renk" filter, or inject it from variantOptions
+  const isCctLike = (val: string | null | undefined) => {
+    if (!val) return false;
+    const upper = val.toUpperCase();
+    if (upper.includes("CCT")) return true;
+    return (upper.includes("3000K") && upper.includes("6500K")) || 
+           (upper.includes("3000K") && upper.includes("4000K")) || 
+           (upper.includes("4000K") && upper.includes("6500K")) ||
+           (upper.includes("GÜNIŞIĞI") && upper.includes("BEYAZ")) ||
+           (upper.includes("GUNISIGI") && upper.includes("BEYAZ"));
+  };
+
+  const cctValue = isCctLike(product.variantOptions?.casing)
+    ? product.variantOptions?.casing 
+    : (isCctLike(product.variantOptions?.light) ? product.variantOptions?.light : null);
+    
+  const hasCctInRaw = rawSpecs.some(attr => isCctLike(String(attr.value)));
+  const hasCctInAll = allAttrs.some(attr => isCctLike(String(attr.value)));
+
+  if (!hasCctInRaw) {
+    if (cctValue) {
+      rawSpecs.push({ label: language === "tr" ? "Işık Rengi" : "Light Color", value: cctValue });
+    } else if (hasCctInAll) {
+      const cctAttr = allAttrs.find(attr => isCctLike(String(attr.value)));
+      if (cctAttr) {
+        rawSpecs.push({ label: language === "tr" ? "Işık Rengi" : "Light Color", value: cctAttr.value });
+      }
+    }
+  }
 
   const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions"];
 
@@ -347,12 +381,12 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 {/* The Glassmorphism Box */}
                 <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-8 md:p-10 z-10 rounded-[2.5rem] transition-all duration-500 group-hover/showcase:-translate-y-1.5
                   ${isLight
-                    ? 'bg-white/60 backdrop-blur-2xl border border-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.15)]'
+                    ? `${themeImageBg} backdrop-blur-2xl border border-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.15)]`
                     : 'bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_100px_-20px_rgba(0,0,0,0.9)]'
                   }`}
                 >
                   {/* Subtle top sheen */}
-                  <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/70 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
+                  <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/40 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
 
                   {/* Corner accent brackets */}
                   <div className={`absolute top-5 left-5 w-5 h-5 border-t-2 border-l-2 rounded-tl-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
@@ -378,7 +412,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                         currentImage === imgUrl 
                           ? (isLight ? "border-zinc-800 scale-110 shadow-md" : "border-white scale-110 shadow-[0_0_15px_rgba(255,255,255,0.3)]") 
                           : (isLight ? "border-zinc-200/60 hover:border-zinc-400 opacity-70 hover:opacity-100" : "border-white/10 hover:border-white/40 opacity-50 hover:opacity-100")
-                      } ${isLight ? 'bg-white/80' : 'bg-white/5'}`}
+                      } ${isLight ? themeImageBg : 'bg-white/5'}`}
                     >
                       <Image 
                         src={getProductImageUrl(imgUrl)} 
@@ -467,7 +501,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               // To support comma-separated string options on single products, we flatMap them
               const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
                 if (!v.colorTemp) return [];
-                if (v.colorTemp.startsWith("CCT")) return [v.colorTemp];
+                if (isCctLike(v.colorTemp)) return [];
                 return v.colorTemp.split(',').map((c: string) => c.trim());
               }).filter((c: string) => c && c !== "Standart")));
 
