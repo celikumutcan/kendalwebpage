@@ -96,3 +96,11 @@ Bu genel bir düzeltme — hangi ürünün slug'ında ham ş/ı/ğ olursa olsun 
 Sisteme `images?: string[]` desteği eklendi! Eğer bir ürünün birden fazla açısı veya birden fazla rengi varsa, ürün sayfasında ana resmin hemen altında cam efektli bir "Küçük Resim Galerisi" (thumbnail gallery) açılır.
 - **Nasıl Yapılır?** Eğer aynı ürüne ait (örneğin KES475) birden fazla fotoğraf (örneğin `kes475.webp`, `kes475-mavi.webp`) klasördeyse, `attach_multiple_images.js` (veya benzeri) bir MD5 hashing script'i ile bu klasörü tarat. MD5 (file hash) kontrolü ile birbirinin pikselsel olarak **tamamen aynısı olan kopyaları eledikten sonra**, eşsiz olan tüm fotoğrafların yollarını `products.json`'da ilgili ürünün `images` array'ine (`["urunler/kes475.webp", "urunler/kes475-mavi.webp"]` şeklinde) yazdır.
 - **Önemli Kural:** Hashing yapmadan fotoğrafları direkt isimle bağlama, yoksa ana fotoğrafın kopyaları galeride gereksiz yere tekrar eder (Kullanıcı bundan nefret eder). Her zaman dosya içeriklerini/hash'lerini karşılaştırarak bağla!
+
+## 10. Fotoğraf Silme (Kullanıcı "Fotoğraf Sil" Dediğinde)
+
+Kullanıcı senden belirli bir ürünün ek fotoğraflarını silmeni istediğinde (Örn: "KES046 5 tane sil, 2. kalsın", "KES222 1 tane fotosunu sil"), işlemi eksiksiz yapmak için şu adımları **mutlaka** izlemelisin:
+1. **JSON Güncellemesi:** Hedef ürünleri `src/data/products.json` içinde bul ve `images` array'inden (veya ana `image` alanından) istenilen fotoğrafları çıkar.
+2. **Fiziksel Silme (ÇOK ÖNEMLİ):** Sadece JSON dosyasını güncellemek yetmez. Sildiğin fotoğrafların dosya yollarını (genelde `public/images/urunler/...webp`) tespit et ve Node.js `fs.unlinkSync()` veya PowerShell komutları kullanarak **fiziksel olarak projeden tamamen sil**. Projenin boşuna şişmemesi kullanıcının kesin talebidir.
+3. Bu iki işlemi tercihen tek bir Node.js scripti yazarak (`node -e "..."` ile veya geçici bir js dosyası ile) hızlıca hallet.
+

@@ -158128,7 +158128,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "12W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
@@ -158228,7 +158228,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "15W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
@@ -158328,7 +158328,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "18W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
@@ -158428,7 +158428,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "20W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -158528,7 +158528,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "30W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -158628,7 +158628,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "40W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -158728,7 +158728,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "50W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -158828,7 +158828,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "60W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -158928,7 +158928,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "20W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -159028,7 +159028,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "30W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -159128,7 +159128,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "40W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -159228,7 +159228,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "50W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -159328,7 +159328,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "60W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
@@ -161211,7 +161211,7 @@
         "LED Bulb"
       ]
     },
-    "brand": "k2",
+    "brand": "global",
     "variantOptions": {
       "watt": "9.5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
@@ -170328,11 +170328,7 @@
     "variantOptions": {
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes1205wararenk.webp",
-      "urunler/kes1205wgnisk.webp"
-    ]
+    }
   },
   "KES126": {
     "id": "KES126",
@@ -170432,11 +170428,7 @@
     "variantOptions": {
       "watt": "8W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes126-8wararenk.webp",
-      "urunler/kes126-8wgnisk.webp"
-    ]
+    }
   },
   "KES122": {
     "id": "KES122",
@@ -170536,11 +170528,7 @@
     "variantOptions": {
       "watt": "10W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes12210wararenk.webp",
-      "urunler/kes12210wgnisk.webp"
-    ]
+    }
   },
   "KES123": {
     "id": "KES123",
@@ -170640,11 +170628,7 @@
     "variantOptions": {
       "watt": "12W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes12312wararenk.webp",
-      "urunler/kes12312wgnisk.webp"
-    ]
+    }
   },
   "KES181": {
     "id": "KES181",
@@ -170744,11 +170728,7 @@
     "variantOptions": {
       "watt": "9W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes181-9wararenk.webp",
-      "urunler/kes181-m.webp"
-    ]
+    }
   },
   "KES185": {
     "id": "KES185",
@@ -170948,10 +170928,7 @@
     "variantOptions": {
       "watt": "14W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes182-14wararenk.webp"
-    ]
+    }
   },
   "KES130": {
     "id": "KES130",
@@ -171051,10 +171028,7 @@
     "variantOptions": {
       "watt": "20W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes13020wgnisk.webp"
-    ]
+    }
   },
   "KES131": {
     "id": "KES131",
@@ -171154,10 +171128,7 @@
     "variantOptions": {
       "watt": "30W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes13130wgnisk.webp"
-    ]
+    }
   },
   "KES132": {
     "id": "KES132",
@@ -171257,10 +171228,7 @@
     "variantOptions": {
       "watt": "40W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes13240wgnisk.webp"
-    ]
+    }
   },
   "KES133": {
     "id": "KES133",
@@ -171360,10 +171328,7 @@
     "variantOptions": {
       "watt": "50W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes13350wgnisk.webp"
-    ]
+    }
   },
   "KES134": {
     "id": "KES134",
@@ -171463,10 +171428,7 @@
     "variantOptions": {
       "watt": "60W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kes13460wgnisk.webp"
-    ]
+    }
   },
   "KES209": {
     "id": "KES209",
@@ -171559,9 +171521,7 @@
       "watt": "8W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes2098we14gni.webp"
-    ]
+    "images": []
   },
   "KES183": {
     "id": "KES183",
@@ -171746,9 +171706,7 @@
       "watt": "7W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes1847we14arn.webp"
-    ]
+    "images": []
   },
   "KES206": {
     "id": "KES206",
@@ -172033,9 +171991,7 @@
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes2075we27gni.webp"
-    ]
+    "images": []
   },
   "KES208": {
     "id": "KES208",
@@ -172136,9 +172092,7 @@
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes2085we14gni.webp"
-    ]
+    "images": []
   },
   "KFL118": {
     "id": "KFL118",
@@ -172239,11 +172193,7 @@
       "watt": "10W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kfl118-10wararenk.webp",
-      "urunler/kfl118-10wkrmzi.webp",
-      "urunler/kfl118c-florean.webp"
-    ]
+    "images": []
   },
   "KFL136": {
     "id": "KFL136",
@@ -172344,11 +172294,7 @@
       "watt": "20W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kfl13620wararenk.webp",
-      "urunler/kfl13620wmavi.webp",
-      "urunler/kfl136c-floresan.webp"
-    ]
+    "images": []
   },
   "KFL136SE": {
     "id": "KFL136SE",
@@ -172841,10 +172787,7 @@
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes046b5w-ararenk.webp",
-      "urunler/kes046b5w-gunisigi.webp"
-    ]
+    "images": []
   },
   "KES047B": {
     "id": "KES047B",
@@ -172937,9 +172880,7 @@
       "watt": "7W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes047b7w-ararenk.webp"
-    ]
+    "images": []
   },
   "KES046": {
     "id": "KES046",
@@ -173033,11 +172974,7 @@
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
     "images": [
-      "urunler/kes0465w-ararenk.webp",
-      "urunler/kes0465w-gunisigi.webp",
-      "urunler/kes046b.webp",
-      "urunler/kes046b5w-ararenk.webp",
-      "urunler/kes046b5w-gunisigi.webp"
+      "urunler/kes0465w-gunisigi.webp"
     ]
   },
   "KES047": {
@@ -173132,9 +173069,6 @@
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
     "images": [
-      "urunler/kes0477w-ararenk.webp",
-      "urunler/kes0477w-gunisigi.webp",
-      "urunler/kes047b.webp",
       "urunler/kes047b7w-ararenk.webp"
     ]
   },
@@ -173413,9 +173347,7 @@
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes048b.webp"
-    ]
+    "images": []
   },
   "KES049": {
     "id": "KES049",
@@ -173508,10 +173440,7 @@
       "watt": "7W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes049b.webp",
-      "urunler/kes049d-7wararenk.webp"
-    ]
+    "images": []
   },
   "KES049D": {
     "id": "KES049D",
@@ -173821,7 +173750,7 @@
         },
         {
           "label": "Özellik",
-          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
+          "value": "Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
         }
       ],
       "en": [
@@ -173855,7 +173784,7 @@
         },
         {
           "label": "Feature",
-          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
+          "value": "Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
         }
       ]
     },
@@ -173869,7 +173798,8 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "9W"
+      "watt": "9W",
+      "light": "RGB"
     }
   },
   "KES302": {
@@ -173912,7 +173842,7 @@
         },
         {
           "label": "Özellik",
-          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
+          "value": "Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
         }
       ],
       "en": [
@@ -173946,7 +173876,7 @@
         },
         {
           "label": "Feature",
-          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
+          "value": "Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
         }
       ]
     },
@@ -173960,7 +173890,8 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "12W"
+      "watt": "12W",
+      "light": "RGB"
     }
   },
   "KES224": {
@@ -174146,9 +174077,7 @@
       "watt": "9W (12-48V)",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes222-9wgnisk.webp"
-    ]
+    "images": []
   },
   "KES094": {
     "id": "KES094",
@@ -174241,9 +174170,7 @@
       "watt": "9W",
       "light": "Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes0949we27gni.webp"
-    ]
+    "images": []
   },
   "KES300": {
     "id": "KES300",
@@ -174285,7 +174212,7 @@
         },
         {
           "label": "Özellik",
-          "value": "IC Driver / Alüminyum Isı Transfer Modülü / RGB / Uzaktan Kumandalı / Yerli Üretim"
+          "value": "IC Driver / Alüminyum Isı Transfer Modülü / Uzaktan Kumandalı / Yerli Üretim"
         }
       ],
       "en": [
@@ -174319,7 +174246,7 @@
         },
         {
           "label": "Feature",
-          "value": "IC Driver / Aluminum Heat Transfer Module / RGB / Remote Controlled / Domestic Production"
+          "value": "IC Driver / Aluminum Heat Transfer Module / Remote Controlled / Domestic Production"
         }
       ]
     },
@@ -174333,7 +174260,8 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "9W"
+      "watt": "9W",
+      "light": "RGB"
     }
   },
   "KES075": {
@@ -175262,9 +175190,7 @@
       "watt": "4W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes4984wgunisk.webp"
-    ]
+    "images": []
   },
   "KES499": {
     "id": "KES499",
@@ -175357,9 +175283,7 @@
       "watt": "4W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes4994wbeyaz.webp"
-    ]
+    "images": []
   },
   "KES600": {
     "id": "KES600",
@@ -175736,9 +175660,7 @@
       "watt": "6W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes5016wgunisk.webp"
-    ]
+    "images": []
   },
   "KES502": {
     "id": "KES502",
@@ -175839,9 +175761,7 @@
       "watt": "8W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes5028wgunisk.webp"
-    ]
+    "images": []
   },
   "KES620": {
     "id": "KES620",
@@ -176142,9 +176062,7 @@
       "watt": "4W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes4974wgunisk.webp"
-    ]
+    "images": []
   },
   "KES602": {
     "id": "KES602",
@@ -176745,9 +176663,7 @@
       "watt": "6W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes5056wgunisk.webp"
-    ]
+    "images": []
   },
   "KES515": {
     "id": "KES515",
@@ -176848,9 +176764,7 @@
       "watt": "8W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes515-6500k.webp"
-    ]
+    "images": []
   },
   "KES506": {
     "id": "KES506",
@@ -176951,9 +176865,7 @@
       "watt": "6W",
       "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes506-6500k.webp"
-    ]
+    "images": []
   },
   "KES507": {
     "id": "KES507",
@@ -177154,9 +177066,7 @@
       "watt": "4W",
       "light": "Amber"
     },
-    "images": [
-      "urunler/kes6164wbeyaz.webp"
-    ]
+    "images": []
   },
   "KES605": {
     "id": "KES605",
@@ -178507,7 +178417,8 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "5W",
-      "color": "Yellow, Red, Green, Blue"
+      "color": "Yellow, Red, Green, Blue",
+      "light": "Sarı, Kırmızı, Yeşil, Mavi, Beyaz"
     },
     "images": [
       "urunler/kes119-5wmavi.webp",
@@ -178595,14 +178506,10 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "1.5W"
+      "watt": "1.5W",
+      "light": "Sarı, Kırmızı, Yeşil, Mavi, Beyaz"
     },
-    "images": [
-      "urunler/knl3801wldgkrm.webp",
-      "urunler/knl3801wldgmav.webp",
-      "urunler/knl3801wldgsri.webp",
-      "urunler/knl3801wldgysl.webp"
-    ]
+    "images": []
   },
   "KNL381": {
     "id": "KNL381",
@@ -178684,7 +178591,8 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "1.5W"
+      "watt": "1.5W",
+      "light": "Sarı, Kırmızı, Yeşil, Mavi, Beyaz"
     },
     "images": [
       "urunler/knl3811wldgkrm.webp",
@@ -178968,9 +178876,7 @@
       "watt": "30W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes475-30wkuregni.webp"
-    ]
+    "images": []
   },
   "KES473": {
     "id": "KES473",
@@ -179061,7 +178967,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "40W",
-      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+      "light": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
     },
     "images": [
       "urunler/kes473k-750x750-product_popup.webp"
@@ -179156,7 +179062,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "40W",
-      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+      "light": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
     }
   },
   "KES472": {
@@ -179626,9 +179532,7 @@
       "watt": "2W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes006e14beyaz.webp"
-    ]
+    "images": []
   },
   "KES104": {
     "id": "KES104",
@@ -180365,9 +180269,7 @@
       "watt": "5W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     },
-    "images": [
-      "urunler/kes016sari.webp"
-    ]
+    "images": []
   },
   "KES110": {
     "id": "KES110",
