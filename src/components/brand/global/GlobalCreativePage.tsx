@@ -94,13 +94,13 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
       // logo/title reveal. Runs once on load, no scrolling required. Everything
       // is one timeline so ordering (e.g. flash fully gone before logo fades in)
       // stays guaranteed regardless of playback speed.
-      const introTl = gsap.timeline({ delay: 0.3 });
+      const introTl = gsap.timeline({ delay: 0 });
 
       // 1. Cursor slides in toward the switch
       introTl.fromTo(
         cursorRef.current,
         { x: 220, y: 260, opacity: 0 },
-        { x: CURSOR_END_X, y: CURSOR_END_Y, opacity: 1, duration: 1.3, ease: "power2.out" }
+        { x: CURSOR_END_X, y: CURSOR_END_Y, opacity: 1, duration: 1.5, ease: "power2.out" }
       );
 
       // 2. Click: a quick scale pulse anchored on the cursor's tip (not the
@@ -120,18 +120,18 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
 
       // 3. Light switches on: flash rises, cursor/switch disappear
       introTl
-        .to(flashRef.current, { opacity: 1, duration: 0.35 }, "+=0.1")
+        .to(flashRef.current, { opacity: 1, duration: 0.25 })
         .to(containerRef.current, { backgroundColor: "#fdfbf5", duration: 0 }, "<")
-        .to([cursorRef.current, ".switch-container"], { opacity: 0, duration: 0.2 }, "<");
+        .to([cursorRef.current, ".switch-container"], { opacity: 0, duration: 0.12 }, "<");
 
       // 4. Flash fully fades out BEFORE the logo starts appearing, so the white
       // overlay never washes out the logo while it's revealing
-      introTl.to(flashRef.current, { opacity: 0, duration: 1.1 }, "+=0.2");
+      introTl.to(flashRef.current, { opacity: 0, duration: 0.18 });
 
       // 5. Reveal logo, title, subtitle, scroll indicator, and a warm gold glow
       // behind the logo — reads as the light actually illuminating the room
       introTl
-        .fromTo(glowRef.current, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1.6 }, "-=0.25")
+        .fromTo(glowRef.current, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1.6 }, "-=0.08")
         .fromTo(logoRef.current, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1 }, "<")
         .fromTo(heroTitleRef.current, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.9 }, "-=0.75")
         .fromTo(heroSubRef.current, { opacity: 0, letterSpacing: "0.1em" }, { opacity: 1, letterSpacing: "0.3em", duration: 0.8 }, "-=0.6")
