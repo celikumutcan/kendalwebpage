@@ -153,9 +153,9 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
             existing.enName = p.category.en[0];
           }
           
-          // Ampuller kategorisinin kapak fotoğrafını sabit KES180 Ararenk yapmak için
-          if (topCat.toLowerCase().includes("ampul")) {
-            existing.sampleImage = "urunler/kes180-8wararenk.webp";
+          // "LED Flaman Ampul" kategorisinin kapak fotoğrafını sabit KES498 yapmak için
+          if (topCat === "LED Flaman Ampul") {
+            existing.sampleImage = "urunler/kes498.webp";
           }
           
           cats.set(topCat, existing);
