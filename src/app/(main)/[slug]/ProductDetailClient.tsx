@@ -206,11 +206,13 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   );
 
   return (
-    <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-24 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#030303] text-white"}`}>
-      
+    <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-24 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#2a2d38] text-white"}`}>
+
       {/* 1. CINEMATIC VIGNETTE & GRAIN NOISE */}
-      <div className="absolute inset-0 pointer-events-none z-[1]" style={{ boxShadow: isLight ? 'inset 0 0 150px rgba(0,0,0,0.03)' : 'inset 0 0 200px rgba(0,0,0,0.8)' }} />
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-[2]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }} />
+      <div className="absolute inset-0 pointer-events-none z-[1]" style={{ boxShadow: isLight ? 'inset 0 0 150px rgba(0,0,0,0.03)' : 'inset 0 0 200px rgba(0,0,0,0.3)' }} />
+      {isLight && (
+        <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-[2]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }} />
+      )}
 
       {/* 2. OVER-THE-TOP PREMIUM DECORATIVE BACKGROUNDS (GPU ACCELERATED) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
@@ -292,26 +294,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </>
         )}
 
-        {/* === KENDAL (CYBERPUNK, DEEP SPACE, NEON) === */}
+        {/* === KENDAL (DEFAULT/DARK) === */}
         {!isLight && (
           <>
-            {/* Deep Space Nebula Glows */}
-            <div className="absolute -left-[20%] top-[-10%] w-[1400px] h-[1400px] rounded-full bg-blue-600/15 blur-[180px] animate-[pulse_15s_ease-in-out_infinite]" />
-            <div className="absolute right-[-20%] top-[30%] w-[1200px] h-[1200px] rounded-full bg-[var(--brand-red)]/15 blur-[180px] animate-[pulse_12s_ease-in-out_infinite_reverse]" />
-            
-            {/* Holographic Center Stage Spotlight */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-[-10%] w-[1000px] h-[800px] bg-gradient-to-b from-indigo-500/20 via-purple-500/5 to-transparent blur-3xl opacity-50" />
-            
-            {/* High-Tech Perspective Grid Floor */}
-            <div className="absolute bottom-0 left-0 right-0 h-[40vh] opacity-20" style={{ backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)', backgroundSize: '100px 40px', transform: 'perspective(500px) rotateX(60deg)', transformOrigin: 'bottom' }} />
-            
-            {/* Glowing Neon Laser Lines */}
-            <div className="absolute left-[15%] top-[-10%] w-[2px] h-[120%] bg-gradient-to-b from-transparent via-blue-400/40 to-transparent shadow-[0_0_20px_rgba(96,165,250,0.8)]" />
-            <div className="absolute right-[15%] top-[-10%] w-[2px] h-[120%] bg-gradient-to-b from-transparent via-[var(--brand-red)]/40 to-transparent shadow-[0_0_20px_rgba(220,38,38,0.8)]" />
-            
-            {/* Floating Dust / Stars */}
-            <div className="absolute left-[30%] top-[20%] w-1 h-1 rounded-full bg-white shadow-[0_0_10px_white] animate-[ping_3s_ease-in-out_infinite]" />
-            <div className="absolute right-[30%] top-[40%] w-1.5 h-1.5 rounded-full bg-blue-300 shadow-[0_0_15px_#93c5fd] animate-[ping_5s_ease-in-out_infinite_reverse]" />
+            <div className="absolute -left-[15%] top-[-10%] w-[1000px] h-[1000px] rounded-full bg-blue-500/20 blur-[180px]" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-[-10%] w-[1000px] h-[800px] bg-gradient-to-b from-indigo-400/20 via-purple-400/10 to-transparent blur-3xl opacity-70" />
           </>
         )}
       </div>

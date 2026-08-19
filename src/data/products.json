@@ -158920,11 +158920,7 @@
     "variantOptions": {
       "watt": "18W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl403s18wbyaz.webp",
-      "urunler/kdl403s18wgnsk-ek.webp"
-    ]
+    }
   },
   "KDL410": {
     "id": "KDL410",
@@ -159688,10 +159684,7 @@
     "variantOptions": {
       "watt": "6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl420b.webp"
-    ]
+    }
   },
   "KDL421": {
     "id": "KDL421",
@@ -159807,10 +159800,7 @@
     "variantOptions": {
       "watt": "12W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl421b.webp"
-    ]
+    }
   },
   "KDL422": {
     "id": "KDL422",
@@ -159926,10 +159916,7 @@
     "variantOptions": {
       "watt": "18W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl422b.webp"
-    ]
+    }
   },
   "KDL423": {
     "id": "KDL423",
@@ -160045,10 +160032,7 @@
     "variantOptions": {
       "watt": "24W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl423b.webp"
-    ]
+    }
   },
   "KDL420B": {
     "id": "KDL420B",
@@ -160752,12 +160736,7 @@
     "variantOptions": {
       "watt": "6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl430-6wgnsik.webp",
-      "urunler/kdl430b.webp",
-      "urunler/kdl430b6wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL431": {
     "id": "KDL431",
@@ -160873,13 +160852,7 @@
     "variantOptions": {
       "watt": "12W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl43112wbeyaz.webp",
-      "urunler/kdl43112wgnsik.webp",
-      "urunler/kdl431b.webp",
-      "urunler/kdl431b12wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL432": {
     "id": "KDL432",
@@ -160995,12 +160968,7 @@
     "variantOptions": {
       "watt": "18W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl43222wbeyaz.webp",
-      "urunler/kdl43222wgnisk.webp",
-      "urunler/kdl432b.webp"
-    ]
+    }
   },
   "KDL433": {
     "id": "KDL433",
@@ -161116,12 +161084,7 @@
     "variantOptions": {
       "watt": "24W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl43326wgnisk.webp",
-      "urunler/kdl433b.webp",
-      "urunler/kdl433b24wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL430B": {
     "id": "KDL430B",
@@ -161237,10 +161200,7 @@
     "variantOptions": {
       "watt": "6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl430b6wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL431B": {
     "id": "KDL431B",
@@ -161356,10 +161316,7 @@
     "variantOptions": {
       "watt": "12W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl431b12wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL432B": {
     "id": "KDL432B",
@@ -161591,10 +161548,7 @@
     "variantOptions": {
       "watt": "24W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl433b24wsyh-gnisk.webp"
-    ]
+    }
   },
   "KDL440": {
     "id": "KDL440",
@@ -161702,11 +161656,7 @@
     "variantOptions": {
       "watt": "4W+3W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl4407wgnisk.webp",
-      "urunler/kdl4407wkrm-byz.webp"
-    ]
+    }
   },
   "KDL441": {
     "id": "KDL441",
@@ -161814,13 +161764,7 @@
     "variantOptions": {
       "watt": "6W+4W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl44110wgnisk.webp",
-      "urunler/kdl44110wkrm-byz.webp",
-      "urunler/kdl44110wkrm-gni.webp",
-      "urunler/kdl44110wkrmgni.webp"
-    ]
+    }
   },
   "KDL442": {
     "id": "KDL442",
@@ -161928,12 +161872,7 @@
     "variantOptions": {
       "watt": "12W+6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl44218wgnisk.webp",
-      "urunler/kdl44218wkrm-byz.webp",
-      "urunler/kdl44218wkrmbyz.webp"
-    ]
+    }
   },
   "KDL443": {
     "id": "KDL443",
@@ -162041,12 +161980,7 @@
     "variantOptions": {
       "watt": "20W+6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl44326wgnisk.webp",
-      "urunler/kdl44326wkrm-byz.webp",
-      "urunler/kdl44326wkrm-gni.webp"
-    ]
+    }
   },
   "KDL444": {
     "id": "KDL444",
@@ -162154,12 +162088,7 @@
     "variantOptions": {
       "watt": "12W+4W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl44416wgnisk.webp",
-      "urunler/kdl44416wkrm-byz.webp",
-      "urunler/kdl44416wkrmbyz.webp"
-    ]
+    }
   },
   "KDL445": {
     "id": "KDL445",
@@ -162267,12 +162196,7 @@
     "variantOptions": {
       "watt": "18W+6W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl44524wgnisk.webp",
-      "urunler/kdl44524wkrm-byz.webp",
-      "urunler/kdl44524wkrmgni.webp"
-    ]
+    }
   },
   "KDL485": {
     "id": "KDL485",
@@ -162948,10 +162872,7 @@
     "variantOptions": {
       "watt": "9W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl465-9wararenk.webp"
-    ]
+    }
   },
   "KDL466": {
     "id": "KDL466",
@@ -163051,10 +162972,7 @@
     "variantOptions": {
       "watt": "18W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl466-18wararenk.webp"
-    ]
+    }
   },
   "KDL467": {
     "id": "KDL467",
@@ -163154,10 +163072,7 @@
     "variantOptions": {
       "watt": "24W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl467-24wararenk.webp"
-    ]
+    }
   },
   "KDL468": {
     "id": "KDL468",
@@ -163257,10 +163172,7 @@
     "variantOptions": {
       "watt": "36W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl468-36wararenk.webp"
-    ]
+    }
   },
   "KDL510": {
     "id": "KDL510",
@@ -165168,10 +165080,7 @@
     "variantOptions": {
       "watt": "25W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/gdl41530wpanara.webp"
-    ]
+    }
   },
   "GDL425": {
     "id": "GDL425",
@@ -165263,10 +165172,7 @@
     "variantOptions": {
       "watt": "40W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/gdl42540wpanara.webp"
-    ]
+    }
   },
   "KDL414": {
     "id": "KDL414",
@@ -165350,16 +165256,7 @@
     "variantOptions": {
       "watt": "25W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": [
-      "urunler/kdl414-led-panel.webp",
-      "urunler/kdl4140-1-sivaalti-armatur.webp",
-      "urunler/kdl4140-enec25wbeyaz-armatur.webp",
-      "urunler/kdl4140-enec40wbeyaz-armatur.webp",
-      "urunler/kdl4140-siva-alti-armatur.webp",
-      "urunler/kdl4140.webp",
-      "urunler/kdl4142.webp"
-    ]
+    }
   },
   "KDL4142": {
     "id": "KDL4142",
@@ -165847,10 +165744,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han013aledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN013B": {
     "id": "HAN013B",
@@ -165898,10 +165792,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han013bledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN013C": {
     "id": "HAN013C",
@@ -165949,10 +165840,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han013cledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN013D": {
     "id": "HAN013D",
@@ -166000,10 +165888,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han013dledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN015": {
     "id": "HAN015",
@@ -166051,10 +165936,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han015ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN015A": {
     "id": "HAN015A",
@@ -166198,10 +166080,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han016ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN016A": {
     "id": "HAN016A",
@@ -166297,10 +166176,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han022ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN017": {
     "id": "HAN017",
@@ -166348,10 +166224,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han017ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN017A": {
     "id": "HAN017A",
@@ -166495,10 +166368,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han018ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "HAN018A": {
     "id": "HAN018A",
@@ -166634,10 +166504,7 @@
         "LED Panel"
       ]
     },
-    "brand": "k2",
-    "images": [
-      "urunler/han019ledpanel.webp"
-    ]
+    "brand": "k2"
   },
   "KES120": {
     "id": "KES120",
