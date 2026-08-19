@@ -66,3 +66,26 @@ export function getSlugByProductId(id: string): string | undefined {
   }
   return idToSlugMap[id];
 }
+
+// Ürünlerin "gerçek" (canonical) adresi marka mikrosite'leridir
+// (k2/vanti/global.kendalelektrik.com.tr) - ana domaindeki /{slug} ve
+// /urunler/{kategori}/{slug} rotaları aynı içeriği gösteren aynalardır.
+export const BRAND_HOSTS: Record<string, string> = {
+  k2: "https://k2.kendalelektrik.com.tr",
+  vanti: "https://vanti.kendalelektrik.com.tr",
+  global: "https://global.kendalelektrik.com.tr",
+};
+
+export function getProductCategorySlug(product: Product): string {
+  const brandName = product.brand || "k2";
+  const categoryName = product.category?.tr?.[0];
+  return categoryName ? slugify(categoryName) : (brandName === "vanti" ? "vantilator" : "aydinlatma");
+}
+
+export function getProductCanonicalUrl(product: Product): string {
+  const brandName = product.brand || "k2";
+  const host = BRAND_HOSTS[brandName] || BRAND_HOSTS.k2;
+  const category = getProductCategorySlug(product);
+  const slug = getSlugByProductId(product.id) || product.id;
+  return `${host}/urunler/${category}/${encodeURIComponent(slug)}`;
+}

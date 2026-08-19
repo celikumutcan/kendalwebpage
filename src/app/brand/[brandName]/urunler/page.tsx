@@ -1,10 +1,40 @@
 import React, { Suspense } from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { getAssetPath } from "@/utils/basePath";
 import { products, getSlugByProductId } from "@/data/products";
 import CategoryFirstShowcase from "@/components/sections/CategoryFirstShowcase";
 import { BrandProductsHeader } from "@/components/sections/BrandProductsHeader";
+
+const BRAND_META: Record<string, { host: string; title: string; description: string }> = {
+  k2: {
+    host: "https://k2.kendalelektrik.com.tr",
+    title: "Ürünlerimiz | K2 Led System",
+    description: "K2 Led System'e ait tüm yerli üretim LED aydınlatma armatürlerini inceleyin.",
+  },
+  vanti: {
+    host: "https://vanti.kendalelektrik.com.tr",
+    title: "Ürünlerimiz | Vanti",
+    description: "Vanti markasına ait tüm vantilatör ve havalandırma ürünlerini inceleyin.",
+  },
+  global: {
+    host: "https://global.kendalelektrik.com.tr",
+    title: "Ürünlerimiz | Kendal Global",
+    description: "Kendal Global markasına ait tüm aydınlatma ve elektrik ürünlerini inceleyin.",
+  },
+};
+
+export async function generateMetadata({ params }: { params: Promise<{ brandName: string }> }): Promise<Metadata> {
+  const { brandName } = await params;
+  const meta = BRAND_META[brandName] || BRAND_META.k2;
+
+  return {
+    title: meta.title,
+    description: meta.description,
+    alternates: { canonical: `${meta.host}/urunler` },
+  };
+}
 
 export function generateStaticParams() {
   return [

@@ -1,6 +1,13 @@
 import React, { Suspense } from "react";
+import { Metadata } from "next";
 import CategoryFirstShowcase from "@/components/sections/CategoryFirstShowcase";
 import { products } from "@/data/products";
+
+export const metadata: Metadata = {
+  title: "Tüm Ürünlerimiz | Kendal Elektrik",
+  description: "Kendal Elektrik, K2 ve Vanti markalarına ait tüm aydınlatma ve elektrik ürünlerini keşfedin. Yerli üretim LED armatürler, vantilatörler ve daha fazlası.",
+  alternates: { canonical: "/urunler" },
+};
 
 export default function GlobalUrunlerPage() {
   const allProducts = Object.values(products);

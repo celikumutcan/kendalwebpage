@@ -1,0 +1,31 @@
+# Kendal Elektrik
+
+> Kendal Elektrik, 1997 yılından bu yana Türkiye'de faaliyet gösteren; yerli üretim LED aydınlatma armatürleri, elektrik ekipmanları ve vantilatör ürünleri geliştiren bir üretici firmadır. Silivri/İstanbul'da 22.000 m² kapalı alana sahip modern bir üretim tesisi bulunmaktadır. K2 Led System, Vanti ve Kendal Global markalarının sahibidir.
+
+Kendal Elektrik ürünleri Türkiye genelinde A101, BİM, Koçtaş, Avansas gibi zincir marketlerde satılmaktadır ve otomotiv galerileri, AVM'ler, üniversiteler ve perakende mağazaları için kurumsal aydınlatma projeleri yürütmektedir.
+
+## Şirket Bilgileri
+
+- Kuruluş yılı: 1997
+- Adres: Selimpaşa Org. San. Böl. 5008 Sokak No:6, Silivri/İstanbul, Türkiye
+- Web sitesi: https://www.kendalelektrik.com.tr
+
+## Markalar
+
+- [K2 Led System](https://k2.kendalelektrik.com.tr): Yerli üretim LED aydınlatma armatürleri.
+- [Vanti](https://vanti.kendalelektrik.com.tr): Vantilatör ve havalandırma ürünleri.
+- [Kendal Global](https://global.kendalelektrik.com.tr): Uluslararası pazarlara yönelik aydınlatma ve elektrik ürünleri.
+
+## Ana Sayfalar
+
+- [Tüm Ürünler](https://www.kendalelektrik.com.tr/urunler): 2900'ün üzerinde aydınlatma ve elektrik ürününden oluşan katalog.
+- [Üretim Tesisimiz](https://www.kendalelektrik.com.tr/uretim): Üretim tesisi ve süreçleri hakkında bilgi.
+- [Projelerimiz](https://www.kendalelektrik.com.tr/projeler): Referans projeler ve kurumsal iş birlikleri.
+- [Zincir Marketlerdeki Ürünlerimiz](https://www.kendalelektrik.com.tr/zincir-marketler): Ürünlerin satıldığı zincir marketler.
+- [Kurumsal Haberler](https://www.kendalelektrik.com.tr/haberler): Şirket haberleri ve gelişmeler.
+- [Misyon ve Vizyon](https://www.kendalelektrik.com.tr/misyon-ve-vizyon)
+- [Kariyer](https://www.kendalelektrik.com.tr/kariyer): İnsan kaynakları politikaları ve çalışan hakları.
+
+## Notlar
+
+Ürün detay sayfaları (`/{urun-slug}`) her ürün için model numarası, teknik özellikler ve garanti koşullarını schema.org Product yapılandırılmış verisiyle sunar.

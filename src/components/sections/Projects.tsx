@@ -78,7 +78,7 @@ export const Projects = () => {
       } else {
         scrollTrack('right');
       }
-    }, 3500);
+    }, 2200);
     return () => clearInterval(interval);
   }, []);
 

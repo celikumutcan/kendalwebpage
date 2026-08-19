@@ -1,7 +1,12 @@
-"use client";
-
 import React from "react";
+import { Metadata } from "next";
 import { RetailPresence } from "@/components/sections/RetailPresence";
+
+export const metadata: Metadata = {
+  title: "Zincir Marketlerdeki Ürünlerimiz | Kendal Elektrik",
+  description: "Kendal Elektrik ürünlerini A101, BİM, Koçtaş, Avansas gibi zincir marketlerde ve satış noktalarında bulabilirsiniz.",
+  alternates: { canonical: "/zincir-marketler" },
+};
 
 export default function ZincirMarketlerPage() {
   return (

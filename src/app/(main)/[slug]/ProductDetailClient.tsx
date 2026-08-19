@@ -173,6 +173,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       .split(' / ')
       .map(s => s.trim())
       .filter(s => s)
+      // "3 Yıl" gibi eksik ifadeleri "3 Yıl Garanti" olarak tamamla
+      .map(s => /^\d+\s*[Yy]ıl$/.test(s) ? `${s} Garanti` : s)
   );
 
   // Ürünün ayrı bir "Özellik" alanı yoksa, Teknik Detaylar tek başına altta
@@ -383,7 +385,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     itemProp="image"
                     src={imageUrl}
                     alt={name}
-                    className={`w-full h-auto object-contain relative z-20 transition-transform duration-500 group-hover/showcase:scale-[1.03] ${isLight ? 'mix-blend-multiply drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)]'}`}
+                    className={`w-full h-auto object-contain relative z-20 transition-transform duration-500 group-hover/showcase:scale-[1.03] ${isLight ? 'drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)]'}`}
                   />
                 </div>
               </div>
@@ -405,7 +407,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                         src={getProductImageUrl(imgUrl)} 
                         alt={`${name} thumbnail ${idx + 1}`} 
                         fill 
-                        className={`object-contain p-1.5 ${isLight ? 'mix-blend-multiply' : ''}`}
+                        className="object-contain p-1.5"
                       />
                     </button>
                   ))}
