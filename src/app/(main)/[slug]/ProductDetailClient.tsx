@@ -409,7 +409,9 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
                 let dotColor = 'bg-zinc-200';
                 const ctUpper = colorTemp.toUpperCase();
-                if (ctUpper.includes("2700K")) dotColor = 'bg-[#FFA957]';
+                if (ctUpper.includes("ALEV") || ctUpper.includes("1700K")) dotColor = 'bg-[#FF5722]';
+                else if (ctUpper.includes("AMBER") || ctUpper.includes("2200K")) dotColor = 'bg-[#FF8C00]';
+                else if (ctUpper.includes("2700K")) dotColor = 'bg-[#FFA957]';
                 else if (ctUpper.includes("3000K") || ctUpper.includes("GÜNIŞIĞI") || ctUpper.includes("GUNISIGI") || ctUpper.includes("GÜN IŞIĞI")) dotColor = 'bg-[#FFB46B]';
                 else if (ctUpper.includes("4000K") || ctUpper.includes("ARARENK")) dotColor = 'bg-[#FFEDC2]';
                 else if (ctUpper.includes("6500K")) dotColor = 'bg-[#E4F1FE]';
@@ -478,7 +480,9 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 // Calculate the specific dot color for this label, because match.dotColor might represent the whole string
                 let specificDotColor = 'bg-zinc-200';
                 const ctUpper = label.toUpperCase();
-                if (ctUpper.includes("2700K")) specificDotColor = 'bg-[#FFA957]';
+                if (ctUpper.includes("ALEV") || ctUpper.includes("1700K")) specificDotColor = 'bg-[#FF5722]';
+                else if (ctUpper.includes("AMBER") || ctUpper.includes("2200K")) specificDotColor = 'bg-[#FF8C00]';
+                else if (ctUpper.includes("2700K")) specificDotColor = 'bg-[#FFA957]';
                 else if (ctUpper.includes("3000K") || ctUpper.includes("GÜNIŞIĞI") || ctUpper.includes("GUNISIGI") || ctUpper.includes("GÜN IŞIĞI")) specificDotColor = 'bg-[#FFB46B]';
                 else if (ctUpper.includes("4000K") || ctUpper.includes("ARARENK")) specificDotColor = 'bg-[#FFEDC2]';
                 else if (ctUpper.includes("6500K")) specificDotColor = 'bg-[#E4F1FE]';

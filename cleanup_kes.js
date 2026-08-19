@@ -8,7 +8,7 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf8'));
 const slugMap = JSON.parse(fs.readFileSync(slugMapFilePath, 'utf8'));
 
 // Longest prefixes first
-const targetPrefixes = ["KES054"];
+const targetPrefixes = ["KES602", "KES603", "KES604", "KES630", "KES631"];
 const idToCanonical = {};
 
 let deletedCount = 0;

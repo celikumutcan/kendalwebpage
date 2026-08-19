@@ -5,17 +5,10 @@ const slugMapFilePath = path.join(__dirname, 'src', 'data', 'slug-map.json');
 const slugMap = JSON.parse(fs.readFileSync(slugMapFilePath, 'utf8'));
 
 const manualSlugs = {
-    "kes049b-smd-ledli-lensli-g5-3-amp-7w-g%C3%BCni%C5%9Fi%C4%9Fi": "KES049B",
-    "kes049b-smd-ledli-lensli-g5-3-amp-7w-günişiği": "KES049B",
-    
-    "kes049d-ledli-lensli-gu10-ampul-7w-g%C3%BCni%C5%9Fi%C4%9Fi": "KES049D",
-    "kes049d-ledli-lensli-gu10-ampul-7w-günişiği": "KES049D",
-    
-    "kes049r-gu10-ampul-7w-ye%C5%9Fil": "KES049R",
-    "kes049r-gu10-ampul-7w-yeşil": "KES049R",
-    
-    "kes049r-gu10-ampul-7w-k%C4%B1rm%C4%B1z%C4%B1": "KES049R",
-    "kes049r-gu10-ampul-7w-kırmızı": "KES049R"
+    "kes076-%C5%9Farjli-led-ampul": "KES076",
+    "kes076-şarjli-led-ampul": "KES076",
+    "kes077-%C5%9Farjli-led-ampul": "KES077",
+    "kes077-şarjli-led-ampul": "KES077"
 };
 
 let manualAdded = 0;

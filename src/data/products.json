@@ -21564,132 +21564,6 @@
       "socket": "E27"
     }
   },
-  "4804": {
-    "id": "4804",
-    "model": "KES0949WE27BYZ",
-    "image": "urunler/kes0949we27byz.webp",
-    "name": {
-      "tr": "KES094 Radar Sensor Ledli Amp. 9W E27 Beyaz",
-      "en": "KES094 Radar Sensor Ledli Amp. 9W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Ledli Gece Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Night Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz Kasa"
-    }
-  },
-  "4805": {
-    "id": "4805",
-    "model": "KES0949WE27GNI",
-    "image": "urunler/kes0949we27gni.webp",
-    "name": {
-      "tr": "KES094 Radar Sensor Ledli Amp.9w E27 Günışıgı",
-      "en": "KES094 Radar Sensor Ledli Amp.9w E27 Günışıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Ledli Gece Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Night Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27"
-    }
-  },
   "4806": {
     "id": "4806",
     "model": "KES119-5WKRMZI",
@@ -23558,763 +23432,6 @@
       "socket": "E14"
     }
   },
-  "4875": {
-    "id": "4875",
-    "model": "KES222-9WBEYAZ",
-    "image": "urunler/kes222-9wbeyaz.webp",
-    "name": {
-      "tr": "KES222 9W / 12*48v LED Ampul Beyaz",
-      "en": "KES222 9W / 12*48v LED Ampul Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "810"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "810"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4876": {
-    "id": "4876",
-    "model": "KES222-9WGNISK",
-    "image": "urunler/kes222-9wgnisk.webp",
-    "name": {
-      "tr": "KES222 9W / 12*48v LED Ampul Günışığı",
-      "en": "KES222 9W / 12*48v LED Ampul Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "720"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "720"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4877": {
-    "id": "4877",
-    "model": "KES300-9WBEYAZ",
-    "image": "urunler/kes300-9wbeyaz.webp",
-    "name": {
-      "tr": "KES300 9W RGB Kumandalı Ampul Beyaz",
-      "en": "KES300 9W RGB Kumandalı Ampul Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "720"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "720"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4878": {
-    "id": "4878",
-    "model": "KES40020WBEYAZ",
-    "image": "urunler/kes40020wbeyaz.webp",
-    "name": {
-      "tr": "KES400 SMD Panel LED Ampül 20W E27 Beyaz",
-      "en": "KES400 SMD Panel LED Ampül 20W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4879": {
-    "id": "4879",
-    "model": "KES40020WGNISK",
-    "image": "urunler/kes40020wgnisk.webp",
-    "name": {
-      "tr": "KES400 SMD Panel LED Ampül 20W E27 Gunısıgı",
-      "en": "KES400 SMD Panel LED Ampül 20W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W",
-      "socket": "E27",
-      "casing": "CCT (Günışığı (3000K)-Beyaz (6500K))"
-    }
-  },
-  "4880": {
-    "id": "4880",
-    "model": "KES40126WBEYAZ",
-    "image": "urunler/kes40126wbeyaz.webp",
-    "name": {
-      "tr": "KES401 SMD Panel LED Ampül 26W E27 Beyaz",
-      "en": "KES401 SMD Panel LED Ampül 26W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "26W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "26W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4881": {
-    "id": "4881",
-    "model": "KES40126WGNISK",
-    "image": "urunler/kes40126wgnisk.webp",
-    "name": {
-      "tr": "KES401 SMD Panel LED Ampül 26W E27 Gunısıgı",
-      "en": "KES401 SMD Panel LED Ampül 26W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "26W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "26W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "26W",
-      "socket": "E27",
-      "casing": "CCT (Günışığı (3000K)-Beyaz (6500K))"
-    }
-  },
-  "4882": {
-    "id": "4882",
-    "model": "KES40236WBEYAZ",
-    "image": "urunler/kes40236wbeyaz.webp",
-    "name": {
-      "tr": "KES402 SMD Panel LED Ampül 36W E27 Beyaz",
-      "en": "KES402 SMD Panel LED Ampül 36W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "36W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4883": {
-    "id": "4883",
-    "model": "KES40236WGNISK",
-    "image": "urunler/kes40236wgnisk.webp",
-    "name": {
-      "tr": "KES402 SMD Panel LED Ampül 36W E27 Gunısıgı",
-      "en": "KES402 SMD Panel LED Ampül 36W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "36W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "36W",
-      "socket": "E27",
-      "casing": "CCT (Günışığı (3000K)-Beyaz (6500K))"
-    }
-  },
-  "4884": {
-    "id": "4884",
-    "model": "KES40350WBEYAZ",
-    "image": "urunler/kes40350wbeyaz.webp",
-    "name": {
-      "tr": "KES403 SMD Panel LED Ampül 50W E27 Beyaz",
-      "en": "KES403 SMD Panel LED Ampül 50W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "4000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "4000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4885": {
-    "id": "4885",
-    "model": "KES40350WGNISK",
-    "image": "urunler/kes40350wgnisk.webp",
-    "name": {
-      "tr": "KES403 SMD Panel LED Ampül 50W E27 Gunısıgı",
-      "en": "KES403 SMD Panel LED Ampül 50W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "4000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "4000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ufo Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Ufo Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "socket": "E27",
-      "casing": "CCT (Günışığı (3000K)-Beyaz (6500K))"
-    }
-  },
   "4886": {
     "id": "4886",
     "model": "KES40826WBEYAZ",
@@ -25552,69 +24669,6 @@
       "casing": "Beyaz (6500K)"
     }
   },
-  "4919": {
-    "id": "4919",
-    "model": "KES460-5W1300K",
-    "image": "urunler/kes460-5w1300k.webp",
-    "name": {
-      "tr": "KES460 5W LED Alev Ampul 1300k",
-      "en": "KES460 5W LED Alev Ampul 1300k"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "5W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "300"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "5W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "300"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "E27",
-      "light": "1300K"
-    }
-  },
   "4920": {
     "id": "4920",
     "model": "KES470-36WKNTBYZ",
@@ -25868,2095 +24922,6 @@
       "watt": "30W",
       "socket": "E27",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "4924": {
-    "id": "4924",
-    "model": "KES4974WBEYAZ",
-    "image": "urunler/kes4974wbeyaz.webp",
-    "name": {
-      "tr": "KES497 LED Flamanlı Amp. 4W E27 Beyaz",
-      "en": "KES497 LED Flamanlı Amp. 4W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "470"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": ""
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E27"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "470"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Küre (360°)"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4661 y=0.4180"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K)"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "470"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": ""
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E27"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "470"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W"
-        },
-        {
-          "label": "Standby power",
-          "value": "0"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4661 y=0.4180"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4925": {
-    "id": "4925",
-    "model": "KES4974WGUNISK",
-    "image": "urunler/kes4974wgunisk.webp",
-    "name": {
-      "tr": "KES497 LED Flamanlı Amp. 4W E27 Gunısıgı",
-      "en": "KES497 LED Flamanlı Amp. 4W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "470"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": ""
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E27"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "470\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "Açık güç modu\t4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4652 y=0.4136\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5150\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "470"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": ""
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E27"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "470\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "Açık güç modu\t4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80\n"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm\n"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4652 y=0.4136\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5150\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E27"
-    }
-  },
-  "4926": {
-    "id": "4926",
-    "model": "KES4984WBEYAZ",
-    "image": "urunler/kes4984wbeyaz.webp",
-    "name": {
-      "tr": "KES498 LED Flam.lıv.buji Amp. 4W E14 Beyaz",
-      "en": "KES498 LED Flam.lıv.buji Amp. 4W E14 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": ""
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "400\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4662 y=0.4148\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K)\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": ""
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains\n"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "400\n\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4662 y=0.4148\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4927": {
-    "id": "4927",
-    "model": "KES4984WGUNISK",
-    "image": "urunler/kes4984wgunisk.webp",
-    "name": {
-      "tr": "KES498 LED Flam.kıv.buji Amp. 4W E14 Gunısıgı",
-      "en": "KES498 LED Flam.kıv.buji Amp. 4W E14 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "470"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "470\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4653 y=0.4138\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "470"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "470\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4653 y=0.4138\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14"
-    }
-  },
-  "4928": {
-    "id": "4928",
-    "model": "KES4994WBEYAZ",
-    "image": "urunler/kes4994wbeyaz.webp",
-    "name": {
-      "tr": "KES499 LED Flamanlı Bujı Amp. 4W E14 Beyaz",
-      "en": "KES499 LED Flamanlı Bujı Amp. 4W E14 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "400"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80\n"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4577 y=0.4128\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5070\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K)\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "400\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80\n"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4577 y=0.4128\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5070\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4929": {
-    "id": "4929",
-    "model": "KES4994WGUNISK",
-    "image": "urunler/kes499.webp",
-    "name": {
-      "tr": "KES499 LED Flamanlı Bujı Amp. 4W E14 Gunısıgı",
-      "en": "KES499 LED Flamanlı Bujı Amp. 4W E14 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "400\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80\n"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "**\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5070\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "400\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80\n"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "**\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5070\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14"
-    }
-  },
-  "4930": {
-    "id": "4930",
-    "model": "KES5016WBEYAZ",
-    "image": "urunler/kes5016wbeyaz.webp",
-    "name": {
-      "tr": "KES501 LED Flamanlı Amp. 6W E27 Beyaz",
-      "en": "KES501 LED Flamanlı Amp. 6W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E27"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "YOK"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "YOK"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "YOK"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "YOK"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "6KWh/1000h"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "600"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Küre (360°)"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "6W"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K)"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E27"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "YOK"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "YOK"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "YOK"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "YOK"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "6KWh/1000h"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "600"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Küre (360°)"
-        },
-        {
-          "label": "On-mode power",
-          "value": "6W"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4931": {
-    "id": "4931",
-    "model": "KES5016WGUNISK",
-    "image": "urunler/kes5016wgunisk.webp",
-    "name": {
-      "tr": "KES501 LED Flamanlı Amp. 6W E27 Gunısıgı",
-      "en": "KES501 LED Flamanlı Amp. 6W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "socket": "E27"
-    }
-  },
-  "4932": {
-    "id": "4932",
-    "model": "KES5028WBEYAZ",
-    "image": "urunler/kes5028wbeyaz.webp",
-    "name": {
-      "tr": "KES502 LED Flamanlı Amp. 8W E27 Beyaz",
-      "en": "KES502 LED Flamanlı Amp. 8W E27 Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "820"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "820"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4933": {
-    "id": "4933",
-    "model": "KES5028WGUNISK",
-    "image": "urunler/kes5028wgunisk.webp",
-    "name": {
-      "tr": "KES502 LED Flamanlı Amp. 8W E27 Gunısıgı",
-      "en": "KES502 LED Flamanlı Amp. 8W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "820"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E27"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "YOK"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "YOK"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "YOK"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "YOK"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "8W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "820"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Küre (360°)"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "8W"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "820"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E27"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "YOK"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "YOK"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "YOK"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "YOK"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "8W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "820"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Küre (360°)"
-        },
-        {
-          "label": "On-mode power",
-          "value": "8W"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5150"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W",
-      "socket": "E27"
     }
   },
   "4934": {
@@ -28363,920 +25328,6 @@
       "socket": "E14"
     }
   },
-  "4938": {
-    "id": "4938",
-    "model": "KES6004WGUNISK",
-    "image": "urunler/kes6004wgunisk.webp",
-    "name": {
-      "tr": "KES600 COB Flam.kıvr. Bujı Amp.4.5w E14 Gunısıgı",
-      "en": "KES600 COB Flam.kıvr. Bujı Amp.4.5w E14 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4.5W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "500\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4769 y=0.4227\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5110\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": ""
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4.5W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "500\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80\n"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "115(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4769 y=0.4227\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5110\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": ""
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "E14"
-    }
-  },
-  "4939": {
-    "id": "4939",
-    "model": "KES6014WGUNISK",
-    "image": "urunler/kes6014wgunisk.webp",
-    "name": {
-      "tr": "KES601 COB Flamanlı Bujı Amp. 4W E14 Gunısıgı",
-      "en": "KES601 COB Flamanlı Bujı Amp.4.5w E14 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "430"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": ""
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "430\n"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4690 y=0.4160\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "430"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": ""
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E14\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "430\n"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "100(Height) x 35(Width) x 35(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4690 y=0.4160\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5100\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14"
-    }
-  },
-  "4940": {
-    "id": "4940",
-    "model": "KES6024WGUNISK",
-    "image": "urunler/kes6024wgunisk.webp",
-    "name": {
-      "tr": "KES602 LED Flamanlı Amp. 4W E27 Gunısıgı",
-      "en": "KES602 LED Flamanlı Amp. 4W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "430"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED\n"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": ""
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "E27\n"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Yok"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Yok"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Yok"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "430"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "4W\n"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "0\n"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm\n"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": ""
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "50W\n"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "x=0.4706 y=0.4141\n"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "0.5250\n"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "2700K\n"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "430"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED\n"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": ""
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "E27\n"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Mains\n"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "4KWh/1000h\n"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "430"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "Sphere (360°)\n"
-        },
-        {
-          "label": "On-mode power",
-          "value": "4W\n"
-        },
-        {
-          "label": "Standby power",
-          "value": "0\n"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80\n"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": "75(Height) x 45(Width) x 45(Depth)mm\n"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": ""
-        },
-        {
-          "label": "Equivalent power",
-          "value": "50W\n"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "x=0.4706 y=0.4141\n"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "0.5250\n"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,93\n"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "0,5\n"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "0,1\n"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E27"
-    }
-  },
-  "4941": {
-    "id": "4941",
-    "model": "KES6036WGUNISK",
-    "image": "urunler/kes6036wgunisk.webp",
-    "name": {
-      "tr": "KES603 LED Flamanlı Amp. 6W E27 Gunısıgı",
-      "en": "KES603 LED Flamanlı Amp. 6W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "socket": "E27"
-    }
-  },
-  "4942": {
-    "id": "4942",
-    "model": "KES6048WGUNISK",
-    "image": "urunler/kes6048wgunisk.webp",
-    "name": {
-      "tr": "KES604 LED Flamanlı Amp. 8W E27 Gunısıgı",
-      "en": "KES604 LED Flamanlı Amp. 8W E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W",
-      "socket": "E27"
-    }
-  },
   "4943": {
     "id": "4943",
     "model": "KES6056WGUNISK",
@@ -29564,68 +25615,6 @@
       "watt": "4W",
       "socket": "E27",
       "casing": "Sıcak Günışığı (2700K)"
-    }
-  },
-  "4947": {
-    "id": "4947",
-    "model": "KES6104WGUNISK",
-    "image": "urunler/kes6104wgunisk.webp",
-    "name": {
-      "tr": "KES610 COB Flamanlı Amp.4w E14 Gunısıgı",
-      "en": "KES610 COB Flamanlı Amp.4w E14 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E14"
-        },
-        {
-          "label": "Lümen",
-          "value": "440"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E14"
-        },
-        {
-          "label": "Lumen",
-          "value": "440"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E14"
     }
   },
   "4948": {
@@ -30191,286 +26180,6 @@
       "watt": "4W",
       "socket": "E27",
       "light": "Günışığı (3000K)"
-    }
-  },
-  "4956": {
-    "id": "4956",
-    "model": "KES6204WGUNISK",
-    "image": "urunler/kes6204wgunisk.webp",
-    "name": {
-      "tr": "KES620 COB Flam. Dimmable Amp.4w E27 Gunısıgı",
-      "en": "KES620 COB Flam. Dimmable Amp.4w E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "470"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "470"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Dimlenebilir Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Dimmable Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E27"
-    }
-  },
-  "4957": {
-    "id": "4957",
-    "model": "KES6216WGUNISK",
-    "image": "urunler/kes6216wgunisk.webp",
-    "name": {
-      "tr": "KES621 COB Flam. Dimmable Amp.6w E27 Gunısıgı",
-      "en": "KES621 COB Flam. Dimmable Amp.6w E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Dimlenebilir Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Dimmable Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "socket": "E27"
-    }
-  },
-  "4958": {
-    "id": "4958",
-    "model": "KES6304WGUNISK",
-    "image": "urunler/kes6304wgunisk.webp",
-    "name": {
-      "tr": "KES630 COB Flam. Dimmable Amp.4w E27 Gunısıgı",
-      "en": "KES630 COB Flam. Dimmable Amp.4w E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "470"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "470"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Dimlenebilir Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Dimmable Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "socket": "E27"
-    }
-  },
-  "4959": {
-    "id": "4959",
-    "model": "KES6316WGUNISK",
-    "image": "urunler/kes6316wgunisk.webp",
-    "name": {
-      "tr": "KES631 COB Flam. Dimmable Amp.6w E27 Gunısıgı",
-      "en": "KES631 COB Flam. Dimmable Amp.6w E27 Gunısıgı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "80"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "80"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Dimlenebilir Led Flamanlı Ampuller"
-      ],
-      "en": [
-        "Bulbs",
-        "Led Dimmable Filament Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "socket": "E27"
     }
   },
   "4960": {
@@ -146583,68 +142292,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "7496": {
-    "id": "7496",
-    "model": "KES301-9WE27RGB",
-    "image": "urunler/kes301-9we27rgb.webp",
-    "name": {
-      "tr": "KES301 9W A60 E27 Akıllı Ampul RGB",
-      "en": "KES301 9W A60 E27 Akıllı Ampul RGB"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "850LM"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "9W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "850LM"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Ampul",
-        "Led Ampuller"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "9W",
-      "socket": "E27"
-    }
-  },
   "7497": {
     "id": "7497",
     "model": "KFL15310WARARENK",
@@ -153725,68 +149372,6 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "60W"
-    }
-  },
-  "7648": {
-    "id": "7648",
-    "model": "KES302-12WE27RGB",
-    "image": "urunler/kes301-9we27rgb.webp",
-    "name": {
-      "tr": "KES302 12W A60 E27 Akıllı Ampul RGB",
-      "en": "KES302 12W A60 E27 Akıllı Ampul RGB"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Lümen",
-          "value": "1050LM"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Lumen",
-          "value": "1050LM"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Ampul",
-        "Led Ampul"
-      ],
-      "en": [
-        "Ampul",
-        "Led Ampuller"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "socket": "E27"
     }
   },
   "7649": {
@@ -170306,54 +165891,6 @@
       "casing": "Beyaz (6500K)"
     }
   },
-  "7967": {
-    "id": "7967",
-    "model": "240906135215",
-    "image": "urunler/kes075.webp",
-    "name": {
-      "tr": "KES077 Şarjlı LED",
-      "en": "KES077 Re-chargeable LED"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "16"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1120"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "16"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1120"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "16",
-      "casing": "Beyaz (6500K)"
-    }
-  },
   "7971": {
     "id": "7971",
     "model": "241022062336",
@@ -171375,44 +166912,6 @@
     "variantOptions": {
       "watt": "24W"
     }
-  },
-  "8008": {
-    "id": "8008",
-    "model": "250421173705",
-    "image": "urunler/kes075.webp",
-    "name": {
-      "tr": "KES075 Şarjlı LED",
-      "en": "KES075 Rechargeable LED"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "8009": {
-    "id": "8009",
-    "model": "250421174258",
-    "image": "urunler/kes075.webp",
-    "name": {
-      "tr": "KES076 Şarjlı LED",
-      "en": "KES076 Rechargeable LED"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
   },
   "8010": {
     "id": "8010",
@@ -195181,6 +190680,2850 @@
     "variantOptions": {
       "watt": "5W",
       "light": "Amber (2200K), Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES301": {
+    "id": "KES301",
+    "model": "KES301",
+    "image": "urunler/kes301.webp",
+    "name": {
+      "tr": "KES301 LEDLİ RGB AKILLI AMPUL",
+      "en": "KES301 LED RGB SMART BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lümen",
+          "value": "850"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lumen",
+          "value": "850"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W"
+    }
+  },
+  "KES302": {
+    "id": "KES302",
+    "model": "KES302",
+    "image": "urunler/kes302.webp",
+    "name": {
+      "tr": "KES302 LEDLİ RGB AKILLI AMPUL",
+      "en": "KES302 LED RGB SMART BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1050"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11.8 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Uyumlu / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1050"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.8 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "RGB / Kendal Smart, Google Home, Alexa, Tuya Compatible / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KES224": {
+    "id": "KES224",
+    "model": "KES224",
+    "image": "urunler/kes224.webp",
+    "name": {
+      "tr": "KES224 12-48 VOLT LED AMPUL",
+      "en": "KES224 12-48 VOLT LED BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W (24V)"
+        },
+        {
+          "label": "Lümen",
+          "value": "810"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "24V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.7 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Alüminyum Isı Transfer Modülü / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W (24V)"
+        },
+        {
+          "label": "Lumen",
+          "value": "810"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "24V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.7 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Aluminum Heat Transfer Module / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W (24V)",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES222": {
+    "id": "KES222",
+    "model": "KES222",
+    "image": "urunler/kes222.webp",
+    "name": {
+      "tr": "KES222 12-48 VOLT LED AMPUL",
+      "en": "KES222 12-48 VOLT LED BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W (12-48V)"
+        },
+        {
+          "label": "Lümen",
+          "value": "810"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "12-48V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.7 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Alüminyum Isı Transfer Modülü / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W (12-48V)"
+        },
+        {
+          "label": "Lumen",
+          "value": "810"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "12-48V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.7 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Aluminum Heat Transfer Module / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W (12-48V)",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES094": {
+    "id": "KES094",
+    "model": "KES094",
+    "image": "urunler/kes094.webp",
+    "name": {
+      "tr": "KES094 LEDLİ RADAR SENSÖRLÜ AMPUL",
+      "en": "KES094 LED RADAR SENSOR BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "13 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Alüminyum Isı Transfer Modülü / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "13 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "Aluminum Heat Transfer Module / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KES300": {
+    "id": "KES300",
+    "model": "KES300",
+    "image": "urunler/kes300.webp",
+    "name": {
+      "tr": "KES300 LEDLİ RGB AMPUL",
+      "en": "KES300 LED RGB BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lümen",
+          "value": "720"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11.7 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "IC Driver / Alüminyum Isı Transfer Modülü / RGB / Uzaktan Kumandalı / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lumen",
+          "value": "720"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.7 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "IC Driver / Aluminum Heat Transfer Module / RGB / Remote Controlled / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W"
+    }
+  },
+  "KES075": {
+    "id": "KES075",
+    "model": "KES075",
+    "image": "urunler/kes075.webp",
+    "name": {
+      "tr": "KES075 TAŞINABİLİR LED LAMBA",
+      "en": "KES075 PORTABLE LED LAMP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
+        },
+        {
+          "label": "Batarya",
+          "value": "Tek Pilli 1200mAh"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "4 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "135 mm x 70 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Değiştirilebilir Bataryalı"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "9W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
+        },
+        {
+          "label": "Battery",
+          "value": "Single Battery 1200mAh"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "4 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "135 mm x 70 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Replaceable Battery"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "9W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KES076": {
+    "id": "KES076",
+    "model": "KES076",
+    "image": "urunler/kes076.webp",
+    "name": {
+      "tr": "KES076 TAŞINABİLİR LED LAMBA",
+      "en": "KES076 PORTABLE LED LAMP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "900"
+        },
+        {
+          "label": "Batarya",
+          "value": "Çift Pilli 2400mAh"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "4 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "150 mm x 80 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Değiştirilebilir Bataryalı"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "900"
+        },
+        {
+          "label": "Battery",
+          "value": "Double Battery 2400mAh"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "4 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "150 mm x 80 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Replaceable Battery"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KES077": {
+    "id": "KES077",
+    "model": "KES077",
+    "image": "urunler/kes077.webp",
+    "name": {
+      "tr": "KES077 TAŞINABİLİR LED LAMBA",
+      "en": "KES077 PORTABLE LED LAMP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "16W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1120"
+        },
+        {
+          "label": "Batarya",
+          "value": "3 Pilli 3600mAh"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "4 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170 mm x 95 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Değiştirilebilir Bataryalı"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "16W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1120"
+        },
+        {
+          "label": "Battery",
+          "value": "3 Batteries 3600mAh"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "4 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170 mm x 95 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Replaceable Battery"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "16W",
+      "light": "Beyaz (6500K)"
+    }
+  },
+  "KBT001": {
+    "id": "KBT001",
+    "model": "KBT001",
+    "image": "urunler/kbt001.webp",
+    "name": {
+      "tr": "KBT001 18650 BATARYA",
+      "en": "KBT001 18650 BATTERY"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Tür",
+          "value": "18650 Batarya"
+        },
+        {
+          "label": "Kapasite",
+          "value": "3.7V 1200mAh"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Type",
+          "value": "18650 Battery"
+        },
+        {
+          "label": "Capacity",
+          "value": "3.7V 1200mAh"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "batarya": "3.7V 1200mAh"
+    }
+  },
+  "KES400": {
+    "id": "KES400",
+    "model": "KES400",
+    "image": "urunler/kes400.webp",
+    "name": {
+      "tr": "KES400 LEDLİ UFO AMPUL",
+      "en": "KES400 LED UFO BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "120 mm x 86 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "120 mm x 86 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES401": {
+    "id": "KES401",
+    "model": "KES401",
+    "image": "urunler/kes401.webp",
+    "name": {
+      "tr": "KES401 LEDLİ UFO AMPUL",
+      "en": "KES401 LED UFO BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "26W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2200"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "80"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "155 mm x 86 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "26W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2200"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "80"
+        },
+        {
+          "label": "Dimensions",
+          "value": "155 mm x 86 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "26W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES402": {
+    "id": "KES402",
+    "model": "KES402",
+    "image": "urunler/kes402.webp",
+    "name": {
+      "tr": "KES402 LEDLİ UFO AMPUL",
+      "en": "KES402 LED UFO BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2800"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "185 mm x 86 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2800"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "185 mm x 86 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES403": {
+    "id": "KES403",
+    "model": "KES403",
+    "image": "urunler/kes403.webp",
+    "name": {
+      "tr": "KES403 LEDLİ UFO AMPUL",
+      "en": "KES403 LED UFO BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "45W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3400"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "220 mm x 86 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yeni / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "45W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3400"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "220 mm x 86 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "New / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "45W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KES460": {
+    "id": "KES460",
+    "model": "KES460",
+    "image": "urunler/kes460.webp",
+    "name": {
+      "tr": "KES460 LEDLİ ALEV AMPUL",
+      "en": "KES460 LED FLAME BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "300"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "15.2 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Modlu / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "300"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "15.2 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Modes / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Ampul"
+      ],
+      "en": [
+        "LED Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "5W",
+      "light": "Alev Rengi (1700K)"
+    }
+  },
+  "KES498": {
+    "id": "KES498",
+    "model": "KES498",
+    "image": "urunler/kes498.webp",
+    "name": {
+      "tr": "KES498 LED FLAMANLI BUJİ AMPUL (KIVRIK)",
+      "en": "KES498 LED FILAMENT CANDLE BULB (TAILED)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "400"
+        },
+        {
+          "label": "Duy",
+          "value": "E14"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11.5 cm x 3.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "400"
+        },
+        {
+          "label": "Socket",
+          "value": "E14"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES499": {
+    "id": "KES499",
+    "model": "KES499",
+    "image": "urunler/kes499.webp",
+    "name": {
+      "tr": "KES499 LED FLAMANLI BUJİ AMPUL",
+      "en": "KES499 LED FILAMENT CANDLE BULB"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "400"
+        },
+        {
+          "label": "Duy",
+          "value": "E14"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "400"
+        },
+        {
+          "label": "Socket",
+          "value": "E14"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES600": {
+    "id": "KES600",
+    "model": "KES600",
+    "image": "urunler/kes600.webp",
+    "name": {
+      "tr": "KES600 LED FLAMANLI BUJİ AMPUL (RUSTİK KIVRIK)",
+      "en": "KES600 LED FILAMENT CANDLE BULB (RUSTIC TAILED)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "440"
+        },
+        {
+          "label": "Duy",
+          "value": "E14"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "11.5 cm x 3.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "440"
+        },
+        {
+          "label": "Socket",
+          "value": "E14"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "11.5 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Amber"
+    }
+  },
+  "KES601": {
+    "id": "KES601",
+    "model": "KES601",
+    "image": "urunler/kes601.webp",
+    "name": {
+      "tr": "KES601 LED FLAMANLI BUJİ AMPUL (RUSTİK)",
+      "en": "KES601 LED FILAMENT CANDLE BULB (RUSTIC)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "430"
+        },
+        {
+          "label": "Duy",
+          "value": "E14"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "430"
+        },
+        {
+          "label": "Socket",
+          "value": "E14"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Amber"
+    }
+  },
+  "KES610": {
+    "id": "KES610",
+    "model": "KES610",
+    "image": "urunler/kes610.webp",
+    "name": {
+      "tr": "KES610 LED FLAMANLI BUJİ AMPUL (RUSTİK BURGU)",
+      "en": "KES610 LED FILAMENT CANDLE BULB (RUSTIC TWISTED)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "440"
+        },
+        {
+          "label": "Duy",
+          "value": "E14"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "440"
+        },
+        {
+          "label": "Socket",
+          "value": "E14"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10 cm x 3.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Amber"
+    }
+  },
+  "KES501": {
+    "id": "KES501",
+    "model": "KES501",
+    "image": "urunler/kes501.webp",
+    "name": {
+      "tr": "KES501 LED FLAMANLI AMPUL (A60)",
+      "en": "KES501 LED FILAMENT BULB (A60)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "600"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "600"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES502": {
+    "id": "KES502",
+    "model": "KES502",
+    "image": "urunler/kes502.webp",
+    "name": {
+      "tr": "KES502 LED FLAMANLI AMPUL (A60)",
+      "en": "KES502 LED FILAMENT BULB (A60)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lümen",
+          "value": "820"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lumen",
+          "value": "820"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "8W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES620": {
+    "id": "KES620",
+    "model": "KES620",
+    "image": "urunler/kes620.webp",
+    "name": {
+      "tr": "KES620 LED FLAMANLI AMPUL (A60) - DİM",
+      "en": "KES620 LED FILAMENT BULB (A60) - DIMMABLE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "440"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / Dimlenebilir / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "440"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / Dimmable / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES621": {
+    "id": "KES621",
+    "model": "KES621",
+    "image": "urunler/kes621.webp",
+    "name": {
+      "tr": "KES621 LED FLAMANLI AMPUL (A60) - DİM",
+      "en": "KES621 LED FILAMENT BULB (A60) - DIMMABLE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "540"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / Dimlenebilir / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "540"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / Dimmable / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES497": {
+    "id": "KES497",
+    "model": "KES497",
+    "image": "urunler/kes497.webp",
+    "name": {
+      "tr": "KES497 LED FLAMANLI AMPUL (G45)",
+      "en": "KES497 LED FILAMENT BULB (G45)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "470"
+        },
+        {
+          "label": "Kasa",
+          "value": "G45"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "7.5 cm x 4.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Şeffaf Cam / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "470"
+        },
+        {
+          "label": "Case",
+          "value": "G45"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "7.5 cm x 4.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Clear Glass / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Sıcak Günışığı (2700K), Beyaz (6500K)"
+    }
+  },
+  "KES602": {
+    "id": "KES602",
+    "model": "KES602",
+    "image": "urunler/kes602.webp",
+    "name": {
+      "tr": "KES602 LED FLAMANLI AMPUL (G45) (RUSTİK)",
+      "en": "KES602 LED FILAMENT BULB (G45) (RUSTIC)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "430"
+        },
+        {
+          "label": "Kasa",
+          "value": "G45"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "7.5 cm x 4.5 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "430"
+        },
+        {
+          "label": "Case",
+          "value": "G45"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "7.5 cm x 4.5 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Amber"
+    }
+  },
+  "KES603": {
+    "id": "KES603",
+    "model": "KES603",
+    "image": "urunler/kes603.webp",
+    "name": {
+      "tr": "KES603 LED FLAMANLI AMPUL (A60) (RUSTİK)",
+      "en": "KES603 LED FILAMENT BULB (A60) (RUSTIC)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "600"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "600"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Amber"
+    }
+  },
+  "KES604": {
+    "id": "KES604",
+    "model": "KES604",
+    "image": "urunler/kes604.webp",
+    "name": {
+      "tr": "KES604 LED FLAMANLI AMPUL (A60) (RUSTİK)",
+      "en": "KES604 LED FILAMENT BULB (A60) (RUSTIC)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "8W",
+      "light": "Amber"
+    }
+  },
+  "KES630": {
+    "id": "KES630",
+    "model": "KES630",
+    "image": "urunler/kes630.webp",
+    "name": {
+      "tr": "KES630 LED FLAMANLI AMPUL (A60) (RUSTİK) - DİM",
+      "en": "KES630 LED FILAMENT BULB (A60) (RUSTIC) - DIMMABLE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "440"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / Dimlenebilir / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "440"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / Dimmable / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W",
+      "light": "Amber"
+    }
+  },
+  "KES631": {
+    "id": "KES631",
+    "model": "KES631",
+    "image": "urunler/kes631.webp",
+    "name": {
+      "tr": "KES631 LED FLAMANLI AMPUL (A60) (RUSTİK) - DİM",
+      "en": "KES631 LED FILAMENT BULB (A60) (RUSTIC) - DIMMABLE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "540"
+        },
+        {
+          "label": "Kasa",
+          "value": "A60"
+        },
+        {
+          "label": "Duy",
+          "value": "E27"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Özellik",
+          "value": "3 Yıl / Dimlenebilir / IC Driver / Rustik / Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "540"
+        },
+        {
+          "label": "Case",
+          "value": "A60"
+        },
+        {
+          "label": "Socket",
+          "value": "E27"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "10.6 cm x 6 cm"
+        },
+        {
+          "label": "Feature",
+          "value": "3 Years / Dimmable / IC Driver / Rustic / Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Flaman Ampul"
+      ],
+      "en": [
+        "LED Filament Bulb"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W",
+      "light": "Amber"
     }
   }
 }
