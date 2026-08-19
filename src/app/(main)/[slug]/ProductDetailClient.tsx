@@ -630,7 +630,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     }
                   />
 
-                  <ul className="grid grid-cols-2 gap-2.5 -mt-4">
+                  <ul className="flex flex-wrap justify-center gap-2.5 -mt-4">
                     {displayFeaturesList.map((feat, idx) => {
                       const isYerliUretim = feat.trim().toLowerCase() === "yerli üretim" || feat.trim().toLowerCase() === "domestic production";
                       return (

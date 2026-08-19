@@ -2,141 +2,74 @@ const fs = require('fs');
 const path = require('path');
 
 const newProductsInput = {
-  "KES010": {
-    "id": "KES010",
-    "model": "KES010",
-    "image": "urunler/kes010.webp",
+  "KES700": {
+    "id": "KES700",
+    "model": "KES700",
+    "image": "urunler/kes700.webp",
     "name": {
-      "tr": "KES010 G9 DUY LEDLİ AMPUL",
-      "en": "KES010 G9 SOCKET LED BULB"
+      "tr": "KES700 DIŞ MEKAN E27 5'Lİ DUY SET",
+      "en": "KES700 OUTDOOR E27 5-SOCKET SET"
     },
     "attributes": {
       "tr": [
-        { "label": "Watt", "value": "2W" },
-        { "label": "Lümen", "value": "200" },
-        { "label": "Duy", "value": "G9" },
-        { "label": "Gerilim", "value": "220-240V" },
-        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
-        { "label": "Çalışma Ömrü", "value": "20000 Saat" },
-        { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "55 mm x 16 mm" },
-        { "label": "Açıklama", "value": "COB Led" }
+        { "label": "Açıklama", "value": "5 Duy / 5 Metre" },
+        { "label": "Duy", "value": "E27" },
+        { "label": "IP Sınıfı", "value": "IP64" },
+        { "label": "Koli Adedi", "value": "50" }
       ],
       "en": [
-        { "label": "Watt", "value": "2W" },
-        { "label": "Lumen", "value": "200" },
-        { "label": "Socket", "value": "G9" },
-        { "label": "Voltage", "value": "220-240V" },
-        { "label": "Color Temperature", "value": "3000K, 6500K" },
-        { "label": "Life Span", "value": "20000 Hours" },
-        { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "55 mm x 16 mm" },
-        { "label": "Description", "value": "COB Led" }
+        { "label": "Description", "value": "5 Sockets / 5 Meters" },
+        { "label": "Socket", "value": "E27" },
+        { "label": "IP Class", "value": "IP64" },
+        { "label": "Package Quantity", "value": "50" }
       ]
     },
     "category": {
       "tr": [
-        "LED Ampul"
+        "Ampul Duy Seti"
       ],
       "en": [
-        "LED Bulb"
+        "Bulb Socket Set"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "2W"
+      "açıklama": "5 Duy / 5 Metre"
     }
   },
-  "KES016": {
-    "id": "KES016",
-    "model": "KES016",
-    "image": "urunler/kes016.webp",
+  "KES701": {
+    "id": "KES701",
+    "model": "KES701",
+    "image": "urunler/kes701.webp",
     "name": {
-      "tr": "KES016 G9 DUY LEDLİ AMPUL - DİM",
-      "en": "KES016 G9 SOCKET LED BULB - DIMMABLE"
+      "tr": "KES701 DIŞ MEKAN E27 20'Lİ DUY SET",
+      "en": "KES701 OUTDOOR E27 20-SOCKET SET"
     },
     "attributes": {
       "tr": [
-        { "label": "Watt", "value": "5W" },
-        { "label": "Lümen", "value": "270" },
-        { "label": "Duy", "value": "G9" },
-        { "label": "Gerilim", "value": "220-240V" },
-        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
-        { "label": "Çalışma Ömrü", "value": "20000 Saat" },
-        { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "46 mm x 16 mm" },
-        { "label": "Özellik", "value": "Dimlenebilir" },
-        { "label": "Açıklama", "value": "COB Led" }
+        { "label": "Açıklama", "value": "20 Duy / 10 Metre" },
+        { "label": "Duy", "value": "E27" },
+        { "label": "IP Sınıfı", "value": "IP64" },
+        { "label": "Koli Adedi", "value": "20" }
       ],
       "en": [
-        { "label": "Watt", "value": "5W" },
-        { "label": "Lumen", "value": "270" },
-        { "label": "Socket", "value": "G9" },
-        { "label": "Voltage", "value": "220-240V" },
-        { "label": "Color Temperature", "value": "3000K, 6500K" },
-        { "label": "Life Span", "value": "20000 Hours" },
-        { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "46 mm x 16 mm" },
-        { "label": "Feature", "value": "Dimmable" },
-        { "label": "Description", "value": "COB Led" }
+        { "label": "Description", "value": "20 Sockets / 10 Meters" },
+        { "label": "Socket", "value": "E27" },
+        { "label": "IP Class", "value": "IP64" },
+        { "label": "Package Quantity", "value": "20" }
       ]
     },
     "category": {
       "tr": [
-        "LED Ampul"
+        "Ampul Duy Seti"
       ],
       "en": [
-        "LED Bulb"
+        "Bulb Socket Set"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "5W"
-    }
-  },
-  "KES110": {
-    "id": "KES110",
-    "model": "KES110",
-    "image": "urunler/kes110.webp",
-    "name": {
-      "tr": "KES110 G9 DUY LEDLİ AMPUL",
-      "en": "KES110 G9 SOCKET LED BULB"
-    },
-    "attributes": {
-      "tr": [
-        { "label": "Watt", "value": "3W" },
-        { "label": "Lümen", "value": "200" },
-        { "label": "Duy", "value": "G9" },
-        { "label": "Gerilim", "value": "220-240V" },
-        { "label": "Renk Sıcaklığı", "value": "3000K, 6500K" },
-        { "label": "Çalışma Ömrü", "value": "20000 Saat" },
-        { "label": "Koli Adedi", "value": "100" },
-        { "label": "Ölçüler", "value": "55 mm x 16 mm" },
-        { "label": "Açıklama", "value": "SMD Led" }
-      ],
-      "en": [
-        { "label": "Watt", "value": "3W" },
-        { "label": "Lumen", "value": "200" },
-        { "label": "Socket", "value": "G9" },
-        { "label": "Voltage", "value": "220-240V" },
-        { "label": "Color Temperature", "value": "3000K, 6500K" },
-        { "label": "Life Span", "value": "20000 Hours" },
-        { "label": "Package Quantity", "value": "100" },
-        { "label": "Dimensions", "value": "55 mm x 16 mm" },
-        { "label": "Description", "value": "SMD Led" }
-      ]
-    },
-    "category": {
-      "tr": [
-        "LED Ampul"
-      ],
-      "en": [
-        "LED Bulb"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W"
+      "açıklama": "20 Duy / 10 Metre"
     }
   }
 };
@@ -198,7 +131,7 @@ for (const key of Object.keys(newProductsInput)) {
         let remainingAttrs = [];
         
         for (const attr of attrs) {
-            if (attr.label.includes("Özellik") || attr.label.includes("Feature") || attr.label.includes("Açıklama") || attr.label.includes("Description") || attr.label.includes("Garanti") || attr.label.includes("Warranty")) {
+            if (attr.label.includes("Özellik") || attr.label.includes("Feature") || attr.label.includes("Açıklama") || attr.label.includes("Description") || attr.label.includes("Garanti") || attr.label.includes("Warranty") || attr.label.includes("IP Sınıfı") || attr.label.includes("IP Class")) {
                 mergedFeatures.push(attr.value);
             } else {
                 remainingAttrs.push(attr);
