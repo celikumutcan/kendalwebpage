@@ -5086,614 +5086,6 @@
       "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
     }
   },
-  "4363": {
-    "id": "4363",
-    "model": "KCL002LEDBEYAZ",
-    "image": "urunler/kcl002ledbeyaz.webp",
-    "name": {
-      "tr": "KCL002 (3528) Silikonlu 60 Ledlı Şerit",
-      "en": "KCL002 (3528) Silikonlu 60 Ledlı Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4,8W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "420/1Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4,8W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lumen",
-          "value": "420/1Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4,8W/1Mt.",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l"
-    }
-  },
-  "4369": {
-    "id": "4369",
-    "model": "KCL003LEDBEYAZ",
-    "image": "urunler/kcl003ledbeyaz.webp",
-    "name": {
-      "tr": "KCL003 (3535) 3çip Silikonlu 60 LED Şerit",
-      "en": "KCL003 (3535) 3çip Silikonlu 60 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "613,038"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "8,3W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "613,08LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "8,3W"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;70"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3971/0,3654"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K) - 3200K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "613,038"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Non-mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "8,3W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "613,08LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "8,3W"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;70"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3971/0,3654"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
-    }
-  },
-  "4376": {
-    "id": "4376",
-    "model": "KCL004LEDBEYAZ",
-    "image": "urunler/kcl004ledbeyaz.webp",
-    "name": {
-      "tr": "KCL004 (3528) Silikonsuz 60 Ledlı Şerit",
-      "en": "KCL004 (3528) Silikonsuz 60 Ledlı Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4,8W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "7Lm/Chip - 420/1Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4,8W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lumen",
-          "value": "7Lm/Chip - 420/1Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4,8W/1Mt.",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l"
-    }
-  },
-  "4382": {
-    "id": "4382",
-    "model": "KCL005LEDBEYAZ",
-    "image": "urunler/kcl005ledbeyaz.webp",
-    "name": {
-      "tr": "KCL005 (3535) 3çip Silikonsuz 60 LED Şerit",
-      "en": "KCL005 (3535) 3çip Silikonsuz 60 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "12.5Lm/Chip - 750/1 Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "12VDC"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebekesiz"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "10W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1200LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "9,8"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;70"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": " "
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,313/0,337"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": " "
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "0,5"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K)"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL, RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "12.5Lm/Chip - 750/1 Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "12VDC"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Non-mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "10W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1200LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "9,8"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;70"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": " "
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,313/0,337"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": " "
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "0,5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W/1Mt.",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
-    }
-  },
   "4393": {
     "id": "4393",
     "model": "KCL006LEDYEŞİL",
@@ -6110,388 +5502,6 @@
       "casing": "Mavi̇"
     }
   },
-  "4428": {
-    "id": "4428",
-    "model": "KCL018LED",
-    "image": "urunler/kcl018ledbeyaz.webp",
-    "name": {
-      "tr": "KCL018 (5730) Silikonlu 60 LED Şerit",
-      "en": "KCL018 (5730) Silikonlu 60 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, AMBER, GÜNIŞIĞI, KIRMIZI, MAVİ, YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440/1Mt. - 14Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, AMBER, GÜNIŞIĞI, KIRMIZI, MAVİ, YEŞİL"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440/1Mt. - 14Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W/1Mt.",
-      "casing": "Beyaz, Amber, Günişiği, Kırmızı, Mavi̇, Yeşi̇l"
-    }
-  },
-  "4434": {
-    "id": "4434",
-    "model": "KCL020LED",
-    "image": "urunler/kcl020ledbeyaz.webp",
-    "name": {
-      "tr": "KCL020 (5630) 0.2w 72 LED",
-      "en": "KCL020 (5630) 0.2w 72 LED"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "0,2W/14W,4W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, ARARENK, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "22Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "200"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "0,2W/14W,4W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, ARARENK, GÜNIŞIĞI, KIRMIZI, MAVİ, SARI, YEŞİL"
-        },
-        {
-          "label": "Lumen",
-          "value": "22Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "200"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "2W",
-      "casing": "Beyaz, Ararenk, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l"
-    }
-  },
-  "4441": {
-    "id": "4441",
-    "model": "KCL030LED",
-    "image": "urunler/kcl030ledbeyaz.webp",
-    "name": {
-      "tr": "KCL030 (5630) Modül LED",
-      "en": "KCL030 (5630) Modül LED"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "1,5W/1AD."
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı, Mavi, Kırmızı, Amber, Yeşil"
-        },
-        {
-          "label": "Lümen",
-          "value": "50Lm/Chip - 150/3Ad."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1000"
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Işık kaynağı başlığı tipi (veya başka bir elektrik arayüzü)",
-          "value": "12VDC"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "2KW"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "180LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "1,5KW"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Dış boyutlar",
-          "value": " "
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,313/0,337"
-        },
-        {
-          "label": "Tam yükte 250 nm ila 800 nm aralığında spektral güç dağılımı",
-          "value": ""
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "&gt;%94,8"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboskopik etki metriği",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "N/A"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K) - Günışığı (3000K)"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "1,5W/1AD."
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı, Mavi, Kırmızı, Amber, Yeşil"
-        },
-        {
-          "label": "Lumen",
-          "value": "50Lm/Chip - 150/3Ad."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1000"
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Non-Directional"
-        },
-        {
-          "label": "Light source cap-type (or other electric interface)",
-          "value": "12VDC"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Non-mains"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "2KW"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "180LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "1,5KW"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;80"
-        },
-        {
-          "label": "Outer dimensions",
-          "value": " "
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "No"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,313/0,337"
-        },
-        {
-          "label": "Spectral power distribution in the range 250 nm to 800 nm",
-          "value": ""
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "&gt;%94,8"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Stroboscopic effect metric",
-          "value": "&lt;0,4"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "N/A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Modül Led"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "Module Leds"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "1,5W/1Ad.",
-      "casing": "Beyaz, Günişiği, Mavi̇, Kırmızı, Amber, Yeşi̇l"
-    }
-  },
   "4447": {
     "id": "4447",
     "model": "KCL336K72",
@@ -6536,92 +5546,6 @@
     "variantOptions": {
       "casing": "Günişiği, Kırmızı, Sarı"
     }
-  },
-  "4449": {
-    "id": "4449",
-    "model": "KCL367LEDSTRIP",
-    "image": "urunler/kcl367ledstrip.webp",
-    "name": {
-      "tr": "KCL367 220v LED Strıp Kablo",
-      "en": "KCL367 220v LED Strıp Kablo"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "200"
-        },
-        {
-          "label": "Açıklama",
-          "value": "3528 Tek Chip'li"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "200"
-        },
-        {
-          "label": "Description",
-          "value": "3528 Tek Chip'li"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "4450": {
-    "id": "4450",
-    "model": "KCL368LEDSTRIP",
-    "image": "urunler/kcl368ledstrip.webp",
-    "name": {
-      "tr": "KCL368 220v LED Strıp Kablo",
-      "en": "KCL368 220v LED Strıp Kablo"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "200"
-        },
-        {
-          "label": "Açıklama",
-          "value": "5050 Üç Chip'li"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "200"
-        },
-        {
-          "label": "Description",
-          "value": "5050 Üç Chip'li"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
   },
   "4452": {
     "id": "4452",
@@ -24091,59 +23015,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "5089": {
-    "id": "5089",
-    "model": "KLD120B120WLDTR",
-    "image": "urunler/kld120b120wldtr.webp",
-    "name": {
-      "tr": "KLD120B LED Trafo 120w/8.3a IP20",
-      "en": "KLD120B LED Trafo 120w/8.3a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "10,1A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "10,1A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "120W"
-    }
-  },
   "5090": {
     "id": "5090",
     "model": "KLD150150WLDTR",
@@ -24179,59 +23050,6 @@
         {
           "label": "Product",
           "value": "12,10A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "5091": {
-    "id": "5091",
-    "model": "KLD150B150WLDTR",
-    "image": "urunler/kld150b150wldtr.webp",
-    "name": {
-      "tr": "KLD150B LED Trafo 150w/12.5a IP20",
-      "en": "KLD150B LED Trafo 150w/12.5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "12,5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "12,5A Led Trafosu"
         }
       ]
     },
@@ -24303,165 +23121,6 @@
       "watt": "15W"
     }
   },
-  "5093": {
-    "id": "5093",
-    "model": "KLD1615WLEDTRO",
-    "image": "urunler/kld1615wledtro.webp",
-    "name": {
-      "tr": "KLD16 LED Trafo 15W İncekasa",
-      "en": "KLD16 LED Trafo 15W İncekasa"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "1,2A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "1,2A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "15W"
-    }
-  },
-  "5094": {
-    "id": "5094",
-    "model": "KLD200B200WLDTR",
-    "image": "urunler/kld200b200wldtr.webp",
-    "name": {
-      "tr": "KLD200B LED Trafo 200w/16.7a IP20",
-      "en": "KLD200B LED Trafo 200w/16.7a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "16,7A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "16,7A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W"
-    }
-  },
-  "5095": {
-    "id": "5095",
-    "model": "KLD250B250WLDTR",
-    "image": "urunler/kld250b250wldtr.webp",
-    "name": {
-      "tr": "KLD250B LED Trafo 250w/21a IP20",
-      "en": "KLD250B LED Trafo 250w/21a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "250W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "21A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "250W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "21A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "250W"
-    }
-  },
   "5096": {
     "id": "5096",
     "model": "KLD2525WLEDTRO",
@@ -24513,59 +23172,6 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "25W"
-    }
-  },
-  "5097": {
-    "id": "5097",
-    "model": "KLD360B360WLDTR",
-    "image": "urunler/kld360b360wldtr.webp",
-    "name": {
-      "tr": "KLD360B LED Trafo 360w/30a IP20",
-      "en": "KLD360B LED Trafo 360w/30a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "360W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "30A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "360W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "30A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "360W"
     }
   },
   "5098": {
@@ -45394,324 +44000,6 @@
       "casing": "Yeşi̇l"
     }
   },
-  "5517": {
-    "id": "5517",
-    "model": "KWLD120120WWATPRLEDTRO",
-    "image": "urunler/kwld120120wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD120 Waterproof LED Trafo 120W",
-      "en": "KWLD120 Waterproof LED Trafo 120W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Ürün",
-          "value": "8.3A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Product",
-          "value": "8.3A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "120W"
-    }
-  },
-  "5518": {
-    "id": "5518",
-    "model": "KWLD150150WWATPRLEDTRO",
-    "image": "urunler/kwld150150wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD150 Waterproof LED Trafo 150W",
-      "en": "KWLD150 Waterproof LED Trafo 150W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Ürün",
-          "value": "12.5A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Product",
-          "value": "12.5A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "5519": {
-    "id": "5519",
-    "model": "KWLD200200WWATPRLEDTRO",
-    "image": "urunler/kwld200200wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD200 Waterproof LED Trafo 200W",
-      "en": "KWLD200 Waterproof LED Trafo 200W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Ürün",
-          "value": "16.7A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Product",
-          "value": "16.7A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W"
-    }
-  },
-  "5520": {
-    "id": "5520",
-    "model": "KWLD300300WWATPRLEDTRO",
-    "image": "urunler/kwld300300wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD300 Waterproof LED Trafo 300W",
-      "en": "KWLD300 Waterproof LED Trafo 300W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Ürün",
-          "value": "25A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Product",
-          "value": "25A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "300W"
-    }
-  },
-  "5521": {
-    "id": "5521",
-    "model": "KWLD3535WWATPRLEDTRO",
-    "image": "urunler/kwld3535wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD35 Waterproof LED Trafo 35W",
-      "en": "KWLD35 Waterproof LED Trafo 35W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "35W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Ürün",
-          "value": "2.5A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "35W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Product",
-          "value": "2.5A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "35W"
-    }
-  },
-  "5522": {
-    "id": "5522",
-    "model": "KWLD6060WWATPRLEDTRO",
-    "image": "urunler/kwld6060wwatprledtro.webp",
-    "name": {
-      "tr": "KWLD60 Waterproof LED Trafo 60W",
-      "en": "KWLD60 Waterproof LED Trafo 60W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "5A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "5A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
-  },
   "5523": {
     "id": "5523",
     "model": "KYM0033WLEDTRO",
@@ -46802,228 +45090,6 @@
     "variantOptions": {
       "watt": "30W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "5927": {
-    "id": "5927",
-    "model": "KCL022GOLDLED",
-    "image": "urunler/kcl022goldledbyz.webp",
-    "name": {
-      "tr": "KCL022 (2835) Gold İç Mekan LED Şerit 12v Silikonsuz",
-      "en": "KCL022 (2835) Gold İç Mekan LED Şerit 12v Silikonsuz 18W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lümen",
-          "value": "724,95"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "7,2W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "724,95LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "7,2W"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&lt;71"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3123/0,3203"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "8W"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lumen",
-          "value": "724,95"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "Hayır"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "7,2W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "724,95LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "7,2W"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&lt;71"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "Hayır"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "Hayır"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3123/0,3203"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W",
-      "casing": "Gold Kasa"
     }
   },
   "5932": {
@@ -121926,483 +119992,6 @@
       "watt": "18W"
     }
   },
-  "7323": {
-    "id": "7323",
-    "model": "KLD00160WLDTR",
-    "image": "urunler/kld00160wldtr.webp",
-    "name": {
-      "tr": "KLD001 Eco Ultra Slim LED Trafo 60W / 5a IP20",
-      "en": "KLD001 Eco Ultra Slim LED Trafo 60W / 5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        },
-        {
-          "label": "Ürün",
-          "value": "5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        },
-        {
-          "label": "Product",
-          "value": "5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
-  },
-  "7324": {
-    "id": "7324",
-    "model": "KLD002100WLDTR",
-    "image": "urunler/kld002100wldtr.webp",
-    "name": {
-      "tr": "KLD002 Eco Ultra Slim LED Trafo 100W / 8,5a IP20",
-      "en": "KLD002 Eco Ultra Slim LED Trafo 100W / 8,5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "8,5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "8,5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W"
-    }
-  },
-  "7325": {
-    "id": "7325",
-    "model": "KLD004150WLDTR",
-    "image": "urunler/kld004150wldtr.webp",
-    "name": {
-      "tr": "KLD004 Eco Ultra Slim LED Trafo 150W / 12,5a IP20",
-      "en": "KLD004 Eco Ultra Slim LED Trafo 150W / 12,5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "12,5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "12,5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "7326": {
-    "id": "7326",
-    "model": "KLD005200WLDTR",
-    "image": "urunler/kld005200wldtr.webp",
-    "name": {
-      "tr": "KLD005 Eco Ultra Slim LED Trafo 200W / 16,5a IP20",
-      "en": "KLD005 Eco Ultra Slim LED Trafo 200W / 16,5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "16,5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "16,5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W"
-    }
-  },
-  "7327": {
-    "id": "7327",
-    "model": "KLD006300WLDTR",
-    "image": "urunler/kld006300wldtr.webp",
-    "name": {
-      "tr": "KLD006 Eco Ultra Slim LED Trafo 300W / 25a IP20",
-      "en": "KLD006 Eco Ultra Slim LED Trafo 300W / 25a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "25A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "25A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "300W"
-    }
-  },
-  "7328": {
-    "id": "7328",
-    "model": "KLD007400WLDTR",
-    "image": "urunler/kld007400wldtr.webp",
-    "name": {
-      "tr": "KLD007 Eco Ultra Slim LED Trafo 400W / 33a IP20",
-      "en": "KLD007 Eco Ultra Slim LED Trafo 400W / 33a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "400W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "33A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "400W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "33A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "400W"
-    }
-  },
-  "7329": {
-    "id": "7329",
-    "model": "KLD008120WLDTR",
-    "image": "urunler/kld008120wldtr.webp",
-    "name": {
-      "tr": "KLD008 LED Trafo 120W / 5a IP20",
-      "en": "KLD008 LED Trafo 120W / 5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "120W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "120W"
-    }
-  },
-  "7330": {
-    "id": "7330",
-    "model": "KLD009240WLDTR",
-    "image": "urunler/kld009240wldtr.webp",
-    "name": {
-      "tr": "KLD009 LED Trafo 240W / 10a IP20",
-      "en": "KLD009 LED Trafo 240W / 10a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "240W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "10A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "240W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "10A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "240W"
-    }
-  },
-  "7331": {
-    "id": "7331",
-    "model": "KLD010360WLDTR",
-    "image": "urunler/kld010360wldtr.webp",
-    "name": {
-      "tr": "KLD010 LED Trafo 360W / 15a IP20",
-      "en": "KLD010 LED Trafo 360W / 15a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "360W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "15A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "360W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "15A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "360W"
-    }
-  },
   "7332": {
     "id": "7332",
     "model": "KLS518-1W-KIRMIZI",
@@ -130060,68 +127649,6 @@
       "casing": "Beyaz Kasa"
     }
   },
-  "7479": {
-    "id": "7479",
-    "model": "KCL040LEDRGB",
-    "image": "urunler/kcl040ledrgb.webp",
-    "name": {
-      "tr": "KCL040 Akıllı Şerit LED 12W RGB",
-      "en": "KCL040 Akıllı Şerit LED 12W RGB"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "200LM"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "200LM"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Rgb"
-    }
-  },
   "7480": {
     "id": "7480",
     "model": "KDA85010W-BYZ*ARN",
@@ -130712,57 +128239,6 @@
     "variantOptions": {
       "watt": "20W",
       "casing": "Ararenk (4000K)"
-    }
-  },
-  "7501": {
-    "id": "7501",
-    "model": "KLD020-1A-ADAPTOR",
-    "image": "urunler/kld20-1a-adaptor.webp",
-    "name": {
-      "tr": "KLD020 1a Adaptör Fişli",
-      "en": "KLD020 1a Adaptör Fişli"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "1A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "1A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma"
-      ],
-      "en": [
-        "Outdoor Lighting"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
     }
   },
   "7502": {
@@ -137204,161 +134680,6 @@
       "casing": "Rgb"
     }
   },
-  "7645": {
-    "id": "7645",
-    "model": "KCL112LED",
-    "image": "urunler/kcl112ledgnisk.webp",
-    "name": {
-      "tr": "KCL112 24v 120 Ledli Şeritled",
-      "en": "KCL112 24v 120 Ledli Şeritled"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, RGB"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500"
-        },
-        {
-          "label": "Açıklama",
-          "value": "96 Led/1metre"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, RGB"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500"
-        },
-        {
-          "label": "Description",
-          "value": "96 Led/1metre"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Beyaz, Günişiği, Rgb"
-    }
-  },
-  "7646": {
-    "id": "7646",
-    "model": "KLD021-2A-ADAPTOR",
-    "image": "urunler/kld20-1a-adaptor.webp",
-    "name": {
-      "tr": "KLD021 2a Adaptör Fişli",
-      "en": "KLD021 2a Adaptör Fişli"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "2A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "24W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "2A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma"
-      ],
-      "en": [
-        "Outdoor Lighting"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W"
-    }
-  },
-  "7647": {
-    "id": "7647",
-    "model": "KLD022-5A-ADAPTOR",
-    "image": "urunler/kld20-1a-adaptor.webp",
-    "name": {
-      "tr": "KLD022 5a Adaptör Fişli",
-      "en": "KLD022 5a Adaptör Fişli"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "5A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "5A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma"
-      ],
-      "en": [
-        "Outdoor Lighting"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
-  },
   "7649": {
     "id": "7649",
     "model": "KSR100",
@@ -138634,113 +135955,6 @@
       "watt": "5W"
     }
   },
-  "7721": {
-    "id": "7721",
-    "model": "240223143045",
-    "image": "urunler/kcl120-750x750-product_popup.webp",
-    "name": {
-      "tr": "KCL120 24v COB LED Şerit (300 Ledli)",
-      "en": "KCL120 8mm 320 LED Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "20Lm/Chip, 2400Lm/1Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100 Mt."
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "15W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "14.4W"
-        },
-        {
-          "label": "Işık Akısı (Faydalı)",
-          "value": "1600 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
-        }
-      ],
-      "en": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "20Lm/Chip, 2400Lm/1Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100 Mt."
-        },
-        {
-          "label": "Aydınlatma Teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Enerji Tüketimi",
-          "value": "15W"
-        },
-        {
-          "label": "Açık Güç Modu",
-          "value": "14.4W"
-        },
-        {
-          "label": "Işık Akısı (Faydalı)",
-          "value": "1600 LM"
-        },
-        {
-          "label": "Dış Boyutlar",
-          "value": "16x8mm"
-        },
-        {
-          "label": "Renk Oluşturma İndeksi (CRI)",
-          "value": ">80"
-        },
-        {
-          "label": "Yönlülük",
-          "value": "Yönsüz"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED"
-      ],
-      "en": [
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Beyaz (6500K)"
-    }
-  },
   "7722": {
     "id": "7722",
     "model": "240229165049",
@@ -139038,43 +136252,6 @@
     "variantOptions": {
       "watt": "150W"
     }
-  },
-  "7736": {
-    "id": "7736",
-    "model": "240429113646",
-    "image": "urunler/kcl372-led-fis.webp",
-    "name": {
-      "tr": "KCL372 220v LED Ișıklı Hortum Fișler",
-      "en": "KCL372 220v LED Strıp Sockets"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Volt",
-          "value": "220"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Volt",
-          "value": "220"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
   },
   "7737": {
     "id": "7737",
@@ -147706,53 +144883,6 @@
       "socket": "E27"
     }
   },
-  "7925": {
-    "id": "7925",
-    "model": "240503052445",
-    "image": "urunler/kld011-led-trafo.webp",
-    "name": {
-      "tr": "KLD011 250W Eco Ultra Slım LED Trafo",
-      "en": "KLD011 250W Eco Ultra Slım LED Drıvers"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Watt",
-          "value": "250W"
-        },
-        {
-          "label": "Amper",
-          "value": "21A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Power",
-          "value": "250W"
-        },
-        {
-          "label": "Amper",
-          "value": "21A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "250W"
-    }
-  },
   "7926": {
     "id": "7926",
     "model": "240503052726",
@@ -148423,93 +145553,6 @@
       "watt": "5W"
     }
   },
-  "7945": {
-    "id": "7945",
-    "model": "240503061450",
-    "image": "urunler/kld023-led-driver.webp",
-    "name": {
-      "tr": "KLD023 12v 1a LED Drıver",
-      "en": "KLD023 12v 1a LED Drıver"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "7946": {
-    "id": "7946",
-    "model": "240503061623",
-    "image": "urunler/kld023-led-driver.webp",
-    "name": {
-      "tr": "KLD024 24v 2a LED Drıver",
-      "en": "KLD024 24v 2a LED Drıver"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "7947": {
-    "id": "7947",
-    "model": "240503061730",
-    "image": "urunler/kld023-led-driver.webp",
-    "name": {
-      "tr": "KLD025 36v 3a LED Drıver",
-      "en": "KLD025 36v 3a LED Drıver"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
   "7948": {
     "id": "7948",
     "model": "240503061844",
@@ -148986,430 +146029,6 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "430W"
-    }
-  },
-  "7960": {
-    "id": "7960",
-    "model": "240520102406",
-    "image": "urunler/kcl014-led-serit.webp",
-    "name": {
-      "tr": "KCL014 24v Lensli LED Şerit",
-      "en": "KCL014 24v LED Strıp Wıth Lens"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lümen",
-          "value": "1246,25l"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "17"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1246,25LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "17,5"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;72"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3103/0,3183"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,95"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1,0"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K) - 3200K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lumen",
-          "value": "1246,25l"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "Hayır"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "17"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1246,25LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "17,5"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;72"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3103/0,3183"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,95"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1,0"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18",
-      "casing": "Beyaz, Günişiği, Amber, Mavi̇, Yeşi̇l, Kırmızı"
-    }
-  },
-  "7961": {
-    "id": "7961",
-    "model": "240520102713",
-    "image": "urunler/kcl025-led-serit.webp",
-    "name": {
-      "tr": "KCL025 (2835) 12v 1 Çipli 240ledli Şerit",
-      "en": "KCL025 (2835) 12v 1 Chıp 240led Strıp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "14W"
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lümen",
-          "value": "1429,59"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5Mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Yüksek parlaklıkta ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "14"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1429,59LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "14W"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Renk oluşturma indeksi",
-          "value": "&gt;70,97"
-        },
-        {
-          "label": "Eşdeğer güç talebi",
-          "value": "Hayır"
-        },
-        {
-          "label": "Eşdeğer güç",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renklilik koordinatı",
-          "value": "0,3124/0,3201"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        },
-        {
-          "label": "İlişkili renk sıcaklığı",
-          "value": "Beyaz (6500K) - 3200K"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "14W"
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, GÜNIŞIĞI, AMBER, MAVİ, YEŞİL, KIRMIZI"
-        },
-        {
-          "label": "Lumen",
-          "value": "1429,59"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5Mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "High luminance light source",
-          "value": "Hayır"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "Hayır"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "14"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1429,59LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "14W"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Colour rendering index",
-          "value": "&gt;70,97"
-        },
-        {
-          "label": "Claim of equivalent power",
-          "value": "Hayır"
-        },
-        {
-          "label": "Equivalent power",
-          "value": "Hayır"
-        },
-        {
-          "label": "Chromaticity coordinate",
-          "value": "0,3124/0,3201"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "14W",
-      "casing": "Beyaz, Günişiği, Amber, Mavi̇, Yeşi̇l, Kırmızı"
     }
   },
   "7971": {
@@ -150824,182 +147443,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "8057": {
-    "id": "8057",
-    "model": "250924141947",
-    "image": "urunler/kcl027.webp",
-    "name": {
-      "tr": "KCL027 İç Mekan LED Şerit 12v ",
-      "en": "KCL027 Indoor LED Strıp 12v "
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) - Beyaz (6500K) - Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "1500"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500mt."
-        },
-        {
-          "label": "Kullanılan aydınlatma teknolojisi",
-          "value": "LED"
-        },
-        {
-          "label": "Yönsüz veya yönlü",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Şebeke veya şebeke dışı",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Bağlı ışık kaynağı (CLS)",
-          "value": "Hayır"
-        },
-        {
-          "label": "Renk ayarlı ışık kaynağı",
-          "value": "Hayır"
-        },
-        {
-          "label": "Parlama önleyici kalkan",
-          "value": "Hayır"
-        },
-        {
-          "label": "Açık modda enerji tüketimi",
-          "value": "15W"
-        },
-        {
-          "label": "Faydalı ışık akısı",
-          "value": "1500LM"
-        },
-        {
-          "label": "Işın açısı yazışmaları",
-          "value": "N/A"
-        },
-        {
-          "label": "Açık güç modu",
-          "value": "12W"
-        },
-        {
-          "label": "Hazırda bekleme gücü",
-          "value": "N/A"
-        },
-        {
-          "label": "Hayatta kalma faktörü",
-          "value": "100%"
-        },
-        {
-          "label": "Lümen bakım faktörü",
-          "value": "0,94"
-        },
-        {
-          "label": "Titreme metriği",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Yer değiştirme faktörü",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) - Beyaz (6500K) - Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "1500"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500mt."
-        },
-        {
-          "label": "Lighting technology used",
-          "value": "LED"
-        },
-        {
-          "label": "Non-directional or directional",
-          "value": "Yönsüz"
-        },
-        {
-          "label": "Mains or non-mains",
-          "value": "Şebeke Dışı"
-        },
-        {
-          "label": "Connected light source (CLS)",
-          "value": "No"
-        },
-        {
-          "label": "Colour-tuneable light source",
-          "value": "No"
-        },
-        {
-          "label": "Anti-glare shield",
-          "value": "No"
-        },
-        {
-          "label": "Energy consumption in on-mode",
-          "value": "15W"
-        },
-        {
-          "label": "Useful luminous flux",
-          "value": "1500LM"
-        },
-        {
-          "label": "Beam angle correspondence",
-          "value": "N/A"
-        },
-        {
-          "label": "On-mode power",
-          "value": "12W"
-        },
-        {
-          "label": "Standby power",
-          "value": "N/A"
-        },
-        {
-          "label": "Survival factor",
-          "value": "100%"
-        },
-        {
-          "label": "Lumen maintenance factor",
-          "value": "0,94"
-        },
-        {
-          "label": "Flicker metric",
-          "value": "&lt;1"
-        },
-        {
-          "label": "Displacement factor",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "CCT + Amber"
-    }
-  },
   "8059": {
     "id": "8059",
     "model": "251014070845",
@@ -151018,46 +147461,6 @@
     },
     "brand": "k2",
     "variantOptions": {}
-  },
-  "8067": {
-    "id": "8067",
-    "model": "251014102408",
-    "image": "urunler/kcl041.webp",
-    "name": {
-      "tr": "KCL041 Usb’li Kumandalı Magıc Neon LED",
-      "en": "KCL041 Usb Controlled Magıc Neon LED"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "5W/M"
-        },
-        {
-          "label": "Renk",
-          "value": "RGB"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "5W/M"
-        },
-        {
-          "label": "Color",
-          "value": "RGB"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W/m",
-      "casing": "Rgb"
-    }
   },
   "8068": {
     "id": "8068",
@@ -161024,97 +157427,103 @@
   "KCL369": {
     "id": "KCL369",
     "model": "KCL369",
-    "image": "urunler/kcl369ledstrip.webp",
+    "image": "urunler/kcl369.webp",
     "name": {
-      "tr": "KCL369 220V NEON LED GÜÇ KABLOSU",
-      "en": "KCL369 220V NEON LED POWER CABLE"
+      "tr": "KCL369 LED IŞIKLI HORTUM FİŞİ",
+      "en": "KCL369 LED ROPE LIGHT PLUG"
     },
     "attributes": {
       "tr": [
         {
           "label": "Açıklama",
-          "value": "220V Neon Led Tek Renk Güç Kablosu"
+          "value": "LED Neon Fişi"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
+          "label": "Koli Adedi",
+          "value": "250"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin Uygun"
         }
       ],
       "en": [
         {
           "label": "Description",
-          "value": "220V Neon Led Single Color Power Cable"
+          "value": "LED Neon Plug"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
+          "label": "Package Quantity",
+          "value": "250"
+        },
+        {
+          "label": "Feature",
+          "value": "Suitable for 1, 2 or 3 Meter LED Strips"
         }
       ]
     },
     "category": {
       "tr": [
-        "Aksesuar",
-        "Led Aksesuarları"
+        "LED Fişi"
       ],
       "en": [
-        "Accessory",
-        "Led Accessories"
+        "LED Plug"
       ]
     },
-    "brand": "global",
+    "brand": "k2",
     "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
+      "tip": "LED Neon Fişi"
     }
   },
   "KCL371": {
     "id": "KCL371",
     "model": "KCL371",
-    "image": "urunler/kcl371ledstrip.webp",
+    "image": "urunler/kcl371.webp",
     "name": {
-      "tr": "KCL371 220V NEON LED RGB GÜÇ KABLOSU",
-      "en": "KCL371 220V NEON LED RGB POWER CABLE"
+      "tr": "KCL371 LED IŞIKLI HORTUM FİŞİ",
+      "en": "KCL371 LED ROPE LIGHT PLUG"
     },
     "attributes": {
       "tr": [
         {
           "label": "Açıklama",
-          "value": "220V Neon Led RGB Güç Kablosu / Kontrolcü"
+          "value": "LED RGB Fişi"
         },
         {
-          "label": "Gerilim",
-          "value": "220V"
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin Uygun"
         }
       ],
       "en": [
         {
           "label": "Description",
-          "value": "220V Neon Led RGB Power Cable / Controller"
+          "value": "LED RGB Plug"
         },
         {
-          "label": "Voltage",
-          "value": "220V"
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "Suitable for 1, 2 or 3 Meter LED Strips"
         }
       ]
     },
     "category": {
       "tr": [
-        "Aksesuar",
-        "Led Aksesuarları"
+        "LED Fişi"
       ],
       "en": [
-        "Accessory",
-        "Led Accessories"
+        "LED Plug"
       ]
     },
-    "brand": "global",
+    "brand": "k2",
     "variantOptions": {
-      "watt": null,
-      "socket": null,
-      "light": null,
-      "casing": null
+      "tip": "LED RGB Fişi"
     }
   },
   "KES170": {
@@ -180561,6 +176970,4541 @@
     "brand": "k2",
     "variantOptions": {
       "açıklama": "20 Duy / 10 Metre"
+    }
+  },
+  "KCL005_1": {
+    "id": "KCL005_1",
+    "model": "KCL005_1",
+    "image": "urunler/kcl005.webp",
+    "name": {
+      "tr": "KCL005 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL005 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "3 Çipli 3535"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1000mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonsuz, 60 LED/1mt / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "3 Chip 3535"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1000mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Non-silicone, 60 LED/1mt / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "Beyaz, Sarı, Mavi, Yeşil, Kırmızı, Turuncu"
+    }
+  },
+  "KCL005_2": {
+    "id": "KCL005_2",
+    "model": "KCL005_2",
+    "image": "urunler/kcl005.webp",
+    "name": {
+      "tr": "KCL005 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL005 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "3 Çipli 3535"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonsuz, 60 LED/1mt / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "3 Chip 3535"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Non-silicone, 60 LED/1mt / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "RGB"
+    }
+  },
+  "KCL003_1": {
+    "id": "KCL003_1",
+    "model": "KCL003_1",
+    "image": "urunler/kcl003.webp",
+    "name": {
+      "tr": "KCL003 12V DIŞ MEKAN LED ŞERİT",
+      "en": "KCL003 12V OUTDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "3 Çipli 3535"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonlu, 60 LED/1mt / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "3 Chip 3535"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Silicone, 60 LED/1mt / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "Beyaz, Sarı, Mavi"
+    }
+  },
+  "KCL003_2": {
+    "id": "KCL003_2",
+    "model": "KCL003_2",
+    "image": "urunler/kcl003.webp",
+    "name": {
+      "tr": "KCL003 12V DIŞ MEKAN LED ŞERİT",
+      "en": "KCL003 12V OUTDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "3 Çipli 3535"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonlu, 60 LED/1mt / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "3 Chip 3535"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Silicone, 60 LED/1mt / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "Yeşil, Kırmızı, Turuncu"
+    }
+  },
+  "KCL003_3": {
+    "id": "KCL003_3",
+    "model": "KCL003_3",
+    "image": "urunler/kcl003.webp",
+    "name": {
+      "tr": "KCL003 12V DIŞ MEKAN LED ŞERİT",
+      "en": "KCL003 12V OUTDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "3 Çipli 3535"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonlu, 60 LED/1mt / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "750 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "3 Chip 3535"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Silicone, 60 LED/1mt / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "RGB"
+    }
+  },
+  "KCL025": {
+    "id": "KCL025",
+    "model": "KCL025",
+    "image": "urunler/kcl025.webp",
+    "name": {
+      "tr": "KCL025 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL025 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "16W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1500"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "240 LED Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "16W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1500"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "240 LED High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "16W",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
+    }
+  },
+  "KCL022": {
+    "id": "KCL022",
+    "model": "KCL022",
+    "image": "urunler/kcl022.webp",
+    "name": {
+      "tr": "KCL022 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL022 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "1440 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "2835"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Gold Serisi, Silikonsuz, 120 LED/1mt, Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "1440 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "2835"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Gold Series, Non-silicone, 120 LED/1mt, High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W / 1mt",
+      "light": "Beyaz, Yeşil"
+    }
+  },
+  "KCL027": {
+    "id": "KCL027",
+    "model": "KCL027",
+    "image": "urunler/kcl027.webp",
+    "name": {
+      "tr": "KCL027 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL027 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1500"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "2835"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Gold Serisi, Silikonsuz, 120 LED/1mt, Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1500"
+        },
+        {
+          "label": "Chip Type",
+          "value": "2835"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Gold Series, Non-silicone, 120 LED/1mt, High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
+    }
+  },
+  "KCL018": {
+    "id": "KCL018",
+    "model": "KCL018",
+    "image": "urunler/kcl018.webp",
+    "name": {
+      "tr": "KCL018 12V DIŞ MEKAN LED ŞERİT",
+      "en": "KCL018 12V OUTDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "1440 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "12 Çipli 5630"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonlu, 60 LED/1mt / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "1440 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "12 Chip 5630"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Silicone, 60 LED/1mt / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W / 1mt",
+      "light": "Mavi"
+    }
+  },
+  "KCL002": {
+    "id": "KCL002",
+    "model": "KCL002",
+    "image": "urunler/kcl002.webp",
+    "name": {
+      "tr": "KCL002 12V DIŞ MEKAN LED ŞERİT",
+      "en": "KCL002 12V OUTDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4.8W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "420 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "Tek Çipli 3528"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonlu, 60 LED/1mt / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4.8W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "420 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "Single Chip 3528"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Silicone, 60 LED/1mt / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4.8W / 1mt",
+      "light": "Kırmızı, Mavi"
+    }
+  },
+  "KCL004": {
+    "id": "KCL004",
+    "model": "KCL004",
+    "image": "urunler/kcl004.webp",
+    "name": {
+      "tr": "KCL004 12V İÇ MEKAN LED ŞERİT",
+      "en": "KCL004 12V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4.8W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "420 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "Tek Çipli 3528"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonsuz, 60 LED/1mt / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4.8W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "420 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "Single Chip 3528"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Non-silicone, 60 LED/1mt / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4.8W / 1mt",
+      "light": "Beyaz, Yeşil, Mavi"
+    }
+  },
+  "KCL112_1": {
+    "id": "KCL112_1",
+    "model": "KCL112_1",
+    "image": "urunler/kcl112.webp",
+    "name": {
+      "tr": "KCL112 24V İÇ MEKAN LED ŞERİT",
+      "en": "KCL112 24V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "14W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "840 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "5050"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonsuz, 60 LED/1mt, 120 LED Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "14W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "840 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "5050"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Non-silicone, 60 LED/1mt, 120 LED High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "RGB"
+    }
+  },
+  "KCL112_2": {
+    "id": "KCL112_2",
+    "model": "KCL112_2",
+    "image": "urunler/kcl112.webp",
+    "name": {
+      "tr": "KCL112 24V İÇ MEKAN LED ŞERİT",
+      "en": "KCL112 24V INDOOR LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "14W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "840 / 1mt"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "5050"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Silikonsuz, 60 LED/1mt, 120 LED Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "14W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "840 / 1mt"
+        },
+        {
+          "label": "Chip Type",
+          "value": "5050"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "Non-silicone, 60 LED/1mt, 120 LED High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "light": "Sarı"
+    }
+  },
+  "KCL120": {
+    "id": "KCL120",
+    "model": "KCL120",
+    "image": "urunler/kcl120.webp",
+    "name": {
+      "tr": "KCL120 24V COB LED ŞERİT",
+      "en": "KCL120 24V COB LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "850"
+        },
+        {
+          "label": "Çip Türü",
+          "value": "COB"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500"
+        },
+        {
+          "label": "Özellik",
+          "value": "İç Mekan, 300 LED/1mt, Yüksek Lümen / IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "850"
+        },
+        {
+          "label": "Chip Type",
+          "value": "COB"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500"
+        },
+        {
+          "label": "Feature",
+          "value": "Indoor, 300 LED/1mt, High Lumen / IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W",
+      "light": "Beyaz, Sarı"
+    }
+  },
+  "KCL014": {
+    "id": "KCL014",
+    "model": "KCL014",
+    "image": "urunler/kcl014.webp",
+    "name": {
+      "tr": "KCL014 24V LENSLİ LED ŞERİT",
+      "en": "KCL014 24V LENSED LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1246"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 10 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "500mt"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yüksek Lümen"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "18W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1246"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 10 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "500mt"
+        },
+        {
+          "label": "Feature",
+          "value": "High Lumen"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "18W",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
+    }
+  },
+  "KCL030": {
+    "id": "KCL030",
+    "model": "KCL030",
+    "image": "urunler/kcl030.webp",
+    "name": {
+      "tr": "KCL030 MODÜL LED",
+      "en": "KCL030 MODULE LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "1.5W / 1 Adet"
+        },
+        {
+          "label": "Lümen",
+          "value": "50 Lm / Çip"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1000"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "1.5W / 1 Pcs"
+        },
+        {
+          "label": "Lumen",
+          "value": "50 Lm / Chip"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1000"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "1.5W / 1 Adet",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
+    }
+  },
+  "KCL020": {
+    "id": "KCL020",
+    "model": "KCL020",
+    "image": "urunler/kcl020.webp",
+    "name": {
+      "tr": "KCL020 LED BAR",
+      "en": "KCL020 LED BAR"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "0.2W / 14.4W / 1mt"
+        },
+        {
+          "label": "Lümen",
+          "value": "50 Lm / Çip"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "200"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "0.2W / 14.4W / 1mt"
+        },
+        {
+          "label": "Lumen",
+          "value": "50 Lm / Chip"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "200"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "0.2W / 14.4W / 1mt",
+      "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu"
+    }
+  },
+  "KCL041": {
+    "id": "KCL041",
+    "model": "KCL041",
+    "image": "urunler/kcl041.webp",
+    "name": {
+      "tr": "KCL041 USB'Lİ KUMANDALI MAGIC NEON LED",
+      "en": "KCL041 USB CONTROLLED MAGIC NEON LED"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W / m"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre - Set"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uygulama Desteği, Uzaktan Kumandalı, Sese Duyarlı, USB Bağlantılı, Sabitleme Klipsleri / IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W / m"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters - Set"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Feature",
+          "value": "App Support, Remote Controlled, Sound Sensitive, USB Powered, Fixing Clips / IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "5W / m",
+      "light": "RGB"
+    }
+  },
+  "KCL040": {
+    "id": "KCL040",
+    "model": "KCL040",
+    "image": "urunler/kcl040.webp",
+    "name": {
+      "tr": "KCL040 AKILLI LED ŞERİT",
+      "en": "KCL040 SMART LED STRIP"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "200"
+        },
+        {
+          "label": "Paketleme",
+          "value": "1 Rulo / 5 Metre"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "Alexa & Google Home Uyumlu, Uygulama Kontrolü (Wi-Fi 2.4GHz), RF Kontrol Kumandası, 12V 1.5A Adaptör Dahil"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "200"
+        },
+        {
+          "label": "Packaging",
+          "value": "1 Roll / 5 Meters"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "Alexa & Google Home Compatible, App Control (Wi-Fi 2.4GHz), RF Remote Control, 12V 1.5A Adapter Included"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Şerit"
+      ],
+      "en": [
+        "LED Strip"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W",
+      "light": "RGB"
+    }
+  },
+  "KLD020": {
+    "id": "KLD020",
+    "model": "KLD020",
+    "image": "urunler/kld020.webp",
+    "name": {
+      "tr": "KLD020 FİŞLİ ADAPTÖR",
+      "en": "KLD020 PLUG-IN ADAPTER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Akım",
+          "value": "1A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "250"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Current",
+          "value": "1A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "250"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Adaptör"
+      ],
+      "en": [
+        "Adapter"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KLD021": {
+    "id": "KLD021",
+    "model": "KLD021",
+    "image": "urunler/kld021.webp",
+    "name": {
+      "tr": "KLD021 FİŞLİ ADAPTÖR",
+      "en": "KLD021 PLUG-IN ADAPTER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Akım",
+          "value": "2A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Current",
+          "value": "2A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Adaptör"
+      ],
+      "en": [
+        "Adapter"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W"
+    }
+  },
+  "KLD022": {
+    "id": "KLD022",
+    "model": "KLD022",
+    "image": "urunler/kld022.webp",
+    "name": {
+      "tr": "KLD022 FİŞLİ ADAPTÖR",
+      "en": "KLD022 PLUG-IN ADAPTER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Akım",
+          "value": "5A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Current",
+          "value": "5A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Adaptör"
+      ],
+      "en": [
+        "Adapter"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KCL367": {
+    "id": "KCL367",
+    "model": "KCL367",
+    "image": "urunler/kcl367.webp",
+    "name": {
+      "tr": "KCL367 LED IŞIKLI HORTUM FİŞİ",
+      "en": "KCL367 LED ROPE LIGHT PLUG"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Açıklama",
+          "value": "3528 Üç Çipli"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "200"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin Uygun"
+        }
+      ],
+      "en": [
+        {
+          "label": "Description",
+          "value": "3528 Triple Chip"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "200"
+        },
+        {
+          "label": "Feature",
+          "value": "Suitable for 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Fişi"
+      ],
+      "en": [
+        "LED Plug"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "tip": "3528 Üç Çipli"
+    }
+  },
+  "KCL368": {
+    "id": "KCL368",
+    "model": "KCL368",
+    "image": "urunler/kcl368.webp",
+    "name": {
+      "tr": "KCL368 LED IŞIKLI HORTUM FİŞİ",
+      "en": "KCL368 LED ROPE LIGHT PLUG"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Açıklama",
+          "value": "5050 Üç Çipli"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "300"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin Uygun"
+        }
+      ],
+      "en": [
+        {
+          "label": "Description",
+          "value": "5050 Triple Chip"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "300"
+        },
+        {
+          "label": "Feature",
+          "value": "Suitable for 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Fişi"
+      ],
+      "en": [
+        "LED Plug"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "tip": "5050 Üç Çipli"
+    }
+  },
+  "KCL372": {
+    "id": "KCL372",
+    "model": "KCL372",
+    "image": "urunler/kcl372.webp",
+    "name": {
+      "tr": "KCL372 LED IŞIKLI HORTUM FİŞİ",
+      "en": "KCL372 LED ROPE LIGHT PLUG"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Açıklama",
+          "value": "220V 2835 Fiş"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin Uygun"
+        }
+      ],
+      "en": [
+        {
+          "label": "Description",
+          "value": "220V 2835 Plug"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "Suitable for 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Fişi"
+      ],
+      "en": [
+        "LED Plug"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "tip": "220V 2835 Fiş"
+    }
+  },
+  "KLD040": {
+    "id": "KLD040",
+    "model": "KLD040",
+    "image": "urunler/kld040.webp",
+    "name": {
+      "tr": "KLD040 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD040 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Akım",
+          "value": "5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "200"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "108 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Current",
+          "value": "5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "200"
+        },
+        {
+          "label": "Dimensions",
+          "value": "108 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KLD041": {
+    "id": "KLD041",
+    "model": "KLD041",
+    "image": "urunler/kld041.webp",
+    "name": {
+      "tr": "KLD041 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD041 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Akım",
+          "value": "8.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "150 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Current",
+          "value": "8.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "150 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KLD042": {
+    "id": "KLD042",
+    "model": "KLD042",
+    "image": "urunler/kld042.webp",
+    "name": {
+      "tr": "KLD042 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD042 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Akım",
+          "value": "12.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Current",
+          "value": "12.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KLD043": {
+    "id": "KLD043",
+    "model": "KLD043",
+    "image": "urunler/kld043.webp",
+    "name": {
+      "tr": "KLD043 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD043 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Akım",
+          "value": "16.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Current",
+          "value": "16.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KLD044": {
+    "id": "KLD044",
+    "model": "KLD044",
+    "image": "urunler/kld044.webp",
+    "name": {
+      "tr": "KLD044 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD044 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Akım",
+          "value": "21A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Current",
+          "value": "21A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "250W"
+    }
+  },
+  "KLD045": {
+    "id": "KLD045",
+    "model": "KLD045",
+    "image": "urunler/kld045.webp",
+    "name": {
+      "tr": "KLD045 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD045 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Akım",
+          "value": "25A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "226 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Current",
+          "value": "25A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "226 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "300W"
+    }
+  },
+  "KLD046": {
+    "id": "KLD046",
+    "model": "KLD046",
+    "image": "urunler/kld046.webp",
+    "name": {
+      "tr": "KLD046 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD046 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Akım",
+          "value": "33A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "250 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Current",
+          "value": "33A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "250 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "400W"
+    }
+  },
+  "KLD16": {
+    "id": "KLD16",
+    "model": "KLD16",
+    "image": "urunler/kld16.webp",
+    "name": {
+      "tr": "KLD16 SLIM LED TRAFO",
+      "en": "KLD16 SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Akım",
+          "value": "1.2A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "76 x 47 x 20 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Current",
+          "value": "1.2A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "76 x 47 x 20 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "15W"
+    }
+  },
+  "KLD120B": {
+    "id": "KLD120B",
+    "model": "KLD120B",
+    "image": "urunler/kld120b.webp",
+    "name": {
+      "tr": "KLD120B SLIM LED TRAFO",
+      "en": "KLD120B SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Akım",
+          "value": "10.1A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "185.7 x 46 x 36 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Current",
+          "value": "10.1A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "185.7 x 46 x 36 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "120W"
+    }
+  },
+  "KLD150B": {
+    "id": "KLD150B",
+    "model": "KLD150B",
+    "image": "urunler/kld150b.webp",
+    "name": {
+      "tr": "KLD150B SLIM LED TRAFO",
+      "en": "KLD150B SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Akım",
+          "value": "12.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "185.7 x 46 x 36 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Current",
+          "value": "12.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "185.7 x 46 x 36 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KLD200B": {
+    "id": "KLD200B",
+    "model": "KLD200B",
+    "image": "urunler/kld200b.webp",
+    "name": {
+      "tr": "KLD200B SLIM LED TRAFO",
+      "en": "KLD200B SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Akım",
+          "value": "16.7A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "200 x 58 x 40 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Current",
+          "value": "16.7A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200 x 58 x 40 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KLD250B": {
+    "id": "KLD250B",
+    "model": "KLD250B",
+    "image": "urunler/kld250b.webp",
+    "name": {
+      "tr": "KLD250B SLIM LED TRAFO",
+      "en": "KLD250B SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Akım",
+          "value": "21A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "223 x 68 x 40 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Current",
+          "value": "21A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "223 x 68 x 40 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "250W"
+    }
+  },
+  "KLD360B": {
+    "id": "KLD360B",
+    "model": "KLD360B",
+    "image": "urunler/kld360b.webp",
+    "name": {
+      "tr": "KLD360B SLIM LED TRAFO",
+      "en": "KLD360B SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "360W"
+        },
+        {
+          "label": "Akım",
+          "value": "30A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Slim Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "223 x 68 x 40 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, Bakır Sargı, %100 Full Watt, 3 Yıl Garanti, Fanlı, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "360W"
+        },
+        {
+          "label": "Current",
+          "value": "30A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Slim LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "223 x 68 x 40 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, Copper Winding, 100% Full Watt, 3 Years Warranty, With Fan, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "360W"
+    }
+  },
+  "KLD001": {
+    "id": "KLD001",
+    "model": "KLD001",
+    "image": "urunler/kld001.webp",
+    "name": {
+      "tr": "KLD001 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD001 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Akım",
+          "value": "5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "200"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "145 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Current",
+          "value": "5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "200"
+        },
+        {
+          "label": "Dimensions",
+          "value": "145 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KLD002": {
+    "id": "KLD002",
+    "model": "KLD002",
+    "image": "urunler/kld002.webp",
+    "name": {
+      "tr": "KLD002 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD002 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Akım",
+          "value": "8.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "168 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Current",
+          "value": "8.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "168 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KLD004": {
+    "id": "KLD004",
+    "model": "KLD004",
+    "image": "urunler/kld004.webp",
+    "name": {
+      "tr": "KLD004 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD004 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Akım",
+          "value": "12.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "235 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Current",
+          "value": "12.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "235 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KLD005": {
+    "id": "KLD005",
+    "model": "KLD005",
+    "image": "urunler/kld005.webp",
+    "name": {
+      "tr": "KLD005 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD005 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Akım",
+          "value": "16.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "308 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Current",
+          "value": "16.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "308 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KLD011": {
+    "id": "KLD011",
+    "model": "KLD011",
+    "image": "urunler/kld011.webp",
+    "name": {
+      "tr": "KLD011 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD011 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Akım",
+          "value": "21A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Current",
+          "value": "21A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "250W"
+    }
+  },
+  "KLD006": {
+    "id": "KLD006",
+    "model": "KLD006",
+    "image": "urunler/kld006.webp",
+    "name": {
+      "tr": "KLD006 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD006 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Akım",
+          "value": "25A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "308 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Current",
+          "value": "25A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "308 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "300W"
+    }
+  },
+  "KLD007": {
+    "id": "KLD007",
+    "model": "KLD007",
+    "image": "urunler/kld007.webp",
+    "name": {
+      "tr": "KLD007 ECO ULTRA SLIM LED TRAFO",
+      "en": "KLD007 ECO ULTRA SLIM LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Akım",
+          "value": "33A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Led Şerit Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "400 x 53 x 22 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ultra Slim, Klemensli, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Current",
+          "value": "33A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "LED Strip Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "400 x 53 x 22 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Ultra Slim, With Terminal, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "400W"
+    }
+  },
+  "KWLD35": {
+    "id": "KWLD35",
+    "model": "KWLD35",
+    "image": "urunler/kwld35.webp",
+    "name": {
+      "tr": "KWLD35 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD35 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "35W"
+        },
+        {
+          "label": "Akım",
+          "value": "2.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "200 x 30 x 20 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "35W"
+        },
+        {
+          "label": "Current",
+          "value": "2.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200 x 30 x 20 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "35W"
+    }
+  },
+  "KWLD60": {
+    "id": "KWLD60",
+    "model": "KWLD60",
+    "image": "urunler/kwld60.webp",
+    "name": {
+      "tr": "KWLD60 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD60 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Akım",
+          "value": "5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "180 x 46 x 36 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Current",
+          "value": "5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "180 x 46 x 36 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KWLD120": {
+    "id": "KWLD120",
+    "model": "KWLD120",
+    "image": "urunler/kwld120.webp",
+    "name": {
+      "tr": "KWLD120 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD120 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Akım",
+          "value": "8.3A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "180 x 67 x 44 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Current",
+          "value": "8.3A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "180 x 67 x 44 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "120W"
+    }
+  },
+  "KWLD150": {
+    "id": "KWLD150",
+    "model": "KWLD150",
+    "image": "urunler/kwld150.webp",
+    "name": {
+      "tr": "KWLD150 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD150 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Akım",
+          "value": "12.5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "205 x 67 x 44 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Current",
+          "value": "12.5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "205 x 67 x 44 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KWLD200": {
+    "id": "KWLD200",
+    "model": "KWLD200",
+    "image": "urunler/kwld200.webp",
+    "name": {
+      "tr": "KWLD200 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD200 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Akım",
+          "value": "16.7A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "255 x 70 x 43 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Current",
+          "value": "16.7A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "255 x 70 x 43 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KWLD300": {
+    "id": "KWLD300",
+    "model": "KWLD300",
+    "image": "urunler/kwld300.webp",
+    "name": {
+      "tr": "KWLD300 DIŞ MEKAN LED TRAFO",
+      "en": "KWLD300 OUTDOOR LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Akım",
+          "value": "25A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Dış Mekan Led Trafo"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "220 x 105 x 50 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Aşırı Akım Korumalı, %100 Full Watt, 3 Yıl Garanti, IP67"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Current",
+          "value": "25A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "Outdoor LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "220 x 105 x 50 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Overcurrent Protected, 100% Full Watt, 3 Years Warranty, IP67"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "300W"
+    }
+  },
+  "KLD008": {
+    "id": "KLD008",
+    "model": "KLD008",
+    "image": "urunler/kld008.webp",
+    "name": {
+      "tr": "KLD008 24V LED TRAFOSU",
+      "en": "KLD008 24V LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Akım",
+          "value": "5A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "5A Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "188 x 41 x 36 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "%100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "120W"
+        },
+        {
+          "label": "Current",
+          "value": "5A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "5A LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "188 x 41 x 36 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "120W"
+    }
+  },
+  "KLD009": {
+    "id": "KLD009",
+    "model": "KLD009",
+    "image": "urunler/kld009.webp",
+    "name": {
+      "tr": "KLD009 24V LED TRAFOSU",
+      "en": "KLD009 24V LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "240W"
+        },
+        {
+          "label": "Akım",
+          "value": "10A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "10A Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "225 x 68 x 40 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "%100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "240W"
+        },
+        {
+          "label": "Current",
+          "value": "10A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "10A LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "225 x 68 x 40 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "240W"
+    }
+  },
+  "KLD010": {
+    "id": "KLD010",
+    "model": "KLD010",
+    "image": "urunler/kld010.webp",
+    "name": {
+      "tr": "KLD010 24V LED TRAFOSU",
+      "en": "KLD010 24V LED TRANSFORMER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "360W"
+        },
+        {
+          "label": "Akım",
+          "value": "15A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Açıklama",
+          "value": "15A Led Trafosu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "225 x 68 x 40 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "%100 Full Watt, 3 Yıl Garanti, IP20"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "360W"
+        },
+        {
+          "label": "Current",
+          "value": "15A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "24V DC / 50-60Hz"
+        },
+        {
+          "label": "Description",
+          "value": "15A LED Transformer"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "225 x 68 x 40 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "100% Full Watt, 3 Years Warranty, IP20"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "360W"
+    }
+  },
+  "KLD023": {
+    "id": "KLD023",
+    "model": "KLD023",
+    "image": "urunler/kld023.webp",
+    "name": {
+      "tr": "KLD023 MİNİ LED DRİVER",
+      "en": "KLD023 MINI LED DRIVER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Akım",
+          "value": "1A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC"
+        },
+        {
+          "label": "Açıklama",
+          "value": "12W 1A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Current",
+          "value": "1A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC"
+        },
+        {
+          "label": "Description",
+          "value": "12W 1A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "For 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KLD024": {
+    "id": "KLD024",
+    "model": "KLD024",
+    "image": "urunler/kld024.webp",
+    "name": {
+      "tr": "KLD024 MİNİ LED DRİVER",
+      "en": "KLD024 MINI LED DRIVER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Akım",
+          "value": "2A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC"
+        },
+        {
+          "label": "Açıklama",
+          "value": "24W 2A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "24W"
+        },
+        {
+          "label": "Current",
+          "value": "2A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC"
+        },
+        {
+          "label": "Description",
+          "value": "24W 2A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "For 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "24W"
+    }
+  },
+  "KLD025": {
+    "id": "KLD025",
+    "model": "KLD025",
+    "image": "urunler/kld025.webp",
+    "name": {
+      "tr": "KLD025 MİNİ LED DRİVER",
+      "en": "KLD025 MINI LED DRIVER"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Akım",
+          "value": "3A"
+        },
+        {
+          "label": "Giriş Gerilimi",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Çıkış Gerilimi",
+          "value": "12V DC"
+        },
+        {
+          "label": "Açıklama",
+          "value": "36W 3A"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Özellik",
+          "value": "1, 2 veya 3 Metre Şerit Ledler İçin"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "36W"
+        },
+        {
+          "label": "Current",
+          "value": "3A"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "175-265V 50/60Hz"
+        },
+        {
+          "label": "Output Voltage",
+          "value": "12V DC"
+        },
+        {
+          "label": "Description",
+          "value": "36W 3A"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Feature",
+          "value": "For 1, 2 or 3 Meter LED Strips"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Trafo"
+      ],
+      "en": [
+        "LED Transformer"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "36W"
     }
   }
 }
