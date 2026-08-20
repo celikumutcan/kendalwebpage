@@ -147,20 +147,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
     ? product.variantOptions?.casing 
     : (isCctLike(product.variantOptions?.light) ? product.variantOptions?.light : null);
     
-  const hasCctInRaw = rawSpecs.some(attr => isCctLike(String(attr.value)));
-  const hasCctInAll = allAttrs.some(attr => isCctLike(String(attr.value)));
-
-  if (!hasCctInRaw) {
-    if (cctValue) {
-      rawSpecs.push({ label: language === "tr" ? "Işık Rengi" : "Light Color", value: cctValue });
-    } else if (hasCctInAll) {
-      const cctAttr = allAttrs.find(attr => isCctLike(String(attr.value)));
-      if (cctAttr) {
-        rawSpecs.push({ label: language === "tr" ? "Işık Rengi" : "Light Color", value: cctAttr.value });
-      }
-    }
-  }
-
   const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions"];
 
   const featureAttrs = rawSpecs.filter(attr => featureLabels.includes(attr.label));
@@ -177,9 +163,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       .map(s => /^\d+\s*[Yy]ıl$/.test(s) ? `${s} Garanti` : s)
   );
 
-  // Ürünün ayrı bir "Özellik" alanı yoksa, Teknik Detaylar tek başına altta
-  // yalnız kalıp şık durmuyor. Bu durumda teknik detayları Öne Çıkan
-  // Özellikler alanında gösteriyoruz, alttaki Teknik Detaylar bölümünü atlıyoruz.
   const hasDedicatedFeatures = featuresList.length > 0;
   const displayFeaturesList = hasDedicatedFeatures
     ? featuresList
@@ -449,9 +432,12 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   colorTemp = "Standart";
                 }
 
-                if (colorTemp === "Günışığı" || colorTemp === "Gün işığı") colorTemp = "Günışığı (3200K)";
-                else if (colorTemp === "Beyaz") colorTemp = "Beyaz (6500K)";
-                else if (colorTemp === "Ararenk") colorTemp = "Ararenk (4000K)";
+                const isAccessory = product.category?.tr?.includes("Spot Aksesuarı") || product.category?.tr?.includes("Aksesuar") || product.category?.tr?.includes("Ray");
+                if (!isAccessory) {
+                  if (colorTemp === "Günışığı" || colorTemp === "Gün işığı") colorTemp = "Günışığı (3200K)";
+                  else if (colorTemp === "Beyaz") colorTemp = "Beyaz (6500K)";
+                  else if (colorTemp === "Ararenk") colorTemp = "Ararenk (4000K)";
+                }
 
                 const detectedCasing = opts.casing || "";
                 const watt = opts.watt || "";
@@ -487,16 +473,21 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               const uniqueWatts = Array.from(new Set(variantData.map(v => v.watt).filter(w => w)));
               const uniqueSockets = Array.from(new Set(variantData.filter(v => !currentVariantData.watt || v.watt === currentVariantData.watt).map(v => v.socket).filter(s => s)));
               
-              // To support comma-separated string options on single products, we flatMap them
-              const uniqueColors = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
-                if (!v.colorTemp) return [];
-                if (isCctLike(v.colorTemp)) return [];
-                return v.colorTemp.split(',').map((c: string) => c.trim());
+              const uniqueLights = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
+                const lightOpt = v.variant.variantOptions?.light;
+                if (!lightOpt) return [];
+                return lightOpt.split(',').map((c: string) => c.trim());
               }).filter((c: string) => c && c !== "Standart")));
 
-              const getBestVariantMatch = (targetAttr: 'watt' | 'socket' | 'colorTemp', value: string) => {
-                // For colorTemp, allow matching if the value is part of a comma-separated string
-                const candidates = variantData.filter(v => targetAttr === 'colorTemp' ? v[targetAttr]?.includes(value) : v[targetAttr] === value);
+              const uniqueCasings = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
+                const casingOpt = v.variant.variantOptions?.casing;
+                if (!casingOpt) return [];
+                return casingOpt.split(',').map((c: string) => c.trim());
+              }).filter((c: string) => c && c !== "Standart")));
+
+              const getBestVariantMatch = (targetAttr: 'watt' | 'socket' | 'light' | 'casing', value: string) => {
+                // For light and casing, allow matching if the value is part of a comma-separated string
+                const candidates = variantData.filter(v => targetAttr === 'light' || targetAttr === 'casing' ? v.variant.variantOptions?.[targetAttr]?.includes(value) : v[targetAttr] === value);
                 if (candidates.length === 0) return null;
 
                 candidates.sort((a, b) => {
@@ -510,9 +501,13 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     if (a.socket === currentVariantData.socket) aScore++;
                     if (b.socket === currentVariantData.socket) bScore++;
                   }
-                  if (targetAttr !== 'colorTemp') {
-                    if (a.colorTemp === currentVariantData.colorTemp) aScore++;
-                    if (b.colorTemp === currentVariantData.colorTemp) bScore++;
+                  if (targetAttr !== 'light') {
+                    if (a.variant.variantOptions?.light === currentVariantData.variant.variantOptions?.light) aScore++;
+                    if (b.variant.variantOptions?.light === currentVariantData.variant.variantOptions?.light) bScore++;
+                  }
+                  if (targetAttr !== 'casing') {
+                    if (a.variant.variantOptions?.casing === currentVariantData.variant.variantOptions?.casing) aScore++;
+                    if (b.variant.variantOptions?.casing === currentVariantData.variant.variantOptions?.casing) bScore++;
                   }
                   return bScore - aScore;
                 });
@@ -571,11 +566,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               return (
                 <div className="w-full flex flex-col gap-10 items-center text-center">
-                  {/* Renk Seçenekleri */}
-                  {uniqueColors.length > 0 && (
+                  {/* Renk Seçenekleri (Light) */}
+                  {uniqueLights.length > 0 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
-                        title={language === "tr" ? "Renk Seçenekleri" : "Color Options"}
+                        title={language === "tr" ? (uniqueCasings.length > 0 ? "Işık Rengi Seçenekleri" : "Renk Seçenekleri") : (uniqueCasings.length > 0 ? "Light Color Options" : "Color Options")}
                         icon={
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -583,8 +578,31 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                         }
                       />
                       <div className="flex flex-wrap justify-center gap-2 -mt-4">
-                        {uniqueColors.map(color => {
-                          const match = getBestVariantMatch('colorTemp', color);
+                        {uniqueLights.map(color => {
+                          const match = getBestVariantMatch('light', color);
+                          if (!match) return null;
+                          return renderVariantLink(match, color, true);
+                        })}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Kasa Rengi Seçenekleri (Casing) */}
+                  {uniqueCasings.length > 0 && (
+                    <div className="flex flex-col items-center">
+                      <SectionHeader
+                        title={language === "tr" 
+                          ? (uniqueLights.length > 0 ? "Kasa Rengi Seçenekleri" : "Renk Seçenekleri") 
+                          : (uniqueLights.length > 0 ? "Casing Options" : "Color Options")}
+                        icon={
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                          </svg>
+                        }
+                      />
+                      <div className="flex flex-wrap justify-center gap-2 -mt-4">
+                        {uniqueCasings.map(color => {
+                          const match = getBestVariantMatch('casing', color);
                           if (!match) return null;
                           return renderVariantLink(match, color, true);
                         })}
@@ -645,10 +663,17 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 <SectionDivider />
                 <div className="w-full -mt-3">
                   <SectionHeader
-                    title={language === "tr" ? "Öne Çıkan Özellikler" : "Key Features"}
+                    title={hasDedicatedFeatures 
+                      ? (language === "tr" ? "Öne Çıkan Özellikler" : "Key Features") 
+                      : (language === "tr" ? "Teknik Detaylar" : "Technical Details")
+                    }
                     icon={
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        {hasDedicatedFeatures ? (
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                        ) : (
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        )}
                       </svg>
                     }
                   />
@@ -691,8 +716,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </div>
 
           {/* Technical Specs - Bento Box Grid (full width, below image & variant options) */}
-          {/* Özellik yoksa teknik detaylar zaten Öne Çıkan Özellikler alanında gösterildi, burada tekrar etmiyoruz. */}
-          {(hasDedicatedFeatures || specAttrs.length === 0) && (
+          {/* Özellik yoksa teknik detaylar zaten yukarıda baloncuklar olarak gösterildi, burada tekrar etmiyoruz. */}
+          {(hasDedicatedFeatures && specAttrs.length > 0) && (
           <div className="w-full flex flex-col gap-10 lg:gap-14">
             <SectionDivider />
 
@@ -750,7 +775,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                             <dt className={`text-center text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
                               {attr.label}
                             </dt>
-                            <dd className={`m-0 text-sm md:text-[15px] font-medium leading-relaxed ${isLight ? "text-zinc-700" : "text-zinc-300"}`}>
+                            <dd className={`m-0 text-sm md:text-base text-center font-semibold leading-relaxed ${isLight ? "text-zinc-800" : "text-white"}`}>
                               {decodedValue}
                             </dd>
                           </div>
