@@ -147,7 +147,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
     ? product.variantOptions?.casing 
     : (isCctLike(product.variantOptions?.light) ? product.variantOptions?.light : null);
     
-  const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions"];
+  const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions", "Belge", "Certificate"];
 
   const featureAttrs = rawSpecs.filter(attr => featureLabels.includes(attr.label));
   const specAttrs = rawSpecs.filter(attr => !featureLabels.includes(attr.label));
@@ -681,13 +681,24 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   <ul className="flex flex-wrap justify-center gap-2.5 -mt-4">
                     {displayFeaturesList.map((feat, idx) => {
                       const isYerliUretim = feat.trim().toLowerCase() === "yerli üretim" || feat.trim().toLowerCase() === "domestic production";
+                      const isTse = feat.trim().toLowerCase() === "tse";
+                      const isLogoBadge = isYerliUretim || isTse;
                       return (
-                        <li key={idx} className={`flex ${isYerliUretim ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-2.5 rounded-xl border transition-colors duration-300 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:border-zinc-200" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
+                        <li key={idx} className={`flex ${isLogoBadge ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-2.5 rounded-xl border transition-colors duration-300 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:border-zinc-200" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
                           {isYerliUretim ? (
                             <div className="relative w-[92px] h-[33px]">
                               <Image
                                 src={getAssetPath('/images/yerli-uretim-logo-cropped.webp')}
                                 alt="Yerli Üretim"
+                                fill
+                                className="object-contain"
+                              />
+                            </div>
+                          ) : isTse ? (
+                            <div className="relative w-[50px] h-[50px]">
+                              <Image
+                                src={getAssetPath('/images/tse-logo.webp')}
+                                alt="TSE"
                                 fill
                                 className="object-contain"
                               />

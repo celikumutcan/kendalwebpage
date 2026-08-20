@@ -124,3 +124,11 @@ Kullanıcı senden bir ürüne **Renk Seçenekleri (Işık Rengi)**, **Kasa Reng
 
 ## 12. "Yerli Üretim" Rozeti
 Üründe yerli üretim ambleminin çıkması için attributes içindeki ilgili değerin KESİNLİKLE "Yerli Üretim" olması gerekir (Sadece "Yerli" yazılırsa logo çıkmaz!). Bunu global bir script ile düzelttik, yeni ürün eklerken buna dikkat et.
+
+## 13. Yeni Ürün Eklerken Eski "Hayalet" (Ghost) Kayıtları Temizleme (ZORUNLU)
+
+Yeni bir ürün (Örn: `KTL160`) eklediğinde veya JSON üzerinden mevcut bir modeli güncellediğinde, aynı isimli ürünün geçmişten kalan ve içi çöp verilerle (eski kasa renkleri vb.) dolu olan **sayısal ID'li (örn: `7362`, `7903`)** "hayalet" (ghost) kopyaları `products.json` içinde kalmış olabilir. 
+
+UI (`ProductDetailClient.tsx`) varyantları gruplarken aynı "base model" ismine sahip tüm ürünleri birleştirdiği için, senin tertemiz eklediğin yeni ana ürünün yanına bu hayalet kayıtlardaki istenmeyen varyantlar veya renkler de çekilip ekranda bozuk/fazla bir görünüme sebep olacaktır.
+
+**KURAL:** Yeni bir seri eklerken/güncellerken (Örn: Magnet KTL serisi), mutlaka arkasından bir Node.js script'i yazarak `products.json` içinde sadece sayılardan oluşan ID'lere sahip olan ve ismi (örn: `KTL160`) bu yeni serilerle eşleşen eski kayıtları (ghosts) bulup **SİL**. Kullanıcı sana "ekranda eski renk çıkıyor" demeden önce bu hayalet temizliğini her zaman önden yapmalısın.
