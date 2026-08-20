@@ -4776,529 +4776,6 @@
       "casing": "Yeşi̇l"
     }
   },
-  "4356": {
-    "id": "4356",
-    "model": "KCL001LED",
-    "image": "urunler/kcl001ledbeyaz.webp",
-    "name": {
-      "tr": "KCL001 (5050) 3çip Silikonsuz 30 LED Şerit",
-      "en": "KCL001 (5050) 3çip Silikonsuz 30 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7,2W/1MT"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Sarı, Yeşil, Rgb"
-        },
-        {
-          "label": "Lümen",
-          "value": "420/1mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7,2W/1MT"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Sarı, Yeşil, Rgb"
-        },
-        {
-          "label": "Lumen",
-          "value": "420/1mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7,2W/1mt",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
-    }
-  },
-  "4393": {
-    "id": "4393",
-    "model": "KCL006LEDYEŞİL",
-    "image": "urunler/kcl006ledyesil.webp",
-    "name": {
-      "tr": "KCL006 (3528) 220v Silikonlu 60ledli Şerit",
-      "en": "KCL006 (3528) 220v Silikonlu 60ledli Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Lümen",
-          "value": "840/1mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Yeşil"
-        },
-        {
-          "label": "Lumen",
-          "value": "840/1mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "14,4W/1mt",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Yeşi̇l"
-    }
-  },
-  "4401": {
-    "id": "4401",
-    "model": "KCL008LEDBEYAZ",
-    "image": "urunler/kcl008ledbeyaz.webp",
-    "name": {
-      "tr": "KCL008 (5050) 3çip Silikonlu 30 LED Şerit",
-      "en": "KCL008 (5050) 3çip Silikonlu 30 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7,2W/1MT"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Sarı, Yeşil, Rgb"
-        },
-        {
-          "label": "Lümen",
-          "value": "420/1mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7,2W/1MT"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı, Kırmızı, Mavi, Sarı, Yeşil, Rgb"
-        },
-        {
-          "label": "Lumen",
-          "value": "420/1mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7,2W/1mt",
-      "casing": "Beyaz, Günişiği, Kırmızı, Mavi̇, Sarı, Yeşi̇l, Rgb"
-    }
-  },
-  "4408": {
-    "id": "4408",
-    "model": "KCL009LEDBEYAZ",
-    "image": "urunler/kcl009ledbeyaz.webp",
-    "name": {
-      "tr": "KCL009 (2835) Silikonlu 60 LED Şerit",
-      "en": "KCL009 (2835) Silikonlu 60 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300/1mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300/1mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "14,4W/1mt",
-      "casing": "Beyaz, Günişiği"
-    }
-  },
-  "4410": {
-    "id": "4410",
-    "model": "KCL010LED",
-    "image": "urunler/kcl010ledbeyaz.webp",
-    "name": {
-      "tr": "KCL010 (2835) Silikonsuz 60 LED Şerit",
-      "en": "KCL010 (2835) Silikonsuz 60 LED Şerit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lümen",
-          "value": "1300/1mt"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "14,4W/1MT"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lumen",
-          "value": "1300/1mt"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "14,4W/1mt",
-      "casing": "Beyaz, Günişiği"
-    }
-  },
-  "4412": {
-    "id": "4412",
-    "model": "KCL015LED",
-    "image": "urunler/kcl015ledbeyaz.webp",
-    "name": {
-      "tr": "KCL015 (3014) 230v 72smd",
-      "en": "KCL015 (3014) 230v 72smd"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lümen",
-          "value": "8Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Beyaz, Günışığı"
-        },
-        {
-          "label": "Lumen",
-          "value": "8Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Beyaz, Günişiği"
-    }
-  },
-  "4413": {
-    "id": "4413",
-    "model": "KCL015LEDGNSIK",
-    "image": "urunler/kcl015ledgnsik.webp",
-    "name": {
-      "tr": "KCL015 (3014) 230v 72smd Günışığı",
-      "en": "KCL015 (3014) 230v 72smd Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı"
-        },
-        {
-          "label": "Lümen",
-          "value": "8Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100mt"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Daylight"
-        },
-        {
-          "label": "Lumen",
-          "value": "8Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100mt"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "4425": {
-    "id": "4425",
-    "model": "KCL017LEDMAVI",
-    "image": "urunler/kcl017ledmavi.webp",
-    "name": {
-      "tr": "KCL017 (5730) Silikonsuz 60 LED Şerit Mavi",
-      "en": "KCL017 (5730) Silikonsuz 60 LED Şerit Mavi"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "Mavi"
-        },
-        {
-          "label": "Lümen",
-          "value": "1440/1Mt. - 14Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "Mavi"
-        },
-        {
-          "label": "Lumen",
-          "value": "1440/1Mt. - 14Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W/1Mt.",
-      "casing": "Mavi̇"
-    }
-  },
-  "4447": {
-    "id": "4447",
-    "model": "KCL336K72",
-    "image": "urunler/kcl336k72gnisk.webp",
-    "name": {
-      "tr": "KCL336K Kare LED Hortum 72",
-      "en": "KCL336K Kare LED Hortum 72"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı, Kırmızı, Sarı"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50Ad"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı, Kırmızı, Sarı"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50Ad"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "220 v Şerit Ledler"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "220V Led Strips"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günişiği, Kırmızı, Sarı"
-    }
-  },
   "4452": {
     "id": "4452",
     "model": "KCL370DUYFIS",
@@ -16036,59 +15513,6 @@
       "watt": "48W"
     }
   },
-  "4709": {
-    "id": "4709",
-    "model": "KED001EMERGENCY",
-    "image": "urunler/ked001emergency.webp",
-    "name": {
-      "tr": "KED001 Acil Durum Trafosu 60W 2200mah",
-      "en": "KED001 Acil Durum Trafosu 60W 2200mah"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3-60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Açıklama",
-          "value": "2200 mAh 600mA"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3-60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Description",
-          "value": "2200 mAh 600mA"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerid Led Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Şerid Led Trafoları"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
-  },
   "4710": {
     "id": "4710",
     "model": "KEL00624LEDKRM",
@@ -20944,271 +20368,6 @@
     },
     "brand": "k2",
     "variantOptions": {}
-  },
-  "5090": {
-    "id": "5090",
-    "model": "KLD150150WLDTR",
-    "image": "urunler/kld150150wldtr.webp",
-    "name": {
-      "tr": "KLD150 LED Trafo 150w/12.10a",
-      "en": "KLD150 LED Trafo 150w/12.10a"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Ürün",
-          "value": "12,10A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Product",
-          "value": "12,10A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "5092": {
-    "id": "5092",
-    "model": "KLD1515WLEDTRO",
-    "image": "urunler/kld1515wledtro.webp",
-    "name": {
-      "tr": "KLD15 LED Trafo 15W Kalın Kasa",
-      "en": "KLD15 LED Trafo 15W Kalın Kasa"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "1,2A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "1,2A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "15W"
-    }
-  },
-  "5096": {
-    "id": "5096",
-    "model": "KLD2525WLEDTRO",
-    "image": "urunler/kld2525wledtro.webp",
-    "name": {
-      "tr": "KLD25 LED Trafo 25w/2.10a",
-      "en": "KLD25 LED Trafo 25w/2.10a"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100"
-        },
-        {
-          "label": "Ürün",
-          "value": "2,10A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        },
-        {
-          "label": "Product",
-          "value": "2,10A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "25W"
-    }
-  },
-  "5098": {
-    "id": "5098",
-    "model": "KLD500500WLDTR",
-    "image": "urunler/kld500500wldtr.webp",
-    "name": {
-      "tr": "KLD500 LED Trafo 500w/41,70a",
-      "en": "KLD500 LED Trafo 500w/41,70a"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "500W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Ürün",
-          "value": "41,7A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "500W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Product",
-          "value": "41,7A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "500W"
-    }
-  },
-  "5099": {
-    "id": "5099",
-    "model": "KLD50B60WLEDTRO",
-    "image": "urunler/kld50b60wledtro.webp",
-    "name": {
-      "tr": "KLD50B LED Trafo 60w/5a IP20",
-      "en": "KLD50B LED Trafo 60w/5a IP20"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        },
-        {
-          "label": "Ürün",
-          "value": "5A Led Trafosu"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "60W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        },
-        {
-          "label": "Product",
-          "value": "5A Led Trafosu"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Şerit LED Trafoları"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Drivers"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
   },
   "5100": {
     "id": "5100",
@@ -38348,68 +37507,6 @@
     "variantOptions": {
       "watt": "30W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "5932": {
-    "id": "5932",
-    "model": "KCL023GOLDLEDBYZ",
-    "image": "urunler/kcl023goldledbyz.webp",
-    "name": {
-      "tr": "KCL023 (2835) Gold Dış Mekan LED Şerit 12v Silikonlu 18W",
-      "en": "KCL023 (2835) Gold Dış Mekan LED Şerit 12v Silikonlu 18W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Renk",
-          "value": "BEYAZ, AMBER, GÜNIŞIĞI, KIRMIZI, YEŞİL"
-        },
-        {
-          "label": "Lümen",
-          "value": "14Lm/Chip, 1440/1Mt."
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "500Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "18W/1MT."
-        },
-        {
-          "label": "Color",
-          "value": "BEYAZ, AMBER, GÜNIŞIĞI, KIRMIZI, YEŞİL"
-        },
-        {
-          "label": "Lumen",
-          "value": "14Lm/Chip, 1440/1Mt."
-        },
-        {
-          "label": "Package Quantity",
-          "value": "500Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Dış Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Outside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W",
-      "casing": "Gold"
     }
   },
   "5936": {
@@ -118253,68 +117350,6 @@
       "casing": "Beyaz"
     }
   },
-  "7644": {
-    "id": "7644",
-    "model": "KCL026NEONLEDRGB",
-    "image": "urunler/kcl016neonledrgb.webp",
-    "name": {
-      "tr": "KCL026 (2835) 220v Neon LED Şerit RGB",
-      "en": "KCL026 (2835) 220v Neon LED Şerit RGB"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "14,4W/50MT"
-        },
-        {
-          "label": "Renk",
-          "value": "RGB"
-        },
-        {
-          "label": "Lümen",
-          "value": "20Lm/Chip"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "100Mt."
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "14,4W/50MT"
-        },
-        {
-          "label": "Color",
-          "value": "RGB"
-        },
-        {
-          "label": "Lumen",
-          "value": "20Lm/Chip"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100Mt."
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "Neon Led Hortumlar"
-      ],
-      "en": [
-        "Led Strips &amp; Led Neon Hoses",
-        "Neon Led Hoses"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "14,4W/50mt",
-      "casing": "Rgb"
-    }
-  },
   "7649": {
     "id": "7649",
     "model": "KSR100",
@@ -128838,8 +127873,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF302": {
@@ -129046,8 +128080,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "15W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "15W"
     }
   },
   "KCF297": {
@@ -129154,8 +128187,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "15W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "15W"
     }
   },
   "KCF301": {
@@ -129541,9 +128573,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf278-60wvant.webp"
-    ]
+    "images": []
   },
   "KCF272": {
     "id": "KCF272",
@@ -129619,11 +128649,7 @@
     "variantOptions": {
       "watt": "80W"
     },
-    "images": [
-      "urunler/kcf272-80wvant.webp",
-      "urunler/kcf272l.webp",
-      "urunler/kcf272l50wvant.webp"
-    ]
+    "images": []
   },
   "KCF291": {
     "id": "KCF291",
@@ -129699,11 +128725,7 @@
     "variantOptions": {
       "watt": "160W"
     },
-    "images": [
-      "urunler/kcf291160wvant.webp",
-      "urunler/kcf291d.webp",
-      "urunler/kcf291kd.webp"
-    ]
+    "images": []
   },
   "KCF291D": {
     "id": "KCF291D",
@@ -129929,11 +128951,7 @@
     "variantOptions": {
       "watt": "180W"
     },
-    "images": [
-      "urunler/kcf292180wvant.webp",
-      "urunler/kcf292d.webp",
-      "urunler/kcf292kd.webp"
-    ]
+    "images": []
   },
   "KCF292D": {
     "id": "KCF292D",
@@ -130159,9 +129177,7 @@
     "variantOptions": {
       "watt": "130W"
     },
-    "images": [
-      "urunler/kcf290130wvant.webp"
-    ]
+    "images": []
   },
   "KCF282": {
     "id": "KCF282",
@@ -130246,10 +129262,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf282-60wvant.webp",
-      "urunler/kcf282k.webp"
-    ]
+    "images": []
   },
   "KCF282K": {
     "id": "KCF282K",
@@ -130339,8 +129352,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF279K": {
@@ -130431,8 +129443,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF281": {
@@ -130518,10 +129529,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf281-60wvant.webp",
-      "urunler/kcf281k.webp"
-    ]
+    "images": []
   },
   "KCF281K": {
     "id": "KCF281K",
@@ -130611,8 +129619,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF286": {
@@ -130689,9 +129696,7 @@
     "variantOptions": {
       "watt": "60W"
     },
-    "images": [
-      "urunler/kcf286-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF287": {
     "id": "KCF287",
@@ -130776,9 +129781,7 @@
       "watt": "60W",
       "socket": "2xE27"
     },
-    "images": [
-      "urunler/kcf287-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF288": {
     "id": "KCF288",
@@ -130863,9 +129866,7 @@
       "watt": "60W",
       "socket": "2xE27"
     },
-    "images": [
-      "urunler/kcf288-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF283": {
     "id": "KCF283",
@@ -130950,9 +129951,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf283-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF284": {
     "id": "KCF284",
@@ -131037,9 +130036,7 @@
       "watt": "60W",
       "socket": "3xE27"
     },
-    "images": [
-      "urunler/kcf284-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF285": {
     "id": "KCF285",
@@ -131124,9 +130121,7 @@
       "watt": "60W",
       "socket": "G9"
     },
-    "images": [
-      "urunler/kcf285-tavan-vantilator.webp"
-    ]
+    "images": []
   },
   "KCF321": {
     "id": "KCF321",
@@ -131224,8 +130219,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "40W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "40W"
     }
   },
   "KCF322": {
@@ -131324,8 +130318,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "40W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "40W"
     }
   },
   "KCF323": {
@@ -131424,8 +130417,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "40W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "40W"
     }
   },
   "KCF310": {
@@ -131524,8 +130516,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF311": {
@@ -131624,8 +130615,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF320": {
@@ -131724,8 +130714,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "40W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "40W"
     }
   },
   "KCF307": {
@@ -131824,8 +130813,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF303": {
@@ -131924,8 +130912,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF304": {
@@ -132024,8 +131011,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF271": {
@@ -132142,10 +131128,6 @@
           "value": "1"
         },
         {
-          "label": "Açıklama",
-          "value": "Mobil Sulu Hava Soğutucu"
-        },
-        {
           "label": "Su Tankı Kapasitesi",
           "value": "35L"
         },
@@ -132155,7 +131137,7 @@
         },
         {
           "label": "Fonksiyonlar",
-          "value": "Soğutma / Nemlendirme Fonksiyonu / Dijital Ekran / Petek Soğutma Pedi / 7 Saat Zamanlayıcı / Kolay Taşınabilirlik için 4 Tekerlek / 3 Fan Hızı; Yüksek-Orta-Düşük / 3 Çeşit Rüzgar / Etkili Enerji Tasarrufu / Su Seviyesi Göstergesi / Uzaktan Kumanda"
+          "value": "Soğutma ve Nemlendirme Fonksiyonu / Dijital Ekran ve Petek Soğutma Pedi / 3 Fan Hızı (Yüksek-Orta-Düşük) ve 3 Rüzgar Modu / 7 Saat Zamanlayıcı ve Uzaktan Kumanda / Taşınabilirlik için 4 Tekerlek / Su Seviyesi Göstergesi ve Etkili Enerji Tasarrufu"
         },
         {
           "label": "Kullanım Alanları",
@@ -132176,10 +131158,6 @@
           "value": "1"
         },
         {
-          "label": "Description",
-          "value": "Mobile Evaporative Air Cooler"
-        },
-        {
           "label": "Water Tank Capacity",
           "value": "35L"
         },
@@ -132189,7 +131167,7 @@
         },
         {
           "label": "Functions",
-          "value": "Cooling / Humidification Function / Digital Display / Honeycomb Cooling Pad / 7 Hour Timer / 4 Wheels for Easy Portability / 3 Fan Speeds; High-Medium-Low / 3 Wind Modes / Effective Energy Saving / Water Level Indicator / Remote Control"
+          "value": "Cooling and Humidification Function / Digital Display and Honeycomb Cooling Pad / 3 Fan Speeds (High-Medium-Low) and 3 Wind Modes / 7 Hour Timer and Remote Control / 4 Wheels for Portability / Water Level Indicator and Effective Energy Saving"
         },
         {
           "label": "Usage Areas",
@@ -132268,10 +131246,7 @@
     "variantOptions": {
       "watt": "15W"
     },
-    "images": [
-      "urunler/ksp100-15w-asp.webp",
-      "urunler/ksp100-baca-aspiratoru.webp"
-    ]
+    "images": []
   },
   "KSP120": {
     "id": "KSP120",
@@ -132331,9 +131306,7 @@
     "variantOptions": {
       "watt": "20W"
     },
-    "images": [
-      "urunler/ksp120-20w-asp.webp"
-    ]
+    "images": []
   },
   "KSP150": {
     "id": "KSP150",
@@ -132393,9 +131366,7 @@
     "variantOptions": {
       "watt": "25W"
     },
-    "images": [
-      "urunler/ksp150-25w-asp.webp"
-    ]
+    "images": []
   },
   "KCF700": {
     "id": "KCF700",
@@ -133123,10 +132094,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf280-60wvant.webp",
-      "urunler/kcf280k.webp"
-    ]
+    "images": []
   },
   "KCF280K": {
     "id": "KCF280K",
@@ -133216,8 +132184,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "30W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "30W"
     }
   },
   "KCF279": {
@@ -133303,9 +132270,7 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": [
-      "urunler/kcf279k.webp"
-    ]
+    "images": []
   },
   "GDL420": {
     "id": "GDL420",
