@@ -80,6 +80,42 @@ export const BRAND_HOSTS: Record<string, string> = {
   global: "https://global.kendalelektrik.com.tr",
 };
 
+// Kategori keşif/listeleme deneyiminde (CategoryFirstShowcase) birbirine
+// yakın isimli kategorileri tek bir üst grup kartı altında toplamak için.
+// Bilinçli olarak products.json'a değil koda yazılıyor: category.tr[1] alanı
+// tutarsız/eksik dolu ve hiçbir yerde okunmuyor, güvenilir bir kaynak değil.
+// getProductCategorySlug / generateStaticParams bu yapıdan tamamen bağımsız
+// kalır — ürün detay URL'leri her zaman category.tr[0] bazlı olmaya devam eder.
+export interface CategoryGroupDef {
+  key: string;
+  brand: string;
+  name: { tr: string; en: string };
+  categories: string[];
+}
+
+export const CATEGORY_GROUPS: CategoryGroupDef[] = [
+  {
+    key: "armatur",
+    brand: "k2",
+    name: { tr: "Armatür", en: "Fixtures" },
+    categories: [
+      "Exit Armatürler",
+      "LED Armatür",
+      "Sensörlü LED Armatür",
+      "LEDLİ Sokak Armatürü",
+      "Solar Armatür",
+      "Solar Bahçe Armatür",
+      "Solar Sokak Armatür",
+      "Yüksek Tavan Armatürü",
+    ],
+  },
+];
+
+export function getCategoryGroupForCategory(categoryName: string, brand?: string): CategoryGroupDef | undefined {
+  const b = brand || "k2";
+  return CATEGORY_GROUPS.find(g => g.brand === b && g.categories.includes(categoryName));
+}
+
 export function getProductCategorySlug(product: Product): string {
   const brandName = product.brand || "k2";
   const categoryName = product.category?.tr?.[0];

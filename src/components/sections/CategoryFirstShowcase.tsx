@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { getAssetPath } from "@/utils/basePath";
-import { Product, getSlugByProductId } from "@/data/products";
+import { Product, getSlugByProductId, getCategoryGroupForCategory } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import ProductCompareModal from "./ProductCompareModal";
 
@@ -78,6 +78,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     no_value: "—"
   };
   
+  const urlGroup = searchParams?.get("group") || null;
   const urlCategory = searchParams?.get("category") || null;
   const urlPage = parseInt(searchParams?.get("page") || "1", 10) || 1;
   const urlQuery = searchParams?.get("q") || "";
@@ -85,23 +86,29 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
+  const [selectedGroup, setSelectedGroup] = useState<string | null>(urlGroup);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(urlCategory);
   const [currentPage, setCurrentPage] = useState<number>(urlPage);
   const [searchQuery, setSearchQuery] = useState(urlQuery);
 
   useEffect(() => {
+    const group = searchParams?.get("group") || null;
     const cat = searchParams?.get("category") || null;
     const page = parseInt(searchParams?.get("page") || "1", 10) || 1;
     const q = searchParams?.get("q") || "";
-    
+
+    setSelectedGroup(group);
     setSelectedCategory(cat);
     setCurrentPage(page);
     setSearchQuery(q);
   }, [searchParams]);
 
-  const updateUrl = (cat: string | null, page: number, query: string) => {
+  const updateUrl = (group: string | null, cat: string | null, page: number, query: string) => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
+      if (group) params.set("group", group);
+      else params.delete("group");
+
       if (cat) params.set("category", cat);
       else params.delete("category");
 
@@ -171,9 +178,44 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     }));
   }, [products, language]);
 
-  // Auto-select if there is only 1 category
-  const activeCategory = selectedCategory || (categoriesData.length === 1 ? categoriesData[0].name : null);
+  const isK2Grouped = isK2 && isBrandScoped;
+
+  // k2'de birbirine yakın isimli kategorileri (Solar Armatür, Sokak Armatürü vb.)
+  // tek bir "Armatür" grup kartı altında toplar. Diğer markalarda/karma
+  // /urunler kataloğunda inert (ungroupedCategories === categoriesData).
+  const { ungroupedCategories, groupCards } = useMemo(() => {
+    if (!isK2Grouped) return { ungroupedCategories: categoriesData, groupCards: [] as { key: string; displayName: string; sampleImage: string; members: typeof categoriesData }[] };
+
+    const map = new Map<string, { def: ReturnType<typeof getCategoryGroupForCategory>; members: typeof categoriesData }>();
+    const ungrouped: typeof categoriesData = [];
+
+    for (const cat of categoriesData) {
+      const def = getCategoryGroupForCategory(cat.name, brandName);
+      if (!def) { ungrouped.push(cat); continue; }
+      if (!map.has(def.key)) map.set(def.key, { def, members: [] });
+      map.get(def.key)!.members.push(cat);
+    }
+
+    const groupCards = Array.from(map.values())
+      .filter(g => g.members.length > 0)
+      .map(({ def, members }) => ({
+        key: def!.key,
+        displayName: language === 'en' ? def!.name.en : def!.name.tr,
+        sampleImage: members[0].sampleImage,
+        members,
+      }));
+
+    return { ungroupedCategories: ungrouped, groupCards };
+  }, [categoriesData, isK2Grouped, brandName, language]);
+
+  // Auto-select if there is only 1 category (grup modunda üst seviyedeki toplam kart sayısına göre)
+  const topLevelCount = isK2Grouped ? ungroupedCategories.length + groupCards.length : categoriesData.length;
+  const activeCategory = selectedCategory || (topLevelCount === 1 && !isK2Grouped ? categoriesData[0].name : null);
   const showBackButton = categoriesData.length > 1;
+  const activeGroup = isK2Grouped ? groupCards.find(g => g.key === selectedGroup) || null : null;
+  const isSearching = searchQuery.trim().length > 0;
+  const inGroupCategoryList = isK2Grouped && !!selectedGroup && !activeCategory && !isSearching;
+  const inTopLevel = !selectedGroup && !activeCategory && !isSearching;
 
   // Compare feature (brand routes only — comparison stays within a single brand's catalog)
   const [compareIds, setCompareIds] = useState<string[]>([]);
@@ -302,7 +344,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     return Array.from(uniqueGroups.values());
   }, [products, searchQuery]);
 
-  const isSearching = searchQuery.trim().length > 0;
   const currentViewProducts = isSearching ? searchedProducts : filteredProducts;
 
   const totalPages = Math.ceil(currentViewProducts.length / itemsPerPage);
@@ -310,6 +351,11 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   const displayedProducts = currentViewProducts.slice(startIndex, startIndex + itemsPerPage);
 
   const handleCategoryClick = (cat: string) => {
+    // Bir gruba ait alt kategoriye hangi yoldan girilirse girinsin (grup kartından,
+    // tarayıcı geri/ileri tuşundan, elle yazılmış ?category= linkinden) selectedGroup
+    // her zaman doğru şekilde yeniden türetilir — ayrı bir deep-link kod yolu gerekmez.
+    const group = isK2Grouped ? getCategoryGroupForCategory(cat, brandName)?.key || null : null;
+    setSelectedGroup(group);
     setSelectedCategory(cat);
     setCurrentPage(1);
     setSearchQuery("");
@@ -317,10 +363,11 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     setSelectedWatts([]);
     setSelectedSockets([]);
     setCompareIds([]);
-    updateUrl(cat, 1, "");
+    updateUrl(group, cat, 1, "");
   };
 
-  const handleBack = () => {
+  const handleGroupClick = (groupKey: string) => {
+    setSelectedGroup(groupKey);
     setSelectedCategory(null);
     setCurrentPage(1);
     setSearchQuery("");
@@ -328,14 +375,40 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     setSelectedWatts([]);
     setSelectedSockets([]);
     setCompareIds([]);
-    updateUrl(null, 1, "");
+    updateUrl(groupKey, null, 1, "");
+  };
+
+  const handleBackToGroups = () => {
+    setSelectedGroup(null);
+    setSelectedCategory(null);
+    setCurrentPage(1);
+    setSearchQuery("");
+    setSelectedCasings([]);
+    setSelectedWatts([]);
+    setSelectedSockets([]);
+    setCompareIds([]);
+    updateUrl(null, null, 1, "");
+  };
+
+  const handleBack = () => {
+    // selectedGroup bilinçli olarak temizlenmiyor: bir gruptan gelindiyse geri
+    // butonu üst gruba değil, grubun alt kategori listesine döner (breadcrumb
+    // davranışı, ayrı bir component eklemeden state persistence ile).
+    setSelectedCategory(null);
+    setCurrentPage(1);
+    setSearchQuery("");
+    setSelectedCasings([]);
+    setSelectedWatts([]);
+    setSelectedSockets([]);
+    setCompareIds([]);
+    updateUrl(selectedGroup, null, 1, "");
   };
 
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     setSearchQuery(val);
     setCurrentPage(1);
-    updateUrl(selectedCategory, 1, val);
+    updateUrl(selectedGroup, selectedCategory, 1, val);
   };
 
   return (
@@ -364,7 +437,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
             />
             {searchQuery && (
               <button 
-                onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedCategory, 1, ""); }}
+                onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedGroup, selectedCategory, 1, ""); }}
                 className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 transition-colors"
               >
                 <svg className="h-5 w-5 bg-zinc-100 rounded-full p-1 hover:bg-zinc-200 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -375,11 +448,11 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
           </div>
         </div>
 
-        {/* VIEW 1: CATEGORY CARDS */}
-        {!activeCategory && !isSearching && (
+        {/* VIEW 1: CATEGORY CARDS (+ k2'de grup kartları, örn. "Armatür") */}
+        {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-              {categoriesData.map((cat) => (
+              {ungroupedCategories.map((cat) => (
                 <button
                   key={cat.name}
                   onClick={() => handleCategoryClick(cat.name)}
@@ -387,18 +460,80 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                 >
                   {/* Dark gradient for text readability at the bottom */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
-                  
+
                   {/* Background Image (Vivid, no zoom) */}
-                  <Image 
-                    src={getAssetPath('/images/' + cat.sampleImage)} 
+                  <Image
+                    src={getAssetPath('/images/' + cat.sampleImage)}
                     alt={cat.name}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center opacity-100 z-0"
                   />
-                  
+
                   <div className="relative z-20 p-8">
 
+                    <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
+                      {cat.displayName}
+                    </h3>
+                  </div>
+                </button>
+              ))}
+              {groupCards.map((group) => (
+                <button
+                  key={group.key}
+                  onClick={() => handleGroupClick(group.key)}
+                  className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-zinc-100 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] transition-all duration-300 text-left h-[280px] flex flex-col justify-end"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
+                  <Image
+                    src={getAssetPath('/images/' + group.sampleImage)}
+                    alt={group.displayName}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center opacity-100 z-0"
+                  />
+                  <div className="relative z-20 p-8">
+                    <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
+                      {group.displayName}
+                    </h3>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* VIEW 1.5: GRUP İÇİ ALT KATEGORİ KARTLARI (sadece k2'de, bir gruba tıklanınca) */}
+        {inGroupCategoryList && activeGroup && (
+          <div className="animate-in fade-in zoom-in duration-500">
+            <div className="mb-8">
+              <button
+                onClick={handleBackToGroups}
+                className="flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-4 group"
+              >
+                <svg className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                </svg>
+                {showcaseTexts.back_to_categories}
+              </button>
+              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">{activeGroup.displayName}</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
+              {activeGroup.members.map((cat) => (
+                <button
+                  key={cat.name}
+                  onClick={() => handleCategoryClick(cat.name)}
+                  className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-zinc-100 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] transition-all duration-300 text-left h-[280px] flex flex-col justify-end"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
+                  <Image
+                    src={getAssetPath('/images/' + cat.sampleImage)}
+                    alt={cat.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover object-center opacity-100 z-0"
+                  />
+                  <div className="relative z-20 p-8">
                     <h3 className="text-2xl font-bold text-white group-hover:text-zinc-200 transition-colors duration-300">
                       {cat.displayName}
                     </h3>
@@ -946,7 +1081,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                       key={i} 
                       onClick={() => {
                         setCurrentPage(pageNum as number);
-                        updateUrl(selectedCategory, pageNum as number, searchQuery);
+                        updateUrl(selectedGroup, selectedCategory, pageNum as number, searchQuery);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${

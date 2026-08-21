@@ -173240,10 +173240,6 @@
           "value": "7W"
         },
         {
-          "label": "Işık Rengi",
-          "value": "Sarı, Kırmızı, Yeşil, Mavi"
-        },
-        {
           "label": "Lümen",
           "value": "560"
         },
@@ -173280,10 +173276,6 @@
         {
           "label": "Watt",
           "value": "7W"
-        },
-        {
-          "label": "Light Color",
-          "value": "Yellow, Red, Green, Blue"
         },
         {
           "label": "Lumen",
@@ -173347,10 +173339,6 @@
           "value": "10W"
         },
         {
-          "label": "Işık Rengi",
-          "value": "Sarı, Kırmızı, Yeşil, Mavi"
-        },
-        {
           "label": "Lümen",
           "value": "800"
         },
@@ -173387,10 +173375,6 @@
         {
           "label": "Watt",
           "value": "10W"
-        },
-        {
-          "label": "Light Color",
-          "value": "Yellow, Red, Green, Blue"
         },
         {
           "label": "Lumen",
@@ -173454,10 +173438,6 @@
           "value": "10W"
         },
         {
-          "label": "Işık Rengi",
-          "value": "Sarı, Kırmızı, Yeşil, Mavi"
-        },
-        {
           "label": "Lümen",
           "value": "800"
         },
@@ -173494,10 +173474,6 @@
         {
           "label": "Watt",
           "value": "10W"
-        },
-        {
-          "label": "Light Color",
-          "value": "Yellow, Red, Green, Blue"
         },
         {
           "label": "Lumen",
@@ -174731,10 +174707,10 @@
     },
     "category": {
       "tr": [
-        "Solar Sokak Armatür"
+        "Solar Armatür"
       ],
       "en": [
-        "Solar Street Luminaire"
+        "Solar Luminaire"
       ]
     },
     "brand": "k2",
@@ -174822,10 +174798,10 @@
     },
     "category": {
       "tr": [
-        "Solar Sokak Armatür"
+        "Solar Armatür"
       ],
       "en": [
-        "Solar Street Luminaire"
+        "Solar Luminaire"
       ]
     },
     "brand": "k2",
@@ -174913,10 +174889,10 @@
     },
     "category": {
       "tr": [
-        "Solar Sokak Armatür"
+        "Solar Armatür"
       ],
       "en": [
-        "Solar Street Luminaire"
+        "Solar Luminaire"
       ]
     },
     "brand": "k2",
@@ -175004,10 +174980,10 @@
     },
     "category": {
       "tr": [
-        "Solar Sokak Armatür"
+        "Solar Armatür"
       ],
       "en": [
-        "Solar Street Luminaire"
+        "Solar Luminaire"
       ]
     },
     "brand": "k2",
@@ -175566,7 +175542,7 @@
     },
     "category": {
       "tr": [
-        "Sokak Armatürü"
+        "LEDLİ Sokak Armatürü"
       ],
       "en": [
         "Street Luminaire"
@@ -175665,7 +175641,7 @@
     },
     "category": {
       "tr": [
-        "Sokak Armatürü"
+        "LEDLİ Sokak Armatürü"
       ],
       "en": [
         "Street Luminaire"
@@ -175764,7 +175740,7 @@
     },
     "category": {
       "tr": [
-        "Sokak Armatürü"
+        "LEDLİ Sokak Armatürü"
       ],
       "en": [
         "Street Luminaire"
@@ -175863,7 +175839,7 @@
     },
     "category": {
       "tr": [
-        "Sokak Armatürü"
+        "LEDLİ Sokak Armatürü"
       ],
       "en": [
         "Street Luminaire"
@@ -175962,7 +175938,7 @@
     },
     "category": {
       "tr": [
-        "Sokak Armatürü"
+        "LEDLİ Sokak Armatürü"
       ],
       "en": [
         "Street Luminaire"
