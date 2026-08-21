@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float, Sparkles, Environment } from "@react-three/drei";
 import * as THREE from "three";
@@ -30,8 +30,8 @@ function AeroBlades() {
     const scrollDelta = scrollY - lastScrollRef.current;
     lastScrollRef.current = scrollY;
 
-    velocityRef.current += scrollDelta * 0.004;
-    velocityRef.current = THREE.MathUtils.clamp(velocityRef.current, -0.12, 0.12);
+    velocityRef.current += scrollDelta * 0.0015;
+    velocityRef.current = THREE.MathUtils.clamp(velocityRef.current, -0.05, 0.05);
     velocityRef.current *= Math.pow(0.9, delta * 60);
 
     if (bladeRef.current) {
@@ -156,10 +156,31 @@ function BreezeEnvironment() {
   );
 }
 
-export function VantiScene() {
+export function VantiScene({ onReady }: { onReady?: () => void }) {
+  // Stop the WebGL render loop entirely while the tab is backgrounded/minimized,
+  // since the fixed full-page canvas would otherwise keep rendering at 60fps
+  // for no visible benefit. No effect on how the scene looks while it's on screen.
+  const [isTabVisible, setIsTabVisible] = useState(true);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => setIsTabVisible(document.visibilityState === "visible");
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, []);
+
   return (
     <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-gradient-to-br from-teal-100 to-sky-200">
-      <Canvas shadows dpr={[1, 1.5]} camera={{ position: [0, 0, 8], fov: 45 }}>
+      <Canvas
+        shadows
+        dpr={[1, 1.5]}
+        camera={{ position: [0, 0, 8], fov: 45 }}
+        frameloop={isTabVisible ? "always" : "never"}
+        onCreated={() => {
+          // Wait a couple of frames so the environment map and first real
+          // render have actually painted before we tell the page it's ready.
+          requestAnimationFrame(() => requestAnimationFrame(() => onReady?.()));
+        }}
+      >
         <BreezeEnvironment />
       </Canvas>
     </div>

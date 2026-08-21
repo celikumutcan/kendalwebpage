@@ -175,33 +175,36 @@ export default function ProductCompareModal({ items, language, brandName, texts,
               })}
             </div>
 
-            {/* Attribute rows: one shared label per row, plus a divider that
-                runs the full height of the group (label + values), not just
-                the value strip — a colspan-style single label cell can't
-                carry per-column borders through itself, so this uses a
-                position:relative group with an absolutely-positioned overlay
-                grid (same column template) to draw continuous divider lines. */}
+            {/* Attribute rows: one shared, full-width label per row, and a
+                divider that only runs through the value strip below it — a
+                colspan-style label cell can't carry per-column borders
+                through itself, and the label is centered rather than
+                column-aligned, so spanning the divider through the label
+                would cut across its text. The overlay grid (same column
+                template) is scoped to just the values wrapper instead. */}
             {attributeRows.map((row, i) => {
               const palette = rowPalette[i % rowPalette.length];
               return (
-              <div key={row.label} className={`relative ${palette.bg}`}>
+              <div key={row.label} className={palette.bg}>
                 <div className="flex justify-center pt-4 pb-2">
                   <span className="inline-flex items-center gap-2">
                     <span className={`w-2 h-2 rounded-full ${palette.dot} flex-shrink-0`} />
                     <span className={`text-sm md:text-base font-extrabold uppercase tracking-wider ${palette.text}`}>{row.label}</span>
                   </span>
                 </div>
-                <div className={`grid gap-3 pb-4 ${gridColsClass}`}>
-                  {row.values.map((value, j) => (
-                    <div key={j} className="px-1 text-center text-zinc-700 text-sm md:text-base leading-relaxed">
-                      {renderValue(value, texts.no_value)}
-                    </div>
-                  ))}
-                </div>
-                <div className={`absolute inset-0 pointer-events-none grid gap-3 ${gridColsClass}`}>
-                  {items.map((item, idx) => (
-                    <div key={item.product.id} className={idx > 0 ? "border-l-2 border-zinc-200" : ""} />
-                  ))}
+                <div className="relative">
+                  <div className={`grid gap-3 pb-4 ${gridColsClass}`}>
+                    {row.values.map((value, j) => (
+                      <div key={j} className="px-1 text-center text-zinc-700 text-sm md:text-base leading-relaxed">
+                        {renderValue(value, texts.no_value)}
+                      </div>
+                    ))}
+                  </div>
+                  <div className={`absolute inset-0 pointer-events-none grid gap-3 ${gridColsClass}`}>
+                    {items.map((item, idx) => (
+                      <div key={item.product.id} className={idx > 0 ? "border-l-2 border-zinc-200" : ""} />
+                    ))}
+                  </div>
                 </div>
               </div>
               );

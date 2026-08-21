@@ -1,14 +1,25 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { VantiScene } from "./VantiScene";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 
 import { getAssetPath } from "@/utils/basePath";
+import { VantiPreloader } from "./VantiPreloader";
+
+const VantiScene = dynamic(
+  () => import("./VantiScene").then((mod) => mod.VantiScene),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-gradient-to-br from-teal-100 to-sky-200" />
+    ),
+  }
+);
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -48,6 +59,7 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
   const heroTextRef = useRef<HTMLDivElement>(null);
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
+  const [sceneReady, setSceneReady] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -92,9 +104,13 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
 
   return (
     <div ref={containerRef} className="relative w-full bg-sky-50 text-teal-900 selection:bg-teal-600 selection:text-white overflow-hidden">
-      
+
+      {/* Preloader: hides the page until the 3D scene has actually painted,
+          so the background/fan/text all appear together instead of in stages. */}
+      <VantiPreloader ready={sceneReady} />
+
       {/* 3D Background */}
-      <VantiScene />
+      <VantiScene onReady={() => setSceneReady(true)} />
 
       {/* Hero Section */}
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
@@ -104,20 +120,20 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
             alt="Vanti Logo" 
             className="h-28 md:h-40 lg:h-48 mx-auto mb-2 opacity-90 drop-shadow-md" 
           />
-          <span className="text-xs md:text-lg font-light tracking-[0.5em] text-teal-800 block mt-6 opacity-80">
+          <span className="text-xs md:text-lg font-medium tracking-[0.5em] text-teal-900 block mt-6">
             {t.heroSub}
           </span>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
-          <p className="text-xs tracking-[0.3em] uppercase opacity-50 mb-6 font-medium text-teal-900">{t.explore}</p>
+          <p className="text-xs tracking-[0.3em] uppercase mb-6 font-semibold text-teal-950 drop-shadow-[0_1px_6px_rgba(255,255,255,0.8)]">{t.explore}</p>
           <div className="w-[1px] h-32 bg-teal-900/30"></div>
         </div>
       </section>
 
       {/* Story Section 1: Natural Breeze (Airy, Left-Aligned) */}
       <section className="relative z-10 w-full min-h-screen flex flex-col items-start justify-center px-6 md:px-32 py-24">
-        <div className="max-w-4xl reveal-text bg-white/20 backdrop-blur-md p-8 md:p-12 rounded-[3rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-600 flex items-center gap-4">
+        <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
+          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
             <span className="w-16 h-[1px] bg-teal-600 block"></span>
             {t.sec1Title}
           </h3>
@@ -129,8 +145,8 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
 
       {/* Story Section 2: Smart Cooling (Airy, Right-Aligned) */}
       <section className="relative z-10 w-full min-h-screen flex flex-col items-end justify-center px-6 md:px-32 py-24 text-right">
-        <div className="max-w-4xl reveal-text bg-white/20 backdrop-blur-md p-8 md:p-12 rounded-[3rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-600 flex items-center justify-end gap-4">
+        <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
+          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center justify-end gap-4">
             {t.sec2Title}
             <span className="w-16 h-[1px] bg-teal-600 block"></span>
           </h3>
@@ -142,8 +158,8 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
 
       {/* Story Section 3: Energy Saving (Airy, Centered) */}
       <section className="relative z-10 w-full min-h-[80vh] flex flex-col items-center justify-center px-6 md:px-32 py-24 text-center">
-        <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/20 backdrop-blur-md p-8 md:p-16 rounded-[4rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-600 flex items-center gap-4">
+        <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-16 rounded-[4rem]">
+          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
             <span className="w-8 h-[1px] bg-teal-600 block"></span>
             {t.sec3Title}
             <span className="w-8 h-[1px] bg-teal-600 block"></span>
@@ -151,8 +167,8 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] mb-16 text-teal-950 drop-shadow-sm">
             {t.sec3Text}
           </h2>
-          <Link 
-            href="/urunler"
+          <Link
+            href={process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler"}
             className="group relative overflow-hidden inline-block px-14 py-6 border border-teal-800 text-teal-900 font-medium tracking-[0.2em] uppercase rounded-full hover:text-white transition-colors duration-500"
           >
             <span className="relative z-10">{t.catalogBtn}</span>

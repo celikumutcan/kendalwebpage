@@ -143,8 +143,8 @@ export function K2CreativePage({ products }: K2CreativePageProps) {
           <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-12">
             {t.sec3Text}
           </h2>
-          <Link 
-            href="/urunler"
+          <Link
+            href={process.env.NODE_ENV === "production" ? "/brand/k2/urunler" : "/urunler"}
             className="inline-block px-10 py-5 bg-orange-600 text-white font-bold tracking-widest uppercase rounded-full hover:scale-105 transition-transform"
           >
             {t.catalogBtn}

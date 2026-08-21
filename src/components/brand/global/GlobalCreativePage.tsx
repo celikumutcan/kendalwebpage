@@ -300,7 +300,7 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
             {t.sec3Text}
           </h2>
           <Link
-            href="/urunler"
+            href={process.env.NODE_ENV === "production" ? "/brand/global/urunler" : "/urunler"}
             className="reveal-content relative group inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
           >
             <span className="relative z-10">{t.catalogBtn}</span>

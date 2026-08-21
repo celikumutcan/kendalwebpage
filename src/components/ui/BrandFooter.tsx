@@ -47,20 +47,20 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
           <ul className="space-y-3 text-sm">
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.contact_line || "İletişim Hattı"}</span>
-              <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
-                +90 212 723 70 70
+              <a href={`tel:${(t as any).footer?.phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.phone}
               </a>
             </li>
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.sales_line || "Satış Destek Hattı"}</span>
-              <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
-                +90 212 723 70 70
+              <a href={`tel:${(t as any).footer?.sales_phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.sales_phone}
               </a>
             </li>
             <li>
               <span className="opacity-60 block text-xs mb-1">{(t as any).brand_pages?.footer?.tech_line || "Teknik Servis Hattı"}</span>
-              <a href="tel:+902127237070" className="hover:text-[var(--brand-red)] transition-colors">
-                +90 212 723 70 70
+              <a href={`tel:${(t as any).footer?.support_phone}`} className="hover:text-[var(--brand-red)] transition-colors">
+                {(t as any).footer?.support_phone}
               </a>
             </li>
             <li className="pt-2">
