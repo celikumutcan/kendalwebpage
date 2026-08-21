@@ -6,15 +6,16 @@ import Image from "next/image";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { newsDataTR } from "@/data/news-tr";
 import { newsDataEN } from "@/data/news-en";
+import { parseNewsDate } from "@/lib/newsDate";
 
 export const NewsPreview = () => {
   const { language, t } = useLanguage();
-  
+
   // Select the appropriate news array based on language
   const newsArray = language === "en" ? newsDataEN : newsDataTR;
-  
-  // Take the last 3 news items (newest) and reverse them
-  const latestNews = [...newsArray].reverse().slice(0, 3);
+
+  // Take the 3 most recent news items by actual date
+  const latestNews = [...newsArray].sort((a, b) => parseNewsDate(b.date) - parseNewsDate(a.date)).slice(0, 3);
 
   // Fallback to "Son Haberler" / "Tüm Haberleri Gör" if missing in JSON
   const title = (t as any).news?.preview_title || (language === "en" ? "Latest News" : "Son Haberler");

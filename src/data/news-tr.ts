@@ -706,5 +706,32 @@ export const newsDataTR: NewsItem[] = [
       "Birlikte Daha Güçlüyüz",
       "Yemek sırasında kısa bir teşekkür konuşması yapan Genel Müdür Sn. M. Kaan DİLBER ve Yönetim Kurulu Başkanımız Sn. Fırat Kendal AKSOY, Kendal Elektrik'in istikrarlı büyümesine katkı sağlayan tüm çalışanlara emekleri için teşekkürlerini iletti. Şirketimizin hedeflerine ulaşmasında ekip ruhunun ve çalışan memnuniyetinin önceliği bir kez daha vurgulandı."
     ]
+  },
+  {
+    id: "37",
+    title: "ELES EXPO ELEKTRİK, AYDINLATMA VE ENERJİ FUARI'NA KATILDIK",
+    date: "27 Nisan 2025",
+    images: [
+      getAssetPath("/images/haberler/37/eles-fuari-1.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-2.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-3.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-4.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-5.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-6.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-7.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-8.webp")
+    ],
+    content: [
+      "ELES Expo'da Kendal Elektrik Olarak Sektörün Nabzını Tuttuk",
+      "Kendal Elektrik olarak, 23 - 25 Nisan 2025 tarihleri arasında İstanbul Fuar Merkezi'nde ITC Fuarcılık organizasyonuyla düzenlenen ELES Expo Elektrik, Aydınlatma, Enerji ve Akıllı Teknolojiler Fuarı'na K2, Vanti ve Global markalarımızla katılım sağladık.",
+      "Türkiye'nin elektrik, aydınlatma, şalt malzemeleri, bina otomasyonu ve yenilenebilir enerji alanındaki üretim kapasitesini küresel pazarlara taşımayı amaçlayan fuar, yalnızca ürünlerin sergilendiği bir platform olmanın ötesine geçerek; Avrupa, Orta Doğu, Kuzey Afrika ve Asya başta olmak üzere 50'den fazla ülkeden gelen uluslararası satın alma heyetleri, yatırımcılar ve müteahhitlerle doğrudan B2B iş görüşmeleri yapılmasına imkân tanıdı.",
+      "Yoğun İlgi ve Değerli Görüşmeler",
+      "K2, Vanti ve Global markalarımızın yer aldığı standımız, fuar boyunca yerli ve yabancı ziyaretçilerin, sektör profesyonellerinin ve potansiyel iş ortaklarımızın yoğun ilgisine sahne oldu. Gerçekleştirdiğimiz ikili görüşmelerde ürün gamımızı ve yenilikçi çözümlerimizi katılımcılarla paylaşma fırsatı bulduk.",
+      "Fuar organizatörü ITC Fuarcılık, katılımımıza ve sektöre sunduğumuz katma değere istinaden standımıza gelerek bizlere bir plaket takdim etti; bu jesti büyük bir memnuniyetle karşıladık.",
+      "Sektörün Geleceğine Dair",
+      "Fuar süresince gerçekleştirilen teknik oturum ve paneller aracılığıyla akıllı şebekeler, enerji depolama ve yeni nesil aydınlatma sistemleri gibi sektörün geleceğini şekillendiren konular ele alındı; biz de bu gelişmeleri yakından takip etme fırsatı bulduk.",
+      "Teşekkürler",
+      "Standımıza gelerek ilgilerini esirgemeyen tüm ziyaretçilere, değerli iş ortaklarımıza ve fuarın düzenlenmesinde emeği geçen herkese teşekkür ederiz. Kendal Elektrik olarak, yeni iş birlikleri kurmanın ve sektörün geleceğine ışık tutmanın gururunu yaşıyoruz."
+    ]
   }
 ]

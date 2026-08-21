@@ -706,5 +706,32 @@ export const newsDataEN: NewsItem[] = [
       "We Are Stronger Together",
       "General Manager Mr. M. Kaan DİLBER and our Chairman of the Board Mr. Fırat Kendal AKSOY, who made a short thank you speech during the dinner, expressed their gratitude to all employees who contributed to the stable growth of Kendal Elektrik for their efforts. The priority of team spirit and employee satisfaction in our company reaching its goals was emphasized once again."
     ]
+  },
+  {
+    id: "37",
+    title: "WE PARTICIPATED IN THE ELES EXPO ELECTRICITY, LIGHTING AND ENERGY FAIR",
+    date: "April 27, 2025",
+    images: [
+      getAssetPath("/images/haberler/37/eles-fuari-1.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-2.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-3.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-4.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-5.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-6.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-7.webp"),
+      getAssetPath("/images/haberler/37/eles-fuari-8.webp")
+    ],
+    content: [
+      "We Took the Pulse of the Sector as Kendal Elektrik at ELES Expo",
+      "As Kendal Elektrik, we took part with our K2, Vanti and Global brands at the ELES Expo Electricity, Lighting, Energy and Smart Technologies Fair, held between April 23 - 25, 2025 at the Istanbul Expo Center, organized by ITC Fuarcılık.",
+      "Aiming to carry Turkey's production capacity in electricity, lighting, switchgear, building automation and renewable energy to global markets, the fair went beyond being just a display platform for products; it enabled direct B2B business meetings with international purchasing delegations, investors and contractors from more than 50 countries, mainly from Europe, the Middle East, North Africa and Asia.",
+      "Intense Interest and Valuable Meetings",
+      "Our stand, featuring our K2, Vanti and Global brands, attracted intense interest from local and foreign visitors, sector professionals and potential business partners throughout the fair. In the bilateral meetings we held, we had the opportunity to share our product range and innovative solutions with participants.",
+      "The fair organizer, ITC Fuarcılık, visited our stand and presented us with a plaque in recognition of our participation and the value we bring to the sector; we welcomed this gesture with great pleasure.",
+      "On the Future of the Sector",
+      "Topics shaping the future of the sector, such as smart grids, energy storage and next-generation lighting systems, were discussed in the technical sessions and panels held throughout the fair, and we had the chance to follow these developments closely.",
+      "Thank You",
+      "We would like to thank all visitors who did not spare their interest by visiting our stand, our valuable business partners and everyone who contributed to the organization of the fair. As Kendal Elektrik, we take pride in building new collaborations and shedding light on the future of our sector."
+    ]
   }
 ]

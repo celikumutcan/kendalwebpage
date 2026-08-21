@@ -127773,8 +127773,7 @@
     },
     "brand": "vanti",
     "variantOptions": {
-      "watt": "15W",
-      "light": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
+      "watt": "15W"
     }
   },
   "KCF306": {
@@ -128830,7 +128829,7 @@
         },
         {
           "label": "Özellik",
-          "value": "Uzaktan Kumandalı / Aşırı Isınmaya Karşı / Korumalı Motor"
+          "value": "Aşırı Isınmaya Karşı / Korumalı Motor"
         },
         {
           "label": "Özellik",
@@ -128856,7 +128855,7 @@
         },
         {
           "label": "Feature",
-          "value": "Remote Controlled / Overheating Protection / Protected Motor"
+          "value": "Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -129056,7 +129055,7 @@
         },
         {
           "label": "Özellik",
-          "value": "Uzaktan Kumandalı / Aşırı Isınmaya Karşı / Korumalı Motor"
+          "value": "Aşırı Isınmaya Karşı / Korumalı Motor"
         },
         {
           "label": "Özellik",
@@ -129082,7 +129081,7 @@
         },
         {
           "label": "Feature",
-          "value": "Remote Controlled / Overheating Protection / Protected Motor"
+          "value": "Overheating Protection / Protected Motor"
         },
         {
           "label": "Feature",
@@ -129654,7 +129653,7 @@
         },
         {
           "label": "Özellik",
-          "value": "6'lı Pervaneli / İç Mekan Kullanımı"
+          "value": "6 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -129734,7 +129733,7 @@
         },
         {
           "label": "Özellik",
-          "value": "3'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "3 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -129819,7 +129818,7 @@
         },
         {
           "label": "Özellik",
-          "value": "5'li Pervaneli / İç Mekan Kullanımı"
+          "value": "5 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -129904,7 +129903,7 @@
         },
         {
           "label": "Özellik",
-          "value": "4'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "4 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -129989,7 +129988,7 @@
         },
         {
           "label": "Özellik",
-          "value": "5'li Pervaneli / İç Mekan Kullanımı"
+          "value": "5 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -130074,7 +130073,7 @@
         },
         {
           "label": "Özellik",
-          "value": "6'lı Pervaneli / İç Mekan Kullanımı"
+          "value": "6 Pervaneli / İç Mekan Kullanımı"
         }
       ],
       "en": [
@@ -130159,7 +130158,7 @@
         },
         {
           "label": "Özellik",
-          "value": "3'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "3 Pervaneli / İç Mekan Kullanımı"
         },
         {
           "label": "Özellik",
@@ -130258,7 +130257,7 @@
         },
         {
           "label": "Özellik",
-          "value": "3'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "3 Pervaneli / İç Mekan Kullanımı"
         },
         {
           "label": "Özellik",
@@ -130357,7 +130356,7 @@
         },
         {
           "label": "Özellik",
-          "value": "3'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "3 Pervaneli / İç Mekan Kullanımı"
         },
         {
           "label": "Özellik",
@@ -130654,7 +130653,7 @@
         },
         {
           "label": "Özellik",
-          "value": "3'lü Pervaneli / İç Mekan Kullanımı"
+          "value": "3 Pervaneli / İç Mekan Kullanımı"
         },
         {
           "label": "Özellik",
@@ -131458,10 +131457,6 @@
         {
           "label": "Özellik",
           "value": "3 Farklı Hız Ayarı (Düşük-Orta-Yüksek)"
-        },
-        {
-          "label": "Özellik",
-          "value": "60 Dakika Zaman Ayarlı"
         }
       ],
       "en": [
@@ -131488,10 +131483,6 @@
         {
           "label": "Feature",
           "value": "3 Different Speed Settings (Low-Medium-High)"
-        },
-        {
-          "label": "Feature",
-          "value": "60 Minute Timer"
         }
       ]
     },
@@ -131544,7 +131535,7 @@
         },
         {
           "label": "Özellik",
-          "value": "60 Dakika Zaman Ayarlı / Ayaklı Tip"
+          "value": "60 Dakika Zaman Ayarlı"
         }
       ],
       "en": [
@@ -131574,7 +131565,7 @@
         },
         {
           "label": "Feature",
-          "value": "60 Minute Timer / Stand Type"
+          "value": "60 Minute Timer"
         }
       ]
     },
@@ -131619,11 +131610,7 @@
         },
         {
           "label": "Özellik",
-          "value": "Korumalı Metal Izgara / PVC Pervane"
-        },
-        {
-          "label": "Özellik",
-          "value": "5 Pervaneli"
+          "value": "Korumalı Metal Izgara / 5 Kanatlı PVC Pervane"
         },
         {
           "label": "Özellik",
@@ -131631,7 +131618,7 @@
         },
         {
           "label": "Özellik",
-          "value": "Zaman Ayarlı / Uzaktan Kumandalı"
+          "value": "Uzaktan Kumandalı"
         }
       ],
       "en": [
@@ -131653,11 +131640,7 @@
         },
         {
           "label": "Feature",
-          "value": "Protected Metal Grill / PVC Propeller"
-        },
-        {
-          "label": "Feature",
-          "value": "5 Blades"
+          "value": "Protected Metal Grill / 5-Blade PVC Propeller"
         },
         {
           "label": "Feature",
@@ -131665,7 +131648,7 @@
         },
         {
           "label": "Feature",
-          "value": "Timer / Remote Controlled"
+          "value": "Remote Controlled"
         }
       ]
     },
@@ -131961,7 +131944,7 @@
         },
         {
           "label": "Özellik",
-          "value": "60 Dakika Zaman Ayarlı / Ayaklı Tip"
+          "value": "60 Dakika Zaman Ayarlı"
         }
       ],
       "en": [
@@ -131991,7 +131974,7 @@
         },
         {
           "label": "Feature",
-          "value": "60 Minute Timer / Stand Type"
+          "value": "60 Minute Timer"
         }
       ]
     },

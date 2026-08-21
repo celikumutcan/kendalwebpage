@@ -6,13 +6,14 @@ import Link from "next/link";
 import { newsDataTR, newsDataEN } from "@/data/news";
 import { useLanguage } from "@/app/i18n/LanguageProvider";
 import { getAssetPath } from "@/utils/basePath";
+import { parseNewsDate } from "@/lib/newsDate";
 
 export function HaberlerListesiClient() {
   const { language, t } = useLanguage();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
-  const allNews = [...(language === 'en' ? newsDataEN : newsDataTR)].sort((a, b) => parseInt(b.id) - parseInt(a.id));
+  const allNews = [...(language === 'en' ? newsDataEN : newsDataTR)].sort((a, b) => parseNewsDate(b.date) - parseNewsDate(a.date));
   const totalPages = Math.ceil(allNews.length / itemsPerPage);
   const currentNews = allNews.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 

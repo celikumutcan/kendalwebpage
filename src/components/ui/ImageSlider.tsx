@@ -46,7 +46,7 @@ export function ImageSlider({ images, altPrefix = "Görsel", titlePrefix = "" }:
             title={titlePrefix ? `${titlePrefix} ${idx + 1}` : undefined}
             fill
             sizes="(max-width: 768px) 100vw, 80vw"
-            className="object-cover"
+            className="object-contain"
             priority={idx === 0}
           />
         </div>
