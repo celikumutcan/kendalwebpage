@@ -1671,130 +1671,6 @@
       "casing": "Yeşi̇l"
     }
   },
-  "4276": {
-    "id": "4276",
-    "model": "KBA746-7WAMB",
-    "image": "urunler/kba746-7wamb.webp",
-    "name": {
-      "tr": "KBA746 Solar Enerjili Bahçe Armatürü 7W Amber",
-      "en": "KBA746 Solar Enerjili Bahçe Armatürü 7W Amber"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Amber"
-    }
-  },
-  "4277": {
-    "id": "4277",
-    "model": "KBA746-7WYSL",
-    "image": "urunler/kba746-7wysl.webp",
-    "name": {
-      "tr": "KBA746 Solar Enerjili Bahçe Armatürü 7W Yeşil",
-      "en": "KBA746 Solar Enerjili Bahçe Armatürü 7W Yeşil"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Yeşil"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Yeşil"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Yeşi̇l"
-    }
-  },
   "4278": {
     "id": "4278",
     "model": "KBA8003WSENAMB",
@@ -15931,432 +15807,6 @@
     "variantOptions": {
       "light": "Beyaz (6500K)",
       "casing": "Beyaz"
-    }
-  },
-  "4838": {
-    "id": "4838",
-    "model": "KES14150WBEYAZ",
-    "image": "urunler/kes14150wbeyaz.webp",
-    "name": {
-      "tr": "KES141 COB LED Pendante Arm. 50W Beyaz",
-      "en": "KES141 COB LED Pendante Arm. 50W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "10000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "10000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4839": {
-    "id": "4839",
-    "model": "KES14150WGNISK",
-    "image": "urunler/kes14150wgnisk.webp",
-    "name": {
-      "tr": "KES141 COB LED Pendante Arm. 50W Günışığı",
-      "en": "KES141 COB LED Pendante Arm. 50W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "10000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "10000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "socket": "E27",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "4840": {
-    "id": "4840",
-    "model": "KES14270WBEYAZ",
-    "image": "urunler/kes14270wbeyaz.webp",
-    "name": {
-      "tr": "KES142 COB LED Pendante Arm. 70W Beyaz",
-      "en": "KES142 COB LED Pendante Arm. 70W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "70W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "15000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "70W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "15000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "70W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4841": {
-    "id": "4841",
-    "model": "KES14270WGNISK",
-    "image": "urunler/kes14270wgnisk.webp",
-    "name": {
-      "tr": "KES142 COB LED Pendante Arm. 70W Günışığı",
-      "en": "KES142 COB LED Pendante Arm. 70W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "70W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "15000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "70W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "15000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "70W",
-      "socket": "E27",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "4842": {
-    "id": "4842",
-    "model": "KES143100WBEYAZ",
-    "image": "urunler/kes143100wbeyaz.webp",
-    "name": {
-      "tr": "KES143 COB LED Pendante Arm. 100W Beyaz",
-      "en": "KES143 COB LED Pendante Arm. 100W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "20000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "20000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "socket": "E27",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "4843": {
-    "id": "4843",
-    "model": "KES143100WGNISK",
-    "image": "urunler/kes143100wgnisk.webp",
-    "name": {
-      "tr": "KES143 COB LED Pendante Arm. 100W Günışığı",
-      "en": "KES143 COB LED Pendante Arm. 100W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Duy",
-          "value": "E27"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "20000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Socket",
-          "value": "E27"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "20000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "socket": "E27",
-      "casing": "Beyaz (6500K)"
     }
   },
   "4844": {
@@ -32472,184 +31922,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "5382": {
-    "id": "5382",
-    "model": "KST20630WBEYAZ",
-    "image": "urunler/kst20630wbeyaz.webp",
-    "name": {
-      "tr": "KST206 COB LED SMD Sok. Arm.30w Beyaz",
-      "en": "KST206 COB LED SMD Sok. Arm.30w Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "3000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "3000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "5383": {
-    "id": "5383",
-    "model": "KST20750WBEYAZ",
-    "image": "urunler/kst209.webp",
-    "name": {
-      "tr": "KST207 50W Ledli Sokak Armatürü ( Lensli )",
-      "en": "KST207 50W LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "5000"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "5000"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "5384": {
-    "id": "5384",
-    "model": "KST208100WBEYAZ",
-    "image": "urunler/kst208100wbeyaz.webp",
-    "name": {
-      "tr": "KST208 COB LED SMD Sok. Arm.100w Beyaz",
-      "en": "KST208 COB LED SMD Sok. Arm.100w Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "10000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "10000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Ledli Projektör"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Ledli Projektör"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "light": "Beyaz (6500K)"
-    }
-  },
   "5385": {
     "id": "5385",
     "model": "KST21020WBEYAZ",
@@ -37256,257 +36528,6 @@
     "variantOptions": {
       "watt": "7W",
       "casing": "Yeşi̇l"
-    }
-  },
-  "5922": {
-    "id": "5922",
-    "model": "KBA749-15WBYZ",
-    "image": "urunler/kba749-15wbyz.webp",
-    "name": {
-      "tr": "KBA749 Solarlı Duvar Apliği 15W Beyaz",
-      "en": "KBA749 Solarlı Duvar Apliği 15W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "80"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "15W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "80"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "15W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5923": {
-    "id": "5923",
-    "model": "KBA750-30WBYZ",
-    "image": "urunler/kba750-30wbyz.webp",
-    "name": {
-      "tr": "KBA750 Solarlı Duvar Apliği 30W Beyaz",
-      "en": "KBA750 Solarlı Duvar Apliği 30W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "160"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "160"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5924": {
-    "id": "5924",
-    "model": "KBA751-30WBYZ",
-    "image": "urunler/kba751-30wbyz.webp",
-    "name": {
-      "tr": "KBA751 Set Üstü Solar Aplik 30W Beyaz",
-      "en": "KBA751 Set Üstü Solar Aplik 30W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "4"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "4"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5925": {
-    "id": "5925",
-    "model": "KBA751-30WGNI",
-    "image": "urunler/kba751-30wgni.webp",
-    "name": {
-      "tr": "KBA751 Set Üstü Solar Aplik 30W Günışığı",
-      "en": "KBA751 Set Üstü Solar Aplik 30W Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "200"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "4"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "200"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "4"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "casing": "Günışığı (3000K)"
     }
   },
   "5936": {
@@ -108660,122 +107681,6 @@
       "casing": "Siyah"
     }
   },
-  "7354": {
-    "id": "7354",
-    "model": "KST302150WSIYAH",
-    "image": "urunler/kst302150wsiyah.webp",
-    "name": {
-      "tr": "KST302 Karayel 150W Solar Projektör Siyah",
-      "en": "KST302 Karayel 150W Solar Projektör Siyah"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Siyah"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W",
-      "casing": "Siyah"
-    }
-  },
-  "7355": {
-    "id": "7355",
-    "model": "KST305300WBEYAZ",
-    "image": "urunler/kst305300wbeyaz.webp",
-    "name": {
-      "tr": "KST305 Samyeli 300W Solar Projektör Beyaz",
-      "en": "KST305 Samyeli 300W Solar Projektör Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Beyaz"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "300W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Beyaz"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "300W",
-      "light": "Beyaz (6500K)"
-    }
-  },
   "7356": {
     "id": "7356",
     "model": "KTL1055WCBSPOT",
@@ -111322,60 +110227,6 @@
     "variantOptions": {
       "socket": "E27",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "7451": {
-    "id": "7451",
-    "model": "KBA754-200W-PROJ-SARI",
-    "image": "urunler/kba754-200w-proj-sari.webp",
-    "name": {
-      "tr": "KBA754 Ağrı Solar Taşınabilir Projektör 200W Sarı",
-      "en": "KBA754 Ağrı Solar Taşınabilir Projektör 200W Sarı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Kasa",
-          "value": "Sarı"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Sarı"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Şerit LED",
-        "İç Mekan Led Şeritler"
-      ],
-      "en": [
-        "Led Strip",
-        "Led Strip Lights (Inside)"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W",
-      "light": "Günışığı (3000K)"
     }
   },
   "7456": {
@@ -115485,176 +114336,6 @@
       "casing": "Krom"
     }
   },
-  "7576": {
-    "id": "7576",
-    "model": "KST301100WSIYAH",
-    "image": "urunler/kst301100wsiyah.webp",
-    "name": {
-      "tr": "KST301 Karayel 100W Solar Projektör Siyah",
-      "en": "KST301 Karayel 100W Solar Projektör Siyah"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Özellik",
-          "value": "Güneş Paneli Var / 6-8 Saat Çalışma Süresi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Siyah"
-        },
-        {
-          "label": "Feature",
-          "value": "Has Solar Panel / 6-8 Hours Working Time"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "casing": "Siyah"
-    }
-  },
-  "7577": {
-    "id": "7577",
-    "model": "KST303100WBEYAZ",
-    "image": "urunler/kst303100wbeyaz.webp",
-    "name": {
-      "tr": "KST303 Samyeli 100W Solar Projektör Beyaz",
-      "en": "KST303 Samyeli 100W Solar Projektör Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Beyaz"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Beyaz"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "light": "Beyaz (6500K)"
-    }
-  },
-  "7578": {
-    "id": "7578",
-    "model": "KST304200WBEYAZ",
-    "image": "urunler/kst304200wbeyaz.webp",
-    "name": {
-      "tr": "KST304 Samyeli 200W Solar Projektör Beyaz",
-      "en": "KST304 Samyeli 200W Solar Projektör Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Beyaz"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Beyaz"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Led Sokak Armatürleri ve Solar Ledli Sokak Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Led Street Lights &amp; Solar Led Street Lights"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W",
-      "light": "Beyaz (6500K)"
-    }
-  },
   "7600": {
     "id": "7600",
     "model": "KSL2323-290W-ARN",
@@ -117755,186 +116436,6 @@
       "watt": "5W"
     }
   },
-  "7722": {
-    "id": "7722",
-    "model": "240229165049",
-    "image": "urunler/kba785-solar-led.webp",
-    "name": {
-      "tr": "KBA785 LED Solar Duvar Lambası",
-      "en": "KBA785 LED Solar Wall Lamp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Kontrol Modu",
-          "value": "Işık Kontrolü ve Anahtar Ayarlamalı"
-        },
-        {
-          "label": "Şarj Süresi",
-          "value": "6-8 Saat"
-        },
-        {
-          "label": "Solar Panel",
-          "value": "5.5V - 1.6W"
-        },
-        {
-          "label": "Batarya",
-          "value": "3.7V 1500mAh Lithium Battery"
-        },
-        {
-          "label": "LED Rengi",
-          "value": "Beyaz - Günışığı"
-        },
-        {
-          "label": "Materyal",
-          "value": "ABS"
-        },
-        {
-          "label": "IP Sınıfı",
-          "value": "IP65"
-        }
-      ],
-      "en": [
-        {
-          "label": "Control Mode",
-          "value": "Light Control and Switch Adjustable"
-        },
-        {
-          "label": "Charging Time",
-          "value": "6-8 Hours"
-        },
-        {
-          "label": "Solar Panel",
-          "value": "5.5V - 1.6W"
-        },
-        {
-          "label": "Battery",
-          "value": "3.7V 1500mAh Lithium Battery"
-        },
-        {
-          "label": "LED Color",
-          "value": "White - Daylight"
-        },
-        {
-          "label": "Material",
-          "value": "ABS"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP65"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "7734": {
-    "id": "7734",
-    "model": "240429112718",
-    "image": "urunler/kst306-solar-projektor.webp",
-    "name": {
-      "tr": "KST306 150W  Karayel Solar Projektör",
-      "en": "KST306 150W Solar LED Flood Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "150W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "150W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "7737": {
-    "id": "7737",
-    "model": "240429114251",
-    "image": "urunler/kba786-solar-led-duvar-lamba.webp",
-    "name": {
-      "tr": "KBA786 20W Solar LED Duvar Lambası",
-      "en": "KBA786 20W Solar Wall Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "20W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "20W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W",
-      "casing": "CCT (Ararenk (4000K)-Beyaz (6500K))"
-    }
-  },
   "7738": {
     "id": "7738",
     "model": "240429114856",
@@ -118045,523 +116546,6 @@
     },
     "brand": "k2",
     "variantOptions": {}
-  },
-  "7743": {
-    "id": "7743",
-    "model": "240429120932",
-    "image": "urunler/kba748-bahce-armatur.webp",
-    "name": {
-      "tr": "KBA748 12W Solarlı Bahçe Armatürleri",
-      "en": "KBA748 12W Solar Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Lümen",
-          "value": "960"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Watt",
-          "value": "12W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Lumen",
-          "value": "960"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Power",
-          "value": "12W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "7744": {
-    "id": "7744",
-    "model": "240429121506",
-    "image": "urunler/kba744-bahce-armatur.webp",
-    "name": {
-      "tr": "KBA744 10W Solarlı Bahçe Armatürleri",
-      "en": "KBA744 10W Solar Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Watt",
-          "value": "10W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Power",
-          "value": "10W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W"
-    }
-  },
-  "7747": {
-    "id": "7747",
-    "model": "240429123242",
-    "image": "urunler/kba776-solar-armatur.webp",
-    "name": {
-      "tr": "KBA776 30W Ege Solar Armatürler",
-      "en": "KBA776 30W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7748": {
-    "id": "7748",
-    "model": "240429123546",
-    "image": "urunler/kba777-solar-armatur.webp",
-    "name": {
-      "tr": "KBA777 30W Ege Solar Armatürler",
-      "en": "KBA777 30W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7749": {
-    "id": "7749",
-    "model": "240429123933",
-    "image": "urunler/kba778-solar-armatur.webp",
-    "name": {
-      "tr": "KBA778 30W Ege Solar Armatürler",
-      "en": "KBA778 30W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7750": {
-    "id": "7750",
-    "model": "240429124350",
-    "image": "urunler/kba779-solar-armatur.webp",
-    "name": {
-      "tr": "KBA779 30W Ege Solar Armatürler",
-      "en": "KBA779 30W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7751": {
-    "id": "7751",
-    "model": "240429124703",
-    "image": "urunler/kba780-set-ustu-solar-armatur.webp",
-    "name": {
-      "tr": "KBA780 30W Marmara Set Üstü Solar Armatürler",
-      "en": "KBA780 30W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7752": {
-    "id": "7752",
-    "model": "240429125056",
-    "image": "urunler/kba781-set-ustu-solar-armatur.webp",
-    "name": {
-      "tr": "KBA781 60W Marmara Set Üstü Solar Armatürler",
-      "en": "KBA781 60W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "8"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "60W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "8"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "60W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "60W"
-    }
-  },
-  "7753": {
-    "id": "7753",
-    "model": "240429125612",
-    "image": "urunler/kba782-set-ustu-solar-armatur.webp",
-    "name": {
-      "tr": "KBA782 90W Marmara Set Üstü Solar Armatürler",
-      "en": "KBA782 90W Solar LED Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "8"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "90W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "8"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "90W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "90W"
-    }
-  },
-  "7754": {
-    "id": "7754",
-    "model": "240429125947",
-    "image": "urunler/kba783-solar-bahce-armatur.webp",
-    "name": {
-      "tr": "KBA783 10W Solarlı Bahçe Armatürleri",
-      "en": "KBA783 10W Solar Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Watt",
-          "value": "10W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Power",
-          "value": "10W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W"
-    }
-  },
-  "7755": {
-    "id": "7755",
-    "model": "240429130245",
-    "image": "urunler/kba784-solar-bahce-armatur.webp",
-    "name": {
-      "tr": "KBA784 10W Solarlı Bahçe Armatürleri",
-      "en": "KBA784 10W Solar Garden Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Lümen",
-          "value": "800"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Watt",
-          "value": "10W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Lumen",
-          "value": "800"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Power",
-          "value": "10W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W"
-    }
   },
   "7757": {
     "id": "7757",
@@ -121372,721 +119356,6 @@
     "brand": "k2",
     "variantOptions": {
       "socket": "E27"
-    }
-  },
-  "7841": {
-    "id": "7841",
-    "model": "240502103003",
-    "image": "urunler/kst209.webp",
-    "name": {
-      "tr": "KST208 100W Ledli Sokak Armatürü ( Lensli )",
-      "en": "KST208 100W LED Street Lıghts "
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "9000"
-        },
-        {
-          "label": "Watt",
-          "value": "100W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "9000"
-        },
-        {
-          "label": "Power",
-          "value": "100W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "7842": {
-    "id": "7842",
-    "model": "240502103210",
-    "image": "urunler/kst209.webp",
-    "name": {
-      "tr": "KST209 150W Ledli Sokak Armatürü ( Lensli )",
-      "en": "KST209 150W LED Street Lıghts "
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "13500"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Watt",
-          "value": "150W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "13500"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Power",
-          "value": "150W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W",
-      "casing": "CCT (Ararenk (4000K)-Beyaz (6500K))"
-    }
-  },
-  "7843": {
-    "id": "7843",
-    "model": "240502104601",
-    "image": "urunler/kst220-sokak-armatur.webp",
-    "name": {
-      "tr": "KST220 50W Çiğdem Solar Sokak Armatürü",
-      "en": "KST220 50W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "50W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "50W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W"
-    }
-  },
-  "7844": {
-    "id": "7844",
-    "model": "240502104837",
-    "image": "urunler/kst221-sokak-armatur.webp",
-    "name": {
-      "tr": "KST221 100W Çiğdem Solar Sokak Armatürü",
-      "en": "KST221 100W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "100W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "100W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W"
-    }
-  },
-  "7845": {
-    "id": "7845",
-    "model": "240502105233",
-    "image": "urunler/kst226-duvar-armatur.webp",
-    "name": {
-      "tr": "KST226 30W Anzer Solar Konsollu Duvar Armatürü",
-      "en": "KST226 30W Solar Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "30W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "30W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "7846": {
-    "id": "7846",
-    "model": "240502105456",
-    "image": "urunler/kst227-bahce-armatur.webp",
-    "name": {
-      "tr": "KST227 200W Çambașı Solar Park Bahçe Armatürü",
-      "en": "KST227 200W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "200W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W"
-    }
-  },
-  "7847": {
-    "id": "7847",
-    "model": "240502110509",
-    "image": "urunler/kst228-bahce-armatur.webp",
-    "name": {
-      "tr": "KST228 300W Çambașı Solar Park Bahçe Armatürü",
-      "en": "KST228 300W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "300W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "300W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "300W"
-    }
-  },
-  "7848": {
-    "id": "7848",
-    "model": "240502110722",
-    "image": "urunler/kst230-sokak-armatur.webp",
-    "name": {
-      "tr": "KST230 600W Sümela Solar Sokak Armatürü",
-      "en": "KST230 600W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "600W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "600W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "600W"
-    }
-  },
-  "7849": {
-    "id": "7849",
-    "model": "240502110951",
-    "image": "urunler/kst231-sokak-armatur.webp",
-    "name": {
-      "tr": "KST231 800W Sümela Solar Sokak Armatürü",
-      "en": "KST231 800W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "4"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "800W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "4"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "800W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "800W"
-    }
-  },
-  "7850": {
-    "id": "7850",
-    "model": "240502112035",
-    "image": "urunler/kst232-sokak-armatur.webp",
-    "name": {
-      "tr": "KST232 1000W Sümela Solar Sokak Armatürü",
-      "en": "KST232 1000W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "4"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "1000W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "4"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "1000W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "1000W"
-    }
-  },
-  "7851": {
-    "id": "7851",
-    "model": "240502112301",
-    "image": "urunler/kst233-sokak-armatur.webp",
-    "name": {
-      "tr": "KST233 1200W Sümela Solar Sokak Armatürü",
-      "en": "KST233 1200W Solar LED Street Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "4"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "1200W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "4"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "1200W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "1200W"
-    }
-  },
-  "7852": {
-    "id": "7852",
-    "model": "240502112538",
-    "image": "urunler/kst240-sokak-armatur.webp",
-    "name": {
-      "tr": "KST240 150W Karagöl Solar Sokak Armatürü",
-      "en": "KST240 150W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "150W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "150W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W"
-    }
-  },
-  "7853": {
-    "id": "7853",
-    "model": "240502112741",
-    "image": "urunler/kst241-sokak-armatur.webp",
-    "name": {
-      "tr": "KST241 250W Karagöl Solar Sokak Armatürü",
-      "en": "KST241 250W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "250W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "250W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "250W"
-    }
-  },
-  "7854": {
-    "id": "7854",
-    "model": "240502112937",
-    "image": "urunler/kst242-sokak-armatur.webp",
-    "name": {
-      "tr": "KST242 350W Karagöl Solar Sokak Armatürü",
-      "en": "KST242 350W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "350W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "350W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "350W"
-    }
-  },
-  "7855": {
-    "id": "7855",
-    "model": "240502113132",
-    "image": "urunler/kst243-sokak-armatur.webp",
-    "name": {
-      "tr": "KST243 450W Karagöl Solar Sokak Armatürü",
-      "en": "KST243 450W Solar LED Street Lıght"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "5"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah"
-        },
-        {
-          "label": "Watt",
-          "value": "450W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "5"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black"
-        },
-        {
-          "label": "Power",
-          "value": "450W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "450W"
     }
   },
   "7856": {
@@ -125328,69 +122597,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "8016": {
-    "id": "8016",
-    "model": "250422061319",
-    "image": "urunler/kba790.webp",
-    "name": {
-      "tr": "KBA790 30W Set Üstü Solar LED Armatür",
-      "en": "KBA790 30W Counter Top Solar LED Fıxture"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W"
-    }
-  },
-  "8017": {
-    "id": "8017",
-    "model": "250422061622",
-    "image": "urunler/kba739.webp",
-    "name": {
-      "tr": "KBA739 Hoparlörlü 100W Solar Taşınabilir Projektör",
-      "en": "KBA739 100W Solar Portable Projector Wıth Speaker"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W"
-    }
-  },
-  "8018": {
-    "id": "8018",
-    "model": "250422061844",
-    "image": "urunler/kst214.webp",
-    "name": {
-      "tr": "KST214 200W Ledli Sokak Armatürü (lensli)",
-      "en": "KST214 200W LED Street Lamp (wıth Lens)"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W"
-    }
-  },
   "8019": {
     "id": "8019",
     "model": "250422062235",
@@ -125893,270 +123099,6 @@
     },
     "brand": "k2",
     "variantOptions": {}
-  },
-  "8070": {
-    "id": "8070",
-    "model": "251014125739",
-    "image": "urunler/kst310.webp",
-    "name": {
-      "tr": "KST310 Solar Dış Mekan Armatür",
-      "en": "KST310 Solar LED Flood Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Uzaktan Kumandalı"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V4000mAh"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Description",
-          "value": "With Remote Control"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V4000mAh"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8071": {
-    "id": "8071",
-    "model": "251014130334",
-    "image": "urunler/kst311.webp",
-    "name": {
-      "tr": "KST311 Solar LED Dış Mekan Armatür",
-      "en": "KST311 Solar LED Flood Lıghts"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Uzaktan Kumandalı"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V8000mAh "
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Description",
-          "value": "With Remote Control"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V8000mAh "
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8072": {
-    "id": "8072",
-    "model": "251014130616",
-    "image": "urunler/kba741.webp",
-    "name": {
-      "tr": "KBA741 Sensörlü Solar Duvar Armatür",
-      "en": "KBA741 Solar Wall Fıxture Wıth Sensor"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "280"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Radar Sensörlü"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "50W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "280"
-        },
-        {
-          "label": "Description",
-          "value": "With Radar Sensor"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "50W",
-      "casing": "Beyaz (6500K)"
-    }
-  },
-  "8073": {
-    "id": "8073",
-    "model": "251014130935",
-    "image": "urunler/kba795.webp",
-    "name": {
-      "tr": "KBA795 Set Üstü Solar Armatür",
-      "en": "KBA795 Countertop Solar Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Pil",
-          "value": "3.7V1800mAh"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "30W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Pil",
-          "value": "3.7V1800mAh"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "30W",
-      "casing": "CCT (Günışığı (3000K)-Beyaz (6500K))"
-    }
-  },
-  "8074": {
-    "id": "8074",
-    "model": "251014131215",
-    "image": "urunler/kba742.webp",
-    "name": {
-      "tr": "KBA742 Sensörlü Solar Duvar Armatür",
-      "en": "KBA742 Solar Wall Fıxture Wıth Sensor"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "5W"
-        },
-        {
-          "label": "Renk",
-          "value": "2700K"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V400mAh"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "5W"
-        },
-        {
-          "label": "Color",
-          "value": "2700K"
-        },
-        {
-          "label": "Pil",
-          "value": "3.2V400mAh"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "casing": "Sıcak Günışığı (2700K)"
-    }
   },
   "8075": {
     "id": "8075",
@@ -173740,6 +170682,5295 @@
     "variantOptions": {
       "watt": "75W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KST220": {
+    "id": "KST220",
+    "model": "KST220",
+    "image": "urunler/kst220-sokak-armatur.webp",
+    "name": {
+      "tr": "KST220 ÇİĞDEM COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST220 CIGDEM COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 4400mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "193x388 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 4400mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "193x388 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "50W"
+    }
+  },
+  "KST221": {
+    "id": "KST221",
+    "model": "KST221",
+    "image": "urunler/kst221-sokak-armatur.webp",
+    "name": {
+      "tr": "KST221 ÇİĞDEM COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST221 CIGDEM COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "218x484 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "218x484 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KST240": {
+    "id": "KST240",
+    "model": "KST240",
+    "image": "urunler/kst240-sokak-armatur.webp",
+    "name": {
+      "tr": "KST240 KARAGÖL COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST240 KARAGOL COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "508x236x47 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "508x236x47 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KST241": {
+    "id": "KST241",
+    "model": "KST241",
+    "image": "urunler/kst241-sokak-armatur.webp",
+    "name": {
+      "tr": "KST241 KARAGÖL COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST241 KARAGOL COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "617x255x47 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "250W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "617x255x47 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "250W"
+    }
+  },
+  "KST242": {
+    "id": "KST242",
+    "model": "KST242",
+    "image": "urunler/kst242-sokak-armatur.webp",
+    "name": {
+      "tr": "KST242 KARAGÖL COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST242 KARAGOL COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "350W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "721x255x47 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "350W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "721x255x47 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "350W"
+    }
+  },
+  "KST243": {
+    "id": "KST243",
+    "model": "KST243",
+    "image": "urunler/kst243-sokak-armatur.webp",
+    "name": {
+      "tr": "KST243 KARAGÖL COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST243 KARAGOL COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "450W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "819x255x47 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "450W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "819x255x47 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "450W"
+    }
+  },
+  "KST230": {
+    "id": "KST230",
+    "model": "KST230",
+    "image": "urunler/kst230-sokak-armatur.webp",
+    "name": {
+      "tr": "KST230 SÜMELA COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST230 SUMELA COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "600W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "342x447 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "600W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "342x447 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "600W"
+    }
+  },
+  "KST231": {
+    "id": "KST231",
+    "model": "KST231",
+    "image": "urunler/kst231-sokak-armatur.webp",
+    "name": {
+      "tr": "KST231 SÜMELA COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST231 SUMELA COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "800W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 20000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "4"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "342x597 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "800W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 20000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "4"
+        },
+        {
+          "label": "Dimensions",
+          "value": "342x597 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "800W"
+    }
+  },
+  "KST232": {
+    "id": "KST232",
+    "model": "KST232",
+    "image": "urunler/kst232-sokak-armatur.webp",
+    "name": {
+      "tr": "KST232 SÜMELA COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST232 SUMELA COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "1000W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 22000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "4"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "342x677 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "1000W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 22000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "4"
+        },
+        {
+          "label": "Dimensions",
+          "value": "342x677 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "1000W"
+    }
+  },
+  "KST233": {
+    "id": "KST233",
+    "model": "KST233",
+    "image": "urunler/kst233-sokak-armatur.webp",
+    "name": {
+      "tr": "KST233 SÜMELA COB LED SOLAR SOKAK ARMATÜRÜ",
+      "en": "KST233 SUMELA COB LED SOLAR STREET LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "1200W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 30000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "4"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "342x760 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "1200W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 30000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "4"
+        },
+        {
+          "label": "Dimensions",
+          "value": "342x760 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "1200W"
+    }
+  },
+  "KST226": {
+    "id": "KST226",
+    "model": "KST226",
+    "image": "urunler/kst226-duvar-armatur.webp",
+    "name": {
+      "tr": "KST226 ANZER COB LED SOLAR KONSOLLU DUVAR ARMATÜRÜ",
+      "en": "KST226 ANZER COB LED SOLAR CONSOLE WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "143x260 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "143x260 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KST227": {
+    "id": "KST227",
+    "model": "KST227",
+    "image": "urunler/kst227-bahce-armatur.webp",
+    "name": {
+      "tr": "KST227 ÇAMBAŞI SMD LED SOLAR PARK BAHÇE ARMATÜRÜ",
+      "en": "KST227 CAMBASI SMD LED SOLAR PARK GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø550 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø550 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KST228": {
+    "id": "KST228",
+    "model": "KST228",
+    "image": "urunler/kst228-bahce-armatur.webp",
+    "name": {
+      "tr": "KST228 ÇAMBAŞI SMD LED SOLAR PARK BAHÇE ARMATÜRÜ",
+      "en": "KST228 CAMBASI SMD LED SOLAR PARK GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 20000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø610 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "400W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 20000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø610 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "400W"
+    }
+  },
+  "KBA777": {
+    "id": "KBA777",
+    "model": "KBA777",
+    "image": "urunler/kba777-solar-armatur.webp",
+    "name": {
+      "tr": "KBA777 EGE SOLAR DUVAR APLİK ARMATÜRÜ",
+      "en": "KBA777 EGE SOLAR WALL SCONCE LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Duvar Aplik"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "173x188 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Description",
+          "value": "Wall Sconce"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "173x188 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA778": {
+    "id": "KBA778",
+    "model": "KBA778",
+    "image": "urunler/kba778-solar-armatur.webp",
+    "name": {
+      "tr": "KBA778 EGE SOLAR KAZIKLI ÇİM ARMATÜRÜ",
+      "en": "KBA778 EGE SOLAR SPIKE LAWN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Kazıklı Çim"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "173x690 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Description",
+          "value": "Spike Lawn"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "173x690 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA779": {
+    "id": "KBA779",
+    "model": "KBA779",
+    "image": "urunler/kba779-solar-armatur.webp",
+    "name": {
+      "tr": "KBA779 EGE SOLAR PARK BAHÇE ARMATÜRÜ",
+      "en": "KBA779 EGE SOLAR PARK GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Park Bahçe"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Kasa",
+          "value": "Siyah"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Radar Sensörlü / Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "173x667 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Description",
+          "value": "Park Garden"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Casing",
+          "value": "Black"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Radar Sensor / Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "173x667 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA776": {
+    "id": "KBA776",
+    "model": "KBA776",
+    "image": "urunler/kba776-solar-armatur.webp",
+    "name": {
+      "tr": "KBA776 SET ÜSTÜ SOLAR LED ARMATÜR",
+      "en": "KBA776 POST TOP SOLAR LED LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT + RGB"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø90x206 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT + RGB"
+        },
+        {
+          "label": "Charging Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø90x206 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA790": {
+    "id": "KBA790",
+    "model": "KBA790",
+    "image": "urunler/kba790.webp",
+    "name": {
+      "tr": "KBA790 SET ÜSTÜ SOLAR LED ARMATÜR",
+      "en": "KBA790 POST TOP SOLAR LED LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø90x206 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Charging Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø90x206 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KBA751": {
+    "id": "KBA751",
+    "model": "KBA751",
+    "image": "urunler/kba751.webp",
+    "name": {
+      "tr": "KBA751 SET ÜSTÜ SOLAR LED ARMATÜR",
+      "en": "KBA751 POST TOP SOLAR LED LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT + RGB"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "150x215 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 2.2Ah"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT + RGB"
+        },
+        {
+          "label": "Charging Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "150x215 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA819": {
+    "id": "KBA819",
+    "model": "KBA819",
+    "image": "urunler/kba819.webp",
+    "name": {
+      "tr": "KBA819 3'Ü BİR ARADA SOLAR BAHÇE VE DUVAR ARMATÜRÜ",
+      "en": "KBA819 3-IN-1 SOLAR GARDEN AND WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Batarya",
+          "value": "3.7V 1.500mAh"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Sıcak Beyaz (3200K)"
+        },
+        {
+          "label": "Kullanım Şekli",
+          "value": "3'ü 1 Arada (Set Üstü, Ayaklı Set Üstü, Kazıklı)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar / Yeni"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "125x125x55 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Battery",
+          "value": "3.7V 1.500mAh"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3200K)"
+        },
+        {
+          "label": "Usage Type",
+          "value": "3-in-1 (Post Top, Pedestal Post Top, Spike)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar / New"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "125x125x55 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Bahçe Armatür"
+      ],
+      "en": [
+        "Solar Garden Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "batarya": "3.7V 1.500mAh"
+    }
+  },
+  "KST303": {
+    "id": "KST303",
+    "model": "KST303",
+    "image": "urunler/kst303.webp",
+    "name": {
+      "tr": "KST303 SOLAR LED PROJEKTÖR",
+      "en": "KST303 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "143x115 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "143x115 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KST304": {
+    "id": "KST304",
+    "model": "KST304",
+    "image": "urunler/kst304.webp",
+    "name": {
+      "tr": "KST304 SOLAR LED PROJEKTÖR",
+      "en": "KST304 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "205x157 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 5000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "205x157 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "50W"
+    }
+  },
+  "KST305": {
+    "id": "KST305",
+    "model": "KST305",
+    "image": "urunler/kst305.webp",
+    "name": {
+      "tr": "KST305 SOLAR LED PROJEKTÖR",
+      "en": "KST305 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "16"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "247x200 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "16"
+        },
+        {
+          "label": "Dimensions",
+          "value": "247x200 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KST306": {
+    "id": "KST306",
+    "model": "KST306",
+    "image": "urunler/kst306-solar-projektor.webp",
+    "name": {
+      "tr": "KST306 SOLAR LED PROJEKTÖR",
+      "en": "KST306 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 10000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "18"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "272x225 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 10000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "18"
+        },
+        {
+          "label": "Dimensions",
+          "value": "272x225 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KST301": {
+    "id": "KST301",
+    "model": "KST301",
+    "image": "urunler/kst301.webp",
+    "name": {
+      "tr": "KST301 SOLAR LED PROJEKTÖR",
+      "en": "KST301 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "320x260 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 12000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "320x260 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KST302": {
+    "id": "KST302",
+    "model": "KST302",
+    "image": "urunler/kst302.webp",
+    "name": {
+      "tr": "KST302 SOLAR LED PROJEKTÖR",
+      "en": "KST302 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "5"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "350x290 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "300W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 15000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "5"
+        },
+        {
+          "label": "Dimensions",
+          "value": "350x290 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "300W"
+    }
+  },
+  "KST310": {
+    "id": "KST310",
+    "model": "KST310",
+    "image": "urunler/kst310.webp",
+    "name": {
+      "tr": "KST310 SOLAR LED PROJEKTÖR",
+      "en": "KST310 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "205x170 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "205x170 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KST311": {
+    "id": "KST311",
+    "model": "KST311",
+    "image": "urunler/kst311.webp",
+    "name": {
+      "tr": "KST311 SOLAR LED PROJEKTÖR",
+      "en": "KST311 SOLAR LED FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar / Yüksek Lümen"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "255x210 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 8000mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar / High Lumen"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "255x210 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KBA746": {
+    "id": "KBA746",
+    "model": "KBA746",
+    "image": "urunler/kba746.webp",
+    "name": {
+      "tr": "KBA746 SOLAR KAZIKLI BAHÇE ARMATÜRÜ",
+      "en": "KBA746 SOLAR SPIKE GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sarı, Kırmızı, Yeşil, Mavi"
+        },
+        {
+          "label": "Lümen",
+          "value": "560"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "120x178 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Yellow, Red, Green, Blue"
+        },
+        {
+          "label": "Lumen",
+          "value": "560"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "120x178 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "7W"
+    }
+  },
+  "KBA744": {
+    "id": "KBA744",
+    "model": "KBA744",
+    "image": "urunler/kba744-bahce-armatur.webp",
+    "name": {
+      "tr": "KBA744 SOLAR KAZIKLI BAHÇE ARMATÜRÜ",
+      "en": "KBA744 SOLAR SPIKE GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sarı, Kırmızı, Yeşil, Mavi"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "215x377 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Yellow, Red, Green, Blue"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "215x377 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W"
+    }
+  },
+  "KBA783": {
+    "id": "KBA783",
+    "model": "KBA783",
+    "image": "urunler/kba783-solar-bahce-armatur.webp",
+    "name": {
+      "tr": "KBA783 SOLAR KAZIKLI BAHÇE ARMATÜRÜ",
+      "en": "KBA783 SOLAR SPIKE GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sarı, Kırmızı, Yeşil, Mavi"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "215x377 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Yellow, Red, Green, Blue"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "215x377 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W"
+    }
+  },
+  "KBA748": {
+    "id": "KBA748",
+    "model": "KBA748",
+    "image": "urunler/kba748-bahce-armatur.webp",
+    "name": {
+      "tr": "KBA748 SOLAR KAZIKLI BAHÇE ARMATÜRÜ",
+      "en": "KBA748 SOLAR SPIKE GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sarı, Kırmızı, Yeşil, Mavi"
+        },
+        {
+          "label": "Lümen",
+          "value": "960"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "176x290 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Yellow, Red, Green, Blue"
+        },
+        {
+          "label": "Lumen",
+          "value": "960"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "176x290 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KBA796": {
+    "id": "KBA796",
+    "model": "KBA796",
+    "image": "urunler/kba796.webp",
+    "name": {
+      "tr": "KBA796 SOLAR TAŞINABİLİR PROJEKTÖR",
+      "en": "KBA796 SOLAR PORTABLE FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 2.400mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP54"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "USB'li / SOS Modlu / Askı Aparatlı / Solar / 3 Renk Fonksiyonu / Yeni"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "169x127.5 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 2.400mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP54"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "With USB / SOS Mode / With Hanging Bracket / Solar / 3 Color Function / New"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "169x127.5 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KBA797": {
+    "id": "KBA797",
+    "model": "KBA797",
+    "image": "urunler/kba797.webp",
+    "name": {
+      "tr": "KBA797 SOLAR TAŞINABİLİR PROJEKTÖR",
+      "en": "KBA797 SOLAR PORTABLE FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 3.600mAh"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP54"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "USB'li / SOS Modlu / Askı Aparatlı / Solar / 3 Renk Fonksiyonu / Yeni"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "208x165.8 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 3.600mAh"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP54"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "With USB / SOS Mode / With Hanging Bracket / Solar / 3 Color Function / New"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "208x165.8 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KBA754": {
+    "id": "KBA754",
+    "model": "KBA754",
+    "image": "urunler/kba754.webp",
+    "name": {
+      "tr": "KBA754 SOLAR TAŞINABİLİR PROJEKTÖR",
+      "en": "KBA754 SOLAR PORTABLE FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Batarya",
+          "value": "4800 mAh"
+        },
+        {
+          "label": "Açıklama",
+          "value": "4 Fonksiyon"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "3-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "4-8 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP44"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "215x175 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Battery",
+          "value": "4800 mAh"
+        },
+        {
+          "label": "Description",
+          "value": "4 Functions"
+        },
+        {
+          "label": "Charging Time",
+          "value": "3-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "4-8 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP44"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "215x175 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KBA739": {
+    "id": "KBA739",
+    "model": "KBA739",
+    "image": "urunler/kba739.webp",
+    "name": {
+      "tr": "KBA739 SOLAR TAŞINABİLİR PROJEKTÖR",
+      "en": "KBA739 SOLAR PORTABLE FLOODLIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Batarya",
+          "value": "4800 mAh"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Hoparlörlü"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "3-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "4-8 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP44"
+        },
+        {
+          "label": "Özellik",
+          "value": "Bluetooth Hoparlör / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "224x178 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Battery",
+          "value": "4800 mAh"
+        },
+        {
+          "label": "Description",
+          "value": "With Speaker"
+        },
+        {
+          "label": "Charging Time",
+          "value": "3-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "4-8 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP44"
+        },
+        {
+          "label": "Feature",
+          "value": "Bluetooth Speaker / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "224x178 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KBA784": {
+    "id": "KBA784",
+    "model": "KBA784",
+    "image": "urunler/kba784-solar-bahce-armatur.webp",
+    "name": {
+      "tr": "KBA784 SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA784 SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 1500mAh"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "335x180 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 1500mAh"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "335x180 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W"
+    }
+  },
+  "KBA785": {
+    "id": "KBA785",
+    "model": "KBA785",
+    "image": "urunler/kba785-solar-led.webp",
+    "name": {
+      "tr": "KBA785 SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA785 SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 1500mAh"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "970x50 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 1500mAh"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "970x50 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA786": {
+    "id": "KBA786",
+    "model": "KBA786",
+    "image": "urunler/kba786-solar-led-duvar-lamba.webp",
+    "name": {
+      "tr": "KBA786 SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA786 SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 1200mAh"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-12 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Malzeme",
+          "value": "ABS Plastik"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar / 3 Renk Fonksiyonu"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "570x50 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Light Color",
+          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 1200mAh"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-12 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Material",
+          "value": "ABS Plastic"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar / 3 Color Function"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "570x50 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W"
+    }
+  },
+  "KBA749": {
+    "id": "KBA749",
+    "model": "KBA749",
+    "image": "urunler/kba749.webp",
+    "name": {
+      "tr": "KBA749 SENSÖRLÜ SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA749 SENSOR SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lümen",
+          "value": "80"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-10 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Fotoselli Sensörlü / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "96x126 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "15W"
+        },
+        {
+          "label": "Lumen",
+          "value": "80"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-10 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Photocell Sensor / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "96x126 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "15W"
+    }
+  },
+  "KBA750": {
+    "id": "KBA750",
+    "model": "KBA750",
+    "image": "urunler/kba750.webp",
+    "name": {
+      "tr": "KBA750 SENSÖRLÜ SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA750 SENSOR SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "160"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-10 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Fotoselli Sensörlü / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "175x125 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "160"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-10 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Photocell Sensor / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "175x125 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA741": {
+    "id": "KBA741",
+    "model": "KBA741",
+    "image": "urunler/kba741.webp",
+    "name": {
+      "tr": "KBA741 SENSÖRLÜ SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA741 SENSOR SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "280"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Şarj Süresi",
+          "value": "4-6 Saat"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "8-10 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Fotoselli Sensörlü / Radar Sensörlü / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "136x98 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "280"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Charging Time",
+          "value": "4-6 Hours"
+        },
+        {
+          "label": "Working Time",
+          "value": "8-10 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Photocell Sensor / Radar Sensor / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "136x98 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "50W"
+    }
+  },
+  "KBA780": {
+    "id": "KBA780",
+    "model": "KBA780",
+    "image": "urunler/kba780-set-ustu-solar-armatur.webp",
+    "name": {
+      "tr": "KBA780 SET ÜSTÜ SOLAR ARMATÜR",
+      "en": "KBA780 POST TOP SOLAR LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Günışığı (3000K), Beyaz (6500K), Kırmızı"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 1200mAh"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100x100x142 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm White (3000K), Cool White (6500K), Red"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 1200mAh"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100x100x142 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KBA781": {
+    "id": "KBA781",
+    "model": "KBA781",
+    "image": "urunler/kba781-set-ustu-solar-armatur.webp",
+    "name": {
+      "tr": "KBA781 SET ÜSTÜ SOLAR ARMATÜR",
+      "en": "KBA781 POST TOP SOLAR LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Günışığı (3000K), Beyaz (6500K), Kırmızı"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 1800mAh"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "150x150x190 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "60W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm White (3000K), Cool White (6500K), Red"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 1800mAh"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "150x150x190 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "60W"
+    }
+  },
+  "KBA782": {
+    "id": "KBA782",
+    "model": "KBA782",
+    "image": "urunler/kba782-set-ustu-solar-armatur.webp",
+    "name": {
+      "tr": "KBA782 SET ÜSTÜ SOLAR ARMATÜR",
+      "en": "KBA782 POST TOP SOLAR LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "90W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Günışığı (3000K), Beyaz (6500K), Kırmızı"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Uzaktan Kumandalı / Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "6"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "200x200x255 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "90W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm White (3000K), Cool White (6500K), Red"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 4000mAh"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Remote Controlled / Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "6"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200x200x255 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "90W"
+    }
+  },
+  "KBA795": {
+    "id": "KBA795",
+    "model": "KBA795",
+    "image": "urunler/kba795.webp",
+    "name": {
+      "tr": "KBA795 SET ÜSTÜ SOLAR ARMATÜR",
+      "en": "KBA795 POST TOP SOLAR LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "75W"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Günışığı (3000K), Beyaz (6500K), Kırmızı"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.7V 1800mAh"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "12-24 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "200x200x191 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "75W"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm White (3000K), Cool White (6500K), Red"
+        },
+        {
+          "label": "Battery",
+          "value": "3.7V 1800mAh"
+        },
+        {
+          "label": "Working Time",
+          "value": "12-24 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200x200x191 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Sokak Armatür"
+      ],
+      "en": [
+        "Solar Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "75W"
+    }
+  },
+  "KBA742": {
+    "id": "KBA742",
+    "model": "KBA742",
+    "image": "urunler/kba742.webp",
+    "name": {
+      "tr": "KBA742 SENSÖRLÜ SOLAR DUVAR ARMATÜRÜ",
+      "en": "KBA742 SENSOR SOLAR WALL LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Batarya",
+          "value": "3.2V 400mAh"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sıcak Günışığı (2700K)"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Battery",
+          "value": "3.2V 400mAh"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm Daylight (2700K)"
+        },
+        {
+          "label": "Working Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "5W"
+    }
+  },
+  "KES141": {
+    "id": "KES141",
+    "model": "KES141",
+    "image": "urunler/kes141.webp",
+    "name": {
+      "tr": "KES141 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KES141 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "4500"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP20"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø350x165 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "4500"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP20"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø350x165 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Yüksek Tavan Armatürü"
+      ],
+      "en": [
+        "High Bay Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "50W"
+    }
+  },
+  "KES142": {
+    "id": "KES142",
+    "model": "KES142",
+    "image": "urunler/kes142.webp",
+    "name": {
+      "tr": "KES142 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KES142 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "70W"
+        },
+        {
+          "label": "Lümen",
+          "value": "6300"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP20"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø400x170 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "70W"
+        },
+        {
+          "label": "Lumen",
+          "value": "6300"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP20"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø400x170 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Yüksek Tavan Armatürü"
+      ],
+      "en": [
+        "High Bay Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "70W"
+    }
+  },
+  "KES143": {
+    "id": "KES143",
+    "model": "KES143",
+    "image": "urunler/kes143.webp",
+    "name": {
+      "tr": "KES143 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KES143 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lümen",
+          "value": "9000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP20"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø450x195 mm"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lumen",
+          "value": "9000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP20"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø450x195 mm"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Yüksek Tavan Armatürü"
+      ],
+      "en": [
+        "High Bay Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KBA743": {
+    "id": "KBA743",
+    "model": "KBA743",
+    "image": "urunler/kba743.webp",
+    "name": {
+      "tr": "KBA743 SOLAR KAZIKLI BAHÇE ARMATÜRÜ",
+      "en": "KBA743 SOLAR SPIKE GARDEN LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Batarya",
+          "value": "1.2V 300mAh"
+        },
+        {
+          "label": "Işık Rengi",
+          "value": "Sıcak Günışığı (2700K)"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP44"
+        },
+        {
+          "label": "Çalışma Süresi",
+          "value": "6-8 Saat"
+        },
+        {
+          "label": "Özellik",
+          "value": "Solar / Yeni"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "24"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "110x79x520 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Battery",
+          "value": "1.2V 300mAh"
+        },
+        {
+          "label": "Light Color",
+          "value": "Warm Daylight (2700K)"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP44"
+        },
+        {
+          "label": "Working Time",
+          "value": "6-8 Hours"
+        },
+        {
+          "label": "Feature",
+          "value": "Solar / New"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "24"
+        },
+        {
+          "label": "Dimensions",
+          "value": "110x79x520 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Solar Armatür"
+      ],
+      "en": [
+        "Solar Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "batarya": "1.2V 300mAh"
+    }
+  },
+  "KST206": {
+    "id": "KST206",
+    "model": "KST206",
+    "image": "urunler/kst20630wbeyaz.webp",
+    "name": {
+      "tr": "KST206 LEDLİ SOKAK ARMATÜRÜ (LENSLİ)",
+      "en": "KST206 LED STREET LUMINAIRE (WITH LENS)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lümen",
+          "value": "3000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Lensli / İzole Trafolu / Yerli Üretim"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "125x310x40 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "30W"
+        },
+        {
+          "label": "Lumen",
+          "value": "3000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "With Lens / Isolated Transformer / Domestic Production"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "125x310x40 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Sokak Armatürü"
+      ],
+      "en": [
+        "Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "30W"
+    }
+  },
+  "KST207": {
+    "id": "KST207",
+    "model": "KST207",
+    "image": "urunler/kst207.webp",
+    "name": {
+      "tr": "KST207 LEDLİ SOKAK ARMATÜRÜ (LENSLİ)",
+      "en": "KST207 LED STREET LUMINAIRE (WITH LENS)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lümen",
+          "value": "5000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Lensli / İzole Trafolu / Yerli Üretim"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "115x445x68 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "50W"
+        },
+        {
+          "label": "Lumen",
+          "value": "5000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "With Lens / Isolated Transformer / Domestic Production"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "115x445x68 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Sokak Armatürü"
+      ],
+      "en": [
+        "Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "50W"
+    }
+  },
+  "KST208": {
+    "id": "KST208",
+    "model": "KST208",
+    "image": "urunler/kst208100wbeyaz.webp",
+    "name": {
+      "tr": "KST208 LEDLİ SOKAK ARMATÜRÜ (LENSLİ)",
+      "en": "KST208 LED STREET LUMINAIRE (WITH LENS)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lümen",
+          "value": "9000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Lensli / İzole Trafolu / Yerli Üretim"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "130x500x68 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lumen",
+          "value": "9000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "With Lens / Isolated Transformer / Domestic Production"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "130x500x68 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Sokak Armatürü"
+      ],
+      "en": [
+        "Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KST209": {
+    "id": "KST209",
+    "model": "KST209",
+    "image": "urunler/kst209.webp",
+    "name": {
+      "tr": "KST209 LEDLİ SOKAK ARMATÜRÜ (LENSLİ)",
+      "en": "KST209 LED STREET LUMINAIRE (WITH LENS)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Lümen",
+          "value": "13500"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Lensli / İzole Trafolu / Yerli Üretim"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "165x570x58 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Lumen",
+          "value": "13500"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "With Lens / Isolated Transformer / Domestic Production"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "165x570x58 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Sokak Armatürü"
+      ],
+      "en": [
+        "Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KST214": {
+    "id": "KST214",
+    "model": "KST214",
+    "image": "urunler/kst214.webp",
+    "name": {
+      "tr": "KST214 LEDLİ SOKAK ARMATÜRÜ (LENSLİ)",
+      "en": "KST214 LED STREET LUMINAIRE (WITH LENS)"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lümen",
+          "value": "18000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koruma Sınıfı",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Lensli / İzole Trafolu / Yerli Üretim"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "200x685x77 mm"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lumen",
+          "value": "18000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Protection Class",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "With Lens / Isolated Transformer / Domestic Production"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "200x685x77 mm"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "Sokak Armatürü"
+      ],
+      "en": [
+        "Street Luminaire"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
     }
   }
 }

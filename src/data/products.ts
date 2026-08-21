@@ -34,7 +34,11 @@ export const slugMap: Record<string, string> = slugMapData as Record<string, str
 
 export function getProductBySlug(slug: string): Product | undefined {
   const id = slugMap[slug];
-  return id ? products[id] : undefined;
+  if (id) return products[id];
+  // Fallback: link generation (getProductCanonicalUrl) falls back to the raw
+  // product id when no slug-map entry exists yet, so resolution must accept
+  // the id directly too, or freshly added products 404 until a slug is added.
+  return products[slug];
 }
 
 export function getAllSlugs(): string[] {
