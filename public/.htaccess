@@ -1,0 +1,30 @@
+# Kendal Elektrik - cPanel/Apache güvenlik ayarları
+# Next.js static export (`output: "export"`) header konfigürasyonunu
+# desteklemediği için bu ayarlar burada tanımlanıyor.
+
+# --- HTTPS zorunlu kıl ---
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# --- Güvenlik başlıkları ---
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+
+  # NOT: includeSubDomains/preload kasıtlı olarak eklenmedi. Bu domain
+  # altındaki diğer alt alan adlarının (mail, webmail, b2b, sanalpos vb.)
+  # https üzerinde sorunsuz çalıştığı teyit edilmeden bu iki seçenek
+  # eklenmemeli - eklenirse ve bir alt alan adı https'i desteklemezse,
+  # tarayıcılar o adrese aylarca erişemez hale gelir.
+  Header always set Strict-Transport-Security "max-age=31536000"
+
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; frame-src 'self' https://www.youtube.com; connect-src 'self'"
+</IfModule>
+
+# --- Dizin listelemeyi kapat ---
+Options -Indexes
