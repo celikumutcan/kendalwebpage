@@ -7,8 +7,11 @@ import type { NextConfig } from "next";
 //  - cPanel (kendalelektrik.com.tr): gerçek üretim ortamı, kök dizine
 //    yükleniyor, basePath OLMAMALI.
 // `next build` varsayılan olarak cPanel hedefini üretir. GitHub Pages
-// build'i BUILD_MODE=ghpages ile tetiklenir (bkz. .github/workflows/nextjs.yml).
-const isGithubPagesBuild = process.env.BUILD_MODE === "ghpages";
+// build'i NEXT_PUBLIC_BUILD_MODE=ghpages ile tetiklenir (bkz.
+// .github/workflows/nextjs.yml). NEXT_PUBLIC_ öneki şart: basePath.ts bu
+// değeri "use client" bileşenlerinde de okuyor, öneksiz bir env değişkeni
+// tarayıcı paketine hiç dahil edilmez.
+const isGithubPagesBuild = process.env.NEXT_PUBLIC_BUILD_MODE === "ghpages";
 
 const nextConfig: NextConfig = {
   images: {
