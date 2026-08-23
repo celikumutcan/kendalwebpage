@@ -2,10 +2,10 @@
 
 import React, { useRef, useState } from "react";
 import Image from "next/image";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { gsap } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 export const CompanyVideo = () => {
   const { t } = useLanguage();

@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { K2Scene } from "./K2Scene";
 import Link from "next/link";
 import { Product } from "@/data/products";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);

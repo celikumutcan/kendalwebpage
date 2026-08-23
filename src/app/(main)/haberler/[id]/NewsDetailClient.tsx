@@ -5,7 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { newsDataTR, newsDataEN } from "@/data/news";
 import { ImageSlider } from "@/components/ui/ImageSlider";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 export function NewsDetailClient({ id }: { id: string }) {
   const { language, t } = useLanguage();

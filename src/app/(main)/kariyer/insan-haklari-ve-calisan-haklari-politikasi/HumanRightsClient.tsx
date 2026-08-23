@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 export function HumanRightsClient() {
   const { t } = useLanguage();

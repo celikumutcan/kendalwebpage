@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 interface VantiPreloaderProps {
   ready: boolean;

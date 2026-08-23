@@ -4,7 +4,7 @@ import React, { useEffect, useMemo } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 import { Product } from "@/data/products";
 
 export interface CompareTexts {

@@ -2,9 +2,9 @@
 
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 const REFERENCE_DATA = [
   { id: "ref-43", name: "Volkswagen", location: "Çorlu – Tekirdağ" },

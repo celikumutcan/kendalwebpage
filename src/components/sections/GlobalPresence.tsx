@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import dynamic from "next/dynamic";

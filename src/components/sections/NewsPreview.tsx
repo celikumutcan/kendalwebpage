@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { newsDataTR } from "@/data/news-tr";
 import { newsDataEN } from "@/data/news-en";
 import { parseNewsDate } from "@/lib/newsDate";

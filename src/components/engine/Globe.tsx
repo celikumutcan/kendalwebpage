@@ -5,7 +5,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useTexture, Line } from "@react-three/drei";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 import { useInView } from "@/lib/useInView";
 
 const latLongToVector3 = (lat: number, lon: number, radius: number) => {

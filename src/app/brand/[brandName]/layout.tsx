@@ -1,7 +1,7 @@
 import { BrandNavbar } from "@/components/ui/BrandNavbar";
 import { BrandFooter } from "@/components/ui/BrandFooter";
 import { ScrollToTop } from "@/components/ui/ScrollToTop";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 export async function generateMetadata({ params }: { params: Promise<{ brandName: string }> }) {
   const resolvedParams = await params;

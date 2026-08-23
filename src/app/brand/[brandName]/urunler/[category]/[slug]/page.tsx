@@ -3,26 +3,14 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug, getSlugByProductId, getProductCanonicalUrl, getProductCategorySlug, products } from "@/data/products";
 import { getProductPdfFile } from "@/lib/getProductPdfForm";
+import { getProductDetailMetadata } from "@/lib/productMetadata";
 import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient"; // Re-using the main client component
 import { ProductSchema } from "@/components/shared/ProductSchema";
 
 export async function generateMetadata({ params }: { params: Promise<{ brandName: string; category: string; slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
-  const decodedSlug = decodeURIComponent(slug);
-  const product = getProductBySlug(decodedSlug);
-
-  if (!product) {
-    return { title: "Ürün Bulunamadı" };
-  }
-
-  const productCategory = product.category?.tr?.[0];
-  const description = `${product.name.tr}${productCategory ? ` - ${productCategory}` : ""} | Model: ${product.model}. Teknik özellikleri ve garanti koşullarıyla incelenebilir.`;
-
-  return {
-    title: product.name.tr,
-    description,
-    alternates: { canonical: getProductCanonicalUrl(product) },
-  };
+  const product = getProductBySlug(decodeURIComponent(slug));
+  return getProductDetailMetadata(product);
 }
 
 export function generateStaticParams() {

@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { getAssetPath } from "@/utils/basePath";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { getAssetPath } from "@/lib/basePath";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 const BRANDS = [
   { name: "K2", logo: getAssetPath("/images/brands/k2-logo.svg") },

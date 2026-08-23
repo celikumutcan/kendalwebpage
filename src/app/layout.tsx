@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "./i18n/LanguageProvider";
+import { LanguageProvider } from "@/lib/i18n/LanguageProvider";
 import { SmoothScrollProvider } from "@/components/engine/SmoothScrollProvider";
 import { GsapContext } from "@/components/engine/GsapContext";
 import { LightTemperatureProvider } from "@/lib/LightTemperatureProvider";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 
 import { OrganizationSchema } from "@/components/shared/OrganizationSchema";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 const inter = Inter({ subsets: ["latin"] });
 

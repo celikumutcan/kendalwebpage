@@ -3,10 +3,10 @@
 import React, { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 const LightCore = dynamic(
   () => import("@/components/engine/LightCore").then((mod) => mod.LightCore),

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 import Image from "next/image";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 const RETAILERS = [
   { name: "BİM", logo: getAssetPath("/images/retail/bim-logo.webp") },

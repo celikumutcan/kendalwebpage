@@ -1,9 +1,9 @@
 "use client";
 
-import { useLanguage } from "@/app/i18n/LanguageProvider";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import Image from "next/image";
 import Link from "next/link";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 const brands = [
   {

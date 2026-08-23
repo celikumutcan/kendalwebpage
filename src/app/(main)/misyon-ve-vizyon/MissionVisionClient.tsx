@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
-import { getAssetPath } from "@/utils/basePath";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import { getAssetPath } from "@/lib/basePath";
 
 export function MissionVisionClient() {
   const { t, language } = useLanguage();

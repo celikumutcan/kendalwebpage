@@ -1,4 +1,4 @@
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 
 export interface NewsItem {
   id: string;

@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { getAssetPath } from "@/utils/basePath";
+import { getAssetPath } from "@/lib/basePath";
 import { products, getSlugByProductId } from "@/data/products";
 import CategoryFirstShowcase from "@/components/sections/CategoryFirstShowcase";
 import { BrandProductsHeader } from "@/components/sections/BrandProductsHeader";

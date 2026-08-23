@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { newsDataTR, newsDataEN } from "@/data/news";
-import { useLanguage } from "@/app/i18n/LanguageProvider";
-import { getAssetPath } from "@/utils/basePath";
+import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import { getAssetPath } from "@/lib/basePath";
 import { parseNewsDate } from "@/lib/newsDate";
 
 export function HaberlerListesiClient() {
