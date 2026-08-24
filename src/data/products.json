@@ -32665,195 +32665,6 @@
       "casing": "Günışığı (3000K)"
     }
   },
-  "5397": {
-    "id": "5397",
-    "model": "KST510-100WBYZ",
-    "image": "urunler/kst510-100wbyz.webp",
-    "name": {
-      "tr": "KST510 Ledli Pendante Arm. 100W Beyaz",
-      "en": "KST510 Ledli Pendante Arm. 100W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "10000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "100W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "10000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "100W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5398": {
-    "id": "5398",
-    "model": "KST511-150WBYZ",
-    "image": "urunler/kst511-150wbyz.webp",
-    "name": {
-      "tr": "KST511 Ledli Pendante Arm. 150W Beyaz",
-      "en": "KST511 Ledli Pendante Arm. 150W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "15000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "150W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "15000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "150W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5399": {
-    "id": "5399",
-    "model": "KST512-200WBYZ",
-    "image": "urunler/kst512-200wbyz.webp",
-    "name": {
-      "tr": "KST512 Ledli Pendante Arm. 200W Beyaz",
-      "en": "KST512 Ledli Pendante Arm. 200W Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "20000"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "1"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "200W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "20000"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "1"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Yüksek Tavan Armatürleri"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "High-Bay Ceiling Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "200W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
   "5400": {
     "id": "5400",
     "model": "KT287AZAMNSAAT",
@@ -36290,246 +36101,6 @@
     "brand": "k2",
     "variantOptions": {}
   },
-  "5918": {
-    "id": "5918",
-    "model": "KBA747-7WAMB",
-    "image": "urunler/kba747-7wamb.webp",
-    "name": {
-      "tr": "KBA747 Kazıklı Çim Armatürü 7W Amber",
-      "en": "KBA747 Kazıklı Çim Armatürü 7W Amber"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Amber"
-    }
-  },
-  "5919": {
-    "id": "5919",
-    "model": "KBA747-7WGNISK",
-    "image": "urunler/kba747-7wgnisk.webp",
-    "name": {
-      "tr": "KBA747 LED Kazıklı Çim Armatürü ",
-      "en": "KBA747 LED Stake Grass Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) - Amber - Yeşil"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) - Amber - Green"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Günışığı (3000K), Amber, Yeşil"
-    }
-  },
-  "5920": {
-    "id": "5920",
-    "model": "KBA747-7WMV",
-    "image": "urunler/kba747-7wmv.webp",
-    "name": {
-      "tr": "KBA747 Kazıklı Çim Armatürü 7W Mavi",
-      "en": "KBA747 Kazıklı Çim Armatürü 7W Mavi"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Mavi̇"
-    }
-  },
-  "5921": {
-    "id": "5921",
-    "model": "KBA747-7WYSL",
-    "image": "urunler/kba747-7wysl.webp",
-    "name": {
-      "tr": "KBA747 Kazıklı Çim Armatürü 7W Yeşil",
-      "en": "KBA747 Kazıklı Çim Armatürü 7W Yeşil"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "700"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "700"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Bahçe Armatürleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Garden Fixtures"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Yeşi̇l"
-    }
-  },
   "5936": {
     "id": "5936",
     "model": "KDA4001-ETNA-SYH-GOLD",
@@ -37459,113 +37030,6 @@
       "casing": "Beyaz"
     }
   },
-  "5953": {
-    "id": "5953",
-    "model": "KDA710-6W-JUP-BYZ",
-    "image": "urunler/kda710-6w-jup-byz.webp",
-    "name": {
-      "tr": "KDA710 LED Duvar Aplik",
-      "en": "KDA710 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) / Amber"
-        },
-        {
-          "label": "Lümen",
-          "value": "540"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) / Amber"
-        },
-        {
-          "label": "Lumen",
-          "value": "540"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
-    }
-  },
-  "5954": {
-    "id": "5954",
-    "model": "KDA710-6W-JUP-GNI",
-    "image": "urunler/kda710-6w-jup-gni.webp",
-    "name": {
-      "tr": "KDA710 6W Jupiter LED Aplik Alm Kasa Günışığı",
-      "en": "KDA710 6W Jupiter LED Aplik Alm Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Lümen",
-          "value": "720"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "6W"
-        },
-        {
-          "label": "Lumen",
-          "value": "720"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
   "5955": {
     "id": "5955",
     "model": "KDA711-6W-NEP-BYZ",
@@ -37673,438 +37137,6 @@
     "variantOptions": {
       "watt": "6W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "5957": {
-    "id": "5957",
-    "model": "KDA712-3W-VEN-BYZ",
-    "image": "urunler/kda712-3w-ven-byz.webp",
-    "name": {
-      "tr": "KDA712 3W Venüs LED Aplik Alm Kasa Beyaz",
-      "en": "KDA712 3W Venüs LED Aplik Alm Kasa Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "5958": {
-    "id": "5958",
-    "model": "KDA712-3W-VEN-GNI",
-    "image": "urunler/kda712-3w-ven-gni.webp",
-    "name": {
-      "tr": "KDA712 3W Venüs LED Aplik Alm Kasa Günışığı",
-      "en": "KDA712 3W Venüs LED Aplik Alm Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "5959": {
-    "id": "5959",
-    "model": "KDA713-12W-PLUT-BYZ",
-    "image": "urunler/kda713-12w-plut-byz.webp",
-    "name": {
-      "tr": "KDA713  Kare LED Duvar Aplik",
-      "en": "KDA713 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K) / Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "960"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K) / Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "960"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "5960": {
-    "id": "5960",
-    "model": "KDA713-12W-PLUT-GNI",
-    "image": "urunler/kda713-12w-plut-gni.webp",
-    "name": {
-      "tr": "KDA713 12W Pluton LED Aplik Alm Kasa Günışığı",
-      "en": "KDA713 12W Pluton LED Aplik Alm Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lümen",
-          "value": "1600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lumen",
-          "value": "1600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "5961": {
-    "id": "5961",
-    "model": "KDA714-12W-PLUT-BYZ",
-    "image": "urunler/kda714-12w-plut-byz.webp",
-    "name": {
-      "tr": "KDA714 12W Mars Yuvarlak LED Aplik",
-      "en": "KDA714 12W Mars LED Aplık"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lümen",
-          "value": "1600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lumen",
-          "value": "1600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "5962": {
-    "id": "5962",
-    "model": "KDA714-12W-PLUT-GNI",
-    "image": "urunler/kda714-12w-plut-gni.webp",
-    "name": {
-      "tr": "KDA714 12W Pluton LED Aplik Alm Kasa Günışığı",
-      "en": "KDA714 12W Pluton LED Aplik Alm Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lümen",
-          "value": "1600"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Lumen",
-          "value": "1600"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "5963": {
-    "id": "5963",
-    "model": "KDA715-3W-VEN-BYZ",
-    "image": "urunler/kda715-3w-ven-byz.webp",
-    "name": {
-      "tr": "KDA715 3W Venüs LED Aplik (2 Li Usb Li)siyah  Kasa Beyaz Işık",
-      "en": "KDA715 3W Venüs LED Aplik (2 Li Usb Li)siyah  Kasa Beyaz Işık"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W",
-      "light": "Beyaz (6500K)",
-      "casing": "Siyah"
-    }
-  },
-  "5964": {
-    "id": "5964",
-    "model": "KDA715-3W-VEN-GNI",
-    "image": "urunler/kda715-3w-ven-gni.webp",
-    "name": {
-      "tr": "KDA715 3W Venüs LED Aplik (2 Li Usb Li) Siyah Kasa Günışığı",
-      "en": "KDA715 3W Venüs LED Aplik (2 Li Usb Li) Siyah Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W",
-      "casing": "Siyah"
     }
   },
   "5971": {
@@ -44601,219 +43633,6 @@
     "variantOptions": {
       "watt": "12W",
       "casing": "Günışığı (3000K)"
-    }
-  },
-  "6219": {
-    "id": "6219",
-    "model": "KSL099-2-5WDEKAPL",
-    "image": "urunler/ksl099-2-5wdekapl.webp",
-    "name": {
-      "tr": "KSL099 2*5w Ledli Dekoratif Aplik 3000k",
-      "en": "KSL099 2*5w Ledli Dekoratif Aplik 3000k"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Duy",
-          "value": "GU10"
-        },
-        {
-          "label": "Renk",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Socket",
-          "value": "GU10"
-        },
-        {
-          "label": "Color",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "GU10",
-      "light": "Günışığı (3000K)"
-    }
-  },
-  "6220": {
-    "id": "6220",
-    "model": "KSL099-2-5WDEKAPL-ANT",
-    "image": "urunler/ksl099-2-5wdekapl-ant.webp",
-    "name": {
-      "tr": "KSL099 2*5w Ledli Dekoratif Aplik Antrasit",
-      "en": "KSL099 2*5w Ledli Dekoratif Aplik Antrasit"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Duy",
-          "value": "GU10"
-        },
-        {
-          "label": "Renk",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Socket",
-          "value": "GU10"
-        },
-        {
-          "label": "Color",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "GU10",
-      "casing": "Antrasit"
-    }
-  },
-  "6221": {
-    "id": "6221",
-    "model": "KSL099-2-5WDEKAPL-SYH",
-    "image": "urunler/ksl099-2-5wdekapl-syh.webp",
-    "name": {
-      "tr": "KSL099 2*5w Ledli Dekoratif Aplik Siyah",
-      "en": "KSL099 2*5w Ledli Dekoratif Aplik Siyah"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Duy",
-          "value": "GU10"
-        },
-        {
-          "label": "Renk",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Socket",
-          "value": "GU10"
-        },
-        {
-          "label": "Color",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "GU10",
-      "casing": "Siyah"
     }
   },
   "6222": {
@@ -104900,78 +103719,6 @@
       "watt": "2W"
     }
   },
-  "7273": {
-    "id": "7273",
-    "model": "KSL099-2-5WDEKAPL-BYZ",
-    "image": "urunler/ksl099-2-5wdek-apl-byz.webp",
-    "name": {
-      "tr": "KSL099 2*5w Ledli Dekoratif Aplik Beyaz",
-      "en": "KSL099 2*5w Ledli Dekoratif Aplik Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Duy",
-          "value": "GU10"
-        },
-        {
-          "label": "Renk",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lümen",
-          "value": "400"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        },
-        {
-          "label": "Socket",
-          "value": "GU10"
-        },
-        {
-          "label": "Color",
-          "value": "Siyah-Beyaz-Antrasit"
-        },
-        {
-          "label": "Lumen",
-          "value": "400"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "İç Aydınlatma",
-        "Sıva Üstü Dekoratif Armatürler ve Aplikler"
-      ],
-      "en": [
-        "Indoor Lighting",
-        "Decorative Led Fixtures &amp; Appliques"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "socket": "GU10",
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
   "7274": {
     "id": "7274",
     "model": "KEXIT204LEDASAGI",
@@ -116133,113 +114880,6 @@
       "watt": "5W"
     }
   },
-  "7651": {
-    "id": "7651",
-    "model": "KDA716-3W-VEN-BYZ",
-    "image": "urunler/kda712-3w-ven-byz.webp",
-    "name": {
-      "tr": "KDA716 LED Duvar Aplik ",
-      "en": "KDA716 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) / Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "4W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) / Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W"
-    }
-  },
-  "7652": {
-    "id": "7652",
-    "model": "KDA716-3W-VEN-GNI",
-    "image": "urunler/kda712-3w-ven-gni.webp",
-    "name": {
-      "tr": "KDA716 3W Venüs LED Aplik Alm Kasa Günışığı",
-      "en": "KDA716 3W Venüs LED Aplik Alm Kasa Günışığı"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Dış Mekan Aydınlatma",
-        "Duvar Aplikleri"
-      ],
-      "en": [
-        "Outdoor Lighting",
-        "Duvar Aplikleri"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
   "7703": {
     "id": "7703",
     "model": "KEL015",
@@ -116592,950 +115232,6 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "8W"
-    }
-  },
-  "7760": {
-    "id": "7760",
-    "model": "240429134255",
-    "image": "urunler/kda730-jupiter-led-aplik.webp",
-    "name": {
-      "tr": "KDA730 LED Duvar Aplik",
-      "en": "KDA730 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "4W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "4W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7761": {
-    "id": "7761",
-    "model": "240429134658",
-    "image": "urunler/kda731-jupiter-led-aplik.webp",
-    "name": {
-      "tr": "KDA731 LED Duvar Aplik",
-      "en": "KDA731 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "720"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "8W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "720"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "8W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7762": {
-    "id": "7762",
-    "model": "240429135015",
-    "image": "urunler/kda733-led-aplik.webp",
-    "name": {
-      "tr": "KDA733 Dekoratif LED Aplik",
-      "en": "KDA733 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1170"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "12W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1170"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "12W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7763": {
-    "id": "7763",
-    "model": "240429135459",
-    "image": "urunler/kda734-led-aplik.webp",
-    "name": {
-      "tr": "KDA734 Dekoratif LED Aplik",
-      "en": "KDA734 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1170"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "12W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1170"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "12W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7764": {
-    "id": "7764",
-    "model": "240429140458",
-    "image": "urunler/kda735-led-aplik.webp",
-    "name": {
-      "tr": "KDA735  Kare LED Aplik",
-      "en": "KDA735 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7765": {
-    "id": "7765",
-    "model": "240429140855",
-    "image": "urunler/kda736-led-aplik.webp",
-    "name": {
-      "tr": "KDA736  Yuvarlak LED Aplik",
-      "en": "KDA736 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7766": {
-    "id": "7766",
-    "model": "240429141346",
-    "image": "urunler/kda740-led-aplik.webp",
-    "name": {
-      "tr": "KDA740 4W Merkür LED Aplik",
-      "en": "KDA740 4W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "320"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah-Gold"
-        },
-        {
-          "label": "Watt",
-          "value": "4W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "320"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black -Gold"
-        },
-        {
-          "label": "Power",
-          "value": "4W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7767": {
-    "id": "7767",
-    "model": "240429141750",
-    "image": "urunler/kda741-led-aplik.webp",
-    "name": {
-      "tr": "KDA741 6W Merkür LED Aplik",
-      "en": "KDA741 6W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kasa",
-          "value": "Siyah-Gold"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Black-Gold"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7768": {
-    "id": "7768",
-    "model": "240429142340",
-    "image": "urunler/kda743-led-aplik.webp",
-    "name": {
-      "tr": "KDA743 6W Venüs LED Aplik",
-      "en": "KDA743 6W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "540"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Yuvarlak"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "540"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Round"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7769": {
-    "id": "7769",
-    "model": "240429142708",
-    "image": "urunler/kda744-led-aplik.webp",
-    "name": {
-      "tr": "KDA744 6W Venüs LED Aplik",
-      "en": "KDA744 6W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "40"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Kare"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "40"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Square"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7770": {
-    "id": "7770",
-    "model": "240429143402",
-    "image": "urunler/kda750-led-aplik.webp",
-    "name": {
-      "tr": "KDA750 4W Star LED Aplik",
-      "en": "KDA750 4W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Kare"
-        },
-        {
-          "label": "Watt",
-          "value": "4W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Square"
-        },
-        {
-          "label": "Power",
-          "value": "4W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7771": {
-    "id": "7771",
-    "model": "240429144009",
-    "image": "urunler/kda751-led-aplik.webp",
-    "name": {
-      "tr": "KDA751 LED Duvar Aplik",
-      "en": "KDA751 LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "640"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Yuvarlak"
-        },
-        {
-          "label": "Watt",
-          "value": "12W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "640"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Round"
-        },
-        {
-          "label": "Power",
-          "value": "12W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7772": {
-    "id": "7772",
-    "model": "240429144421",
-    "image": "urunler/kda752.webp",
-    "name": {
-      "tr": "KDA752 6W Star LED Aplik",
-      "en": "KDA752 6W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Yuvarlak"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Round"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7773": {
-    "id": "7773",
-    "model": "240429145129",
-    "image": "urunler/kda753-led-aplik.webp",
-    "name": {
-      "tr": "KDA753 5W Star LED Aplik",
-      "en": "KDA753 5W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "450"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kasa",
-          "value": "ABS-Yuvarlak"
-        },
-        {
-          "label": "Watt",
-          "value": "5W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "450"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Cashiers",
-          "value": "ABS-Round"
-        },
-        {
-          "label": "Power",
-          "value": "5W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "5W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7774": {
-    "id": "7774",
-    "model": "240429145340",
-    "image": "urunler/kda754-led-aplik.webp",
-    "name": {
-      "tr": "KDA754 4W Star LED Aplik",
-      "en": "KDA754 4W LED Wall Fıxtures"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "320"
-        },
-        {
-          "label": "Watt",
-          "value": "4W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "320"
-        },
-        {
-          "label": "Power",
-          "value": "4W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "4W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "7792": {
-    "id": "7792",
-    "model": "240502063527",
-    "image": "urunler/kda869-duvar-aplik.webp",
-    "name": {
-      "tr": "KDA869 2x5w Çift Yönlü Duvar Apliği",
-      "en": "KDA869 2x5w Double Sıde Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Duy",
-          "value": "G9"
-        },
-        {
-          "label": "Renk",
-          "value": "Siyah-Rose"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Kasa",
-          "value": "Aluminyum"
-        },
-        {
-          "label": "Watt",
-          "value": "2X5W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Socket",
-          "value": "G9"
-        },
-        {
-          "label": "Color",
-          "value": "Black-Rose"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Cashiers",
-          "value": "Aluminyum"
-        },
-        {
-          "label": "Power",
-          "value": "2x5W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "socket": "G9"
     }
   },
   "7803": {
@@ -122229,61 +119925,6 @@
       "casing": "Ararenk (4000K)"
     }
   },
-  "7978": {
-    "id": "7978",
-    "model": "241022114006",
-    "image": "urunler/kda757.webp",
-    "name": {
-      "tr": "KDA757 LED Dış Mekan Duvar Armatürü",
-      "en": "KDA757 Outdoor Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) / AMBER"
-        },
-        {
-          "label": "Lümen",
-          "value": "270Lm"
-        },
-        {
-          "label": "Açıklama",
-          "value": "IP65"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "3W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) / AMBER"
-        },
-        {
-          "label": "Lumen",
-          "value": "270Lm"
-        },
-        {
-          "label": "Description",
-          "value": "IP65"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "3W"
-    }
-  },
   "7990": {
     "id": "7990",
     "model": "250421153928",
@@ -122585,121 +120226,6 @@
     "name": {
       "tr": "KES078 Şarjlı Fenerli LED Ampul",
       "en": "KES078 Rechargeable Flashlıght LED Bulb"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "8019": {
-    "id": "8019",
-    "model": "250422062235",
-    "image": "urunler/kda732.webp",
-    "name": {
-      "tr": "KDA732 Dekoratif LED Aplik",
-      "en": "KDA732 Decoratıve LED Wall Lamp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "370LM"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "7W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "370LM"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "7W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "8020": {
-    "id": "8020",
-    "model": "250422062501",
-    "image": "urunler/kda737.webp",
-    "name": {
-      "tr": "KDA737 Dekoratif LED Aplik",
-      "en": "KDA737 Decoratıve LED Wall Lamp"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1170"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1170"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "8021": {
-    "id": "8021",
-    "model": "250422064240",
-    "image": "urunler/kda756.webp",
-    "name": {
-      "tr": "KDA756 Dış Mekan LED Duvar Armatürü",
-      "en": "KDA756 Outdoor LED Wall Lamp"
     },
     "attributes": {
       "tr": [],
@@ -123031,54 +120557,6 @@
     "variantOptions": {
       "watt": "1 Tube 7W",
       "casing": "CCT (Ararenk (4000K)-Beyaz (6500K))"
-    }
-  },
-  "8055": {
-    "id": "8055",
-    "model": "250828161917",
-    "image": "urunler/kda742.webp",
-    "name": {
-      "tr": "KDA742 LED Duvar Aplik",
-      "en": "KDA742 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10W",
-      "casing": "Günışığı (3000K)"
     }
   },
   "8059": {
@@ -124124,198 +121602,6 @@
     },
     "brand": "k2",
     "variantOptions": {}
-  },
-  "8101": {
-    "id": "8101",
-    "model": "251113084944",
-    "image": "urunler/kda760.webp",
-    "name": {
-      "tr": "KDA760 LED Duvar Aplik",
-      "en": "KDA760 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K) - Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1800"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "20W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K) - Ararenk (4000K) - Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1800"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W",
-      "casing": "CCT (Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K))"
-    }
-  },
-  "8102": {
-    "id": "8102",
-    "model": "251113095539",
-    "image": "urunler/kda759.webp",
-    "name": {
-      "tr": "KDA759 LED Duvar Aplik",
-      "en": "KDA759 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Renk",
-          "value": "Beyaz (6500K) - Ararenk (4000K) - Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "2250"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "25W"
-        },
-        {
-          "label": "Color",
-          "value": "Beyaz (6500K) - Ararenk (4000K) - Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "2250"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "25W",
-      "casing": "CCT (Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K))"
-    }
-  },
-  "8103": {
-    "id": "8103",
-    "model": "251216083517",
-    "image": "urunler/kda739.webp",
-    "name": {
-      "tr": "KDA739 LED Duvar Aplik",
-      "en": "KDA739 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "960"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "960"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W",
-      "casing": "Günışığı (3000K)"
-    }
-  },
-  "8104": {
-    "id": "8104",
-    "model": "251216101634",
-    "image": "urunler/kda738.webp",
-    "name": {
-      "tr": "KDA738 LED Duvar Aplik",
-      "en": "KDA738 LED Wall Fıxture"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "10"
-        },
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "800"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "10"
-        },
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "800"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "10",
-      "casing": "Günışığı (3000K)"
-    }
   },
   "8112": {
     "id": "8112",
@@ -175948,5 +173234,3387 @@
     "variantOptions": {
       "watt": "200W"
     }
+  },
+  "KST510": {
+    "id": "KST510",
+    "model": "KST510",
+    "image": "urunler/kst510-100wbyz.webp",
+    "name": {
+      "tr": "KST510 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KST510 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lümen",
+          "value": "9000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "1"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "300 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP20"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "100W"
+        },
+        {
+          "label": "Lumen",
+          "value": "9000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "1"
+        },
+        {
+          "label": "Dimensions",
+          "value": "300 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "100W"
+    }
+  },
+  "KST511": {
+    "id": "KST511",
+    "model": "KST511",
+    "image": "urunler/kst511-150wbyz.webp",
+    "name": {
+      "tr": "KST511 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KST511 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Lümen",
+          "value": "13500"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "270 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP20"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "150W"
+        },
+        {
+          "label": "Lumen",
+          "value": "13500"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "270 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "150W"
+    }
+  },
+  "KST512": {
+    "id": "KST512",
+    "model": "KST512",
+    "image": "urunler/kst512-200wbyz.webp",
+    "name": {
+      "tr": "KST512 YÜKSEK TAVAN ARMATÜRÜ",
+      "en": "KST512 HIGH BAY LUMINAIRE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lümen",
+          "value": "18000"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Beyaz (6500K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "10"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "330 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP20"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "200W"
+        },
+        {
+          "label": "Lumen",
+          "value": "18000"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "White (6500K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "10"
+        },
+        {
+          "label": "Dimensions",
+          "value": "330 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "200W"
+    }
+  },
+  "KDA730": {
+    "id": "KDA730",
+    "model": "KDA730",
+    "image": "urunler/kda730-jupiter-led-aplik.webp",
+    "name": {
+      "tr": "KDA730 JÜPİTER LED APLİK",
+      "en": "KDA730 JUPITER LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "360"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "110 mm x 80 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "360"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "110 mm x 80 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W"
+    }
+  },
+  "KDA710": {
+    "id": "KDA710",
+    "model": "KDA710",
+    "image": "urunler/kda710-6w-jup-byz.webp",
+    "name": {
+      "tr": "KDA710 JÜPİTER LED APLİK",
+      "en": "KDA710 JUPITER LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "540"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "170 mm x 80 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "540"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "170 mm x 80 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA731": {
+    "id": "KDA731",
+    "model": "KDA731",
+    "image": "urunler/kda731-jupiter-led-aplik.webp",
+    "name": {
+      "tr": "KDA731 JÜPİTER LED APLİK",
+      "en": "KDA731 JUPITER LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lümen",
+          "value": "720"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "210 mm x 78 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "8W"
+        },
+        {
+          "label": "Lumen",
+          "value": "720"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "210 mm x 78 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "8W"
+    }
+  },
+  "KDA740": {
+    "id": "KDA740",
+    "model": "KDA740",
+    "image": "urunler/kda740-led-aplik.webp",
+    "name": {
+      "tr": "KDA740 MERKÜR LED APLİK",
+      "en": "KDA740 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "320"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 80 mm x 50 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Siyah-Gold"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "320"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 80 mm x 50 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "Black-Gold"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W"
+    }
+  },
+  "KDA741": {
+    "id": "KDA741",
+    "model": "KDA741",
+    "image": "urunler/kda741-led-aplik.webp",
+    "name": {
+      "tr": "KDA741 MERKÜR LED APLİK",
+      "en": "KDA741 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "140 mm x 80 mm x 50 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Siyah-Gold"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "140 mm x 80 mm x 50 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "Black-Gold"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA712": {
+    "id": "KDA712",
+    "model": "KDA712",
+    "image": "urunler/kda712-3w-ven-byz.webp",
+    "name": {
+      "tr": "KDA712 VENÜS LED APLİK",
+      "en": "KDA712 VENUS LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lümen",
+          "value": "210"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 100 mm x 100 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP40"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Alüminyum-Ayarlı"
+        },
+        {
+          "label": "Özellik",
+          "value": "Kendinden Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lumen",
+          "value": "210"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 100 mm x 100 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Description",
+          "value": "Aluminum-Adjustable"
+        },
+        {
+          "label": "Feature",
+          "value": "Built-in LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "3W"
+    }
+  },
+  "KDA716": {
+    "id": "KDA716",
+    "model": "KDA716",
+    "image": "urunler/kda716.webp",
+    "name": {
+      "tr": "KDA716 VENÜS LED APLİK",
+      "en": "KDA716 VENUS LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 100 mm x 100 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP40"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Ayarlı"
+        },
+        {
+          "label": "Özellik",
+          "value": "Kendinden Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 100 mm x 100 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Adjustable"
+        },
+        {
+          "label": "Feature",
+          "value": "Built-in LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA743": {
+    "id": "KDA743",
+    "model": "KDA743",
+    "image": "urunler/kda743-led-aplik.webp",
+    "name": {
+      "tr": "KDA743 VENÜS LED APLİK",
+      "en": "KDA743 VENUS LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "75 mm x 150 mm x 65 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP40"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Kare"
+        },
+        {
+          "label": "Özellik",
+          "value": "Kendinden Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "75 mm x 150 mm x 65 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Square"
+        },
+        {
+          "label": "Feature",
+          "value": "Built-in LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA744": {
+    "id": "KDA744",
+    "model": "KDA744",
+    "image": "urunler/kda744-led-aplik.webp",
+    "name": {
+      "tr": "KDA744 VENÜS LED APLİK",
+      "en": "KDA744 VENUS LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "75 mm x 150 mm x 65 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP40"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Yuvarlak"
+        },
+        {
+          "label": "Özellik",
+          "value": "Kendinden Ledli"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "75 mm x 150 mm x 65 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP40"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Round"
+        },
+        {
+          "label": "Feature",
+          "value": "Built-in LED"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA715": {
+    "id": "KDA715",
+    "model": "KDA715",
+    "image": "urunler/kda715-3w-ven-byz.webp",
+    "name": {
+      "tr": "KDA715 YATAK BAŞI LED APLİK",
+      "en": "KDA715 BEDSIDE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "360"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP25"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS Yanmaz"
+        },
+        {
+          "label": "Özellik",
+          "value": "Ayarlanabilir Işık Yönü"
+        },
+        {
+          "label": "Özellik",
+          "value": "2'li USB (2.1A Hızlı Şarj)"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "360"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP25"
+        },
+        {
+          "label": "Description",
+          "value": "ABS Fireproof"
+        },
+        {
+          "label": "Feature",
+          "value": "Adjustable Light Direction"
+        },
+        {
+          "label": "Feature",
+          "value": "Dual USB (2.1A Fast Charging)"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W",
+      "light": "Günışığı (3000K), Beyaz (6500K)"
+    }
+  },
+  "KDA732": {
+    "id": "KDA732",
+    "model": "KDA732",
+    "image": "urunler/kda732.webp",
+    "name": {
+      "tr": "KDA732 DEKORATİF LED APLİK",
+      "en": "KDA732 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Lümen",
+          "value": "370"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 200 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Lumen",
+          "value": "370"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 200 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "7W"
+    }
+  },
+  "KDA742": {
+    "id": "KDA742",
+    "model": "KDA742",
+    "image": "urunler/kda742.webp",
+    "name": {
+      "tr": "KDA742 DEKORATİF LED APLİK",
+      "en": "KDA742 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "80 mm x 160 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "80 mm x 160 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W"
+    }
+  },
+  "KDA738": {
+    "id": "KDA738",
+    "model": "KDA738",
+    "image": "urunler/kda738.webp",
+    "name": {
+      "tr": "KDA738 DEKORATİF LED APLİK",
+      "en": "KDA738 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "800"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "75 mm x 150 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "800"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "75 mm x 150 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W"
+    }
+  },
+  "KDA739": {
+    "id": "KDA739",
+    "model": "KDA739",
+    "image": "urunler/kda739.webp",
+    "name": {
+      "tr": "KDA739 DEKORATİF LED APLİK",
+      "en": "KDA739 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "960"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "20"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "160 mm x 115 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "960"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "20"
+        },
+        {
+          "label": "Dimensions",
+          "value": "160 mm x 115 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA735": {
+    "id": "KDA735",
+    "model": "KDA735",
+    "image": "urunler/kda735-led-aplik.webp",
+    "name": {
+      "tr": "KDA735 MERKÜR LED APLİK",
+      "en": "KDA735 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "110 mm x 110 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "110 mm x 110 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA713": {
+    "id": "KDA713",
+    "model": "KDA713",
+    "image": "urunler/kda713-12w-plut-byz.webp",
+    "name": {
+      "tr": "KDA713 MERKÜR LED APLİK",
+      "en": "KDA713 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "960"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "165 mm x 165 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "960"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "165 mm x 165 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA736": {
+    "id": "KDA736",
+    "model": "KDA736",
+    "image": "urunler/kda736-led-aplik.webp",
+    "name": {
+      "tr": "KDA736 MERKÜR LED APLİK",
+      "en": "KDA736 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "110 mm x 110 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "110 mm x 110 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA714": {
+    "id": "KDA714",
+    "model": "KDA714",
+    "image": "urunler/kda714-12w-plut-byz.webp",
+    "name": {
+      "tr": "KDA714 MERKÜR LED APLİK",
+      "en": "KDA714 MERCURY LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "960"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "165 mm x 165 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "960"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "165 mm x 165 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA733": {
+    "id": "KDA733",
+    "model": "KDA733",
+    "image": "urunler/kda733-led-aplik.webp",
+    "name": {
+      "tr": "KDA733 DEKORATİF LED APLİK",
+      "en": "KDA733 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1170"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 140 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1170"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 140 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA734": {
+    "id": "KDA734",
+    "model": "KDA734",
+    "image": "urunler/kda734-led-aplik.webp",
+    "name": {
+      "tr": "KDA734 DEKORATİF LED APLİK",
+      "en": "KDA734 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1170"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "100 mm x 140 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1170"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "100 mm x 140 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA737": {
+    "id": "KDA737",
+    "model": "KDA737",
+    "image": "urunler/kda737.webp",
+    "name": {
+      "tr": "KDA737 DEKORATİF LED APLİK",
+      "en": "KDA737 DECORATIVE LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1170"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "160 mm x 130 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1170"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "160 mm x 130 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA869": {
+    "id": "KDA869",
+    "model": "KDA869",
+    "image": "urunler/kda869-duvar-aplik.webp",
+    "name": {
+      "tr": "KDA869 ÇİFT YÖNLÜ DUVAR APLİĞİ",
+      "en": "KDA869 DOUBLE SIDED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "2x5W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "90 mm x 160 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP20"
+        },
+        {
+          "label": "Duy Tipi",
+          "value": "G9"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Siyah-Gold"
+        },
+        {
+          "label": "Malzeme",
+          "value": "Alüminyum"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "2x5W"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "90 mm x 160 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Socket Type",
+          "value": "G9"
+        },
+        {
+          "label": "Description",
+          "value": "Black-Gold"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminum"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "2x5W"
+    }
+  },
+  "KSL099": {
+    "id": "KSL099",
+    "model": "KSL099",
+    "image": "urunler/ksl099-2-5wdek-apl-byz.webp",
+    "name": {
+      "tr": "KSL099 ÇİFT YÖNLÜ DUVAR APLİĞİ",
+      "en": "KSL099 DOUBLE SIDED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "2x5W"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "9 cm x 12 cm x 6,5 cm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Duy Tipi",
+          "value": "GU10"
+        },
+        {
+          "label": "Açıklama",
+          "value": "Siyah-Beyaz Antrasit"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "2x5W"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "9 cm x 12 cm x 6.5 cm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Socket Type",
+          "value": "GU10"
+        },
+        {
+          "label": "Description",
+          "value": "Black-White Anthracite"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "2x5W"
+    }
+  },
+  "KDA750": {
+    "id": "KDA750",
+    "model": "KDA750",
+    "image": "urunler/kda750-led-aplik.webp",
+    "name": {
+      "tr": "KDA750 LED APLİK",
+      "en": "KDA750 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "320"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø90 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Kare"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "320"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø90 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Square"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W"
+    }
+  },
+  "KDA751": {
+    "id": "KDA751",
+    "model": "KDA751",
+    "image": "urunler/kda751-led-aplik.webp",
+    "name": {
+      "tr": "KDA751 LED APLİK",
+      "en": "KDA751 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lümen",
+          "value": "640"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø95 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Yuvarlak"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "12W"
+        },
+        {
+          "label": "Lumen",
+          "value": "640"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø95 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Round"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "12W"
+    }
+  },
+  "KDA752": {
+    "id": "KDA752",
+    "model": "KDA752",
+    "image": "urunler/kda752.webp",
+    "name": {
+      "tr": "KDA752 LED APLİK",
+      "en": "KDA752 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lümen",
+          "value": "480"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø120 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Yuvarlak"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "6W"
+        },
+        {
+          "label": "Lumen",
+          "value": "480"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø120 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Round"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "6W"
+    }
+  },
+  "KDA753": {
+    "id": "KDA753",
+    "model": "KDA753",
+    "image": "urunler/kda753-led-aplik.webp",
+    "name": {
+      "tr": "KDA753 LED APLİK",
+      "en": "KDA753 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Lümen",
+          "value": "400"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø115*70 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Yuvarlak"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "5W"
+        },
+        {
+          "label": "Lumen",
+          "value": "400"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø115*70 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Round"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "5W"
+    }
+  },
+  "KDA754": {
+    "id": "KDA754",
+    "model": "KDA754",
+    "image": "urunler/kda754-led-aplik.webp",
+    "name": {
+      "tr": "KDA754 LED APLİK",
+      "en": "KDA754 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lümen",
+          "value": "320"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø140 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Yuvarlak"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "4W"
+        },
+        {
+          "label": "Lumen",
+          "value": "320"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø140 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Round"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "4W"
+    }
+  },
+  "KDA758": {
+    "id": "KDA758",
+    "model": "KDA758",
+    "image": "urunler/kda758.webp",
+    "name": {
+      "tr": "KDA758 LED APLİK",
+      "en": "KDA758 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lümen",
+          "value": "950"
+        },
+        {
+          "label": "Renk Sıcaklığı",
+          "value": "Günışığı (3000K)"
+        },
+        {
+          "label": "Gerilim",
+          "value": "110-265V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "40"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "62 mm x 160 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP54"
+        },
+        {
+          "label": "Açıklama",
+          "value": "ABS-Dikdörtgen"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "10W"
+        },
+        {
+          "label": "Lumen",
+          "value": "950"
+        },
+        {
+          "label": "Color Temperature",
+          "value": "Warm White (3000K)"
+        },
+        {
+          "label": "Voltage",
+          "value": "110-265V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "40"
+        },
+        {
+          "label": "Dimensions",
+          "value": "62 mm x 160 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP54"
+        },
+        {
+          "label": "Description",
+          "value": "ABS-Rectangular"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "10W"
+    }
+  },
+  "KDA759": {
+    "id": "KDA759",
+    "model": "KDA759",
+    "image": "urunler/kda759.webp",
+    "name": {
+      "tr": "KDA759 LED DUVAR APLİK",
+      "en": "KDA759 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lümen",
+          "value": "2250"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "250 mm x 110 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP44"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "25W"
+        },
+        {
+          "label": "Lumen",
+          "value": "2250"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "Dimensions",
+          "value": "250 mm x 110 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP44"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "25W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDA760": {
+    "id": "KDA760",
+    "model": "KDA760",
+    "image": "urunler/kda760.webp",
+    "name": {
+      "tr": "KDA760 LED DUVAR APLİK",
+      "en": "KDA760 LED WALL LIGHT"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lümen",
+          "value": "1800"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Çalışma Ömrü",
+          "value": "20000 Saat"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "30"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "325 mm x 70 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP44"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "20W"
+        },
+        {
+          "label": "Lumen",
+          "value": "1800"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Life Span",
+          "value": "20000 Hours"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "30"
+        },
+        {
+          "label": "Dimensions",
+          "value": "325 mm x 70 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP44"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "20W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
+  },
+  "KDA756": {
+    "id": "KDA756",
+    "model": "KDA756",
+    "image": "urunler/kda756.webp",
+    "name": {
+      "tr": "KDA756 LED DIŞ MEKAN DUVAR ARMATÜRÜ",
+      "en": "KDA756 LED OUTDOOR WALL FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lümen",
+          "value": "270"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "165 mm x 85 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lumen",
+          "value": "270"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "165 mm x 85 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "3W",
+      "light": "Sarı, Turuncu"
+    }
+  },
+  "KDA757": {
+    "id": "KDA757",
+    "model": "KDA757",
+    "image": "urunler/kda757.webp",
+    "name": {
+      "tr": "KDA757 LED DIŞ MEKAN DUVAR ARMATÜRÜ",
+      "en": "KDA757 LED OUTDOOR WALL FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lümen",
+          "value": "270"
+        },
+        {
+          "label": "Gerilim",
+          "value": "220-240V"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "100"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "Ø108 x 15 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP65"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "3W"
+        },
+        {
+          "label": "Lumen",
+          "value": "270"
+        },
+        {
+          "label": "Voltage",
+          "value": "220-240V"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "100"
+        },
+        {
+          "label": "Dimensions",
+          "value": "Ø108 x 15 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "3W",
+      "light": "Sarı, Turuncu"
+    }
+  },
+  "KBA747": {
+    "id": "KBA747",
+    "model": "KBA747",
+    "image": "urunler/kba747-7wamb.webp",
+    "name": {
+      "tr": "KBA747 KAZIKLI ÇİM ARMATÜRÜ",
+      "en": "KBA747 SPIKE GRASS FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Lümen",
+          "value": "700"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "50"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Watt",
+          "value": "7W"
+        },
+        {
+          "label": "Lumen",
+          "value": "700"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "50"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {
+      "watt": "7W",
+      "light": "Turuncu, Sarı, Yeşil, Mavi"
+    }
+  },
+  "KBA791": {
+    "id": "KBA791",
+    "model": "KBA791",
+    "image": "urunler/kba791.webp",
+    "name": {
+      "tr": "KBA791 SET ÜSTÜ ARMATÜR",
+      "en": "KBA791 BOLLARD FIXTURE"
+    },
+    "attributes": {
+      "tr": [
+        {
+          "label": "Duy Tipi",
+          "value": "E27"
+        },
+        {
+          "label": "Koli Adedi",
+          "value": "12"
+        },
+        {
+          "label": "Ölçüler",
+          "value": "210 mm x 240 mm"
+        },
+        {
+          "label": "IP Koruma",
+          "value": "IP65"
+        },
+        {
+          "label": "Özellik",
+          "value": "Yerli Üretim"
+        }
+      ],
+      "en": [
+        {
+          "label": "Socket Type",
+          "value": "E27"
+        },
+        {
+          "label": "Package Quantity",
+          "value": "12"
+        },
+        {
+          "label": "Dimensions",
+          "value": "210 mm x 240 mm"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Feature",
+          "value": "Domestic Production"
+        }
+      ]
+    },
+    "category": {
+      "tr": [
+        "LED Aplik"
+      ],
+      "en": [
+        "LED Aplik"
+      ]
+    },
+    "brand": "k2",
+    "variantOptions": {}
   }
 }
