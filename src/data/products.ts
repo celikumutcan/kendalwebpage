@@ -107,6 +107,9 @@ export const CATEGORY_GROUPS: CategoryGroupDef[] = [
       "Solar Bahçe Armatür",
       "Solar Sokak Armatür",
       "Yüksek Tavan Armatürü",
+      "Armatür",
+      "Sinek Öldürücü Armatürler",
+      "LEDLİ EXIT ARMATÜR",
     ],
   },
 ];
