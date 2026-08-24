@@ -2821,7 +2821,7 @@
         "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Remote Control Bells"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "k2",
@@ -2862,7 +2862,7 @@
         "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Remote Control Bells"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "k2",
@@ -14285,10 +14285,10 @@
     },
     "category": {
       "tr": [
-        "Zaman Saatleri ve Sensörler"
+        "Fotosel"
       ],
       "en": [
-        "Time Clocks & Sensors"
+        "Photocell"
       ]
     },
     "brand": "k2",
@@ -14326,10 +14326,10 @@
     },
     "category": {
       "tr": [
-        "Zaman Saatleri ve Sensörler"
+        "Fotosel"
       ],
       "en": [
-        "Time Clocks & Sensors"
+        "Photocell"
       ]
     },
     "brand": "k2",
@@ -14367,10 +14367,10 @@
     },
     "category": {
       "tr": [
-        "Zaman Saatleri ve Sensörler"
+        "Fotosel"
       ],
       "en": [
-        "Time Clocks & Sensors"
+        "Photocell"
       ]
     },
     "brand": "k2",
@@ -21985,57 +21985,6 @@
       "watt": "5W",
       "light": "Günışığı (3000K)",
       "casing": "Gold"
-    }
-  },
-  "5258": {
-    "id": "5258",
-    "model": "KMD109PARA6WKT",
-    "image": "urunler/kmd109para6wkt.webp",
-    "name": {
-      "tr": "KMD109 Para Kontrol Cihazı 6W",
-      "en": "KMD109 Para Kontrol Cihazı 6W"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Ürün",
-          "value": "Para Kontrol Cihazı"
-        }
-      ],
-      "en": [
-        {
-          "label": "Watt",
-          "value": "12W"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Product",
-          "value": "Para Kontrol Cihazı"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
     }
   },
   "5259": {
@@ -35255,57 +35204,6 @@
         {
           "label": "Package Quantity",
           "value": "30"
-        },
-        {
-          "label": "Description",
-          "value": "16A"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Siyah"
-    }
-  },
-  "6172": {
-    "id": "6172",
-    "model": "KKP2106-KAUC",
-    "image": "urunler/kkp2106-kauc.webp",
-    "name": {
-      "tr": "Kkp2106-kauc Monofaze Kauçuk Topraklı Kapaklı 3’lü Grup Prizi 16a, 250v",
-      "en": "Kkp2106-kauc Monofaze Kauçuk Topraklı Kapaklı 3’lü Grup Prizi 16a, 250v"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Siyah"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Açıklama",
-          "value": "16A"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Siyah"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
         },
         {
           "label": "Description",
@@ -85305,212 +85203,6 @@
       "casing": "Tek Renk"
     }
   },
-  "7089": {
-    "id": "7089",
-    "model": "KTA200-TEZ-ALT-MUZ-GRI",
-    "image": "urunler/kta200-tez-alt-muz-gri.webp",
-    "name": {
-      "tr": "KTA200 SMD Ledli Tezgah Altı Müzik Çalar Gri",
-      "en": "KTA200 SMD Ledli Tezgah Altı Müzik Çalar Gri"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Gri"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Tezgah Altı Müzik Çalar"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Gri"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Description",
-          "value": "Tezgah Altı Müzik Çalar"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Gri"
-    }
-  },
-  "7090": {
-    "id": "7090",
-    "model": "KTA201-TEZ-ALT-MUZ-BYZ",
-    "image": "urunler/kta201-tez-alt-muz-byz.webp",
-    "name": {
-      "tr": "KTA201 SMD Ledli Tezgah Altı Müzik Çalar Beyaz",
-      "en": "KTA201 SMD Ledli Tezgah Altı Müzik Çalar Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Tezgah Altı Müzik Çalar"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Beyaz"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Description",
-          "value": "Tezgah Altı Müzik Çalar"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "7091": {
-    "id": "7091",
-    "model": "KTA210-TEZ-ALT-ARM-BYZ",
-    "image": "urunler/kta210-tez-alt-arm-byz.webp",
-    "name": {
-      "tr": "KTA210 SMD Ledli Tezgah Altı Armatür Beyaz",
-      "en": "KTA210 SMD Ledli Tezgah Altı Armatür Beyaz"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Beyaz"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Ledli Armatür"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Beyaz"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Description",
-          "value": "Ledli Armatür"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "light": "Beyaz (6500K)",
-      "casing": "Beyaz"
-    }
-  },
-  "7092": {
-    "id": "7092",
-    "model": "KTA211-TEZ-ALT-ARM-GRI",
-    "image": "urunler/kta211-tez-alt-arm-gri.webp",
-    "name": {
-      "tr": "KTA211 SMD Ledli Tezgah Altı Armatür Gri",
-      "en": "KTA211 SMD Ledli Tezgah Altı Armatür Gri"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Gri"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "10"
-        },
-        {
-          "label": "Açıklama",
-          "value": "Ledli Armatür"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Gri"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "10"
-        },
-        {
-          "label": "Description",
-          "value": "Ledli Armatür"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Muhtelif Ürünler"
-      ],
-      "en": [
-        "Miscellaneous Products"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "casing": "Gri"
-    }
-  },
   "7099": {
     "id": "7099",
     "model": "KTL14530WSIYAH KASA-BEYAZ",
@@ -116026,12 +115718,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatürler"
+        "Sinek Öldürücü Armatürler",
+        "Armatür"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixtures"
+        "Insect Killer Fixtures",
+        "Fixture"
       ]
     },
     "brand": "global",
@@ -116087,12 +115779,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatürler"
+        "Sinek Öldürücü Armatürler",
+        "Armatür"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixtures"
+        "Insect Killer Fixtures",
+        "Fixture"
       ]
     },
     "brand": "global",
@@ -116148,12 +115840,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sinek Öldürücü Armatürler"
+        "Sinek Öldürücü Armatürler",
+        "Armatür"
       ],
       "en": [
-        "Fixture",
-        "Insect Killer Fixtures"
+        "Insect Killer Fixtures",
+        "Fixture"
       ]
     },
     "brand": "global",
@@ -162923,10 +162615,12 @@
     },
     "category": {
       "tr": [
-        "LED Aplik"
+        "Dış Mekan Duvar Armatürü",
+        "Armatür"
       ],
       "en": [
-        "LED Aplik"
+        "Outdoor Wall Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -162999,10 +162693,12 @@
     },
     "category": {
       "tr": [
-        "LED Aplik"
+        "Dış Mekan Duvar Armatürü",
+        "Armatür"
       ],
       "en": [
-        "LED Aplik"
+        "Outdoor Wall Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -163135,10 +162831,12 @@
     },
     "category": {
       "tr": [
-        "LED Aplik"
+        "Akdeniz Set Üstü Armatür",
+        "Armatür"
       ],
       "en": [
-        "LED Aplik"
+        "Mediterranean Bollard Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -163208,9 +162906,11 @@
     },
     "category": {
       "tr": [
+        "Akdeniz Set Üstü Armatür",
         "Armatür"
       ],
       "en": [
+        "Mediterranean Bollard Fixture",
         "Armatür"
       ]
     },
@@ -163281,9 +162981,11 @@
     },
     "category": {
       "tr": [
+        "Akdeniz Set Üstü Armatür",
         "Armatür"
       ],
       "en": [
+        "Mediterranean Bollard Fixture",
         "Armatür"
       ]
     },
@@ -163354,9 +163056,11 @@
     },
     "category": {
       "tr": [
+        "Akdeniz Set Üstü Armatür",
         "Armatür"
       ],
       "en": [
+        "Mediterranean Bollard Fixture",
         "Armatür"
       ]
     },
@@ -163427,9 +163131,11 @@
     },
     "category": {
       "tr": [
+        "Bahçe Armatürü",
         "Armatür"
       ],
       "en": [
+        "Garden Fixture",
         "Armatür"
       ]
     },
@@ -163500,9 +163206,11 @@
     },
     "category": {
       "tr": [
+        "Bahçe Armatürü",
         "Armatür"
       ],
       "en": [
+        "Garden Fixture",
         "Armatür"
       ]
     },
@@ -163573,9 +163281,11 @@
     },
     "category": {
       "tr": [
+        "Bahçe Armatürü",
         "Armatür"
       ],
       "en": [
+        "Garden Fixture",
         "Armatür"
       ]
     },
@@ -163646,9 +163356,11 @@
     },
     "category": {
       "tr": [
+        "Bahçe Armatürü",
         "Armatür"
       ],
       "en": [
+        "Garden Fixture",
         "Armatür"
       ]
     },
@@ -163719,9 +163431,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -163795,9 +163509,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -163879,9 +163595,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -163955,9 +163673,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164031,9 +163751,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164115,9 +163837,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164191,9 +163915,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164275,9 +164001,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164351,9 +164079,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164427,9 +164157,11 @@
     },
     "category": {
       "tr": [
+        "Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164495,9 +164227,11 @@
     },
     "category": {
       "tr": [
+        "Sensörlü Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Sensored Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164563,9 +164297,11 @@
     },
     "category": {
       "tr": [
+        "Sensörlü Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Sensored Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -164631,9 +164367,11 @@
     },
     "category": {
       "tr": [
+        "Sensörlü Koridor ve Merdiven Armatür",
         "Armatür"
       ],
       "en": [
+        "Sensored Corridor and Staircase Fixture",
         "Armatür"
       ]
     },
@@ -165588,9 +165326,11 @@
     },
     "category": {
       "tr": [
+        "Manyetik Armatür",
         "Armatür"
       ],
       "en": [
+        "Magnetic Fixture",
         "Armatür"
       ]
     },
@@ -170067,10 +169807,6 @@
           "value": "50W"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Açıklama",
           "value": "3V 1200mAh Batarya"
         },
@@ -170103,10 +169839,6 @@
         {
           "label": "Watt",
           "value": "50W"
-        },
-        {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
         },
         {
           "label": "Description",
@@ -170148,7 +169880,8 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "50W"
+      "watt": "50W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KKP301": {
@@ -172141,10 +171874,10 @@
     },
     "category": {
       "tr": [
-        "Zil"
+        "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Doorbell"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "global",
@@ -172182,10 +171915,10 @@
     },
     "category": {
       "tr": [
-        "Zil"
+        "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Doorbell"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "global",
@@ -172223,10 +171956,10 @@
     },
     "category": {
       "tr": [
-        "Zil"
+        "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Doorbell"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "k2",
@@ -172264,10 +171997,10 @@
     },
     "category": {
       "tr": [
-        "Zil"
+        "Uzaktan Kumandalı Zil"
       ],
       "en": [
-        "Doorbell"
+        "Remote Control Doorbell"
       ]
     },
     "brand": "k2",
@@ -174420,10 +174153,6 @@
         {
           "label": "Duy Tipi",
           "value": "E27"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Siyah"
         }
       ],
       "en": [
@@ -174438,10 +174167,6 @@
         {
           "label": "Socket Type",
           "value": "E27"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Black"
         }
       ]
     },
@@ -174454,7 +174179,9 @@
       ]
     },
     "brand": "k2",
-    "variantOptions": {}
+    "variantOptions": {
+      "casing": "Beyaz, Sarı, Kırmızı, Mavi, Siyah"
+    }
   },
   "KML200": {
     "id": "KML200",
@@ -174477,10 +174204,6 @@
         {
           "label": "Duy Tipi",
           "value": "E27"
-        },
-        {
-          "label": "Renk Seçenekleri",
-          "value": "Beyaz, Sarı, Kırmızı, Mavi, Siyah"
         }
       ],
       "en": [
@@ -174495,10 +174218,6 @@
         {
           "label": "Socket Type",
           "value": "E27"
-        },
-        {
-          "label": "Color Options",
-          "value": "White, Yellow, Red, Blue, Black"
         }
       ]
     },
@@ -174511,7 +174230,9 @@
       ]
     },
     "brand": "k2",
-    "variantOptions": {}
+    "variantOptions": {
+      "casing": "Beyaz, Sarı, Kırmızı, Mavi, Siyah"
+    }
   },
   "KML300": {
     "id": "KML300",
@@ -174626,12 +174347,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sarkıt Armatür"
+        "Sarkıt Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Pendant Fixture"
+        "Pendant Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -174693,12 +174414,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sarkıt Armatür"
+        "Sarkıt Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Pendant Fixture"
+        "Pendant Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -174760,12 +174481,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sarkıt Armatür"
+        "Sarkıt Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Pendant Fixture"
+        "Pendant Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -174827,12 +174548,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sarkıt Armatür"
+        "Sarkıt Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Pendant Fixture"
+        "Pendant Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -174894,12 +174615,12 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Sarkıt Armatür"
+        "Sarkıt Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Pendant Fixture"
+        "Pendant Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
@@ -174922,10 +174643,6 @@
         {
           "label": "Lümen",
           "value": "16800"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "Ararenk (4000K), Beyaz (6500K)"
         },
         {
           "label": "Gerilim",
@@ -174962,10 +174679,6 @@
           "value": "16800"
         },
         {
-          "label": "Light Color",
-          "value": "Natural White (4000K), Cool White (6500K)"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -174993,17 +174706,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "168W"
+      "watt": "168W",
+      "light": "Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL1903": {
@@ -175025,10 +174739,6 @@
           "value": "3600"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175063,10 +174773,6 @@
           "value": "3600"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175094,17 +174800,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "30W"
+      "watt": "30W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL1904": {
@@ -175126,10 +174833,6 @@
           "value": "4320"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175164,10 +174867,6 @@
           "value": "4320"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175195,17 +174894,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "36W"
+      "watt": "36W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL1905": {
@@ -175225,10 +174925,6 @@
         {
           "label": "Lümen",
           "value": "5400"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
         },
         {
           "label": "Gerilim",
@@ -175265,10 +174961,6 @@
           "value": "5400"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175296,17 +174988,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "45W"
+      "watt": "45W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2103": {
@@ -175328,10 +175021,6 @@
           "value": "6000"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175366,10 +175055,6 @@
           "value": "6000"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175397,17 +175082,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "50W"
+      "watt": "50W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2106": {
@@ -175429,10 +175115,6 @@
           "value": "9600"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175467,10 +175149,6 @@
           "value": "9600"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175498,17 +175176,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "80W"
+      "watt": "80W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2303": {
@@ -175530,10 +175209,6 @@
           "value": "8400"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175568,10 +175243,6 @@
           "value": "8400"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175599,17 +175270,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "70W"
+      "watt": "70W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2306": {
@@ -175629,10 +175301,6 @@
         {
           "label": "Lümen",
           "value": "12000"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
         },
         {
           "label": "Gerilim",
@@ -175669,10 +175337,6 @@
           "value": "12000"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175700,17 +175364,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "100W"
+      "watt": "100W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2316": {
@@ -175732,10 +175397,6 @@
           "value": "12600"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175770,10 +175431,6 @@
           "value": "12600"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175801,17 +175458,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "105W"
+      "watt": "105W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2319": {
@@ -175831,10 +175489,6 @@
         {
           "label": "Lümen",
           "value": "16800"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
         },
         {
           "label": "Gerilim",
@@ -175871,10 +175525,6 @@
           "value": "16800"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -175902,17 +175552,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "140W"
+      "watt": "140W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2409": {
@@ -175934,10 +175585,6 @@
           "value": "6000"
         },
         {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -175972,10 +175619,6 @@
           "value": "6000"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -176003,17 +175646,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "50W"
+      "watt": "50W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL2410": {
@@ -176033,10 +175677,6 @@
         {
           "label": "Lümen",
           "value": "9600"
-        },
-        {
-          "label": "Işık Rengi",
-          "value": "CCT (Günışığı (3000K), Ararenk (4000K), Beyaz (6500K))"
         },
         {
           "label": "Gerilim",
@@ -176073,10 +175713,6 @@
           "value": "9600"
         },
         {
-          "label": "Light Color",
-          "value": "CCT (Warm White (3000K), Natural White (4000K), Cool White (6500K))"
-        },
-        {
           "label": "Voltage",
           "value": "220-240V"
         },
@@ -176104,17 +175740,18 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "80W"
+      "watt": "80W",
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
     }
   },
   "KSL1937": {
@@ -176149,15 +175786,17 @@
     },
     "category": {
       "tr": [
-        "Armatür",
-        "Linear Armatür"
+        "Linear Armatür",
+        "Armatür"
       ],
       "en": [
-        "Armatür",
-        "Linear Fixture"
+        "Linear Fixture",
+        "Armatür"
       ]
     },
     "brand": "k2",
-    "variantOptions": {}
+    "variantOptions": {
+      "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
+    }
   }
 }

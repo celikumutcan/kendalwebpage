@@ -151,12 +151,15 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       }
     });
 
-    return Array.from(cats.entries()).map(([name, data]) => ({
-      name,
-      displayName: language === 'en' && data.enName ? data.enName : name,
-      count: data.count,
-      sampleImage: data.sampleImage
-    }));
+    const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base' });
+    return Array.from(cats.entries())
+      .map(([name, data]) => ({
+        name,
+        displayName: language === 'en' && data.enName ? data.enName : name,
+        count: data.count,
+        sampleImage: data.sampleImage
+      }))
+      .sort((a, b) => collator.compare(a.displayName, b.displayName));
   }, [products, language]);
 
   const isK2Grouped = isK2 && isBrandScoped;
@@ -177,6 +180,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       map.get(def.key)!.members.push(cat);
     }
 
+    const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base' });
     const groupCards = Array.from(map.values())
       .filter(g => g.members.length > 0)
       .map(({ def, members }) => ({
@@ -184,10 +188,20 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
         displayName: language === 'en' ? def!.name.en : def!.name.tr,
         sampleImage: members[0].sampleImage,
         members,
-      }));
+      }))
+      .sort((a, b) => collator.compare(a.displayName, b.displayName));
 
     return { ungroupedCategories: ungrouped, groupCards };
   }, [categoriesData, isK2Grouped, brandName, language]);
+
+  // Üst seviye kartlar (tekil kategoriler + k2 grup kartları) tek bir alfabetik listede birleşir
+  const topLevelCards = useMemo(() => {
+    const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base' });
+    return [
+      ...ungroupedCategories.map(cat => ({ type: 'category' as const, key: cat.name, displayName: cat.displayName, sampleImage: cat.sampleImage, cat })),
+      ...groupCards.map(group => ({ type: 'group' as const, key: group.key, displayName: group.displayName, sampleImage: group.sampleImage, group })),
+    ].sort((a, b) => collator.compare(a.displayName, b.displayName));
+  }, [ungroupedCategories, groupCards, language]);
 
   // Auto-select if there is only 1 category (grup modunda üst seviyedeki toplam kart sayısına göre)
   const topLevelCount = isK2Grouped ? ungroupedCategories.length + groupCards.length : categoriesData.length;
@@ -286,8 +300,18 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       groups = groups.filter(g => g.variants.some(v => v.variantOptions?.socket && selectedSockets.includes(v.variantOptions.socket)));
     }
 
+    // Model kodu (ilk kelime) sıralamada göz ardı edilir; ürünler açıklayıcı
+    // isimlerine göre (örn. "JÜPİTER LED APLİK") gruplanıp alfabetik dizilir.
+    const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base', numeric: true });
+    const sortKey = (p: Product) => {
+      const name = p.name[language] || p.name.tr || "";
+      const withoutModel = name.split(' ').slice(1).join(' ').trim();
+      return withoutModel || name;
+    };
+    groups.sort((a, b) => collator.compare(sortKey(a.product), sortKey(b.product)) || collator.compare(a.product.name.tr, b.product.name.tr));
+
     return groups;
-  }, [products, activeCategory, selectedCasings, selectedWatts, selectedSockets]);
+  }, [products, activeCategory, selectedCasings, selectedWatts, selectedSockets, language]);
 
   const searchedProducts = useMemo(() => {
     if (!searchQuery.trim()) return [];
@@ -441,22 +465,13 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
         {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-              {ungroupedCategories.map((cat) => (
+              {topLevelCards.map((item) => (
                 <CategoryCard
-                  key={cat.name}
-                  alt={cat.name}
-                  displayName={cat.displayName}
-                  sampleImage={cat.sampleImage}
-                  onClick={() => handleCategoryClick(cat.name)}
-                />
-              ))}
-              {groupCards.map((group) => (
-                <CategoryCard
-                  key={group.key}
-                  alt={group.displayName}
-                  displayName={group.displayName}
-                  sampleImage={group.sampleImage}
-                  onClick={() => handleGroupClick(group.key)}
+                  key={item.key}
+                  alt={item.displayName}
+                  displayName={item.displayName}
+                  sampleImage={item.sampleImage}
+                  onClick={() => item.type === 'category' ? handleCategoryClick(item.cat.name) : handleGroupClick(item.group.key)}
                 />
               ))}
             </div>
