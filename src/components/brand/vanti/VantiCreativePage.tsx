@@ -10,6 +10,10 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 import { getAssetPath } from "@/lib/basePath";
 import { VantiPreloader } from "./VantiPreloader";
+import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
+import { ProductGrid } from "@/components/brand/shared/ProductGrid";
+import { Highlights } from "@/components/brand/shared/Highlights";
+import { ExportMap } from "@/components/brand/shared/ExportMap";
 
 const VantiScene = dynamic(
   () => import("./VantiScene").then((mod) => mod.VantiScene),
@@ -26,9 +30,17 @@ if (typeof window !== "undefined") {
 }
 
 interface VantiCreativePageProps {
-  products: Product[];
+  popularProducts: Product[];
+  newProducts: Product[];
 }
 
+const VANTI_ACCENT = "#0f766e"; // teal-700, matches the page's existing teal palette
+
+// highlightsStats placeholder note: "%100 Yerli Üretim" ve "40+ Ülkede Global
+// Ağ" (bkz. src/data/exportCountries.ts — aynı harita/liste K2 ve Global'da
+// da kullanılıyor) teyitli. "3 Hız Kademesi" ve "2 Yıl Garanti" tahmini —
+// yayına almadan önce marka/satış sorumlusundan (patron) teyit edip
+// güncellemek gerekir.
 const translations = {
   tr: {
     heroSub: "SERİNLİĞİN VE KONFORUN ADRESİ",
@@ -37,6 +49,23 @@ const translations = {
     sec1Text: "Evinizin her köşesinde doğanın tazeleyici esintisini hissetmeniz için en sessiz ve güçlü motorları tasarlıyoruz.",
     sec2Title: "Akıllı Soğutma",
     sec2Text: "Geniş açılı salınım ve aerodinamik pervane yapısıyla havayı homojen dağıtır, anında ferahlık sağlar.",
+    popularLabel: "Çok Tercih Edilen",
+    popularTitle: "Popüler Ürünler",
+    newLabel: "Yeni Çıkanlar",
+    newTitle: "Yeni Ürünler",
+    modelLabel: "Model",
+    viewLabel: "İncele",
+    highlightsEyebrow: "Neden Vanti?",
+    highlightsTitle: "Sessiz motor, güçlü esinti, uzun ömürlü konfor.",
+    highlightsStats: [
+      { value: "%100", label: "Yerli Üretim" },
+      { value: "3", label: "Hız Kademesi" },
+      { value: "40+", label: "Ülkede Global Ağ" },
+      { value: "2 Yıl", label: "Garanti Kapsamı" },
+    ],
+    exportEyebrow: "Global Erişim",
+    exportTitle: "Vanti'nin serinliği dünyanın dört bir yanında.",
+    exportHint: "Haritadaki noktalara tıklayın.",
     sec3Title: "Enerji Tasarrufu",
     sec3Text: "Düşük enerji tüketimiyle yüksek performans sunan çevre dostu Vanti serisi ile yazı serin geçirin.",
     catalogBtn: "Ürünleri İncele"
@@ -48,13 +77,30 @@ const translations = {
     sec1Text: "We design the quietest and most powerful motors so you can feel the refreshing breeze of nature in every corner of your home.",
     sec2Title: "Smart Cooling",
     sec2Text: "With wide-angle oscillation and aerodynamic blade structure, it distributes air evenly, providing instant freshness.",
+    popularLabel: "Most Loved",
+    popularTitle: "Popular Products",
+    newLabel: "Just Arrived",
+    newTitle: "New Products",
+    modelLabel: "Model",
+    viewLabel: "View",
+    highlightsEyebrow: "Why Vanti?",
+    highlightsTitle: "Quiet motors, powerful breeze, long-lasting comfort.",
+    highlightsStats: [
+      { value: "100%", label: "Domestic Production" },
+      { value: "3", label: "Speed Settings" },
+      { value: "40+", label: "Countries — Global Network" },
+      { value: "2 Years", label: "Warranty Coverage" },
+    ],
+    exportEyebrow: "Global Reach",
+    exportTitle: "Vanti's cool breeze, everywhere around the world.",
+    exportHint: "Click a point on the map.",
     sec3Title: "Energy Saving",
     sec3Text: "Spend the summer cool with the eco-friendly Vanti series that offers high performance with low energy consumption.",
     catalogBtn: "Explore Products"
   }
 };
 
-export function VantiCreativePage({ products }: VantiCreativePageProps) {
+export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativePageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLDivElement>(null);
   const { language } = useLanguage();
@@ -90,8 +136,8 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
             ease: "power3.out",
             scrollTrigger: {
               trigger: block,
-              start: "top 80%",
-              end: "top 40%",
+              start: "top 95%",
+              end: "top 65%",
               scrub: 1,
             },
           }
@@ -103,7 +149,7 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
   }, [language]);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-sky-50 text-teal-900 selection:bg-teal-600 selection:text-white overflow-hidden">
+    <div ref={containerRef} className="relative w-full bg-sky-50 text-teal-900 selection:bg-teal-600 selection:text-white overflow-hidden" style={{ "--page-bg": "#f0f9ff" } as React.CSSProperties}>
 
       {/* Preloader: hides the page until the 3D scene has actually painted,
           so the background/fan/text all appear together instead of in stages. */}
@@ -155,6 +201,28 @@ export function VantiCreativePage({ products }: VantiCreativePageProps) {
           </h2>
         </div>
       </section>
+
+      {/* Highlights / trust stats */}
+      <Highlights eyebrow={t.highlightsEyebrow} title={t.highlightsTitle} stats={t.highlightsStats} accent={VANTI_ACCENT} theme="light" />
+
+      {/* Export map */}
+      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
+
+      {/* Popular Products — sliding marquee */}
+      <ProductCarousel
+        label={t.popularLabel}
+        title={t.popularTitle}
+        products={popularProducts}
+        language={language}
+        modelLabel={t.modelLabel}
+        viewLabel={t.viewLabel}
+        brandName="vanti"
+        accent={VANTI_ACCENT}
+        align="left"
+      />
+
+      {/* New Products — static editorial grid */}
+      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="vanti" accent={VANTI_ACCENT} theme="light" />
 
       {/* Story Section 3: Energy Saving (Airy, Centered) */}
       <section className="relative z-10 w-full min-h-[80vh] flex flex-col items-center justify-center px-6 md:px-32 py-24 text-center">

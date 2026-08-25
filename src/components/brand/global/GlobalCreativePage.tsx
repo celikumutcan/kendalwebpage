@@ -7,15 +7,27 @@ import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
+import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
+import { ProductGrid } from "@/components/brand/shared/ProductGrid";
+import { Highlights } from "@/components/brand/shared/Highlights";
+import { ExportMap } from "@/components/brand/shared/ExportMap";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+const GLOBAL_ACCENT = "#e6b800"; // darker than the hero's #ffcb05 for AA contrast on white
+
 interface GlobalCreativePageProps {
-  products: Product[];
+  popularProducts: Product[];
+  newProducts: Product[];
 }
 
+// highlightsStats placeholder note: "20.000+ Saat" ve "%100 Yerli Üretim"
+// Kendal Elektrik üretim verisiyle tutarlı. "40+ Ülkede Global Ağ" alttaki
+// haritada gösterilen aynı 40 ülke listesine (bkz. src/data/exportCountries.ts)
+// dayanıyor. "2 Yıl Garanti" tahmini — yayına almadan önce marka/satış
+// sorumlusundan (patron) teyit edip güncellemek gerekir.
 const translations = {
   tr: {
     heroSub: "KAPSAMLI AYDINLATMA ÇÖZÜMLERİ",
@@ -25,6 +37,23 @@ const translations = {
     sec1Text: "Kendal Elektrik güvencesiyle, projelerinizi aydınlatacak en parlak ve en güçlü çözümler.",
     sec2Title: "Sınırsız Performans",
     sec2Text: "Endüstriyel tesislerden yaşam alanlarına kadar her noktada ışığın enerjisini hissettiren benzersiz aydınlatma ağı.",
+    popularLabel: "Çok Tercih Edilen",
+    popularTitle: "Popüler Ürünler",
+    newLabel: "Yeni Çıkanlar",
+    newTitle: "Yeni Ürünler",
+    modelLabel: "Model",
+    viewLabel: "İncele",
+    highlightsEyebrow: "Neden Global?",
+    highlightsTitle: "Uluslararası pazarlar için tasarlanmış, güvenilir aydınlatma.",
+    highlightsStats: [
+      { value: "20.000+", label: "Saat Ortalama LED Ömrü" },
+      { value: "%100", label: "Yerli Üretim" },
+      { value: "40+", label: "Ülkede Global Ağ" },
+      { value: "2 Yıl", label: "Garanti Kapsamı" },
+    ],
+    exportEyebrow: "Global Erişim",
+    exportTitle: "Kendal Global, dünyanın dört bir yanında.",
+    exportHint: "Haritadaki noktalara tıklayın.",
     sec3Title: "Geleceğin Işığı",
     sec3Text: "Daha parlak, daha uzun ömürlü ve sınırları zorlayan yüksek teknolojili tasarımlar.",
     catalogBtn: "Ürünleri İncele"
@@ -37,6 +66,23 @@ const translations = {
     sec1Text: "With Kendal Elektrik's assurance, the brightest and most powerful solutions to illuminate your projects.",
     sec2Title: "Limitless Performance",
     sec2Text: "A unique lighting network that makes you feel the energy of light everywhere from industrial facilities to living spaces.",
+    popularLabel: "Most Loved",
+    popularTitle: "Popular Products",
+    newLabel: "Just Arrived",
+    newTitle: "New Products",
+    modelLabel: "Model",
+    viewLabel: "View",
+    highlightsEyebrow: "Why Global?",
+    highlightsTitle: "Reliable lighting, engineered for international markets.",
+    highlightsStats: [
+      { value: "20,000+", label: "Hours Average LED Lifespan" },
+      { value: "100%", label: "Domestic Production" },
+      { value: "40+", label: "Countries — Global Network" },
+      { value: "2 Years", label: "Warranty Coverage" },
+    ],
+    exportEyebrow: "Global Reach",
+    exportTitle: "Kendal Global, everywhere around the world.",
+    exportHint: "Click a point on the map.",
     sec3Title: "Light of the Future",
     sec3Text: "Brighter, longer-lasting, and boundary-pushing high-tech designs.",
     catalogBtn: "Explore Products"
@@ -69,7 +115,7 @@ const SwitchIcon = () => (
 const CURSOR_END_X = 45;
 const CURSOR_END_Y = 101;
 
-export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
+export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreativePageProps) {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations] || translations.tr;
 
@@ -167,7 +213,7 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
       const sections = gsap.utils.toArray(".reveal-card");
       sections.forEach((section: any) => {
         const textElements = section.querySelectorAll(".reveal-content");
-        
+
         const sectionTl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
@@ -189,6 +235,22 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
           "-=0.5"
         );
       });
+
+      // Shared brand sections (Highlights/ExportMap/ProductCarousel/ProductGrid)
+      // use the plain .reveal-text convention from the K2/Vanti pages instead
+      // of .reveal-card, so they need their own (simpler) fade-in here too.
+      gsap.utils.toArray(".reveal-text").forEach((section: any) => {
+        gsap.fromTo(
+          section,
+          { opacity: 0, y: 40 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: { trigger: section, start: "top 95%", end: "top 65%", scrub: 1 },
+          }
+        );
+      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -196,7 +258,7 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
 
   return (
     // Page starts with bg-black for the dark room switch intro. GSAP turns it to #f8f9fa during the flash.
-    <div ref={containerRef} className="relative w-full bg-black text-black overflow-hidden font-sans min-h-screen">
+    <div ref={containerRef} className="relative w-full bg-black text-black overflow-hidden font-sans min-h-screen" style={{ "--page-bg": "#fdfbf5" } as React.CSSProperties}>
       
       {/* 
         NO 3D SCENE! 
@@ -290,6 +352,31 @@ export function GlobalCreativePage({ products }: GlobalCreativePageProps) {
           </h2>
         </section>
 
+      </div>
+
+      {/* Highlights / trust stats — full-bleed, outside the max-w-5xl story wrapper */}
+      <Highlights eyebrow={t.highlightsEyebrow} title={t.highlightsTitle} stats={t.highlightsStats} accent={GLOBAL_ACCENT} theme="light" />
+
+      {/* Export map */}
+      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={GLOBAL_ACCENT} theme="light" />
+
+      {/* Popular Products — sliding marquee */}
+      <ProductCarousel
+        label={t.popularLabel}
+        title={t.popularTitle}
+        products={popularProducts}
+        language={language}
+        modelLabel={t.modelLabel}
+        viewLabel={t.viewLabel}
+        brandName="global"
+        accent={GLOBAL_ACCENT}
+        align="left"
+      />
+
+      {/* New Products — static editorial grid */}
+      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="global" accent={GLOBAL_ACCENT} theme="light" />
+
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32">
         {/* Section 3 */}
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>

@@ -1,0 +1,65 @@
+// Same locations as the homepage's 3D globe (src/components/engine/Globe.tsx
+// LOCATIONS) — kept as a separate, name/flag-annotated dataset here so the
+// 2D export map (K2/Global/Vanti/homepage) tells the same "reach" story
+// with the same coordinates, without dragging Three.js types into it.
+export interface ExportCountry {
+  id: string;
+  flag: string;
+  nameTr: string;
+  nameEn: string;
+  lat: number;
+  lon: number;
+}
+
+export const HQ: ExportCountry = {
+  id: "turkey",
+  flag: "🇹🇷",
+  nameTr: "Türkiye (Merkez)",
+  nameEn: "Turkey (HQ)",
+  lat: 39.9,
+  lon: 32.8,
+};
+
+export const EXPORT_COUNTRIES: ExportCountry[] = [
+  { id: "azerbaijan", flag: "🇦🇿", nameTr: "Azerbaycan", nameEn: "Azerbaijan", lat: 40.4, lon: 49.9 },
+  { id: "georgia", flag: "🇬🇪", nameTr: "Gürcistan", nameEn: "Georgia", lat: 41.7, lon: 44.8 },
+  { id: "moldova", flag: "🇲🇩", nameTr: "Moldova", nameEn: "Moldova", lat: 47.0, lon: 28.8 },
+  { id: "romania", flag: "🇷🇴", nameTr: "Romanya", nameEn: "Romania", lat: 44.4, lon: 26.1 },
+  { id: "bulgaria", flag: "🇧🇬", nameTr: "Bulgaristan", nameEn: "Bulgaria", lat: 42.7, lon: 23.3 },
+  { id: "albania", flag: "🇦🇱", nameTr: "Arnavutluk", nameEn: "Albania", lat: 41.3, lon: 19.8 },
+  { id: "malta", flag: "🇲🇹", nameTr: "Malta", nameEn: "Malta", lat: 35.9, lon: 14.5 },
+  { id: "iraq", flag: "🇮🇶", nameTr: "Irak", nameEn: "Iraq", lat: 33.3, lon: 44.4 },
+  { id: "germany", flag: "🇩🇪", nameTr: "Almanya", nameEn: "Germany", lat: 51.1, lon: 10.4 },
+  { id: "uk", flag: "🇬🇧", nameTr: "Birleşik Krallık", nameEn: "United Kingdom", lat: 53.4, lon: -2.9 },
+  { id: "usa", flag: "🇺🇸", nameTr: "ABD", nameEn: "United States", lat: 37.0, lon: -95.7 },
+  { id: "china", flag: "🇨🇳", nameTr: "Çin", nameEn: "China", lat: 35.8, lon: 104.1 },
+  { id: "russia", flag: "🇷🇺", nameTr: "Rusya", nameEn: "Russia", lat: 61.5, lon: 105.3 },
+  { id: "brazil", flag: "🇧🇷", nameTr: "Brezilya", nameEn: "Brazil", lat: -14.2, lon: -51.9 },
+  { id: "australia", flag: "🇦🇺", nameTr: "Avustralya", nameEn: "Australia", lat: -25.2, lon: 133.7 },
+  { id: "south-africa", flag: "🇿🇦", nameTr: "Güney Afrika", nameEn: "South Africa", lat: -30.5, lon: 22.9 },
+  { id: "egypt", flag: "🇪🇬", nameTr: "Mısır", nameEn: "Egypt", lat: 26.8, lon: 30.8 },
+  { id: "japan", flag: "🇯🇵", nameTr: "Japonya", nameEn: "Japan", lat: 36.2, lon: 138.2 },
+  { id: "france", flag: "🇫🇷", nameTr: "Fransa", nameEn: "France", lat: 46.2, lon: 2.2 },
+  { id: "uae", flag: "🇦🇪", nameTr: "Birleşik Arap Emirlikleri", nameEn: "United Arab Emirates", lat: 23.4, lon: 53.8 },
+  { id: "canada", flag: "🇨🇦", nameTr: "Kanada", nameEn: "Canada", lat: 56.1, lon: -106.3 },
+  { id: "india", flag: "🇮🇳", nameTr: "Hindistan", nameEn: "India", lat: 20.5, lon: 78.9 },
+  { id: "italy", flag: "🇮🇹", nameTr: "İtalya", nameEn: "Italy", lat: 41.9, lon: 12.5 },
+  { id: "spain", flag: "🇪🇸", nameTr: "İspanya", nameEn: "Spain", lat: 40.4, lon: -3.7 },
+  { id: "greece", flag: "🇬🇷", nameTr: "Yunanistan", nameEn: "Greece", lat: 37.9, lon: 23.7 },
+  { id: "saudi-arabia", flag: "🇸🇦", nameTr: "Suudi Arabistan", nameEn: "Saudi Arabia", lat: 23.8, lon: 45.0 },
+  { id: "south-korea", flag: "🇰🇷", nameTr: "Güney Kore", nameEn: "South Korea", lat: 35.9, lon: 127.7 },
+  { id: "mexico", flag: "🇲🇽", nameTr: "Meksika", nameEn: "Mexico", lat: 23.6, lon: -102.5 },
+  { id: "argentina", flag: "🇦🇷", nameTr: "Arjantin", nameEn: "Argentina", lat: -38.4, lon: -63.6 },
+  { id: "morocco", flag: "🇲🇦", nameTr: "Fas", nameEn: "Morocco", lat: 31.7, lon: -7.0 },
+  { id: "nigeria", flag: "🇳🇬", nameTr: "Nijerya", nameEn: "Nigeria", lat: 9.0, lon: 8.6 },
+  { id: "kenya", flag: "🇰🇪", nameTr: "Kenya", nameEn: "Kenya", lat: -1.2, lon: 36.8 },
+  { id: "indonesia", flag: "🇮🇩", nameTr: "Endonezya", nameEn: "Indonesia", lat: -0.7, lon: 113.9 },
+  { id: "thailand", flag: "🇹🇭", nameTr: "Tayland", nameEn: "Thailand", lat: 15.8, lon: 100.9 },
+  { id: "vietnam", flag: "🇻🇳", nameTr: "Vietnam", nameEn: "Vietnam", lat: 14.0, lon: 108.2 },
+  { id: "philippines", flag: "🇵🇭", nameTr: "Filipinler", nameEn: "Philippines", lat: 12.8, lon: 121.7 },
+  { id: "malaysia", flag: "🇲🇾", nameTr: "Malezya", nameEn: "Malaysia", lat: 4.2, lon: 109.9 },
+  { id: "poland", flag: "🇵🇱", nameTr: "Polonya", nameEn: "Poland", lat: 51.9, lon: 19.1 },
+  { id: "netherlands", flag: "🇳🇱", nameTr: "Hollanda", nameEn: "Netherlands", lat: 52.1, lon: 5.2 },
+  { id: "sweden", flag: "🇸🇪", nameTr: "İsveç", nameEn: "Sweden", lat: 60.1, lon: 18.6 },
+  { id: "kazakhstan", flag: "🇰🇿", nameTr: "Kazakistan", nameEn: "Kazakhstan", lat: 48.0, lon: 68.0 },
+];

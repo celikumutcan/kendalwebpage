@@ -4,6 +4,10 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { K2Scene } from "./K2Scene";
+import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
+import { ProductGrid } from "@/components/brand/shared/ProductGrid";
+import { Highlights } from "@/components/brand/shared/Highlights";
+import { ExportMap } from "@/components/brand/shared/ExportMap";
 import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
@@ -14,10 +18,19 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+const K2_ACCENT = "#f97316";
+
 interface K2CreativePageProps {
-  products: Product[];
+  popularProducts: Product[];
+  newProducts: Product[];
 }
 
+// highlightsStats placeholder note: "20.000+ Saat", "%100 Yerli Üretim" ve
+// "8 Ülkeye İhracat" gerçek/teyitli veri (ihracat listesi: Azerbaycan,
+// Gürcistan, Moldova, Romanya, Bulgaristan, Arnavutluk, Malta, Irak — bkz.
+// K2ExportMapInner.tsx EXPORT_COUNTRIES). "2 Yıl Garanti" hâlâ tahmini —
+// yayına almadan önce marka/satış sorumlusundan (patron) teyit edip burada
+// güncellemek gerekir.
 const translations = {
   tr: {
     heroSub: "AYDINLATMANIN ZİRVESİ",
@@ -26,8 +39,25 @@ const translations = {
     sec1Text: "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Aydınlatmanın Zirvesi' olma vizyonuyla hareket etmektedir.",
     sec2Title: "Geniş Yelpaze",
     sec2Text: "Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eder.",
+    popularLabel: "Çok Tercih Edilen",
+    popularTitle: "Popüler Ürünler",
+    newLabel: "Yeni Çıkanlar",
+    newTitle: "Yeni Ürünler",
+    modelLabel: "Model",
+    viewLabel: "İncele",
+    highlightsEyebrow: "Neden K2?",
+    highlightsTitle: "Sahada kanıtlanmış performans, mühendislik hassasiyeti.",
+    highlightsStats: [
+      { value: "20.000+", label: "Saat Ortalama LED Ömrü" },
+      { value: "%100", label: "Yerli Üretim" },
+      { value: "8", label: "Ülkeye İhracat" },
+      { value: "2 Yıl", label: "Garanti Kapsamı" },
+    ],
+    exportEyebrow: "Global Erişim",
+    exportTitle: "K2, sınırları aşarak dünyanın dört bir yanını aydınlatıyor.",
+    exportHint: "Haritadaki noktalara tıklayın.",
     sec3Title: "Zorlu Koşullar",
-    sec3Text: "Ev ve ofis aydınlatmasında yenilikçi LED çözümleri ile enerjiden tasarruf edin, geleceğe yatırım yapın.",
+    sec3Text: "Spot, LED panel, projektör, solar armatür ve magnet sistemlerden dekoratif aydınlatmaya uzanan geniş ürün gamıyla K2; ev ve ofis aydınlatmasında yenilikçi LED çözümleriyle enerjiden tasarruf edin, geleceğe yatırım yapın.",
     catalogBtn: "Ürünleri İncele"
   },
   en: {
@@ -37,13 +67,30 @@ const translations = {
     sec1Text: "Taking its name from K2, one of the most difficult and prestigious mountains for climbers to conquer, our brand operates with the vision of being the 'Peak of Lighting'.",
     sec2Title: "Wide Range",
     sec2Text: "Represents the wide range of Kendal Elektrik's professional LED lighting systems, energy efficiency-oriented solutions, and decorative products.",
+    popularLabel: "Most Loved",
+    popularTitle: "Popular Products",
+    newLabel: "Just Arrived",
+    newTitle: "New Products",
+    modelLabel: "Model",
+    viewLabel: "View",
+    highlightsEyebrow: "Why K2?",
+    highlightsTitle: "Field-proven performance, engineered with precision.",
+    highlightsStats: [
+      { value: "20,000+", label: "Hours Average LED Lifespan" },
+      { value: "100%", label: "Domestic Production" },
+      { value: "8", label: "Countries Exported To" },
+      { value: "2 Years", label: "Warranty Coverage" },
+    ],
+    exportEyebrow: "Global Reach",
+    exportTitle: "K2 lights up every corner of the world, beyond our borders.",
+    exportHint: "Click a point on the map.",
     sec3Title: "Extreme Conditions",
-    sec3Text: "Offers top-level quality and durability even under the toughest conditions for industrial and architectural needs.",
+    sec3Text: "From spotlights, LED panels and floodlights to solar fixtures, magnet systems and decorative lighting, K2's extensive range brings innovative LED solutions to home and office lighting — save energy, invest in the future.",
     catalogBtn: "Explore Products"
   }
 };
 
-export function K2CreativePage({ products }: K2CreativePageProps) {
+export function K2CreativePage({ popularProducts, newProducts }: K2CreativePageProps) {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations] || translations.tr;
 
@@ -78,8 +125,8 @@ export function K2CreativePage({ products }: K2CreativePageProps) {
             duration: 1,
             scrollTrigger: {
               trigger: section,
-              start: "top 80%",
-              end: "top 50%",
+              start: "top 95%",
+              end: "top 65%",
               scrub: 1,
             },
           }
@@ -135,6 +182,28 @@ export function K2CreativePage({ products }: K2CreativePageProps) {
           </h2>
         </div>
       </section>
+
+      {/* Highlights / trust stats */}
+      <Highlights eyebrow={t.highlightsEyebrow} title={t.highlightsTitle} stats={t.highlightsStats} accent={K2_ACCENT} />
+
+      {/* Export map */}
+      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
+
+      {/* Popular Products — sliding marquee */}
+      <ProductCarousel
+        label={t.popularLabel}
+        title={t.popularTitle}
+        products={popularProducts}
+        language={language}
+        modelLabel={t.modelLabel}
+        viewLabel={t.viewLabel}
+        brandName="k2"
+        accent={K2_ACCENT}
+        align="left"
+      />
+
+      {/* New Products — static editorial grid */}
+      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="k2" accent={K2_ACCENT} />
 
       {/* Story Section 3: Durability & Quality */}
       <section className="relative z-10 w-full min-h-screen flex flex-col justify-center px-6 md:px-24 py-24">
