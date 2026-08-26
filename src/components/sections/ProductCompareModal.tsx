@@ -123,11 +123,11 @@ export default function ProductCompareModal({ items, language, brandName, texts,
 
         <div className="overflow-auto flex-1 scrollbar-thin scrollbar-thumb-zinc-200 px-5 md:px-8 pb-8">
           <div className="w-fit mx-auto">
-            <div className={`sticky top-0 z-10 bg-white grid gap-3 pt-6 pb-5 ${gridColsClass}`}>
+            <div className={`sticky top-0 z-10 bg-white grid gap-3 pt-4 pb-3 ${gridColsClass}`}>
               {items.map(({ product, url }) => {
                 const displayName = product.name[language as keyof typeof product.name] || product.name.tr;
                 return (
-                  <div key={product.id} className={`relative rounded-3xl border ${accentBorder} bg-gradient-to-b ${accentGradient} to-white p-6 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)]`}>
+                  <div key={product.id} className={`relative rounded-3xl border ${accentBorder} bg-gradient-to-b ${accentGradient} to-white p-3 md:p-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)]`}>
                     <button
                       onClick={() => onRemove(product.id)}
                       className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white border border-zinc-200 text-zinc-400 hover:text-zinc-700 hover:border-zinc-300 shadow-sm transition-colors"
@@ -136,7 +136,7 @@ export default function ProductCompareModal({ items, language, brandName, texts,
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
                       </svg>
                     </button>
-                    <div className="relative aspect-square w-full max-w-[220px] mx-auto mb-5 bg-white rounded-2xl overflow-hidden shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)]">
+                    <div className="relative aspect-square w-full max-w-[100px] md:max-w-[120px] mx-auto mb-2 md:mb-3 bg-white rounded-2xl overflow-hidden shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)]">
                       <Image
                         src={getAssetPath("/images/" + product.image)}
                         alt={displayName}
@@ -148,13 +148,13 @@ export default function ProductCompareModal({ items, language, brandName, texts,
                     <div className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-1.5 text-left">
                       {texts.model} {product.model}
                     </div>
-                    <div className="font-bold text-zinc-900 text-base leading-snug mb-4 text-left line-clamp-2 min-h-[2.6em]" title={displayName}>
+                    <div className="font-bold text-zinc-900 text-xs md:text-sm leading-snug mb-2 md:mb-3 text-left line-clamp-2 min-h-[2.4em]" title={displayName}>
                       {displayName}
                     </div>
                     <div className="text-center">
                       <Link
                         href={url}
-                        className={`inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-sm font-bold ${accentSolid} ${accentSolidHover} ${accentSolidText} shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md`}
+                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[11px] md:text-xs font-bold ${accentSolid} ${accentSolidHover} ${accentSolidText} shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md`}
                       >
                         {texts.view}
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -171,16 +171,16 @@ export default function ProductCompareModal({ items, language, brandName, texts,
               const palette = rowPalette[i % rowPalette.length];
               return (
               <div key={row.label} className={palette.bg}>
-                <div className="flex justify-center pt-4 pb-2">
+                <div className="flex justify-center pt-5 pb-3">
                   <span className="inline-flex items-center gap-2">
                     <span className={`w-2 h-2 rounded-full ${palette.dot} flex-shrink-0`} />
-                    <span className={`text-sm md:text-base font-extrabold uppercase tracking-wider ${palette.text}`}>{row.label}</span>
+                    <span className={`text-base md:text-lg font-extrabold uppercase tracking-wider ${palette.text}`}>{row.label}</span>
                   </span>
                 </div>
                 <div className="relative">
-                  <div className={`grid gap-3 pb-4 ${gridColsClass}`}>
+                  <div className={`grid gap-3 pb-5 ${gridColsClass}`}>
                     {row.values.map((value, j) => (
-                      <div key={j} className="px-1 text-center text-zinc-700 text-sm md:text-base leading-relaxed">
+                      <div key={j} className="px-1 text-center text-zinc-800 text-base md:text-lg font-medium leading-relaxed">
                         {renderValue(value, texts.no_value)}
                       </div>
                     ))}
