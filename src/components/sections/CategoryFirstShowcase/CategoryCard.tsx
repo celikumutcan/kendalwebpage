@@ -23,7 +23,7 @@ export function CategoryCard({ alt, displayName, sampleImage, onClick }: Categor
         alt={alt}
         fill
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-cover object-center opacity-100 z-0"
+        className="object-cover object-center opacity-100 z-0 transition-transform duration-700 group-hover:scale-105"
       />
 
       <div className="relative z-20 p-8">

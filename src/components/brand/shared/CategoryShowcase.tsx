@@ -155,9 +155,7 @@ export function CategoryShowcase({
                   <h4 className={`font-bold text-base md:text-lg leading-snug truncate ${isDark ? "text-white" : "text-zinc-900"}`}>
                     {item.displayName}
                   </h4>
-                  <span className={`text-[11px] uppercase tracking-wider font-medium ${isDark ? "text-white/40" : "text-zinc-400"}`}>
-                    {item.count} {countLabel}
-                  </span>
+
                 </div>
                 <svg
                   className={`w-4 h-4 shrink-0 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[var(--accent)] ${

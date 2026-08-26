@@ -67,9 +67,9 @@ export function FiltersPanelContent({
       <div className="px-6 pt-5">
         <div className="flex gap-1 p-1 bg-zinc-100/80 rounded-full">
           {[
-            { id: "casings" as const, label: "Renkler", show: availableFilters.casings.length > 0, count: selectedCasings.length },
-            { id: "watts" as const, label: "Güç", show: availableFilters.watts.length > 0, count: selectedWatts.length },
-            { id: "sockets" as const, label: "Duy Tipi", show: availableFilters.sockets.length > 0, count: selectedSockets.length }
+            { id: "casings" as const, label: "Renkler", show: availableFilters.casings.length > 1, count: selectedCasings.length },
+            { id: "watts" as const, label: "Güç", show: availableFilters.watts.length > 1, count: selectedWatts.length },
+            { id: "sockets" as const, label: "Duy Tipi", show: availableFilters.sockets.length > 1, count: selectedSockets.length }
           ].filter(tab => tab.show).map(tab => (
             <button
               key={tab.id}

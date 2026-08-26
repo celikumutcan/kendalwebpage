@@ -27,7 +27,7 @@ interface K2CreativePageProps {
 
 const translations = {
   tr: {
-    heroSub: "KARANLIĞI AYDINLATIYORUZ",
+    heroSub: "AYDINLATMANIN ZİRVESİ",
     explore: "Hikayeyi Keşfet",
     sec1Title: "Zirve",
     sec1Text: "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Karanlığı Aydınlatıyoruz' vizyonuyla hareket etmektedir.",
@@ -135,7 +135,7 @@ export function K2CreativePage({ newProducts, allProducts }: K2CreativePageProps
       </div>
 
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
-        <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-48">
+        <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-20">
           <img 
             src={getAssetPath("/images/brands/k2-logo.svg")}
             alt="K2 Logo" 
@@ -169,18 +169,6 @@ export function K2CreativePage({ newProducts, allProducts }: K2CreativePageProps
         </div>
       </section>
 
-      <DealerMap
-        eyebrow={t.dealerEyebrow}
-        title={t.dealerTitle}
-        hint={t.dealerHint}
-        badge={t.dealerBadge}
-        dealerLabel={t.dealerLabel}
-        language={language}
-        accent={K2_ACCENT}
-      />
-
-      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
-
       <CategoryShowcase
         label={t.popularLabel}
         title={t.popularTitle}
@@ -192,6 +180,18 @@ export function K2CreativePage({ newProducts, allProducts }: K2CreativePageProps
         viewAllLabel={t.viewAllLabel}
         align="left"
       />
+
+      <DealerMap
+        eyebrow={t.dealerEyebrow}
+        title={t.dealerTitle}
+        hint={t.dealerHint}
+        badge={t.dealerBadge}
+        dealerLabel={t.dealerLabel}
+        language={language}
+        accent={K2_ACCENT}
+      />
+
+      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
 
       <ProductCarousel
         label={t.newLabel}

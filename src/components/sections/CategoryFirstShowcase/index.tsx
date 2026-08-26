@@ -250,10 +250,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   }, [products, activeCategory]);
 
   useEffect(() => {
-    if (availableFilters[activeFilterTab].length === 0) {
-      if (availableFilters.casings.length > 0) setActiveFilterTab("casings");
-      else if (availableFilters.watts.length > 0) setActiveFilterTab("watts");
-      else if (availableFilters.sockets.length > 0) setActiveFilterTab("sockets");
+    if (availableFilters[activeFilterTab].length <= 1) {
+      if (availableFilters.casings.length > 1) setActiveFilterTab("casings");
+      else if (availableFilters.watts.length > 1) setActiveFilterTab("watts");
+      else if (availableFilters.sockets.length > 1) setActiveFilterTab("sockets");
     }
   }, [availableFilters, activeFilterTab]);
 
@@ -378,7 +378,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     updateUrl(selectedGroup, selectedCategory, 1, val);
   };
 
-  const hasAnyFilterOptions = availableFilters.casings.length > 0 || availableFilters.watts.length > 0 || availableFilters.sockets.length > 0;
+  const hasAnyFilterOptions = availableFilters.casings.length > 1 || availableFilters.watts.length > 1 || availableFilters.sockets.length > 1;
   const selectedFilterCount = selectedCasings.length + selectedWatts.length + selectedSockets.length;
 
   const filtersPanelProps = {
@@ -404,10 +404,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       <div className="max-w-[1440px] mx-auto">
 
         <div className="mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
-          <div className="relative max-w-2xl mx-auto group">
-            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-              <svg className={`h-6 w-6 transition-colors duration-300 ${isK2 ? "text-orange-300 group-focus-within:text-orange-500" : brandName === "vanti" ? "text-blue-300 group-focus-within:text-blue-500" : "text-[#FFDA51]/60 group-focus-within:text-[#FFDA51]"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          <div className="relative max-w-3xl mx-auto group">
+            <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+              <svg className={`h-6 w-6 transition-transform duration-500 group-focus-within:scale-110 ${isK2 ? "text-orange-400 group-focus-within:text-orange-600" : brandName === "vanti" ? "text-blue-400 group-focus-within:text-blue-600" : "text-[#FFDA51]/80 group-focus-within:text-amber-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
             </div>
             <input
@@ -415,23 +415,27 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
               value={searchQuery}
               onChange={handleSearchChange}
               placeholder={showcaseTexts.search_placeholder}
-              className={`w-full pl-12 pr-12 py-4 rounded-2xl border-2 bg-white/90 backdrop-blur-md shadow-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-4 transition-all duration-300 text-lg
+              className={`w-full pl-14 pr-24 py-5 rounded-full border border-white/40 bg-white/60 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-lg hover:bg-white/80 focus:bg-white/95
                 ${isK2
-                  ? "border-orange-100/50 focus:border-orange-500 focus:ring-orange-500/20"
+                  ? "focus:border-orange-500 focus:ring-orange-500/20"
                   : brandName === "vanti"
-                    ? "border-blue-100/50 focus:border-blue-500 focus:ring-blue-500/20"
-                    : "border-zinc-200 focus:border-[#FFDA51] focus:ring-[#FFDA51]/20"}`}
+                    ? "focus:border-blue-500 focus:ring-blue-500/20"
+                    : "focus:border-amber-400 focus:ring-[#FFDA51]/30"}`}
             />
-            {searchQuery && (
-              <button
-                onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedGroup, selectedCategory, 1, ""); }}
-                className="absolute inset-y-0 right-0 pr-4 flex items-center text-zinc-400 hover:text-zinc-600 transition-colors"
-              >
-                <svg className="h-5 w-5 bg-zinc-100 rounded-full p-1 hover:bg-zinc-200 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            )}
+            
+            {/* Clear Button Container */}
+            <div className="absolute inset-y-0 right-0 pr-5 flex items-center gap-2">
+              {searchQuery && (
+                <button
+                  onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedGroup, selectedCategory, 1, ""); }}
+                  className="flex items-center text-zinc-400 hover:text-zinc-700 transition-colors bg-white/50 hover:bg-white/80 p-1.5 rounded-full backdrop-blur-sm"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 

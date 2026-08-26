@@ -119,7 +119,7 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
 
   return (
     <div className="w-full" style={{ "--accent": accent } as CSSProperties}>
-      <div className={`relative w-full overflow-hidden rounded-[2rem] border ${containerClass}`}>
+      <div className={`relative w-full rounded-[2rem] border ${containerClass}`}>
         <svg
           viewBox={`0 0 ${WIDTH} ${height.toFixed(1)}`}
           className="w-full h-auto block"

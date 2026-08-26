@@ -147,7 +147,7 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
       <VantiScene onReady={() => setSceneReady(true)} />
 
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
-        <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-40">
+        <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-20">
           <img 
             src={getAssetPath("/images/brands/vanti-logo.svg")}
             alt="Vanti Logo" 
@@ -199,19 +199,6 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
       />
 
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
-
-      <CategoryShowcase
-        label={t.popularLabel}
-        title={t.popularTitle}
-        allProducts={allProducts}
-        language={language}
-        brandName="vanti"
-        accent={VANTI_ACCENT}
-        countLabel={t.categoryCountLabel}
-        viewAllLabel={t.viewAllLabel}
-        align="left"
-        theme="light"
-      />
 
       <ProductCarousel
         label={t.newLabel}

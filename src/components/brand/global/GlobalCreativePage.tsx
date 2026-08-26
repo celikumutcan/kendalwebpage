@@ -241,10 +241,10 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         <div ref={heroContentRef} className="absolute inset-0 flex flex-col items-center justify-center px-4">
           <div
             ref={glowRef}
-            className="absolute w-[420px] h-[420px] md:w-[620px] md:h-[620px] rounded-full pointer-events-none opacity-0 -mt-20"
+            className="absolute w-[420px] h-[420px] md:w-[620px] md:h-[620px] rounded-full pointer-events-none opacity-0 -mt-8"
             style={{ background: "radial-gradient(circle, rgba(255,203,5,0.35) 0%, rgba(255,203,5,0) 70%)" }}
           />
-          <div className="text-center flex flex-col items-center justify-center -mt-20">
+          <div className="text-center flex flex-col items-center justify-center -mt-8">
             <img
               ref={logoRef}
               src={getAssetPath("/images/brands/global-logo.svg")}
@@ -298,17 +298,6 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
 
       </div>
 
-      <DealerMap
-        eyebrow={t.dealerEyebrow}
-        title={t.dealerTitle}
-        hint={t.dealerHint}
-        badge={t.dealerBadge}
-        dealerLabel={t.dealerLabel}
-        language={language}
-        accent={GLOBAL_ACCENT}
-        theme="light"
-      />
-
       <CategoryShowcase
         label={t.popularLabel}
         title={t.popularTitle}
@@ -319,6 +308,17 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         countLabel={t.categoryCountLabel}
         viewAllLabel={t.viewAllLabel}
         align="left"
+        theme="light"
+      />
+
+      <DealerMap
+        eyebrow={t.dealerEyebrow}
+        title={t.dealerTitle}
+        hint={t.dealerHint}
+        badge={t.dealerBadge}
+        dealerLabel={t.dealerLabel}
+        language={language}
+        accent={GLOBAL_ACCENT}
         theme="light"
       />
 

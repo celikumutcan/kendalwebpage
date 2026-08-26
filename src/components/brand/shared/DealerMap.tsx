@@ -63,7 +63,7 @@ export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, 
         </span>
       </div>
 
-      <div ref={wrapperRef} className="max-w-[64rem] mx-auto">
+      <div ref={wrapperRef} className="max-w-7xl mx-auto">
         {shouldLoad ? (
           <DealerMapInner language={language} accent={accent} theme={theme} dealerLabel={dealerLabel} />
         ) : (
