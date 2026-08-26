@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { Product, getProductImageUrl, products, getSlugByProductId } from "@/data/products";
+import { Product, getProductImageUrl, products } from "@/data/products";
 import { getAssetPath } from "@/lib/basePath";
 
 interface ProductDetailClientProps {
@@ -104,6 +104,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
     }
   }
 
+  const isProd = process.env.NODE_ENV === "production";
+  const homeHref = isLight && isProd ? `/brand/${brandName}` : "/";
+  const categoryName = product.category?.[language]?.[0] || product.category?.tr?.[0] || null;
+  const categoryHref = `${isLight && isProd ? `/brand/${brandName}/urunler` : "/urunler"}${categoryName ? `?category=${encodeURIComponent(categoryName)}` : ""}`;
+
   const isDimensionToken = (token: string) => /^\d+[x*×]\d+$/i.test(token || "");
   const getBaseName = (name: string) => {
     const words = (name || "").trim().split(' ');
@@ -118,8 +123,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const variations = Object.values(products).filter(p => {
     return getBaseName(p.name.tr) === baseModel;
   });
-
-  const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
   const allAttrs = attributes || [];
   let rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
@@ -258,7 +261,23 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
         )}
       </div>
 
-      <div className="relative z-10 container mx-auto max-w-7xl px-6">
+      <div className="relative z-10 container mx-auto max-w-[1400px] px-6 lg:px-10">
+
+        {isLight && (
+          <nav aria-label="breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs font-medium mb-6 text-zinc-400">
+            <Link href={homeHref} className="transition-colors hover:text-zinc-700">
+              {language === "en" ? "Home" : "Ana Sayfa"}
+            </Link>
+            <span className="opacity-50">/</span>
+            <Link href={categoryHref} className="transition-colors hover:text-zinc-700">
+              {categoryName || (language === "en" ? "Products" : "Ürünler")}
+            </Link>
+            <span className="opacity-50">/</span>
+            <span className="truncate max-w-[200px] text-zinc-600">
+              {displayName}
+            </span>
+          </nav>
+        )}
 
         <div className="flex flex-col md:flex-row items-center justify-center relative mb-8 md:mb-10 gap-6 md:gap-0">
 
@@ -295,7 +314,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
         </div>
 
-        <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full max-w-6xl mx-auto gap-10 lg:gap-14">
+        <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full gap-10 lg:gap-14">
 
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
@@ -355,23 +374,35 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 </div>
               )}
 
-              {pdfFormFile && (
-                <a
-                  href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
-                  download={pdfFormFile}
-                  className={`group inline-flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm hover:-translate-y-0.5 ${isLight ? "bg-white text-zinc-800 border-zinc-200 hover:border-zinc-300 hover:shadow-md" : "bg-white/[0.04] text-white border-white/10 hover:bg-white/[0.08] hover:border-white/20"}`}
+              <div className="flex flex-wrap justify-center gap-3">
+                <Link
+                  href={`${homeHref}#iletisim`}
+                  className={`group inline-flex items-center gap-2.5 pl-5 pr-4 py-2.5 rounded-full font-bold text-sm transition-all duration-300 shadow-sm hover:-translate-y-0.5 ${isLight ? `${themeColor} text-white hover:brightness-110` : "bg-white text-zinc-900 hover:bg-white/90"}`}
                 >
-                  <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isLight ? themePillBg : "bg-white/10"}`}>
-                    <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H8a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </span>
-                  <span>{language === "tr" ? "Ürün Bilgi Formu İndir" : "Download Product Info Sheet"}</span>
-                  <svg className="w-4 h-4 opacity-40 -translate-x-1 group-hover:opacity-90 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <span>{language === "tr" ? "Teklif İste" : "Request a Quote"}</span>
+                  <svg className="w-4 h-4 opacity-70 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </a>
-              )}
+                </Link>
+
+                {pdfFormFile && (
+                  <a
+                    href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
+                    download={pdfFormFile}
+                    className={`group inline-flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm hover:-translate-y-0.5 ${isLight ? "bg-white text-zinc-800 border-zinc-200 hover:border-zinc-300 hover:shadow-md" : "bg-white/[0.04] text-white border-white/10 hover:bg-white/[0.08] hover:border-white/20"}`}
+                  >
+                    <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isLight ? themePillBg : "bg-white/10"}`}>
+                      <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H8a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </span>
+                    <span>{language === "tr" ? "Ürün Bilgi Formu İndir" : "Download Product Info Sheet"}</span>
+                    <svg className="w-4 h-4 opacity-40 -translate-x-1 group-hover:opacity-90 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </a>
+                )}
+              </div>
             </div>
 
             <div className="w-full flex flex-col items-center gap-16">
@@ -471,12 +502,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 const isVirtual = variations.length === 1 && match.variant.id === product.id;
                 
                 const isSelected = match.variant.id === product.id && !isVirtual;
-                const categoryName = match.variant.category?.tr?.[0];
-                const categorySlug = categoryName ? slugify(categoryName) : (isK2 ? "aydinlatma" : "vantilator");
-                const variantSlug = getSlugByProductId(match.variant.id) || match.variant.id;
-                const variantUrl = isLight && process.env.NODE_ENV === "production"
-                  ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
-                  : `/urunler/${categorySlug}/${variantSlug}`;
 
                 let specificDotColor = 'bg-zinc-200';
                 const ctUpper = label.toUpperCase();
@@ -502,15 +527,32 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 else if (ctUpper.includes("CCT")) specificDotColor = 'bg-gradient-to-r from-[#FFB46B] via-[#E4F1FE] to-[#FFEDC2]';
                 else if (ctUpper.includes("RGB")) specificDotColor = 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500';
 
+                const pillContent = (
+                  <>
+                    {showColorDot && <span className={`w-3 h-3 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
+                    <span>{label}</span>
+                  </>
+                );
+
+                const baseClass = "flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold whitespace-nowrap transition-all duration-200";
+
+                if (isSelected || isVirtual) {
+                  return (
+                    <div
+                      key={match.variant.id + "-" + label}
+                      className={`${baseClass} border-2 ${isLight ? `${themePillBg} ${themeText} border-current` : "bg-white/15 text-white border-white/40"}`}
+                    >
+                      {pillContent}
+                    </div>
+                  );
+                }
+
                 return (
                   <div
                     key={match.variant.id + "-" + label}
-                    className={`flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold border whitespace-nowrap cursor-default ${
-                      isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)]" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)]"
-                      }`}
+                    className={`${baseClass} border cursor-default ${isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)]" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)]"}`}
                   >
-                    {showColorDot && <span className={`w-3 h-3 rounded-full ${specificDotColor} border border-black/10 shadow-sm flex-shrink-0`} />}
-                    <span>{label}</span>
+                    {pillContent}
                   </div>
                 );
               };
