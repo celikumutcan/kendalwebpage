@@ -20,6 +20,11 @@ const NAME_OVERRIDES: Record<string, string> = {
   Afyon: "Afyonkarahisar",
 };
 
+const EXCLUDED_PROVINCES = [
+  "Artvin", "Rize", "Ağrı", "Hakkari", "Siirt", "Muş", "Erzincan", "Tunceli",
+  "Karaman", "Aksaray", "Zonguldak", "Çankırı", "Edirne", "Çanakkale"
+];
+
 interface DealerMapInnerProps {
   language: string;
   accent: string;
@@ -122,23 +127,24 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
           aria-label={language === "en" ? "Dealer coverage map of Turkey" : "Türkiye bayi kapsama haritası"}
         >
           {provinces.map((p) => {
-            const isActive = activeName === p.name;
+            const isExcluded = EXCLUDED_PROVINCES.includes(p.name);
+            const isActive = !isExcluded && activeName === p.name;
             return (
               <path
                 key={p.name}
                 d={p.d}
-                fill="var(--accent)"
-                fillOpacity={isActive ? 0.85 : 0.35}
+                fill={isExcluded ? (isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)") : "var(--accent)"}
+                fillOpacity={isExcluded ? 1 : (isActive ? 0.85 : 0.35)}
                 stroke={isDark ? "rgba(255,255,255,0.35)" : "rgba(255,255,255,0.9)"}
                 strokeWidth={isActive ? 1.6 : 0.8}
-                tabIndex={0}
-                role="button"
+                tabIndex={isExcluded ? -1 : 0}
+                role={isExcluded ? "presentation" : "button"}
                 aria-label={p.name}
-                className="cursor-pointer outline-none transition-[fill-opacity,stroke-width] duration-200"
-                onMouseEnter={() => setActiveName(p.name)}
-                onMouseLeave={() => clear(p.name)}
-                onFocus={() => setActiveName(p.name)}
-                onBlur={() => clear(p.name)}
+                className={`${isExcluded ? "" : "cursor-pointer"} outline-none transition-[fill-opacity,stroke-width] duration-200`}
+                onMouseEnter={isExcluded ? undefined : () => setActiveName(p.name)}
+                onMouseLeave={isExcluded ? undefined : () => clear(p.name)}
+                onFocus={isExcluded ? undefined : () => setActiveName(p.name)}
+                onBlur={isExcluded ? undefined : () => clear(p.name)}
               />
             );
           })}
