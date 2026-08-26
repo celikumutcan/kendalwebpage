@@ -59,7 +59,7 @@ export default async function BrandProductsPage({
   const glowSoft = isK2 ? "bg-amber-200/25" : brandName === "vanti" ? "bg-cyan-200/25" : "bg-yellow-200/20";
 
   return (
-    <div className={`relative w-full text-zinc-900 min-h-screen py-12 px-6 overflow-hidden ${isK2 ? "bg-orange-50/50" : brandName === "vanti" ? "bg-blue-50/50" : "bg-[#FFDA51]/10"}`}>
+    <div className={`relative w-full text-zinc-900 min-h-screen pt-32 pb-12 px-6 overflow-hidden ${isK2 ? "bg-orange-50/50" : brandName === "vanti" ? "bg-blue-50/50" : "bg-[#FFDA51]/10"}`}>
       <div className={`absolute -top-32 -left-48 w-[560px] h-[560px] rounded-full blur-[140px] pointer-events-none z-0 ${glowStrong}`} />
       <div className={`absolute top-1/3 -right-56 w-[640px] h-[640px] rounded-full blur-[160px] pointer-events-none z-0 ${glowSoft}`} />
       <div className={`absolute bottom-0 left-1/4 w-[480px] h-[480px] rounded-full blur-[150px] pointer-events-none z-0 ${glowSoft}`} />

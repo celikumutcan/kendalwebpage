@@ -45,7 +45,7 @@ export default async function BrandLayout({
     <div className="brand-layout-container min-h-screen flex flex-col bg-white">
       <BrandNavbar brandName={brandName} />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         {children}
       </main>
 

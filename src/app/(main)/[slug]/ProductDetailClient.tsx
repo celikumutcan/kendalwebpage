@@ -253,10 +253,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               <Link href={categoryHref} className="transition-colors hover:text-zinc-700">
                 {categoryName || (language === "en" ? "Products" : "Ürünler")}
               </Link>
-              <span className="opacity-50">/</span>
-              <span className="truncate max-w-[200px] text-zinc-600">
-                {displayName}
-              </span>
             </nav>
           )}
         </div>
@@ -547,6 +543,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   items: uniqueSockets.map(socket => ({ value: socket, match: getBestVariantMatch('socket', socket) })).filter(x => x.match),
                 },
               ].filter(Boolean) as { key: string; label: string; showDot: boolean; items: { value: string; match: any }[] }[];
+
+              if (optionGroups.length === 0) return null;
 
               return (
                 <div className={`w-full max-w-xl mx-auto rounded-[2rem] border p-6 md:p-8 flex flex-col gap-6 ${isLight ? `${themeImageBg} backdrop-blur-xl border-white shadow-[0_30px_80px_-30px_rgba(0,0,0,0.12)]` : "bg-white/[0.03] border-white/[0.08]"}`}>
