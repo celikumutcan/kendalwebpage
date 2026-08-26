@@ -8,8 +8,8 @@ import { Product } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
 import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
-import { ProductGrid } from "@/components/brand/shared/ProductGrid";
-import { ExportMap } from "@/components/brand/shared/ExportMap";
+import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
+import { DealerMap } from "@/components/brand/shared/DealerMap";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -18,8 +18,8 @@ if (typeof window !== "undefined") {
 const GLOBAL_ACCENT = "#e6b800";
 
 interface GlobalCreativePageProps {
-  popularProducts: Product[];
   newProducts: Product[];
+  allProducts: Product[];
 }
 
 const translations = {
@@ -31,15 +31,19 @@ const translations = {
     sec1Text: "Kendal Elektrik güvencesiyle, projelerinizi aydınlatacak en parlak ve en güçlü çözümler.",
     sec2Title: "Sınırsız Performans",
     sec2Text: "Endüstriyel tesislerden yaşam alanlarına kadar her noktada ışığın enerjisini hissettiren benzersiz aydınlatma ağı.",
-    popularLabel: "Çok Tercih Edilen",
-    popularTitle: "Popüler Ürünler",
+    popularLabel: "Ürün Kategorileri",
+    popularTitle: "Kategorilerimiz",
+    categoryCountLabel: "Ürün",
+    viewAllLabel: "Tüm Kategoriler",
     newLabel: "Yeni Çıkanlar",
     newTitle: "Yeni Ürünler",
     modelLabel: "Model",
     viewLabel: "İncele",
-    exportEyebrow: "Global Erişim",
-    exportTitle: "Kendal Global, dünyanın dört bir yanında.",
-    exportHint: "Haritadaki noktalara tıklayın.",
+    dealerEyebrow: "Yurt İçi Ağımız",
+    dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
+    dealerBadge: "81 İlde Yetkili Bayimiz Var",
+    dealerLabel: "Yetkili Bayi",
+    dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     sec3Title: "Geleceğin Işığı",
     sec3Text: "Daha parlak, daha uzun ömürlü ve sınırları zorlayan yüksek teknolojili tasarımlar.",
     catalogBtn: "Ürünleri İncele"
@@ -52,15 +56,19 @@ const translations = {
     sec1Text: "With Kendal Elektrik's assurance, the brightest and most powerful solutions to illuminate your projects.",
     sec2Title: "Limitless Performance",
     sec2Text: "A unique lighting network that makes you feel the energy of light everywhere from industrial facilities to living spaces.",
-    popularLabel: "Most Loved",
-    popularTitle: "Popular Products",
+    popularLabel: "Product Categories",
+    popularTitle: "Our Categories",
+    categoryCountLabel: "Products",
+    viewAllLabel: "All Categories",
     newLabel: "Just Arrived",
     newTitle: "New Products",
     modelLabel: "Model",
     viewLabel: "View",
-    exportEyebrow: "Global Reach",
-    exportTitle: "Kendal Global, everywhere around the world.",
-    exportHint: "Click a point on the map.",
+    dealerEyebrow: "Our Domestic Network",
+    dealerTitle: "By your side, in every corner of Turkey.",
+    dealerBadge: "Authorized Dealers in All 81 Provinces",
+    dealerLabel: "Authorized Dealer",
+    dealerHint: "Hover a province to explore our dealer network.",
     sec3Title: "Light of the Future",
     sec3Text: "Brighter, longer-lasting, and boundary-pushing high-tech designs.",
     catalogBtn: "Explore Products"
@@ -89,7 +97,7 @@ const SwitchIcon = () => (
 const CURSOR_END_X = 45;
 const CURSOR_END_Y = 101;
 
-export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreativePageProps) {
+export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativePageProps) {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations] || translations.tr;
 
@@ -290,21 +298,41 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
 
       </div>
 
-      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={GLOBAL_ACCENT} theme="light" />
+      <DealerMap
+        eyebrow={t.dealerEyebrow}
+        title={t.dealerTitle}
+        hint={t.dealerHint}
+        badge={t.dealerBadge}
+        dealerLabel={t.dealerLabel}
+        language={language}
+        accent={GLOBAL_ACCENT}
+        theme="light"
+      />
 
-      <ProductCarousel
+      <CategoryShowcase
         label={t.popularLabel}
         title={t.popularTitle}
-        products={popularProducts}
+        allProducts={allProducts}
+        language={language}
+        brandName="global"
+        accent={GLOBAL_ACCENT}
+        countLabel={t.categoryCountLabel}
+        viewAllLabel={t.viewAllLabel}
+        align="left"
+        theme="light"
+      />
+
+      <ProductCarousel
+        label={t.newLabel}
+        title={t.newTitle}
+        products={newProducts}
         language={language}
         modelLabel={t.modelLabel}
         viewLabel={t.viewLabel}
         brandName="global"
         accent={GLOBAL_ACCENT}
-        align="left"
+        align="right"
       />
-
-      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="global" accent={GLOBAL_ACCENT} theme="light" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32">
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">

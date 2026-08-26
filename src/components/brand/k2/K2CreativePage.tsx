@@ -5,7 +5,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { K2Scene } from "./K2Scene";
 import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
-import { ProductGrid } from "@/components/brand/shared/ProductGrid";
+import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
+import { DealerMap } from "@/components/brand/shared/DealerMap";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 import Link from "next/link";
 import { Product } from "@/data/products";
@@ -20,24 +21,31 @@ if (typeof window !== "undefined") {
 const K2_ACCENT = "#f97316";
 
 interface K2CreativePageProps {
-  popularProducts: Product[];
   newProducts: Product[];
+  allProducts: Product[];
 }
 
 const translations = {
   tr: {
-    heroSub: "AYDINLATMANIN ZİRVESİ",
+    heroSub: "KARANLIĞI AYDINLATIYORUZ",
     explore: "Hikayeyi Keşfet",
     sec1Title: "Zirve",
-    sec1Text: "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Aydınlatmanın Zirvesi' olma vizyonuyla hareket etmektedir.",
+    sec1Text: "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Karanlığı Aydınlatıyoruz' vizyonuyla hareket etmektedir.",
     sec2Title: "Geniş Yelpaze",
-    sec2Text: "Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eder.",
-    popularLabel: "Çok Tercih Edilen",
-    popularTitle: "Popüler Ürünler",
+    sec2Text: "Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eder. K2, Türkiye'nin en prestijli ve güvenilir aydınlatma markalarından biri olarak sektöre öncülük ediyor.",
+    popularLabel: "Ürün Kategorileri",
+    popularTitle: "Kategorilerimiz",
+    categoryCountLabel: "Ürün",
+    viewAllLabel: "Tüm Kategoriler",
     newLabel: "Yeni Çıkanlar",
     newTitle: "Yeni Ürünler",
     modelLabel: "Model",
     viewLabel: "İncele",
+    dealerEyebrow: "Yurt İçi Ağımız",
+    dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
+    dealerBadge: "81 İlde Yetkili Bayimiz Var",
+    dealerLabel: "Yetkili Bayi",
+    dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     exportEyebrow: "Global Erişim",
     exportTitle: "K2, sınırları aşarak dünyanın dört bir yanını aydınlatıyor.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -46,18 +54,25 @@ const translations = {
     catalogBtn: "Ürünleri İncele"
   },
   en: {
-    heroSub: "THE PEAK OF LIGHTING",
+    heroSub: "WE ILLUMINATE THE DARKNESS",
     explore: "Discover the Story",
     sec1Title: "The Peak",
-    sec1Text: "Taking its name from K2, one of the most difficult and prestigious mountains for climbers to conquer, our brand operates with the vision of being the 'Peak of Lighting'.",
+    sec1Text: "Taking its name from K2, one of the most difficult and prestigious mountains for climbers to conquer, our brand operates with the vision to 'Illuminate the Darkness'.",
     sec2Title: "Wide Range",
-    sec2Text: "Represents the wide range of Kendal Elektrik's professional LED lighting systems, energy efficiency-oriented solutions, and decorative products.",
-    popularLabel: "Most Loved",
-    popularTitle: "Popular Products",
+    sec2Text: "Represents the wide range of Kendal Elektrik's professional LED lighting systems, energy efficiency-oriented solutions, and decorative products. K2 leads the industry as one of Turkey's most prestigious and trusted lighting brands.",
+    popularLabel: "Product Categories",
+    popularTitle: "Our Categories",
+    categoryCountLabel: "Products",
+    viewAllLabel: "All Categories",
     newLabel: "Just Arrived",
     newTitle: "New Products",
     modelLabel: "Model",
     viewLabel: "View",
+    dealerEyebrow: "Our Domestic Network",
+    dealerTitle: "By your side, in every corner of Turkey.",
+    dealerBadge: "Authorized Dealers in All 81 Provinces",
+    dealerLabel: "Authorized Dealer",
+    dealerHint: "Hover a province to explore our dealer network.",
     exportEyebrow: "Global Reach",
     exportTitle: "K2 lights up every corner of the world, beyond our borders.",
     exportHint: "Click a point on the map.",
@@ -67,7 +82,7 @@ const translations = {
   }
 };
 
-export function K2CreativePage({ popularProducts, newProducts }: K2CreativePageProps) {
+export function K2CreativePage({ newProducts, allProducts }: K2CreativePageProps) {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations] || translations.tr;
 
@@ -154,21 +169,41 @@ export function K2CreativePage({ popularProducts, newProducts }: K2CreativePageP
         </div>
       </section>
 
+      <DealerMap
+        eyebrow={t.dealerEyebrow}
+        title={t.dealerTitle}
+        hint={t.dealerHint}
+        badge={t.dealerBadge}
+        dealerLabel={t.dealerLabel}
+        language={language}
+        accent={K2_ACCENT}
+      />
+
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
 
-      <ProductCarousel
+      <CategoryShowcase
         label={t.popularLabel}
         title={t.popularTitle}
-        products={popularProducts}
+        allProducts={allProducts}
+        language={language}
+        brandName="k2"
+        accent={K2_ACCENT}
+        countLabel={t.categoryCountLabel}
+        viewAllLabel={t.viewAllLabel}
+        align="left"
+      />
+
+      <ProductCarousel
+        label={t.newLabel}
+        title={t.newTitle}
+        products={newProducts}
         language={language}
         modelLabel={t.modelLabel}
         viewLabel={t.viewLabel}
         brandName="k2"
         accent={K2_ACCENT}
-        align="left"
+        align="right"
       />
-
-      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="k2" accent={K2_ACCENT} />
 
       <section className="relative z-10 w-full min-h-screen flex flex-col justify-center px-6 md:px-24 py-24">
         <div className="max-w-4xl reveal-text">

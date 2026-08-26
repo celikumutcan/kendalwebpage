@@ -59,30 +59,27 @@ export default async function BrandPage({
   const { brandName } = resolvedParams;
 
   if (brandName === "k2") {
-    const K2_POPULAR_IDS = ["7803", "4535", "KES120", "KTL159", "KLF190", "KML400"];
     const K2_NEW_IDS = ["KST510", "KWL117", "KST303", "KES498", "KCL005_1", "KSL2431", "KST220", "KEL273L"];
-    const popularProducts = K2_POPULAR_IDS.map(id => products[id]).filter(Boolean);
     const newProducts = K2_NEW_IDS.map(id => products[id]).filter(Boolean);
+    const allProducts = Object.values(products).filter(p => p.brand === "k2");
 
-    return <K2CreativePage popularProducts={popularProducts} newProducts={newProducts} />;
+    return <K2CreativePage newProducts={newProducts} allProducts={allProducts} />;
   }
 
   if (brandName === "global") {
-    const GLOBAL_POPULAR_IDS = ["4206", "KES171", "GES240", "KCL016", "GLF292", "KTL180"];
     const GLOBAL_NEW_IDS = ["GDL420", "KES172", "GES230", "KCL060", "GLF295", "KKP285A", "KDB271A", "KCL007"];
-    const popularProducts = GLOBAL_POPULAR_IDS.map(id => products[id]).filter(Boolean);
     const newProducts = GLOBAL_NEW_IDS.map(id => products[id]).filter(Boolean);
+    const allProducts = Object.values(products).filter(p => p.brand === "global");
 
-    return <GlobalCreativePage popularProducts={popularProducts} newProducts={newProducts} />;
+    return <GlobalCreativePage newProducts={newProducts} allProducts={allProducts} />;
   }
 
   if (brandName === "vanti") {
-    const VANTI_POPULAR_IDS = ["KCF298", "KCF291", "KCF295", "KCF273", "KSP100", "KCF700"];
     const VANTI_NEW_IDS = ["KCF306", "KCF301", "KCF282", "KCF280", "KCF299D", "KCF308", "KCF271", "KCF276"];
-    const popularProducts = VANTI_POPULAR_IDS.map(id => products[id]).filter(Boolean);
     const newProducts = VANTI_NEW_IDS.map(id => products[id]).filter(Boolean);
+    const allProducts = Object.values(products).filter(p => p.brand === "vanti");
 
-    return <VantiCreativePage popularProducts={popularProducts} newProducts={newProducts} />;
+    return <VantiCreativePage newProducts={newProducts} allProducts={allProducts} />;
   }
 
   return (

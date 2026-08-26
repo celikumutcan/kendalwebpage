@@ -11,7 +11,8 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
 import { VantiPreloader } from "./VantiPreloader";
 import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
-import { ProductGrid } from "@/components/brand/shared/ProductGrid";
+import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
+import { DealerMap } from "@/components/brand/shared/DealerMap";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 
 const VantiScene = dynamic(
@@ -29,8 +30,8 @@ if (typeof window !== "undefined") {
 }
 
 interface VantiCreativePageProps {
-  popularProducts: Product[];
   newProducts: Product[];
+  allProducts: Product[];
 }
 
 const VANTI_ACCENT = "#0f766e";
@@ -43,12 +44,19 @@ const translations = {
     sec1Text: "Evinizin her köşesinde doğanın tazeleyici esintisini hissetmeniz için en sessiz ve güçlü motorları tasarlıyoruz.",
     sec2Title: "Akıllı Soğutma",
     sec2Text: "Geniş açılı salınım ve aerodinamik pervane yapısıyla havayı homojen dağıtır, anında ferahlık sağlar.",
-    popularLabel: "Çok Tercih Edilen",
-    popularTitle: "Popüler Ürünler",
+    popularLabel: "Ürün Kategorileri",
+    popularTitle: "Kategorilerimiz",
+    categoryCountLabel: "Ürün",
+    viewAllLabel: "Tüm Kategoriler",
     newLabel: "Yeni Çıkanlar",
     newTitle: "Yeni Ürünler",
     modelLabel: "Model",
     viewLabel: "İncele",
+    dealerEyebrow: "Yurt İçi Ağımız",
+    dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
+    dealerBadge: "81 İlde Yetkili Bayimiz Var",
+    dealerLabel: "Yetkili Bayi",
+    dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     exportEyebrow: "Global Erişim",
     exportTitle: "Vanti'nin serinliği dünyanın dört bir yanında.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -63,12 +71,19 @@ const translations = {
     sec1Text: "We design the quietest and most powerful motors so you can feel the refreshing breeze of nature in every corner of your home.",
     sec2Title: "Smart Cooling",
     sec2Text: "With wide-angle oscillation and aerodynamic blade structure, it distributes air evenly, providing instant freshness.",
-    popularLabel: "Most Loved",
-    popularTitle: "Popular Products",
+    popularLabel: "Product Categories",
+    popularTitle: "Our Categories",
+    categoryCountLabel: "Products",
+    viewAllLabel: "All Categories",
     newLabel: "Just Arrived",
     newTitle: "New Products",
     modelLabel: "Model",
     viewLabel: "View",
+    dealerEyebrow: "Our Domestic Network",
+    dealerTitle: "By your side, in every corner of Turkey.",
+    dealerBadge: "Authorized Dealers in All 81 Provinces",
+    dealerLabel: "Authorized Dealer",
+    dealerHint: "Hover a province to explore our dealer network.",
     exportEyebrow: "Global Reach",
     exportTitle: "Vanti's cool breeze, everywhere around the world.",
     exportHint: "Click a point on the map.",
@@ -78,7 +93,7 @@ const translations = {
   }
 };
 
-export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativePageProps) {
+export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLDivElement>(null);
   const { language } = useLanguage();
@@ -172,21 +187,43 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         </div>
       </section>
 
+      <DealerMap
+        eyebrow={t.dealerEyebrow}
+        title={t.dealerTitle}
+        hint={t.dealerHint}
+        badge={t.dealerBadge}
+        dealerLabel={t.dealerLabel}
+        language={language}
+        accent={VANTI_ACCENT}
+        theme="light"
+      />
+
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
 
-      <ProductCarousel
+      <CategoryShowcase
         label={t.popularLabel}
         title={t.popularTitle}
-        products={popularProducts}
+        allProducts={allProducts}
+        language={language}
+        brandName="vanti"
+        accent={VANTI_ACCENT}
+        countLabel={t.categoryCountLabel}
+        viewAllLabel={t.viewAllLabel}
+        align="left"
+        theme="light"
+      />
+
+      <ProductCarousel
+        label={t.newLabel}
+        title={t.newTitle}
+        products={newProducts}
         language={language}
         modelLabel={t.modelLabel}
         viewLabel={t.viewLabel}
         brandName="vanti"
         accent={VANTI_ACCENT}
-        align="left"
+        align="right"
       />
-
-      <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="vanti" accent={VANTI_ACCENT} theme="light" />
 
       <section className="relative z-10 w-full min-h-[80vh] flex flex-col items-center justify-center px-6 md:px-32 py-24 text-center">
         <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-16 rounded-[4rem]">

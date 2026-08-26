@@ -1,0 +1,179 @@
+"use client";
+
+import Link from "next/link";
+import { useMemo, type CSSProperties } from "react";
+import { Product, getCategoryGroupForCategory } from "@/data/products";
+
+interface CategoryShowcaseProps {
+  label: string;
+  title: string;
+  allProducts: Product[];
+  language: string;
+  brandName: string;
+  accent: string;
+  countLabel: string;
+  viewAllLabel: string;
+  align?: "left" | "right";
+  theme?: "dark" | "light";
+}
+
+interface CategoryItem {
+  key: string;
+  displayName: string;
+  count: number;
+  href: string;
+}
+
+export function CategoryShowcase({
+  label,
+  title,
+  allProducts,
+  language,
+  brandName,
+  accent,
+  countLabel,
+  viewAllLabel,
+  align = "left",
+  theme = "dark",
+}: CategoryShowcaseProps) {
+  const lang = language === "en" ? "en" : "tr";
+  const isDark = theme === "dark";
+  const catalogBase = process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler";
+
+  const categories = useMemo<CategoryItem[]>(() => {
+    const raw = new Map<string, { nameTr: string; nameEn?: string; count: number }>();
+    for (const p of allProducts) {
+      const nameTr = p.category?.tr?.[0];
+      if (!nameTr) continue;
+      const nameEn = p.category?.en?.[0];
+      const existing = raw.get(nameTr);
+      if (existing) {
+        existing.count += 1;
+        if (!existing.nameEn && nameEn) existing.nameEn = nameEn;
+      } else {
+        raw.set(nameTr, { nameTr, nameEn, count: 1 });
+      }
+    }
+
+    const isK2 = brandName === "k2";
+    const groups = new Map<string, { nameTr: string; nameEn: string; count: number }>();
+    const items: CategoryItem[] = [];
+
+    for (const cat of raw.values()) {
+      const groupDef = isK2 ? getCategoryGroupForCategory(cat.nameTr, brandName) : undefined;
+      if (groupDef) {
+        const g = groups.get(groupDef.key);
+        if (g) g.count += cat.count;
+        else groups.set(groupDef.key, { nameTr: groupDef.name.tr, nameEn: groupDef.name.en, count: cat.count });
+        continue;
+      }
+      items.push({
+        key: cat.nameTr,
+        displayName: (lang === "en" ? cat.nameEn : cat.nameTr) || cat.nameTr,
+        count: cat.count,
+        href: `${catalogBase}?category=${encodeURIComponent(cat.nameTr)}`,
+      });
+    }
+
+    for (const [key, g] of groups) {
+      items.push({
+        key,
+        displayName: (lang === "en" ? g.nameEn : g.nameTr) || g.nameTr,
+        count: g.count,
+        href: `${catalogBase}?group=${key}`,
+      });
+    }
+
+    const collator = new Intl.Collator(lang === "en" ? "en" : "tr", { sensitivity: "base" });
+    items.sort((a, b) => collator.compare(a.displayName, b.displayName));
+    return items;
+  }, [allProducts, brandName, lang, catalogBase]);
+
+  if (categories.length === 0) return null;
+
+  const duration = Math.max(20, categories.length * 4.5);
+  const loopItems = [...categories, ...categories];
+
+  return (
+    <section
+      className="reveal-text relative z-10 w-full py-20 md:py-28 overflow-hidden"
+      style={{ "--accent": accent } as CSSProperties}
+    >
+      <div className="mb-10 md:mb-14 px-6 md:px-24 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h3
+            className="font-semibold tracking-widest mb-4 uppercase text-sm md:text-base text-[var(--accent)] border-l-2 pl-4"
+            style={{ borderColor: accent }}
+          >
+            {label}
+          </h3>
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight">{title}</h2>
+        </div>
+        <Link
+          href={catalogBase}
+          className={`group inline-flex items-center gap-2 shrink-0 text-sm font-bold uppercase tracking-wide ${
+            isDark ? "text-white/60 hover:text-white" : "text-zinc-500 hover:text-zinc-900"
+          } transition-colors duration-300`}
+        >
+          {viewAllLabel}
+          <svg
+            className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-300"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </Link>
+      </div>
+
+      <div className="k2-marquee-pause relative">
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-[var(--page-bg,#0a0a0b)] to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-[var(--page-bg,#0a0a0b)] to-transparent z-10" />
+
+        <div className="overflow-hidden motion-reduce:overflow-x-auto">
+          <div
+            className={`k2-marquee-track flex w-max gap-4 md:gap-5 ${align === "right" ? "k2-marquee-reverse" : ""}`}
+            style={{ animationDuration: `${duration}s` }}
+          >
+            {loopItems.map((item, i) => (
+              <Link
+                key={`${item.key}-${i}`}
+                href={item.href}
+                tabIndex={i < categories.length ? 0 : -1}
+                aria-hidden={i >= categories.length}
+                className={`group shrink-0 flex items-center gap-4 md:gap-5 rounded-2xl px-6 py-5 md:px-7 md:py-6 min-w-[230px] sm:min-w-[270px] transition-all duration-300 hover:-translate-y-1 ${
+                  isDark
+                    ? "bg-white/5 border border-white/10 hover:border-[var(--accent)] hover:bg-white/[0.08]"
+                    : "bg-white border border-black/5 shadow-sm hover:shadow-[0_20px_40px_-20px_color-mix(in_srgb,var(--accent)_35%,transparent)]"
+                }`}
+              >
+                <span className={`text-xs font-bold tabular-nums ${isDark ? "text-white/30" : "text-zinc-300"}`}>
+                  {String((i % categories.length) + 1).padStart(2, "0")}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h4 className={`font-bold text-base md:text-lg leading-snug truncate ${isDark ? "text-white" : "text-zinc-900"}`}>
+                    {item.displayName}
+                  </h4>
+                  <span className={`text-[11px] uppercase tracking-wider font-medium ${isDark ? "text-white/40" : "text-zinc-400"}`}>
+                    {item.count} {countLabel}
+                  </span>
+                </div>
+                <svg
+                  className={`w-4 h-4 shrink-0 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[var(--accent)] ${
+                    isDark ? "text-white/30" : "text-zinc-300"
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
