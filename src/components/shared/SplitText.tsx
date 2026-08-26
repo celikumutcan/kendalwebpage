@@ -45,7 +45,6 @@ export const SplitText = ({
     return () => ctx.revert();
   }, [text, delay, stagger]);
 
-  // Split text by space for words
   const words = text.split(" ");
 
   return (

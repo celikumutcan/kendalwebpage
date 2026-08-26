@@ -4,14 +4,13 @@ import React from "react";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 interface BrandAboutProps {
-  brandName: string; // 'k2' or 'vanti'
+  brandName: string;
 }
 
 export const BrandAbout = ({ brandName }: BrandAboutProps) => {
   const { t } = useLanguage();
   const isK2 = brandName === "k2";
   
-  // Use 'any' to bypass strict TS checking for dynamically accessed nested keys
   const brandInfo = (t as any).brand_info?.[brandName] || {
     title: isK2 ? "K2 Hakkında" : brandName === "vanti" ? "Vanti Hakkında" : "Global Hakkında",
     description: brandName === "global" 

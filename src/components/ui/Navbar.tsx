@@ -19,12 +19,10 @@ export const Navbar = () => {
   const isHome = pathname === "/";
   const lenis = useLenis();
 
-  // Close mobile menu when route changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -36,7 +34,6 @@ export const Navbar = () => {
     };
   }, [isMobileMenuOpen]);
 
-  // Tracks which section is currently in view to highlight the matching nav link
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["brands", "retail", "projects", "company-video", "catalog"];
@@ -61,7 +58,6 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scrolls to the matching section when landing on the homepage with a hash in the URL
   useEffect(() => {
     if (isHome && typeof window !== "undefined" && window.location.hash && lenis) {
       const targetId = window.location.hash.substring(1);
@@ -118,7 +114,6 @@ export const Navbar = () => {
       }
     }
     
-    // Close mobile menu if open
     if (isMobileMenuOpen) {
       setIsMobileMenuOpen(false);
     }
@@ -140,7 +135,7 @@ export const Navbar = () => {
         { 
           id: "brand_k2", 
           href: process.env.NODE_ENV === "production" ? "/brand/k2" : "http://k2.localhost:3000", 
-          external: true, // Always open in new tab
+          external: true,
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
@@ -153,7 +148,7 @@ export const Navbar = () => {
         { 
           id: "brand_vanti", 
           href: process.env.NODE_ENV === "production" ? "/brand/vanti" : "http://vanti.localhost:3000", 
-          external: true, // Always open in new tab
+          external: true,
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:scale-105 transition-transform group-hover:bg-white">
@@ -166,7 +161,7 @@ export const Navbar = () => {
         { 
           id: "brand_global", 
           href: process.env.NODE_ENV === "production" ? "/brand/global" : "http://global.localhost:3000", 
-          external: true, // Always open in new tab
+          external: true,
           label: (
             <div className="flex items-center gap-3">
               <div className="bg-white/90 rounded p-1 w-16 h-10 flex items-center justify-center shrink-0 relative group-hover:bg-white transition-colors">
@@ -194,7 +189,6 @@ export const Navbar = () => {
         <Image src={getAssetPath("/images/kendal-logo.svg")} alt="Kendal Elektrik Logo" width={180} height={56} priority className="h-10 md:h-12 w-auto object-contain" />
       </Link>
 
-      {/* Desktop Menu */}
       <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center h-full">
         {navGroups.map((group, gIdx) => (
           <div key={gIdx} className="group relative py-2 cursor-pointer">
@@ -205,7 +199,6 @@ export const Navbar = () => {
               </svg>
             </div>
             
-            {/* Dropdown Menu */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 min-w-[220px]">
               <div className="bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl flex flex-col gap-1">
                 {group.links.map((link) => {
@@ -239,7 +232,6 @@ export const Navbar = () => {
           </div>
         ))}
         
-        {/* Direct Link for Contact */}
         <div className="group relative py-2 cursor-pointer">
           <Link 
             href="/#iletisim" 
@@ -270,7 +262,6 @@ export const Navbar = () => {
           {(t as any).nav?.dealer || "B2B Girişi"}
         </a>
         
-        {/* Mobile Menu Toggle Button */}
         <button 
           className="lg:hidden p-2 -mr-2 text-white/80 hover:text-white transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -290,7 +281,6 @@ export const Navbar = () => {
 
       </nav>
 
-      {/* Mobile Menu Overlay */}
       <div 
         className={`fixed inset-0 top-[64px] md:top-[72px] bg-black/95 backdrop-blur-xl z-40 transition-all duration-300 ease-in-out lg:hidden overflow-y-auto ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto translate-x-0" : "opacity-0 pointer-events-none translate-x-10"

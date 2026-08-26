@@ -5,9 +5,7 @@ import React, { useEffect, useRef } from "react";
 export const CustomCursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
 
-  // High performance mouse tracking (bypasses React state completely)
   useEffect(() => {
-    // Only enable on desktop devices
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
     let isVisible = false;
@@ -15,14 +13,11 @@ export const CustomCursor = () => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!cursorRef.current) return;
       
-      // Show cursor only after first mouse move
       if (!isVisible) {
         cursorRef.current.style.opacity = "1";
         isVisible = true;
       }
 
-      // 250px is half of the 500px width/height to perfectly center it
-      // translate3d uses GPU acceleration and doesn't trigger layout reflows
       cursorRef.current.style.transform = `translate3d(${e.clientX - 250}px, ${e.clientY - 250}px, 0)`;
     };
 

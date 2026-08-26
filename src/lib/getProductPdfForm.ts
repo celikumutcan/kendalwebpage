@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
 
-// Server-only: scans public/urun-bilgi-formlari at build time and matches
-// a product's model/name against the PDF file names, e.g. "KCF308 Ürün Bilgi Formu.pdf".
-// Never import this from a client component ("fs" is not available in the browser).
 
 const PDF_DIR = path.join(process.cwd(), "public", "urun-bilgi-formlari");
 const SUFFIX = " Ürün Bilgi Formu.pdf";
@@ -27,7 +24,6 @@ function loadEntries() {
         ? file.slice(0, -SUFFIX.length)
         : file.replace(/\.pdf$/i, ""),
     }))
-    // Longer/more specific codes first, so e.g. "KCF272L" is checked before "KCF272".
     .sort((a, b) => b.code.length - a.code.length);
 
   return cachedEntries;

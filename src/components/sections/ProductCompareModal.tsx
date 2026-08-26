@@ -57,10 +57,6 @@ export default function ProductCompareModal({ items, language, brandName, texts,
   const accentSolidText = isK2 || isVanti ? "text-white" : "text-zinc-900";
   const accentBorder = isK2 ? "border-orange-100" : isVanti ? "border-blue-100" : "border-yellow-100";
   const accentGradient = isK2 ? "from-orange-50" : isVanti ? "from-blue-50" : "from-yellow-50";
-  // Each attribute row cycles through a distinct color (not just a single
-  // brand tint alternating with white), so e.g. "Motor Gücü" and "Gerilim"
-  // are immediately distinguishable from one another, not just from every
-  // other row.
   const rowPalette = [
     { bg: "bg-amber-50/70", dot: "bg-amber-500", text: "text-amber-700" },
     { bg: "bg-rose-50/70", dot: "bg-rose-500", text: "text-rose-700" },
@@ -71,9 +67,6 @@ export default function ProductCompareModal({ items, language, brandName, texts,
     { bg: "bg-orange-50/70", dot: "bg-orange-500", text: "text-orange-700" },
     { bg: "bg-pink-50/70", dot: "bg-pink-500", text: "text-pink-700" },
   ];
-  // Fixed pixel column tracks (not 1fr) so the grid's own width is exactly
-  // N * column-width, letting the modal shrink-wrap (w-fit) to the content
-  // instead of stretching to fill leftover space.
   const gridColsClass = items.length >= 3
     ? "grid-cols-[repeat(3,260px)] md:grid-cols-[repeat(3,300px)]"
     : "grid-cols-[repeat(2,260px)] md:grid-cols-[repeat(2,300px)]";
@@ -130,7 +123,6 @@ export default function ProductCompareModal({ items, language, brandName, texts,
 
         <div className="overflow-auto flex-1 scrollbar-thin scrollbar-thumb-zinc-200 px-5 md:px-8 pb-8">
           <div className="w-fit mx-auto">
-            {/* Product cards */}
             <div className={`sticky top-0 z-10 bg-white grid gap-3 pt-6 pb-5 ${gridColsClass}`}>
               {items.map(({ product, url }) => {
                 const displayName = product.name[language as keyof typeof product.name] || product.name.tr;
@@ -175,13 +167,6 @@ export default function ProductCompareModal({ items, language, brandName, texts,
               })}
             </div>
 
-            {/* Attribute rows: one shared, full-width label per row, and a
-                divider that only runs through the value strip below it — a
-                colspan-style label cell can't carry per-column borders
-                through itself, and the label is centered rather than
-                column-aligned, so spanning the divider through the label
-                would cut across its text. The overlay grid (same column
-                template) is scoped to just the values wrapper instead. */}
             {attributeRows.map((row, i) => {
               const palette = rowPalette[i % rowPalette.length];
               return (

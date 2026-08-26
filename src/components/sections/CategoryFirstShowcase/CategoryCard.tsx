@@ -16,10 +16,8 @@ export function CategoryCard({ alt, displayName, sampleImage, onClick }: Categor
       onClick={onClick}
       className="group relative overflow-hidden rounded-3xl bg-white shadow-sm border border-zinc-100 hover:-translate-y-1.5 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.15)] transition-all duration-300 text-left h-[280px] flex flex-col justify-end"
     >
-      {/* Dark gradient for text readability at the bottom */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10" />
 
-      {/* Background Image (Vivid, no zoom) */}
       <Image
         src={getAssetPath('/images/' + sampleImage)}
         alt={alt}

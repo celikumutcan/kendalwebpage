@@ -9,25 +9,19 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
 import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
 import { ProductGrid } from "@/components/brand/shared/ProductGrid";
-import { Highlights } from "@/components/brand/shared/Highlights";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const GLOBAL_ACCENT = "#e6b800"; // darker than the hero's #ffcb05 for AA contrast on white
+const GLOBAL_ACCENT = "#e6b800";
 
 interface GlobalCreativePageProps {
   popularProducts: Product[];
   newProducts: Product[];
 }
 
-// highlightsStats placeholder note: "20.000+ Saat" ve "%100 Yerli Üretim"
-// Kendal Elektrik üretim verisiyle tutarlı. "40+ Ülkede Global Ağ" alttaki
-// haritada gösterilen aynı 40 ülke listesine (bkz. src/data/exportCountries.ts)
-// dayanıyor. "2 Yıl Garanti" tahmini — yayına almadan önce marka/satış
-// sorumlusundan (patron) teyit edip güncellemek gerekir.
 const translations = {
   tr: {
     heroSub: "KAPSAMLI AYDINLATMA ÇÖZÜMLERİ",
@@ -43,14 +37,6 @@ const translations = {
     newTitle: "Yeni Ürünler",
     modelLabel: "Model",
     viewLabel: "İncele",
-    highlightsEyebrow: "Neden Global?",
-    highlightsTitle: "Uluslararası pazarlar için tasarlanmış, güvenilir aydınlatma.",
-    highlightsStats: [
-      { value: "20.000+", label: "Saat Ortalama LED Ömrü" },
-      { value: "%100", label: "Yerli Üretim" },
-      { value: "40+", label: "Ülkede Global Ağ" },
-      { value: "2 Yıl", label: "Garanti Kapsamı" },
-    ],
     exportEyebrow: "Global Erişim",
     exportTitle: "Kendal Global, dünyanın dört bir yanında.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -72,14 +58,6 @@ const translations = {
     newTitle: "New Products",
     modelLabel: "Model",
     viewLabel: "View",
-    highlightsEyebrow: "Why Global?",
-    highlightsTitle: "Reliable lighting, engineered for international markets.",
-    highlightsStats: [
-      { value: "20,000+", label: "Hours Average LED Lifespan" },
-      { value: "100%", label: "Domestic Production" },
-      { value: "40+", label: "Countries — Global Network" },
-      { value: "2 Years", label: "Warranty Coverage" },
-    ],
     exportEyebrow: "Global Reach",
     exportTitle: "Kendal Global, everywhere around the world.",
     exportHint: "Click a point on the map.",
@@ -89,9 +67,6 @@ const translations = {
   }
 };
 
-// A simple, unmistakable cursor arrow instead of a hand — much easier to read
-// clearly at this size. Tip sits at local (5, 5). Keep in sync with
-// CURSOR_END_X/Y below.
 const CursorIcon = () => (
   <svg width="60" height="65" viewBox="0 0 24 26" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-[0_2px_5px_rgba(0,0,0,0.4)]">
     <polygon
@@ -111,7 +86,6 @@ const SwitchIcon = () => (
   </svg>
 );
 
-// Aligns the cursor's tip (local 5,5) with the switch-toggle's center (~50,106) in shared parent space.
 const CURSOR_END_X = 45;
 const CURSOR_END_Y = 101;
 
@@ -136,22 +110,14 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
     if (!containerRef.current) return;
 
     let ctx = gsap.context(() => {
-      // Autoplay intro: hand approaches, presses the switch, screen flashes,
-      // logo/title reveal. Runs once on load, no scrolling required. Everything
-      // is one timeline so ordering (e.g. flash fully gone before logo fades in)
-      // stays guaranteed regardless of playback speed.
       const introTl = gsap.timeline({ delay: 0 });
 
-      // 1. Cursor slides in toward the switch
       introTl.fromTo(
         cursorRef.current,
         { x: 220, y: 260, opacity: 0 },
         { x: CURSOR_END_X, y: CURSOR_END_Y, opacity: 1, duration: 1.5, ease: "power2.out" }
       );
 
-      // 2. Click: a quick scale pulse anchored on the cursor's tip (not the
-      // center) so it reads as a click, not a slide, plus the toggle depressing
-      // in sync and a tap-ripple pulsing out to make the "click" unmistakable
       introTl
         .to(cursorRef.current, { scale: 0.85, duration: 0.12, ease: "power1.in", transformOrigin: "8% 8%" })
         .to(".switch-toggle", { y: 6, fill: "rgba(255,255,255,1)", duration: 0.12, ease: "power1.in" }, "<")
@@ -164,18 +130,13 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
           "<"
         );
 
-      // 3. Light switches on: flash rises, cursor/switch disappear
       introTl
         .to(flashRef.current, { opacity: 1, duration: 0.25 })
         .to(containerRef.current, { backgroundColor: "#fdfbf5", duration: 0 }, "<")
         .to([cursorRef.current, ".switch-container"], { opacity: 0, duration: 0.12 }, "<");
 
-      // 4. Flash fully fades out BEFORE the logo starts appearing, so the white
-      // overlay never washes out the logo while it's revealing
       introTl.to(flashRef.current, { opacity: 0, duration: 0.18 });
 
-      // 5. Reveal logo, title, subtitle, scroll indicator, and a warm gold glow
-      // behind the logo — reads as the light actually illuminating the room
       introTl
         .fromTo(glowRef.current, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1.6 }, "-=0.08")
         .fromTo(logoRef.current, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1 }, "<")
@@ -183,7 +144,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         .fromTo(heroSubRef.current, { opacity: 0, letterSpacing: "0.1em" }, { opacity: 1, letterSpacing: "0.3em", duration: 0.8 }, "-=0.6")
         .fromTo(scrollIndicatorRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.4");
 
-      // Once settled, let the glow breathe gently — a small "living light" touch
       introTl.call(() => {
         gsap.to(glowRef.current, {
           opacity: 0.7,
@@ -195,9 +155,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         });
       });
 
-      // HERO PARALLAX SCROLL: content drifts up and fades as the user scrolls the
-      // intro section itself out of view (no fixed pixel offset needed now that
-      // it isn't pinned)
       gsap.to(heroContentRef.current, {
         y: -150,
         opacity: 0,
@@ -209,7 +166,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         },
       });
 
-      // 3. REVEAL SECTIONS
       const sections = gsap.utils.toArray(".reveal-card");
       sections.forEach((section: any) => {
         const textElements = section.querySelectorAll(".reveal-content");
@@ -236,9 +192,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         );
       });
 
-      // Shared brand sections (Highlights/ExportMap/ProductCarousel/ProductGrid)
-      // use the plain .reveal-text convention from the K2/Vanti pages instead
-      // of .reveal-card, so they need their own (simpler) fade-in here too.
       gsap.utils.toArray(".reveal-text").forEach((section: any) => {
         gsap.fromTo(
           section,
@@ -257,18 +210,9 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
   }, [language]);
 
   return (
-    // Page starts with bg-black for the dark room switch intro. GSAP turns it to #f8f9fa during the flash.
     <div ref={containerRef} className="relative w-full bg-black text-black overflow-hidden font-sans min-h-screen" style={{ "--page-bg": "#fdfbf5" } as React.CSSProperties}>
       
-      {/* 
-        NO 3D SCENE! 
-        Removed GlobalScene completely to prevent any flickering or conflicts.
-        The background is now purely handled by the container's backgroundColor via GSAP.
-      */}
 
-      {/* INTRO + HERO: plays automatically on load — cursor approaches, clicks the
-          switch, the screen flashes white, then the logo/title reveal. No
-          scrolling required to trigger it. */}
       <section ref={introRef} className="relative z-50 w-full h-screen flex flex-col items-center justify-center pointer-events-none overflow-hidden px-4">
         <div className="relative">
           <div className="switch-container">
@@ -277,7 +221,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
           <div ref={cursorRef} className="absolute top-0 left-0" style={{ opacity: 0 }}>
             <CursorIcon />
           </div>
-          {/* Tap ripple, centered on the switch-toggle button */}
           <div
             ref={rippleRef}
             className="absolute rounded-full border-2 border-white pointer-events-none"
@@ -285,12 +228,9 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
           />
         </div>
 
-        {/* Blinding White Flash Layer */}
         <div ref={flashRef} className="absolute inset-0 bg-white opacity-0 pointer-events-none" />
 
-        {/* Hero content, revealed only after the flash has fully faded */}
         <div ref={heroContentRef} className="absolute inset-0 flex flex-col items-center justify-center px-4">
-          {/* Warm gold glow behind the logo — the room catching the light */}
           <div
             ref={glowRef}
             className="absolute w-[420px] h-[420px] md:w-[620px] md:h-[620px] rounded-full pointer-events-none opacity-0 -mt-20"
@@ -317,7 +257,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
             </span>
           </div>
 
-          {/* Scroll Indicator */}
           <div ref={scrollIndicatorRef} className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0">
             <p className="text-xs tracking-widest uppercase mb-4 font-bold text-black bg-[#fff3c4] border border-[#ffcb05]/40 px-5 py-2 rounded-full">
               {t.explore}
@@ -327,10 +266,8 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         </div>
       </section>
 
-      {/* STORY SECTIONS */}
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32 space-y-40">
         
-        {/* Section 1 */}
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
           <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">
@@ -341,7 +278,6 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
           </h2>
         </section>
 
-        {/* Section 2 */}
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
           <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">
@@ -354,13 +290,8 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
 
       </div>
 
-      {/* Highlights / trust stats — full-bleed, outside the max-w-5xl story wrapper */}
-      <Highlights eyebrow={t.highlightsEyebrow} title={t.highlightsTitle} stats={t.highlightsStats} accent={GLOBAL_ACCENT} theme="light" />
-
-      {/* Export map */}
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={GLOBAL_ACCENT} theme="light" />
 
-      {/* Popular Products — sliding marquee */}
       <ProductCarousel
         label={t.popularLabel}
         title={t.popularTitle}
@@ -373,11 +304,9 @@ export function GlobalCreativePage({ popularProducts, newProducts }: GlobalCreat
         align="left"
       />
 
-      {/* New Products — static editorial grid */}
       <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="global" accent={GLOBAL_ACCENT} theme="light" />
 
       <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32">
-        {/* Section 3 */}
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
           <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">

@@ -32,9 +32,6 @@ export function ProductCarousel({
 }: ProductCarouselProps) {
   if (products.length === 0) return null;
 
-  // Doubled track + translateX(-50%) loop = seamless infinite scroll with
-  // pure CSS (see .k2-marquee-track in globals.css). Duration scales with
-  // item count so both rows drift at roughly the same visual speed.
   const duration = Math.max(24, products.length * 5.5);
   const loopProducts = [...products, ...products];
 

@@ -11,7 +11,6 @@ export const CatalogCTA = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Simple fade-up
       gsap.fromTo(
         ".catalog-content",
         { y: 50, opacity: 0 },
@@ -33,7 +32,6 @@ export const CatalogCTA = () => {
 
   return (
     <section id="catalog" ref={containerRef} className="w-full relative py-8 md:py-16 px-4 md:px-6 overflow-hidden flex items-center justify-center">
-      {/* Background glow effects - scaled down */}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-20 dark:opacity-40">
         <div className="absolute w-[300px] h-[300px] md:w-[400px] md:h-[400px] bg-gradient-to-r from-[var(--brand-red)] to-rose-500 blur-[100px] rounded-full translate-x-1/4 -translate-y-1/4 mix-blend-multiply dark:mix-blend-screen" />
         <div className="absolute w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-gradient-to-r from-blue-500 to-indigo-500 blur-[100px] rounded-full -translate-x-1/4 translate-y-1/4 mix-blend-multiply dark:mix-blend-screen" />

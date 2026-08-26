@@ -36,9 +36,8 @@ function MainChandelier() {
   const powerRef = useRef(0);
 
   useFrame((state) => {
-    // Power is 0 during intro. After intro (scroll > 1500), power smoothly goes to 1.
     const targetPower = globalScrollProgress === 0 ? 0 : 1;
-    powerRef.current += (targetPower - powerRef.current) * 0.05; // Smooth fade on
+    powerRef.current += (targetPower - powerRef.current) * 0.05;
     const power = powerRef.current;
 
     if (bulbRef.current) {
@@ -52,21 +51,18 @@ function MainChandelier() {
       ringRef.current.rotation.y = state.clock.elapsedTime * 0.1;
       ringRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
       
-      // As user scrolls down the page, the chandelier moves up (parallax)
       ringRef.current.position.y = 2 + (globalScrollProgress * 5);
     }
   });
 
   return (
     <group ref={ringRef} position={[0, 2, 0]}>
-      {/* Central Giant Bulb */}
       <mesh ref={bulbRef}>
         <sphereGeometry args={[1.5, 32, 32]} />
         <meshBasicMaterial color={OFF_COLOR} />
       </mesh>
       <pointLight ref={lightRef} color={WARM_WHITE} distance={50} decay={2} intensity={0} />
 
-      {/* Decorative Outer Rings */}
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[2.5, 0.05, 16, 100]} />
         <meshStandardMaterial color="#222" metalness={0.9} roughness={0.1} />
@@ -76,7 +72,6 @@ function MainChandelier() {
         <meshStandardMaterial color="#222" metalness={0.9} roughness={0.1} />
       </mesh>
 
-      {/* Hanging Cords */}
       <mesh position={[0, 5, 0]}>
         <cylinderGeometry args={[0.05, 0.05, 10, 8]} />
         <meshStandardMaterial color="#111" />
@@ -95,7 +90,6 @@ function SceneBackground() {
     
     if (bgRef.current) {
       const mat = bgRef.current.material as THREE.MeshBasicMaterial;
-      // Background goes from Pitch Black to a very soft, bright warm white/gray
       mat.color.copy(new THREE.Color("#000000")).lerp(new THREE.Color("#f8f9fa"), powerRef.current);
     }
   });

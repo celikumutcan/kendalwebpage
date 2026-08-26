@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { getProductBySlug, getSlugByProductId, getProductCanonicalUrl, getProductCategorySlug, products } from "@/data/products";
 import { getProductPdfFile } from "@/lib/getProductPdfForm";
 import { getProductDetailMetadata } from "@/lib/productMetadata";
-import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient"; // Re-using the main client component
+import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient";
 import { ProductSchema } from "@/components/shared/ProductSchema";
 
 export async function generateMetadata({ params }: { params: Promise<{ brandName: string; category: string; slug: string }> }): Promise<Metadata> {
@@ -37,19 +37,11 @@ export default async function BrandProductDetailPage({
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
     const { redirect } = require("next/navigation");
-    // Host-relative path: k2.localhost/urunler/... proxy.ts rewrites this to
-    // /brand/k2/urunler/... internally. Redirecting to the /brand/... path
-    // directly here gets rewritten a second time (double-nested) and 404s.
-    // Some legacy canonical slugs still contain raw Turkish characters
-    // (ş/ı/ğ, code points > 255); an un-encoded redirect() target crashes
-    // static export with a ByteString conversion error, so always encode.
     redirect(`/urunler/${resolvedParams.category}/${encodeURIComponent(canonicalSlug)}`);
   }
 
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
 
-  // Here we re-use the exact same UI as the main site for the product detail.
-  // The layout wrapper will automatically provide the BrandNavbar and BrandFooter.
   return (
     <>
       <ProductSchema product={product} canonicalUrl={getProductCanonicalUrl(product)} />

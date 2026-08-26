@@ -39,7 +39,6 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const t = dictionaries[language];
 
   useEffect(() => {
-    // Dynamically update the html lang attribute for SEO and accessibility
     document.documentElement.lang = language;
   }, [language]);
 

@@ -143,9 +143,7 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
 
     if (groupRef.current) {
       timeRef.current += delta;
-      // Base rotation centered on Turkey (approx -2.1 rad)
       const baseRotationY = -2.1;
-      // Pendulum swing: +/- 0.3 radians based on elapsed time
       groupRef.current.rotation.y = baseRotationY + Math.sin(timeRef.current * 0.4) * 0.3;
     }
 

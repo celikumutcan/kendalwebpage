@@ -17,11 +17,6 @@ interface ProductGridProps {
   theme?: "dark" | "light";
 }
 
-// Static, non-scrolling showcase (mirrors Popular's sliding marquee with a
-// fixed editorial grid instead) — product sits on a light "pedestal" plate,
-// the caption lives on the page background underneath it rather than inside
-// a card, so the two sections read as deliberately different, not
-// inconsistent.
 export function ProductGrid({ label, title, products, language, brandName, accent, theme = "dark" }: ProductGridProps) {
   if (products.length === 0) return null;
   const isDark = theme === "dark";

@@ -1014,7 +1014,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "6W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4536": {
@@ -1230,7 +1230,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "6W",
-      "casing": "Günışığı (3000K)"
+      "light": "Günışığı (3000K)"
     }
   },
   "4540": {
@@ -1338,7 +1338,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "12W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4541": {
@@ -1554,7 +1554,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "12W",
-      "casing": "Günışığı (3000K)"
+      "light": "Günışığı (3000K)"
     }
   },
   "4545": {
@@ -1662,7 +1662,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "15W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4546": {
@@ -1878,7 +1878,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "15W",
-      "casing": "Günışığı (3000K)"
+      "light": "Günışığı (3000K)"
     }
   },
   "4550": {
@@ -1986,7 +1986,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "18W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4551": {
@@ -2202,7 +2202,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "18W",
-      "casing": "Günışığı (3000K)"
+      "light": "Günışığı (3000K)"
     }
   },
   "4555": {
@@ -2310,7 +2310,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "3W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4556": {
@@ -2526,7 +2526,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "3W",
-      "casing": "Günışığı (3000K)"
+      "light": "Günışığı (3000K)"
     }
   },
   "4560": {
@@ -2634,7 +2634,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "9W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4561": {
@@ -2958,7 +2958,7 @@
     "brand": "k2",
     "variantOptions": {
       "watt": "25W",
-      "casing": "Ararenk (4000K)"
+      "light": "Ararenk (4000K)"
     }
   },
   "4564": {
@@ -12124,11 +12124,7 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "130W"
-    },
-    "images": [
-      "urunler/kcf276-vantilator.webp",
-      "urunler/kcf276k.webp"
-    ]
+    }
   },
   "KCF276K": {
     "id": "KCF276K",
@@ -12294,10 +12290,7 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    },
-    "images": [
-      "urunler/kcf272l50wvant.webp"
-    ]
+    }
   },
   "KCF280": {
     "id": "KCF280",

@@ -1,7 +1,3 @@
-// Same locations as the homepage's 3D globe (src/components/engine/Globe.tsx
-// LOCATIONS) — kept as a separate, name/flag-annotated dataset here so the
-// 2D export map (K2/Global/Vanti/homepage) tells the same "reach" story
-// with the same coordinates, without dragging Three.js types into it.
 export interface ExportCountry {
   id: string;
   flag: string;

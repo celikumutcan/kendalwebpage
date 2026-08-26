@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getProductBySlug, getAllSlugs, getProductImageUrl, getProductCanonicalUrl, getSlugByProductId } from "@/data/products";
 import { getProductPdfFile } from "@/lib/getProductPdfForm";
-import { ProductDetailClient } from "./ProductDetailClient"; // Client component
+import { ProductDetailClient } from "./ProductDetailClient";
 import { ProductSchema } from "@/components/shared/ProductSchema";
 import { BreadcrumbSchema } from "@/components/shared/BreadcrumbSchema";
 
@@ -20,9 +20,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   const category = product.category?.tr?.[0];
   const description = `${product.name.tr}${category ? ` - ${category}` : ""} | Model: ${product.model}. Kendal Elektrik'in yerli üretim aydınlatma ve elektrik ürünleri arasında yer alan ${product.name.tr}, teknik özellikleri ve garanti koşullarıyla incelenebilir.`;
-  // Ürünün asıl (canonical) adresi kendi marka mikrosite'idir
-  // (k2/vanti/global.kendalelektrik.com.tr); bu sayfa aynı içeriğin
-  // ana domaindeki aynasıdır.
   const canonicalUrl = getProductCanonicalUrl(product);
 
   return {
@@ -58,10 +55,6 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
     const { redirect } = require("next/navigation");
-    // Some legacy canonical slugs still contain raw Turkish characters
-    // (ş/ı/ğ, code points > 255). An un-encoded redirect() target with such
-    // a character crashes static export with a ByteString conversion error,
-    // so always percent-encode the segment.
     redirect(`/${encodeURIComponent(canonicalSlug)}`);
   }
 

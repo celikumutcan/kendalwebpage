@@ -19,7 +19,6 @@ export const GlobalPresence = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Reduced scroll tracking frequency
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: "top top",
@@ -31,7 +30,6 @@ export const GlobalPresence = () => {
         },
       });
 
-      // Optimized text reveal
       gsap.fromTo(
         ".global-reveal",
         { opacity: 0, y: 40 },

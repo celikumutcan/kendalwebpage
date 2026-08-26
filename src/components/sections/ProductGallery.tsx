@@ -60,10 +60,8 @@ export const ProductGallery = () => {
               ref={(el) => { itemsRef.current[idx] = el; }}
               className="group relative h-72 md:h-80 rounded-3xl bg-[var(--global-text)] bg-opacity-[0.03] border border-[var(--global-text)] border-opacity-5 overflow-hidden flex flex-col justify-end p-8 hover:bg-opacity-[0.05] hover:border-opacity-10 transition-all duration-500 cursor-pointer"
             >
-              {/* Decorative Background Element */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-[var(--accent-current)] opacity-0 group-hover:opacity-[0.15] blur-[80px] transition-opacity duration-700 pointer-events-none" />
               
-              {/* Huge Background Index */}
               <div className="absolute top-6 left-8 text-5xl font-black text-[var(--global-text)] opacity-10 pointer-events-none transition-opacity duration-500 group-hover:opacity-20">
                 0{idx + 1}
               </div>

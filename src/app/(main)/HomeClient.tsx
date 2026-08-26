@@ -23,7 +23,6 @@ export function HomeClient() {
     <main className="relative w-full">
       {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
 
-      {/* Hide the content behind opacity until loader finishes (optional) or just let it render behind loader */}
       <div className={`transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
         <NewsTicker />
         <Hero />

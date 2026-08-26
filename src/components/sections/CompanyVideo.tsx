@@ -54,10 +54,8 @@ export const CompanyVideo = () => {
           ref={videoRef}
           className="w-full relative group"
         >
-          {/* LED Ambilight Glow Effect */}
           <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)] rounded-[2.5rem] md:rounded-[3rem] opacity-50 blur-2xl md:blur-3xl group-hover:opacity-75 transition-opacity duration-700 animate-pulse pointer-events-none" />
           
-          {/* Video Container */}
           <div className="w-full aspect-video rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsPlaying(true)}>
             {!isPlaying ? (
               <>

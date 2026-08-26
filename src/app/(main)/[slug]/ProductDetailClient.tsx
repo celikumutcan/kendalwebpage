@@ -44,7 +44,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const currentImage = selectedImage || product.image;
   const imageUrl = getProductImageUrl(currentImage);
-  const allImages = [product.image, ...(product.images || [])].filter((val, i, arr) => arr.indexOf(val) === i); // unique
+  const allImages = [product.image, ...(product.images || [])].filter((val, i, arr) => arr.indexOf(val) === i);
 
   const isK2 = brandName === "k2";
   const isVanti = brandName === "vanti";
@@ -68,8 +68,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const videoMatchKey = Object.keys(VANTI_VIDEOS).find(key => product.model.includes(key) || name.includes(key));
   const videoId = videoMatchKey ? VANTI_VIDEOS[videoMatchKey] : null;
 
-  // Dynamic Theme Colors
-  let themeColor = "bg-white/20"; // default for dark
+  let themeColor = "bg-white/20";
   let themeText = "text-white";
   let themeGlow = "shadow-[0_0_30px_rgba(255,255,255,0.1)]";
   let themePillBg = "bg-white/10";
@@ -105,11 +104,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
     }
   }
 
-  // Calculate variations
-  // "60X60", "30*120" gibi ölçü belirten ikinci kelimeler base model'e dahil
-  // edilir; aksi halde aynı model kodlu ama farklı boyutlardaki ürünler
-  // (örn. KDL4140 60X60 / 30X30 / 30X60) birbirinin varyantı sanılıp
-  // yanlışlıkla tek üründe birleştiriliyor.
   const isDimensionToken = (token: string) => /^\d+[x*×]\d+$/i.test(token || "");
   const getBaseName = (name: string) => {
     const words = (name || "").trim().split(' ');
@@ -127,7 +121,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
   const slugify = (text: string) => text.toLowerCase().replace(/ı/g, 'i').replace(/ü/g, 'u').replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ğ/g, 'g').replace(/ç/g, 'c').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-  // Split Attributes into Specs and Features
   const allAttrs = attributes || [];
   let rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
 
@@ -152,14 +145,12 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const featureAttrs = rawSpecs.filter(attr => featureLabels.includes(attr.label));
   const specAttrs = rawSpecs.filter(attr => !featureLabels.includes(attr.label));
 
-  // Dynamically split features by ' / ' and flatten
   const featuresList = featureAttrs.flatMap(attr =>
     String(attr.value)
       .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&")
       .split(' / ')
       .map(s => s.trim())
       .filter(s => s)
-      // "3 Yıl" gibi eksik ifadeleri "3 Yıl Garanti" olarak tamamla
       .map(s => /^\d+\s*[Yy]ıl$/.test(s) ? `${s} Garanti` : s)
   );
 
@@ -193,93 +184,72 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   return (
     <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-24 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#2a2d38] text-white"}`}>
 
-      {/* 1. CINEMATIC VIGNETTE & GRAIN NOISE */}
       <div className="absolute inset-0 pointer-events-none z-[1]" style={{ boxShadow: isLight ? 'inset 0 0 150px rgba(0,0,0,0.03)' : 'inset 0 0 200px rgba(0,0,0,0.3)' }} />
       {isLight && (
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none z-[2]" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }} />
       )}
 
-      {/* 2. OVER-THE-TOP PREMIUM DECORATIVE BACKGROUNDS (GPU ACCELERATED) */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         
-        {/* === K2 BRAND (DYNAMIC, LAVA, SPORTY) === */}
         {isK2 && (
           <>
-            {/* Massive Lava Ambient Glows */}
             <div className="absolute -left-[20%] top-[-10%] w-[1200px] h-[1200px] rounded-full bg-orange-600/15 blur-[160px] animate-[pulse_10s_ease-in-out_infinite]" />
             <div className="absolute right-[-10%] top-[30%] w-[1000px] h-[1000px] rounded-full bg-red-600/10 blur-[150px] animate-[pulse_14s_ease-in-out_infinite_reverse]" />
             <div className="absolute left-[30%] bottom-[-20%] w-[800px] h-[800px] rounded-full bg-amber-500/15 blur-[120px] animate-[pulse_8s_ease-in-out_infinite]" />
             
-            {/* Cinematic Spotlight from Top */}
             <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[500px] bg-gradient-to-b from-orange-300/30 via-orange-400/5 to-transparent blur-3xl opacity-60" />
 
-            {/* Floating Embers / Particles */}
             <div className="absolute left-[15%] top-[25%] w-2 h-2 rounded-full bg-orange-400 blur-[1px] animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
             <div className="absolute right-[25%] top-[45%] w-3 h-3 rounded-full bg-red-400 blur-[2px] animate-[ping_6s_cubic-bezier(0,0,0.2,1)_infinite_reverse]" />
             <div className="absolute left-[45%] bottom-[35%] w-1.5 h-1.5 rounded-full bg-yellow-400 blur-[1px] animate-[ping_5s_cubic-bezier(0,0,0.2,1)_infinite]" />
             
-            {/* Angled Dynamic Speed Lines */}
             <div className="absolute -left-[10%] top-[10%] w-[400px] h-[800px] border-l-[120px] border-orange-500/5 -rotate-45 blur-[10px]" />
             <div className="absolute right-[5%] top-[50%] w-[300px] h-[1000px] border-r-[80px] border-red-500/5 rotate-45 blur-[8px]" />
           </>
         )}
 
-        {/* === VANTI BRAND (AERO, WIND TUNNEL, ICE) === */}
         {isVanti && (
           <>
-            {/* Massive Ambient Breezes */}
             <div className="absolute -left-[10%] top-[-10%] w-[1200px] h-[1200px] rounded-full bg-blue-500/15 blur-[160px] animate-[pulse_12s_ease-in-out_infinite]" />
             <div className="absolute right-[-20%] top-[20%] w-[1400px] h-[1400px] rounded-full bg-cyan-400/10 blur-[150px] animate-[pulse_15s_ease-in-out_infinite_reverse]" />
             
-            {/* Cinematic Spotlight */}
             <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[1000px] h-[600px] bg-gradient-to-b from-cyan-200/30 via-blue-300/5 to-transparent blur-3xl opacity-60" />
             
-            {/* Wind Tunnel Sweeps (Curved SVGs or Gradients) */}
             <div className="absolute top-[20%] left-[-20%] right-[-20%] h-[300px] bg-gradient-to-r from-transparent via-blue-400/5 to-transparent -rotate-6 blur-[40px] rounded-[100%]" />
             <div className="absolute top-[60%] left-[-20%] right-[-20%] h-[400px] bg-gradient-to-r from-transparent via-cyan-400/5 to-transparent rotate-3 blur-[50px] rounded-[100%]" />
             
-            {/* Spinning Concentric Fan Rings - Ultra Premium */}
             <div className="absolute -left-[10%] top-[10%] w-[800px] h-[800px] rounded-full border-[1px] border-blue-400/20 shadow-[0_0_100px_rgba(59,130,246,0.1)] animate-[spin_40s_linear_infinite]" />
             <div className="absolute -left-[5%] top-[15%] w-[700px] h-[700px] rounded-full border-[2px] border-dashed border-cyan-400/15 animate-[spin_30s_linear_infinite_reverse]" />
             <div className="absolute left-[0%] top-[20%] w-[600px] h-[600px] rounded-full border-[4px] border-dotted border-blue-300/10 animate-[spin_20s_linear_infinite]" />
           </>
         )}
 
-        {/* === GLOBAL BRAND (SOLAR, WARM, ELEGANT, DYNAMIC) === */}
         {isGlobal && (
           <>
-            {/* Massive Soft Yellow Ambient Glows */}
             <div className="absolute -left-[10%] top-[-10%] w-[1000px] h-[1000px] rounded-full bg-[#FFDA51]/15 blur-[150px] animate-[pulse_10s_ease-in-out_infinite]" />
             <div className="absolute right-[-10%] top-[30%] w-[1200px] h-[1200px] rounded-full bg-yellow-400/10 blur-[150px] animate-[pulse_14s_ease-in-out_infinite_reverse]" />
             <div className="absolute left-[20%] bottom-[-20%] w-[800px] h-[800px] rounded-full bg-amber-300/15 blur-[120px] animate-[pulse_12s_ease-in-out_infinite]" />
             
-            {/* Elegant Golden Spotlight (Top down) */}
             <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[500px] bg-gradient-to-b from-yellow-300/20 via-amber-200/5 to-transparent blur-3xl opacity-60" />
             
-            {/* Faint Grid Texture for depth */}
             <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'radial-gradient(#FFDA51 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
             
-            {/* Morphing Liquid Sun & Expanding Solar Flares */}
             <div className="absolute -right-[10%] top-[5%] w-[800px] h-[800px] bg-gradient-to-tr from-[#FFDA51]/20 to-amber-200/5 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] animate-[spin_25s_linear_infinite] blur-[40px]" />
             <div className="absolute -right-[5%] top-[10%] w-[700px] h-[700px] bg-gradient-to-bl from-amber-400/15 to-yellow-100/10 rounded-[60%_40%_30%_70%/50%_60%_40%_50%] animate-[spin_35s_linear_infinite_reverse] blur-[30px]" />
             <div className="absolute right-[0%] top-[15%] w-[600px] h-[600px] border-[2px] border-amber-300/30 rounded-[50%_50%_30%_70%/60%_40%_60%_40%] animate-[spin_45s_linear_infinite] blur-[1px] shadow-[0_0_50px_rgba(251,191,36,0.2)]" />
             
-            {/* Elegant Sun Ripples */}
             <div className="absolute -right-[5%] top-[10%] w-[800px] h-[800px] rounded-full border-[1px] border-amber-200/20 animate-[ping_10s_cubic-bezier(0,0,0.2,1)_infinite]" />
             <div className="absolute -right-[5%] top-[10%] w-[800px] h-[800px] rounded-full border-[1.5px] border-yellow-300/10 animate-[ping_14s_cubic-bezier(0,0,0.2,1)_infinite_4s]" />
             
-            {/* Floating Light Particles / Embers */}
             <div className="absolute left-[20%] top-[35%] w-2 h-2 rounded-full bg-yellow-300 blur-[1px] animate-[ping_4s_cubic-bezier(0,0,0.2,1)_infinite]" />
             <div className="absolute right-[35%] top-[55%] w-3 h-3 rounded-full bg-amber-400 blur-[2px] animate-[ping_6s_cubic-bezier(0,0,0.2,1)_infinite_reverse]" />
             <div className="absolute left-[55%] bottom-[25%] w-2.5 h-2.5 rounded-full bg-[#FFDA51] blur-[1.5px] animate-[ping_5s_cubic-bezier(0,0,0.2,1)_infinite]" />
 
-            {/* Subtle Diagonal Accent Lines */}
             <div className="absolute left-[15%] top-[-10%] w-[400px] h-[600px] bg-gradient-to-br from-yellow-200/10 to-transparent -rotate-12 blur-[40px] rounded-[100%]" />
             <div className="absolute right-[5%] bottom-[10%] w-[500px] h-[500px] bg-gradient-to-bl from-amber-300/10 to-transparent rotate-12 blur-[50px] rounded-[100%]" />
           </>
         )}
 
-        {/* === KENDAL (DEFAULT/DARK) === */}
         {!isLight && (
           <>
             <div className="absolute -left-[15%] top-[-10%] w-[1000px] h-[1000px] rounded-full bg-blue-500/20 blur-[180px]" />
@@ -290,10 +260,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
       <div className="relative z-10 container mx-auto max-w-7xl px-6">
 
-        {/* Header Section: Back Button + Title */}
         <div className="flex flex-col md:flex-row items-center justify-center relative mb-8 md:mb-10 gap-6 md:gap-0">
 
-          {/* Elegant Back Button */}
           <button
             onClick={() => router.back()}
             className={`group flex items-center gap-2.5 w-fit rounded-full pl-2 pr-4 py-2 transition-all duration-300 md:absolute md:left-0 z-20 ${isLight ? 'text-zinc-500 hover:text-zinc-900 bg-white/70 hover:bg-white border border-zinc-200/80 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.08)]' : 'text-white/60 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/10'}`}
@@ -309,13 +277,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </button>
 
           <div className="flex flex-col items-center gap-3">
-            {/* Kicker */}
             <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/70"}`}>
               <span className={`w-1.5 h-1.5 rounded-full ${isLight ? themeColor : "bg-white"}`} />
               {product.model}
             </span>
 
-            {/* Title with Gradient Fill */}
             <h1
               itemProp="name"
               className={`text-2xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] max-w-4xl text-center px-4 relative z-20
@@ -333,16 +299,12 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
           <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-            {/* LEFT COLUMN: Image Showcase + PDF Download */}
             <div className="w-full flex flex-col items-center gap-6">
 
-              {/* 3. 3D PEDESTAL & PREMIUM IMAGE SHOWCASE */}
               <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4 group/showcase">
 
-                {/* The Floating Glow Behind Product */}
                 <div className={`absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] blur-[110px] rounded-full pointer-events-none z-0 transition-opacity duration-700 ${isLight ? 'bg-white/60' : 'bg-white/[0.07]'}`} />
 
-                {/* The 3D Pedestal Floor (Reflective surface beneath the product) */}
                 <div className="absolute bottom-[-6%] left-1/2 -translate-x-1/2 w-[70%] max-w-[520px] h-[80px] rounded-[100%] blur-md z-0 opacity-70"
                      style={{
                        background: isLight ? 'radial-gradient(ellipse at center, rgba(0,0,0,0.12) 0%, transparent 70%)' : 'radial-gradient(ellipse at center, rgba(255,255,255,0.12) 0%, transparent 70%)',
@@ -350,17 +312,14 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                      }}
                 />
 
-                {/* The Glassmorphism Box */}
                 <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-8 md:p-10 z-10 rounded-[2.5rem] transition-all duration-500 group-hover/showcase:-translate-y-1.5
                   ${isLight
                     ? `${themeImageBg} backdrop-blur-2xl border border-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.15)]`
                     : 'bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_100px_-20px_rgba(0,0,0,0.9)]'
                   }`}
                 >
-                  {/* Subtle top sheen */}
                   <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/40 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
 
-                  {/* Corner accent brackets */}
                   <div className={`absolute top-5 left-5 w-5 h-5 border-t-2 border-l-2 rounded-tl-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
                   <div className={`absolute bottom-5 right-5 w-5 h-5 border-b-2 border-r-2 rounded-br-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
 
@@ -373,7 +332,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 </div>
               </div>
 
-              {/* THUMBNAIL GALLERY */}
               {allImages.length > 1 && (
                 <div className="flex flex-wrap justify-center gap-3 mt-2 mb-4 w-full max-w-sm">
                   {allImages.map((imgUrl, idx) => (
@@ -397,7 +355,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 </div>
               )}
 
-              {/* Ürün Bilgi Formu (PDF) */}
               {pdfFormFile && (
                 <a
                   href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
@@ -417,13 +374,10 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               )}
             </div>
 
-            {/* RIGHT COLUMN: Color/Variant Options + Key Features */}
             <div className="w-full flex flex-col items-center gap-16">
 
-            {/* Product Info & Specifications */}
             {((variations.length > 1) || (variations.length === 1 && (product.variantOptions?.light || product.variantOptions?.casing || product.variantOptions?.watt))) && (
             <div className="w-full flex flex-col items-center">
-              {/* Variations */}
               {(() => {
               const variantData = variations.map(variant => {
                 const opts = variant.variantOptions || { light: null, casing: null, watt: null, socket: null };
@@ -486,7 +440,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               }).filter((c: string) => c && c !== "Standart")));
 
               const getBestVariantMatch = (targetAttr: 'watt' | 'socket' | 'light' | 'casing', value: string) => {
-                // For light and casing, allow matching if the value is part of a comma-separated string
                 const candidates = variantData.filter(v => targetAttr === 'light' || targetAttr === 'casing' ? v.variant.variantOptions?.[targetAttr]?.includes(value) : v[targetAttr] === value);
                 if (candidates.length === 0) return null;
 
@@ -515,7 +468,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               };
 
               const renderVariantLink = (match: any, label: string, showColorDot: boolean) => {
-                // Determine if this is a virtual link (we have 1 product, but multiple comma-separated colors)
                 const isVirtual = variations.length === 1 && match.variant.id === product.id;
                 
                 const isSelected = match.variant.id === product.id && !isVirtual;
@@ -526,7 +478,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   ? `/brand/${brandName}/urunler/${categorySlug}/${variantSlug}`
                   : `/urunler/${categorySlug}/${variantSlug}`;
 
-                // Calculate the specific dot color for this label, because match.dotColor might represent the whole string
                 let specificDotColor = 'bg-zinc-200';
                 const ctUpper = label.toUpperCase();
                 if (ctUpper.includes("ALEV") || ctUpper.includes("1700K")) specificDotColor = 'bg-[#FF5722]';
@@ -566,7 +517,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               return (
                 <div className="w-full flex flex-col gap-10 items-center text-center">
-                  {/* Renk Seçenekleri (Light) */}
                   {uniqueLights.length > 0 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
@@ -587,7 +537,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     </div>
                   )}
 
-                  {/* Kasa Rengi Seçenekleri (Casing) */}
                   {uniqueCasings.length > 0 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
@@ -610,7 +559,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     </div>
                   )}
 
-                  {/* Watt Seçenekleri */}
                   {uniqueWatts.length > 1 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
@@ -631,7 +579,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     </div>
                   )}
 
-                  {/* Duy Seçenekleri */}
                   {uniqueSockets.length > 1 && (
                     <div className="flex flex-col items-center">
                       <SectionHeader
@@ -657,7 +604,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
             </div>
           )}
 
-            {/* Öne Çıkan Özellikler (Key Features) */}
             {displayFeaturesList.length > 0 && (
               <>
                 <SectionDivider />
@@ -726,8 +672,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
             </div>
           </div>
 
-          {/* Technical Specs - Bento Box Grid (full width, below image & variant options) */}
-          {/* Özellik yoksa teknik detaylar zaten yukarıda baloncuklar olarak gösterildi, burada tekrar etmiyoruz. */}
           {(hasDedicatedFeatures && specAttrs.length > 0) && (
           <div className="w-full flex flex-col gap-10 lg:gap-14">
             <SectionDivider />
@@ -756,8 +700,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   return { attr, decodedValue };
                 });
 
-                // Uzun cümle içeren değerler (örn. "Kullanım Alanları") dar kartlara sığmıyor,
-                // bu yüzden geniş, tam satır kartlarda ayrı gösteriliyor.
                 const compactSpecs = preparedSpecs.filter((s) => s.decodedValue.length <= 40);
                 const longSpecs = preparedSpecs.filter((s) => s.decodedValue.length > 40);
 
@@ -806,7 +748,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
           </div>
           )}
 
-          {/* Vanti Video Section */}
           {videoId && (
             <>
               <SectionDivider />

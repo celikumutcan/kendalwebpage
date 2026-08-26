@@ -7,9 +7,6 @@ import { getProductDetailMetadata } from "@/lib/productMetadata";
 import { ProductDetailClient } from "@/app/(main)/[slug]/ProductDetailClient";
 import { ProductSchema } from "@/components/shared/ProductSchema";
 
-// Bu rota, ürünün marka mikrosite'indeki asıl sayfasıyla birebir aynı
-// içeriği gösteriyor; yinelenen içerik sinyali göndermemek için kanonik
-// URL her zaman o asıl (marka) adresi işaret eder (getProductDetailMetadata).
 export async function generateMetadata({ params }: { params: Promise<{ category: string; slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(decodeURIComponent(slug));

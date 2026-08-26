@@ -2,9 +2,6 @@ import { Product, getSlugByProductId } from "@/data/products";
 
 export const MAX_COMPARE = 3;
 
-// "60X60", "30*120" gibi ölçü belirten ikinci kelime varsa base model'e dahil
-// edilir; aksi halde aynı model kodlu ama farklı boyutlardaki ürünler
-// (örn. KDL4140 60X60 / 30X30 / 30X60) yanlışlıkla tek grupta birleştiriliyor.
 const isDimensionToken = (token: string) => /^\d+[x*×]\d+$/i.test(token || "");
 
 export const getBaseModelKey = (name: string) => {

@@ -8,8 +8,6 @@ const enMonths: { [key: string]: number } = {
   "july": 6, "august": 7, "september": 8, "october": 9, "november": 10, "december": 11,
 };
 
-// Parses both TR ("27 Nisan 2025" / "Eylül 2024") and EN ("April 27, 2025") news date strings.
-// Returns a UTC timestamp usable for sorting; unparseable dates sort first (oldest).
 export function parseNewsDate(dateStr: string): number {
   const cleaned = dateStr.trim();
 

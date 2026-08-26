@@ -15,7 +15,6 @@ export const AboutUs = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Intro Text "Turning on the light" Animation
       gsap.fromTo(
         textRef.current,
         { opacity: 0, filter: "blur(10px) brightness(0)", y: 30 },
@@ -32,7 +31,6 @@ export const AboutUs = () => {
         }
       );
 
-      // Glowing Filament (Wire) drawing down
       gsap.to(wireRef.current, {
         scaleY: 1,
         ease: "none",
@@ -44,11 +42,9 @@ export const AboutUs = () => {
         },
       });
 
-      // Beats lighting up as the wire reaches them
       beatsRef.current.forEach((beat) => {
         if (!beat) return;
         
-        // The dot and content
         const dot = beat.querySelector('.timeline-dot');
         const content = beat.querySelector('.timeline-content');
 
@@ -83,11 +79,9 @@ export const AboutUs = () => {
     >
       <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-[var(--brand-red)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none z-0" />
       
-      {/* Cyan light from right */}
       <div className="absolute top-[20%] -right-[10%] w-[600px] h-[600px] bg-cyan-400/30 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
       
       <div className="relative max-w-7xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
-        {/* Left Column: Intro Text */}
         <div ref={textRef} className="flex flex-col justify-center">
           <div className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-widest text-white/80 mb-6 w-max">
             {t.about.title}
@@ -100,12 +94,9 @@ export const AboutUs = () => {
           </p>
         </div>
 
-        {/* Right Column: Beats (Timeline) */}
         <div ref={timelineRef} className="flex flex-col space-y-12 pl-8 md:pl-12 relative mt-8 lg:mt-0">
           
-          {/* The background dark wire */}
           <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-white/10 rounded-full overflow-hidden">
-            {/* The glowing filament that grows downwards */}
             <div 
               ref={wireRef}
               className="absolute top-0 left-0 w-full h-full bg-[var(--brand-red)] origin-top shadow-[0_0_15px_var(--brand-red)]"
@@ -119,7 +110,6 @@ export const AboutUs = () => {
               ref={(el) => { beatsRef.current[idx] = el; }}
               className="relative group cursor-default"
             >
-              {/* Glowing Dot */}
               <div className="timeline-dot absolute -left-[37px] md:-left-[53px] top-1.5 w-4 h-4 bg-black border-2 border-[var(--brand-red)] rounded-full transition-transform duration-500 group-hover:scale-125 group-hover:bg-[var(--brand-red)] group-hover:shadow-[0_0_15px_var(--brand-red)]" />
               
               <div className="timeline-content">

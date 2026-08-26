@@ -8,9 +8,6 @@ interface VantiPreloaderProps {
   ready: boolean;
 }
 
-// A lightweight curtain-reveal loader, styled after the homepage Loader but
-// scoped down: brand-colored panels split open from the center once the 3D
-// scene has actually painted, so nothing pops in before it.
 export function VantiPreloader({ ready }: VantiPreloaderProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const topRef = useRef<HTMLDivElement>(null);

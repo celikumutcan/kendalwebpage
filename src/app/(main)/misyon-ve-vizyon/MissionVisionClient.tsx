@@ -23,7 +23,6 @@ export function MissionVisionClient() {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen bg-[#050505]">
 
-      {/* Left Content Side */}
       <div className="w-full lg:w-[55%] flex flex-col justify-center px-8 md:px-16 lg:px-24 py-32 relative z-10">
 
         <div className="mb-20">
@@ -34,7 +33,6 @@ export function MissionVisionClient() {
         </div>
 
         <div className="flex flex-col gap-16">
-          {/* Mission */}
           <div className="group relative">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md -z-10"></div>
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
@@ -54,7 +52,6 @@ export function MissionVisionClient() {
             </div>
           </div>
 
-          {/* Vision */}
           <div className="group relative">
             <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md -z-10"></div>
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
@@ -77,7 +74,6 @@ export function MissionVisionClient() {
         </div>
       </div>
 
-      {/* Right Image Side */}
       <div className="w-full lg:w-[45%] relative min-h-[400px] lg:min-h-screen bg-[#050505]">
         <Image
           src={getAssetPath("/images/factory-bg.webp")}
@@ -86,7 +82,6 @@ export function MissionVisionClient() {
           className="object-contain object-center"
           priority
         />
-        {/* Subtle gradient to blend image with the left side seamlessly */}
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#050505] via-transparent to-transparent opacity-100 w-full h-32 lg:h-full lg:w-48"></div>
       </div>
 

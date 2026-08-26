@@ -59,10 +59,6 @@ export default async function BrandPage({
   const { brandName } = resolvedParams;
 
   if (brandName === "k2") {
-    // Sadece marka sayfasında öne çıkarılacak birkaç ürün için elle seçilmiş
-    // id listesi kullanılıyor: K2'nin 845 ürününün tamamını (ki components/
-    // brand/k2/K2CreativePage bunları kullanmıyordu) client'a prop olarak
-    // göndermek yerine, sayfayı hafif tutmak için sadece bu ~14 ürün geçiyor.
     const K2_POPULAR_IDS = ["7803", "4535", "KES120", "KTL159", "KLF190", "KML400"];
     const K2_NEW_IDS = ["KST510", "KWL117", "KST303", "KES498", "KCL005_1", "KSL2431", "KST220", "KEL273L"];
     const popularProducts = K2_POPULAR_IDS.map(id => products[id]).filter(Boolean);
@@ -89,10 +85,8 @@ export default async function BrandPage({
     return <VantiCreativePage popularProducts={popularProducts} newProducts={newProducts} />;
   }
 
-  // Regular page for Vanti and Global
   return (
     <div className="w-full text-zinc-900 bg-zinc-50">
-      {/* HERO SECTION */}
       <BrandHero brandName={brandName} />
     </div>
   );

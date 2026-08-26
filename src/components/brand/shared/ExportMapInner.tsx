@@ -35,9 +35,6 @@ interface ExportMapInnerProps {
 
 export default function ExportMapInner({ language, accent, theme = "dark" }: ExportMapInnerProps) {
   const isDark = theme === "dark";
-  // Solid-ish frosted panel (not a faint tint) — brand pages with a busy 3D
-  // scene behind them (K2Scene, VantiScene) would otherwise show the map
-  // barely at all, since a 3-5% tint reads as almost fully transparent.
   const containerClass = isDark
     ? "bg-black/55 backdrop-blur-xl border-white/10"
     : "bg-white/70 backdrop-blur-xl border-white/50";

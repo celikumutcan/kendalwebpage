@@ -5,8 +5,6 @@ const NOT_FOUND_METADATA: Metadata = {
   title: "Ürün Bulunamadı | Kendal Elektrik",
 };
 
-// Shared by the main-site and brand-microsite product detail routes, which
-// render the exact same product page under different URLs.
 export function getProductDetailMetadata(product: Product | undefined): Metadata {
   if (!product) return NOT_FOUND_METADATA;
 

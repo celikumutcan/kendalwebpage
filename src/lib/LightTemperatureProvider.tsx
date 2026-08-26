@@ -25,7 +25,6 @@ export const LightTemperatureProvider = ({
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Removed global background and text color transition to keep the site in a consistent dark theme
       ScrollTrigger.create({
         trigger: document.body,
         start: "top top",
@@ -35,10 +34,8 @@ export const LightTemperatureProvider = ({
           const p = self.progress;
           progressRef.current = p;
 
-          // Update CSS custom property for progress (used by LightCore/Globe)
           document.documentElement.style.setProperty("--light-temp", p.toString());
 
-          // Interpolate accent color
           currentColor.current.lerpColors(colorCool.current, colorWarm.current, p);
           document.documentElement.style.setProperty(
             "--accent-current",
@@ -47,7 +44,6 @@ export const LightTemperatureProvider = ({
         },
       });
       
-      // Initial set
       document.documentElement.style.setProperty("--light-temp", "0");
       document.documentElement.style.setProperty("--accent-current", "#d8e4ff");
     });

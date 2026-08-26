@@ -19,9 +19,6 @@ interface ExportMapProps {
   theme?: "dark" | "light";
 }
 
-// The map itself (topojson-client + a ~50KB land-shape dataset) only starts
-// downloading once this section is about to scroll into view, so it never
-// touches the initial page bundle.
 export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dark" }: ExportMapProps) {
   const isDark = theme === "dark";
   const placeholderClass = isDark

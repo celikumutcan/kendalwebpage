@@ -15,10 +15,6 @@ import { MAX_COMPARE, getBaseModelKey, getVisiblePages, getProductCardUrl } from
 interface CategoryFirstShowcaseProps {
   products: Product[];
   brandName: string;
-  // True only when `products` has already been filtered down to a single brand
-  // (the real /brand/[brandName]/urunler route). The generic /urunler catalog page
-  // passes brandName="global" purely for theming while mixing all brands together,
-  // so that prop alone can't be used to gate brand-scoped features like comparison.
   isBrandScoped?: boolean;
 }
 
@@ -115,7 +111,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
 
   const itemsPerPage = 15;
 
-  // Group products by category
   const categoriesData = useMemo(() => {
     const cats = new Map<string, { count: number; sampleImage: string; uniqueModels: Set<string>; enName?: string }>();
 
@@ -141,7 +136,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
             existing.enName = p.category.en[0];
           }
 
-          // "LED Flaman Ampul" kategorisinin kapak fotoğrafını sabit KES498 yapmak için
           if (topCat === "LED Flaman Ampul") {
             existing.sampleImage = "urunler/kes498.webp";
           }
@@ -164,9 +158,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
 
   const isK2Grouped = isK2 && isBrandScoped;
 
-  // k2'de birbirine yakın isimli kategorileri (Solar Armatür, Sokak Armatürü vb.)
-  // tek bir "Armatür" grup kartı altında toplar. Diğer markalarda/karma
-  // /urunler kataloğunda inert (ungroupedCategories === categoriesData).
   const { ungroupedCategories, groupCards } = useMemo(() => {
     if (!isK2Grouped) return { ungroupedCategories: categoriesData, groupCards: [] as { key: string; displayName: string; sampleImage: string; members: typeof categoriesData }[] };
 
@@ -194,7 +185,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     return { ungroupedCategories: ungrouped, groupCards };
   }, [categoriesData, isK2Grouped, brandName, language]);
 
-  // Üst seviye kartlar (tekil kategoriler + k2 grup kartları) tek bir alfabetik listede birleşir
   const topLevelCards = useMemo(() => {
     const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base' });
     return [
@@ -203,7 +193,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     ].sort((a, b) => collator.compare(a.displayName, b.displayName));
   }, [ungroupedCategories, groupCards, language]);
 
-  // Auto-select if there is only 1 category (grup modunda üst seviyedeki toplam kart sayısına göre)
   const topLevelCount = isK2Grouped ? ungroupedCategories.length + groupCards.length : categoriesData.length;
   const activeCategory = selectedCategory || (topLevelCount === 1 && !isK2Grouped ? categoriesData[0].name : null);
   const showBackButton = categoriesData.length > 1;
@@ -212,7 +201,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   const inGroupCategoryList = isK2Grouped && !!selectedGroup && !activeCategory && !isSearching;
   const inTopLevel = !selectedGroup && !activeCategory && !isSearching;
 
-  // Compare feature (brand routes only — comparison stays within a single brand's catalog)
   const [compareIds, setCompareIds] = useState<string[]>([]);
   const [isCompareOpen, setIsCompareOpen] = useState(false);
 
@@ -233,7 +221,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       .map(product => ({ product, url: getProductCardUrl(product, brandName, isBrandRoute) }));
   }, [compareIds, productById, brandName, isBrandRoute]);
 
-  // Filter States
   const [selectedCasings, setSelectedCasings] = useState<string[]>([]);
   const [selectedWatts, setSelectedWatts] = useState<string[]>([]);
   const [selectedSockets, setSelectedSockets] = useState<string[]>([]);
@@ -241,7 +228,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   const [casingSearchQuery, setCasingSearchQuery] = useState("");
   const [activeFilterTab, setActiveFilterTab] = useState<FilterTab>("casings");
 
-  // Calculate available filters for the current category
   const availableFilters = useMemo(() => {
     if (!activeCategory) return { casings: [], watts: [], sockets: [] };
     const categoryProducts = products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
@@ -271,12 +257,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     }
   }, [availableFilters, activeFilterTab]);
 
-  // Filter products by selected category, apply filters, and group them by base model
   const filteredProducts = useMemo(() => {
     if (!activeCategory) return [];
     let categoryProducts = products.filter(p => p.category?.tr && p.category.tr[0] === activeCategory);
 
-    // Group products by their base model (first word of name, e.g. "GDL414" from "GDL414 25W...")
     const uniqueGroups = new Map<string, { product: Product, variants: Product[] }>();
     for (const p of categoryProducts) {
       const baseModel = getBaseModelKey(p.name.tr);
@@ -289,7 +273,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
 
     let groups = Array.from(uniqueGroups.values());
 
-    // Apply Filters (A group matches if ANY of its variants match the filter)
     if (selectedCasings.length > 0) {
       groups = groups.filter(g => g.variants.some(v => v.variantOptions?.casing && selectedCasings.includes(v.variantOptions.casing)));
     }
@@ -300,8 +283,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
       groups = groups.filter(g => g.variants.some(v => v.variantOptions?.socket && selectedSockets.includes(v.variantOptions.socket)));
     }
 
-    // Model kodu (ilk kelime) sıralamada göz ardı edilir; ürünler açıklayıcı
-    // isimlerine göre (örn. "JÜPİTER LED APLİK") gruplanıp alfabetik dizilir.
     const collator = new Intl.Collator(language === 'en' ? 'en' : 'tr', { sensitivity: 'base', numeric: true });
     const sortKey = (p: Product) => {
       const name = p.name[language] || p.name.tr || "";
@@ -343,9 +324,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   const displayedProducts = currentViewProducts.slice(startIndex, startIndex + itemsPerPage);
 
   const handleCategoryClick = (cat: string) => {
-    // Bir gruba ait alt kategoriye hangi yoldan girilirse girinsin (grup kartından,
-    // tarayıcı geri/ileri tuşundan, elle yazılmış ?category= linkinden) selectedGroup
-    // her zaman doğru şekilde yeniden türetilir — ayrı bir deep-link kod yolu gerekmez.
     const group = isK2Grouped ? getCategoryGroupForCategory(cat, brandName)?.key || null : null;
     setSelectedGroup(group);
     setSelectedCategory(cat);
@@ -383,9 +361,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
   };
 
   const handleBack = () => {
-    // selectedGroup bilinçli olarak temizlenmiyor: bir gruptan gelindiyse geri
-    // butonu üst gruba değil, grubun alt kategori listesine döner (breadcrumb
-    // davranışı, ayrı bir component eklemeden state persistence ile).
     setSelectedCategory(null);
     setCurrentPage(1);
     setSearchQuery("");
@@ -428,7 +403,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     <section className="pt-4 pb-12 px-6">
       <div className="max-w-[1440px] mx-auto">
 
-        {/* SEARCH BAR */}
         <div className="mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
           <div className="relative max-w-2xl mx-auto group">
             <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
@@ -461,7 +435,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
           </div>
         </div>
 
-        {/* VIEW 1: CATEGORY CARDS (+ k2'de grup kartları, örn. "Armatür") */}
         {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
@@ -478,7 +451,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
           </div>
         )}
 
-        {/* VIEW 1.5: GRUP İÇİ ALT KATEGORİ KARTLARI (sadece k2'de, bir gruba tıklanınca) */}
         {inGroupCategoryList && activeGroup && (
           <div className="animate-in fade-in zoom-in duration-500">
             <div className="mb-8">
@@ -507,7 +479,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
           </div>
         )}
 
-        {/* VIEW 2: PRODUCT GRID FOR SELECTED CATEGORY OR SEARCH */}
         {(activeCategory || isSearching) && (
           <div className="animate-in fade-in duration-500">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4 relative">
@@ -528,7 +499,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                 </h2>
               </div>
 
-              {/* FILTERS UI */}
               {!isSearching && hasAnyFilterOptions && (
                 <div className="animate-in fade-in duration-700 relative sm:static">
                   <button
@@ -554,12 +524,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
 
                   {isFiltersOpen && (
                     <>
-                      {/* Desktop Modal Inline */}
                       <div className="hidden sm:block absolute top-full left-0 sm:left-auto sm:right-0 mt-3 z-[100] bg-white/95 backdrop-blur-2xl rounded-[1.75rem] w-max min-w-[300px] max-w-md max-h-[80vh] flex-col shadow-[0_30px_80px_-20px_rgba(0,0,0,0.25)] border border-zinc-100 ring-1 ring-black/[0.02] animate-in slide-in-from-top-3 fade-in zoom-in-95 duration-200 overflow-hidden pointer-events-auto">
                         <FiltersPanelContent {...filtersPanelProps} />
                       </div>
 
-                      {/* Mobile Modal via Portal */}
                       {mounted && typeof window !== 'undefined' && createPortal(
                         <div className="fixed inset-0 z-[100] flex items-center justify-center sm:hidden">
                           <div className="fixed inset-0 bg-zinc-900/10 backdrop-blur-[2px] animate-in fade-in duration-200" onClick={() => setIsFiltersOpen(false)}></div>
@@ -574,7 +542,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                 </div>
               )}
 
-            </div> {/* END OF HEADER ROW */}
+            </div>
 
             {currentViewProducts.length === 0 && isSearching ? (
               <div className="text-center py-24 bg-white/50 backdrop-blur-sm rounded-3xl border border-zinc-100 shadow-sm animate-in fade-in duration-500">
@@ -615,7 +583,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
               </div>
             )}
 
-            {/* Pagination Controls */}
             {totalPages > 1 && (
               <div className="flex items-center justify-center gap-2 mt-16">
                 {getVisiblePages(currentPage, totalPages).map((pageNum, i) => {
@@ -647,7 +614,6 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
         )}
       </div>
 
-      {/* Compare Tray (brand routes only) */}
       {mounted && typeof window !== 'undefined' && isBrandScoped && compareItems.length > 0 && createPortal(
         <CompareTray
           compareItems={compareItems}

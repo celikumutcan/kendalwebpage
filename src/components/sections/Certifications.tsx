@@ -57,7 +57,6 @@ export const Certifications = () => {
       ref={containerRef}
       className="w-full relative bg-transparent py-16 md:py-24 px-6 border-t border-white/5 overflow-hidden"
     >
-      {/* Background ambient light */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] h-[300px] bg-yellow-500/40 rounded-[100%] blur-[90px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -67,25 +66,21 @@ export const Certifications = () => {
               key={idx}
               className={`cert-item relative flex flex-col items-center justify-center p-6 rounded-2xl bg-[var(--global-text)]/[0.02] border border-[var(--global-text)]/10 transition-all duration-300 hover:bg-[var(--global-text)]/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group ${cert.id === 'iso' ? 'cursor-pointer z-40' : 'z-10'}`}
             >
-              {/* ----------------- ISO SPECIFIC ANIMATION ELEMENTS ----------------- */}
               {cert.id === 'iso' && (
                 <>
-                  {/* Connecting Lines SVG (Anchored to the entire card) */}
                   <svg className="absolute inset-0 w-full h-full pointer-events-none z-10 transition-all duration-500 scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-center">
-                    {/* Lines start from roughly the center of the ISO logo (50%, 45%) and go to the 4 corners of the card */}
                     <line x1="50%" y1="45%" x2="0%" y2="0%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
                     <line x1="50%" y1="45%" x2="100%" y2="0%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
                     <line x1="50%" y1="45%" x2="0%" y2="100%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
                     <line x1="50%" y1="45%" x2="100%" y2="100%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
                   </svg>
 
-                  {/* 4 Corner Sub-Logos (Anchored to the exact corners of the card) */}
                   {isoSubCerts.map((subIcon, subIdx) => {
                     const positions = [
-                      { left: '0%', top: '0%' },     // 0: Top Left
-                      { left: '100%', top: '0%' },   // 1: Top Right
-                      { left: '0%', top: '100%' },   // 2: Bottom Left
-                      { left: '100%', top: '100%' }  // 3: Bottom Right
+                      { left: '0%', top: '0%' },
+                      { left: '100%', top: '0%' },
+                      { left: '0%', top: '100%' },
+                      { left: '100%', top: '100%' }
                     ];
                     
                     const pos = positions[subIdx];
@@ -96,7 +91,6 @@ export const Certifications = () => {
                         className="absolute z-20 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 pointer-events-none group-hover:pointer-events-auto"
                         style={{ left: pos.left, top: pos.top, transitionDelay: `${subIdx * 50}ms` }}
                       >
-                        {/* Wrapper for the image to round the corners of the baked-in white background */}
                         <div className="relative w-full h-full bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(227,0,15,0.4)]">
                           <Image 
                             src={subIcon} 
@@ -112,11 +106,9 @@ export const Certifications = () => {
                   })}
                 </>
               )}
-              {/* ----------------------------------------------------------------- */}
 
               <div className="relative w-28 h-28 md:w-32 md:h-32 mb-4 flex items-center justify-center">
                 {cert.id === 'iso' ? (
-                  /* Main ISO Logo (Stays in center) */
                   <div className="absolute inset-0 z-30 flex items-center justify-center transition-transform duration-500 group-hover:scale-90 bg-transparent rounded-full">
                     <Image
                       src={cert.icon}
@@ -127,7 +119,6 @@ export const Certifications = () => {
                     />
                   </div>
                 ) : (
-                  /* Standard Certificates */
                   <div className="relative w-24 h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-md">
                     <Image
                       src={cert.icon}

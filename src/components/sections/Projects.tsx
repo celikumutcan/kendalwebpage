@@ -66,8 +66,6 @@ export const Projects = () => {
     }
   };
 
-  // Auto-advance the carousel on its own ("tık tık tık"), pausing while the
-  // user hovers/touches it so manual scrolling never fights the timer.
   useEffect(() => {
     const interval = setInterval(() => {
       const track = trackRef.current;
@@ -115,7 +113,6 @@ export const Projects = () => {
 
       <div className="relative group/carousel">
 
-        {/* Left Arrow */}
         <button
           onClick={() => scrollTrack('left')}
           className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
@@ -124,7 +121,6 @@ export const Projects = () => {
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
         </button>
 
-        {/* Right Arrow */}
         <button
           onClick={() => scrollTrack('right')}
           className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-black/60 hover:bg-[var(--brand-red)] text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full backdrop-blur-md border border-white/20 transition-all duration-300 opacity-100 md:opacity-0 md:group-hover/carousel:opacity-100 hover:scale-110 shadow-xl"
@@ -142,7 +138,6 @@ export const Projects = () => {
           onTouchStart={pauseAutoplay}
           onTouchEnd={scheduleResumeAutoplay}
         >
-          {/* Global styles block to hide scrollbar for webkit browsers */}
           <style dangerouslySetInnerHTML={{
             __html: `
             div::-webkit-scrollbar { display: none; }

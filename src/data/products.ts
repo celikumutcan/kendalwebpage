@@ -1,5 +1,5 @@
 import productsData from "./products.json";
-import slugMapData from "./slug-map.json"; // trigger update 23
+import slugMapData from "./slug-map.json";
 import { getAssetPath } from "@/lib/basePath";
 
 export interface ProductAttribute {
@@ -10,8 +10,8 @@ export interface ProductAttribute {
 export interface Product {
   id: string;
   model: string;
-  image: string; // relative path, e.g. "catalog/image/catalog/urunler/kes1205wbeyaz.jpg"
-  images?: string[]; // optional array of additional image paths
+  image: string;
+  images?: string[];
   name: { tr: string; en: string };
   attributes: { tr: ProductAttribute[]; en: ProductAttribute[] };
   category?: { tr: string[]; en: string[] };
@@ -24,20 +24,13 @@ export interface Product {
   };
 }
 
-// id -> Product
 export const products: Record<string, Product> = productsData as unknown as Record<string, Product>;
 
-// slug -> id. Includes BOTH legacy TR and EN slugs (they sometimes differ
-// slightly, e.g. "sarı" vs "sari"), so every old QR / bookmarked link
-// resolves regardless of which language variant was originally printed.
 export const slugMap: Record<string, string> = slugMapData as Record<string, string>;
 
 export function getProductBySlug(slug: string): Product | undefined {
   const id = slugMap[slug];
   if (id) return products[id];
-  // Fallback: link generation (getProductCanonicalUrl) falls back to the raw
-  // product id when no slug-map entry exists yet, so resolution must accept
-  // the id directly too, or freshly added products 404 until a slug is added.
   return products[slug];
 }
 
@@ -49,7 +42,6 @@ export function getProductImageUrl(image: string): string {
   return getAssetPath('/images/' + image);
 }
 
-// Pre-compute an inverted map for O(1) lookups by ID
 const idToSlugMap: Record<string, string> = {};
 for (const slug of Object.keys(slugMap)) {
   const id = slugMap[slug as keyof typeof slugMap];
@@ -71,21 +63,12 @@ export function getSlugByProductId(id: string): string | undefined {
   return idToSlugMap[id];
 }
 
-// Ürünlerin "gerçek" (canonical) adresi marka mikrosite'leridir
-// (k2/vanti/global.kendalelektrik.com.tr) - ana domaindeki /{slug} ve
-// /urunler/{kategori}/{slug} rotaları aynı içeriği gösteren aynalardır.
 export const BRAND_HOSTS: Record<string, string> = {
   k2: "https://k2.kendalelektrik.com.tr",
   vanti: "https://vanti.kendalelektrik.com.tr",
   global: "https://global.kendalelektrik.com.tr",
 };
 
-// Kategori keşif/listeleme deneyiminde (CategoryFirstShowcase) birbirine
-// yakın isimli kategorileri tek bir üst grup kartı altında toplamak için.
-// Bilinçli olarak products.json'a değil koda yazılıyor: category.tr[1] alanı
-// tutarsız/eksik dolu ve hiçbir yerde okunmuyor, güvenilir bir kaynak değil.
-// getProductCategorySlug / generateStaticParams bu yapıdan tamamen bağımsız
-// kalır — ürün detay URL'leri her zaman category.tr[0] bazlı olmaya devam eder.
 export interface CategoryGroupDef {
   key: string;
   brand: string;

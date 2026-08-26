@@ -7,7 +7,6 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 export function KariyerClient() {
   const { t } = useLanguage();
 
-  // Cast for typescript
   const career = (t as any).career;
 
   const links = [

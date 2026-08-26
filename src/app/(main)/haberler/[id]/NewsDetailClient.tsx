@@ -19,14 +19,12 @@ export function NewsDetailClient({ id }: { id: string }) {
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">
-      {/* Vibrant Spotlight Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute -left-[10%] top-0 w-[600px] h-[600px] bg-blue-500/30 blur-[120px] rounded-full" />
         <div className="absolute -right-[10%] bottom-0 w-[600px] h-[600px] bg-cyan-500/30 blur-[120px] rounded-full" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto">
         
-        {/* Back Link */}
         <div className="mb-8">
           <Link href="/haberler" className="inline-flex items-center text-gray-400 hover:text-[var(--brand-red)] transition-colors text-sm font-medium">
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +34,6 @@ export function NewsDetailClient({ id }: { id: string }) {
           </Link>
         </div>
 
-        {/* Article Header */}
         <header className="mb-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
             {news.title}
@@ -46,10 +43,8 @@ export function NewsDetailClient({ id }: { id: string }) {
           </div>
         </header>
 
-        {/* Dynamic Image Slider Component (Client Side) */}
         <ImageSlider images={news.images} altPrefix={news.title} titlePrefix={news.title} />
 
-        {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed mt-12 text-justify">
           {news.content.map((paragraph, idx) => {
             if (paragraph.startsWith("[IMAGE]")) {

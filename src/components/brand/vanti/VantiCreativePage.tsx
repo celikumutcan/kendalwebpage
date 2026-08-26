@@ -12,7 +12,6 @@ import { getAssetPath } from "@/lib/basePath";
 import { VantiPreloader } from "./VantiPreloader";
 import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
 import { ProductGrid } from "@/components/brand/shared/ProductGrid";
-import { Highlights } from "@/components/brand/shared/Highlights";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 
 const VantiScene = dynamic(
@@ -34,13 +33,8 @@ interface VantiCreativePageProps {
   newProducts: Product[];
 }
 
-const VANTI_ACCENT = "#0f766e"; // teal-700, matches the page's existing teal palette
+const VANTI_ACCENT = "#0f766e";
 
-// highlightsStats placeholder note: "%100 Yerli Üretim" ve "40+ Ülkede Global
-// Ağ" (bkz. src/data/exportCountries.ts — aynı harita/liste K2 ve Global'da
-// da kullanılıyor) teyitli. "3 Hız Kademesi" ve "2 Yıl Garanti" tahmini —
-// yayına almadan önce marka/satış sorumlusundan (patron) teyit edip
-// güncellemek gerekir.
 const translations = {
   tr: {
     heroSub: "SERİNLİĞİN VE KONFORUN ADRESİ",
@@ -55,14 +49,6 @@ const translations = {
     newTitle: "Yeni Ürünler",
     modelLabel: "Model",
     viewLabel: "İncele",
-    highlightsEyebrow: "Neden Vanti?",
-    highlightsTitle: "Sessiz motor, güçlü esinti, uzun ömürlü konfor.",
-    highlightsStats: [
-      { value: "%100", label: "Yerli Üretim" },
-      { value: "3", label: "Hız Kademesi" },
-      { value: "40+", label: "Ülkede Global Ağ" },
-      { value: "2 Yıl", label: "Garanti Kapsamı" },
-    ],
     exportEyebrow: "Global Erişim",
     exportTitle: "Vanti'nin serinliği dünyanın dört bir yanında.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -83,14 +69,6 @@ const translations = {
     newTitle: "New Products",
     modelLabel: "Model",
     viewLabel: "View",
-    highlightsEyebrow: "Why Vanti?",
-    highlightsTitle: "Quiet motors, powerful breeze, long-lasting comfort.",
-    highlightsStats: [
-      { value: "100%", label: "Domestic Production" },
-      { value: "3", label: "Speed Settings" },
-      { value: "40+", label: "Countries — Global Network" },
-      { value: "2 Years", label: "Warranty Coverage" },
-    ],
     exportEyebrow: "Global Reach",
     exportTitle: "Vanti's cool breeze, everywhere around the world.",
     exportHint: "Click a point on the map.",
@@ -109,7 +87,6 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Hero fade out on scroll
       gsap.to(heroTextRef.current, {
         opacity: 0,
         y: -100,
@@ -121,7 +98,6 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         },
       });
 
-      // Animate all text blocks
       const textBlocks = gsap.utils.toArray<HTMLElement>(".reveal-text");
       
       textBlocks.forEach((block) => {
@@ -151,14 +127,10 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
   return (
     <div ref={containerRef} className="relative w-full bg-sky-50 text-teal-900 selection:bg-teal-600 selection:text-white overflow-hidden" style={{ "--page-bg": "#f0f9ff" } as React.CSSProperties}>
 
-      {/* Preloader: hides the page until the 3D scene has actually painted,
-          so the background/fan/text all appear together instead of in stages. */}
       <VantiPreloader ready={sceneReady} />
 
-      {/* 3D Background */}
       <VantiScene onReady={() => setSceneReady(true)} />
 
-      {/* Hero Section */}
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
         <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-40">
           <img 
@@ -176,7 +148,6 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         </div>
       </section>
 
-      {/* Story Section 1: Natural Breeze (Airy, Left-Aligned) */}
       <section className="relative z-10 w-full min-h-screen flex flex-col items-start justify-center px-6 md:px-32 py-24">
         <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
@@ -189,7 +160,6 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         </div>
       </section>
 
-      {/* Story Section 2: Smart Cooling (Airy, Right-Aligned) */}
       <section className="relative z-10 w-full min-h-screen flex flex-col items-end justify-center px-6 md:px-32 py-24 text-right">
         <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center justify-end gap-4">
@@ -202,13 +172,8 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         </div>
       </section>
 
-      {/* Highlights / trust stats */}
-      <Highlights eyebrow={t.highlightsEyebrow} title={t.highlightsTitle} stats={t.highlightsStats} accent={VANTI_ACCENT} theme="light" />
-
-      {/* Export map */}
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
 
-      {/* Popular Products — sliding marquee */}
       <ProductCarousel
         label={t.popularLabel}
         title={t.popularTitle}
@@ -221,10 +186,8 @@ export function VantiCreativePage({ popularProducts, newProducts }: VantiCreativ
         align="left"
       />
 
-      {/* New Products — static editorial grid */}
       <ProductGrid label={t.newLabel} title={t.newTitle} products={newProducts} language={language} brandName="vanti" accent={VANTI_ACCENT} theme="light" />
 
-      {/* Story Section 3: Energy Saving (Airy, Centered) */}
       <section className="relative z-10 w-full min-h-[80vh] flex flex-col items-center justify-center px-6 md:px-32 py-24 text-center">
         <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-16 rounded-[4rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">

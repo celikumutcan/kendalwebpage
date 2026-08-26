@@ -10,7 +10,6 @@ export const ApertureTransition = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Create a dummy object to tween a value from 100 to 0 and back
       const obj = { radius: 150 };
       
       const tl = gsap.timeline({
@@ -22,7 +21,6 @@ export const ApertureTransition = () => {
         }
       });
       
-      // Close aperture
       tl.to(obj, {
         radius: 0,
         duration: 1,
@@ -33,7 +31,6 @@ export const ApertureTransition = () => {
           }
         }
       })
-      // Open aperture
       .to(obj, {
         radius: 150,
         duration: 1,

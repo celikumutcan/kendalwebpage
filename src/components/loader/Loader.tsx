@@ -54,7 +54,6 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           onComplete,
         });
 
-        // 1. The laser flash (intense white)
         tl.to(laserRef.current, {
           backgroundColor: "#ffffff",
           boxShadow: "0 0 40px 10px rgba(255,255,255,1), 0 0 80px 20px rgba(255,255,255,0.8)",
@@ -62,14 +61,12 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           duration: 0.15,
           ease: "power4.out"
         })
-        // 2. Hide text quickly
         .to(textContainerRef.current, {
           opacity: 0,
           scale: 1.2,
           duration: 0.2,
           ease: "power2.in"
         }, "<")
-        // 3. The Curtain Reveal (Split screen)
         .to(topPanelRef.current, {
           y: "-100%",
           duration: 1.2,
@@ -80,14 +77,12 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           duration: 1.2,
           ease: "expo.inOut"
         }, "<")
-        // 4. Fade laser out as doors open
         .to(laserRef.current, {
           opacity: 0,
           scaleY: 0,
           duration: 0.4,
           ease: "power2.out"
         }, "-=1.0")
-        // 5. Hide container
         .to(containerRef.current, {
           autoAlpha: 0,
           duration: 0.1,
@@ -102,19 +97,16 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
       ref={containerRef}
       className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden pointer-events-none"
     >
-      {/* Top Black Panel */}
       <div 
         ref={topPanelRef} 
         className="absolute top-0 left-0 w-full h-[50vh] bg-[#020202] z-10 origin-top shadow-[0_10px_30px_rgba(0,0,0,0.8)] pointer-events-auto" 
       />
       
-      {/* Bottom Black Panel */}
       <div 
         ref={bottomPanelRef} 
         className="absolute bottom-0 left-0 w-full h-[50vh] bg-[#020202] z-10 origin-bottom shadow-[0_-10px_30px_rgba(0,0,0,0.8)] pointer-events-auto" 
       />
 
-      {/* The Laser Line (between panels) */}
       <div 
         ref={laserRef}
         className="absolute top-1/2 left-0 w-full h-[1px] -translate-y-1/2 z-20 transition-all duration-300 origin-left"
@@ -125,12 +117,10 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         }}
       />
 
-      {/* Progress Text & Logo */}
       <div 
         ref={textContainerRef} 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-6 text-white pointer-events-none mix-blend-exclusion w-full px-4"
       >
-        {/* Enormous Full Logo */}
         <div className="relative w-64 h-24 md:w-80 md:h-28 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
           <Image
             src={getAssetPath("/images/kendal-logo.svg")}
@@ -142,7 +132,6 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
           />
         </div>
         
-        {/* Glowing Progress Number */}
         <div className="text-6xl md:text-8xl font-black tracking-tighter tabular-nums drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mt-2">
           {progress.toString().padStart(3, "0")}
         </div>

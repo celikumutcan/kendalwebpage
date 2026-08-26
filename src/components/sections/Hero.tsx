@@ -22,7 +22,6 @@ export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
-  // Store scroll progress in a ref instead of React state to avoid re-rendering on every scroll frame
   const scrollProgressRef = useRef<number>(0);
 
   useIsomorphicLayoutEffect(() => {

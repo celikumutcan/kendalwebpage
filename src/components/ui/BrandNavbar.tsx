@@ -8,7 +8,7 @@ import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 interface BrandNavbarProps {
-  brandName: string; // 'k2' or 'vanti'
+  brandName: string;
 }
 
 export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
@@ -21,7 +21,7 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
       ? getAssetPath("/images/brands/vanti-logo.svg")
       : getAssetPath("/images/brands/global-logo.svg");
 
-  const brandColor = isK2 ? "#FF6600" : brandName === "vanti" ? "#2563EB" : "#FFDA51"; // Orange for K2, Blue for Vanti, Yellow for Global
+  const brandColor = isK2 ? "#FF6600" : brandName === "vanti" ? "#2563EB" : "#FFDA51";
 
   const homeHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}` : "/";
   const urunlerHref = process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler";
@@ -40,7 +40,6 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
           />
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8 text-sm flex-1 justify-center h-full">
           <Link href={homeHref} className="hover:text-zinc-500 transition-colors font-medium">{(t as any).brand_pages?.navbar?.home || "Ana Sayfa"}</Link>
           <Link href={urunlerHref} className="hover:text-zinc-500 transition-colors font-medium">{(t as any).brand_pages?.navbar?.products || "Ürünler"}</Link>
@@ -50,7 +49,6 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
         <div className="relative flex items-center gap-2 sm:gap-4 ml-auto lg:ml-0 z-50">
           <LanguageSwitcher />
 
-          {/* Mobile Menu Toggle Button */}
           <button 
             className="lg:hidden p-2 -mr-2 text-zinc-600 hover:text-zinc-900 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -69,7 +67,6 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       <div 
         className={`fixed inset-0 top-[72px] md:top-[88px] bg-black/95 backdrop-blur-xl z-40 transition-all duration-300 ease-in-out lg:hidden ${
           isMobileMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"

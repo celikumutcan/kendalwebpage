@@ -32,11 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  // Ürünlerin asıl (canonical) adresi kendi marka mikrosite'leridir
-  // (k2/vanti/global.kendalelektrik.com.tr) - ana domaindeki /{slug} ve
-  // /urunler/{kategori}/{slug} sayfaları aynı içeriğin aynasıdır ve kendi
-  // <link rel="canonical"> etiketleriyle buraya işaret eder. Google'ın
-  // önerisi sitemap'teki adreslerin kanonik adresle birebir eşleşmesidir.
   const productEntries: MetadataRoute.Sitemap = Object.values(products).map((product) => ({
     url: getProductCanonicalUrl(product),
     changeFrequency: "monthly",

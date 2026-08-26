@@ -6,7 +6,6 @@ import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
 import { useInView } from "@/lib/useInView";
 
-// Custom shader material for the pulsing light core and aperture effect
 const coreShader = {
   uniforms: {
     uTime: { value: 0 },
@@ -94,8 +93,6 @@ const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.Mutab
   );
 };
 
-// The main LightCore component, wrapping the canvas.
-// Pauses the WebGL render loop entirely when scrolled off-screen.
 export const LightCore = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
   const [containerRef, isInView] = useInView<HTMLDivElement>();
 

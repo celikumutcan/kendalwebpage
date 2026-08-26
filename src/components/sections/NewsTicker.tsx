@@ -17,7 +17,7 @@ export const NewsTicker = () => {
         gsap.to(trackRef.current, {
           xPercent: -50,
           repeat: -1,
-          duration: 40, // Slower for better performance
+          duration: 40,
           ease: "linear",
         });
       }

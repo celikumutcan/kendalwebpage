@@ -29,9 +29,6 @@ interface FiltersPanelContentProps {
   onClose: () => void;
 }
 
-// Filtre panelinin içeriği: masaüstünde bir dropdown içinde, mobilde bir
-// portal modal içinde iki kez render edilir (bkz. index.tsx) — aynı JSX'in
-// iki yerde elle kopyalanmasını önlemek için tek bir yerde tutuluyor.
 export function FiltersPanelContent({
   t,
   isK2,
@@ -53,7 +50,6 @@ export function FiltersPanelContent({
 
   return (
     <>
-      {/* Header */}
       <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-100">
         <div>
           <h3 className="text-lg font-bold text-zinc-900 tracking-tight">{t.brand_pages?.showcase?.filters || "Filtreler"}</h3>
@@ -68,7 +64,6 @@ export function FiltersPanelContent({
         </button>
       </div>
 
-      {/* Tabs Header — segmented control */}
       <div className="px-6 pt-5">
         <div className="flex gap-1 p-1 bg-zinc-100/80 rounded-full">
           {[
@@ -100,10 +95,8 @@ export function FiltersPanelContent({
         </div>
       </div>
 
-      {/* Body */}
       <div className="flex-1 overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-zinc-200">
 
-        {/* Renkler Tab */}
         {activeFilterTab === "casings" && availableFilters.casings.length > 0 && (
           <div className="space-y-4 animate-in fade-in zoom-in-95 duration-200">
             <div className="relative">
@@ -157,7 +150,6 @@ export function FiltersPanelContent({
           </div>
         )}
 
-        {/* Watts Tab */}
         {activeFilterTab === "watts" && availableFilters.watts.length > 0 && (
           <div className="animate-in fade-in zoom-in-95 duration-200">
             <div className="flex flex-wrap gap-2.5">
@@ -181,7 +173,6 @@ export function FiltersPanelContent({
           </div>
         )}
 
-        {/* Sockets Tab */}
         {activeFilterTab === "sockets" && availableFilters.sockets.length > 0 && (
           <div className="animate-in fade-in zoom-in-95 duration-200">
             <div className="flex flex-wrap gap-2.5">
@@ -207,7 +198,6 @@ export function FiltersPanelContent({
 
       </div>
 
-      {/* Footer */}
       <div className="p-5 border-t border-zinc-100 flex gap-3 bg-zinc-50/60">
         <button
           onClick={() => {

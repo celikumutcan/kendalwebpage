@@ -14,7 +14,6 @@ interface BrandProductShowcaseProps {
 export default function BrandProductShowcase({ products, brandName }: BrandProductShowcaseProps) {
   const isK2 = brandName === "k2";
   
-  // Extract unique top-level categories
   const categories = useMemo(() => {
     const cats = new Set<string>();
     products.forEach(p => {
@@ -28,7 +27,6 @@ export default function BrandProductShowcase({ products, brandName }: BrandProdu
   const [selectedCategory, setSelectedCategory] = useState<string>("Tümü");
   const [visibleCount, setVisibleCount] = useState<number>(12);
 
-  // Filter products by selected category
   const filteredProducts = useMemo(() => {
     if (selectedCategory === "Tümü") {
       return products;
@@ -41,7 +39,7 @@ export default function BrandProductShowcase({ products, brandName }: BrandProdu
 
   const handleCategoryClick = (cat: string) => {
     setSelectedCategory(cat);
-    setVisibleCount(12); // Reset count on category change
+    setVisibleCount(12);
   };
 
   const handleLoadMore = () => {
@@ -62,7 +60,6 @@ export default function BrandProductShowcase({ products, brandName }: BrandProdu
           <p className="text-zinc-500 max-w-2xl mx-auto">Size en uygun ürünleri bulmak için kategorilere göz atın.</p>
         </div>
 
-        {/* Category Tabs */}
         <div className="flex flex-nowrap md:flex-wrap gap-3 overflow-x-auto pb-6 mb-8 scrollbar-hide snap-x justify-start md:justify-center">
           {categories.map((cat) => (
             <button
@@ -77,11 +74,10 @@ export default function BrandProductShowcase({ products, brandName }: BrandProdu
           ))}
         </div>
 
-        {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {displayedProducts.map((product) => {
             const slug = getSlugByProductId(product.id) || product.id;
-            const categorySlug = "aydinlatma"; // Optional: make dynamic if needed
+            const categorySlug = "aydinlatma";
             const productUrl = `/urunler/${categorySlug}/${slug}`;
 
             return (
@@ -131,7 +127,6 @@ export default function BrandProductShowcase({ products, brandName }: BrandProdu
           </div>
         )}
 
-        {/* Load More */}
         {hasMore && (
           <div className="text-center mt-16">
             <button 

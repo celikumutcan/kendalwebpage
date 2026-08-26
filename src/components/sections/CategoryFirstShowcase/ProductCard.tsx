@@ -6,9 +6,6 @@ import { getAssetPath } from "@/lib/basePath";
 import { Product } from "@/data/products";
 import { getProductCardUrl } from "./helpers";
 
-// Kendal Global mikrositesinde ürün adları watt/renk sıcaklığı/kasa rengi/duy
-// gibi varyant detaylarını içermeden gösterilir (o detaylar zaten filtre ve
-// ürün detay sayfasında var) — kart başlığı bu yüzden bu token'ları eler.
 function stripVariantTokens(name: string): string {
   const words = name.trim().split(' ');
   return words.filter((w) => {

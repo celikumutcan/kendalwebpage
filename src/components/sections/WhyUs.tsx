@@ -84,7 +84,6 @@ export const WhyUs = () => {
       ref={containerRef}
       className="relative w-full py-24 md:py-32 px-6 overflow-hidden"
     >
-      {/* Warm Bulb Illumination Concept */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-30 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at 50% -10%, #ffb347 0%, transparent 60%)' }} />
       <div className="absolute bottom-0 right-0 w-full h-[500px] pointer-events-none opacity-10 mix-blend-screen" style={{ background: 'radial-gradient(circle at 100% 100%, #ffb347 0%, transparent 60%)' }} />
 

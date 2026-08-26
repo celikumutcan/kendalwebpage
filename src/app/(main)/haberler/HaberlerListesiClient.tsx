@@ -19,18 +19,14 @@ export function HaberlerListesiClient() {
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white py-32 px-6 overflow-hidden">
-      {/* Vibrant Spotlight Effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        {/* Top center glow */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-emerald-500/40 blur-[120px] rounded-full" />
 
-        {/* Bottom center glow */}
         <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 w-[800px] h-[500px] bg-teal-500/40 blur-[120px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Header */}
         <header className="mb-24 text-center">
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
@@ -43,16 +39,14 @@ export function HaberlerListesiClient() {
           </p>
         </header>
 
-        {/* News Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentNews.map((news) => (
             <Link href={`/haberler/${news.id}`} key={news.id} className="group block">
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[var(--brand-red)]/50 transition-all duration-300 hover:shadow-[0_0_25px_rgba(255,0,0,0.1)] hover:-translate-y-1 h-full flex flex-col">
 
-                {/* Thumbnail */}
                 <div className="relative w-full aspect-video overflow-hidden">
                   <Image
-                    src={news.images[0] || getAssetPath("/images/references/turkiye/ref-01.jpg")} // fallback if no image
+                    src={news.images[0] || getAssetPath("/images/references/turkiye/ref-01.jpg")}
                     alt={news.title}
                     title={news.title}
                     fill
@@ -63,7 +57,6 @@ export function HaberlerListesiClient() {
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-300" />
                 </div>
 
-                {/* Content */}
                 <div className="p-6 flex flex-col flex-grow">
                   <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
                     <span>{news.date}</span>
@@ -91,7 +84,6 @@ export function HaberlerListesiClient() {
           </div>
         )}
 
-        {/* Pagination */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center mt-16 gap-2">
             <button

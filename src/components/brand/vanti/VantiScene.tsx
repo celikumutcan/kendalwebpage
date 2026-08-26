@@ -23,9 +23,6 @@ function AeroBlades() {
   }, []);
 
   useFrame((state, delta) => {
-    // Scrolling gives the blades a push rather than pinning rotation directly to
-    // scroll position, so the fan spins up and coasts back down like a real motor
-    // instead of snapping to a stop the instant scrolling stops.
     const scrollY = window.scrollY || 0;
     const scrollDelta = scrollY - lastScrollRef.current;
     lastScrollRef.current = scrollY;
@@ -36,12 +33,10 @@ function AeroBlades() {
 
     if (bladeRef.current) {
       bladeRef.current.rotation.z -= velocityRef.current;
-      // Slight floating/wobble effect based on time to keep it alive even when stopped
       bladeRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
     }
 
     if (pedestalRef.current) {
-      // Classic oscillating-fan sweep, gently nudged toward wherever the cursor is
       const sweep = Math.sin(state.clock.elapsedTime * 0.25) * 0.25;
       const target = sweep + mouseXRef.current * 0.2;
       pedestalRef.current.rotation.y += (target - pedestalRef.current.rotation.y) * 0.03;
@@ -53,9 +48,7 @@ function AeroBlades() {
     const angle = (i / numBlades) * Math.PI * 2;
     return (
       <group key={i} rotation={[0, 0, angle]}>
-        {/* Blade positioned outward from the hub, with a slight pitch (twist) to catch air */}
         <mesh position={[0, 3.5, 0]} rotation={[0, 0.4, 0]} castShadow receiveShadow>
-          {/* A stretched, thin, elegant blade shape */}
           <boxGeometry args={[1.2, 6, 0.05]} />
           <meshStandardMaterial 
             color="#ffffff" 
@@ -70,19 +63,16 @@ function AeroBlades() {
   return (
     <group ref={pedestalRef} position={[0, 0, -8]} scale={1.5}>
       <group ref={bladeRef}>
-        {/* The Central Hub */}
         <mesh rotation={[Math.PI / 2, 0, 0]} castShadow receiveShadow>
           <cylinderGeometry args={[1.5, 1.5, 0.5, 32]} />
           <meshStandardMaterial color="#f8fafc" roughness={0.3} metalness={0.5} />
         </mesh>
 
-        {/* The Inner Hub detailing */}
         <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0.26]}>
           <cylinderGeometry args={[1.2, 1.2, 0.05, 32]} />
           <meshStandardMaterial color="#e2e8f0" roughness={0.5} metalness={0.8} />
         </mesh>
 
-        {/* The Blades */}
         {blades}
       </group>
     </group>
@@ -113,21 +103,16 @@ function AirCurrents() {
 function BreezeEnvironment() {
   return (
     <>
-      {/* Fresh, softer fog for even more text contrast */}
       <fog attach="fog" args={["#bae6fd", 10, 30]} />
       
-      {/* Dimmed daylight to make text pop significantly */}
       <ambientLight intensity={0.6} color="#ffffff" />
       <directionalLight position={[10, 20, 10]} intensity={0.8} color="#ffffff" castShadow />
       <directionalLight position={[-10, -10, 5]} intensity={0.3} color="#7dd3fc" />
 
-      {/* Aerodynamic Centerpiece */}
       <AeroBlades />
       
-      {/* Wind lines */}
       <AirCurrents />
 
-      {/* Airborne particles (dust motes / pollen) flowing in the wind */}
       <Sparkles 
         count={200} 
         scale={20} 
@@ -138,7 +123,6 @@ function BreezeEnvironment() {
         position={[0, 0, -2]} 
       />
 
-      {/* Infinity Sky/Studio Background */}
       <mesh receiveShadow position={[0, 0, -15]}>
         <planeGeometry args={[100, 100]} />
         <meshStandardMaterial color="#bae6fd" roughness={1} />
@@ -157,9 +141,6 @@ function BreezeEnvironment() {
 }
 
 export function VantiScene({ onReady }: { onReady?: () => void }) {
-  // Stop the WebGL render loop entirely while the tab is backgrounded/minimized,
-  // since the fixed full-page canvas would otherwise keep rendering at 60fps
-  // for no visible benefit. No effect on how the scene looks while it's on screen.
   const [isTabVisible, setIsTabVisible] = useState(true);
 
   useEffect(() => {
@@ -176,8 +157,6 @@ export function VantiScene({ onReady }: { onReady?: () => void }) {
         camera={{ position: [0, 0, 8], fov: 45 }}
         frameloop={isTabVisible ? "always" : "never"}
         onCreated={() => {
-          // Wait a couple of frames so the environment map and first real
-          // render have actually painted before we tell the page it's ready.
           requestAnimationFrame(() => requestAnimationFrame(() => onReady?.()));
         }}
       >
