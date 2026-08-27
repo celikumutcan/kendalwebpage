@@ -107,6 +107,8 @@ export const OurBrands = () => {
               <Link
                 ref={(el) => { cardsRef.current[idx] = el; }}
                 href={brand.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative flex items-center justify-center h-32 md:h-36 bg-white rounded-2xl border-2 border-zinc-200/80 shadow-sm overflow-hidden transition-all duration-300 ease-out hover:-translate-y-1.5 hover:border-[var(--glow)] hover:shadow-[0_0_45px_-8px_var(--glow)]"
               >
                 <div className="relative w-full h-full p-10 md:p-11 transition-transform duration-300 ease-out group-hover:scale-105">

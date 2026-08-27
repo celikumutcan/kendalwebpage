@@ -121,12 +121,12 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
         ref={textContainerRef} 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col items-center gap-6 text-white pointer-events-none mix-blend-exclusion w-full px-4"
       >
-        <div className="relative w-64 h-24 md:w-80 md:h-28 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
+        <div className="relative w-80 h-28 md:w-[26rem] md:h-36 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)] mb-4">
           <Image
             src={getAssetPath("/images/kendal-logo.svg")}
             alt="Kendal Elektrik Logo"
             fill
-            sizes="(max-width: 768px) 256px, 320px"
+            sizes="(max-width: 768px) 320px, 416px"
             className="object-contain"
             priority
           />

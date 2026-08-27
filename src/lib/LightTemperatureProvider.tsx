@@ -22,6 +22,7 @@ export const LightTemperatureProvider = ({
   const colorCool = useRef(new THREE.Color("#d8e4ff"));
   const colorWarm = useRef(new THREE.Color("#ffb347"));
   const currentColor = useRef(new THREE.Color());
+  const lastAppliedProgress = useRef(-1);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -34,9 +35,18 @@ export const LightTemperatureProvider = ({
           const p = self.progress;
           progressRef.current = p;
 
-          document.documentElement.style.setProperty("--light-temp", p.toString());
+          // This trigger spans the whole document, so onUpdate fires on
+          // every scroll frame across the entire page. Writing CSS custom
+          // properties on documentElement forces a style recalc, so we only
+          // do it when progress has moved enough to actually change the
+          // rendered color/temperature instead of on every single tick.
+          const rounded = Math.round(p * 500) / 500;
+          if (rounded === lastAppliedProgress.current) return;
+          lastAppliedProgress.current = rounded;
 
-          currentColor.current.lerpColors(colorCool.current, colorWarm.current, p);
+          document.documentElement.style.setProperty("--light-temp", rounded.toString());
+
+          currentColor.current.lerpColors(colorCool.current, colorWarm.current, rounded);
           document.documentElement.style.setProperty(
             "--accent-current",
             `#${currentColor.current.getHexString()}`

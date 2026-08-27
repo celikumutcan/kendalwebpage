@@ -168,6 +168,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   let badgeColor = "bg-zinc-800 text-zinc-300 border-zinc-700";
   let ambientGlow = "bg-white/10";
   let themeImageBg = "bg-white/[0.03]";
+  let pageBg = "bg-[#f4f5f7]";
 
   if (isLight) {
     if (isK2) {
@@ -178,6 +179,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       badgeColor = "bg-orange-100 text-orange-700 border-orange-200";
       ambientGlow = "bg-orange-200";
       themeImageBg = "bg-orange-50/80";
+      pageBg = "bg-[#fae3c8]";
     } else if (isVanti) {
       themeColor = "bg-blue-600";
       themeText = "text-blue-600";
@@ -186,6 +188,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       badgeColor = "bg-blue-100 text-blue-700 border-blue-200";
       ambientGlow = "bg-blue-200";
       themeImageBg = "bg-blue-50/80";
+      pageBg = "bg-[#d4e4f9]";
     } else if (isGlobal) {
       themeColor = "bg-[#FFDA51]";
       themeText = "text-amber-600";
@@ -194,6 +197,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       badgeColor = "bg-amber-100 text-amber-700 border-amber-200";
       ambientGlow = "bg-[#FFDA51]/30";
       themeImageBg = "bg-amber-50/80";
+      pageBg = "bg-[#f7e7ac]";
     }
   }
 
@@ -295,7 +299,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   );
 
   return (
-    <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-28 md:pt-36 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#2a2d38] text-white"}`}>
+    <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? `pt-28 md:pt-36 ${pageBg} text-zinc-900` : "pt-32 md:pt-40 bg-[#2a2d38] text-white"}`}>
 
       <style>{`
         @keyframes kdlFadeInUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
@@ -311,25 +315,25 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
         {isK2 && (
           <>
-            <div className="absolute -left-[15%] top-[-15%] w-[900px] h-[900px] rounded-full bg-orange-500/10 blur-[160px]" />
-            <div className="absolute right-[-15%] top-[25%] w-[800px] h-[800px] rounded-full bg-amber-400/[0.08] blur-[150px]" />
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[400px] bg-gradient-to-b from-orange-300/20 via-orange-400/5 to-transparent blur-3xl opacity-50" />
+            <div className="absolute -left-[15%] top-[-15%] w-[900px] h-[900px] rounded-full bg-orange-500/[0.24] blur-[160px]" />
+            <div className="absolute right-[-15%] top-[25%] w-[800px] h-[800px] rounded-full bg-amber-400/[0.18] blur-[150px]" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[400px] bg-gradient-to-b from-orange-300/40 via-orange-400/18 to-transparent blur-3xl opacity-70" />
           </>
         )}
 
         {isVanti && (
           <>
-            <div className="absolute -left-[15%] top-[-15%] w-[900px] h-[900px] rounded-full bg-blue-500/10 blur-[160px]" />
-            <div className="absolute right-[-15%] top-[15%] w-[900px] h-[900px] rounded-full bg-cyan-400/[0.08] blur-[150px]" />
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[900px] h-[450px] bg-gradient-to-b from-cyan-200/20 via-blue-300/5 to-transparent blur-3xl opacity-50" />
+            <div className="absolute -left-[15%] top-[-15%] w-[900px] h-[900px] rounded-full bg-blue-500/[0.26] blur-[160px]" />
+            <div className="absolute right-[-15%] top-[15%] w-[900px] h-[900px] rounded-full bg-cyan-400/[0.2] blur-[150px]" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[900px] h-[450px] bg-gradient-to-b from-cyan-200/45 via-blue-300/18 to-transparent blur-3xl opacity-70" />
           </>
         )}
 
         {isGlobal && (
           <>
-            <div className="absolute -left-[15%] top-[-15%] w-[800px] h-[800px] rounded-full bg-[#FFDA51]/10 blur-[150px]" />
-            <div className="absolute right-[-15%] top-[20%] w-[900px] h-[900px] rounded-full bg-yellow-400/[0.08] blur-[150px]" />
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[400px] bg-gradient-to-b from-yellow-300/15 via-amber-200/5 to-transparent blur-3xl opacity-50" />
+            <div className="absolute -left-[15%] top-[-15%] w-[800px] h-[800px] rounded-full bg-[#FFDA51]/[0.32] blur-[150px]" />
+            <div className="absolute right-[-15%] top-[20%] w-[900px] h-[900px] rounded-full bg-yellow-400/[0.24] blur-[150px]" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[800px] h-[400px] bg-gradient-to-b from-yellow-300/40 via-amber-200/18 to-transparent blur-3xl opacity-75" />
             <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'radial-gradient(#FFDA51 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
           </>
         )}
@@ -608,8 +612,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   <div
                     key={match.variant.id + "-" + label}
                     className={`${baseClass} cursor-default ${
-                      isLight 
-                        ? "bg-white/70 text-zinc-700 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.04)] border border-white hover:bg-white hover:shadow-[0_5px_15px_-3px_rgba(0,0,0,0.08)] hover:-translate-y-0.5" 
+                      isLight
+                        ? "bg-zinc-50 text-zinc-700 shadow-[0_1px_3px_rgba(0,0,0,0.04)] border border-zinc-200/80 hover:bg-white hover:border-zinc-300 hover:shadow-[0_5px_15px_-3px_rgba(0,0,0,0.08)] hover:-translate-y-0.5"
                         : "bg-white/[0.04] text-zinc-300 border border-white/[0.05] shadow-sm hover:bg-white/[0.08] hover:border-white/[0.1] hover:-translate-y-0.5"
                     }`}
                   >
@@ -649,8 +653,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               return (
                 <div className={`w-full max-w-xl mx-auto flex flex-col p-6 md:p-8 rounded-[2rem] border shadow-[0_8px_40px_rgba(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_60px_rgba(0,0,0,0.05)] ${
-                  isLight 
-                    ? "bg-white/50 backdrop-blur-xl border-white" 
+                  isLight
+                    ? "bg-white border-zinc-100"
                     : "bg-white/[0.02] backdrop-blur-xl border-white/[0.05]"
                 }`}>
                   {optionGroups.map((group, gi) => (

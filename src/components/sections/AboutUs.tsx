@@ -48,12 +48,17 @@ export const AboutUs = () => {
         const dot = beat.querySelector('.timeline-dot');
         const content = beat.querySelector('.timeline-content');
 
+        // Was filter: brightness()/grayscale() scrubbed on every scroll frame.
+        // filter is paint-heavy (no cheap compositor fast-path like transform/
+        // opacity), and with scrub:true it recomputed continuously for as long
+        // as this beat was in range, causing stutter independent of scroll
+        // speed. opacity gives the same "dims until scrolled into place" read
+        // at a fraction of the per-frame cost.
         gsap.fromTo(
           [dot, content],
-          { opacity: 0.3, filter: "brightness(0.5) grayscale(1)" },
+          { opacity: 0.3 },
           {
             opacity: 1,
-            filter: "brightness(1) grayscale(0)",
             duration: 0.5,
             scrollTrigger: {
               trigger: beat,
