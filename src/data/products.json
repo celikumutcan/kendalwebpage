@@ -29077,57 +29077,6 @@
       "light": "Beyaz (6500K)"
     }
   },
-  "KBT001": {
-    "id": "KBT001",
-    "model": "KBT001",
-    "image": "urunler/kbt001.webp",
-    "name": {
-      "tr": "KBT001 18650 BATARYA",
-      "en": "KBT001 18650 BATTERY"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Tür",
-          "value": "18650 Batarya"
-        },
-        {
-          "label": "Kapasite",
-          "value": "3.7V 1200mAh"
-        },
-        {
-          "label": "Koli Adedi",
-          "value": "100"
-        }
-      ],
-      "en": [
-        {
-          "label": "Type",
-          "value": "18650 Battery"
-        },
-        {
-          "label": "Capacity",
-          "value": "3.7V 1200mAh"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "100"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "LED Ampuller"
-      ],
-      "en": [
-        "LED Bulbs"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "batarya": "3.7V 1200mAh"
-    }
-  },
   "KES400": {
     "id": "KES400",
     "model": "KES400",
