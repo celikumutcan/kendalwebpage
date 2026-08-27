@@ -39,7 +39,7 @@ const coreShader = {
       float radius = mix(baseRadius, 1.5, uScroll);
       
       // Glow calculation
-      float glow = exp(-dist * (mix(40.0, 2.0, uScroll))) * 1.5;
+      float glow = exp(-dist * (mix(40.0, 2.0, uScroll))) * 0.85;
       
       // Sharp core
       float core = smoothstep(radius, radius - 0.01, dist);

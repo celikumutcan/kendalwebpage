@@ -86,7 +86,7 @@ export const CompanyStats = () => {
       
       <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
       
-      <div className="absolute top-[50%] -right-[200px] w-[1200px] h-[900px] bg-blue-500/25 blur-[180px] rounded-[100%] mix-blend-screen pointer-events-none z-0" />
+      <div className="absolute top-0 -right-[200px] w-[1200px] h-[1500px] bg-blue-500/25 blur-[180px] rounded-[100%] mix-blend-screen pointer-events-none z-0" />
       
       <div className="max-w-[90rem] mx-auto px-6 lg:px-12 relative z-10">
         

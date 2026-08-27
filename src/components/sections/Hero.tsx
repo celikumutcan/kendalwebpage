@@ -93,22 +93,22 @@ export const Hero = () => {
           <LightCoreFallback />
         )}
 
-        <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.4)_0%,_transparent_70%)] pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-full h-40 md:h-56 z-[1] bg-gradient-to-b from-transparent to-black pointer-events-none" />
 
         <div
           ref={contentRef}
-          className="relative z-10 flex flex-col items-center text-center opacity-0 pointer-events-none bg-transparent/30 backdrop-blur-md rounded-3xl p-8 md:p-16 border border-white/10"
+          className="relative z-10 flex flex-col items-center text-center opacity-0 pointer-events-none p-8 md:p-16"
         >
-          <div className="mb-4 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm md:text-base font-semibold tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(255,255,255,0.1)]">
+          <div className="mb-4 inline-block rounded-full border border-white/25 bg-black/25 px-4 py-1.5 text-sm md:text-base font-semibold tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,0.25)] [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.5))]">
             {t.hero.badge}
           </div>
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter">
+          <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))]">
             {t.hero.title_part1} <br />
             <span className="">
               {t.hero.title_part2}
             </span>
           </h1>
-          <p className="mt-6 max-w-lg text-lg md:text-xl text-white font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+          <p className="mt-6 max-w-lg text-lg md:text-xl text-white font-medium [filter:drop-shadow(0_0_6px_rgba(0,0,0,0.5))_drop-shadow(0_2px_6px_rgba(0,0,0,0.7))]">
             {t.hero.subtitle}
           </p>
           <div className="mt-8 relative w-72 h-32 md:w-[32rem] md:h-44 transition-transform hover:scale-105 duration-500">

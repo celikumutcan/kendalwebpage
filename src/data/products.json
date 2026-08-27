@@ -3566,7 +3566,7 @@
   },
   "7757": {
     "id": "7757",
-    "model": "240429131322",
+    "model": "KCL024",
     "image": "urunler/kcl024-dis-mekan-led.webp",
     "name": {
       "tr": "KCL024 8W 220v Dıș Mekan LED Șerit",
@@ -3613,7 +3613,7 @@
   },
   "7803": {
     "id": "7803",
-    "model": "240502070128",
+    "model": "KDA910",
     "image": "urunler/kda910-sivaustu-spot.webp",
     "name": {
       "tr": "KDA910 Fırat Kare Sıva Üstü Spot",
@@ -3661,7 +3661,7 @@
   },
   "7804": {
     "id": "7804",
-    "model": "240502070337",
+    "model": "KDA911",
     "image": "urunler/kda911-sivaustu-spot.webp",
     "name": {
       "tr": "KDA911 Fırat Kare Sıva Üstü Spot",
@@ -3709,7 +3709,7 @@
   },
   "7805": {
     "id": "7805",
-    "model": "240502070551",
+    "model": "KDA912",
     "image": "urunler/kda912-sivaustu-spot.webp",
     "name": {
       "tr": "KDA912 Fırat Kare Sıva Üstü Spot",
@@ -3757,7 +3757,7 @@
   },
   "7806": {
     "id": "7806",
-    "model": "240502070811",
+    "model": "KDA913",
     "image": "urunler/kda913-sivaustu-spot.webp",
     "name": {
       "tr": "KDA913 Fırat Kare Sıva Üstü Spot",
@@ -3805,7 +3805,7 @@
   },
   "7807": {
     "id": "7807",
-    "model": "240502071030",
+    "model": "KDA914",
     "image": "urunler/kda914-sivaustu-spot.webp",
     "name": {
       "tr": "KDA914 Fırat Yuvarlak Sıva Üstü Spot",
@@ -3853,7 +3853,7 @@
   },
   "7808": {
     "id": "7808",
-    "model": "240502071324",
+    "model": "KDA915",
     "image": "urunler/kda915-sivaustu-spot.webp",
     "name": {
       "tr": "KDA915 Fırat Yuvarlak Sıva Üstü Spot",
@@ -3901,7 +3901,7 @@
   },
   "7809": {
     "id": "7809",
-    "model": "240502071550",
+    "model": "KDA916",
     "image": "urunler/kda916-sivaustu-spot.webp",
     "name": {
       "tr": "KDA916 Fırat Yuvarlak Sıva Üstü Spot",
@@ -3949,7 +3949,7 @@
   },
   "7810": {
     "id": "7810",
-    "model": "240502071831",
+    "model": "KDA917",
     "image": "urunler/kda917-sivaustu-spot.webp",
     "name": {
       "tr": "KDA917 Fırat Yuvarlak Sıva Üstü Spot",
@@ -3997,7 +3997,7 @@
   },
   "7811": {
     "id": "7811",
-    "model": "240502073341",
+    "model": "KEL14",
     "image": "urunler/kel14-led-gecelambasi.webp",
     "name": {
       "tr": "KEL14 3W LED Gece Lambası",
@@ -4028,7 +4028,7 @@
   },
   "7814": {
     "id": "7814",
-    "model": "240502074403",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec25wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4084,7 +4084,7 @@
   },
   "7815": {
     "id": "7815",
-    "model": "240502075614",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl25wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4140,7 +4140,7 @@
   },
   "7816": {
     "id": "7816",
-    "model": "240502075825",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec25wgunısk 3000k Slım Backlight Sıva Altı Armatür",
@@ -4195,7 +4195,7 @@
   },
   "7817": {
     "id": "7817",
-    "model": "240502081023",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl25wgunısk  3000k Slım Backlight Sıva Altı Armatür",
@@ -4250,7 +4250,7 @@
   },
   "7818": {
     "id": "7818",
-    "model": "240502081305",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec30wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4306,7 +4306,7 @@
   },
   "7819": {
     "id": "7819",
-    "model": "240502081934",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec30wgunısk 3000k Slım Backlight Sıva Altı Armatür",
@@ -4361,7 +4361,7 @@
   },
   "7820": {
     "id": "7820",
-    "model": "240502082251",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl30wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4417,7 +4417,7 @@
   },
   "7821": {
     "id": "7821",
-    "model": "240502082617",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec25wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl30wgunısk 4000k Slım Backlight Sıva Altı Armatür",
@@ -4472,7 +4472,7 @@
   },
   "7822": {
     "id": "7822",
-    "model": "240502082915",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec40wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4528,7 +4528,7 @@
   },
   "7823": {
     "id": "7823",
-    "model": "240502083506",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-enec40wgunısk 3000k Slım Backlight Sıva Altı Armatür",
@@ -4583,7 +4583,7 @@
   },
   "7824": {
     "id": "7824",
-    "model": "240502083842",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl40wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4639,7 +4639,7 @@
   },
   "7825": {
     "id": "7825",
-    "model": "240502084117",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-phl40wgunısk  3000k Slım Backlight Sıva Altı Armatür",
@@ -4694,7 +4694,7 @@
   },
   "7826": {
     "id": "7826",
-    "model": "240502084442",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-k240wbeyaz 6500k Slım Backlight Sıva Altı Armatür",
@@ -4750,7 +4750,7 @@
   },
   "7827": {
     "id": "7827",
-    "model": "240502084703",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-enec40wbeyaz-armatur.webp",
     "name": {
       "tr": "Kdl4140-k240wgunısk 3000k Slım Backlight Sıva Altı Armatür",
@@ -4805,7 +4805,7 @@
   },
   "7856": {
     "id": "7856",
-    "model": "240502113523",
+    "model": "KSL2061",
     "image": "urunler/ksl2061-high-power-linear.webp",
     "name": {
       "tr": "KSL2061 (14cm) 5W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -4860,7 +4860,7 @@
   },
   "7857": {
     "id": "7857",
-    "model": "240502113524",
+    "model": "KSL2062",
     "image": "urunler/ksl2061-high-power-linear.webp",
     "name": {
       "tr": "KSL2062 (28cm) 10W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -4915,7 +4915,7 @@
   },
   "7858": {
     "id": "7858",
-    "model": "240502113525",
+    "model": "KSL2063",
     "image": "urunler/ksl2061-high-power-linear.webp",
     "name": {
       "tr": "KSL2063 (66cm) 25W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -4970,7 +4970,7 @@
   },
   "7859": {
     "id": "7859",
-    "model": "240502113526",
+    "model": "KSL2064",
     "image": "urunler/ksl2061-high-power-linear.webp",
     "name": {
       "tr": "KSL2064 (105cm) 40W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5026,7 +5026,7 @@
   },
   "7860": {
     "id": "7860",
-    "model": "240502113528",
+    "model": "KSL2065",
     "image": "urunler/ksl2061-high-power-linear.webp",
     "name": {
       "tr": "KSL2065 (118cm) 45W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5082,7 +5082,7 @@
   },
   "7861": {
     "id": "7861",
-    "model": "240502114833",
+    "model": "KSL2071",
     "image": "urunler/ksl2071-high-power-linear.webp",
     "name": {
       "tr": "KSL2071 (66cm) 23W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5129,7 +5129,7 @@
   },
   "7862": {
     "id": "7862",
-    "model": "240502115207",
+    "model": "KSL2072",
     "image": "urunler/ksl2071-high-power-linear.webp",
     "name": {
       "tr": "KSL2072 (120cm) 40W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5184,7 +5184,7 @@
   },
   "7863": {
     "id": "7863",
-    "model": "240502120438",
+    "model": "KSL2073",
     "image": "urunler/ksl2071-high-power-linear.webp",
     "name": {
       "tr": "KSL2073 (173cm) 60W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5239,7 +5239,7 @@
   },
   "7864": {
     "id": "7864",
-    "model": "240502120643",
+    "model": "KSL2074",
     "image": "urunler/ksl2071-high-power-linear.webp",
     "name": {
       "tr": "KSL2074 (225cm) 75W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5294,7 +5294,7 @@
   },
   "7865": {
     "id": "7865",
-    "model": "240502120830",
+    "model": "KSL2075",
     "image": "urunler/ksl2071-high-power-linear.webp",
     "name": {
       "tr": "KSL2075 (280cm) 95W Sıva Altı Hıgh Power Lınear Mercekli",
@@ -5349,7 +5349,7 @@
   },
   "7866": {
     "id": "7866",
-    "model": "240502121139",
+    "model": "KSL2081",
     "image": "urunler/ksl2081-high-power-linear.webp",
     "name": {
       "tr": "KSL2081 (14cm) 5W Sıva Üstü Hıgh Power Lınear Mercekli",
@@ -5404,7 +5404,7 @@
   },
   "7867": {
     "id": "7867",
-    "model": "240502121336",
+    "model": "KSL2082",
     "image": "urunler/ksl2081-high-power-linear.webp",
     "name": {
       "tr": "KSL2082 (28cm) 10W Sıva Üstü Hıgh Power Lınear Mercekli",
@@ -5460,7 +5460,7 @@
   },
   "7868": {
     "id": "7868",
-    "model": "240502121642",
+    "model": "KSL2083",
     "image": "urunler/ksl2081-high-power-linear.webp",
     "name": {
       "tr": "KSL2083 (66cm) 25W Sıva Üstü Hıgh Power Lınear Mercekli",
@@ -5515,7 +5515,7 @@
   },
   "7869": {
     "id": "7869",
-    "model": "240502121931",
+    "model": "KSL2084",
     "image": "urunler/ksl2081-high-power-linear.webp",
     "name": {
       "tr": "KSL2084 (105cm) 40W Sıva Üstü Hıgh Power Lınear Mercekli",
@@ -5571,7 +5571,7 @@
   },
   "7870": {
     "id": "7870",
-    "model": "240502122717",
+    "model": "KSL2085",
     "image": "urunler/ksl2081-high-power-linear.webp",
     "name": {
       "tr": "KSL2085 (118cm) 45W Sıva Üstü Hıgh Power Lınear Mercekli",
@@ -5627,7 +5627,7 @@
   },
   "7872": {
     "id": "7872",
-    "model": "240502123701",
+    "model": "KSL65A",
     "image": "urunler/ksl65a-altıgen-linear.webp",
     "name": {
       "tr": "KSL65A (ø80) 65W Hıgh Mercekli Altıgen Lınear",
@@ -5682,7 +5682,7 @@
   },
   "7873": {
     "id": "7873",
-    "model": "240502124321",
+    "model": "KSL65K",
     "image": "urunler/ksl65k-kare-linear.webp",
     "name": {
       "tr": "Ksl65k(65x65) 85W Hıgh Kare Mercekli Lınear",
@@ -5737,7 +5737,7 @@
   },
   "7874": {
     "id": "7874",
-    "model": "240502124636",
+    "model": "KSL65SF",
     "image": "urunler/ksl65sf-altıgensoft-linear.webp",
     "name": {
       "tr": "KSL65SF (ø80) 30W Hıgh Mercekli Altıgen Soft Lınear",
@@ -5792,7 +5792,7 @@
   },
   "7875": {
     "id": "7875",
-    "model": "240502125323",
+    "model": "KSL2731",
     "image": "urunler/ksl2731-davul-linear.webp",
     "name": {
       "tr": "KSL2731 (60cm) 45W Altıgen Davul Lınear",
@@ -5847,7 +5847,7 @@
   },
   "7876": {
     "id": "7876",
-    "model": "240502130117",
+    "model": "KSL2732",
     "image": "urunler/ksl2731-davul-linear.webp",
     "name": {
       "tr": "KSL2732 (90cm) 110W Altıgen Davul Lınear",
@@ -5902,7 +5902,7 @@
   },
   "7877": {
     "id": "7877",
-    "model": "240502130332",
+    "model": "KSL2733",
     "image": "urunler/ksl2731-davul-linear.webp",
     "name": {
       "tr": "KSL2733 (120cm) 200W Altıgen Davul Lınear",
@@ -5957,7 +5957,7 @@
   },
   "7878": {
     "id": "7878",
-    "model": "240502130612",
+    "model": "KSLCY2801",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2801 (30x50x70) 165W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6004,7 +6004,7 @@
   },
   "7879": {
     "id": "7879",
-    "model": "240502130833",
+    "model": "KSLCY2802",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2802 (40x60x80) 200W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6051,7 +6051,7 @@
   },
   "7880": {
     "id": "7880",
-    "model": "240502131049",
+    "model": "KSLCY2803",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2803 (50x70x90) 235W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6098,7 +6098,7 @@
   },
   "7881": {
     "id": "7881",
-    "model": "240502131433",
+    "model": "KSLCY2804",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2804 (60x80x100) 270W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6145,7 +6145,7 @@
   },
   "7882": {
     "id": "7882",
-    "model": "240502131607",
+    "model": "KSLCY2805",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2805 (70x90x110) 300W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6192,7 +6192,7 @@
   },
   "7883": {
     "id": "7883",
-    "model": "240502131801",
+    "model": "KSLCY2806",
     "image": "urunler/kslcy2801-cift-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2806 (80x100x120) 335W Yuvarlak Saturn Çift Yönlü Lınear",
@@ -6239,7 +6239,7 @@
   },
   "7888": {
     "id": "7888",
-    "model": "240502133823",
+    "model": "KSL105KS",
     "image": "urunler/ksl105ks-spot-linear.webp",
     "name": {
       "tr": "KSL105KS (105x105) 100W Hıgh Kare Mercekli COB Spot Lınear",
@@ -6295,7 +6295,7 @@
   },
   "7889": {
     "id": "7889",
-    "model": "240502134155",
+    "model": "KDL4140",
     "image": "urunler/kdl4140-1-sivaalti-armatur.webp",
     "name": {
       "tr": "Kdl4140-1 36W Slım Backlight Sıva Altı Armatür",
@@ -6350,7 +6350,7 @@
   },
   "7890": {
     "id": "7890",
-    "model": "240502134607",
+    "model": "KSL-SNAG2",
     "image": "urunler/ksl-snag2-mercekli-linear.webp",
     "name": {
       "tr": "Ksl-snag2(35x145) 65W Hıgh Mercekli Snag Lınear",
@@ -6406,7 +6406,7 @@
   },
   "7891": {
     "id": "7891",
-    "model": "240502134845",
+    "model": "KSL-SNAG3",
     "image": "urunler/ksl-snag3-mercekli-linear.webp",
     "name": {
       "tr": "Ksl-snag3(50x240) 95W Hıgh Mercekli Snag Soft Lınear",
@@ -6462,7 +6462,7 @@
   },
   "7921": {
     "id": "7921",
-    "model": "240503050827",
+    "model": "KLD60",
     "image": "urunler/kld60-ultra-slim-adaptor.webp",
     "name": {
       "tr": "KLD60 60W Ultra Slim Adaptörler",
@@ -6501,7 +6501,7 @@
   },
   "7924": {
     "id": "7924",
-    "model": "240503051833",
+    "model": "KLH118",
     "image": "urunler/klh118-seramik-duy.webp",
     "name": {
       "tr": "KLH118 Seramik Duy",
@@ -6540,7 +6540,7 @@
   },
   "7926": {
     "id": "7926",
-    "model": "240503052726",
+    "model": "KLH118A",
     "image": "urunler/klh118a-seramik-duy.webp",
     "name": {
       "tr": "KLH118A Seramik Duy",
@@ -6579,7 +6579,7 @@
   },
   "7948": {
     "id": "7948",
-    "model": "240503061844",
+    "model": "KLD108",
     "image": "urunler/kld108-kumanda.webp",
     "name": {
       "tr": "KLD108 6 Kanallı Avize Kumandası",
@@ -6608,174 +6608,9 @@
       "watt": "6x1000W"
     }
   },
-  "7949": {
-    "id": "7949",
-    "model": "240503062036",
-    "image": "urunler/kdl485-led-panel.webp",
-    "name": {
-      "tr": "KDL485 6W Ayarlanabilir Slim Backlight LED Çerçeveli Panel Armatür",
-      "en": "KDL485 6W Slım LED Panels Wıth Frame"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "360"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "50"
-        },
-        {
-          "label": "Watt",
-          "value": "6W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "360"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "50"
-        },
-        {
-          "label": "Power",
-          "value": "6W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
-    }
-  },
-  "7950": {
-    "id": "7950",
-    "model": "240503062330",
-    "image": "urunler/kdl485-led-panel.webp",
-    "name": {
-      "tr": "KDL486 8W Ayarlanabilir Slim Backlight LED Çerçeveli Panel Armatür",
-      "en": "KDL486 8W Slım LED Panels Wıth Frame"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "480"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "30"
-        },
-        {
-          "label": "Watt",
-          "value": "8W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "480"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "30"
-        },
-        {
-          "label": "Power",
-          "value": "8W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "8W"
-    }
-  },
-  "7952": {
-    "id": "7952",
-    "model": "240503062731",
-    "image": "urunler/kdl485-led-panel.webp",
-    "name": {
-      "tr": "KDL488 20W Ayarlanabilir Slim Backlight LED Çerçeveli Panel Armatür",
-      "en": "KDL488 20W Slım LED Panels Wıth Frame"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Renk",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lümen",
-          "value": "1350"
-        },
-        {
-          "label": "Koli Adeti",
-          "value": "20"
-        },
-        {
-          "label": "Watt",
-          "value": "20W"
-        }
-      ],
-      "en": [
-        {
-          "label": "Color",
-          "value": "Günışığı (3000K)-Ararenk (4000K)-Beyaz (6500K)"
-        },
-        {
-          "label": "Lumen",
-          "value": "1350"
-        },
-        {
-          "label": "Package Quantity",
-          "value": "20"
-        },
-        {
-          "label": "Power",
-          "value": "20W"
-        }
-      ]
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "20W"
-    }
-  },
   "7953": {
     "id": "7953",
-    "model": "240503063424",
+    "model": "KSLCY2820",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2820 (30x50x70) 210W Kare Saturn Çift Yönlü Lınear",
@@ -6822,7 +6657,7 @@
   },
   "7954": {
     "id": "7954",
-    "model": "240503063732",
+    "model": "KSLCY2821",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2821 (40x60x80) 250W Kare Saturn Çift Yönlü Lınear",
@@ -6869,7 +6704,7 @@
   },
   "7955": {
     "id": "7955",
-    "model": "240503063900",
+    "model": "KSLCY2822",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2822 (50x70x90) 315W Kare Saturn Çift Yönlü Lınear",
@@ -6916,7 +6751,7 @@
   },
   "7956": {
     "id": "7956",
-    "model": "240503064126",
+    "model": "KSLCY2823",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2823 (60x80x100) 345W  Kare Saturn Çift Yönlü Lınear",
@@ -6963,7 +6798,7 @@
   },
   "7957": {
     "id": "7957",
-    "model": "240503064331",
+    "model": "KSLCY2824",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kslcy2824 (70x90x110) 380W Kare Saturn Çift Yönlü Lınear",
@@ -7010,7 +6845,7 @@
   },
   "7959": {
     "id": "7959",
-    "model": "240503072056",
+    "model": "KSCYL2825",
     "image": "urunler/kslcy2820-21-22-23-24-25-kare-saturn-cıft-yonlu-linear.webp",
     "name": {
       "tr": "Kscyl2825 (80x100x120) 430W Kare Saturn Çift Yönlü Lınear",
@@ -7055,303 +6890,9 @@
       "watt": "430W"
     }
   },
-  "7990": {
-    "id": "7990",
-    "model": "250421153928",
-    "image": "urunler/kdl050.webp",
-    "name": {
-      "tr": "KDL050 6W Sıva Altı Yuvarlak LED Backlight Panel",
-      "en": "KDL050 6W Recessed Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
-    }
-  },
-  "7991": {
-    "id": "7991",
-    "model": "250421154138",
-    "image": "urunler/kdl050.webp",
-    "name": {
-      "tr": "KDL052 12W Sıva Altı Yuvarlak LED Backlight Panel",
-      "en": "KDL052 12W Recessed Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "7992": {
-    "id": "7992",
-    "model": "250421154255",
-    "image": "urunler/kdl050.webp",
-    "name": {
-      "tr": "KDL053 18W Sıva Altı Yuvarlak LED Backlight Panel",
-      "en": "KDL053 18W Recessed Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W"
-    }
-  },
-  "7993": {
-    "id": "7993",
-    "model": "250421154402",
-    "image": "urunler/kdl050.webp",
-    "name": {
-      "tr": "KDL054 24W Sıva Altı Yuvarlak LED Backlight Panel",
-      "en": "KDL054 24W Recessed Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W"
-    }
-  },
-  "7994": {
-    "id": "7994",
-    "model": "250421154647",
-    "image": "urunler/kdl055.webp",
-    "name": {
-      "tr": "KDL055 6W Sıva Altı Kare LED Backlight Panel",
-      "en": "KDL055 6W Recessed Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "6W"
-    }
-  },
-  "7995": {
-    "id": "7995",
-    "model": "250421154930",
-    "image": "urunler/kdl055.webp",
-    "name": {
-      "tr": "KDL057 12W Sıva Altı Kare LED Backlight Panel",
-      "en": "KDL057 12W Recessed Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "7996": {
-    "id": "7996",
-    "model": "250421155048",
-    "image": "urunler/kdl055.webp",
-    "name": {
-      "tr": "KDL058 18W Sıva Altı Kare LED Backlight Panel",
-      "en": "KDL058 18W Recessed Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W"
-    }
-  },
-  "7997": {
-    "id": "7997",
-    "model": "250421155157",
-    "image": "urunler/kdl055.webp",
-    "name": {
-      "tr": "KDL059 24W Sıva Altı Kare LED Backlight Panel",
-      "en": "KDL059 24W Recessed Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W"
-    }
-  },
-  "7998": {
-    "id": "7998",
-    "model": "250421155335",
-    "image": "urunler/kdl061.webp",
-    "name": {
-      "tr": "KDL061 12W Sıva Üstü Yuvarlak LED Backlight Panel",
-      "en": "KDL061 12W Surface Mounted Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "7999": {
-    "id": "7999",
-    "model": "250421155701",
-    "image": "urunler/kdl061.webp",
-    "name": {
-      "tr": "KDL062 18W Sıva Üstü Yuvarlak LED Backlight Panel",
-      "en": "KDL062 18W Surface Mounted Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W"
-    }
-  },
-  "8000": {
-    "id": "8000",
-    "model": "250421155810",
-    "image": "urunler/kdl061.webp",
-    "name": {
-      "tr": "KDL063 24W Sıva Üstü Yuvarlak LED Backlight Panel",
-      "en": "KDL063 24W Surface Mounted Round LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W"
-    }
-  },
-  "8001": {
-    "id": "8001",
-    "model": "250421155926",
-    "image": "urunler/kdl081.webp",
-    "name": {
-      "tr": "KDL081 12W Sıva Üstü Kare LED Backlight Panel",
-      "en": "KDL081 12W Surface Mounted Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "12W"
-    }
-  },
-  "8002": {
-    "id": "8002",
-    "model": "250421160122",
-    "image": "urunler/kdl081.webp",
-    "name": {
-      "tr": "KDL082 18W Sıva Üstü Kare LED Backlight Panel",
-      "en": "KDL082 18W Surface Mounted Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "18W"
-    }
-  },
-  "8003": {
-    "id": "8003",
-    "model": "250421160329",
-    "image": "urunler/kdl081.webp",
-    "name": {
-      "tr": "KDL083 24W Sıva Üstü Kare LED Backlight Panel",
-      "en": "KDL083 24W Surface Mounted Square LED Backlight Panel"
-    },
-    "attributes": {
-      "tr": [],
-      "en": []
-    },
-    "category": {
-      "tr": [],
-      "en": []
-    },
-    "brand": "k2",
-    "variantOptions": {
-      "watt": "24W"
-    }
-  },
   "8010": {
     "id": "8010",
-    "model": "250421174602",
+    "model": "KES078",
     "image": "urunler/kes078.webp",
     "name": {
       "tr": "KES078 Şarjlı Fenerli LED Ampul",
@@ -7370,7 +6911,7 @@
   },
   "8034": {
     "id": "8034",
-    "model": "250422082331",
+    "model": "KM1109",
     "image": "urunler/kml109.webp",
     "name": {
       "tr": "KM1109 3 Fonksiyonlu Şarj Edilebilir Masa Lambası",
@@ -7389,7 +6930,7 @@
   },
   "8081": {
     "id": "8081",
-    "model": "251014142514",
+    "model": "KLF500",
     "image": "urunler/klf500.webp",
     "name": {
       "tr": "KLF500 Lensli LED Projektör",
@@ -7437,7 +6978,7 @@
   },
   "8112": {
     "id": "8112",
-    "model": "260710124847",
+    "model": "KSL178",
     "image": "urunler/ksl178.webp",
     "name": {
       "tr": "KSL178 2 Usb Li Yatak Başı LED Aplik",
@@ -7485,7 +7026,7 @@
   },
   "8113": {
     "id": "8113",
-    "model": "260714095155",
+    "model": "KSS001",
     "image": "urunler/kss001.webp",
     "name": {
       "tr": "KSS001 Matrıx Panel LED RGB",
@@ -7556,7 +7097,7 @@
   },
   "8114": {
     "id": "8114",
-    "model": "260721105547",
+    "model": "KES800",
     "image": "urunler/kes800.webp",
     "name": {
       "tr": "KES800 Kristal Avize Armatür / Ampul - Kristal Papatya",
@@ -7603,7 +7144,7 @@
   },
   "8115": {
     "id": "8115",
-    "model": "260724081822",
+    "model": "KES801",
     "image": "urunler/kes801.webp",
     "name": {
       "tr": "KES801 4’lü Yuvarlak Kristal Avize Ampul / Kristal Yonca",
@@ -7667,7 +7208,7 @@
   },
   "8116": {
     "id": "8116",
-    "model": "260724095438",
+    "model": "KES802",
     "image": "urunler/kes802.webp",
     "name": {
       "tr": "KES802 4’lü Kare Kristal Avize Ampul / Kristal Zambak",
