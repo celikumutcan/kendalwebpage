@@ -48,7 +48,7 @@ export const NewsPreview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
           {latestNews.map((item) => (
-            <Link key={item.id} href={`/haberler?id=${item.id}`} className="block group h-full">
+            <Link key={item.id} href={`/haberler/${item.id}`} className="block group h-full">
               <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden h-full flex flex-col hover:border-[var(--brand-red)]/50 hover:bg-white/10 transition-all duration-500 transform group-hover:-translate-y-1">
                 <div className="relative w-full h-48 sm:h-56 overflow-hidden bg-black/50">
                   {item.images && item.images.length > 0 ? (

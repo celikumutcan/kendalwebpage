@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -35,10 +35,91 @@ const VANTI_VIDEOS: Record<string, string> = {
   "KCF321": "yF6iRNek5b4"
 };
 
+function getSpecIcon(label: string) {
+  const l = (label || "").toLowerCase();
+  const cls = "w-[18px] h-[18px]";
+
+  if (l.includes("watt") || l.includes("güç") || l.includes("guc")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2L4.5 13.5H11L10 22l9-13H12l1-7z" />
+      </svg>
+    );
+  }
+  if (l.includes("lümen") || l.includes("lumen")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" strokeWidth={2} />
+        <path strokeLinecap="round" strokeWidth={2} d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8L6 18M18 6l1.8-1.8" />
+      </svg>
+    );
+  }
+  if (l.includes("duy") || l.includes("socket")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="7" y="3" width="10" height="7" rx="1.5" strokeWidth={2} />
+        <path strokeLinecap="round" strokeWidth={2} d="M9 10v3m6-3v3M8 13h8l-1.2 7H9.2L8 13z" />
+      </svg>
+    );
+  }
+  if (l.includes("gerilim") || l.includes("voltage") || l.includes("volt")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" strokeWidth={2} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 8l-4 5h3l-1 4 4-5h-3l1-4z" />
+      </svg>
+    );
+  }
+  if (l.includes("ömür") || l.includes("omur") || l.includes("life") || l.includes("saat") || l.includes("hour")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" strokeWidth={2} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 7v5l3.5 2" />
+      </svg>
+    );
+  }
+  if (l.includes("koli") || l.includes("box") || l.includes("adet") || l.includes("package")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l9-5 9 5-9 5-9-5zm0 0v8l9 5m0-13v13m9-13v8l-9 5" />
+      </svg>
+    );
+  }
+  if (l.includes("ölçü") || l.includes("olcu") || l.includes("boyut") || l.includes("dimension")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="3" y="9" width="18" height="6" rx="1" strokeWidth={2} />
+        <path strokeLinecap="round" strokeWidth={2} d="M7 9v3M11 9v3M15 9v3M19 9v3" />
+      </svg>
+    );
+  }
+  if (l.includes("ip") || l.includes("koruma") || l.includes("protection")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" />
+      </svg>
+    );
+  }
+  if (l.includes("renk") || l.includes("color") || l.includes("cct") || l.includes("kasa") || l.includes("casing")) {
+    return (
+      <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" strokeWidth={2} />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3a9 9 0 000 18c1.5 0 2-1 2-2s-.5-1.5-.5-2.5S14 15 15 15h2a4 4 0 004-4c0-4.5-4-8-9-8z" />
+      </svg>
+    );
+  }
+  return (
+    <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  );
+}
+
 export function ProductDetailClient({ product, brandName, pdfFormFile }: ProductDetailClientProps) {
   const router = useRouter();
   const { language } = useLanguage();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   const name = product.name[language] || product.name.tr;
   const attributes = product.attributes[language] || product.attributes.tr;
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -50,6 +131,18 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const isVanti = brandName === "vanti";
   const isGlobal = brandName === "global";
   const isLight = isK2 || isVanti || isGlobal;
+
+  useEffect(() => {
+    if (!lightboxOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setLightboxOpen(false); };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [lightboxOpen]);
 
   let displayName = name;
   if (isGlobal) {
@@ -127,22 +220,21 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
   const allAttrs = attributes || [];
   let rawSpecs = allAttrs.filter(attr => attr.value && attr.value.trim() !== "" && attr.value !== "N/A" && attr.label !== "Renk" && attr.label !== "Color");
 
-  // Include CCT if it was filtered out by the "Renk" filter, or inject it from variantOptions
   const isCctLike = (val: string | null | undefined) => {
     if (!val) return false;
     const upper = val.toUpperCase();
     if (upper.includes("CCT")) return true;
-    return (upper.includes("3000K") && upper.includes("6500K")) || 
-           (upper.includes("3000K") && upper.includes("4000K")) || 
+    return (upper.includes("3000K") && upper.includes("6500K")) ||
+           (upper.includes("3000K") && upper.includes("4000K")) ||
            (upper.includes("4000K") && upper.includes("6500K")) ||
            (upper.includes("GÜNIŞIĞI") && upper.includes("BEYAZ")) ||
            (upper.includes("GUNISIGI") && upper.includes("BEYAZ"));
   };
 
   const cctValue = isCctLike(product.variantOptions?.casing)
-    ? product.variantOptions?.casing 
+    ? product.variantOptions?.casing
     : (isCctLike(product.variantOptions?.light) ? product.variantOptions?.light : null);
-    
+
   const featureLabels = ["Özellik", "Feature", "Açıklama", "Description", "Fonksiyonlar", "Functions", "Belge", "Certificate"];
 
   const featureAttrs = rawSpecs.filter(attr => featureLabels.includes(attr.label));
@@ -166,7 +258,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       });
 
   const SectionDivider = () => (
-    <div className="w-full flex items-center justify-center opacity-90 -my-5 lg:-my-7">
+    <div className="w-full flex items-center justify-center opacity-90 -my-1 lg:-my-2">
       <div className={`flex-1 max-w-[280px] md:max-w-md h-[2px] bg-gradient-to-r ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/35'}`}></div>
       <div className={`w-2 h-2 rounded-full mx-5 ${isLight ? 'bg-zinc-400' : 'bg-white/40'}`}></div>
       <div className={`flex-1 max-w-[280px] md:max-w-md h-[2px] bg-gradient-to-l ${isLight ? 'from-transparent to-zinc-400' : 'from-transparent to-white/35'}`}></div>
@@ -184,8 +276,31 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
     </div>
   );
 
+  const titleBlock = (
+    <>
+      <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/70"}`}>
+        <span className={`w-1.5 h-1.5 rounded-full ${isLight ? themeColor : "bg-white"}`} />
+        {product.model}
+      </span>
+      <h1
+        itemProp="name"
+        className={`text-2xl md:text-3xl lg:text-[2.6rem] font-extrabold tracking-tight leading-[1.12] text-center px-4 relative z-20
+        ${isLight
+          ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-600'
+          : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-200 to-zinc-500 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]'}`}
+      >
+        {displayName}
+      </h1>
+    </>
+  );
+
   return (
     <div className={`relative min-h-screen pb-24 overflow-hidden selection:bg-white/30 ${isLight ? "pt-28 md:pt-36 bg-[#f4f5f7] text-zinc-900" : "pt-32 md:pt-40 bg-[#2a2d38] text-white"}`}>
+
+      <style>{`
+        @keyframes kdlFadeInUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+        .kdl-fade-in { animation: kdlFadeInUp 0.7s cubic-bezier(0.16,1,0.3,1) both; }
+      `}</style>
 
       <div className="absolute inset-0 pointer-events-none z-[1]" style={{ boxShadow: isLight ? 'inset 0 0 150px rgba(0,0,0,0.03)' : 'inset 0 0 200px rgba(0,0,0,0.3)' }} />
       {isLight && (
@@ -193,7 +308,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       )}
 
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        
+
         {isK2 && (
           <>
             <div className="absolute -left-[15%] top-[-15%] w-[900px] h-[900px] rounded-full bg-orange-500/10 blur-[160px]" />
@@ -229,7 +344,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
       <div className="relative z-10 container mx-auto max-w-[1400px] px-6 lg:px-10">
 
-        <div className="flex flex-wrap items-center justify-between gap-3 mb-8 md:mb-10">
+        <div className="kdl-fade-in flex flex-wrap items-center justify-between gap-3 mb-8 md:mb-10">
           <button
             onClick={() => router.back()}
             className={`group flex items-center gap-2.5 w-fit rounded-full pl-2 pr-4 py-2 transition-all duration-300 ${isLight ? 'text-zinc-500 hover:text-zinc-900 bg-white/70 hover:bg-white border border-zinc-200/80 shadow-[0_8px_24px_-8px_rgba(0,0,0,0.08)]' : 'text-white/60 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/10'}`}
@@ -244,40 +359,30 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
             </span>
           </button>
 
-          {isLight && (
-            <nav aria-label="breadcrumb" className="flex flex-wrap items-center gap-1.5 text-xs font-medium text-zinc-400">
-              <Link href={homeHref} className="transition-colors hover:text-zinc-700">
-                {language === "en" ? "Home" : "Ana Sayfa"}
-              </Link>
-              <span className="opacity-50">/</span>
-              <Link href={categoryHref} className="transition-colors hover:text-zinc-700">
-                {categoryName || (language === "en" ? "Products" : "Ürünler")}
-              </Link>
-            </nav>
-          )}
+          <nav aria-label="breadcrumb" className={`flex flex-wrap items-center gap-1.5 text-xs font-medium ${isLight ? "text-zinc-400" : "text-white/40"}`}>
+            <Link href={homeHref} className={`transition-colors ${isLight ? "hover:text-zinc-700" : "hover:text-white/80"}`}>
+              {language === "en" ? "Home" : "Ana Sayfa"}
+            </Link>
+            <span className="opacity-50">/</span>
+            <Link href={categoryHref} className={`transition-colors ${isLight ? "hover:text-zinc-700" : "hover:text-white/80"}`}>
+              {categoryName || (language === "en" ? "Products" : "Ürünler")}
+            </Link>
+            <span className="opacity-50">/</span>
+            <span className={isLight ? "text-zinc-600" : "text-white/70"}>{product.model}</span>
+          </nav>
         </div>
 
-        <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full gap-10 lg:gap-14">
+        <article itemScope itemType="https://schema.org/Product" className="flex flex-col items-center w-full gap-14 lg:gap-20">
 
           {/* Mobile Title (hidden on desktop) */}
-          <div className="flex lg:hidden flex-col items-center gap-3 w-full mb-[-1.5rem]">
-            <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/70"}`}>
-              <span className={`w-1.5 h-1.5 rounded-full ${isLight ? themeColor : "bg-white"}`} />
-              {product.model}
-            </span>
-            <h1
-              className={`text-2xl md:text-3xl font-extrabold tracking-tight leading-[1.15] text-center px-4 relative z-20
-              ${isLight
-                ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-600'
-                : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-200 to-zinc-500 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]'}`}
-            >
-              {displayName}
-            </h1>
+          <div className="kdl-fade-in flex lg:hidden flex-col items-center gap-3 w-full mb-[-1.5rem]">
+            {titleBlock}
           </div>
 
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-16 items-start">
 
-            <div className="w-full flex flex-col items-center gap-6">
+            {/* MEDIA COLUMN */}
+            <div className="kdl-fade-in w-full flex flex-col items-center gap-6 lg:sticky lg:top-32">
 
               <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4 group/showcase">
 
@@ -290,7 +395,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                      }}
                 />
 
-                <div className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-8 md:p-10 z-10 rounded-[2.5rem] transition-all duration-500 group-hover/showcase:-translate-y-1.5
+                <button
+                  type="button"
+                  onClick={() => setLightboxOpen(true)}
+                  aria-label={language === "tr" ? "Görseli büyüt" : "Zoom image"}
+                  className={`relative w-full max-w-[320px] md:max-w-md flex items-center justify-center p-8 md:p-10 z-10 rounded-[2.5rem] transition-all duration-500 group-hover/showcase:-translate-y-1.5 cursor-zoom-in
                   ${isLight
                     ? `${themeImageBg} backdrop-blur-2xl border border-white shadow-[0_40px_90px_-30px_rgba(0,0,0,0.15)]`
                     : 'bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_100px_-20px_rgba(0,0,0,0.9)]'
@@ -307,7 +416,14 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     alt={name}
                     className={`w-full h-auto object-contain relative z-20 transition-transform duration-500 group-hover/showcase:scale-[1.03] ${isLight ? 'drop-shadow-xl' : 'drop-shadow-[0_20px_50px_rgba(0,0,0,0.6)]'}`}
                   />
-                </div>
+
+                  <span className={`absolute bottom-4 right-4 z-30 w-9 h-9 rounded-full flex items-center justify-center opacity-0 group-hover/showcase:opacity-100 transition-opacity duration-300 ${isLight ? "bg-white text-zinc-600 shadow-md" : "bg-white/10 text-white border border-white/15 backdrop-blur-md"}`}>
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <circle cx="11" cy="11" r="6.5" strokeWidth={2} />
+                      <path strokeLinecap="round" strokeWidth={2} d="M20 20l-3.5-3.5M9 8v6M6 11h6" />
+                    </svg>
+                  </span>
+                </button>
               </div>
 
               {allImages.length > 1 && (
@@ -317,62 +433,46 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                       key={idx}
                       onClick={() => setSelectedImage(imgUrl)}
                       className={`relative w-14 h-14 md:w-16 md:h-16 rounded-xl border-2 overflow-hidden transition-all duration-300 ${
-                        currentImage === imgUrl 
-                          ? (isLight ? "border-zinc-800 scale-110 shadow-md" : "border-white scale-110 shadow-[0_0_15px_rgba(255,255,255,0.3)]") 
+                        currentImage === imgUrl
+                          ? (isLight ? "border-zinc-800 scale-110 shadow-md" : "border-white scale-110 shadow-[0_0_15px_rgba(255,255,255,0.3)]")
                           : (isLight ? "border-zinc-200/60 hover:border-zinc-400 opacity-70 hover:opacity-100" : "border-white/10 hover:border-white/40 opacity-50 hover:opacity-100")
                       } ${isLight ? themeImageBg : 'bg-white/5'}`}
                     >
-                      <Image 
-                        src={getProductImageUrl(imgUrl)} 
-                        alt={`${name} thumbnail ${idx + 1}`} 
-                        fill 
+                      <Image
+                        src={getProductImageUrl(imgUrl)}
+                        alt={`${name} thumbnail ${idx + 1}`}
+                        fill
                         className="object-contain p-1.5"
                       />
                     </button>
                   ))}
                 </div>
               )}
+
+              {pdfFormFile && (
+                <a
+                  href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
+                  download={pdfFormFile}
+                  className={`group inline-flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm hover:-translate-y-0.5 ${isLight ? "bg-white text-zinc-800 border-zinc-200 hover:border-zinc-300 hover:shadow-md" : "bg-white/[0.04] text-white border-white/10 hover:bg-white/[0.08] hover:border-white/20"}`}
+                >
+                  <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isLight ? themePillBg : "bg-white/10"}`}>
+                    <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H8a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                  </span>
+                  <span>{language === "tr" ? "Ürün Bilgi Formu İndir" : "Download Product Info Sheet"}</span>
+                  <svg className="w-4 h-4 opacity-40 -translate-x-1 group-hover:opacity-90 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              )}
             </div>
 
-            <div className="w-full flex flex-col items-center gap-10">
+            {/* INFO COLUMN */}
+            <div className="kdl-fade-in w-full flex flex-col items-center gap-10">
 
             <div className="hidden lg:flex flex-col items-center gap-3 w-full">
-              <span className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/70"}`}>
-                <span className={`w-1.5 h-1.5 rounded-full ${isLight ? themeColor : "bg-white"}`} />
-                {product.model}
-              </span>
-
-              <h1
-                itemProp="name"
-                className={`text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-tight leading-[1.15] text-center px-4 relative z-20
-                ${isLight
-                  ? 'bg-clip-text text-transparent bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-600'
-                  : 'bg-clip-text text-transparent bg-gradient-to-br from-white via-zinc-200 to-zinc-500 drop-shadow-[0_0_40px_rgba(255,255,255,0.15)]'}`}
-              >
-                {displayName}
-              </h1>
-
-              <div className="flex flex-wrap justify-center gap-3 mt-2">
-
-
-                {pdfFormFile && (
-                  <a
-                    href={getAssetPath('/urun-bilgi-formlari/' + encodeURIComponent(pdfFormFile))}
-                    download={pdfFormFile}
-                    className={`group inline-flex items-center gap-3 pl-3 pr-5 py-2.5 rounded-full font-bold text-sm transition-all duration-300 border shadow-sm hover:-translate-y-0.5 ${isLight ? "bg-white text-zinc-800 border-zinc-200 hover:border-zinc-300 hover:shadow-md" : "bg-white/[0.04] text-white border-white/10 hover:bg-white/[0.08] hover:border-white/20"}`}
-                  >
-                    <span className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${isLight ? themePillBg : "bg-white/10"}`}>
-                      <svg className={`w-4 h-4 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H8a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </span>
-                    <span>{language === "tr" ? "Ürün Bilgi Formu İndir" : "Download Product Info Sheet"}</span>
-                    <svg className="w-4 h-4 opacity-40 -translate-x-1 group-hover:opacity-90 group-hover:translate-x-0 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </a>
-                )}
-              </div>
+              {titleBlock}
             </div>
 
             {((variations.length > 1) || (variations.length === 1 && (product.variantOptions?.light || product.variantOptions?.casing || product.variantOptions?.watt))) && (
@@ -425,7 +525,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               const uniqueWatts = Array.from(new Set(variantData.map(v => v.watt).filter(w => w)));
               const uniqueSockets = Array.from(new Set(variantData.filter(v => !currentVariantData.watt || v.watt === currentVariantData.watt).map(v => v.socket).filter(s => s)));
-              
+
               const uniqueLights = Array.from(new Set(variantData.filter(v => (!currentVariantData.watt || v.watt === currentVariantData.watt) && (!currentVariantData.socket || v.socket === currentVariantData.socket)).flatMap(v => {
                 const lightOpt = v.variant.variantOptions?.light;
                 if (!lightOpt) return [];
@@ -499,7 +599,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 );
 
                 const baseClass = "flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold whitespace-nowrap transition-all duration-200";
-
                 return (
                   <div
                     key={match.variant.id + "-" + label}
@@ -540,16 +639,16 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               if (optionGroups.length === 0) return null;
 
               return (
-                <div className={`w-full max-w-xl mx-auto rounded-[2rem] border p-6 md:p-8 flex flex-col gap-6 ${isLight ? `${themeImageBg} backdrop-blur-xl border-white shadow-[0_30px_80px_-30px_rgba(0,0,0,0.12)]` : "bg-white/[0.03] border-white/[0.08]"}`}>
+                <div className="w-full max-w-xl mx-auto flex flex-col">
                   {optionGroups.map((group, gi) => (
                     <div
                       key={group.key}
-                      className={`flex flex-col items-center gap-3 ${gi > 0 ? `pt-6 border-t ${isLight ? "border-zinc-100" : "border-white/[0.06]"}` : ""}`}
+                      className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-3.5 ${gi > 0 ? `border-t ${isLight ? "border-zinc-100" : "border-white/[0.06]"}` : ""}`}
                     >
-                      <span className={`text-[11px] font-bold uppercase tracking-[0.15em] ${isLight ? "text-zinc-600" : "text-zinc-400"}`}>
+                      <span className={`sm:w-36 sm:flex-shrink-0 text-[11px] font-bold uppercase tracking-[0.15em] ${isLight ? "text-zinc-500" : "text-zinc-400"}`}>
                         {group.label}
                       </span>
-                      <div className="flex flex-wrap justify-center gap-2">
+                      <div className="flex flex-wrap gap-2">
                         {group.items.map(({ value, match }) => renderVariantLink(match, value, group.showDot))}
                       </div>
                     </div>
@@ -565,8 +664,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                 <SectionDivider />
                 <div className="w-full -mt-1">
                   <SectionHeader
-                    title={hasDedicatedFeatures 
-                      ? (language === "tr" ? "Öne Çıkan Özellikler" : "Key Features") 
+                    title={hasDedicatedFeatures
+                      ? (language === "tr" ? "Öne Çıkan Özellikler" : "Key Features")
                       : (language === "tr" ? "Teknik Detaylar" : "Technical Details")
                     }
                     icon={
@@ -580,13 +679,13 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     }
                   />
 
-                  <ul className="flex flex-wrap justify-center gap-2.5 -mt-4">
+                  <ul className={`${displayFeaturesList.length <= 2 ? "inline-flex" : "w-full max-w-2xl grid grid-cols-1 sm:grid-cols-2"} mx-auto flex-wrap justify-center gap-2.5 -mt-4 rounded-[1.75rem] border p-3 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.02] border-white/[0.06]"}`}>
                     {displayFeaturesList.map((feat, idx) => {
                       const isYerliUretim = feat.trim().toLowerCase() === "yerli üretim" || feat.trim().toLowerCase() === "domestic production";
                       const isTse = feat.trim().toLowerCase() === "tse";
                       const isLogoBadge = isYerliUretim || isTse;
                       return (
-                        <li key={idx} className={`flex ${isLogoBadge ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-2.5 rounded-xl border transition-colors duration-300 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:border-zinc-200" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
+                        <li key={idx} className={`flex ${isLogoBadge ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-3 rounded-2xl transition-colors duration-300 ${isLight ? "hover:bg-zinc-50" : "hover:bg-white/[0.04]"}`}>
                           {isYerliUretim ? (
                             <div className="relative w-[92px] h-[33px]">
                               <Image
@@ -607,8 +706,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                             </div>
                           ) : (
                             <>
-                              <div className={`flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center ${isLight ? themePillBg : "bg-white/[0.06] border border-white/10"}`}>
-                                <svg className={`w-3 h-3 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center ${isLight ? themePillBg : "bg-white/[0.06] border border-white/10"}`}>
+                                <svg className={`w-3.5 h-3.5 ${isLight ? themeText : "text-white"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                 </svg>
                               </div>
@@ -664,8 +763,11 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     {compactSpecs.length > 0 && (
                       <dl className="flex flex-wrap justify-center gap-3 lg:gap-4">
                         {compactSpecs.map(({ attr, decodedValue }, index) => (
-                          <div key={index} className={`group relative flex-1 min-w-[150px] max-w-[260px] flex flex-col items-center justify-center text-center gap-2 p-5 rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
+                          <div key={index} className={`group relative flex-1 min-w-[160px] max-w-[260px] flex flex-col items-center justify-center text-center gap-2.5 p-5 rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]" : "bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]"}`}>
                             <span className={`absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[3px] rounded-full transition-all duration-300 group-hover:w-14 ${isLight ? themeColor : "bg-white/25"}`} />
+                            <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/80"}`}>
+                              {getSpecIcon(attr.label)}
+                            </div>
                             <dt className={`text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
                               {attr.label}
                             </dt>
@@ -680,13 +782,18 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     {longSpecs.length > 0 && (
                       <dl className="flex flex-col gap-3 max-w-2xl mx-auto w-full">
                         {longSpecs.map(({ attr, decodedValue }, index) => (
-                          <div key={index} className={`flex flex-col gap-1.5 p-5 rounded-2xl border text-left ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.03] border-white/[0.07]"}`}>
-                            <dt className={`text-center text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
-                              {attr.label}
-                            </dt>
-                            <dd className={`m-0 text-sm md:text-base text-center font-semibold leading-relaxed ${isLight ? "text-zinc-800" : "text-white"}`}>
-                              {decodedValue}
-                            </dd>
+                          <div key={index} className={`flex items-start gap-4 p-5 rounded-2xl border text-left ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.03] border-white/[0.07]"}`}>
+                            <div className={`flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center ${isLight ? `${themePillBg} ${themeText}` : "bg-white/[0.06] border border-white/10 text-white/80"}`}>
+                              {getSpecIcon(attr.label)}
+                            </div>
+                            <div className="flex flex-col gap-1 min-w-0">
+                              <dt className={`text-[10px] md:text-xs font-bold uppercase tracking-widest ${isLight ? "text-zinc-400" : "text-zinc-500"}`}>
+                                {attr.label}
+                              </dt>
+                              <dd className={`m-0 text-sm md:text-base font-semibold leading-relaxed ${isLight ? "text-zinc-800" : "text-white"}`}>
+                                {decodedValue}
+                              </dd>
+                            </div>
                           </div>
                         ))}
                       </dl>
@@ -723,7 +830,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                   <div className="w-full aspect-video rounded-[2rem] overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.1)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsVideoPlaying(true)}>
                     {!isVideoPlaying ? (
                       <>
-                        <img 
+                        <img
                           src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                           alt="Video Thumbnail"
                           className="w-full h-full object-cover transition-transform duration-700 group-hover/video:scale-105 opacity-80 group-hover/video:opacity-100"
@@ -754,6 +861,30 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
         </article>
       </div>
+
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-6 md:p-12 animate-[kdlFadeInUp_0.3s_ease-out]"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <button
+            type="button"
+            onClick={() => setLightboxOpen(false)}
+            aria-label={language === "tr" ? "Kapat" : "Close"}
+            className="absolute top-5 right-5 md:top-8 md:right-8 w-11 h-11 rounded-full flex items-center justify-center bg-white/10 hover:bg-white/20 text-white border border-white/15 transition-colors"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+          <img
+            src={imageUrl}
+            alt={name}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-full object-contain drop-shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
+          />
+        </div>
+      )}
     </div>
   );
 }
