@@ -147,7 +147,7 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
       <VantiScene onReady={() => setSceneReady(true)} />
 
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
-        <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-20">
+        <div ref={heroTextRef} className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-4">
           <img 
             src={getAssetPath("/images/brands/vanti-logo.svg")}
             alt="Vanti Logo" 

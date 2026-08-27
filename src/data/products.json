@@ -14054,11 +14054,7 @@
       "socket": null,
       "light": "Beyaz, Sarı, Kırmızı, Yeşil, Mavi, Turuncu",
       "casing": null
-    },
-    "images": [
-      "urunler/kcl016neonledguni-750x750-product_popup.webp",
-      "urunler/kcl016neonledrgb.webp"
-    ]
+    }
   },
   "KCL016-RGB": {
     "id": "KCL016-RGB",

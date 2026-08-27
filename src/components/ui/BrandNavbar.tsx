@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { getAssetPath } from "@/lib/basePath";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
@@ -16,6 +17,10 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   
+  const pathname = usePathname();
+  const isGlobalHomePage = brandName === "global" && (pathname === "/brand/global" || pathname === "/brand/global/" || pathname === "/");
+  const [isVisible, setIsVisible] = useState(!isGlobalHomePage);
+
   const isK2 = brandName === "k2";
   const logoSrc = isK2 
     ? getAssetPath("/images/brands/k2-logo.svg") 
@@ -60,10 +65,24 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isGlobalHomePage) {
+      setIsVisible(false);
+      const timer = setTimeout(() => {
+        setIsVisible(true);
+      }, 2200);
+      return () => clearTimeout(timer);
+    } else {
+      setIsVisible(true);
+    }
+  }, [pathname, isGlobalHomePage]);
+
   return (
     <>
       <nav 
-        className={`fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[calc(100%-2rem)] max-w-[1200px] z-50 text-zinc-800 transition-all duration-500 ease-out ${
+        className={`fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[calc(100%-2rem)] max-w-[1200px] z-50 text-zinc-800 transition-all duration-700 ease-out ${
+          !isVisible ? 'opacity-0 -translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'
+        } ${
           scrolled 
             ? `lg:py-3 py-3 lg:px-7 px-4 bg-white/90 backdrop-blur-2xl border-b lg:border border-zinc-200/60 shadow-lg ${theme.activeGlow} lg:rounded-full`
             : 'lg:py-4 py-4 lg:px-8 px-4 bg-white/95 backdrop-blur-xl border-b lg:border border-zinc-200/40 shadow-sm lg:rounded-full'

@@ -467,10 +467,6 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               };
 
               const renderVariantLink = (match: any, label: string, showColorDot: boolean) => {
-                const isVirtual = variations.length === 1 && match.variant.id === product.id;
-                
-                const isSelected = match.variant.id === product.id && !isVirtual;
-
                 let specificDotColor = 'bg-zinc-200';
                 const ctUpper = label.toUpperCase();
                 if (ctUpper.includes("ALEV") || ctUpper.includes("1700K")) specificDotColor = 'bg-[#FF5722]';
@@ -504,21 +500,10 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
                 const baseClass = "flex items-center gap-2 px-3.5 py-2 rounded-full text-xs md:text-sm font-bold whitespace-nowrap transition-all duration-200";
 
-                if (isSelected || isVirtual) {
-                  return (
-                    <div
-                      key={match.variant.id + "-" + label}
-                      className={`${baseClass} border-2 ${isLight ? `${themePillBg} ${themeText} border-current` : "bg-white/15 text-white border-white/40"}`}
-                    >
-                      {pillContent}
-                    </div>
-                  );
-                }
-
                 return (
                   <div
                     key={match.variant.id + "-" + label}
-                    className={`${baseClass} border cursor-default ${isLight ? "bg-white text-zinc-800 border-zinc-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)]" : "bg-white/[0.06] text-white border-white/20 shadow-[0_2px_8px_rgba(255,255,255,0.04)]"}`}
+                    className={`${baseClass} border-2 cursor-default ${isLight ? `${themePillBg} ${themeText} border-current` : "bg-white/15 text-white border-white/40"}`}
                   >
                     {pillContent}
                   </div>
