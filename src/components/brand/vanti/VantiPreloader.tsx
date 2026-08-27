@@ -48,11 +48,11 @@ export function VantiPreloader({ ready }: VantiPreloaderProps) {
     >
       <div
         ref={topRef}
-        className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-br from-teal-100 to-sky-200 pointer-events-auto"
+        className="absolute top-0 left-0 w-full h-[51%] bg-[#f0f9ff] pointer-events-auto"
       />
       <div
         ref={bottomRef}
-        className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-br from-teal-100 to-sky-200 pointer-events-auto"
+        className="absolute bottom-0 left-0 w-full h-1/2 bg-[#f0f9ff] pointer-events-auto"
       />
       <div
         ref={logoRef}

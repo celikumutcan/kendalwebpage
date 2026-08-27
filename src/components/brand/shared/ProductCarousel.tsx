@@ -8,7 +8,7 @@ import { Product } from "@/data/products";
 import { getProductCardUrl } from "@/components/sections/CategoryFirstShowcase/helpers";
 
 interface ProductCarouselProps {
-  label: string;
+  label?: string;
   title: string;
   products: Product[];
   language: string;
@@ -37,18 +37,20 @@ export function ProductCarousel({
 
   return (
     <section
-      className="reveal-text relative z-10 w-full py-20 md:py-28 overflow-hidden"
+      className="reveal-text relative z-10 w-full py-12 md:py-16 overflow-hidden"
       style={{ "--accent": accent } as CSSProperties}
     >
       <div className={`mb-10 md:mb-14 px-6 md:px-24 ${align === "right" ? "text-right" : ""}`}>
-        <h3
-          className={`font-semibold tracking-widest mb-4 uppercase text-sm md:text-base text-[var(--accent)] ${
-            align === "right" ? "border-r-2 pr-4 inline-block" : "border-l-2 pl-4"
-          }`}
-          style={{ borderColor: accent }}
-        >
-          {label}
-        </h3>
+        {label && (
+          <h3
+            className={`font-semibold tracking-widest mb-4 uppercase text-sm md:text-base text-[var(--accent)] ${
+              align === "right" ? "border-r-2 pr-4 inline-block" : "border-l-2 pl-4"
+            }`}
+            style={{ borderColor: accent }}
+          >
+            {label}
+          </h3>
+        )}
         <h2 className="text-3xl md:text-5xl font-bold leading-tight">{title}</h2>
       </div>
 

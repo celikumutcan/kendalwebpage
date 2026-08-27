@@ -48,8 +48,8 @@ const translations = {
     popularTitle: "Kategorilerimiz",
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
-    newLabel: "Yeni Çıkanlar",
-    newTitle: "Yeni Ürünler",
+    newLabel: "Koleksiyon",
+    newTitle: "En Yeni Modeller",
     modelLabel: "Model",
     viewLabel: "İncele",
     dealerEyebrow: "Yurt İçi Ağımız",
@@ -153,17 +153,19 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
             alt="Vanti Logo" 
             className="h-28 md:h-40 lg:h-48 mx-auto mb-2 opacity-90 drop-shadow-md" 
           />
-          <span className="text-xs md:text-lg font-medium tracking-[0.5em] text-teal-900 block mt-6">
+          <span className="text-xs md:text-lg font-bold tracking-[0.5em] text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-cyan-600 block mt-6">
             {t.heroSub}
           </span>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
-          <p className="text-xs tracking-[0.3em] uppercase mb-6 font-semibold text-teal-950 drop-shadow-[0_1px_6px_rgba(255,255,255,0.8)]">{t.explore}</p>
-          <div className="w-[1px] h-32 bg-teal-900/30"></div>
+        <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+          <p className="text-xs tracking-[0.3em] uppercase mb-4 md:mb-6 font-bold text-white bg-blue-600/90 backdrop-blur-md px-6 py-2.5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] border border-blue-400/30">
+            {t.explore}
+          </p>
+          <div className="w-[1px] h-12 md:h-32 bg-teal-900/30"></div>
         </div>
       </section>
 
-      <section className="relative z-10 w-full min-h-screen flex flex-col items-start justify-center px-6 md:px-32 py-24">
+      <section className="relative z-10 w-full flex flex-col items-start justify-center px-6 md:px-32 py-16 md:py-24">
         <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
             <span className="w-16 h-[1px] bg-teal-600 block"></span>
@@ -175,7 +177,7 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
         </div>
       </section>
 
-      <section className="relative z-10 w-full min-h-screen flex flex-col items-end justify-center px-6 md:px-32 py-24 text-right">
+      <section className="relative z-10 w-full flex flex-col items-end justify-center px-6 md:px-32 py-16 md:py-24 text-right">
         <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center justify-end gap-4">
             {t.sec2Title}
@@ -201,7 +203,6 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
 
       <ProductCarousel
-        label={t.newLabel}
         title={t.newTitle}
         products={newProducts}
         language={language}
@@ -212,7 +213,7 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
         align="right"
       />
 
-      <section className="relative z-10 w-full min-h-[80vh] flex flex-col items-center justify-center px-6 md:px-32 py-24 text-center">
+      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 md:px-32 py-16 md:py-24 md:min-h-[80vh] text-center">
         <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-16 rounded-[4rem]">
           <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
             <span className="w-8 h-[1px] bg-teal-600 block"></span>

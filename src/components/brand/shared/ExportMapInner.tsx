@@ -5,6 +5,8 @@ import { feature } from "topojson-client";
 import landTopology from "@/data/world-land-110m.json";
 import { HQ, EXPORT_COUNTRIES, type ExportCountry } from "@/data/exportCountries";
 
+import { geoPath, geoEquirectangular } from "d3-geo";
+
 type Ring = [number, number][];
 type PolygonGeom = { type: "Polygon"; coordinates: Ring[] };
 type MultiPolygonGeom = { type: "MultiPolygon"; coordinates: Ring[][] };
@@ -12,12 +14,6 @@ type MultiPolygonGeom = { type: "MultiPolygon"; coordinates: Ring[][] };
 const WIDTH = 980;
 const HEIGHT = 480;
 const ZOOM = 3.2;
-
-function project(lon: number, lat: number): [number, number] {
-  const x = ((lon + 180) / 360) * WIDTH;
-  const y = ((90 - lat) / 180) * HEIGHT;
-  return [x, y];
-}
 
 function arcPath(x1: number, y1: number, x2: number, y2: number): string {
   const mx = (x1 + x2) / 2;
@@ -38,49 +34,26 @@ export default function ExportMapInner({ language, accent, theme = "dark" }: Exp
   const containerClass = isDark
     ? "bg-black/55 backdrop-blur-xl border-white/10"
     : "bg-white/70 backdrop-blur-xl border-white/50";
-  const landFill = isDark ? "rgba(255,255,255,0.09)" : "rgba(0,0,0,0.09)";
-  const landStroke = isDark ? "rgba(255,255,255,0.16)" : "rgba(0,0,0,0.2)";
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  const landPath = useMemo(() => {
-    const topology = landTopology as unknown as {
-      type: "Topology";
-      objects: { land: unknown };
-      arcs: number[][][];
-      transform?: { scale: [number, number]; translate: [number, number] };
-    };
+  const projection = useMemo(() => {
+    const topology = landTopology as any;
     const geo = feature(topology, topology.objects.land);
-    const geometries =
-      geo.type === "FeatureCollection"
-        ? geo.features.map((f) => f.geometry as PolygonGeom | MultiPolygonGeom)
-        : [geo.geometry as PolygonGeom | MultiPolygonGeom];
-
-    const ringsToPath = (rings: Ring[]) =>
-      rings
-        .map((ring) =>
-          ring
-            .map(([lon, lat], i) => {
-              const [x, y] = project(lon, lat);
-              return `${i === 0 ? "M" : "L"}${x.toFixed(1)},${y.toFixed(1)}`;
-            })
-            .join(" ") + "Z"
-        )
-        .join(" ");
-
-    return geometries
-      .map((geom) =>
-        geom.type === "Polygon"
-          ? ringsToPath(geom.coordinates)
-          : geom.coordinates.map((polygon) => ringsToPath(polygon)).join(" ")
-      )
-      .join(" ");
+    return geoEquirectangular().fitSize([WIDTH, HEIGHT], geo);
   }, []);
+
+  const landPath = useMemo(() => {
+    const topology = landTopology as any;
+    const geo = feature(topology, topology.objects.land);
+    const pathGenerator = geoPath(projection);
+    return pathGenerator(geo) || "";
+  }, [projection]);
 
   const allPins: ExportCountry[] = useMemo(() => [HQ, ...EXPORT_COUNTRIES], []);
   const active = allPins.find((c) => c.id === activeId);
-  const [originX, originY] = active ? project(active.lon, active.lat) : [WIDTH / 2, HEIGHT / 2];
+  const [originX, originY] = active ? (projection([active.lon, active.lat]) || [WIDTH / 2, HEIGHT / 2]) : [WIDTH / 2, HEIGHT / 2];
   const transformOrigin = `${(originX / WIDTH) * 100}% ${(originY / HEIGHT) * 100}%`;
-  const [hqX, hqY] = project(HQ.lon, HQ.lat);
+  const [hqX, hqY] = projection([HQ.lon, HQ.lat]) || [0, 0];
 
   const toggle = (id: string) => setActiveId((cur) => (cur === id ? null : id));
 
@@ -94,26 +67,43 @@ export default function ExportMapInner({ language, accent, theme = "dark" }: Exp
             transition: "transform 700ms cubic-bezier(0.16, 1, 0.3, 1)",
           }}
         >
-          <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block" role="img" aria-label="Export reach map">
-            <path d={landPath} fill={landFill} stroke={landStroke} strokeWidth={0.6} />
+          <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full h-auto block drop-shadow-sm" role="img" aria-label="Export reach map">
+            <defs>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+
+              <linearGradient id="landGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor={isDark ? "#3f3f46" : "#e2e8f0"} />
+                <stop offset="100%" stopColor={isDark ? "#18181b" : "#f8fafc"} />
+              </linearGradient>
+
+              <filter id="landShadow" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="2" dy="6" stdDeviation="4" floodColor={isDark ? "#000000" : "#94a3b8"} floodOpacity={isDark ? "0.6" : "0.3"} />
+              </filter>
+            </defs>
+
+            <path d={landPath} fill="url(#landGrad)" stroke={isDark ? "#52525b" : "#ffffff"} strokeWidth={0.8} filter="url(#landShadow)" className="transition-all duration-500" />
 
             {EXPORT_COUNTRIES.map((c) => {
-              const [x, y] = project(c.lon, c.lat);
+              const [x, y] = projection([c.lon, c.lat]) || [0, 0];
               return (
                 <path
                   key={`arc-${c.id}`}
                   d={arcPath(hqX, hqY, x, y)}
                   fill="none"
                   stroke="var(--accent)"
-                  strokeWidth={0.5}
-                  strokeDasharray="1.5 2.5"
-                  opacity={0.28}
+                  strokeWidth={0.6}
+                  strokeDasharray="2 3"
+                  opacity={isDark ? 0.4 : 0.6}
+                  filter="url(#glow)"
                 />
               );
             })}
 
             {allPins.map((c) => {
-              const [x, y] = project(c.lon, c.lat);
+              const [x, y] = projection([c.lon, c.lat]) || [0, 0];
               const isActive = activeId === c.id;
               const isHQ = c.id === HQ.id;
               return (
@@ -124,14 +114,15 @@ export default function ExportMapInner({ language, accent, theme = "dark" }: Exp
                   aria-label={language === "en" ? c.nameEn : c.nameTr}
                 >
                   <circle cx={x} cy={y} r={9} fill="transparent" />
-                  {!isHQ && <circle cx={x} cy={y} r={7} fill="none" stroke="var(--accent)" strokeWidth={0.75} opacity={0.3} />}
+                  {!isHQ && <circle cx={x} cy={y} r={7} fill="none" stroke="var(--accent)" strokeWidth={0.75} opacity={0.4} />}
                   <circle
                     cx={x}
                     cy={y}
                     r={isHQ ? 5.5 : isActive ? 4.5 : 3.5}
-                    fill={isActive || isHQ ? (isDark ? "#ffffff" : "#18181b") : "var(--accent)"}
+                    fill={isActive || isHQ ? (isDark ? "#ffffff" : "var(--accent)") : "var(--accent)"}
                     stroke="var(--accent)"
                     strokeWidth={isActive || isHQ ? 2 : 0}
+                    filter={isActive || isHQ ? "url(#glow)" : undefined}
                   />
                 </g>
               );

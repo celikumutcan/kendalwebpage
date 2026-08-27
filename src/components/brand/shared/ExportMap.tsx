@@ -50,7 +50,7 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
     : "bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]";
 
   return (
-    <section className="reveal-text relative z-10 w-full py-20 md:py-28 px-6 md:px-24">
+    <section className="reveal-text relative z-10 w-full py-12 md:py-16 px-6 md:px-24">
       <div className="flex justify-center mb-10 md:mb-14">
         <div className={`text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border ${textBgClass}`}>
           <h3

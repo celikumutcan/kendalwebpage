@@ -274,7 +274,7 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         </div>
       </section>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32 space-y-40">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-32 space-y-20 md:space-y-40">
         
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
@@ -334,7 +334,7 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         align="right"
       />
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-32">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-32">
         <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
           <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
           <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">

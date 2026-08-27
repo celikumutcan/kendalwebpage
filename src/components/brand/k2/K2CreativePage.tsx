@@ -160,7 +160,7 @@ export function K2CreativePage({ newProducts, allProducts }: K2CreativePageProps
         </div>
       </section>
 
-      <section className="relative z-10 w-full min-h-screen flex flex-col justify-center items-end px-6 md:px-24 py-24 text-right">
+      <section className="relative z-10 w-full flex flex-col justify-center items-end px-6 md:px-24 py-16 md:py-24 md:min-h-screen text-right">
         <div className="max-w-4xl reveal-text">
           <h3 className="text-orange-500 font-semibold tracking-widest mb-6 uppercase text-sm md:text-base border-r-2 border-orange-500 pr-4 inline-block">{t.sec2Title}</h3>
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
