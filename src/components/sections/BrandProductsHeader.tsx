@@ -7,6 +7,33 @@ interface BrandProductsHeaderProps {
   brandName: string;
 }
 
+const BrandGlyph = ({ brandName, className }: { brandName: string; className?: string }) => {
+  if (brandName === "vanti") {
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.2}>
+        <path d="M12 12c0-4 2-8 6-8 2.2 0 4 1.8 4 4 0 4-4 6-10 4Z" strokeLinejoin="round" />
+        <path d="M12 12c-4 0-8-2-8-6 0-2.2 1.8-4 4-4 4 0 6 4 4 10Z" strokeLinejoin="round" />
+        <path d="M12 12c4 0 8 2 8 6 0 2.2-1.8 4-4 4-4 0-6-4-4-10Z" strokeLinejoin="round" />
+        <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none" />
+      </svg>
+    );
+  }
+  if (brandName === "global") {
+    return (
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.2}>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M3 12h18M12 3c2.8 2.6 4.2 5.7 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.7-4.2-9S9.2 5.6 12 3Z" strokeLinejoin="round" />
+      </svg>
+    );
+  }
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.2}>
+      <path d="M9 18h6M10 21h4" strokeLinecap="round" />
+      <path d="M12 3a6.5 6.5 0 0 0-4 11.6c.7.6 1.1 1.5 1.1 2.4h5.8c0-.9.4-1.8 1.1-2.4A6.5 6.5 0 0 0 12 3Z" strokeLinejoin="round" />
+    </svg>
+  );
+};
+
 export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => {
   const { t } = useLanguage();
   const isK2 = brandName === "k2";
@@ -22,29 +49,55 @@ export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => 
   const title = headerTexts.title;
   const description = isK2 ? headerTexts.k2_desc : isVanti ? headerTexts.vanti_desc : headerTexts.global_desc;
 
-  const accentClass = isK2 
-    ? "bg-gradient-to-r from-orange-400 to-orange-600 shadow-[0_0_15px_rgba(249,115,22,0.4)]" 
-    : isVanti 
-      ? "bg-gradient-to-r from-blue-400 to-blue-600 shadow-[0_0_15px_rgba(37,99,235,0.4)]" 
-      : "bg-gradient-to-r from-yellow-300 to-amber-500 shadow-[0_0_15px_rgba(251,191,36,0.4)]";
+  const eyebrow = isK2 ? "K2 LED SYSTEMS" : isVanti ? "VANTİ" : "GLOBAL";
 
-  const titleGradient = isK2
-    ? "from-zinc-900 to-zinc-600"
+  const eyebrowWrap = isK2
+    ? "border-orange-200/80 bg-orange-50/80 text-orange-600"
     : isVanti
-      ? "from-zinc-900 to-zinc-600"
-      : "from-zinc-900 to-zinc-600"; // Can be customized per brand later if needed
+      ? "border-blue-200/80 bg-blue-50/80 text-blue-600"
+      : "border-amber-200/80 bg-amber-50/80 text-amber-700";
+
+  const eyebrowDot = isK2 ? "bg-orange-500" : isVanti ? "bg-blue-500" : "bg-amber-500";
+
+  const cardGradient = isK2
+    ? "from-orange-500 via-orange-600 to-amber-600"
+    : isVanti
+      ? "from-blue-500 via-blue-600 to-cyan-600"
+      : "from-amber-400 via-amber-500 to-orange-500";
+
+  const orbA = isK2 ? "bg-orange-300/60" : isVanti ? "bg-blue-300/60" : "bg-amber-300/60";
+  const orbB = isK2 ? "bg-amber-200/70" : isVanti ? "bg-cyan-200/70" : "bg-yellow-200/70";
 
   return (
-    <div className="flex flex-col items-center text-center mb-6 mt-10 animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
-      <div className={`h-1.5 w-16 md:w-20 rounded-full mb-6 ${accentClass}`} />
-      <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight bg-gradient-to-r ${titleGradient} bg-clip-text text-transparent pb-2 pt-4 leading-tight`}>
-        {title}
-      </h1>
-      {description && (
-        <p className="mt-4 max-w-2xl text-base md:text-lg text-zinc-500/90 font-medium leading-relaxed">
-          {description}
-        </p>
-      )}
+    <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.15fr_0.85fr] items-center gap-6 mb-6 mt-4">
+      <div className="flex flex-col items-center text-center lg:items-start lg:text-left animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
+        <div className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full border backdrop-blur-sm mb-4 ${eyebrowWrap}`}>
+          <span className={`w-1.5 h-1.5 rounded-full ${eyebrowDot} animate-pulse`} />
+          <span className="text-xs font-bold tracking-[0.15em] uppercase">{eyebrow}</span>
+        </div>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-zinc-900 pb-2 leading-[0.95]">
+          {title}
+        </h1>
+        {description && (
+          <p className="mt-3 max-w-xl text-base md:text-lg text-zinc-500 font-medium leading-relaxed">
+            {description}
+          </p>
+        )}
+      </div>
+
+      <div className="hidden lg:flex relative h-[180px] items-center justify-center animate-in fade-in zoom-in-95 duration-1000 ease-out">
+        <div className={`absolute w-36 h-36 rounded-full blur-3xl ${orbA} -top-2 -right-4`} />
+        <div className={`absolute w-28 h-28 rounded-full blur-3xl ${orbB} bottom-0 left-4`} />
+
+        <div className={`relative w-32 h-32 rounded-[1.75rem] bg-gradient-to-br ${cardGradient} shadow-2xl -rotate-6 flex items-center justify-center overflow-hidden`}>
+          <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle,white_1px,transparent_1px)] [background-size:18px_18px]" />
+          <BrandGlyph brandName={brandName} className="w-14 h-14 text-white/90" />
+        </div>
+
+        <div className="absolute -bottom-1 right-4 w-20 h-20 rounded-[1.25rem] bg-white shadow-xl rotate-6 border border-zinc-100 flex items-center justify-center">
+          <BrandGlyph brandName={brandName} className={`w-8 h-8 ${isK2 ? "text-orange-500" : isVanti ? "text-blue-500" : "text-amber-500"}`} />
+        </div>
+      </div>
     </div>
   );
 };

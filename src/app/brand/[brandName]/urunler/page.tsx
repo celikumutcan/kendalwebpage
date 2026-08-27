@@ -59,7 +59,11 @@ export default async function BrandProductsPage({
   const glowSoft = isK2 ? "bg-amber-200/25" : brandName === "vanti" ? "bg-cyan-200/25" : "bg-yellow-200/20";
 
   return (
-    <div className={`relative w-full text-zinc-900 min-h-screen pt-32 pb-12 px-6 overflow-hidden ${isK2 ? "bg-orange-50/50" : brandName === "vanti" ? "bg-blue-50/50" : "bg-[#FFDA51]/10"}`}>
+    <div className={`relative w-full text-zinc-900 min-h-screen pt-32 pb-16 px-6 overflow-hidden ${isK2 ? "bg-gradient-to-b from-orange-50/70 via-white to-white" : brandName === "vanti" ? "bg-gradient-to-b from-blue-50/70 via-white to-white" : "bg-gradient-to-b from-[#FFF9E3] via-white to-white"}`}>
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.55] [mask-image:radial-gradient(ellipse_65%_45%_at_50%_0%,black,transparent)]"
+        style={{ backgroundImage: "radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px)", backgroundSize: "26px 26px" }}
+      />
       <div className={`absolute -top-32 -left-48 w-[560px] h-[560px] rounded-full blur-[140px] pointer-events-none z-0 ${glowStrong}`} />
       <div className={`absolute top-1/3 -right-56 w-[640px] h-[640px] rounded-full blur-[160px] pointer-events-none z-0 ${glowSoft}`} />
       <div className={`absolute bottom-0 left-1/4 w-[480px] h-[480px] rounded-full blur-[150px] pointer-events-none z-0 ${glowSoft}`} />

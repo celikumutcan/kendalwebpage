@@ -34,7 +34,7 @@ export function CompareTray({
 }: CompareTrayProps) {
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[150] flex justify-center px-4 pb-4 pointer-events-none">
-      <div className="pointer-events-auto bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-zinc-100 ring-1 ring-black/[0.02] px-4 py-3 flex items-center gap-4 max-w-[calc(100vw-2rem)] overflow-x-auto animate-in slide-in-from-bottom-4 fade-in duration-300">
+      <div className="pointer-events-auto bg-white/95 backdrop-blur-xl rounded-[1.75rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-zinc-100 ring-1 ring-black/[0.02] px-4 py-3 flex items-center gap-4 max-w-[calc(100vw-2rem)] overflow-x-auto animate-in slide-in-from-bottom-4 fade-in duration-300">
         <div className="flex items-center gap-2 flex-shrink-0">
           {compareItems.map(({ product }) => {
             const name = product.name[language as keyof typeof product.name] || product.name.tr;

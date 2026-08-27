@@ -403,9 +403,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
     <section className="pt-4 pb-12 px-6">
       <div className="max-w-[1440px] mx-auto">
 
-        <div className="mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
+        <div className="sticky top-20 md:top-24 z-30 mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
           <div className="relative max-w-3xl mx-auto group">
-            <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none">
+            <div className={`absolute -inset-1 rounded-full opacity-0 group-focus-within:opacity-100 blur-lg transition-opacity duration-500 pointer-events-none ${isK2 ? "bg-orange-400/25" : brandName === "vanti" ? "bg-blue-400/25" : "bg-amber-300/30"}`} />
+            <div className="absolute inset-y-0 left-0 pl-5 flex items-center pointer-events-none z-10">
               <svg className={`h-6 w-6 transition-transform duration-500 group-focus-within:scale-110 ${isK2 ? "text-orange-400 group-focus-within:text-orange-600" : brandName === "vanti" ? "text-blue-400 group-focus-within:text-blue-600" : "text-[#FFDA51]/80 group-focus-within:text-amber-500"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
@@ -415,7 +416,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
               value={searchQuery}
               onChange={handleSearchChange}
               placeholder={showcaseTexts.search_placeholder}
-              className={`w-full pl-14 pr-24 py-5 rounded-full border border-white/40 bg-white/60 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-lg hover:bg-white/80 focus:bg-white/95
+              className={`relative z-10 w-full pl-14 pr-24 py-5 rounded-full border border-white/60 bg-white/70 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-lg hover:bg-white/85 focus:bg-white
                 ${isK2
                   ? "focus:border-orange-500 focus:ring-orange-500/20"
                   : brandName === "vanti"
@@ -424,7 +425,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
             />
             
             {/* Clear Button Container */}
-            <div className="absolute inset-y-0 right-0 pr-5 flex items-center gap-2">
+            <div className="absolute inset-y-0 right-0 pr-5 flex items-center gap-2 z-10">
               {searchQuery && (
                 <button
                   onClick={() => { setSearchQuery(""); setCurrentPage(1); updateUrl(selectedGroup, selectedCategory, 1, ""); }}
@@ -441,13 +442,15 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
 
         {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-              {topLevelCards.map((item) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+              {topLevelCards.map((item, i) => (
                 <CategoryCard
                   key={item.key}
                   alt={item.displayName}
                   displayName={item.displayName}
                   sampleImage={item.sampleImage}
+                  index={i}
+                  brandName={brandName}
                   onClick={() => item.type === 'category' ? handleCategoryClick(item.cat.name) : handleGroupClick(item.group.key)}
                 />
               ))}
@@ -469,13 +472,15 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
               </button>
               <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">{activeGroup.displayName}</h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6">
-              {activeGroup.members.map((cat) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+              {activeGroup.members.map((cat, i) => (
                 <CategoryCard
                   key={cat.name}
                   alt={cat.name}
                   displayName={cat.displayName}
                   sampleImage={cat.sampleImage}
+                  index={i}
+                  brandName={brandName}
                   onClick={() => handleCategoryClick(cat.name)}
                 />
               ))}
@@ -498,9 +503,15 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                     {showcaseTexts.back_to_categories}
                   </button>
                 )}
-                <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
+                <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight">
                   {isSearching ? showcaseTexts.search_results_title : (categoriesData.find(c => c.name === activeCategory)?.displayName || activeCategory)}
                 </h2>
+                <p className="mt-1.5 text-sm text-zinc-400 font-medium">
+                  {currentViewProducts.length} {showcaseTexts.product_count.toLowerCase()}
+                  {isSearching && searchQuery && (
+                    <> {showcaseTexts.search_for} &ldquo;{searchQuery}&rdquo;</>
+                  )}
+                </p>
               </div>
 
               {!isSearching && hasAnyFilterOptions && (
@@ -559,8 +570,8 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                 <p className="text-zinc-500 text-lg max-w-md mx-auto">{showcaseTexts.search_no_results_desc}</p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
-                {displayedProducts.map((group) => {
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
+                {displayedProducts.map((group, i) => {
                   const product = group.product;
                   const canCompare = !!(isBrandScoped && activeCategory && !isSearching);
                   const isCompared = compareIds.includes(product.id);
@@ -581,6 +592,7 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                       isCompareMaxed={isCompareMaxed}
                       compareTexts={compareTexts}
                       onToggleCompare={toggleCompare}
+                      index={i}
                     />
                   );
                 })}
@@ -602,10 +614,10 @@ export default function CategoryFirstShowcase({ products, brandName, isBrandScop
                         updateUrl(selectedGroup, selectedCategory, pageNum as number, searchQuery);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                       }}
-                      className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all ${
+                      className={`w-10 h-10 rounded-full flex items-center justify-center font-medium transition-all duration-200 ${
                         currentPage === pageNum
-                          ? (isK2 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30" : brandName === "vanti" ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" : "bg-[#FFDA51] text-zinc-900 shadow-lg shadow-[#FFDA51]/30")
-                          : "bg-white text-zinc-600 hover:bg-zinc-100 border border-zinc-200"
+                          ? (isK2 ? "bg-orange-500 text-white shadow-lg shadow-orange-500/30 scale-110" : brandName === "vanti" ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30 scale-110" : "bg-[#FFDA51] text-zinc-900 shadow-lg shadow-[#FFDA51]/30 scale-110")
+                          : "bg-white text-zinc-600 hover:bg-zinc-100 hover:-translate-y-0.5 border border-zinc-200 hover:border-zinc-300 hover:shadow-sm"
                       }`}
                     >
                       {pageNum}
