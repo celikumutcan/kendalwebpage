@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useRef, useMemo, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useTexture, Line } from "@react-three/drei";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
 import { useLightTemperature } from "@/lib/LightTemperatureProvider";
 import { getAssetPath } from "@/lib/basePath";
@@ -72,37 +71,73 @@ const ARCS = LOCATIONS.slice(1).map(loc => {
   return curve.getPoints(50);
 });
 
+// Three.js'in yerleşik LineDashedMaterial'ı animasyonlu dash-offset desteklemiyor
+// (meshline/drei'nin sağladığı özellik); aynı "akan çizgi" görselini drei'siz
+// elde etmek için küçük bir custom shader kullanılıyor.
+const arcDashShader = {
+  vertexShader: `
+    attribute float lineDistance;
+    varying float vLineDistance;
+    void main() {
+      vLineDistance = lineDistance;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  `,
+  fragmentShader: `
+    uniform vec3 uColor;
+    uniform float uOpacity;
+    uniform float uDashSize;
+    uniform float uGapSize;
+    uniform float uDashOffset;
+    varying float vLineDistance;
+
+    void main() {
+      float period = uDashSize + uGapSize;
+      float m = mod(vLineDistance - uDashOffset, period);
+      if (m > uDashSize) discard;
+      gl_FragColor = vec4(uColor, uOpacity);
+    }
+  `,
+};
+
 const AnimatedArcs = ({ arcs, color }: { arcs: THREE.Vector3[][], color: THREE.Color }) => {
-  const linesRef = useRef<any[]>([]);
+  const arcLines = useMemo(
+    () =>
+      arcs.map((points) => {
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+        const material = new THREE.ShaderMaterial({
+          uniforms: {
+            uColor: { value: new THREE.Color() },
+            uOpacity: { value: 0.8 },
+            uDashSize: { value: 0.5 },
+            uGapSize: { value: 0.5 },
+            uDashOffset: { value: 0 },
+          },
+          vertexShader: arcDashShader.vertexShader,
+          fragmentShader: arcDashShader.fragmentShader,
+          transparent: true,
+          depthWrite: false,
+          blending: THREE.AdditiveBlending,
+        });
+        const line = new THREE.Line(geometry, material);
+        line.computeLineDistances();
+        return line;
+      }),
+    [arcs]
+  );
 
   useFrame((state, delta) => {
-    linesRef.current.forEach(line => {
-      if (line?.material) {
-        line.material.dashOffset -= delta;
-        if (line.material.color) {
-          line.material.color.copy(color);
-        }
-      }
+    arcLines.forEach((line) => {
+      const material = line.material as THREE.ShaderMaterial;
+      material.uniforms.uDashOffset.value -= delta;
+      material.uniforms.uColor.value.copy(color);
     });
   });
 
   return (
     <>
-      {arcs.map((points, idx) => (
-        <Line
-          ref={el => { if (el) linesRef.current[idx] = el; }}
-          key={`arc-${idx}`}
-          points={points}
-          color={color}
-          lineWidth={2}
-          transparent
-          opacity={0.8}
-          dashed={true}
-          dashSize={0.5}
-          dashScale={2}
-          dashOffset={0}
-          blending={THREE.AdditiveBlending}
-        />
+      {arcLines.map((line, idx) => (
+        <primitive key={`arc-${idx}`} object={line} />
       ))}
     </>
   );
@@ -113,7 +148,7 @@ const GlobeScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRe
   const glowRef = useRef<THREE.MeshBasicMaterial>(null);
   const { getProgress } = useLightTemperature();
 
-  const [earthTexture, bumpTexture, specularTexture] = useTexture([
+  const [earthTexture, bumpTexture, specularTexture] = useLoader(THREE.TextureLoader, [
     getAssetPath("/textures/earth-color.jpg"),
     getAssetPath("/textures/earth-topology.png"),
     getAssetPath("/textures/earth-water.png")

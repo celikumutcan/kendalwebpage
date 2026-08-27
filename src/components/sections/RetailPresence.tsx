@@ -23,7 +23,7 @@ export const RetailPresence = () => {
 
 
   return (
-    <section id="retail" ref={containerRef} className="w-full relative pt-32 pb-16 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
+    <section id="retail" ref={containerRef} className="w-full relative pt-32 pb-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
         <div className="absolute -left-[20%] top-0 w-[600px] h-[600px] bg-gradient-to-br from-amber-400 to-orange-500 blur-[150px] rounded-full mix-blend-multiply dark:mix-blend-screen" />
 

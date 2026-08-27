@@ -36,11 +36,13 @@ export function UretimClient() {
           </h1>
         </header>
 
-        <ImageSlider
-          images={images}
-          altPrefix="Kendal Elektrik Üretim Tesisi Görsel"
-          titlePrefix="Kendal Elektrik Üretim Aşaması"
-        />
+        <div className="max-w-2xl mx-auto">
+          <ImageSlider
+            images={images}
+            altPrefix="Kendal Elektrik Üretim Tesisi Görsel"
+            titlePrefix="Kendal Elektrik Üretim Aşaması"
+          />
+        </div>
 
         <article className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed mt-12 text-justify">
           {Array.isArray(pageData.content) ? (

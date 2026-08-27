@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
@@ -8,13 +8,15 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { getAssetPath } from "@/lib/basePath";
 
+const LightCoreFallback = () => (
+  <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.03)_0%,_transparent_50%)] animate-pulse pointer-events-none" />
+);
+
 const LightCore = dynamic(
   () => import("@/components/engine/LightCore").then((mod) => mod.LightCore),
-  { 
+  {
     ssr: false,
-    loading: () => (
-      <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.03)_0%,_transparent_50%)] animate-pulse pointer-events-none" />
-    )
+    loading: LightCoreFallback,
   }
 );
 
@@ -23,6 +25,20 @@ export const Hero = () => {
   const contentRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
   const scrollProgressRef = useRef<number>(0);
+  const [mountEngine, setMountEngine] = useState(false);
+
+  useEffect(() => {
+    // İlk boyama tamamlanana kadar ağır Three.js paketinin
+    // indirilip çalıştırılmasını erteler; hydration ile yarışmaz.
+    let raf2 = 0;
+    const raf1 = requestAnimationFrame(() => {
+      raf2 = requestAnimationFrame(() => setMountEngine(true));
+    });
+    return () => {
+      cancelAnimationFrame(raf1);
+      if (raf2) cancelAnimationFrame(raf2);
+    };
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -71,7 +87,11 @@ export const Hero = () => {
       </div>
 
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24">
-        <LightCore scrollProgressRef={scrollProgressRef} />
+        {mountEngine ? (
+          <LightCore scrollProgressRef={scrollProgressRef} />
+        ) : (
+          <LightCoreFallback />
+        )}
 
         <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.4)_0%,_transparent_70%)] pointer-events-none" />
 

@@ -28,8 +28,12 @@ export function KariyerClient() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6">
-      <div className="max-w-3xl mx-auto">
+    <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute left-1/2 top-[-10%] -translate-x-1/2 w-[600px] h-[400px] bg-indigo-600/30 blur-[120px] rounded-[100%]" />
+        <div className="absolute left-1/2 bottom-[-10%] -translate-x-1/2 w-[600px] h-[400px] bg-rose-600/20 blur-[120px] rounded-[100%]" />
+      </div>
+      <div className="relative z-10 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[var(--brand-red)] text-center">
           {career?.title || "Kariyer"}
         </h1>
