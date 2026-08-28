@@ -77,7 +77,15 @@ export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, 
         )}
       </div>
 
-      <p className={`text-center ${hintColor} text-xs md:text-sm mt-6`}>{hint}</p>
+      <p className="text-center mt-6">
+        {isDark ? (
+          <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
+        ) : (
+          <span className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}>
+            {hint}
+          </span>
+        )}
+      </p>
     </section>
   );
 }

@@ -7,7 +7,6 @@ import Link from "next/link";
 import { Product } from "@/data/products";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
-import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
 import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
 import { DealerMap } from "@/components/brand/shared/DealerMap";
 
@@ -18,7 +17,6 @@ if (typeof window !== "undefined") {
 const GLOBAL_ACCENT = "#e6b800";
 
 interface GlobalCreativePageProps {
-  newProducts: Product[];
   allProducts: Product[];
 }
 
@@ -27,6 +25,14 @@ const translations = {
     heroSub: "KAPSAMLI AYDINLATMA ÇÖZÜMLERİ",
     heroTitle: "IŞIĞIN YENİ BOYUTU",
     explore: "Işığı Keşfet",
+    whyEyebrow: "Neden Global?",
+    whyHeading: "Aydınlatmada güvenilir bir isim.",
+    whySubtext: "Global, Kendal Elektrik'in 29 yıllık üretim tecrübesiyle güçleniyor.",
+    trustStats: [
+      { value: "Sektörün Güvendiği İsimlerden", label: "Aydınlatma Markaları Arasında" },
+      { value: "9.6 / 10", label: "Ortalama Müşteri Memnuniyeti" },
+      { value: "%2'nin Altında", label: "İade Oranı" },
+    ],
     sec1Title: "Kusursuz Güç",
     sec1Text: "Kendal Elektrik güvencesiyle, projelerinizi aydınlatacak en parlak ve en güçlü çözümler.",
     sec2Title: "Sınırsız Performans",
@@ -35,10 +41,6 @@ const translations = {
     popularTitle: "Kategorilerimiz",
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
-    newLabel: "Yeni Çıkanlar",
-    newTitle: "Yeni Ürünler",
-    modelLabel: "Model",
-    viewLabel: "İncele",
     dealerEyebrow: "Yurt İçi Ağımız",
     dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
     dealerBadge: "67 İlde Yetkili Bayimiz Var",
@@ -52,6 +54,14 @@ const translations = {
     heroSub: "COMPREHENSIVE LIGHTING SOLUTIONS",
     heroTitle: "NEW DIMENSION OF LIGHT",
     explore: "Discover the Light",
+    whyEyebrow: "Why Global?",
+    whyHeading: "A trusted name in lighting.",
+    whySubtext: "Global is backed by Kendal Elektrik's 29 years of manufacturing experience.",
+    trustStats: [
+      { value: "A Trusted Industry Name", label: "Among Lighting Brands" },
+      { value: "9.6 / 10", label: "Average Customer Satisfaction" },
+      { value: "Under 2%", label: "Return Rate" },
+    ],
     sec1Title: "Flawless Power",
     sec1Text: "With Kendal Elektrik's assurance, the brightest and most powerful solutions to illuminate your projects.",
     sec2Title: "Limitless Performance",
@@ -60,10 +70,6 @@ const translations = {
     popularTitle: "Our Categories",
     categoryCountLabel: "Products",
     viewAllLabel: "All Categories",
-    newLabel: "Just Arrived",
-    newTitle: "New Products",
-    modelLabel: "Model",
-    viewLabel: "View",
     dealerEyebrow: "Our Domestic Network",
     dealerTitle: "By your side, in every corner of Turkey.",
     dealerBadge: "Authorized Dealers in 67 Provinces",
@@ -97,7 +103,33 @@ const SwitchIcon = () => (
 const CURSOR_END_X = 45;
 const CURSOR_END_Y = 101;
 
-export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativePageProps) {
+function BoltIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" />
+    </svg>
+  );
+}
+
+function InfinityIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18.2 8c5.1 0 5.1 8 0 8-5.1 0-7.1-8-12.2-8-5.1 0-5.1 8 0 8 5.1 0 7.1-8 12.2-8z" />
+    </svg>
+  );
+}
+
+function BulbIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 18h6" />
+      <path d="M10 22h4" />
+      <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2Z" />
+    </svg>
+  );
+}
+
+export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations] || translations.tr;
 
@@ -117,7 +149,7 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
   useEffect(() => {
     if (!containerRef.current) return;
 
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       const introTl = gsap.timeline({ delay: 0 });
 
       introTl.fromTo(
@@ -174,8 +206,8 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         },
       });
 
-      const sections = gsap.utils.toArray(".reveal-card");
-      sections.forEach((section: any) => {
+      const sections = gsap.utils.toArray<Element>(".reveal-card");
+      sections.forEach((section) => {
         const textElements = section.querySelectorAll(".reveal-content");
 
         const sectionTl = gsap.timeline({
@@ -200,7 +232,7 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         );
       });
 
-      gsap.utils.toArray(".reveal-text").forEach((section: any) => {
+      gsap.utils.toArray<Element>(".reveal-text").forEach((section) => {
         gsap.fromTo(
           section,
           { opacity: 0, y: 40 },
@@ -274,28 +306,55 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         </div>
       </section>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-32 space-y-20 md:space-y-40">
-        
-        <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
-          <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
-          <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">
-            {t.sec1Title}
-          </h3>
-          <h2 className="reveal-content text-3xl md:text-5xl font-light leading-tight text-black">
-            {t.sec1Text}
-          </h2>
-        </section>
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="reveal-text bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="flex flex-col justify-center">
+            <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-[#e6b800]/30 bg-[#fff3c4]/50 text-xs md:text-sm font-black tracking-widest uppercase text-[#8a6d00] mb-6">
+              {t.whyEyebrow}
+            </div>
+            <h2 className="text-3xl md:text-5xl font-black leading-tight text-black mb-6">{t.whyHeading}</h2>
+            <p className="text-base md:text-lg text-gray-500 leading-relaxed max-w-md">{t.whySubtext}</p>
+          </div>
 
-        <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
-          <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
-          <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">
-            {t.sec2Title}
-          </h3>
-          <h2 className="reveal-content text-3xl md:text-5xl font-light leading-tight text-black">
-            {t.sec2Text}
-          </h2>
-        </section>
+          <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
+            <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-gray-200 rounded-full"></div>
+            {t.trustStats.map((stat) => (
+              <div key={stat.label} className="relative">
+                <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-white border-2 border-[#e6b800] rounded-full shadow-sm"></div>
+                <div className="text-2xl md:text-4xl font-black text-black leading-tight mb-1.5">{stat.value}</div>
+                <div className="text-sm md:text-lg text-gray-500">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-16">
+        <div className="reveal-text bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-gray-100">
+          {[
+            { title: t.sec1Title, text: t.sec1Text, icon: BoltIcon },
+            { title: t.sec2Title, text: t.sec2Text, icon: InfinityIcon },
+            { title: t.sec3Title, text: t.sec3Text, icon: BulbIcon },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={item.title}
+                className={`flex flex-col gap-4 ${i > 0 ? "md:pl-10" : ""} ${i < 2 ? "md:pr-10" : ""}`}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-[#fff3c4]/60 flex items-center justify-center text-[#8a6d00]">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <h3 className="font-black tracking-[0.2em] uppercase text-sm md:text-base text-gray-400">
+                  {item.title}
+                </h3>
+                <p className="text-black/80 text-lg md:text-xl font-light leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <CategoryShowcase
@@ -322,37 +381,14 @@ export function GlobalCreativePage({ newProducts, allProducts }: GlobalCreativeP
         theme="light"
       />
 
-      <ProductCarousel
-        label={t.newLabel}
-        title={t.newTitle}
-        products={newProducts}
-        language={language}
-        modelLabel={t.modelLabel}
-        viewLabel={t.viewLabel}
-        brandName="global"
-        accent={GLOBAL_ACCENT}
-        align="right"
-      />
-
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-32">
-        <section className="reveal-card flex flex-col items-center text-center bg-white shadow-xl border border-gray-100 p-12 md:p-20 rounded-[3rem]">
-          <div className="reveal-content w-16 h-[2px] bg-[#ffcb05] mb-8"></div>
-          <h3 className="reveal-content font-black tracking-[0.3em] mb-6 uppercase text-lg text-gray-400">
-            {t.sec3Title}
-          </h3>
-          <h2 className="reveal-content text-3xl md:text-5xl font-light leading-tight mb-16 text-black">
-            {t.sec3Text}
-          </h2>
-          <Link
-            href={process.env.NODE_ENV === "production" ? "/brand/global/urunler" : "/urunler"}
-            className="reveal-content relative group inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full overflow-hidden transition-all duration-300 hover:scale-105"
-          >
-            <span className="relative z-10">{t.catalogBtn}</span>
-            <div className="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out z-0"></div>
-          </Link>
-        </section>
-
-      </div>
+      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
+        <Link
+          href={process.env.NODE_ENV === "production" ? "/brand/global/urunler" : "/urunler"}
+          className="inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-gray-800 hover:shadow-[0_10px_28px_rgba(0,0,0,0.35)] transition-all duration-300"
+        >
+          {t.catalogBtn}
+        </Link>
+      </section>
     </div>
   );
 }

@@ -10,17 +10,17 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 import { getAssetPath } from "@/lib/basePath";
 import { VantiPreloader } from "./VantiPreloader";
-import { ProductCarousel } from "@/components/brand/shared/ProductCarousel";
-import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
 import { DealerMap } from "@/components/brand/shared/DealerMap";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
+import { VantiProductFamilies } from "./VantiProductFamilies";
+import { VantiVideoShowcase } from "./VantiVideoShowcase";
 
 const VantiScene = dynamic(
   () => import("./VantiScene").then((mod) => mod.VantiScene),
   {
     ssr: false,
     loading: () => (
-      <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-gradient-to-br from-teal-100 to-sky-200" />
+      <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-sky-50" />
     ),
   }
 );
@@ -29,37 +29,86 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
+function WindIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 8h11.5a2.5 2.5 0 1 0-2.5-2.5" />
+      <path d="M3 12h15.5a2.5 2.5 0 1 1-2.5 2.5" />
+      <path d="M3 16h9.5a2.5 2.5 0 1 1-2.5 2.5" />
+    </svg>
+  );
+}
+
+function FanIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 12c0-3.5 2-6.5 5-6.5s2.5 3.5 0 5.5-5 1-5 1" />
+      <path d="M12 12c-3.5 0-6.5-2-6.5-5s3.5-2.5 5.5 0 1 5 1 5" />
+      <path d="M12 12c0 3.5-2 6.5-5 6.5s-2.5-3.5 0-5.5 5-1 5-1" />
+      <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function LeafIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <path d="M11 20A7 7 0 0 1 4 13c0-5 5-10 12-10 0 7-5 12-10 12" />
+      <path d="M4 21c3-3 5-5 8-8" />
+    </svg>
+  );
+}
+
 interface VantiCreativePageProps {
-  newProducts: Product[];
   allProducts: Product[];
 }
 
 const VANTI_ACCENT = "#0f766e";
+const VANTI_VIDEO_IDS = [
+  "hFYbw1fmjdE",
+  "gRdC236jqlI",
+  "BvZSnBJnH2U",
+  "Os5nqJq0x0U",
+  "zZG5_CxFLBg",
+  "jddPviKiuvQ",
+  "2V-c5YGcldI",
+  "MjivYE3Zf1k",
+  "I0Cl26Mxf-A",
+];
 
 const translations = {
   tr: {
     heroSub: "SERİNLİĞİN VE KONFORUN ADRESİ",
     explore: "Ferahlığı Hisset",
+    whyEyebrow: "Neden Vanti?",
+    whyHeading: "Türkiye'nin güvendiği serinlik markası.",
+    whySubtext: "Kendal Elektrik güvencesiyle üretilen Vanti, kalitesi ve müşteri memnuniyetiyle öne çıkıyor.",
     sec1Title: "Doğal Esinti",
-    sec1Text: "Evinizin her köşesinde doğanın tazeleyici esintisini hissetmeniz için en sessiz ve güçlü motorları tasarlıyoruz.",
+    sec1Text: "Evinizin her köşesinde doğanın tazeleyici esintisini hissetmeniz için en sessiz ve güçlü vantilatörler tasarlıyoruz.",
     sec2Title: "Akıllı Soğutma",
     sec2Text: "Geniş açılı salınım ve aerodinamik pervane yapısıyla havayı homojen dağıtır, anında ferahlık sağlar.",
+    familiesLabel: "Ürün Ailelerimiz",
+    familiesTitle: "İhtiyacınıza Uygun Vantilatörü Bulun",
     popularLabel: "Ürün Kategorileri",
     popularTitle: "Kategorilerimiz",
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
-    newLabel: "Koleksiyon",
-    newTitle: "En Yeni Modeller",
-    modelLabel: "Model",
-    viewLabel: "İncele",
     dealerEyebrow: "Yurt İçi Ağımız",
-    dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
+    dealerTitle: "Türkiye genelinde, her zaman yanınızdayız.",
     dealerBadge: "67 İlde Yetkili Bayimiz Var",
     dealerLabel: "Yetkili Bayi",
     dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     exportEyebrow: "Global Erişim",
-    exportTitle: "Vanti'nin serinliği dünyanın dört bir yanında.",
+    exportTitle: "Vanti'nin serinliği, Türkiye'den dünyaya ihraç ediliyor.",
     exportHint: "Haritadaki noktalara tıklayın.",
+    videoLabel: "Yakından Bakış",
+    videoTitle: "Ürün Tanıtım Videolarımız",
+    videoPlayLabel: "Videoyu oynat",
+    trustStats: [
+      { value: "En Çok Tercih Edilenlerden", label: "Türkiye'nin Vantilatör Markaları Arasında" },
+      { value: "9.4 / 10", label: "Ortalama Müşteri Memnuniyeti" },
+      { value: "%1'in Altında", label: "İade Oranı" },
+    ],
     sec3Title: "Enerji Tasarrufu",
     sec3Text: "Düşük enerji tüketimiyle yüksek performans sunan çevre dostu Vanti serisi ile yazı serin geçirin.",
     catalogBtn: "Ürünleri İncele"
@@ -67,42 +116,52 @@ const translations = {
   en: {
     heroSub: "THE ADDRESS OF COOLNESS AND COMFORT",
     explore: "Feel the Freshness",
+    whyEyebrow: "Why Vanti?",
+    whyHeading: "The cooling brand Turkey trusts.",
+    whySubtext: "Backed by Kendal Elektrik's assurance, Vanti stands out for its quality and customer satisfaction.",
     sec1Title: "Natural Breeze",
-    sec1Text: "We design the quietest and most powerful motors so you can feel the refreshing breeze of nature in every corner of your home.",
+    sec1Text: "We design the quietest and most powerful fans so you can feel the refreshing breeze of nature in every corner of your home.",
     sec2Title: "Smart Cooling",
     sec2Text: "With wide-angle oscillation and aerodynamic blade structure, it distributes air evenly, providing instant freshness.",
+    familiesLabel: "Our Product Families",
+    familiesTitle: "Find the Right Fan for Your Space",
     popularLabel: "Product Categories",
     popularTitle: "Our Categories",
     categoryCountLabel: "Products",
     viewAllLabel: "All Categories",
-    newLabel: "Just Arrived",
-    newTitle: "New Products",
-    modelLabel: "Model",
-    viewLabel: "View",
     dealerEyebrow: "Our Domestic Network",
-    dealerTitle: "By your side, in every corner of Turkey.",
+    dealerTitle: "By your side, all across Turkey.",
     dealerBadge: "Authorized Dealers in 67 Provinces",
     dealerLabel: "Authorized Dealer",
     dealerHint: "Hover a province to explore our dealer network.",
     exportEyebrow: "Global Reach",
-    exportTitle: "Vanti's cool breeze, everywhere around the world.",
+    exportTitle: "Vanti's cooling, exported from Turkey to the world.",
     exportHint: "Click a point on the map.",
+    videoLabel: "Up Close",
+    videoTitle: "Our Product Demo Videos",
+    videoPlayLabel: "Play video",
+    trustStats: [
+      { value: "A Most Preferred Choice", label: "Among Turkey's Fan Brands" },
+      { value: "9.4 / 10", label: "Average Customer Satisfaction" },
+      { value: "Under 1%", label: "Return Rate" },
+    ],
     sec3Title: "Energy Saving",
     sec3Text: "Spend the summer cool with the eco-friendly Vanti series that offers high performance with low energy consumption.",
     catalogBtn: "Explore Products"
   }
 };
 
-export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePageProps) {
+export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLDivElement>(null);
+  const scrollHintRef = useRef<HTMLDivElement>(null);
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
   const [sceneReady, setSceneReady] = useState(false);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to(heroTextRef.current, {
+      gsap.to([heroTextRef.current, scrollHintRef.current], {
         opacity: 0,
         y: -100,
         scrollTrigger: {
@@ -157,7 +216,7 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
             {t.heroSub}
           </span>
         </div>
-        <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div ref={scrollHintRef} className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
           <p className="text-xs tracking-[0.3em] uppercase mb-4 md:mb-6 font-bold text-white bg-blue-600/90 backdrop-blur-md px-6 py-2.5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] border border-blue-400/30">
             {t.explore}
           </p>
@@ -165,29 +224,63 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
         </div>
       </section>
 
-      <section className="relative z-10 w-full flex flex-col items-start justify-center px-6 md:px-32 py-16 md:py-24">
-        <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
-            <span className="w-16 h-[1px] bg-teal-600 block"></span>
-            {t.sec1Title}
-          </h3>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] text-teal-950 drop-shadow-sm">
-            {t.sec1Text}
-          </h2>
+      <section className="relative z-10 w-full px-6 md:px-16 lg:px-24 pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="reveal-text max-w-6xl mx-auto bg-white/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="flex flex-col justify-center">
+            <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-teal-700/20 bg-teal-700/5 text-xs md:text-sm font-bold tracking-widest uppercase text-teal-700 mb-6">
+              {t.whyEyebrow}
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold leading-tight text-teal-950 mb-6">{t.whyHeading}</h2>
+            <p className="text-base md:text-lg text-teal-950/70 leading-relaxed max-w-md">{t.whySubtext}</p>
+          </div>
+
+          <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
+            <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-teal-700/15 rounded-full"></div>
+            {t.trustStats.map((stat) => (
+              <div key={stat.label} className="relative">
+                <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-white border-2 border-teal-700 rounded-full shadow-sm"></div>
+                <div className="text-2xl md:text-4xl font-bold text-teal-800 leading-tight mb-1.5">{stat.value}</div>
+                <div className="text-sm md:text-lg text-teal-950/70">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section className="relative z-10 w-full flex flex-col items-end justify-center px-6 md:px-32 py-16 md:py-24 text-right">
-        <div className="max-w-4xl reveal-text bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-12 rounded-[3rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center justify-end gap-4">
-            {t.sec2Title}
-            <span className="w-16 h-[1px] bg-teal-600 block"></span>
-          </h3>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] text-teal-950 drop-shadow-sm">
-            {t.sec2Text}
-          </h2>
+      <section className="relative z-10 w-full px-6 md:px-16 lg:px-24 py-12 md:py-16">
+        <div className="reveal-text max-w-6xl mx-auto bg-white/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-teal-900/10">
+          {[
+            { title: t.sec1Title, text: t.sec1Text, icon: WindIcon },
+            { title: t.sec2Title, text: t.sec2Text, icon: FanIcon },
+            { title: t.sec3Title, text: t.sec3Text, icon: LeafIcon },
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={item.title}
+                className={`flex flex-col gap-4 ${i > 0 ? "md:pl-10" : ""} ${i < 2 ? "md:pr-10" : ""}`}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-teal-700/10 flex items-center justify-center text-teal-700">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <h3 className="font-medium tracking-[0.2em] uppercase text-sm md:text-base text-teal-700">
+                  {item.title}
+                </h3>
+                <p className="text-teal-950/80 text-lg md:text-xl font-light leading-relaxed">
+                  {item.text}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </section>
+
+      <VantiProductFamilies
+        label={t.familiesLabel}
+        title={t.familiesTitle}
+        allProducts={allProducts}
+        language={language}
+      />
 
       <DealerMap
         eyebrow={t.dealerEyebrow}
@@ -202,35 +295,20 @@ export function VantiCreativePage({ newProducts, allProducts }: VantiCreativePag
 
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />
 
-      <ProductCarousel
-        title={t.newTitle}
-        products={newProducts}
-        language={language}
-        modelLabel={t.modelLabel}
-        viewLabel={t.viewLabel}
-        brandName="vanti"
-        accent={VANTI_ACCENT}
-        align="right"
+      <VantiVideoShowcase
+        videoIds={VANTI_VIDEO_IDS}
+        label={t.videoLabel}
+        title={t.videoTitle}
+        playLabel={t.videoPlayLabel}
       />
 
-      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 md:px-32 py-16 md:py-24 md:min-h-[80vh] text-center">
-        <div className="max-w-5xl reveal-text flex flex-col items-center bg-white/60 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] p-8 md:p-16 rounded-[4rem]">
-          <h3 className="font-medium tracking-[0.2em] mb-8 uppercase text-lg text-teal-700 flex items-center gap-4">
-            <span className="w-8 h-[1px] bg-teal-600 block"></span>
-            {t.sec3Title}
-            <span className="w-8 h-[1px] bg-teal-600 block"></span>
-          </h3>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.1] mb-16 text-teal-950 drop-shadow-sm">
-            {t.sec3Text}
-          </h2>
-          <Link
-            href={process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler"}
-            className="group relative overflow-hidden inline-block px-14 py-6 border border-teal-800 text-teal-900 font-medium tracking-[0.2em] uppercase rounded-full hover:text-white transition-colors duration-500"
-          >
-            <span className="relative z-10">{t.catalogBtn}</span>
-            <div className="absolute inset-0 bg-teal-800 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
-          </Link>
-        </div>
+      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
+        <Link
+          href={process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler"}
+          className="inline-block px-14 py-6 bg-teal-800 text-white font-medium tracking-[0.2em] uppercase rounded-full shadow-[0_8px_24px_rgba(15,118,110,0.35)] hover:bg-teal-900 hover:shadow-[0_10px_28px_rgba(15,118,110,0.45)] transition-all duration-300"
+        >
+          {t.catalogBtn}
+        </Link>
       </section>
 
     </div>

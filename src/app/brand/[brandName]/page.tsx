@@ -67,19 +67,15 @@ export default async function BrandPage({
   }
 
   if (brandName === "global") {
-    const GLOBAL_NEW_IDS = ["GDL420", "KES172", "GES230", "KCL060", "GLF295", "KKP285A", "KDB271A", "KCL007"];
-    const newProducts = GLOBAL_NEW_IDS.map(id => products[id]).filter(Boolean);
     const allProducts = Object.values(products).filter(p => p.brand === "global");
 
-    return <GlobalCreativePage newProducts={newProducts} allProducts={allProducts} />;
+    return <GlobalCreativePage allProducts={allProducts} />;
   }
 
   if (brandName === "vanti") {
-    const VANTI_NEW_IDS = ["KCF306", "KCF301", "KCF282", "KCF280", "KCF299D", "KCF308", "KCF271", "KCF276"];
-    const newProducts = VANTI_NEW_IDS.map(id => products[id]).filter(Boolean);
     const allProducts = Object.values(products).filter(p => p.brand === "vanti");
 
-    return <VantiCreativePage newProducts={newProducts} allProducts={allProducts} />;
+    return <VantiCreativePage allProducts={allProducts} />;
   }
 
   return (

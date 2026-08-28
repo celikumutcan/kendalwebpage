@@ -48,12 +48,12 @@ function AeroBlades() {
     const angle = (i / numBlades) * Math.PI * 2;
     return (
       <group key={i} rotation={[0, 0, angle]}>
-        <mesh position={[0, 3.5, 0]} rotation={[0, 0.4, 0]} castShadow receiveShadow>
+        <mesh position={[0, 3.5, 0]} rotation={[0, 0.4, 0]}>
           <boxGeometry args={[1.2, 6, 0.05]} />
-          <meshStandardMaterial 
-            color="#ffffff" 
-            roughness={0.2} 
-            metalness={0.1} 
+          <meshStandardMaterial
+            color="#ffffff"
+            roughness={0.2}
+            metalness={0.1}
           />
         </mesh>
       </group>
@@ -63,7 +63,7 @@ function AeroBlades() {
   return (
     <group ref={pedestalRef} position={[0, 0, -8]} scale={1.5}>
       <group ref={bladeRef}>
-        <mesh rotation={[Math.PI / 2, 0, 0]} castShadow receiveShadow>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
           <cylinderGeometry args={[1.5, 1.5, 0.5, 32]} />
           <meshStandardMaterial color="#f8fafc" roughness={0.3} metalness={0.5} />
         </mesh>
@@ -106,7 +106,7 @@ function BreezeEnvironment() {
       <fog attach="fog" args={["#bae6fd", 10, 30]} />
       
       <ambientLight intensity={0.6} color="#ffffff" />
-      <directionalLight position={[10, 20, 10]} intensity={0.8} color="#ffffff" castShadow />
+      <directionalLight position={[10, 20, 10]} intensity={0.8} color="#ffffff" />
       <directionalLight position={[-10, -10, 5]} intensity={0.3} color="#7dd3fc" />
 
       <AeroBlades />
@@ -123,7 +123,7 @@ function BreezeEnvironment() {
         position={[0, 0, -2]} 
       />
 
-      <mesh receiveShadow position={[0, 0, -15]}>
+      <mesh position={[0, 0, -15]}>
         <planeGeometry args={[100, 100]} />
         <meshStandardMaterial color="#bae6fd" roughness={1} />
       </mesh>
@@ -150,9 +150,8 @@ export function VantiScene({ onReady }: { onReady?: () => void }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-gradient-to-br from-teal-100 to-sky-200">
+    <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-sky-50">
       <Canvas
-        shadows
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 8], fov: 45 }}
         frameloop={isTabVisible ? "always" : "never"}
