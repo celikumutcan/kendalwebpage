@@ -20,7 +20,7 @@ export function VantiVideoShowcase({ videoIds, playLabel, label, title }: VantiV
       {label && title && (
         <div className="flex justify-center px-6 mb-10 md:mb-14">
           <div className="text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]">
-            <h3 className="font-medium tracking-[0.2em] mb-4 uppercase text-sm text-teal-700">{label}</h3>
+            <h3 className="font-medium tracking-[0.2em] mb-4 uppercase text-sm md:text-base text-teal-700">{label}</h3>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight text-teal-950">{title}</h2>
           </div>
         </div>

@@ -59,11 +59,9 @@ export default async function BrandPage({
   const { brandName } = resolvedParams;
 
   if (brandName === "k2") {
-    const K2_NEW_IDS = ["KST510", "KWL117", "KST303", "KES498", "KCL005_1", "KSL2431", "KST220", "KEL273L"];
-    const newProducts = K2_NEW_IDS.map(id => products[id]).filter(Boolean);
     const allProducts = Object.values(products).filter(p => p.brand === "k2");
 
-    return <K2CreativePage newProducts={newProducts} allProducts={allProducts} />;
+    return <K2CreativePage allProducts={allProducts} />;
   }
 
   if (brandName === "global") {

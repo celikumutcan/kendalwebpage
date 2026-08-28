@@ -53,11 +53,11 @@ export function VantiProductFamilies({ label, title, allProducts, language }: Va
   return (
     <section className="reveal-text relative z-10 w-full px-6 md:px-24 py-12 md:py-16">
       <div className="mb-10 md:mb-14 inline-block bg-white/50 backdrop-blur-xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[2rem] px-6 py-5 md:px-10 md:py-7">
-        <h3 className="font-medium tracking-[0.2em] mb-4 uppercase text-lg text-teal-700 flex items-center gap-4">
+        <h3 className="font-medium tracking-[0.2em] mb-4 uppercase text-sm md:text-base text-teal-700 flex items-center gap-4">
           <span className="w-16 h-[1px] bg-teal-600 block"></span>
           {label}
         </h3>
-        <h2 className="text-3xl md:text-5xl font-bold leading-tight text-teal-950">{title}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold leading-tight text-teal-950">{title}</h2>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">

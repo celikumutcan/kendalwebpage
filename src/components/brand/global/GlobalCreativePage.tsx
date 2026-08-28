@@ -306,8 +306,9 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
         </div>
       </section>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="reveal-text bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="reveal-text opacity-0 relative z-10 w-full max-w-5xl mx-auto px-6 -mt-6 md:-mt-10 pb-12 md:pb-16">
+        <div className="absolute -bottom-10 -right-16 md:-right-24 w-[380px] h-[380px] md:w-[500px] md:h-[500px] bg-orange-400/25 blur-[110px] rounded-full pointer-events-none z-0" />
+        <div className="relative z-10 bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col justify-center">
             <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-[#e6b800]/30 bg-[#fff3c4]/50 text-xs md:text-sm font-black tracking-widest uppercase text-[#8a6d00] mb-6">
               {t.whyEyebrow}
@@ -329,8 +330,9 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
         </div>
       </div>
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-16">
-        <div className="reveal-text bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-gray-100">
+      <div className="reveal-text opacity-0 relative z-10 w-full max-w-5xl mx-auto px-6 py-12 md:py-16">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-sky-400/20 blur-[110px] rounded-full pointer-events-none z-0" />
+        <div className="relative z-10 bg-white shadow-xl border border-gray-100 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-gray-100">
           {[
             { title: t.sec1Title, text: t.sec1Text, icon: BoltIcon },
             { title: t.sec2Title, text: t.sec2Text, icon: InfinityIcon },
@@ -342,13 +344,13 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
                 key={item.title}
                 className={`flex flex-col gap-4 ${i > 0 ? "md:pl-10" : ""} ${i < 2 ? "md:pr-10" : ""}`}
               >
-                <div className="w-12 h-12 rounded-2xl bg-[#fff3c4]/60 flex items-center justify-center text-[#8a6d00]">
+                <div className="w-12 h-12 rounded-full bg-[#fff3c4]/60 flex items-center justify-center text-[#8a6d00]">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="font-black tracking-[0.2em] uppercase text-sm md:text-base text-gray-400">
                   {item.title}
                 </h3>
-                <p className="text-black/80 text-lg md:text-xl font-light leading-relaxed">
+                <p className="text-gray-500 text-base md:text-lg leading-relaxed">
                   {item.text}
                 </p>
               </div>
@@ -357,34 +359,41 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
         </div>
       </div>
 
-      <CategoryShowcase
-        label={t.popularLabel}
-        title={t.popularTitle}
-        allProducts={allProducts}
-        language={language}
-        brandName="global"
-        accent={GLOBAL_ACCENT}
-        countLabel={t.categoryCountLabel}
-        viewAllLabel={t.viewAllLabel}
-        align="left"
-        theme="light"
-      />
+      <div className="relative overflow-hidden">
+        <div className="absolute bottom-0 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-violet-400/20 blur-[120px] rounded-full pointer-events-none z-0" />
+        <CategoryShowcase
+          label={t.popularLabel}
+          title={t.popularTitle}
+          allProducts={allProducts}
+          language={language}
+          brandName="global"
+          accent={GLOBAL_ACCENT}
+          countLabel={t.categoryCountLabel}
+          viewAllLabel={t.viewAllLabel}
+          align="left"
+          theme="light"
+        />
+      </div>
 
-      <DealerMap
-        eyebrow={t.dealerEyebrow}
-        title={t.dealerTitle}
-        hint={t.dealerHint}
-        badge={t.dealerBadge}
-        dealerLabel={t.dealerLabel}
-        language={language}
-        accent={GLOBAL_ACCENT}
-        theme="light"
-      />
+      <div className="relative md:-mt-12 overflow-hidden">
+        <div className="absolute -top-16 -right-16 md:-right-24 w-[380px] h-[380px] md:w-[500px] md:h-[500px] bg-rose-400/20 blur-[110px] rounded-full pointer-events-none z-0" />
+        <DealerMap
+          eyebrow={t.dealerEyebrow}
+          title={t.dealerTitle}
+          hint={t.dealerHint}
+          badge={t.dealerBadge}
+          dealerLabel={t.dealerLabel}
+          language={language}
+          accent={GLOBAL_ACCENT}
+          theme="light"
+        />
+      </div>
 
-      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
+      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-sky-400/15 blur-[110px] rounded-full pointer-events-none z-0" />
         <Link
           href={process.env.NODE_ENV === "production" ? "/brand/global/urunler" : "/urunler"}
-          className="inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-gray-800 hover:shadow-[0_10px_28px_rgba(0,0,0,0.35)] transition-all duration-300"
+          className="relative z-10 inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-gray-800 hover:shadow-[0_10px_28px_rgba(0,0,0,0.35)] transition-all duration-300"
         >
           {t.catalogBtn}
         </Link>

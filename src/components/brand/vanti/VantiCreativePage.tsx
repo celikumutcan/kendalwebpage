@@ -224,7 +224,7 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
         </div>
       </section>
 
-      <section className="relative z-10 w-full px-6 md:px-16 lg:px-24 pt-6 md:pt-8 pb-12 md:pb-16">
+      <section className="relative z-10 w-full px-6 md:px-16 lg:px-24 -mt-6 md:-mt-10 pb-12 md:pb-16">
         <div className="reveal-text max-w-6xl mx-auto bg-white/85 backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col justify-center">
             <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-teal-700/20 bg-teal-700/5 text-xs md:text-sm font-bold tracking-widest uppercase text-teal-700 mb-6">
@@ -260,13 +260,13 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
                 key={item.title}
                 className={`flex flex-col gap-4 ${i > 0 ? "md:pl-10" : ""} ${i < 2 ? "md:pr-10" : ""}`}
               >
-                <div className="w-12 h-12 rounded-2xl bg-teal-700/10 flex items-center justify-center text-teal-700">
+                <div className="w-12 h-12 rounded-full bg-teal-700/10 flex items-center justify-center text-teal-700">
                   <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="font-medium tracking-[0.2em] uppercase text-sm md:text-base text-teal-700">
                   {item.title}
                 </h3>
-                <p className="text-teal-950/80 text-lg md:text-xl font-light leading-relaxed">
+                <p className="text-teal-950/70 text-base md:text-lg leading-relaxed">
                   {item.text}
                 </p>
               </div>
