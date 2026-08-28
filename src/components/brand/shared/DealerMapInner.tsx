@@ -20,10 +20,7 @@ const NAME_OVERRIDES: Record<string, string> = {
   Afyon: "Afyonkarahisar",
 };
 
-const EXCLUDED_PROVINCES = [
-  "Artvin", "Rize", "Ağrı", "Hakkari", "Siirt", "Muş", "Erzincan", "Tunceli",
-  "Karaman", "Aksaray", "Zonguldak", "Çankırı", "Edirne", "Çanakkale"
-];
+const EXCLUDED_PROVINCES = ["Hakkari", "Ağrı", "Muş", "Tunceli"];
 
 interface DealerMapInnerProps {
   language: string;

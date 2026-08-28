@@ -80,7 +80,7 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
   return (
     <>
       <nav 
-        className={`fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[calc(100%-2rem)] max-w-[1200px] z-50 text-zinc-800 transition-all duration-700 ease-out ${
+        className={`fixed top-0 lg:top-5 left-0 lg:left-1/2 lg:-translate-x-1/2 w-full lg:w-[calc(100%-2rem)] max-w-[880px] z-50 text-zinc-800 transition-all duration-700 ease-out ${
           !isVisible ? 'opacity-0 -translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'
         } ${
           scrolled 

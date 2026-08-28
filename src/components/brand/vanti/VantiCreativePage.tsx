@@ -10,7 +10,6 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 
 import { getAssetPath } from "@/lib/basePath";
 import { VantiPreloader } from "./VantiPreloader";
-import { DealerMap } from "@/components/brand/shared/DealerMap";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 import { VantiProductFamilies } from "./VantiProductFamilies";
 import { VantiVideoShowcase } from "./VantiVideoShowcase";
@@ -70,13 +69,11 @@ const VANTI_VIDEO_IDS = [
   "zZG5_CxFLBg",
   "jddPviKiuvQ",
   "2V-c5YGcldI",
-  "MjivYE3Zf1k",
-  "I0Cl26Mxf-A",
 ];
 
 const translations = {
   tr: {
-    heroSub: "SERİNLİĞİN VE KONFORUN ADRESİ",
+    heroSub: "SERİNLİĞİN VE KONFORUN TEK ADRESİ",
     explore: "Ferahlığı Hisset",
     whyEyebrow: "Neden Vanti?",
     whyHeading: "Türkiye'nin güvendiği serinlik markası.",
@@ -91,11 +88,6 @@ const translations = {
     popularTitle: "Kategorilerimiz",
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
-    dealerEyebrow: "Yurt İçi Ağımız",
-    dealerTitle: "Türkiye genelinde, her zaman yanınızdayız.",
-    dealerBadge: "67 İlde Yetkili Bayimiz Var",
-    dealerLabel: "Yetkili Bayi",
-    dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     exportEyebrow: "Global Erişim",
     exportTitle: "Vanti'nin serinliği, Türkiye'den dünyaya ihraç ediliyor.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -112,7 +104,7 @@ const translations = {
     catalogBtn: "Ürünleri İncele"
   },
   en: {
-    heroSub: "THE ADDRESS OF COOLNESS AND COMFORT",
+    heroSub: "THE ONLY ADDRESS OF COOLNESS AND COMFORT",
     explore: "Feel the Freshness",
     whyEyebrow: "Why Vanti?",
     whyHeading: "The cooling brand Turkey trusts.",
@@ -127,11 +119,6 @@ const translations = {
     popularTitle: "Our Categories",
     categoryCountLabel: "Products",
     viewAllLabel: "All Categories",
-    dealerEyebrow: "Our Domestic Network",
-    dealerTitle: "By your side, all across Turkey.",
-    dealerBadge: "Authorized Dealers in 67 Provinces",
-    dealerLabel: "Authorized Dealer",
-    dealerHint: "Hover a province to explore our dealer network.",
     exportEyebrow: "Global Reach",
     exportTitle: "Vanti's cooling, exported from Turkey to the world.",
     exportHint: "Click a point on the map.",
@@ -304,17 +291,6 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
         title={t.familiesTitle}
         allProducts={allProducts}
         language={language}
-      />
-
-      <DealerMap
-        eyebrow={t.dealerEyebrow}
-        title={t.dealerTitle}
-        hint={t.dealerHint}
-        badge={t.dealerBadge}
-        dealerLabel={t.dealerLabel}
-        language={language}
-        accent={VANTI_ACCENT}
-        theme="light"
       />
 
       <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={VANTI_ACCENT} theme="light" />

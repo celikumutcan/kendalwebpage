@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { K2Scene } from "./K2Scene";
+import { K2Preloader } from "./K2Preloader";
 import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
-import { DealerMap } from "@/components/brand/shared/DealerMap";
 import { ExportMap } from "@/components/brand/shared/ExportMap";
 import Link from "next/link";
 import { Product } from "@/data/products";
@@ -68,11 +68,6 @@ const translations = {
     popularTitle: "Kategorilerimiz",
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
-    dealerEyebrow: "Yurt İçi Ağımız",
-    dealerTitle: "Türkiye'nin her noktasında yanınızdayız.",
-    dealerBadge: "67 İlde Yetkili Bayimiz Var",
-    dealerLabel: "Yetkili Bayi",
-    dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
     exportEyebrow: "Global Erişim",
     exportTitle: "K2'nin ışığı sınır tanımıyor.",
     exportHint: "Haritadaki noktalara tıklayın.",
@@ -99,11 +94,6 @@ const translations = {
     popularTitle: "Our Categories",
     categoryCountLabel: "Products",
     viewAllLabel: "All Categories",
-    dealerEyebrow: "Our Domestic Network",
-    dealerTitle: "By your side, everywhere in Turkey.",
-    dealerBadge: "Authorized Dealers in 67 Provinces",
-    dealerLabel: "Authorized Dealer",
-    dealerHint: "Hover a province to explore our dealer network.",
     exportEyebrow: "Global Reach",
     exportTitle: "K2's light knows no borders.",
     exportHint: "Click a point on the map.",
@@ -122,39 +112,75 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   const scrollHintRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLImageElement>(null);
   const heroSubRef = useRef<HTMLSpanElement>(null);
-  const beam1Ref = useRef<HTMLDivElement>(null);
-  const beam2Ref = useRef<HTMLDivElement>(null);
-  const beam3Ref = useRef<HTMLDivElement>(null);
+  const ridgeWrapRef = useRef<HTMLDivElement>(null);
+  const traceRef = useRef<SVGPathElement>(null);
+  const burstRef = useRef<HTMLDivElement>(null);
+  const flashRef = useRef<HTMLDivElement>(null);
   const statNumberRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  const [sceneReady, setSceneReady] = useState(false);
+  const introPlayedRef = useRef(false);
 
   useEffect(() => {
-    const tl = gsap.timeline({ delay: 0.2 });
+    if (!sceneReady || introPlayedRef.current) return;
+    introPlayedRef.current = true;
 
-    [beam1Ref, beam2Ref, beam3Ref].forEach((ref, i) => {
-      tl.fromTo(
-        ref.current,
-        { opacity: 0, scaleY: 0.5 },
-        { opacity: 1, scaleY: 1, duration: 0.4, ease: "power2.out" },
-        i === 0 ? undefined : "-=0.1"
-      );
-    });
+    const tl = gsap.timeline({ delay: 0.1 });
 
     tl.fromTo(
-      logoRef.current,
-      { opacity: 0, scale: 0.85, y: 10 },
-      { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: "power3.out" },
-      "+=0.1"
-    ).fromTo(
-      heroSubRef.current,
-      { opacity: 0, letterSpacing: "0.15em" },
-      { opacity: 1, letterSpacing: "0.5em", duration: 0.9, ease: "power2.out" },
-      "-=0.5"
+      ridgeWrapRef.current,
+      { opacity: 0, y: 24 },
+      { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }
+    )
+      .fromTo(
+        traceRef.current,
+        { strokeDashoffset: 1 },
+        { strokeDashoffset: 0, duration: 1.5, ease: "power2.inOut" },
+        "-=0.15"
+      )
+      .to(flashRef.current, { opacity: 0.55, duration: 0.18, ease: "power1.in" }, "-=0.1")
+      .to(flashRef.current, { opacity: 0, duration: 0.5, ease: "power2.out" })
+      .fromTo(
+        burstRef.current,
+        { opacity: 0, scale: 0.25 },
+        { opacity: 1, scale: 1.3, duration: 0.6, ease: "power2.out" },
+        "<"
+      )
+      .to(burstRef.current, { scale: 1, duration: 0.5, ease: "power1.out" })
+      .fromTo(
+        logoRef.current,
+        { opacity: 0, scale: 0.85, y: 10 },
+        { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: "power3.out" },
+        "-=0.6"
+      )
+      .fromTo(
+        heroSubRef.current,
+        { opacity: 0, letterSpacing: "0.15em" },
+        { opacity: 1, letterSpacing: "0.5em", duration: 0.9, ease: "power2.out" },
+        "-=0.5"
+      );
+
+    tl.fromTo(
+      scrollHintRef.current,
+      { opacity: 0, y: 10 },
+      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+      "-=0.3"
     );
+
+    tl.call(() => {
+      gsap.to(burstRef.current, {
+        opacity: 0.75,
+        scale: 1.12,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    });
 
     return () => {
       tl.kill();
     };
-  }, []);
+  }, [sceneReady, language]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -214,60 +240,80 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   }, [language]);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-[#0a0a0b] text-white selection:bg-orange-500 selection:text-white">
+    <div ref={containerRef} className="relative w-full bg-[#3a3a40] text-white selection:bg-orange-500 selection:text-white" style={{ "--page-bg": "#3a3a40" } as React.CSSProperties}>
       
+      <K2Preloader ready={sceneReady} />
+
       <div className="k2-scene-wrapper fixed inset-0 z-0 pointer-events-none">
-        <K2Scene />
+        <K2Scene onReady={() => setSceneReady(true)} />
       </div>
 
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4 overflow-hidden">
-        <div className="absolute inset-0 flex justify-center">
+        <div
+          ref={flashRef}
+          className="absolute inset-0 opacity-0 pointer-events-none"
+          style={{
+            background: "radial-gradient(circle at 50% 62%, rgba(255,179,92,0.9), rgba(255,179,92,0) 60%)",
+          }}
+        />
+
+        <div
+          ref={ridgeWrapRef}
+          className="absolute bottom-0 left-0 w-full h-[38vh] md:h-[46vh] opacity-0"
+        >
           <div
-            ref={beam1Ref}
-            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
+            ref={burstRef}
+            className="absolute opacity-0"
             style={{
               left: "50%",
-              transform: "translateX(calc(-50% - 210px))",
-              background: "linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0))",
-              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
-              mixBlendMode: "screen",
+              top: "2%",
+              width: "260px",
+              height: "260px",
+              transform: "translate(-50%, -50%)",
+              background: "radial-gradient(circle, rgba(255,203,110,0.85) 0%, rgba(255,153,60,0.35) 45%, rgba(255,153,60,0) 72%)",
+              filter: "blur(2px)",
             }}
           />
-          <div
-            ref={beam2Ref}
-            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
-            style={{
-              left: "50%",
-              transform: "translateX(-50%)",
-              background: "linear-gradient(to bottom, rgba(255,85,0,0.9), rgba(255,85,0,0))",
-              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
-              mixBlendMode: "screen",
-            }}
-          />
-          <div
-            ref={beam3Ref}
-            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
-            style={{
-              left: "50%",
-              transform: "translateX(calc(-50% + 210px))",
-              background: "linear-gradient(to bottom, rgba(255,153,0,0.9), rgba(255,153,0,0))",
-              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
-              mixBlendMode: "screen",
-            }}
-          />
+          <svg
+            viewBox="0 0 1200 300"
+            preserveAspectRatio="none"
+            className="absolute inset-0 w-full h-full"
+          >
+            <path
+              d="M0,300 L0,190 L140,225 L300,95 L430,155 L600,20 L780,145 L910,85 L1060,195 L1200,155 L1200,300 Z"
+              fill="#1c1c1f"
+            />
+            <path
+              ref={traceRef}
+              d="M0,190 L140,225 L300,95 L430,155 L600,20 L780,145 L910,85 L1060,195 L1200,155"
+              fill="none"
+              stroke="#ffb35c"
+              strokeWidth="3"
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              pathLength={1}
+              style={{
+                strokeDasharray: 1,
+                strokeDashoffset: 1,
+                filter: "drop-shadow(0 0 6px rgba(255,179,92,0.85))",
+              }}
+            />
+          </svg>
         </div>
-        <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-20">
+
+        <div ref={heroTextRef} className="relative text-center flex flex-col items-center -mt-24 md:-mt-28">
+          <span ref={heroSubRef} className="text-sm md:text-2xl font-bold tracking-[0.35em] text-white block mb-6 md:mb-8 uppercase [text-shadow:0_2px_16px_rgba(0,0,0,0.9)] opacity-0">
+            {t.heroSub}
+          </span>
           <img
             ref={logoRef}
             src={getAssetPath("/images/brands/k2-logo.svg")}
             alt="K2 Logo"
             className="h-32 md:h-48 lg:h-56 mx-auto drop-shadow-2xl opacity-0"
           />
-          <span ref={heroSubRef} className="text-sm md:text-2xl font-bold tracking-[0.5em] text-orange-400 block mt-8 uppercase drop-shadow-md opacity-0">
-            {t.heroSub}
-          </span>
         </div>
-        <div ref={scrollHintRef} className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+
+        <div ref={scrollHintRef} className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0">
           <p className="text-xs tracking-widest uppercase opacity-50 mb-2">{t.explore}</p>
           <div className="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"></div>
         </div>
@@ -288,7 +334,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
             <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-white/10 rounded-full"></div>
             {t.trustStats.map((stat, i) => (
               <div key={stat.label} className="relative">
-                <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-[#0a0a0b] border-2 border-orange-500 rounded-full shadow-sm"></div>
+                <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-[#3a3a40] border-2 border-orange-500 rounded-full shadow-sm"></div>
                 <div className="text-2xl md:text-4xl font-bold text-orange-400 leading-tight mb-1.5">
                   {"numericTarget" in stat ? (
                     <span ref={(el) => { statNumberRefs.current[i] = el; }}>0{stat.suffix}</span>
@@ -344,19 +390,6 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
           countLabel={t.categoryCountLabel}
           viewAllLabel={t.viewAllLabel}
           align="left"
-        />
-      </div>
-
-      <div className="relative overflow-hidden">
-        <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-red-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
-        <DealerMap
-          eyebrow={t.dealerEyebrow}
-          title={t.dealerTitle}
-          hint={t.dealerHint}
-          badge={t.dealerBadge}
-          dealerLabel={t.dealerLabel}
-          language={language}
-          accent={K2_ACCENT}
         />
       </div>
 

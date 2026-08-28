@@ -23,7 +23,7 @@ export const NewsPreview = () => {
   return (
     <section className="w-full bg-transparent py-16 lg:py-24 relative overflow-hidden border-t border-[var(--global-text)]/5">
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-30 dark:opacity-50">
-        <div className="absolute w-[1100px] h-[700px] md:w-[1700px] md:h-[1200px] bg-gradient-to-tr from-emerald-600 to-green-900 blur-[120px] rounded-full bottom-0 left-0 -translate-x-1/4 translate-y-1/4 mix-blend-screen pointer-events-none" />
+        <div className="absolute w-[1100px] h-[700px] md:w-[1700px] md:h-[1200px] bg-gradient-to-tr from-emerald-400 to-emerald-700 blur-[120px] rounded-full bottom-0 left-0 -translate-x-1/4 translate-y-1/4 mix-blend-screen pointer-events-none" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">

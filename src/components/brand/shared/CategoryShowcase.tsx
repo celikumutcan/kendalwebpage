@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useMemo, type CSSProperties } from "react";
 import { Product, getCategoryGroupForCategory } from "@/data/products";
+import { getAssetPath } from "@/lib/basePath";
 
 interface CategoryShowcaseProps {
   label: string;
@@ -22,6 +24,7 @@ interface CategoryItem {
   displayName: string;
   count: number;
   href: string;
+  sampleImage?: string;
 }
 
 export function CategoryShowcase({
@@ -41,7 +44,7 @@ export function CategoryShowcase({
   const catalogBase = process.env.NODE_ENV === "production" ? `/brand/${brandName}/urunler` : "/urunler";
 
   const categories = useMemo<CategoryItem[]>(() => {
-    const raw = new Map<string, { nameTr: string; nameEn?: string; count: number }>();
+    const raw = new Map<string, { nameTr: string; nameEn?: string; count: number; sampleImage?: string }>();
     for (const p of allProducts) {
       const nameTr = p.category?.tr?.[0];
       if (!nameTr) continue;
@@ -51,12 +54,12 @@ export function CategoryShowcase({
         existing.count += 1;
         if (!existing.nameEn && nameEn) existing.nameEn = nameEn;
       } else {
-        raw.set(nameTr, { nameTr, nameEn, count: 1 });
+        raw.set(nameTr, { nameTr, nameEn, count: 1, sampleImage: p.image });
       }
     }
 
     const isK2 = brandName === "k2";
-    const groups = new Map<string, { nameTr: string; nameEn: string; count: number }>();
+    const groups = new Map<string, { nameTr: string; nameEn: string; count: number; sampleImage?: string }>();
     const items: CategoryItem[] = [];
 
     for (const cat of raw.values()) {
@@ -64,7 +67,7 @@ export function CategoryShowcase({
       if (groupDef) {
         const g = groups.get(groupDef.key);
         if (g) g.count += cat.count;
-        else groups.set(groupDef.key, { nameTr: groupDef.name.tr, nameEn: groupDef.name.en, count: cat.count });
+        else groups.set(groupDef.key, { nameTr: groupDef.name.tr, nameEn: groupDef.name.en, count: cat.count, sampleImage: cat.sampleImage });
         continue;
       }
       items.push({
@@ -72,6 +75,7 @@ export function CategoryShowcase({
         displayName: (lang === "en" ? cat.nameEn : cat.nameTr) || cat.nameTr,
         count: cat.count,
         href: `${catalogBase}?category=${encodeURIComponent(cat.nameTr)}`,
+        sampleImage: cat.sampleImage,
       });
     }
 
@@ -81,6 +85,7 @@ export function CategoryShowcase({
         displayName: (lang === "en" ? g.nameEn : g.nameTr) || g.nameTr,
         count: g.count,
         href: `${catalogBase}?group=${key}`,
+        sampleImage: g.sampleImage,
       });
     }
 
@@ -142,14 +147,27 @@ export function CategoryShowcase({
                 href={item.href}
                 tabIndex={i < categories.length ? 0 : -1}
                 aria-hidden={i >= categories.length}
-                className={`group shrink-0 flex items-center gap-4 md:gap-5 rounded-2xl px-6 py-5 md:px-7 md:py-6 min-w-[230px] sm:min-w-[270px] transition-all duration-300 hover:-translate-y-1 ${
+                className={`group shrink-0 flex items-center gap-4 rounded-2xl p-3 pr-6 md:pr-7 min-w-[270px] sm:min-w-[310px] transition-all duration-300 hover:-translate-y-1 ${
                   isDark
                     ? "bg-white/5 border border-white/10 hover:border-[var(--accent)] hover:bg-white/[0.08]"
                     : "bg-white border border-black/5 shadow-sm hover:shadow-[0_20px_40px_-20px_color-mix(in_srgb,var(--accent)_35%,transparent)]"
                 }`}
               >
-                <span className={`text-xs font-bold tabular-nums ${isDark ? "text-white/30" : "text-zinc-300"}`}>
-                  {String((i % categories.length) + 1).padStart(2, "0")}
+                <span
+                  className={`relative shrink-0 w-20 h-20 rounded-xl overflow-hidden ${
+                    isDark ? "bg-white/10" : "bg-zinc-50"
+                  }`}
+                >
+                  {item.sampleImage && (
+                    <Image
+                      src={getAssetPath("/images/" + item.sampleImage)}
+                      alt=""
+                      fill
+                      sizes="80px"
+                      className="object-contain p-2.5 transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                    />
+                  )}
                 </span>
                 <div className="min-w-0 flex-1">
                   <h4 className={`font-bold text-base md:text-lg leading-snug truncate ${isDark ? "text-white" : "text-zinc-900"}`}>

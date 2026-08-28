@@ -5,7 +5,7 @@ import { feature } from "topojson-client";
 import landTopology from "@/data/world-land-110m.json";
 import { HQ, EXPORT_COUNTRIES, type ExportCountry } from "@/data/exportCountries";
 
-import { geoPath, geoEquirectangular } from "d3-geo";
+import { geoPath, geoEquirectangular, geoGraticule } from "d3-geo";
 
 type Ring = [number, number][];
 type PolygonGeom = { type: "Polygon"; coordinates: Ring[] };
@@ -14,6 +14,12 @@ type MultiPolygonGeom = { type: "MultiPolygon"; coordinates: Ring[][] };
 const WIDTH = 980;
 const HEIGHT = 480;
 const ZOOM = 3.2;
+
+const OCEAN_LABELS: { nameTr: string; nameEn: string; lon: number; lat: number }[] = [
+  { nameTr: "ATLANTİK OKYANUSU", nameEn: "ATLANTIC OCEAN", lon: -34, lat: 12 },
+  { nameTr: "PASİFİK OKYANUSU", nameEn: "PACIFIC OCEAN", lon: -152, lat: 2 },
+  { nameTr: "HİNT OKYANUSU", nameEn: "INDIAN OCEAN", lon: 72, lat: -28 },
+];
 
 function arcPath(x1: number, y1: number, x2: number, y2: number): string {
   const mx = (x1 + x2) / 2;
@@ -49,6 +55,11 @@ export default function ExportMapInner({ language, accent, theme = "dark" }: Exp
     return pathGenerator(geo) || "";
   }, [projection]);
 
+  const graticulePath = useMemo(() => {
+    const pathGenerator = geoPath(projection);
+    return pathGenerator(geoGraticule().step([20, 20])()) || "";
+  }, [projection]);
+
   const allPins: ExportCountry[] = useMemo(() => [HQ, ...EXPORT_COUNTRIES], []);
   const active = allPins.find((c) => c.id === activeId);
   const [originX, originY] = active ? (projection([active.lon, active.lat]) || [WIDTH / 2, HEIGHT / 2]) : [WIDTH / 2, HEIGHT / 2];
@@ -82,9 +93,38 @@ export default function ExportMapInner({ language, accent, theme = "dark" }: Exp
               <filter id="landShadow" x="-10%" y="-10%" width="120%" height="120%">
                 <feDropShadow dx="2" dy="6" stdDeviation="4" floodColor={isDark ? "#000000" : "#94a3b8"} floodOpacity={isDark ? "0.6" : "0.3"} />
               </filter>
+
+              <radialGradient id="oceanGrad" cx="35%" cy="30%" r="85%">
+                <stop offset="0%" stopColor={isDark ? "#123244" : "#e6f4fa"} />
+                <stop offset="100%" stopColor={isDark ? "#050f16" : "#cfe9f3"} />
+              </radialGradient>
             </defs>
 
+            <rect x={0} y={0} width={WIDTH} height={HEIGHT} fill="url(#oceanGrad)" />
+            <path d={graticulePath} fill="none" stroke={isDark ? "#ffffff" : "#0f172a"} strokeWidth={0.4} opacity={isDark ? 0.06 : 0.07} />
+
             <path d={landPath} fill="url(#landGrad)" stroke={isDark ? "#52525b" : "#ffffff"} strokeWidth={0.8} filter="url(#landShadow)" className="transition-all duration-500" />
+
+            {OCEAN_LABELS.map((o) => {
+              const [x, y] = projection([o.lon, o.lat]) || [0, 0];
+              return (
+                <text
+                  key={o.nameTr}
+                  x={x}
+                  y={y}
+                  textAnchor="middle"
+                  fontSize={9}
+                  fontWeight={600}
+                  letterSpacing="0.15em"
+                  fill={isDark ? "#ffffff" : "#0f172a"}
+                  opacity={isDark ? 0.28 : 0.22}
+                  className="select-none pointer-events-none uppercase"
+                  style={{ fontStyle: "italic" }}
+                >
+                  {language === "en" ? o.nameEn : o.nameTr}
+                </text>
+              );
+            })}
 
             {EXPORT_COUNTRIES.map((c) => {
               const [x, y] = projection([c.lon, c.lat]) || [0, 0];

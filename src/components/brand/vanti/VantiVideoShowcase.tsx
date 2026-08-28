@@ -38,7 +38,7 @@ export function VantiVideoShowcase({ videoIds, playLabel, label, title }: VantiV
             {loopVideos.map((id, i) => (
               <div
                 key={`${id}-${i}`}
-                className="relative shrink-0 w-[210px] sm:w-[250px] md:w-[280px] aspect-[9/16] rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-black shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
+                className="relative shrink-0 w-[210px] sm:w-[250px] md:w-[280px] aspect-[3/4] rounded-2xl md:rounded-[1.75rem] overflow-hidden bg-zinc-100 shadow-[0_8px_24px_rgba(0,0,0,0.15)]"
               >
                 {playing[i] ? (
                   <iframe
@@ -61,7 +61,7 @@ export function VantiVideoShowcase({ videoIds, playLabel, label, title }: VantiV
                       src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
                       alt=""
                       loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-cover scale-125 group-hover:scale-150 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                     <span className="absolute inset-0 flex items-center justify-center">

@@ -623,15 +623,15 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
               };
 
               const optionGroups = [
-                uniqueLights.length > 0 && {
+                uniqueLights.length > 1 && {
                   key: "light",
-                  label: language === "tr" ? (uniqueCasings.length > 0 ? "Işık Rengi Seçenekleri" : "Renk Seçenekleri") : (uniqueCasings.length > 0 ? "Light Color Options" : "Color Options"),
+                  label: language === "tr" ? (uniqueCasings.length > 1 ? "Işık Rengi Seçenekleri" : "Renk Seçenekleri") : (uniqueCasings.length > 1 ? "Light Color Options" : "Color Options"),
                   showDot: true,
                   items: uniqueLights.map(color => ({ value: color, match: getBestVariantMatch('light', color) })).filter(x => x.match),
                 },
-                uniqueCasings.length > 0 && {
+                uniqueCasings.length > 1 && {
                   key: "casing",
-                  label: language === "tr" ? (uniqueLights.length > 0 ? "Kasa Rengi Seçenekleri" : "Renk Seçenekleri") : (uniqueLights.length > 0 ? "Casing Options" : "Color Options"),
+                  label: language === "tr" ? (uniqueLights.length > 1 ? "Kasa Rengi Seçenekleri" : "Renk Seçenekleri") : (uniqueLights.length > 1 ? "Casing Options" : "Color Options"),
                   showDot: true,
                   items: uniqueCasings.map(color => ({ value: color, match: getBestVariantMatch('casing', color) })).filter(x => x.match),
                 },
