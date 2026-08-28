@@ -120,6 +120,40 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLHeadingElement>(null);
   const scrollHintRef = useRef<HTMLDivElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
+  const heroSubRef = useRef<HTMLSpanElement>(null);
+  const beam1Ref = useRef<HTMLDivElement>(null);
+  const beam2Ref = useRef<HTMLDivElement>(null);
+  const beam3Ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ delay: 0.2 });
+
+    [beam1Ref, beam2Ref, beam3Ref].forEach((ref, i) => {
+      tl.fromTo(
+        ref.current,
+        { opacity: 0, scaleY: 0.5 },
+        { opacity: 1, scaleY: 1, duration: 0.4, ease: "power2.out" },
+        i === 0 ? undefined : "-=0.1"
+      );
+    });
+
+    tl.fromTo(
+      logoRef.current,
+      { opacity: 0, scale: 0.85, y: 10 },
+      { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: "power3.out" },
+      "+=0.1"
+    ).fromTo(
+      heroSubRef.current,
+      { opacity: 0, letterSpacing: "0.15em" },
+      { opacity: 1, letterSpacing: "0.5em", duration: 0.9, ease: "power2.out" },
+      "-=0.5"
+    );
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -166,14 +200,49 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         <K2Scene />
       </div>
 
-      <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4">
-        <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-20">
-          <img 
-            src={getAssetPath("/images/brands/k2-logo.svg")}
-            alt="K2 Logo" 
-            className="h-32 md:h-48 lg:h-56 mx-auto drop-shadow-2xl opacity-95" 
+      <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4 overflow-hidden">
+        <div className="absolute inset-0 flex justify-center">
+          <div
+            ref={beam1Ref}
+            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            style={{
+              left: "50%",
+              transform: "translateX(-170px)",
+              background: "linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0))",
+              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              mixBlendMode: "screen",
+            }}
           />
-          <span className="text-sm md:text-2xl font-bold tracking-[0.5em] text-orange-400 block mt-8 uppercase drop-shadow-md">
+          <div
+            ref={beam2Ref}
+            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            style={{
+              left: "50%",
+              background: "linear-gradient(to bottom, rgba(255,85,0,0.8), rgba(255,85,0,0))",
+              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              mixBlendMode: "screen",
+            }}
+          />
+          <div
+            ref={beam3Ref}
+            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            style={{
+              left: "50%",
+              transform: "translateX(170px)",
+              background: "linear-gradient(to bottom, rgba(255,153,0,0.8), rgba(255,153,0,0))",
+              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              mixBlendMode: "screen",
+            }}
+          />
+        </div>
+        <div ref={heroTextRef} className="text-center flex flex-col items-center -mt-20">
+          <img
+            ref={logoRef}
+            src={getAssetPath("/images/brands/k2-logo.svg")}
+            alt="K2 Logo"
+            className="h-32 md:h-48 lg:h-56 mx-auto drop-shadow-2xl opacity-0"
+          />
+          <span ref={heroSubRef} className="text-sm md:text-2xl font-bold tracking-[0.5em] text-orange-400 block mt-8 uppercase drop-shadow-md opacity-0">
             {t.heroSub}
           </span>
         </div>
@@ -183,8 +252,9 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         </div>
       </section>
 
-      <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16">
-        <div className="reveal-text bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16 overflow-hidden">
+        <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-orange-500/40 blur-[110px] rounded-full pointer-events-none z-0" />
+        <div className="reveal-text relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col justify-center">
             <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 text-xs md:text-sm font-semibold tracking-widest uppercase text-orange-400 mb-6">
               {t.whyEyebrow}
@@ -206,8 +276,9 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         </div>
       </section>
 
-      <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16">
-        <div className="reveal-text bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-white/10">
+      <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16 overflow-hidden">
+        <div className="absolute -top-16 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-amber-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
+        <div className="reveal-text relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-white/10">
           {[
             { title: t.sec1Title, text: t.sec1Text, icon: MountainIcon },
             { title: t.sec2Title, text: t.sec2Text, icon: LayersIcon },
@@ -234,34 +305,44 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         </div>
       </section>
 
-      <CategoryShowcase
-        label={t.popularLabel}
-        title={t.popularTitle}
-        allProducts={allProducts}
-        language={language}
-        brandName="k2"
-        accent={K2_ACCENT}
-        countLabel={t.categoryCountLabel}
-        viewAllLabel={t.viewAllLabel}
-        align="left"
-      />
+      <div className="relative overflow-hidden">
+        <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-[700px] h-[320px] md:w-[1000px] md:h-[420px] bg-orange-500/35 blur-[120px] rounded-full pointer-events-none z-0" />
+        <CategoryShowcase
+          label={t.popularLabel}
+          title={t.popularTitle}
+          allProducts={allProducts}
+          language={language}
+          brandName="k2"
+          accent={K2_ACCENT}
+          countLabel={t.categoryCountLabel}
+          viewAllLabel={t.viewAllLabel}
+          align="left"
+        />
+      </div>
 
-      <DealerMap
-        eyebrow={t.dealerEyebrow}
-        title={t.dealerTitle}
-        hint={t.dealerHint}
-        badge={t.dealerBadge}
-        dealerLabel={t.dealerLabel}
-        language={language}
-        accent={K2_ACCENT}
-      />
+      <div className="relative overflow-hidden">
+        <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-red-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
+        <DealerMap
+          eyebrow={t.dealerEyebrow}
+          title={t.dealerTitle}
+          hint={t.dealerHint}
+          badge={t.dealerBadge}
+          dealerLabel={t.dealerLabel}
+          language={language}
+          accent={K2_ACCENT}
+        />
+      </div>
 
-      <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
+      <div className="relative overflow-hidden">
+        <div className="absolute -top-16 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-amber-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
+        <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
+      </div>
 
-      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
+      <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center overflow-hidden">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[420px] md:w-[650px] md:h-[500px] bg-orange-500/40 blur-[110px] rounded-full pointer-events-none z-0" />
         <Link
           href={process.env.NODE_ENV === "production" ? "/brand/k2/urunler" : "/urunler"}
-          className="inline-flex items-center justify-center px-10 py-5 bg-orange-600 text-white font-bold tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(249,115,22,0.35)] hover:bg-orange-700 hover:shadow-[0_10px_28px_rgba(249,115,22,0.45)] transition-all duration-300"
+          className="relative z-10 inline-flex items-center justify-center px-10 py-5 bg-orange-600 text-white font-bold tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(249,115,22,0.35)] hover:bg-orange-700 hover:shadow-[0_10px_28px_rgba(249,115,22,0.45)] transition-all duration-300"
         >
           {t.catalogBtn}
         </Link>
