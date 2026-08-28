@@ -298,10 +298,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -330,10 +326,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -390,10 +382,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -422,10 +410,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -482,10 +466,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -514,10 +494,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -574,10 +550,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -606,10 +578,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -666,10 +634,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -698,10 +662,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -758,10 +718,6 @@
           "value": "5"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -790,10 +746,6 @@
         {
           "label": "Package Quantity",
           "value": "5"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -11952,10 +11904,6 @@
           "value": "3000"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -11984,10 +11932,6 @@
         {
           "label": "Lumen",
           "value": "3000"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",
@@ -12043,10 +11987,6 @@
           "value": "3600"
         },
         {
-          "label": "Açıklama",
-          "value": "60x60"
-        },
-        {
           "label": "Gerilim",
           "value": "220-240V"
         },
@@ -12075,10 +12015,6 @@
         {
           "label": "Lumen",
           "value": "3600"
-        },
-        {
-          "label": "Description",
-          "value": "60x60"
         },
         {
           "label": "Voltage",

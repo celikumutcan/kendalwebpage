@@ -13,7 +13,7 @@ interface MovingSpotProps {
   angle?: number;
   active?: boolean;
   baseIntensity?: number;
-  depthBuffer?: THREE.Texture;
+  depthBuffer?: ReturnType<typeof useDepthBuffer>;
 }
 
 function MovingSpot({
@@ -23,7 +23,8 @@ function MovingSpot({
   scrollOffset = 0,
   angle = 0.3,
   active = true,
-  baseIntensity = 40,
+  baseIntensity = 65,
+  depthBuffer,
 }: MovingSpotProps) {
   const light = useRef<THREE.SpotLight>(null);
   const viewport = useThree((state) => state.viewport);
@@ -53,12 +54,14 @@ function MovingSpot({
     <SpotLight
       castShadow
       ref={light}
+      depthBuffer={depthBuffer}
       penumbra={0.2}
       distance={25}
       angle={angle}
-      attenuation={6}
-      anglePower={5}
+      attenuation={5}
+      anglePower={4}
       intensity={0}
+      opacity={1}
       color={color}
       position={position}
     />
@@ -85,14 +88,9 @@ function Mountain() {
 }
 
 function Lights({ stage }: { stage: number }) {
-  const depthBuffer = useDepthBuffer({ frames: 1 });
   return (
     <>
-      <ambientLight intensity={0.18} />
-
-      <MovingSpot depthBuffer={depthBuffer} color="#ffffff" position={[4, 6, 2]} scrollOffset={0} angle={0.25} active={stage >= 1} />
-      <MovingSpot depthBuffer={depthBuffer} color="#ff5500" position={[-4, 6, 2]} scrollOffset={Math.PI} angle={0.3} active={stage >= 2} />
-      <MovingSpot depthBuffer={depthBuffer} color="#ff9900" position={[0, 8, -2]} scrollOffset={Math.PI / 2} angle={0.4} active={stage >= 3} />
+      <ambientLight intensity={0.4} />
 
       <Mountain />
 

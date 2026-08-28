@@ -696,7 +696,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     }
                   />
 
-                  <ul className={`flex w-full max-w-2xl mx-auto flex-wrap justify-center items-center gap-3 -mt-4 rounded-[1.75rem] border p-3 md:p-4 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.02] border-white/[0.06]"}`}>
+                  <ul className={`flex w-fit max-w-2xl mx-auto flex-wrap justify-center items-center gap-3 -mt-4 rounded-[1.75rem] border p-3 md:p-4 ${isLight ? "bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)]" : "bg-white/[0.02] border-white/[0.06]"}`}>
                     {displayFeaturesList.map((feat, idx) => {
                       const isYerliUretim = feat.trim().toLowerCase() === "yerli üretim" || feat.trim().toLowerCase() === "domestic production";
                       const isTse = feat.trim().toLowerCase() === "tse";

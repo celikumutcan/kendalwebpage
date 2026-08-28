@@ -30,7 +30,7 @@ const translations = {
     whySubtext: "Global, Kendal Elektrik'in 29 yıllık üretim tecrübesiyle güçleniyor.",
     trustStats: [
       { value: "Sektörün Güvendiği İsimlerden", label: "Aydınlatma Markaları Arasında" },
-      { value: "9.6 / 10", label: "Ortalama Müşteri Memnuniyeti" },
+      { numericTarget: 9.6, suffix: " / 10", label: "Ortalama Müşteri Memnuniyeti" },
       { value: "%2'nin Altında", label: "İade Oranı" },
     ],
     sec1Title: "Kusursuz Güç",
@@ -42,7 +42,7 @@ const translations = {
     categoryCountLabel: "Ürün",
     viewAllLabel: "Tüm Kategoriler",
     dealerEyebrow: "Yurt İçi Ağımız",
-    dealerTitle: "Türkiye'nin dört bir yanında, yanınızdayız.",
+    dealerTitle: "Nerede olursanız olun, yanınızdayız.",
     dealerBadge: "67 İlde Yetkili Bayimiz Var",
     dealerLabel: "Yetkili Bayi",
     dealerHint: "İl üzerine gelerek bayi ağımızı keşfedin.",
@@ -59,7 +59,7 @@ const translations = {
     whySubtext: "Global is backed by Kendal Elektrik's 29 years of manufacturing experience.",
     trustStats: [
       { value: "A Trusted Industry Name", label: "Among Lighting Brands" },
-      { value: "9.6 / 10", label: "Average Customer Satisfaction" },
+      { numericTarget: 9.6, suffix: " / 10", label: "Average Customer Satisfaction" },
       { value: "Under 2%", label: "Return Rate" },
     ],
     sec1Title: "Flawless Power",
@@ -71,7 +71,7 @@ const translations = {
     categoryCountLabel: "Products",
     viewAllLabel: "All Categories",
     dealerEyebrow: "Our Domestic Network",
-    dealerTitle: "By your side, in every corner of Turkey.",
+    dealerTitle: "Wherever you are, we're by your side.",
     dealerBadge: "Authorized Dealers in 67 Provinces",
     dealerLabel: "Authorized Dealer",
     dealerHint: "Hover a province to explore our dealer network.",
@@ -145,6 +145,7 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   const heroTitleRef = useRef<HTMLHeadingElement>(null);
   const heroSubRef = useRef<HTMLSpanElement>(null);
   const scrollIndicatorRef = useRef<HTMLDivElement>(null);
+  const statNumberRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -244,6 +245,25 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
           }
         );
       });
+
+      t.trustStats.forEach((stat, i) => {
+        if (!("numericTarget" in stat)) return;
+        const el = statNumberRefs.current[i];
+        if (!el) return;
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: stat.numericTarget,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+          },
+          onUpdate: () => {
+            el.textContent = obj.val.toFixed(1) + stat.suffix;
+          },
+        });
+      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -319,10 +339,16 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
 
           <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
             <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-gray-200 rounded-full"></div>
-            {t.trustStats.map((stat) => (
+            {t.trustStats.map((stat, i) => (
               <div key={stat.label} className="relative">
                 <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-white border-2 border-[#e6b800] rounded-full shadow-sm"></div>
-                <div className="text-2xl md:text-4xl font-black text-black leading-tight mb-1.5">{stat.value}</div>
+                <div className="text-2xl md:text-4xl font-black text-black leading-tight mb-1.5">
+                  {"numericTarget" in stat ? (
+                    <span ref={(el) => { statNumberRefs.current[i] = el; }}>0{stat.suffix}</span>
+                  ) : (
+                    stat.value
+                  )}
+                </div>
                 <div className="text-sm md:text-lg text-gray-500">{stat.label}</div>
               </div>
             ))}

@@ -10,19 +10,16 @@ interface BrandProductsHeaderProps {
 const BrandGlyph = ({ brandName, className }: { brandName: string; className?: string }) => {
   if (brandName === "vanti") {
     return (
-      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.2}>
-        <path d="M12 12c0-4 2-8 6-8 2.2 0 4 1.8 4 4 0 4-4 6-10 4Z" strokeLinejoin="round" />
-        <path d="M12 12c-4 0-8-2-8-6 0-2.2 1.8-4 4-4 4 0 6 4 4 10Z" strokeLinejoin="round" />
-        <path d="M12 12c4 0 8 2 8 6 0 2.2-1.8 4-4 4-4 0-6-4-4-10Z" strokeLinejoin="round" />
-        <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none" />
+      <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+        <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
       </svg>
     );
   }
   if (brandName === "global") {
     return (
       <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.2}>
-        <circle cx="12" cy="12" r="9" />
-        <path d="M3 12h18M12 3c2.8 2.6 4.2 5.7 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-5.7-4.2-9S9.2 5.6 12 3Z" strokeLinejoin="round" />
+        <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     );
   }
@@ -95,7 +92,7 @@ export const BrandProductsHeader = ({ brandName }: BrandProductsHeaderProps) => 
         </div>
 
         <div className="absolute -bottom-1 right-4 w-20 h-20 rounded-[1.25rem] bg-white shadow-xl rotate-6 border border-zinc-100 flex items-center justify-center">
-          <BrandGlyph brandName={brandName} className={`w-8 h-8 ${isK2 ? "text-orange-500" : isVanti ? "text-blue-500" : "text-amber-500"}`} />
+          <BrandGlyph brandName={brandName} className={`w-8 h-8 ${isK2 ? "text-orange-500" : isVanti ? "text-blue-500" : "text-yellow-500"}`} />
         </div>
       </div>
     </div>

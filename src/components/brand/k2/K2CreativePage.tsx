@@ -57,7 +57,7 @@ const translations = {
     whySubtext: "Kendal Elektrik güvencesiyle üretilen K2, profesyonel LED teknolojisi ve dayanıklılığıyla fark yaratıyor.",
     trustStats: [
       { value: "Sektörün Zirvesindeki Markalardan", label: "Profesyonel LED Aydınlatmada" },
-      { value: "9.5 / 10", label: "Ortalama Müşteri Memnuniyeti" },
+      { numericTarget: 9.5, suffix: " / 10", label: "Ortalama Müşteri Memnuniyeti" },
       { value: "%1.5'in Altında", label: "İade Oranı" },
     ],
     sec1Title: "Zirve",
@@ -88,7 +88,7 @@ const translations = {
     whySubtext: "Backed by Kendal Elektrik's assurance, K2 stands out with professional LED technology and durability.",
     trustStats: [
       { value: "A Peak Name in the Industry", label: "In Professional LED Lighting" },
-      { value: "9.5 / 10", label: "Average Customer Satisfaction" },
+      { numericTarget: 9.5, suffix: " / 10", label: "Average Customer Satisfaction" },
       { value: "Under 1.5%", label: "Return Rate" },
     ],
     sec1Title: "The Peak",
@@ -125,6 +125,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   const beam1Ref = useRef<HTMLDivElement>(null);
   const beam2Ref = useRef<HTMLDivElement>(null);
   const beam3Ref = useRef<HTMLDivElement>(null);
+  const statNumberRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.2 });
@@ -188,6 +189,25 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
           }
         );
       });
+
+      t.trustStats.forEach((stat, i) => {
+        if (!("numericTarget" in stat)) return;
+        const el = statNumberRefs.current[i];
+        if (!el) return;
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: stat.numericTarget,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+          },
+          onUpdate: () => {
+            el.textContent = obj.val.toFixed(1) + stat.suffix;
+          },
+        });
+      });
     }, containerRef);
 
     return () => ctx.revert();
@@ -204,33 +224,34 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         <div className="absolute inset-0 flex justify-center">
           <div
             ref={beam1Ref}
-            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
             style={{
               left: "50%",
-              transform: "translateX(-170px)",
-              background: "linear-gradient(to bottom, rgba(255,255,255,0.85), rgba(255,255,255,0))",
-              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              transform: "translateX(calc(-50% - 210px))",
+              background: "linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0))",
+              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
               mixBlendMode: "screen",
             }}
           />
           <div
             ref={beam2Ref}
-            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
             style={{
               left: "50%",
-              background: "linear-gradient(to bottom, rgba(255,85,0,0.8), rgba(255,85,0,0))",
-              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              transform: "translateX(-50%)",
+              background: "linear-gradient(to bottom, rgba(255,85,0,0.9), rgba(255,85,0,0))",
+              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
               mixBlendMode: "screen",
             }}
           />
           <div
             ref={beam3Ref}
-            className="absolute top-0 h-[65vh] w-[4px] opacity-0 origin-top"
+            className="absolute top-0 h-[65vh] w-[110px] md:w-[170px] opacity-0 origin-top"
             style={{
               left: "50%",
-              transform: "translateX(170px)",
-              background: "linear-gradient(to bottom, rgba(255,153,0,0.8), rgba(255,153,0,0))",
-              clipPath: "polygon(46% 0%, 54% 0%, 100% 100%, 0% 100%)",
+              transform: "translateX(calc(-50% + 210px))",
+              background: "linear-gradient(to bottom, rgba(255,153,0,0.9), rgba(255,153,0,0))",
+              clipPath: "polygon(44% 0%, 56% 0%, 100% 100%, 0% 100%)",
               mixBlendMode: "screen",
             }}
           />
@@ -265,10 +286,16 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
 
           <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
             <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-white/10 rounded-full"></div>
-            {t.trustStats.map((stat) => (
+            {t.trustStats.map((stat, i) => (
               <div key={stat.label} className="relative">
                 <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-[#0a0a0b] border-2 border-orange-500 rounded-full shadow-sm"></div>
-                <div className="text-2xl md:text-4xl font-bold text-orange-400 leading-tight mb-1.5">{stat.value}</div>
+                <div className="text-2xl md:text-4xl font-bold text-orange-400 leading-tight mb-1.5">
+                  {"numericTarget" in stat ? (
+                    <span ref={(el) => { statNumberRefs.current[i] = el; }}>0{stat.suffix}</span>
+                  ) : (
+                    stat.value
+                  )}
+                </div>
                 <div className="text-sm md:text-lg text-white/60">{stat.label}</div>
               </div>
             ))}
@@ -335,6 +362,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
 
       <div className="relative overflow-hidden">
         <div className="absolute -top-16 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-amber-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
+        <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-orange-500/30 blur-[110px] rounded-full pointer-events-none z-0" />
         <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
       </div>
 

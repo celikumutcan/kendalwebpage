@@ -42,10 +42,8 @@ function WindIcon({ className }: { className?: string }) {
 function FanIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 12c0-3.5 2-6.5 5-6.5s2.5 3.5 0 5.5-5 1-5 1" />
-      <path d="M12 12c-3.5 0-6.5-2-6.5-5s3.5-2.5 5.5 0 1 5 1 5" />
-      <path d="M12 12c0 3.5-2 6.5-5 6.5s-2.5-3.5 0-5.5 5-1 5-1" />
-      <circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none" />
+      <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
     </svg>
   );
 }
@@ -106,7 +104,7 @@ const translations = {
     videoPlayLabel: "Videoyu oynat",
     trustStats: [
       { value: "En Çok Tercih Edilenlerden", label: "Türkiye'nin Vantilatör Markaları Arasında" },
-      { value: "9.4 / 10", label: "Ortalama Müşteri Memnuniyeti" },
+      { numericTarget: 9.4, suffix: " / 10", label: "Ortalama Müşteri Memnuniyeti" },
       { value: "%1'in Altında", label: "İade Oranı" },
     ],
     sec3Title: "Enerji Tasarrufu",
@@ -142,7 +140,7 @@ const translations = {
     videoPlayLabel: "Play video",
     trustStats: [
       { value: "A Most Preferred Choice", label: "Among Turkey's Fan Brands" },
-      { value: "9.4 / 10", label: "Average Customer Satisfaction" },
+      { numericTarget: 9.4, suffix: " / 10", label: "Average Customer Satisfaction" },
       { value: "Under 1%", label: "Return Rate" },
     ],
     sec3Title: "Energy Saving",
@@ -155,6 +153,7 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLDivElement>(null);
   const scrollHintRef = useRef<HTMLDivElement>(null);
+  const statNumberRefs = useRef<(HTMLSpanElement | null)[]>([]);
   const { language } = useLanguage();
   const t = translations[language as keyof typeof translations];
   const [sceneReady, setSceneReady] = useState(false);
@@ -170,6 +169,25 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
           end: "500px top",
           scrub: 1,
         },
+      });
+
+      t.trustStats.forEach((stat, i) => {
+        if (!("numericTarget" in stat)) return;
+        const el = statNumberRefs.current[i];
+        if (!el) return;
+        const obj = { val: 0 };
+        gsap.to(obj, {
+          val: stat.numericTarget,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%",
+          },
+          onUpdate: () => {
+            el.textContent = obj.val.toFixed(1) + stat.suffix;
+          },
+        });
       });
 
       const textBlocks = gsap.utils.toArray<HTMLElement>(".reveal-text");
@@ -236,10 +254,16 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
 
           <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
             <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-teal-700/15 rounded-full"></div>
-            {t.trustStats.map((stat) => (
+            {t.trustStats.map((stat, i) => (
               <div key={stat.label} className="relative">
                 <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-white border-2 border-teal-700 rounded-full shadow-sm"></div>
-                <div className="text-2xl md:text-4xl font-bold text-teal-800 leading-tight mb-1.5">{stat.value}</div>
+                <div className="text-2xl md:text-4xl font-bold text-teal-800 leading-tight mb-1.5">
+                  {"numericTarget" in stat ? (
+                    <span ref={(el) => { statNumberRefs.current[i] = el; }}>0{stat.suffix}</span>
+                  ) : (
+                    stat.value
+                  )}
+                </div>
                 <div className="text-sm md:text-lg text-teal-950/70">{stat.label}</div>
               </div>
             ))}
