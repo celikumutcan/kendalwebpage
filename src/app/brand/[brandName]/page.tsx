@@ -1,7 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { products } from "@/data/products";
-import { BrandHero } from "@/components/sections/BrandHero";
 import { K2CreativePage } from "@/components/brand/k2/K2CreativePage";
 import { GlobalCreativePage } from "@/components/brand/global/GlobalCreativePage";
 import { VantiCreativePage } from "@/components/brand/vanti/VantiCreativePage";
@@ -76,9 +76,5 @@ export default async function BrandPage({
     return <VantiCreativePage allProducts={allProducts} />;
   }
 
-  return (
-    <div className="w-full text-zinc-900 bg-zinc-50">
-      <BrandHero brandName={brandName} />
-    </div>
-  );
+  notFound();
 }

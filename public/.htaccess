@@ -1,13 +1,40 @@
-# Kendal Elektrik - cPanel/Apache güvenlik ayarları
-# Next.js static export (`output: "export"`) header konfigürasyonunu
-# desteklemediği için bu ayarlar burada tanımlanıyor.
+# Kendal Elektrik - cPanel/Apache güvenlik ve yönlendirme ayarları
+# Next.js static export (`output: "export"`) header/middleware konfigürasyonunu
+# desteklemediği için bu ayarların hepsi burada, Apache seviyesinde tanımlanıyor.
 
-# --- HTTPS zorunlu kıl ---
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTPS} off
-  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-</IfModule>
+RewriteEngine On
+
+# --- HTTPS zorunlu kıl (tüm host'lar için: ana domain + brand subdomain'leri) ---
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- Ana domain için www zorunlu kıl (brand subdomain'lerini etkilemez) ---
+RewriteCond %{HTTP_HOST} ^kendalelektrik\.com\.tr$ [NC]
+RewriteRule ^(.*)$ https://www.kendalelektrik.com.tr/$1 [L,R=301]
+
+# --- Marka subdomain yönlendirmesi ---
+# k2./vanti./global. -> ilgili /brand/{marka}/... statik içeriğine yönlendirir.
+# Next.js'in kendi middleware'i (src/proxy.ts) statik export'ta ÇALIŞMADIĞI için
+# bu iş burada yapılıyor. ÖNKOŞUL: cPanel'de bu 3 subdomain, ana sitenin
+# document root'u ile AYNI klasöre bakmalı (ayrı bir alt klasöre değil),
+# aksi halde _next/images gibi paylaşılan dosyalar bulunamaz.
+RewriteCond %{HTTP_HOST} ^k2\.kendalelektrik\.com\.tr$ [NC]
+RewriteCond %{REQUEST_URI} !^/(_next|images|urun-bilgi-formlari|brand)(/|$)
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^(.*)$ /brand/k2/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^vanti\.kendalelektrik\.com\.tr$ [NC]
+RewriteCond %{REQUEST_URI} !^/(_next|images|urun-bilgi-formlari|brand)(/|$)
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^(.*)$ /brand/vanti/$1 [L]
+
+RewriteCond %{HTTP_HOST} ^global\.kendalelektrik\.com\.tr$ [NC]
+RewriteCond %{REQUEST_URI} !^/(_next|images|urun-bilgi-formlari|brand)(/|$)
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$
+RewriteRule ^(.*)$ /brand/global/$1 [L]
+
+# --- Özel 404 sayfası (Next'in ürettiği statik 404.html) ---
+ErrorDocument 404 /404.html
 
 # --- Güvenlik başlıkları ---
 <IfModule mod_headers.c>
