@@ -7327,7 +7327,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "15W"
-    }
+    },
+    "images": [
+      "urunler/kcf298-old.webp"
+    ]
   },
   "KCF306": {
     "id": "KCF306",
@@ -7426,7 +7429,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf306-old.webp"
+    ]
   },
   "KCF302": {
     "id": "KCF302",
@@ -7526,7 +7532,10 @@
     "variantOptions": {
       "watt": "15W",
       "socket": "4xE27"
-    }
+    },
+    "images": [
+      "urunler/kcf302-old.webp"
+    ]
   },
   "KCF296": {
     "id": "KCF296",
@@ -7633,7 +7642,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "15W"
-    }
+    },
+    "images": [
+      "urunler/kcf296-old.webp"
+    ]
   },
   "KCF297": {
     "id": "KCF297",
@@ -7740,7 +7752,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "15W"
-    }
+    },
+    "images": [
+      "urunler/kcf297-old.webp"
+    ]
   },
   "KCF301": {
     "id": "KCF301",
@@ -7840,7 +7855,10 @@
     "variantOptions": {
       "watt": "15W",
       "socket": "4xE27"
-    }
+    },
+    "images": [
+      "urunler/kcf301-old.webp"
+    ]
   },
   "KCF300": {
     "id": "KCF300",
@@ -7940,7 +7958,10 @@
     "variantOptions": {
       "watt": "15W",
       "socket": "4xE27"
-    }
+    },
+    "images": [
+      "urunler/kcf300-old.webp"
+    ]
   },
   "KCF305": {
     "id": "KCF305",
@@ -8040,7 +8061,10 @@
     "variantOptions": {
       "watt": "15W",
       "socket": "4xE27"
-    }
+    },
+    "images": [
+      "urunler/kcf305-old.webp"
+    ]
   },
   "KCF278": {
     "id": "KCF278",
@@ -8125,7 +8149,9 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf278-old.webp"
+    ]
   },
   "KCF272": {
     "id": "KCF272",
@@ -8201,7 +8227,9 @@
     "variantOptions": {
       "watt": "80W"
     },
-    "images": []
+    "images": [
+      "urunler/kcf272-old.webp"
+    ]
   },
   "KCF291": {
     "id": "KCF291",
@@ -8277,7 +8305,9 @@
     "variantOptions": {
       "watt": "160W"
     },
-    "images": []
+    "images": [
+      "urunler/kcf291-old.webp"
+    ]
   },
   "KCF291D": {
     "id": "KCF291D",
@@ -8352,7 +8382,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "160W"
-    }
+    },
+    "images": [
+      "urunler/kcf291d-old.webp"
+    ]
   },
   "KCF291KD": {
     "id": "KCF291KD",
@@ -8427,7 +8460,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "160W"
-    }
+    },
+    "images": [
+      "urunler/kcf291kd-old.webp"
+    ]
   },
   "KCF292": {
     "id": "KCF292",
@@ -8503,7 +8539,9 @@
     "variantOptions": {
       "watt": "180W"
     },
-    "images": []
+    "images": [
+      "urunler/kcf292-old.webp"
+    ]
   },
   "KCF292D": {
     "id": "KCF292D",
@@ -8578,7 +8616,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "180W"
-    }
+    },
+    "images": [
+      "urunler/kcf292d-old.webp"
+    ]
   },
   "KCF292KD": {
     "id": "KCF292KD",
@@ -8653,7 +8694,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "180W"
-    }
+    },
+    "images": [
+      "urunler/kcf292kd-old.webp"
+    ]
   },
   "KCF290": {
     "id": "KCF290",
@@ -8729,7 +8773,9 @@
     "variantOptions": {
       "watt": "130W"
     },
-    "images": []
+    "images": [
+      "urunler/kcf290-old.webp"
+    ]
   },
   "KCF282": {
     "id": "KCF282",
@@ -8905,7 +8951,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf282k-old.webp"
+    ]
   },
   "KCF279K": {
     "id": "KCF279K",
@@ -8996,7 +9045,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf279k-old.webp"
+    ]
   },
   "KCF281": {
     "id": "KCF281",
@@ -9172,7 +9224,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf281k-old.webp"
+    ]
   },
   "KCF286": {
     "id": "KCF286",
@@ -9248,7 +9303,9 @@
     "variantOptions": {
       "watt": "60W"
     },
-    "images": []
+    "images": [
+      "urunler/kcf286-old.webp"
+    ]
   },
   "KCF287": {
     "id": "KCF287",
@@ -9333,7 +9390,9 @@
       "watt": "60W",
       "socket": "2xE27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf287-old.webp"
+    ]
   },
   "KCF288": {
     "id": "KCF288",
@@ -9418,7 +9477,9 @@
       "watt": "60W",
       "socket": "2xE27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf288-old.webp"
+    ]
   },
   "KCF283": {
     "id": "KCF283",
@@ -9503,7 +9564,9 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf283-old.webp"
+    ]
   },
   "KCF284": {
     "id": "KCF284",
@@ -9588,7 +9651,9 @@
       "watt": "60W",
       "socket": "3xE27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf284-old.webp"
+    ]
   },
   "KCF285": {
     "id": "KCF285",
@@ -9673,7 +9738,9 @@
       "watt": "60W",
       "socket": "G9"
     },
-    "images": []
+    "images": [
+      "urunler/kcf285-old.webp"
+    ]
   },
   "KCF321": {
     "id": "KCF321",
@@ -9772,7 +9839,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf321-old.webp"
+    ]
   },
   "KCF322": {
     "id": "KCF322",
@@ -9871,7 +9941,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf322-old.webp"
+    ]
   },
   "KCF323": {
     "id": "KCF323",
@@ -9970,7 +10043,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf323-old.webp"
+    ]
   },
   "KCF310": {
     "id": "KCF310",
@@ -10069,7 +10145,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf310-old.webp"
+    ]
   },
   "KCF311": {
     "id": "KCF311",
@@ -10168,7 +10247,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf311-old.webp"
+    ]
   },
   "KCF320": {
     "id": "KCF320",
@@ -10267,7 +10349,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf320-old.webp"
+    ]
   },
   "KCF307": {
     "id": "KCF307",
@@ -10366,7 +10451,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf307-old.webp"
+    ]
   },
   "KCF303": {
     "id": "KCF303",
@@ -10465,7 +10553,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf303-old.webp"
+    ]
   },
   "KCF304": {
     "id": "KCF304",
@@ -10564,7 +10655,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf304-old.webp"
+    ]
   },
   "KCF271": {
     "id": "KCF271",
@@ -10655,7 +10749,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf271-old.webp"
+    ]
   },
   "KCF308": {
     "id": "KCF308",
@@ -10738,7 +10835,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "120W"
-    }
+    },
+    "images": [
+      "urunler/kcf308-old.webp"
+    ]
   },
   "KSP100": {
     "id": "KSP100",
@@ -10975,7 +11075,10 @@
       ]
     },
     "brand": "vanti",
-    "variantOptions": {}
+    "variantOptions": {},
+    "images": [
+      "urunler/kcf700-old.webp"
+    ]
   },
   "KCF295": {
     "id": "KCF295",
@@ -11050,7 +11153,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf295-old.webp"
+    ]
   },
   "KCF273": {
     "id": "KCF273",
@@ -11133,7 +11239,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "45W"
-    }
+    },
+    "images": [
+      "urunler/kcf273-old.webp"
+    ]
   },
   "KCF299D": {
     "id": "KCF299D",
@@ -11216,7 +11325,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "60W"
-    }
+    },
+    "images": [
+      "urunler/kcf299d-old.webp"
+    ]
   },
   "KCF750": {
     "id": "KCF750",
@@ -11289,7 +11401,10 @@
       ]
     },
     "brand": "vanti",
-    "variantOptions": {}
+    "variantOptions": {},
+    "images": [
+      "urunler/kcf750-old.webp"
+    ]
   },
   "KCF276": {
     "id": "KCF276",
@@ -11372,7 +11487,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "130W"
-    }
+    },
+    "images": [
+      "urunler/kcf276-old.webp"
+    ]
   },
   "KCF276K": {
     "id": "KCF276K",
@@ -11455,7 +11573,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "130W"
-    }
+    },
+    "images": [
+      "urunler/kcf276k-old.webp"
+    ]
   },
   "KCF272L": {
     "id": "KCF272L",
@@ -11538,7 +11659,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "40W"
-    }
+    },
+    "images": [
+      "urunler/kcf272l-old.webp"
+    ]
   },
   "KCF280": {
     "id": "KCF280",
@@ -11623,7 +11747,9 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf280-old.webp"
+    ]
   },
   "KCF280K": {
     "id": "KCF280K",
@@ -11714,7 +11840,10 @@
     "brand": "vanti",
     "variantOptions": {
       "watt": "30W"
-    }
+    },
+    "images": [
+      "urunler/kcf280k-old.webp"
+    ]
   },
   "KCF279": {
     "id": "KCF279",
@@ -11799,7 +11928,9 @@
       "watt": "60W",
       "socket": "E27"
     },
-    "images": []
+    "images": [
+      "urunler/kcf279-old.webp"
+    ]
   },
   "GDL420": {
     "id": "GDL420",
