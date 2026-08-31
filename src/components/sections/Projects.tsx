@@ -97,7 +97,7 @@ export const Projects = () => {
     <section
       id="projects"
       ref={containerRef}
-      className="relative w-full bg-transparent py-32 overflow-hidden"
+      className="relative w-full bg-transparent pt-36 pb-32 overflow-hidden"
     >
       <div className="absolute top-0 left-0 w-[50vw] h-full pointer-events-none opacity-40 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at -20% 50%, #8a2be2 0%, transparent 70%)' }} />
       <div className="absolute top-0 right-0 w-[50vw] h-full pointer-events-none opacity-30 mix-blend-screen" style={{ background: 'radial-gradient(ellipse at 120% 50%, #ff00ff 0%, transparent 70%)' }} />

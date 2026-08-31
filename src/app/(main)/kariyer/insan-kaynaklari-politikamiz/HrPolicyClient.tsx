@@ -16,7 +16,7 @@ export function HrPolicyClient() {
         <div className="absolute -left-[10%] bottom-0 w-[500px] h-[500px] bg-teal-500/20 blur-[120px] rounded-full" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto bg-white/5 p-8 md:p-12 rounded-2xl border border-white/10">
-        <h1 className="text-3xl md:text-5xl font-bold mb-10 text-[var(--brand-red)] text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-10 text-white text-center">
           {policy.policy_title}
         </h1>
 

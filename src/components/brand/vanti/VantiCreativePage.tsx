@@ -65,11 +65,31 @@ const VANTI_VIDEO_IDS = [
   "hFYbw1fmjdE",
   "gRdC236jqlI",
   "BvZSnBJnH2U",
+  "5AZFZNcOf_k",
   "Os5nqJq0x0U",
   "zZG5_CxFLBg",
   "jddPviKiuvQ",
   "2V-c5YGcldI",
 ];
+
+// Video id -> product detail path (category/slug, without the /urunler base
+// since that differs between dev and the /brand/vanti prefix used in prod).
+const VANTI_VIDEO_PRODUCT_PATHS: Record<string, string> = {
+  hFYbw1fmjdE: "vantilatorler/kcf295-masaustu-fan",
+  gRdC236jqlI: "vantilatorler/kcf276-130w-standing-wall-fan",
+  BvZSnBJnH2U: "vantilatorler/kcf273-turbo-fan-ayakli-vantilator",
+  "5AZFZNcOf_k": "vantilatorler/kcf700-sarjli-el-vantilatoru",
+  Os5nqJq0x0U: "vantilatorler/kcf272l-ayakli-vantilat-r-50w",
+  zZG5_CxFLBg: "vantilatorler/kcf279k-dekoratif-tavan-vantilatoru",
+  jddPviKiuvQ: "vantilatorler/kcf281k-dekoratif-tavan-vantilatoru",
+  "2V-c5YGcldI": "vantilatorler/kcf280k-ahsap-tavan-vantilatoru",
+};
+
+const VANTI_URUNLER_BASE = process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler";
+
+const VANTI_VIDEO_PRODUCTS: Record<string, string> = Object.fromEntries(
+  Object.entries(VANTI_VIDEO_PRODUCT_PATHS).map(([id, path]) => [id, `${VANTI_URUNLER_BASE}/${path}`])
+);
 
 const translations = {
   tr: {
@@ -93,7 +113,10 @@ const translations = {
     exportHint: "Haritadaki noktalara tıklayın.",
     videoLabel: "Yakından Bakış",
     videoTitle: "Ürün Tanıtım Videolarımız",
+    videoSubtitle: "Vanti ürünlerini gerçek kullanımda izleyin.",
     videoPlayLabel: "Videoyu oynat",
+    videoCloseLabel: "Videoyu kapat",
+    videoCtaLabel: "Ürüne Git",
     trustStats: [
       { value: "En Çok Tercih Edilenlerden", label: "Türkiye'nin Vantilatör Markaları Arasında" },
       { numericTarget: 9.4, suffix: " / 10", label: "Ortalama Müşteri Memnuniyeti" },
@@ -124,7 +147,10 @@ const translations = {
     exportHint: "Click a point on the map.",
     videoLabel: "Up Close",
     videoTitle: "Our Product Demo Videos",
+    videoSubtitle: "See Vanti products in real use.",
     videoPlayLabel: "Play video",
+    videoCloseLabel: "Close video",
+    videoCtaLabel: "View Product",
     trustStats: [
       { value: "A Most Preferred Choice", label: "Among Turkey's Fan Brands" },
       { numericTarget: 9.4, suffix: " / 10", label: "Average Customer Satisfaction" },
@@ -299,12 +325,17 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
         videoIds={VANTI_VIDEO_IDS}
         label={t.videoLabel}
         title={t.videoTitle}
+        subtitle={t.videoSubtitle}
         playLabel={t.videoPlayLabel}
+        closeLabel={t.videoCloseLabel}
+        ctaLabel={t.videoCtaLabel}
+        productLinks={VANTI_VIDEO_PRODUCTS}
+        productFallbackHref={VANTI_URUNLER_BASE}
       />
 
       <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center">
         <Link
-          href={process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler"}
+          href={VANTI_URUNLER_BASE}
           className="inline-flex items-center justify-center px-14 py-6 bg-teal-800 text-white font-medium tracking-[0.2em] uppercase rounded-full shadow-[0_8px_24px_rgba(15,118,110,0.35)] hover:bg-teal-900 hover:shadow-[0_10px_28px_rgba(15,118,110,0.45)] transition-all duration-300"
         >
           {t.catalogBtn}

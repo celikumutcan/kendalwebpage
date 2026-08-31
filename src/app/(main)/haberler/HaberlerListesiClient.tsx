@@ -18,7 +18,7 @@ export function HaberlerListesiClient() {
   const currentNews = allNews.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white py-32 px-6 overflow-hidden">
+    <div className="relative min-h-screen bg-[#050505] text-white pt-36 pb-32 px-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-emerald-500/40 blur-[120px] rounded-full" />
 

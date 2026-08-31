@@ -177,8 +177,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themeGlow = "shadow-[0_0_40px_rgba(249,115,22,0.2)]";
       themePillBg = "bg-orange-50";
       badgeColor = "bg-orange-100 text-orange-700 border-orange-200";
-      ambientGlow = "bg-orange-200";
-      themeImageBg = "bg-orange-50/80";
+      ambientGlow = "bg-orange-200/50";
+      themeImageBg = "bg-orange-200/90";
       pageBg = "bg-[#fae3c8]";
     } else if (isVanti) {
       themeColor = "bg-blue-600";
@@ -186,8 +186,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themeGlow = "shadow-[0_0_40px_rgba(37,99,235,0.2)]";
       themePillBg = "bg-blue-50";
       badgeColor = "bg-blue-100 text-blue-700 border-blue-200";
-      ambientGlow = "bg-blue-200";
-      themeImageBg = "bg-blue-50/80";
+      ambientGlow = "bg-blue-200/50";
+      themeImageBg = "bg-blue-200/90";
       pageBg = "bg-[#d4e4f9]";
     } else if (isGlobal) {
       themeColor = "bg-[#FFDA51]";
@@ -195,8 +195,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themeGlow = "shadow-[0_0_40px_rgba(255,218,81,0.3)]";
       themePillBg = "bg-amber-50";
       badgeColor = "bg-amber-100 text-amber-700 border-amber-200";
-      ambientGlow = "bg-[#FFDA51]/30";
-      themeImageBg = "bg-amber-50/80";
+      ambientGlow = "bg-[#FFDA51]/50";
+      themeImageBg = "bg-[#FFDA51]/40";
       pageBg = "bg-[#f7e7ac]";
     }
   }
@@ -390,7 +390,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
 
               <div className="w-full flex justify-center relative perspective-[1000px] mt-0 mb-4 group/showcase">
 
-                <div className={`absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] blur-[110px] rounded-full pointer-events-none z-0 transition-opacity duration-700 ${isLight ? 'bg-white/60' : 'bg-white/[0.07]'}`} />
+                <div className={`absolute inset-0 top-1/2 -translate-y-1/2 w-full max-w-3xl mx-auto h-[80%] blur-[110px] rounded-full pointer-events-none z-0 transition-opacity duration-700 ${isLight ? ambientGlow : 'bg-white/[0.07]'}`} />
 
                 <div className="absolute bottom-[-6%] left-1/2 -translate-x-1/2 w-[70%] max-w-[520px] h-[80px] rounded-[100%] blur-md z-0 opacity-70"
                      style={{
@@ -409,7 +409,7 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                     : 'bg-white/[0.03] backdrop-blur-2xl border border-white/[0.08] shadow-[0_0_0_1px_rgba(255,255,255,0.02),0_40px_100px_-20px_rgba(0,0,0,0.9)]'
                   }`}
                 >
-                  <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/40 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
+                  <div className={`absolute inset-x-0 top-0 h-1/2 rounded-t-[2.5rem] pointer-events-none bg-gradient-to-b ${isLight ? 'from-white/15 to-transparent' : 'from-white/[0.06] to-transparent'}`} />
 
                   <div className={`absolute top-5 left-5 w-5 h-5 border-t-2 border-l-2 rounded-tl-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
                   <div className={`absolute bottom-5 right-5 w-5 h-5 border-b-2 border-r-2 rounded-br-lg opacity-40 ${isLight ? 'border-zinc-400' : 'border-white/30'}`} />
@@ -704,13 +704,15 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
                       return (
                         <li key={idx} className={`flex ${isLogoBadge ? 'items-center justify-center' : 'items-center'} gap-2.5 px-3.5 py-3 rounded-2xl transition-colors duration-300 ${isLight ? "hover:bg-zinc-50" : "hover:bg-white/[0.04]"}`}>
                           {isYerliUretim ? (
-                            <div className="relative w-[92px] h-[33px]">
-                              <Image
-                                src={getAssetPath('/images/yerli-uretim-logo-cropped.webp')}
-                                alt="Yerli Üretim"
-                                fill
-                                className="object-contain"
-                              />
+                            <div className={`rounded-lg border p-1.5 ${isLight ? "border-zinc-200 bg-white" : "border-white/10 bg-white/[0.04]"}`}>
+                              <div className="relative w-[92px] h-[33px]">
+                                <Image
+                                  src={getAssetPath('/images/yerli-uretim-logo-cropped.webp')}
+                                  alt="Yerli Üretim"
+                                  fill
+                                  className="object-contain"
+                                />
+                              </div>
                             </div>
                           ) : isTse ? (
                             <div className="relative w-[50px] h-[50px]">

@@ -23,7 +23,7 @@ export function UretimClient() {
   const images = [...newImages, ...oldImages];
 
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">
+    <div className="relative min-h-screen bg-[#050505] text-white pt-36 pb-24 px-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute -left-[10%] top-0 w-[600px] h-[600px] bg-red-600/30 blur-[120px] rounded-full" />
         <div className="absolute -right-[10%] bottom-0 w-[600px] h-[600px] bg-orange-500/30 blur-[120px] rounded-full" />

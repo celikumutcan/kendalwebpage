@@ -17,7 +17,7 @@ export function HumanRightsClient() {
         <div className="absolute -right-[15%] top-1/2 -translate-y-1/2 w-[400px] h-[600px] bg-fuchsia-500/20 blur-[120px] rounded-[100%]" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto bg-white/5 p-8 md:p-12 rounded-2xl border border-white/10">
-        <h1 className="text-3xl md:text-5xl font-bold mb-10 text-[var(--brand-red)] text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-10 text-white text-center">
           {title}
         </h1>
 
