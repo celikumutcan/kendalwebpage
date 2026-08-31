@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
@@ -9,6 +9,7 @@ import { useLanguage } from "@/lib/i18n/LanguageProvider";
 import { getAssetPath } from "@/lib/basePath";
 import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
 import { DealerMap } from "@/components/brand/shared/DealerMap";
+import { GlobalPreloader } from "./GlobalPreloader";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -81,28 +82,6 @@ const translations = {
   }
 };
 
-const CursorIcon = () => (
-  <svg width="60" height="65" viewBox="0 0 24 26" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-[0_2px_5px_rgba(0,0,0,0.4)]">
-    <polygon
-      points="2,2 2,22 8,17 11,24 15,22 12,15 20,15"
-      fill="#ffffff"
-      stroke="#1a1a1a"
-      strokeWidth="1.4"
-      strokeLinejoin="round"
-    />
-  </svg>
-);
-
-const SwitchIcon = () => (
-  <svg width="100" height="150" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="drop-shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-    <rect x="5" y="5" width="70" height="110" rx="8" stroke="rgba(255,255,255,0.4)" strokeWidth="2" fill="rgba(10,10,12,0.9)" />
-    <rect className="switch-toggle" x="25" y="65" width="30" height="40" rx="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" strokeWidth="1" />
-  </svg>
-);
-
-const CURSOR_END_X = 45;
-const CURSOR_END_Y = 101;
-
 function BoltIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
@@ -134,10 +113,7 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   const t = translations[language as keyof typeof translations] || translations.tr;
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const introRef = useRef<HTMLElement>(null);
-  const cursorRef = useRef<HTMLDivElement>(null);
-  const rippleRef = useRef<HTMLDivElement>(null);
-  const flashRef = useRef<HTMLDivElement>(null);
+  const heroSectionRef = useRef<HTMLElement>(null);
   const heroContentRef = useRef<HTMLDivElement>(null);
   const glowRef = useRef<HTMLDivElement>(null);
 
@@ -147,60 +123,50 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   const scrollIndicatorRef = useRef<HTMLDivElement>(null);
   const statNumberRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
+  const [introDone, setIntroDone] = useState(false);
+  const introPlayedRef = useRef(false);
+  const handlePreloaderComplete = useCallback(() => setIntroDone(true), []);
+
+  // Hero content reveal, kicked off by GlobalPreloader once its own
+  // click/flash sequence completes (mirrors K2/VantiCreativePage's
+  // sceneReady-gated reveal effect).
+  useEffect(() => {
+    if (!introDone || introPlayedRef.current) return;
+    introPlayedRef.current = true;
+
+    const tl = gsap.timeline({ delay: 0 });
+
+    tl.fromTo(glowRef.current, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1.6 })
+      .fromTo(logoRef.current, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1 }, "<")
+      .fromTo(heroTitleRef.current, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.9 }, "-=0.75")
+      .fromTo(heroSubRef.current, { opacity: 0, letterSpacing: "0.1em" }, { opacity: 1, letterSpacing: "0.3em", duration: 0.8 }, "-=0.6")
+      .fromTo(scrollIndicatorRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.4");
+
+    tl.call(() => {
+      gsap.to(glowRef.current, {
+        opacity: 0.7,
+        scale: 1.08,
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+      });
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, [introDone, language]);
+
   useEffect(() => {
     if (!containerRef.current) return;
 
     const ctx = gsap.context(() => {
-      const introTl = gsap.timeline({ delay: 0 });
-
-      introTl.fromTo(
-        cursorRef.current,
-        { x: 220, y: 260, opacity: 0 },
-        { x: CURSOR_END_X, y: CURSOR_END_Y, opacity: 1, duration: 1.5, ease: "power2.out" }
-      );
-
-      introTl
-        .to(cursorRef.current, { scale: 0.85, duration: 0.12, ease: "power1.in", transformOrigin: "8% 8%" })
-        .to(".switch-toggle", { y: 6, fill: "rgba(255,255,255,1)", duration: 0.12, ease: "power1.in" }, "<")
-        .to(cursorRef.current, { scale: 1, duration: 0.18, ease: "power1.out", transformOrigin: "8% 8%" })
-        .to(".switch-toggle", { y: 0, duration: 0.18, ease: "power1.out" }, "<")
-        .fromTo(
-          rippleRef.current,
-          { scale: 0.3, opacity: 0.9 },
-          { scale: 2.4, opacity: 0, duration: 0.45, ease: "power1.out" },
-          "<"
-        );
-
-      introTl
-        .to(flashRef.current, { opacity: 1, duration: 0.25 })
-        .to(containerRef.current, { backgroundColor: "#fdfbf5", duration: 0 }, "<")
-        .to([cursorRef.current, ".switch-container"], { opacity: 0, duration: 0.12 }, "<");
-
-      introTl.to(flashRef.current, { opacity: 0, duration: 0.18 });
-
-      introTl
-        .fromTo(glowRef.current, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 1.6 }, "-=0.08")
-        .fromTo(logoRef.current, { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1 }, "<")
-        .fromTo(heroTitleRef.current, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.9 }, "-=0.75")
-        .fromTo(heroSubRef.current, { opacity: 0, letterSpacing: "0.1em" }, { opacity: 1, letterSpacing: "0.3em", duration: 0.8 }, "-=0.6")
-        .fromTo(scrollIndicatorRef.current, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.6 }, "-=0.4");
-
-      introTl.call(() => {
-        gsap.to(glowRef.current, {
-          opacity: 0.7,
-          scale: 1.08,
-          duration: 3,
-          repeat: -1,
-          yoyo: true,
-          ease: "sine.inOut",
-        });
-      });
-
       gsap.to(heroContentRef.current, {
         y: -150,
         opacity: 0,
         scrollTrigger: {
-          trigger: introRef.current,
+          trigger: heroSectionRef.current,
           start: "top top",
           end: "bottom top",
           scrub: 1,
@@ -270,26 +236,10 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   }, [language]);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-black text-black overflow-hidden font-sans min-h-screen" style={{ "--page-bg": "#fdfbf5" } as React.CSSProperties}>
-      
+    <div ref={containerRef} className="relative w-full bg-[#fdfbf5] text-black overflow-hidden font-sans min-h-screen" style={{ "--page-bg": "#fdfbf5" } as React.CSSProperties}>
+      <GlobalPreloader onComplete={handlePreloaderComplete} />
 
-      <section ref={introRef} className="relative z-50 w-full h-screen flex flex-col items-center justify-center pointer-events-none overflow-hidden px-4">
-        <div className="relative">
-          <div className="switch-container">
-            <SwitchIcon />
-          </div>
-          <div ref={cursorRef} className="absolute top-0 left-0" style={{ opacity: 0 }}>
-            <CursorIcon />
-          </div>
-          <div
-            ref={rippleRef}
-            className="absolute rounded-full border-2 border-white pointer-events-none"
-            style={{ width: 16, height: 16, left: 42, top: 98, opacity: 0 }}
-          />
-        </div>
-
-        <div ref={flashRef} className="absolute inset-0 bg-white opacity-0 pointer-events-none" />
-
+      <section ref={heroSectionRef} className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none overflow-hidden px-4">
         <div ref={heroContentRef} className="absolute inset-0 flex flex-col items-center justify-center px-4">
           <div
             ref={glowRef}

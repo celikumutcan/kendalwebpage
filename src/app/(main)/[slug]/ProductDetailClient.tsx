@@ -195,8 +195,8 @@ export function ProductDetailClient({ product, brandName, pdfFormFile }: Product
       themeGlow = "shadow-[0_0_40px_rgba(255,218,81,0.3)]";
       themePillBg = "bg-amber-50";
       badgeColor = "bg-amber-100 text-amber-700 border-amber-200";
-      ambientGlow = "bg-[#FFDA51]/50";
-      themeImageBg = "bg-[#FFDA51]/40";
+      ambientGlow = "bg-amber-300/50";
+      themeImageBg = "bg-amber-200/90";
       pageBg = "bg-[#f7e7ac]";
     }
   }

@@ -17,14 +17,19 @@ interface ExportMapProps {
   language: string;
   accent: string;
   theme?: "dark" | "light";
+  /** Theme for the eyebrow/title card and hint text, relative to the page
+   * background they sit on. Defaults to `theme`; pass this separately when
+   * the map itself should stay dark but the surrounding page is light. */
+  cardTheme?: "dark" | "light";
 }
 
-export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dark" }: ExportMapProps) {
+export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dark", cardTheme }: ExportMapProps) {
   const isDark = theme === "dark";
+  const isCardDark = (cardTheme ?? theme) === "dark";
   const placeholderClass = isDark
     ? "bg-black/55 backdrop-blur-xl border-white/10"
     : "bg-white/70 backdrop-blur-xl border-white/50";
-  const hintColor = isDark ? "text-white/35" : "text-zinc-500";
+  const hintColor = isCardDark ? "text-white/35" : "text-zinc-500";
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
 
@@ -45,7 +50,7 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
     return () => observer.disconnect();
   }, [shouldLoad]);
 
-  const textBgClass = isDark
+  const textBgClass = isCardDark
     ? "bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
     : "bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]";
 
@@ -72,7 +77,7 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
       </div>
 
       <p className="text-center mt-6">
-        {isDark ? (
+        {isCardDark ? (
           <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
         ) : (
           <span className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}>

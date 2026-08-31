@@ -61,7 +61,7 @@ export function K2Preloader({ ready }: K2PreloaderProps) {
         <img
           src={getAssetPath("/images/brands/k2-logo.svg")}
           alt="K2"
-          className="h-16 md:h-20 opacity-90 animate-pulse drop-shadow-[0_0_20px_rgba(249,115,22,0.35)]"
+          className="h-24 md:h-32 opacity-90 animate-pulse drop-shadow-[0_0_20px_rgba(249,115,22,0.35)]"
         />
       </div>
     </div>
