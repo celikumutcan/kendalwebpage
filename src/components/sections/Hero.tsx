@@ -79,11 +79,11 @@ export const Hero = () => {
   return (
     <section
       ref={containerRef}
-      className="hero-cv-exclude relative h-[150vh] w-full bg-transparent"
+      className="hero-cv-exclude relative h-[130vh] w-full bg-transparent"
     >
       <div className="absolute top-0 left-0 w-full h-[100vh] pointer-events-none opacity-30 overflow-hidden z-0">
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,rgba(227,0,15,0.3)_0%,transparent_60%)]" />
-        <div className="absolute bottom-[10%] right-[-10%] w-[60%] h-[70%] rounded-full bg-[radial-gradient(circle_at_center,rgba(179,0,12,0.2)_0%,transparent_60%)]" />
+        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[60%] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_srgb,var(--accent-current)_45%,transparent)_0%,transparent_60%)]" />
+        <div className="absolute bottom-[10%] right-[-10%] w-[60%] h-[70%] rounded-full bg-[radial-gradient(circle_at_center,color-mix(in_srgb,var(--accent-current)_30%,transparent)_0%,transparent_60%)]" />
       </div>
 
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24">

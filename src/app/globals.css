@@ -28,6 +28,7 @@ body {
 :root {
   --accent-cool: #d8e4ff;
   --accent-warm: #ffb347;
+  --accent-current: var(--accent-cool);
   --brand-red: #E3000F;
   --brand-red-deep: #B3000C;
   --global-bg: #000000;
@@ -50,9 +51,9 @@ body.disable-cv section {
   content-visibility: visible !important;
 }
 
-/* GlobalPresence section is taller (h-[150vh]) than the generic estimate above */
+/* GlobalPresence section is taller (h-[130vh]) than the generic estimate above */
 #global {
-  contain-intrinsic-size: auto 1500px;
+  contain-intrinsic-size: auto 1300px;
 }
 
 /* Hide scrollbar globally to prevent aggressive scrolling that breaks animations */

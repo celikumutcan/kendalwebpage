@@ -56,7 +56,7 @@ export const GlobalPresence = () => {
     <section
       id="global"
       ref={containerRef}
-      className="w-full bg-transparent h-[150vh] relative"
+      className="w-full bg-transparent h-[130vh] relative"
     >
       <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0 opacity-70">
