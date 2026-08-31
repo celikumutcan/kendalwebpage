@@ -1,39 +1,44 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { LanguageProvider } from "@/lib/i18n/LanguageProvider";
-import { SmoothScrollProvider } from "@/components/engine/SmoothScrollProvider";
-import { GsapContext } from "@/components/engine/GsapContext";
-import { LightTemperatureProvider } from "@/lib/LightTemperatureProvider";
-import { CustomCursor } from "@/components/ui/CustomCursor";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { GsapContext } from '@/components/engine/GsapContext';
+import { SmoothScrollProvider } from '@/components/engine/SmoothScrollProvider';
+import { OrganizationSchema } from '@/components/shared/OrganizationSchema';
+import { CustomCursor } from '@/components/ui/CustomCursor';
+import { getAssetPath } from '@/lib/basePath';
+import { LanguageProvider } from '@/lib/i18n/LanguageProvider';
+import { LightTemperatureProvider } from '@/lib/LightTemperatureProvider';
 
-import { OrganizationSchema } from "@/components/shared/OrganizationSchema";
-import { getAssetPath } from "@/lib/basePath";
-
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.kendalelektrik.com.tr"),
-  title: "Kendal Elektrik - Global Manufacturer Since 1997",
-  description: "Innovative lighting and electrical equipment.",
+  metadataBase: new URL('https://www.kendalelektrik.com.tr'),
+  title: 'Kendal Elektrik - Global Manufacturer Since 1997',
+  description: 'Innovative lighting and electrical equipment.',
   icons: {
-    icon: getAssetPath("/kendal-icon.png"),
-    apple: getAssetPath("/kendal-icon.png"),
+    icon: getAssetPath('/kendal-icon.png'),
+    apple: getAssetPath('/kendal-icon.png'),
   },
   alternates: {
-    canonical: "/",
+    canonical: '/',
   },
   openGraph: {
-    title: "Kendal Elektrik - Global Manufacturer",
-    description: "Innovative lighting and electrical equipment.",
-    type: "website",
-    url: "/",
-    images: [{ url: getAssetPath("/images/factory-bg.webp"), width: 1271, height: 881 }],
-    locale: "tr_TR",
-    alternateLocale: ["en_US"],
+    title: 'Kendal Elektrik - Global Manufacturer',
+    description: 'Innovative lighting and electrical equipment.',
+    type: 'website',
+    url: '/',
+    images: [
+      {
+        url: getAssetPath('/images/factory-bg.webp'),
+        width: 1271,
+        height: 881,
+      },
+    ],
+    locale: 'tr_TR',
+    alternateLocale: ['en_US'],
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
   },
 };
 
@@ -44,7 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased transition-colors duration-200`} suppressHydrationWarning>
+      <body
+        className={`${inter.className} antialiased transition-colors duration-200`}
+        suppressHydrationWarning
+      >
         <LanguageProvider>
           <SmoothScrollProvider>
             <LightTemperatureProvider>

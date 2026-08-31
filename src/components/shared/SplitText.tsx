@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import React, { useRef } from 'react';
+import { gsap } from '@/lib/gsapConfig';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 interface SplitTextProps {
   text: string;
@@ -14,7 +14,7 @@ interface SplitTextProps {
 // Reusable text-split-reveal component (words)
 export const SplitText = ({
   text,
-  className = "",
+  className = '',
   delay = 0,
   stagger = 0.05,
 }: SplitTextProps) => {
@@ -22,8 +22,8 @@ export const SplitText = ({
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const words = gsap.utils.toArray(".split-word") as HTMLElement[];
-      
+      const words = gsap.utils.toArray('.split-word') as HTMLElement[];
+
       gsap.fromTo(
         words,
         { y: 50, opacity: 0 },
@@ -31,21 +31,21 @@ export const SplitText = ({
           y: 0,
           opacity: 1,
           duration: 0.8,
-          ease: "power3.out",
+          ease: 'power3.out',
           stagger: stagger,
           delay: delay,
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 85%",
+            start: 'top 85%',
           },
-        }
+        },
       );
     }, containerRef);
 
     return () => ctx.revert();
   }, [text, delay, stagger]);
 
-  const words = text.split(" ");
+  const words = text.split(' ');
 
   return (
     <div ref={containerRef} className={`${className} flex flex-wrap`}>

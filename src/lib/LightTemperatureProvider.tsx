@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext, useState, useRef } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import * as THREE from "three";
+import type React from 'react';
+import { createContext, useContext, useRef, useState } from 'react';
+import * as THREE from 'three';
+import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 interface LightTemperatureContextType {
   getProgress: () => number;
@@ -19,8 +20,8 @@ export const LightTemperatureProvider = ({
   children: React.ReactNode;
 }) => {
   const progressRef = useRef(0);
-  const colorCool = useRef(new THREE.Color("#d8e4ff"));
-  const colorWarm = useRef(new THREE.Color("#ffb347"));
+  const colorCool = useRef(new THREE.Color('#d8e4ff'));
+  const colorWarm = useRef(new THREE.Color('#ffb347'));
   const currentColor = useRef(new THREE.Color());
   const lastAppliedProgress = useRef(-1);
 
@@ -28,8 +29,8 @@ export const LightTemperatureProvider = ({
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: document.body,
-        start: "top top",
-        end: "bottom bottom",
+        start: 'top top',
+        end: 'bottom bottom',
         scrub: true,
         onUpdate: (self) => {
           const p = self.progress;
@@ -44,25 +45,34 @@ export const LightTemperatureProvider = ({
           if (rounded === lastAppliedProgress.current) return;
           lastAppliedProgress.current = rounded;
 
-          document.documentElement.style.setProperty("--light-temp", rounded.toString());
-
-          currentColor.current.lerpColors(colorCool.current, colorWarm.current, rounded);
           document.documentElement.style.setProperty(
-            "--accent-current",
-            `#${currentColor.current.getHexString()}`
+            '--light-temp',
+            rounded.toString(),
+          );
+
+          currentColor.current.lerpColors(
+            colorCool.current,
+            colorWarm.current,
+            rounded,
+          );
+          document.documentElement.style.setProperty(
+            '--accent-current',
+            `#${currentColor.current.getHexString()}`,
           );
         },
       });
-      
-      document.documentElement.style.setProperty("--light-temp", "0");
-      document.documentElement.style.setProperty("--accent-current", "#d8e4ff");
+
+      document.documentElement.style.setProperty('--light-temp', '0');
+      document.documentElement.style.setProperty('--accent-current', '#d8e4ff');
     });
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <LightTemperatureContext.Provider value={{ getProgress: () => progressRef.current }}>
+    <LightTemperatureContext.Provider
+      value={{ getProgress: () => progressRef.current }}
+    >
       {children}
     </LightTemperatureContext.Provider>
   );

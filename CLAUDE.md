@@ -1,6 +1,15 @@
 # Kendal Webpage Project Overview
 
-Welcome to the Kendal Webpage project. This document is meant to let a new Claude session understand the codebase **without re-exploring it from scratch**. It is intentionally detailed — routing, component inventory, data schemas and conventions are all documented here. Treat this file as the source of truth; only re-read source files when you need to verify something this doc doesn't cover or when making changes.
+Welcome to the Kendal Webpage project. 
+
+## 🧠 Codebase Navigation (Graphify Workflow)
+**CRITICAL**: This project uses **Graphify** (`@sentropic/graphify`) to map the codebase into a queryable dependency graph.
+1. **DO NOT** use brute-force grep searches, file tree crawling, or broad file reading to understand dependencies or imports.
+2. Instead, refer directly to the generated AST/Graph in the `.graphify/` directory to trace component imports, references, and relationships.
+3. Use the `npx @sentropic/graphify` tools (like `query`, `summary`, or `explain`) if you need to perform deep impact analysis.
+4. If you make significant structural changes (new files, removed dependencies), run `npx @sentropic/graphify extract ./` to keep the local graph up to date.
+
+This document contains high-level routing, component inventory, data schemas, and conventions. Treat it as the source of truth for architecture. For exact code references, rely on the Graphify output.
 
 ## Tech Stack
 - **Framework:** Next.js (v16+) with App Router (`src/app`), built as a **fully static export** (`output: "export"` in production — no SSR/ISR at runtime)

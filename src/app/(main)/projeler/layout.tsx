@@ -1,16 +1,18 @@
-import { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Projeler | Kendal Elektrik",
-  description: "Kendal Elektrik'in yer aldığı prestijli projeler ve referans çalışmalarımız.",
+  title: 'Projeler | Kendal Elektrik',
+  description:
+    "Kendal Elektrik'in yer aldığı prestijli projeler ve referans çalışmalarımız.",
   openGraph: {
-    title: "Projeler | Kendal Elektrik",
-    description: "Kendal Elektrik'in yer aldığı prestijli projeler ve referans çalışmalarımız.",
-    url: "/projeler",
+    title: 'Projeler | Kendal Elektrik',
+    description:
+      "Kendal Elektrik'in yer aldığı prestijli projeler ve referans çalışmalarımız.",
+    url: '/projeler',
   },
   alternates: {
-    canonical: "/projeler",
-  }
+    canonical: '/projeler',
+  },
 };
 
 export default function ProjelerLayout({

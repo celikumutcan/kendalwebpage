@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface BreadcrumbItem {
   name: string;
@@ -7,10 +7,10 @@ interface BreadcrumbItem {
 
 export const BreadcrumbSchema = ({ items }: { items: BreadcrumbItem[] }) => {
   const schema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
     itemListElement: items.map((item, idx) => ({
-      "@type": "ListItem",
+      '@type': 'ListItem',
       position: idx + 1,
       name: item.name,
       item: item.url,

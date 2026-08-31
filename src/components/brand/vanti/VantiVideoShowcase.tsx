@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
+import Link from 'next/link';
+import { useState } from 'react';
 
 interface VantiVideoShowcaseProps {
   videoIds: string[];
@@ -43,9 +43,13 @@ export function VantiVideoShowcase({
                 {label}
                 <span className="h-px w-8 bg-gradient-to-l from-transparent via-teal-600/70 to-teal-600/70" />
               </span>
-              <h2 className="mt-5 text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight text-teal-900">{title}</h2>
+              <h2 className="mt-5 text-3xl md:text-5xl font-bold leading-[1.1] tracking-tight text-teal-900">
+                {title}
+              </h2>
               {subtitle && (
-                <p className="mt-3.5 max-w-xl text-sm md:text-base text-teal-900/60">{subtitle}</p>
+                <p className="mt-3.5 max-w-xl text-sm md:text-base text-teal-900/60">
+                  {subtitle}
+                </p>
               )}
             </div>
           </div>
@@ -61,7 +65,9 @@ export function VantiVideoShowcase({
             className="k2-marquee-track flex w-max gap-5 md:gap-7 py-3"
             style={{
               animationDuration: `${duration}s`,
-              ...(isAnyPlaying ? { animationPlayState: "paused" as const } : {}),
+              ...(isAnyPlaying
+                ? { animationPlayState: 'paused' as const }
+                : {}),
             }}
           >
             {loopVideos.map((id, i) => {
@@ -84,11 +90,21 @@ export function VantiVideoShowcase({
                       />
                       <button
                         type="button"
-                        onClick={() => setPlaying((p) => ({ ...p, [i]: false }))}
-                        aria-label={closeLabel || "Kapat"}
+                        onClick={() =>
+                          setPlaying((p) => ({ ...p, [i]: false }))
+                        }
+                        aria-label={closeLabel || 'Kapat'}
                         className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md ring-1 ring-white/20 text-white flex items-center justify-center transition-colors duration-300 hover:bg-black/80"
                       >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2.5}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          viewBox="0 0 24 24"
+                        >
                           <path d="M6 6l12 12M18 6L6 18" />
                         </svg>
                       </button>
@@ -114,7 +130,11 @@ export function VantiVideoShowcase({
                         <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-black/30 to-transparent" />
                         <span className="absolute inset-0 flex items-center justify-center">
                           <span className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-white/95 backdrop-blur-sm ring-1 ring-black/5 flex items-center justify-center shadow-[0_10px_30px_-8px_rgba(0,0,0,0.5)] transition-all duration-300 group-hover/card:scale-110 group-hover/card:bg-teal-600">
-                            <svg className="w-5 h-5 md:w-7 md:h-7 text-teal-800 translate-x-0.5 transition-colors duration-300 group-hover/card:text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <svg
+                              className="w-5 h-5 md:w-7 md:h-7 text-teal-800 translate-x-0.5 transition-colors duration-300 group-hover/card:text-white"
+                              fill="currentColor"
+                              viewBox="0 0 24 24"
+                            >
                               <path d="M8 5v14l11-7z" />
                             </svg>
                           </span>
@@ -129,7 +149,15 @@ export function VantiVideoShowcase({
                           className="absolute left-3 bottom-3 z-20 inline-flex w-fit items-center gap-1.5 rounded-full bg-teal-600 px-3.5 py-1.5 text-[11px] font-semibold tracking-wide text-white shadow-[0_6px_16px_-4px_rgba(15,118,110,0.6)] transition-all duration-300 hover:bg-teal-500 hover:-translate-y-0.5"
                         >
                           {ctaLabel}
-                          <svg className="w-3 h-3 transition-transform duration-300 group-hover/card:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
+                          <svg
+                            className="w-3 h-3 transition-transform duration-300 group-hover/card:translate-x-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2.5}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            viewBox="0 0 24 24"
+                          >
                             <path d="M7 17 17 7M9 7h8v8" />
                           </svg>
                         </Link>

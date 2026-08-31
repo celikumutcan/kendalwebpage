@@ -1,23 +1,25 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState, RefObject } from "react";
+import { type RefObject, useEffect, useRef, useState } from 'react';
 
-export function useInView<T extends HTMLElement>(rootMargin = "200px"): [RefObject<T | null>, boolean] {
-    const ref = useRef<T>(null);
-    const [isInView, setIsInView] = useState(true);
+export function useInView<T extends HTMLElement>(
+  rootMargin = '200px',
+): [RefObject<T | null>, boolean] {
+  const ref = useRef<T>(null);
+  const [isInView, setIsInView] = useState(true);
 
-    useEffect(() => {
-        const node = ref.current;
-        if (!node) return;
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
 
-        const observer = new IntersectionObserver(
-            ([entry]) => setIsInView(entry.isIntersecting),
-            { rootMargin }
-        );
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { rootMargin },
+    );
 
-        observer.observe(node);
-        return () => observer.disconnect();
-    }, []);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
 
-    return [ref, isInView];
+  return [ref, isInView];
 }

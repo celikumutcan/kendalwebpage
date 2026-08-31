@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import React, { useRef } from 'react';
+import { gsap } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const NewsTicker = () => {
   const { t } = useLanguage();
   const trackRef = useRef<HTMLDivElement>(null);
 
-  const newsItems = (t as any).news?.items as string[] || [];
+  const newsItems = ((t as any).news?.items as string[]) || [];
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -18,7 +18,7 @@ export const NewsTicker = () => {
           xPercent: -50,
           repeat: -1,
           duration: 40,
-          ease: "linear",
+          ease: 'linear',
         });
       }
     }, trackRef);

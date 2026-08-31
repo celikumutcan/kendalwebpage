@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
+import { useEffect, useRef, useState } from 'react';
 
-const ExportMapInner = dynamic(() => import("./ExportMapInner"), {
+const ExportMapInner = dynamic(() => import('./ExportMapInner'), {
   ssr: false,
   loading: () => (
     <div className="w-full aspect-[980/480] rounded-[2rem] bg-zinc-500/10 border border-zinc-500/20 animate-pulse" />
@@ -16,20 +16,28 @@ interface ExportMapProps {
   hint: string;
   language: string;
   accent: string;
-  theme?: "dark" | "light";
+  theme?: 'dark' | 'light';
   /** Theme for the eyebrow/title card and hint text, relative to the page
    * background they sit on. Defaults to `theme`; pass this separately when
    * the map itself should stay dark but the surrounding page is light. */
-  cardTheme?: "dark" | "light";
+  cardTheme?: 'dark' | 'light';
 }
 
-export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dark", cardTheme }: ExportMapProps) {
-  const isDark = theme === "dark";
-  const isCardDark = (cardTheme ?? theme) === "dark";
+export function ExportMap({
+  eyebrow,
+  title,
+  hint,
+  language,
+  accent,
+  theme = 'dark',
+  cardTheme,
+}: ExportMapProps) {
+  const isDark = theme === 'dark';
+  const isCardDark = (cardTheme ?? theme) === 'dark';
   const placeholderClass = isDark
-    ? "bg-black/55 backdrop-blur-xl border-white/10"
-    : "bg-white/70 backdrop-blur-xl border-white/50";
-  const hintColor = isCardDark ? "text-white/35" : "text-zinc-500";
+    ? 'bg-black/55 backdrop-blur-xl border-white/10'
+    : 'bg-white/70 backdrop-blur-xl border-white/50';
+  const hintColor = isCardDark ? 'text-white/35' : 'text-zinc-500';
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
 
@@ -44,27 +52,31 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
           observer.disconnect();
         }
       },
-      { rootMargin: "400px" }
+      { rootMargin: '400px' },
     );
     observer.observe(node);
     return () => observer.disconnect();
   }, [shouldLoad]);
 
   const textBgClass = isCardDark
-    ? "bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
-    : "bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]";
+    ? 'bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]'
+    : 'bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]';
 
   return (
     <section className="reveal-text relative z-10 w-full py-12 md:py-16 px-6 md:px-24">
       <div className="flex justify-center mb-10 md:mb-14">
-        <div className={`text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border ${textBgClass}`}>
+        <div
+          className={`text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border ${textBgClass}`}
+        >
           <h3
             className="font-semibold tracking-widest mb-4 uppercase text-sm md:text-base"
             style={{ color: accent }}
           >
             {eyebrow}
           </h3>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">{title}</h2>
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+            {title}
+          </h2>
         </div>
       </div>
 
@@ -72,7 +84,9 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
         {shouldLoad ? (
           <ExportMapInner language={language} accent={accent} theme={theme} />
         ) : (
-          <div className={`w-full aspect-[980/480] rounded-[2rem] ${placeholderClass}`} />
+          <div
+            className={`w-full aspect-[980/480] rounded-[2rem] ${placeholderClass}`}
+          />
         )}
       </div>
 
@@ -80,7 +94,9 @@ export function ExportMap({ eyebrow, title, hint, language, accent, theme = "dar
         {isCardDark ? (
           <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
         ) : (
-          <span className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}>
+          <span
+            className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}
+          >
             {hint}
           </span>
         )}

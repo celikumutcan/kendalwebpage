@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { useMemo, type CSSProperties } from "react";
-import { Product } from "@/data/products";
-import { getAssetPath } from "@/lib/basePath";
+import Image from 'next/image';
+import Link from 'next/link';
+import { type CSSProperties, useMemo } from 'react';
+import type { Product } from '@/data/products';
+import { getAssetPath } from '@/lib/basePath';
 
 interface VantiProductFamiliesProps {
   label: string;
@@ -22,25 +22,73 @@ interface FamilyDef {
 }
 
 const FAMILIES: FamilyDef[] = [
-  { key: "tavan", nameTr: "Tavan Vantilatörleri", nameEn: "Ceiling Fans", query: "tavan vanti", productId: "KCF306" },
-  { key: "sanayi", nameTr: "Sanayi Tipi Vantilatörler", nameEn: "Industrial Fans", query: "sanayi", productId: "KCF291" },
-  { key: "ayakli", nameTr: "Ayaklı Vantilatörler", nameEn: "Stand Fans", query: "ayakl", productId: "KCF272L" },
-  { key: "duvar", nameTr: "Duvar Tipi Vantilatörler", nameEn: "Wall Fans", query: "duvar ti", productId: "KCF299D" },
-  { key: "masaustu", nameTr: "Masaüstü Fanlar", nameEn: "Desktop Fans", query: "masaüstü", productId: "KCF295" },
-  { key: "sarjli", nameTr: "Şarjlı El Vantilatörleri", nameEn: "Rechargeable Hand Fans", query: "şarj", productId: "KCF700" },
-  { key: "banyo", nameTr: "Banyo Aspiratörleri", nameEn: "Bathroom Extractor Fans", query: "banyo", productId: "KSP120" },
+  {
+    key: 'tavan',
+    nameTr: 'Tavan Vantilatörleri',
+    nameEn: 'Ceiling Fans',
+    query: 'tavan vanti',
+    productId: 'KCF306',
+  },
+  {
+    key: 'sanayi',
+    nameTr: 'Sanayi Tipi Vantilatörler',
+    nameEn: 'Industrial Fans',
+    query: 'sanayi',
+    productId: 'KCF291',
+  },
+  {
+    key: 'ayakli',
+    nameTr: 'Ayaklı Vantilatörler',
+    nameEn: 'Stand Fans',
+    query: 'ayakl',
+    productId: 'KCF272L',
+  },
+  {
+    key: 'duvar',
+    nameTr: 'Duvar Tipi Vantilatörler',
+    nameEn: 'Wall Fans',
+    query: 'duvar ti',
+    productId: 'KCF299D',
+  },
+  {
+    key: 'masaustu',
+    nameTr: 'Masaüstü Fanlar',
+    nameEn: 'Desktop Fans',
+    query: 'masaüstü',
+    productId: 'KCF295',
+  },
+  {
+    key: 'sarjli',
+    nameTr: 'Şarjlı El Vantilatörleri',
+    nameEn: 'Rechargeable Hand Fans',
+    query: 'şarj',
+    productId: 'KCF700',
+  },
+  {
+    key: 'banyo',
+    nameTr: 'Banyo Aspiratörleri',
+    nameEn: 'Bathroom Extractor Fans',
+    query: 'banyo',
+    productId: 'KSP120',
+  },
 ];
 
-export function VantiProductFamilies({ label, title, allProducts, language }: VantiProductFamiliesProps) {
-  const lang = language === "en" ? "en" : "tr";
-  const catalogBase = process.env.NODE_ENV === "production" ? "/brand/vanti/urunler" : "/urunler";
+export function VantiProductFamilies({
+  label,
+  title,
+  allProducts,
+  language,
+}: VantiProductFamiliesProps) {
+  const lang = language === 'en' ? 'en' : 'tr';
+  const catalogBase =
+    process.env.NODE_ENV === 'production' ? '/brand/vanti/urunler' : '/urunler';
 
   const families = useMemo(() => {
     return FAMILIES.map((f) => {
       const q = f.query.toLowerCase();
       const count = allProducts.filter((p) => {
-        const model = (p.model || "").toLowerCase();
-        const name = (p.name?.tr || "").toLowerCase();
+        const model = (p.model || '').toLowerCase();
+        const name = (p.name?.tr || '').toLowerCase();
         return model.includes(q) || name.includes(q);
       }).length;
       const rep = allProducts.find((p) => p.id === f.productId);
@@ -54,14 +102,19 @@ export function VantiProductFamilies({ label, title, allProducts, language }: Va
   const loopFamilies = [...families, ...families];
 
   return (
-    <section className="reveal-text relative z-10 w-full py-12 md:py-16 overflow-hidden" style={{ "--accent": "#0f766e" } as CSSProperties}>
+    <section
+      className="reveal-text relative z-10 w-full py-12 md:py-16 overflow-hidden"
+      style={{ '--accent': '#0f766e' } as CSSProperties}
+    >
       <div className="mb-10 md:mb-14 px-6 md:px-16 lg:px-24">
         <div className="inline-flex flex-col gap-4 bg-white/60 backdrop-blur-xl border border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[2rem] px-6 py-5 md:px-9 md:py-7">
           <h3 className="font-semibold tracking-[0.2em] uppercase text-sm md:text-base text-teal-700 flex items-center gap-4">
             <span className="w-12 h-[2px] rounded-full bg-teal-600 block"></span>
             {label}
           </h3>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight text-teal-950">{title}</h2>
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight text-teal-950">
+            {title}
+          </h2>
         </div>
       </div>
 
@@ -84,7 +137,7 @@ export function VantiProductFamilies({ label, title, allProducts, language }: Va
               >
                 <span className="relative shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-zinc-50">
                   <Image
-                    src={getAssetPath("/images/" + f.image)}
+                    src={getAssetPath('/images/' + f.image)}
                     alt=""
                     fill
                     sizes="80px"
@@ -94,10 +147,15 @@ export function VantiProductFamilies({ label, title, allProducts, language }: Va
                 </span>
                 <div className="min-w-0 flex-1">
                   <h4 className="font-bold text-base md:text-lg leading-snug text-teal-950 truncate">
-                    {lang === "en" ? f.nameEn : f.nameTr}
+                    {lang === 'en' ? f.nameEn : f.nameTr}
                   </h4>
                   <p className="text-xs text-teal-700/60 font-medium mt-0.5">
-                    {f.count} {lang === "en" ? (f.count === 1 ? "Product" : "Products") : "Ürün"}
+                    {f.count}{' '}
+                    {lang === 'en'
+                      ? f.count === 1
+                        ? 'Product'
+                        : 'Products'
+                      : 'Ürün'}
                   </p>
                 </div>
                 <svg
@@ -106,7 +164,12 @@ export function VantiProductFamilies({ label, title, allProducts, language }: Va
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
                 </svg>
               </Link>
             ))}

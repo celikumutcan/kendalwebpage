@@ -1,6 +1,6 @@
-declare module "topojson-client" {
+declare module 'topojson-client' {
   interface MinimalTopology {
-    type: "Topology";
+    type: 'Topology';
     objects: Record<string, unknown>;
     arcs: number[][][];
     transform?: { scale: [number, number]; translate: [number, number] };
@@ -8,6 +8,6 @@ declare module "topojson-client" {
 
   export function feature(
     topology: MinimalTopology,
-    object: unknown
+    object: unknown,
   ): GeoJSON.Feature | GeoJSON.FeatureCollection;
 }

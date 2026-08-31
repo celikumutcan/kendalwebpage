@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import React, { useRef } from 'react';
+import { gsap } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const AboutUs = () => {
   const { t } = useLanguage();
@@ -17,34 +17,34 @@ export const AboutUs = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         textRef.current,
-        { opacity: 0, filter: "blur(10px) brightness(0)", y: 30 },
+        { opacity: 0, filter: 'blur(10px) brightness(0)', y: 30 },
         {
           opacity: 1,
-          filter: "blur(0px) brightness(1)",
+          filter: 'blur(0px) brightness(1)',
           y: 0,
           duration: 1.5,
-          ease: "power3.out",
+          ease: 'power3.out',
           scrollTrigger: {
             trigger: textRef.current,
-            start: "top 80%",
+            start: 'top 80%',
           },
-        }
+        },
       );
 
       gsap.to(wireRef.current, {
         scaleY: 1,
-        ease: "none",
+        ease: 'none',
         scrollTrigger: {
           trigger: timelineRef.current,
-          start: "top 60%",
-          end: "bottom 70%",
+          start: 'top 60%',
+          end: 'bottom 70%',
           scrub: true,
         },
       });
 
       beatsRef.current.forEach((beat) => {
         if (!beat) return;
-        
+
         const dot = beat.querySelector('.timeline-dot');
         const content = beat.querySelector('.timeline-content');
 
@@ -62,11 +62,11 @@ export const AboutUs = () => {
             duration: 0.5,
             scrollTrigger: {
               trigger: beat,
-              start: "top 70%",
-              end: "top 50%",
+              start: 'top 70%',
+              end: 'top 50%',
               scrub: true,
             },
-          }
+          },
         );
       });
     }, containerRef);
@@ -85,7 +85,7 @@ export const AboutUs = () => {
       <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[700px] h-[500px] bg-[var(--brand-red)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none z-0" />
 
       <div className="absolute top-1/2 -translate-y-1/2 -right-[10%] w-[1600px] h-[600px] bg-cyan-400/30 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
-      
+
       <div className="relative max-w-7xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         <div ref={textRef} className="flex flex-col justify-center">
           <div className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-sm font-medium tracking-widest text-white/80 mb-6 w-max">
@@ -99,24 +99,28 @@ export const AboutUs = () => {
           </p>
         </div>
 
-        <div ref={timelineRef} className="flex flex-col space-y-12 pl-8 md:pl-12 relative mt-8 lg:mt-0">
-          
+        <div
+          ref={timelineRef}
+          className="flex flex-col space-y-12 pl-8 md:pl-12 relative mt-8 lg:mt-0"
+        >
           <div className="absolute top-2 bottom-2 left-0 w-[2px] bg-white/10 rounded-full overflow-hidden">
-            <div 
+            <div
               ref={wireRef}
               className="absolute top-0 left-0 w-full h-full bg-[var(--brand-red)] origin-top shadow-[0_0_15px_var(--brand-red)]"
-              style={{ transform: "scaleY(0)" }}
+              style={{ transform: 'scaleY(0)' }}
             />
           </div>
 
           {beats.map((beat: any, idx: number) => (
             <div
               key={idx}
-              ref={(el) => { beatsRef.current[idx] = el; }}
+              ref={(el) => {
+                beatsRef.current[idx] = el;
+              }}
               className="relative group cursor-default"
             >
               <div className="timeline-dot absolute -left-[37px] md:-left-[53px] top-1.5 w-4 h-4 bg-black border-2 border-[var(--brand-red)] rounded-full transition-transform duration-500 group-hover:scale-125 group-hover:bg-[var(--brand-red)] group-hover:shadow-[0_0_15px_var(--brand-red)]" />
-              
+
               <div className="timeline-content">
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-2 transition-colors duration-300 group-hover:text-[var(--brand-red)]">
                   {beat.title}

@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import type React from 'react';
+import { useRef } from 'react';
+import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const GsapContext = ({ children }: { children: React.ReactNode }) => {
   const ctx = useRef<ReturnType<typeof gsap.context> | null>(null);
 
   useIsomorphicLayoutEffect(() => {
-    ctx.current = gsap.context(() => {
-    });
+    ctx.current = gsap.context(() => {});
 
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll('section');
 
     // content-visibility toggles can fire in bursts while scrolling fast
     // (several sections flip skipped/rendered within the same frame or two).
@@ -42,13 +42,19 @@ export const GsapContext = ({ children }: { children: React.ReactNode }) => {
     window.addEventListener('scroll-refresh', handleForceRefresh);
 
     sections.forEach((section) => {
-      section.addEventListener("contentvisibilityautostatechange", handleContentVisibilityChange);
+      section.addEventListener(
+        'contentvisibilityautostatechange',
+        handleContentVisibilityChange,
+      );
     });
 
     return () => {
       if (refreshTimeout) clearTimeout(refreshTimeout);
       sections.forEach((section) => {
-        section.removeEventListener("contentvisibilityautostatechange", handleContentVisibilityChange);
+        section.removeEventListener(
+          'contentvisibilityautostatechange',
+          handleContentVisibilityChange,
+        );
       });
       window.removeEventListener('scroll-refresh', handleForceRefresh);
       ctx.current?.revert();

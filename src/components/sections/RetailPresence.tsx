@@ -1,29 +1,37 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-
-import Image from "next/image";
-import { getAssetPath } from "@/lib/basePath";
+import Image from 'next/image';
+import React, { useRef } from 'react';
+import { getAssetPath } from '@/lib/basePath';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 const RETAILERS = [
-  { name: "BİM", logo: getAssetPath("/images/retail/bim-logo.webp") },
-  { name: "A101", logo: getAssetPath("/images/retail/a101-logo.webp") },
-  { name: "Koçtaş", logo: getAssetPath("/images/retail/koctas-logo.webp") },
-  { name: "Türkiye Tarım Kredi Kooperatif Market", logo: getAssetPath("/images/retail/tarim-logo.webp") },
-  { name: "Bizim Toptan", logo: getAssetPath("/images/retail/bizim-logo.webp") },
-  { name: "Seç Market", logo: getAssetPath("/images/retail/sec-logo.webp") },
-  { name: "Avansas", logo: getAssetPath("/images/retail/avansas-logo.webp") },
-  { name: "ANPA Gross", logo: getAssetPath("/images/retail/anpa-logo.webp") },
+  { name: 'BİM', logo: getAssetPath('/images/retail/bim-logo.webp') },
+  { name: 'A101', logo: getAssetPath('/images/retail/a101-logo.webp') },
+  { name: 'Koçtaş', logo: getAssetPath('/images/retail/koctas-logo.webp') },
+  {
+    name: 'Türkiye Tarım Kredi Kooperatif Market',
+    logo: getAssetPath('/images/retail/tarim-logo.webp'),
+  },
+  {
+    name: 'Bizim Toptan',
+    logo: getAssetPath('/images/retail/bizim-logo.webp'),
+  },
+  { name: 'Seç Market', logo: getAssetPath('/images/retail/sec-logo.webp') },
+  { name: 'Avansas', logo: getAssetPath('/images/retail/avansas-logo.webp') },
+  { name: 'ANPA Gross', logo: getAssetPath('/images/retail/anpa-logo.webp') },
 ];
 
 export const RetailPresence = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
 
-
   return (
-    <section id="retail" ref={containerRef} className="w-full relative pt-36 pb-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden">
+    <section
+      id="retail"
+      ref={containerRef}
+      className="w-full relative pt-36 pb-32 px-6 border-t border-[var(--global-text)]/5 overflow-hidden"
+    >
       <div className="absolute inset-0 pointer-events-none overflow-hidden -z-10 opacity-50 dark:opacity-70">
         <div className="absolute -left-[20%] top-0 w-[600px] h-[600px] bg-gradient-to-br from-amber-400 to-orange-500 blur-[150px] rounded-full mix-blend-multiply dark:mix-blend-screen" />
 
@@ -34,7 +42,8 @@ export const RetailPresence = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-24 text-[var(--global-text)] opacity-90 tracking-tight">
-          {(t as any).retail?.title || "Türkiye'nin Önde Gelen Zincir Marketlerinde"}
+          {(t as any).retail?.title ||
+            "Türkiye'nin Önde Gelen Zincir Marketlerinde"}
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 items-center justify-items-center">

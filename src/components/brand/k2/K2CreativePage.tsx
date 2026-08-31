@@ -1,27 +1,35 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { K2Scene } from "./K2Scene";
-import { K2Preloader } from "./K2Preloader";
-import { CategoryShowcase } from "@/components/brand/shared/CategoryShowcase";
-import { ExportMap } from "@/components/brand/shared/ExportMap";
-import Link from "next/link";
-import { Product } from "@/data/products";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Link from 'next/link';
+import type React from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { CategoryShowcase } from '@/components/brand/shared/CategoryShowcase';
+import { ExportMap } from '@/components/brand/shared/ExportMap';
+import type { Product } from '@/data/products';
+import { getAssetPath } from '@/lib/basePath';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { K2Preloader } from './K2Preloader';
+import { K2Scene } from './K2Scene';
 
-import { getAssetPath } from "@/lib/basePath";
-
-if (typeof window !== "undefined") {
+if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const K2_ACCENT = "#f97316";
+const K2_ACCENT = '#f97316';
 
 function MountainIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="m8 3 4.5 9L17 6l5 14H2L8 3z" />
     </svg>
   );
@@ -29,7 +37,15 @@ function MountainIcon({ className }: { className?: string }) {
 
 function LayersIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="m12 2 9 5-9 5-9-5 9-5z" />
       <path d="m3 12 9 5 9-5" />
     </svg>
@@ -38,7 +54,15 @@ function LayersIcon({ className }: { className?: string }) {
 
 function ShieldIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
       <path d="M12 2 4 5v6c0 5.2 3.4 9.4 8 11 4.6-1.6 8-5.8 8-11V5l-8-3z" />
     </svg>
   );
@@ -50,62 +74,85 @@ interface K2CreativePageProps {
 
 const translations = {
   tr: {
-    heroSub: "AYDINLATMANIN ZİRVESİ",
-    explore: "Hikayeyi Keşfet",
-    whyEyebrow: "Neden K2?",
-    whyHeading: "Karanlığı aydınlatan güvenilir marka.",
-    whySubtext: "Kendal Elektrik güvencesiyle üretilen K2, profesyonel LED teknolojisi ve dayanıklılığıyla fark yaratıyor.",
+    heroSub: 'AYDINLATMANIN ZİRVESİ',
+    explore: 'Hikayeyi Keşfet',
+    whyEyebrow: 'Neden K2?',
+    whyHeading: 'Karanlığı aydınlatan güvenilir marka.',
+    whySubtext:
+      'Kendal Elektrik güvencesiyle üretilen K2, profesyonel LED teknolojisi ve dayanıklılığıyla fark yaratıyor.',
     trustStats: [
-      { value: "Sektörün Zirvesindeki Markalardan", label: "Profesyonel LED Aydınlatmada" },
-      { numericTarget: 9.5, suffix: " / 10", label: "Ortalama Müşteri Memnuniyeti" },
-      { value: "%1.5'in Altında", label: "İade Oranı" },
+      {
+        value: 'Sektörün Zirvesindeki Markalardan',
+        label: 'Profesyonel LED Aydınlatmada',
+      },
+      {
+        numericTarget: 9.5,
+        suffix: ' / 10',
+        label: 'Ortalama Müşteri Memnuniyeti',
+      },
+      { value: "%1.5'in Altında", label: 'İade Oranı' },
     ],
-    sec1Title: "Zirve",
-    sec1Text: "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Karanlığı Aydınlatıyoruz' vizyonuyla hareket etmektedir.",
-    sec2Title: "Geniş Yelpaze",
-    sec2Text: "Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eder. K2, Türkiye'nin en prestijli ve güvenilir aydınlatma markalarından biri olarak sektöre öncülük ediyor.",
-    popularLabel: "Ürün Kategorileri",
-    popularTitle: "Kategorilerimiz",
-    categoryCountLabel: "Ürün",
-    viewAllLabel: "Tüm Kategoriler",
-    exportEyebrow: "Global Erişim",
+    sec1Title: 'Zirve',
+    sec1Text:
+      "İsmini, dağcıların zirvesine ulaşması en zor ve prestijli dağlardan biri olan K2'den alan markamız, 'Karanlığı Aydınlatıyoruz' vizyonuyla hareket etmektedir.",
+    sec2Title: 'Geniş Yelpaze',
+    sec2Text:
+      "Kendal Elektrik'in profesyonel LED aydınlatma sistemleri, enerji verimliliği odaklı çözümleri ve dekoratif ürünlerini içeren geniş yelpazesini temsil eder. K2, Türkiye'nin en prestijli ve güvenilir aydınlatma markalarından biri olarak sektöre öncülük ediyor.",
+    popularLabel: 'Ürün Kategorileri',
+    popularTitle: 'Kategorilerimiz',
+    categoryCountLabel: 'Ürün',
+    viewAllLabel: 'Tüm Kategoriler',
+    exportEyebrow: 'Global Erişim',
     exportTitle: "K2'nin ışığı sınır tanımıyor.",
-    exportHint: "Haritadaki noktalara tıklayın.",
-    sec3Title: "Zorlu Koşullar",
-    sec3Text: "Spot, LED panel, projektör, solar armatür ve magnet sistemlerden dekoratif aydınlatmaya uzanan geniş ürün gamıyla K2; ev ve ofis aydınlatmasında yenilikçi LED çözümleriyle enerjiden tasarruf edin, geleceğe yatırım yapın.",
-    catalogBtn: "Ürünleri İncele"
+    exportHint: 'Haritadaki noktalara tıklayın.',
+    sec3Title: 'Zorlu Koşullar',
+    sec3Text:
+      'Spot, LED panel, projektör, solar armatür ve magnet sistemlerden dekoratif aydınlatmaya uzanan geniş ürün gamıyla K2; ev ve ofis aydınlatmasında yenilikçi LED çözümleriyle enerjiden tasarruf edin, geleceğe yatırım yapın.',
+    catalogBtn: 'Ürünleri İncele',
   },
   en: {
-    heroSub: "WE ILLUMINATE THE DARKNESS",
-    explore: "Discover the Story",
-    whyEyebrow: "Why K2?",
-    whyHeading: "The trusted brand that lights up the dark.",
-    whySubtext: "Backed by Kendal Elektrik's assurance, K2 stands out with professional LED technology and durability.",
+    heroSub: 'WE ILLUMINATE THE DARKNESS',
+    explore: 'Discover the Story',
+    whyEyebrow: 'Why K2?',
+    whyHeading: 'The trusted brand that lights up the dark.',
+    whySubtext:
+      "Backed by Kendal Elektrik's assurance, K2 stands out with professional LED technology and durability.",
     trustStats: [
-      { value: "A Peak Name in the Industry", label: "In Professional LED Lighting" },
-      { numericTarget: 9.5, suffix: " / 10", label: "Average Customer Satisfaction" },
-      { value: "Under 1.5%", label: "Return Rate" },
+      {
+        value: 'A Peak Name in the Industry',
+        label: 'In Professional LED Lighting',
+      },
+      {
+        numericTarget: 9.5,
+        suffix: ' / 10',
+        label: 'Average Customer Satisfaction',
+      },
+      { value: 'Under 1.5%', label: 'Return Rate' },
     ],
-    sec1Title: "The Peak",
-    sec1Text: "Taking its name from K2, one of the most difficult and prestigious mountains for climbers to conquer, our brand operates with the vision to 'Illuminate the Darkness'.",
-    sec2Title: "Wide Range",
-    sec2Text: "Represents the wide range of Kendal Elektrik's professional LED lighting systems, energy efficiency-oriented solutions, and decorative products. K2 leads the industry as one of Turkey's most prestigious and trusted lighting brands.",
-    popularLabel: "Product Categories",
-    popularTitle: "Our Categories",
-    categoryCountLabel: "Products",
-    viewAllLabel: "All Categories",
-    exportEyebrow: "Global Reach",
+    sec1Title: 'The Peak',
+    sec1Text:
+      "Taking its name from K2, one of the most difficult and prestigious mountains for climbers to conquer, our brand operates with the vision to 'Illuminate the Darkness'.",
+    sec2Title: 'Wide Range',
+    sec2Text:
+      "Represents the wide range of Kendal Elektrik's professional LED lighting systems, energy efficiency-oriented solutions, and decorative products. K2 leads the industry as one of Turkey's most prestigious and trusted lighting brands.",
+    popularLabel: 'Product Categories',
+    popularTitle: 'Our Categories',
+    categoryCountLabel: 'Products',
+    viewAllLabel: 'All Categories',
+    exportEyebrow: 'Global Reach',
     exportTitle: "K2's light knows no borders.",
-    exportHint: "Click a point on the map.",
-    sec3Title: "Extreme Conditions",
-    sec3Text: "From spotlights, LED panels and floodlights to solar fixtures, magnet systems and decorative lighting, K2's extensive range brings innovative LED solutions to home and office lighting — save energy, invest in the future.",
-    catalogBtn: "Explore Products"
-  }
+    exportHint: 'Click a point on the map.',
+    sec3Title: 'Extreme Conditions',
+    sec3Text:
+      "From spotlights, LED panels and floodlights to solar fixtures, magnet systems and decorative lighting, K2's extensive range brings innovative LED solutions to home and office lighting — save energy, invest in the future.",
+    catalogBtn: 'Explore Products',
+  },
 };
 
 export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   const { language } = useLanguage();
-  const t = translations[language as keyof typeof translations] || translations.tr;
+  const t =
+    translations[language as keyof typeof translations] || translations.tr;
 
   const containerRef = useRef<HTMLDivElement>(null);
   const heroTextRef = useRef<HTMLHeadingElement>(null);
@@ -129,41 +176,50 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
     tl.fromTo(
       ridgeWrapRef.current,
       { opacity: 0, y: 24 },
-      { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }
+      { opacity: 1, y: 0, duration: 0.7, ease: 'power2.out' },
     )
       .fromTo(
         traceRef.current,
         { strokeDashoffset: 1 },
-        { strokeDashoffset: 0, duration: 1.5, ease: "power2.inOut" },
-        "-=0.15"
+        { strokeDashoffset: 0, duration: 1.5, ease: 'power2.inOut' },
+        '-=0.15',
       )
-      .to(flashRef.current, { opacity: 0.55, duration: 0.18, ease: "power1.in" }, "-=0.1")
-      .to(flashRef.current, { opacity: 0, duration: 0.5, ease: "power2.out" })
+      .to(
+        flashRef.current,
+        { opacity: 0.55, duration: 0.18, ease: 'power1.in' },
+        '-=0.1',
+      )
+      .to(flashRef.current, { opacity: 0, duration: 0.5, ease: 'power2.out' })
       .fromTo(
         burstRef.current,
         { opacity: 0, scale: 0.25 },
-        { opacity: 1, scale: 1.3, duration: 0.6, ease: "power2.out" },
-        "<"
+        { opacity: 1, scale: 1.3, duration: 0.6, ease: 'power2.out' },
+        '<',
       )
-      .to(burstRef.current, { scale: 1, duration: 0.5, ease: "power1.out" })
+      .to(burstRef.current, { scale: 1, duration: 0.5, ease: 'power1.out' })
       .fromTo(
         logoRef.current,
         { opacity: 0, scale: 0.85, y: 10 },
-        { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: "power3.out" },
-        "-=0.6"
+        { opacity: 1, scale: 1, y: 0, duration: 1.1, ease: 'power3.out' },
+        '-=0.6',
       )
       .fromTo(
         heroSubRef.current,
-        { opacity: 0, letterSpacing: "0.15em" },
-        { opacity: 1, letterSpacing: "0.5em", duration: 0.9, ease: "power2.out" },
-        "-=0.5"
+        { opacity: 0, letterSpacing: '0.15em' },
+        {
+          opacity: 1,
+          letterSpacing: '0.5em',
+          duration: 0.9,
+          ease: 'power2.out',
+        },
+        '-=0.5',
       );
 
     tl.fromTo(
       scrollHintRef.current,
       { opacity: 0, y: 10 },
-      { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-      "-=0.3"
+      { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' },
+      '-=0.3',
     );
 
     tl.call(() => {
@@ -173,7 +229,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         duration: 3,
         repeat: -1,
         yoyo: true,
-        ease: "sine.inOut",
+        ease: 'sine.inOut',
       });
     });
 
@@ -191,13 +247,13 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
         opacity: 0,
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top top",
-          end: "bottom top",
+          start: 'top top',
+          end: 'bottom top',
           scrub: true,
         },
       });
 
-      const sections = gsap.utils.toArray<Element>(".reveal-text");
+      const sections = gsap.utils.toArray<Element>('.reveal-text');
       sections.forEach((section) => {
         gsap.fromTo(
           section,
@@ -208,26 +264,26 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
             duration: 1,
             scrollTrigger: {
               trigger: section,
-              start: "top 95%",
-              end: "top 65%",
+              start: 'top 95%',
+              end: 'top 65%',
               scrub: 1,
             },
-          }
+          },
         );
       });
 
       t.trustStats.forEach((stat, i) => {
-        if (!("numericTarget" in stat)) return;
+        if (!('numericTarget' in stat)) return;
         const el = statNumberRefs.current[i];
         if (!el) return;
         const obj = { val: 0 };
         gsap.to(obj, {
           val: stat.numericTarget,
           duration: 2,
-          ease: "power3.out",
+          ease: 'power3.out',
           scrollTrigger: {
             trigger: el,
-            start: "top 90%",
+            start: 'top 90%',
           },
           onUpdate: () => {
             el.textContent = obj.val.toFixed(1) + stat.suffix;
@@ -240,8 +296,11 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   }, [language]);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-[#3a3a40] text-white selection:bg-orange-500 selection:text-white" style={{ "--page-bg": "#3a3a40" } as React.CSSProperties}>
-      
+    <div
+      ref={containerRef}
+      className="relative w-full bg-[#3a3a40] text-white selection:bg-orange-500 selection:text-white"
+      style={{ '--page-bg': '#3a3a40' } as React.CSSProperties}
+    >
       <K2Preloader ready={sceneReady} />
 
       <div className="k2-scene-wrapper fixed inset-0 z-0 pointer-events-none">
@@ -253,7 +312,8 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
           ref={flashRef}
           className="absolute inset-0 opacity-0 pointer-events-none"
           style={{
-            background: "radial-gradient(circle at 50% 62%, rgba(255,179,92,0.9), rgba(255,179,92,0) 60%)",
+            background:
+              'radial-gradient(circle at 50% 62%, rgba(255,179,92,0.9), rgba(255,179,92,0) 60%)',
           }}
         />
 
@@ -265,13 +325,14 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
             ref={burstRef}
             className="absolute opacity-0"
             style={{
-              left: "50%",
-              top: "2%",
-              width: "260px",
-              height: "260px",
-              transform: "translate(-50%, -50%)",
-              background: "radial-gradient(circle, rgba(255,203,110,0.85) 0%, rgba(255,153,60,0.35) 45%, rgba(255,153,60,0) 72%)",
-              filter: "blur(2px)",
+              left: '50%',
+              top: '2%',
+              width: '260px',
+              height: '260px',
+              transform: 'translate(-50%, -50%)',
+              background:
+                'radial-gradient(circle, rgba(255,203,110,0.85) 0%, rgba(255,153,60,0.35) 45%, rgba(255,153,60,0) 72%)',
+              filter: 'blur(2px)',
             }}
           />
           <svg
@@ -295,26 +356,37 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
               style={{
                 strokeDasharray: 1,
                 strokeDashoffset: 1,
-                filter: "drop-shadow(0 0 6px rgba(255,179,92,0.85))",
+                filter: 'drop-shadow(0 0 6px rgba(255,179,92,0.85))',
               }}
             />
           </svg>
         </div>
 
-        <div ref={heroTextRef} className="relative text-center flex flex-col items-center -mt-24 md:-mt-28">
-          <span ref={heroSubRef} className="text-sm md:text-2xl font-bold tracking-[0.35em] text-white block mb-6 md:mb-8 uppercase [text-shadow:0_2px_16px_rgba(0,0,0,0.9)] opacity-0">
+        <div
+          ref={heroTextRef}
+          className="relative text-center flex flex-col items-center -mt-24 md:-mt-28"
+        >
+          <span
+            ref={heroSubRef}
+            className="text-sm md:text-2xl font-bold tracking-[0.35em] text-white block mb-6 md:mb-8 uppercase [text-shadow:0_2px_16px_rgba(0,0,0,0.9)] opacity-0"
+          >
             {t.heroSub}
           </span>
           <img
             ref={logoRef}
-            src={getAssetPath("/images/brands/k2-logo.svg")}
+            src={getAssetPath('/images/brands/k2-logo.svg')}
             alt="K2 Logo"
             className="h-32 md:h-48 lg:h-56 mx-auto drop-shadow-2xl opacity-0"
           />
         </div>
 
-        <div ref={scrollHintRef} className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0">
-          <p className="text-xs tracking-widest uppercase opacity-50 mb-2">{t.explore}</p>
+        <div
+          ref={scrollHintRef}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-0"
+        >
+          <p className="text-xs tracking-widest uppercase opacity-50 mb-2">
+            {t.explore}
+          </p>
           <div className="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"></div>
         </div>
       </section>
@@ -326,8 +398,12 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
             <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 text-xs md:text-sm font-semibold tracking-widest uppercase text-orange-400 mb-6">
               {t.whyEyebrow}
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white mb-6">{t.whyHeading}</h2>
-            <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-md">{t.whySubtext}</p>
+            <h2 className="text-3xl md:text-5xl font-bold leading-tight text-white mb-6">
+              {t.whyHeading}
+            </h2>
+            <p className="text-base md:text-lg text-white/60 leading-relaxed max-w-md">
+              {t.whySubtext}
+            </p>
           </div>
 
           <div className="flex flex-col gap-10 pl-8 md:pl-10 relative">
@@ -336,13 +412,21 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
               <div key={stat.label} className="relative">
                 <div className="absolute -left-[41px] md:-left-[45px] top-1.5 w-4 h-4 bg-[#3a3a40] border-2 border-orange-500 rounded-full shadow-sm"></div>
                 <div className="text-2xl md:text-4xl font-bold text-orange-400 leading-tight mb-1.5">
-                  {"numericTarget" in stat ? (
-                    <span ref={(el) => { statNumberRefs.current[i] = el; }}>0{stat.suffix}</span>
+                  {'numericTarget' in stat ? (
+                    <span
+                      ref={(el) => {
+                        statNumberRefs.current[i] = el;
+                      }}
+                    >
+                      0{stat.suffix}
+                    </span>
                   ) : (
                     stat.value
                   )}
                 </div>
-                <div className="text-sm md:text-lg text-white/60">{stat.label}</div>
+                <div className="text-sm md:text-lg text-white/60">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -361,7 +445,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
             return (
               <div
                 key={item.title}
-                className={`flex flex-col gap-4 ${i > 0 ? "md:pl-10" : ""} ${i < 2 ? "md:pr-10" : ""}`}
+                className={`flex flex-col gap-4 ${i > 0 ? 'md:pl-10' : ''} ${i < 2 ? 'md:pr-10' : ''}`}
               >
                 <div className="w-12 h-12 rounded-full bg-orange-500/10 flex items-center justify-center text-orange-400">
                   <Icon className="w-6 h-6" />
@@ -396,19 +480,28 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
       <div className="relative overflow-hidden">
         <div className="absolute -top-16 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-amber-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
         <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-orange-500/30 blur-[110px] rounded-full pointer-events-none z-0" />
-        <ExportMap eyebrow={t.exportEyebrow} title={t.exportTitle} hint={t.exportHint} language={language} accent={K2_ACCENT} />
+        <ExportMap
+          eyebrow={t.exportEyebrow}
+          title={t.exportTitle}
+          hint={t.exportHint}
+          language={language}
+          accent={K2_ACCENT}
+        />
       </div>
 
       <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[420px] md:w-[650px] md:h-[500px] bg-orange-500/40 blur-[110px] rounded-full pointer-events-none z-0" />
         <Link
-          href={process.env.NODE_ENV === "production" ? "/brand/k2/urunler" : "/urunler"}
+          href={
+            process.env.NODE_ENV === 'production'
+              ? '/brand/k2/urunler'
+              : '/urunler'
+          }
           className="relative z-10 inline-flex items-center justify-center px-10 py-5 bg-orange-600 text-white font-bold tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(249,115,22,0.35)] hover:bg-orange-700 hover:shadow-[0_10px_28px_rgba(249,115,22,0.45)] transition-all duration-300"
         >
           {t.catalogBtn}
         </Link>
       </section>
-
     </div>
   );
 }

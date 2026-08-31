@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useRef, useState, useEffect } from "react";
-import Image from "next/image";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { getAssetPath } from "@/lib/basePath";
+import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
+import { getAssetPath } from '@/lib/basePath';
+import { gsap } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const Certifications = () => {
   const { t } = useLanguage();
@@ -13,8 +13,8 @@ export const Certifications = () => {
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      const items = gsap.utils.toArray(".cert-item");
-      
+      const items = gsap.utils.toArray('.cert-item');
+
       gsap.fromTo(
         items,
         { opacity: 0, scale: 0.9, y: 20 },
@@ -24,12 +24,12 @@ export const Certifications = () => {
           y: 0,
           duration: 0.6,
           stagger: 0.1,
-          ease: "power2.out",
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 80%",
+            start: 'top 80%',
           },
-        }
+        },
       );
     }, containerRef);
 
@@ -37,18 +37,38 @@ export const Certifications = () => {
   }, []);
 
   const isoSubCerts = [
-    getAssetPath("/images/certifications/ISO/1.webp"),
-    getAssetPath("/images/certifications/ISO/2.webp"),
-    getAssetPath("/images/certifications/ISO/3.webp"),
-    getAssetPath("/images/certifications/ISO/4.webp"),
+    getAssetPath('/images/certifications/ISO/1.webp'),
+    getAssetPath('/images/certifications/ISO/2.webp'),
+    getAssetPath('/images/certifications/ISO/3.webp'),
+    getAssetPath('/images/certifications/ISO/4.webp'),
   ];
 
   const certs = [
-    { id: "iso", label: (t as any).certifications?.iso, icon: getAssetPath("/images/certifications/iso.webp") },
-    { id: "tse", label: (t as any).certifications?.tse, icon: getAssetPath("/images/certifications/tse.webp") },
-    { id: "kalite", label: (t as any).certifications?.kalite, icon: getAssetPath("/images/certifications/kalite.webp") },
-    { id: "yerli", label: (t as any).certifications?.yerli, icon: getAssetPath("/images/certifications/yerli-uretim.webp") },
-    { id: "marka", label: (t as any).certifications?.marka_tescil, icon: getAssetPath("/images/certifications/marka-tescil.webp") },
+    {
+      id: 'iso',
+      label: (t as any).certifications?.iso,
+      icon: getAssetPath('/images/certifications/iso.webp'),
+    },
+    {
+      id: 'tse',
+      label: (t as any).certifications?.tse,
+      icon: getAssetPath('/images/certifications/tse.webp'),
+    },
+    {
+      id: 'kalite',
+      label: (t as any).certifications?.kalite,
+      icon: getAssetPath('/images/certifications/kalite.webp'),
+    },
+    {
+      id: 'yerli',
+      label: (t as any).certifications?.yerli,
+      icon: getAssetPath('/images/certifications/yerli-uretim.webp'),
+    },
+    {
+      id: 'marka',
+      label: (t as any).certifications?.marka_tescil,
+      icon: getAssetPath('/images/certifications/marka-tescil.webp'),
+    },
   ];
 
   return (
@@ -69,10 +89,46 @@ export const Certifications = () => {
               {cert.id === 'iso' && (
                 <>
                   <svg className="absolute inset-0 w-full h-full pointer-events-none z-10 transition-all duration-500 scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 origin-center">
-                    <line x1="50%" y1="45%" x2="0%" y2="0%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
-                    <line x1="50%" y1="45%" x2="100%" y2="0%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
-                    <line x1="50%" y1="45%" x2="0%" y2="100%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
-                    <line x1="50%" y1="45%" x2="100%" y2="100%" stroke="var(--brand-red)" strokeWidth="1.5" strokeDasharray="4 4" className="opacity-60" />
+                    <line
+                      x1="50%"
+                      y1="45%"
+                      x2="0%"
+                      y2="0%"
+                      stroke="var(--brand-red)"
+                      strokeWidth="1.5"
+                      strokeDasharray="4 4"
+                      className="opacity-60"
+                    />
+                    <line
+                      x1="50%"
+                      y1="45%"
+                      x2="100%"
+                      y2="0%"
+                      stroke="var(--brand-red)"
+                      strokeWidth="1.5"
+                      strokeDasharray="4 4"
+                      className="opacity-60"
+                    />
+                    <line
+                      x1="50%"
+                      y1="45%"
+                      x2="0%"
+                      y2="100%"
+                      stroke="var(--brand-red)"
+                      strokeWidth="1.5"
+                      strokeDasharray="4 4"
+                      className="opacity-60"
+                    />
+                    <line
+                      x1="50%"
+                      y1="45%"
+                      x2="100%"
+                      y2="100%"
+                      stroke="var(--brand-red)"
+                      strokeWidth="1.5"
+                      strokeDasharray="4 4"
+                      className="opacity-60"
+                    />
                   </svg>
 
                   {isoSubCerts.map((subIcon, subIdx) => {
@@ -80,25 +136,32 @@ export const Certifications = () => {
                       { left: '0%', top: '0%' },
                       { left: '100%', top: '0%' },
                       { left: '0%', top: '100%' },
-                      { left: '100%', top: '100%' }
+                      { left: '100%', top: '100%' },
                     ];
-                    
+
                     const pos = positions[subIdx];
 
                     return (
-                      <div 
-                        key={subIdx} 
+                      <div
+                        key={subIdx}
                         className="absolute z-20 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 pointer-events-none group-hover:pointer-events-auto"
-                        style={{ left: pos.left, top: pos.top, transitionDelay: `${subIdx * 50}ms` }}
+                        style={{
+                          left: pos.left,
+                          top: pos.top,
+                          transitionDelay: `${subIdx * 50}ms`,
+                        }}
                       >
                         <div className="relative w-full h-full bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(227,0,15,0.4)]">
-                          <Image 
-                            src={subIcon} 
-                            alt={`ISO Detail ${subIdx + 1}`} 
-                            fill 
-                            sizes="(max-width: 768px) 80px, 96px" 
-                            className="object-contain p-2" 
-                            style={{ filter: "hue-rotate(135deg) saturate(2.5) contrast(1.1)" }}
+                          <Image
+                            src={subIcon}
+                            alt={`ISO Detail ${subIdx + 1}`}
+                            fill
+                            sizes="(max-width: 768px) 80px, 96px"
+                            className="object-contain p-2"
+                            style={{
+                              filter:
+                                'hue-rotate(135deg) saturate(2.5) contrast(1.1)',
+                            }}
                           />
                         </div>
                       </div>
@@ -112,7 +175,7 @@ export const Certifications = () => {
                   <div className="absolute inset-0 z-30 flex items-center justify-center transition-transform duration-500 group-hover:scale-90 bg-transparent rounded-full">
                     <Image
                       src={cert.icon}
-                      alt={cert.label || "Certification"}
+                      alt={cert.label || 'Certification'}
                       fill
                       sizes="128px"
                       className="object-contain drop-shadow-md"
@@ -122,7 +185,7 @@ export const Certifications = () => {
                   <div className="relative w-24 h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-md">
                     <Image
                       src={cert.icon}
-                      alt={cert.label || "Certification"}
+                      alt={cert.label || 'Certification'}
                       fill
                       sizes="96px"
                       className="object-contain drop-shadow-md"
@@ -130,11 +193,12 @@ export const Certifications = () => {
                   </div>
                 )}
               </div>
-              
-              <h3 className={`text-center text-sm md:text-base font-medium text-[var(--global-text)] transition-opacity duration-300 ${cert.id === 'iso' ? 'opacity-90 group-hover:opacity-0' : 'opacity-70 group-hover:opacity-100'}`}>
+
+              <h3
+                className={`text-center text-sm md:text-base font-medium text-[var(--global-text)] transition-opacity duration-300 ${cert.id === 'iso' ? 'opacity-90 group-hover:opacity-0' : 'opacity-70 group-hover:opacity-100'}`}
+              >
                 {cert.label}
               </h3>
-              
             </div>
           ))}
         </div>
@@ -142,4 +206,3 @@ export const Certifications = () => {
     </section>
   );
 };
-

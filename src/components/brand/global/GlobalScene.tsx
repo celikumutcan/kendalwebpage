@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import * as THREE from "three";
+import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useEffect, useRef } from 'react';
+import * as THREE from 'three';
 
-const WARM_WHITE = "#FFE5B4";
+const WARM_WHITE = '#FFE5B4';
 const OFF_COLOR = new THREE.Color(0.05, 0.05, 0.05);
 
 let globalScrollProgress = 0;
@@ -14,17 +14,23 @@ function ScrollManager() {
     const handleScroll = () => {
       const introOffset = 1500;
       const scrollY = window.scrollY;
-      
+
       if (scrollY <= introOffset) {
         globalScrollProgress = 0;
       } else {
-        const maxScroll = Math.max(1, document.body.scrollHeight - window.innerHeight - introOffset);
-        globalScrollProgress = Math.min(1, Math.max(0, (scrollY - introOffset) / maxScroll));
+        const maxScroll = Math.max(
+          1,
+          document.body.scrollHeight - window.innerHeight - introOffset,
+        );
+        globalScrollProgress = Math.min(
+          1,
+          Math.max(0, (scrollY - introOffset) / maxScroll),
+        );
       }
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return null;
 }
@@ -49,9 +55,10 @@ function MainChandelier() {
     }
     if (ringRef.current) {
       ringRef.current.rotation.y = state.clock.elapsedTime * 0.1;
-      ringRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
-      
-      ringRef.current.position.y = 2 + (globalScrollProgress * 5);
+      ringRef.current.rotation.x =
+        Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
+
+      ringRef.current.position.y = 2 + globalScrollProgress * 5;
     }
   });
 
@@ -61,7 +68,13 @@ function MainChandelier() {
         <sphereGeometry args={[1.5, 32, 32]} />
         <meshBasicMaterial color={OFF_COLOR} />
       </mesh>
-      <pointLight ref={lightRef} color={WARM_WHITE} distance={50} decay={2} intensity={0} />
+      <pointLight
+        ref={lightRef}
+        color={WARM_WHITE}
+        distance={50}
+        decay={2}
+        intensity={0}
+      />
 
       <mesh rotation={[Math.PI / 2, 0, 0]}>
         <torusGeometry args={[2.5, 0.05, 16, 100]} />
@@ -87,10 +100,12 @@ function SceneBackground() {
   useFrame(() => {
     const targetPower = globalScrollProgress === 0 ? 0 : 1;
     powerRef.current += (targetPower - powerRef.current) * 0.05;
-    
+
     if (bgRef.current) {
       const mat = bgRef.current.material as THREE.MeshBasicMaterial;
-      mat.color.copy(new THREE.Color("#000000")).lerp(new THREE.Color("#f8f9fa"), powerRef.current);
+      mat.color
+        .copy(new THREE.Color('#000000'))
+        .lerp(new THREE.Color('#f8f9fa'), powerRef.current);
     }
   });
 

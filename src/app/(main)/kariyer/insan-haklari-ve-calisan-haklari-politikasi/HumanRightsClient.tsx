@@ -1,12 +1,14 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import React from 'react';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function HumanRightsClient() {
   const { t } = useLanguage();
   const paragraphs = (t as any).career?.human_rights as string[];
-  const title = (t as any).career?.links?.human_rights_title || "İnsan Hakları ve Çalışan Hakları Politikası";
+  const title =
+    (t as any).career?.links?.human_rights_title ||
+    'İnsan Hakları ve Çalışan Hakları Politikası';
 
   if (!paragraphs) return null;
 

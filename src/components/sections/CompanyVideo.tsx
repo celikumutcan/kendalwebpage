@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import React, { useRef, useState } from "react";
-import Image from "next/image";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { getAssetPath } from "@/lib/basePath";
+import Image from 'next/image';
+import React, { useRef, useState } from 'react';
+import { getAssetPath } from '@/lib/basePath';
+import { gsap } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const CompanyVideo = () => {
   const { t } = useLanguage();
@@ -23,12 +23,12 @@ export const CompanyVideo = () => {
           scale: 1,
           y: 0,
           duration: 1.2,
-          ease: "power3.out",
+          ease: 'power3.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 75%",
+            start: 'top 75%',
           },
-        }
+        },
       );
     }, containerRef);
 
@@ -46,21 +46,22 @@ export const CompanyVideo = () => {
       <div className="relative z-10 w-full max-w-5xl mx-auto flex flex-col items-center">
         <div className="flex flex-col items-center mb-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 pb-2 md:pb-4 leading-normal">
-            {(t as any).company_video?.discover || "Işığın Arkasındaki Gücü Keşfedin"}
+            {(t as any).company_video?.discover ||
+              'Işığın Arkasındaki Gücü Keşfedin'}
           </h2>
         </div>
-        
-        <div 
-          ref={videoRef}
-          className="w-full relative group"
-        >
+
+        <div ref={videoRef} className="w-full relative group">
           <div className="absolute -inset-2 md:-inset-4 bg-gradient-to-r from-[var(--brand-red)] via-orange-500 to-[var(--brand-red)] rounded-[2.5rem] md:rounded-[3rem] opacity-50 blur-2xl md:blur-3xl group-hover:opacity-75 transition-opacity duration-700 animate-pulse pointer-events-none" />
-          
-          <div className="w-full aspect-video rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10 bg-black cursor-pointer group/video" onClick={() => setIsPlaying(true)}>
+
+          <div
+            className="w-full aspect-video rounded-3xl overflow-hidden border border-white/20 shadow-[0_0_50px_rgba(0,0,0,0.8)] relative z-10 bg-black cursor-pointer group/video"
+            onClick={() => setIsPlaying(true)}
+          >
             {!isPlaying ? (
               <>
-                <Image 
-                  src={getAssetPath("/images/uretim/uretim-4.webp")}
+                <Image
+                  src={getAssetPath('/images/uretim/uretim-4.webp')}
                   alt="Kendal Elektrik Corporate Video Thumbnail"
                   fill
                   sizes="(max-width: 1024px) 100vw, 1024px"
@@ -68,7 +69,11 @@ export const CompanyVideo = () => {
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-20 h-20 bg-[var(--brand-red)] rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,0,0,0.6)] transform transition-transform duration-300 group-hover/video:scale-110">
-                    <svg className="w-8 h-8 text-white translate-x-[2px]" fill="currentColor" viewBox="0 0 24 24">
+                    <svg
+                      className="w-8 h-8 text-white translate-x-[2px]"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
                       <path d="M8 5v14l11-7z" />
                     </svg>
                   </div>

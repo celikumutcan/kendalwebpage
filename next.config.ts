@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 // Bu proje statik export olarak üretiliyor ve iki farklı statik barındırma
 // hedefi var:
@@ -11,7 +11,7 @@ import type { NextConfig } from "next";
 // .github/workflows/nextjs.yml). NEXT_PUBLIC_ öneki şart: basePath.ts bu
 // değeri "use client" bileşenlerinde de okuyor, öneksiz bir env değişkeni
 // tarayıcı paketine hiç dahil edilmez.
-const isGithubPagesBuild = process.env.NEXT_PUBLIC_BUILD_MODE === "ghpages";
+const isGithubPagesBuild = process.env.NEXT_PUBLIC_BUILD_MODE === 'ghpages';
 
 const nextConfig: NextConfig = {
   images: {
@@ -22,15 +22,19 @@ const nextConfig: NextConfig = {
   // konfigürasyonu hiçbir zaman uygulanmaz (ne GitHub Pages'te ne de
   // cPanel'de). Bu başlıklar artık public/.htaccess üzerinden, Apache
   // tarafından cPanel'de sunuluyor.
-  ...(process.env.NODE_ENV === "production" ? {
-    output: "export",
-    images: { unoptimized: true },
-    trailingSlash: true,
-    ...(isGithubPagesBuild ? {
-      basePath: "/kendalwebpage",
-      assetPrefix: "/kendalwebpage",
-    } : {}),
-  } : {}),
+  ...(process.env.NODE_ENV === 'production'
+    ? {
+        output: 'export',
+        images: { unoptimized: true },
+        trailingSlash: true,
+        ...(isGithubPagesBuild
+          ? {
+              basePath: '/kendalwebpage',
+              assetPrefix: '/kendalwebpage',
+            }
+          : {}),
+      }
+    : {}),
   devIndicators: false,
 };
 

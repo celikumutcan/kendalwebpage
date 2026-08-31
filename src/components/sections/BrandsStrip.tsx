@@ -1,24 +1,27 @@
-"use client";
+'use client';
 
-import React from "react";
-import Image from "next/image";
-import { getAssetPath } from "@/lib/basePath";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import Image from 'next/image';
+import React from 'react';
+import { getAssetPath } from '@/lib/basePath';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 const BRANDS = [
-  { name: "K2", logo: getAssetPath("/images/brands/k2-logo.svg") },
-  { name: "Vanti", logo: getAssetPath("/images/brands/vanti-logo.svg") },
-  { name: "Global", logo: getAssetPath("/images/brands/global-logo.svg") },
+  { name: 'K2', logo: getAssetPath('/images/brands/k2-logo.svg') },
+  { name: 'Vanti', logo: getAssetPath('/images/brands/vanti-logo.svg') },
+  { name: 'Global', logo: getAssetPath('/images/brands/global-logo.svg') },
 ];
 
 export const BrandsStrip = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="brands" className="w-full bg-white py-16 md:py-24 overflow-hidden border-y border-gray-200 relative flex flex-col items-center">
+    <section
+      id="brands"
+      className="w-full bg-white py-16 md:py-24 overflow-hidden border-y border-gray-200 relative flex flex-col items-center"
+    >
       <div className="mb-12 text-center pointer-events-none">
         <h3 className="text-gray-900 text-lg md:text-xl font-bold tracking-widest uppercase">
-          {(t as any).brands_strip?.title || "Markalarımız"}
+          {(t as any).brands_strip?.title || 'Markalarımız'}
         </h3>
         <div className="w-16 h-1 bg-[var(--brand-red)] rounded-full mx-auto mt-4" />
       </div>

@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
+import dynamic from 'next/dynamic';
+import { useEffect, useRef, useState } from 'react';
 
-const DealerMapInner = dynamic(() => import("./DealerMapInner"), {
+const DealerMapInner = dynamic(() => import('./DealerMapInner'), {
   ssr: false,
   loading: () => (
     <div className="w-full aspect-[900/420] rounded-[2rem] bg-zinc-500/10 border border-zinc-500/20 animate-pulse" />
@@ -18,18 +18,27 @@ interface DealerMapProps {
   dealerLabel: string;
   language: string;
   accent: string;
-  theme?: "dark" | "light";
+  theme?: 'dark' | 'light';
 }
 
-export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, accent, theme = "dark" }: DealerMapProps) {
-  const isDark = theme === "dark";
+export function DealerMap({
+  eyebrow,
+  title,
+  hint,
+  badge,
+  dealerLabel,
+  language,
+  accent,
+  theme = 'dark',
+}: DealerMapProps) {
+  const isDark = theme === 'dark';
   const placeholderClass = isDark
-    ? "bg-black/55 backdrop-blur-xl border-white/10"
-    : "bg-white/70 backdrop-blur-xl border-white/50";
-  const hintColor = isDark ? "text-white/60" : "text-zinc-800 font-medium";
+    ? 'bg-black/55 backdrop-blur-xl border-white/10'
+    : 'bg-white/70 backdrop-blur-xl border-white/50';
+  const hintColor = isDark ? 'text-white/60' : 'text-zinc-800 font-medium';
   const badgeClass = isDark
-    ? "bg-white/10 border-white/15 text-white shadow-[0_0_15px_rgba(255,255,255,0.05)]"
-    : "bg-white/90 backdrop-blur-md border border-zinc-200 text-zinc-900 shadow-md";
+    ? 'bg-white/10 border-white/15 text-white shadow-[0_0_15px_rgba(255,255,255,0.05)]'
+    : 'bg-white/90 backdrop-blur-md border border-zinc-200 text-zinc-900 shadow-md';
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
 
@@ -44,26 +53,38 @@ export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, 
           observer.disconnect();
         }
       },
-      { rootMargin: "400px" }
+      { rootMargin: '400px' },
     );
     observer.observe(node);
     return () => observer.disconnect();
   }, [shouldLoad]);
 
   const textBgClass = isDark
-    ? "bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
-    : "bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]";
+    ? 'bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]'
+    : 'bg-white/50 backdrop-blur-xl border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)]';
 
   return (
     <section className="reveal-text relative z-10 w-full py-12 md:py-16 px-6 md:px-24">
       <div className="flex justify-center mb-10 md:mb-14">
-        <div className={`text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border ${textBgClass}`}>
-          <h3 className="font-semibold tracking-widest mb-4 uppercase text-sm md:text-base" style={{ color: accent }}>
+        <div
+          className={`text-center max-w-2xl p-8 md:p-10 rounded-[2.5rem] border ${textBgClass}`}
+        >
+          <h3
+            className="font-semibold tracking-widest mb-4 uppercase text-sm md:text-base"
+            style={{ color: accent }}
+          >
             {eyebrow}
           </h3>
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">{title}</h2>
-          <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border text-xs md:text-sm font-bold uppercase tracking-wide ${badgeClass}`}>
-            <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: accent }} />
+          <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+            {title}
+          </h2>
+          <span
+            className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border text-xs md:text-sm font-bold uppercase tracking-wide ${badgeClass}`}
+          >
+            <span
+              className="w-1.5 h-1.5 rounded-full"
+              style={{ backgroundColor: accent }}
+            />
             {badge}
           </span>
         </div>
@@ -71,9 +92,16 @@ export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, 
 
       <div ref={wrapperRef} className="max-w-7xl mx-auto">
         {shouldLoad ? (
-          <DealerMapInner language={language} accent={accent} theme={theme} dealerLabel={dealerLabel} />
+          <DealerMapInner
+            language={language}
+            accent={accent}
+            theme={theme}
+            dealerLabel={dealerLabel}
+          />
         ) : (
-          <div className={`w-full aspect-[900/420] rounded-[2rem] ${placeholderClass}`} />
+          <div
+            className={`w-full aspect-[900/420] rounded-[2rem] ${placeholderClass}`}
+          />
         )}
       </div>
 
@@ -81,7 +109,9 @@ export function DealerMap({ eyebrow, title, hint, badge, dealerLabel, language, 
         {isDark ? (
           <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
         ) : (
-          <span className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}>
+          <span
+            className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}
+          >
             {hint}
           </span>
         )}

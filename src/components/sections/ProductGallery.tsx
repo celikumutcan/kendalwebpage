@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
+import React, { useRef } from 'react';
+import { gsap } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export const ProductGallery = () => {
   const { t } = useLanguage();
@@ -20,12 +20,12 @@ export const ProductGallery = () => {
           y: 0,
           duration: 0.8,
           stagger: 0.1,
-          ease: "power2.out",
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 80%",
+            start: 'top 80%',
           },
-        }
+        },
       );
     }, containerRef);
 
@@ -57,11 +57,13 @@ export const ProductGallery = () => {
           {categories.map((category, idx) => (
             <div
               key={idx}
-              ref={(el) => { itemsRef.current[idx] = el; }}
+              ref={(el) => {
+                itemsRef.current[idx] = el;
+              }}
               className="group relative h-72 md:h-80 rounded-3xl bg-[var(--global-text)] bg-opacity-[0.03] border border-[var(--global-text)] border-opacity-5 overflow-hidden flex flex-col justify-end p-8 hover:bg-opacity-[0.05] hover:border-opacity-10 transition-all duration-500 cursor-pointer"
             >
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 rounded-full bg-[var(--accent-current)] opacity-0 group-hover:opacity-[0.15] blur-[80px] transition-opacity duration-700 pointer-events-none" />
-              
+
               <div className="absolute top-6 left-8 text-5xl font-black text-[var(--global-text)] opacity-10 pointer-events-none transition-opacity duration-500 group-hover:opacity-20">
                 0{idx + 1}
               </div>

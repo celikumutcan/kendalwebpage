@@ -1,23 +1,23 @@
-"use client";
+'use client';
 
-import React, { useRef, useState, useEffect } from "react";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import dynamic from "next/dynamic";
-import Image from "next/image";
-import { getAssetPath } from "@/lib/basePath";
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import React, { useEffect, useRef, useState } from 'react';
+import { getAssetPath } from '@/lib/basePath';
+import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 const LightCoreFallback = () => (
   <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.03)_0%,_transparent_50%)] animate-pulse pointer-events-none" />
 );
 
 const LightCore = dynamic(
-  () => import("@/components/engine/LightCore").then((mod) => mod.LightCore),
+  () => import('@/components/engine/LightCore').then((mod) => mod.LightCore),
   {
     ssr: false,
     loading: LightCoreFallback,
-  }
+  },
 );
 
 export const Hero = () => {
@@ -44,8 +44,8 @@ export const Hero = () => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: containerRef.current,
-        start: "top top",
-        end: "bottom top",
+        start: 'top top',
+        end: 'bottom top',
         scrub: true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
@@ -60,14 +60,14 @@ export const Hero = () => {
           opacity: 1,
           y: 0,
           duration: 1,
-          ease: "power2.out",
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top -5%",
-            end: "top -30%",
+            start: 'top -5%',
+            end: 'top -30%',
             scrub: 0.5,
           },
-        }
+        },
       );
     }, containerRef);
 
@@ -104,16 +104,14 @@ export const Hero = () => {
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))]">
             {t.hero.title_part1} <br />
-            <span className="">
-              {t.hero.title_part2}
-            </span>
+            <span className="">{t.hero.title_part2}</span>
           </h1>
           <p className="mt-6 max-w-lg text-lg md:text-xl text-white font-medium [filter:drop-shadow(0_0_6px_rgba(0,0,0,0.5))_drop-shadow(0_2px_6px_rgba(0,0,0,0.7))]">
             {t.hero.subtitle}
           </p>
           <div className="mt-8 relative w-72 h-32 md:w-[32rem] md:h-44 transition-transform hover:scale-105 duration-500">
             <Image
-              src={getAssetPath("/images/brands/k2-logo.svg")}
+              src={getAssetPath('/images/brands/k2-logo.svg')}
               alt="K2 LED"
               fill
               sizes="(max-width: 768px) 288px, 512px"

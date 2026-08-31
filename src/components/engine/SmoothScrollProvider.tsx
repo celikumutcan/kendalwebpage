@@ -1,8 +1,9 @@
-"use client";
+'use client';
 
-import React, { createContext, useContext, useEffect, useRef, useState } from "react";
-import Lenis from "lenis";
-import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
+import Lenis from 'lenis';
+import type React from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
 
 export const LenisContext = createContext<Lenis | null>(null);
 
@@ -10,18 +11,25 @@ export const LenisContext = createContext<Lenis | null>(null);
 export const useLenis = () => useContext(LenisContext);
 
 // Creates and provides a single Lenis smooth-scroll instance to the whole app
-export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }) => {
+export const SmoothScrollProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   const lenisRef = useRef<Lenis | null>(null);
   const [lenisState, setLenisState] = useState<Lenis | null>(null);
 
   useEffect(() => {
-    if (typeof window !== "undefined" && "scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
+    if (
+      typeof window !== 'undefined' &&
+      'scrollRestoration' in window.history
+    ) {
+      window.history.scrollRestoration = 'manual';
     }
 
     const lenis = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
       smoothWheel: true,
       wheelMultiplier: 1,
       touchMultiplier: 2,
@@ -31,7 +39,7 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
     setLenisState(lenis);
 
     let ticking = false;
-    lenis.on("scroll", () => {
+    lenis.on('scroll', () => {
       if (!ticking) {
         window.requestAnimationFrame(() => {
           ScrollTrigger.update();
@@ -58,5 +66,7 @@ export const SmoothScrollProvider = ({ children }: { children: React.ReactNode }
     };
   }, []);
 
-  return <LenisContext.Provider value={lenisState}>{children}</LenisContext.Provider>;
+  return (
+    <LenisContext.Provider value={lenisState}>{children}</LenisContext.Provider>
+  );
 };

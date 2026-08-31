@@ -1,12 +1,13 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import React from 'react';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function PrinciplesClient() {
   const { t } = useLanguage();
   const principles = (t as any).career?.principles as string[];
-  const title = (t as any).career?.links?.principles_title || "Temel İlkelerimiz";
+  const title =
+    (t as any).career?.links?.principles_title || 'Temel İlkelerimiz';
 
   if (!principles) return null;
 
@@ -24,7 +25,9 @@ export function PrinciplesClient() {
         <div className="space-y-6 text-white/90 leading-relaxed text-justify">
           <ul className="list-disc pl-5 space-y-4">
             {principles.map((item, idx) => (
-              <li key={idx} className="pl-2">{item}</li>
+              <li key={idx} className="pl-2">
+                {item}
+              </li>
             ))}
           </ul>
         </div>

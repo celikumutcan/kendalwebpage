@@ -1,15 +1,17 @@
-"use client";
+'use client';
 
-import React, { useRef } from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { gsap, ScrollTrigger } from "@/lib/gsapConfig";
-import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
-import dynamic from "next/dynamic";
-import { useState } from "react";
+import dynamic from 'next/dynamic';
+import React, { useRef, useState } from 'react';
+import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
-const Globe = dynamic(() => import("@/components/engine/Globe").then((mod) => mod.Globe), {
-  ssr: false,
-});
+const Globe = dynamic(
+  () => import('@/components/engine/Globe').then((mod) => mod.Globe),
+  {
+    ssr: false,
+  },
+);
 
 export const GlobalPresence = () => {
   const { t } = useLanguage();
@@ -21,8 +23,8 @@ export const GlobalPresence = () => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: containerRef.current,
-        start: "top top",
-        end: "bottom bottom",
+        start: 'top top',
+        end: 'bottom bottom',
         scrub: true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
@@ -31,21 +33,21 @@ export const GlobalPresence = () => {
       });
 
       gsap.fromTo(
-        ".global-reveal",
+        '.global-reveal',
         { opacity: 0, y: 40 },
         {
           opacity: 1,
           y: 0,
           duration: 0.8,
           stagger: 0.1,
-          ease: "power2.out",
+          ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 15%",
-            end: "center center",
+            start: 'top 15%',
+            end: 'center center',
             scrub: 0.8,
           },
-        }
+        },
       );
     }, containerRef);
 
@@ -65,12 +67,18 @@ export const GlobalPresence = () => {
 
         <div
           className="absolute top-[-20vh] left-1/2 -translate-x-1/2 w-[150vw] h-[150vh] pointer-events-none opacity-15 mix-blend-overlay z-10"
-          style={{ background: 'conic-gradient(from 150deg at 50% 0%, transparent 0deg, rgba(255,255,255,1) 30deg, transparent 60deg)' }}
+          style={{
+            background:
+              'conic-gradient(from 150deg at 50% 0%, transparent 0deg, rgba(255,255,255,1) 30deg, transparent 60deg)',
+          }}
         />
 
         <div className="absolute inset-0 z-10 bg-black/30 pointer-events-none" />
 
-        <div ref={textRef} className="relative z-20 max-w-4xl mx-auto flex flex-col items-center text-center px-6">
+        <div
+          ref={textRef}
+          className="relative z-20 max-w-4xl mx-auto flex flex-col items-center text-center px-6"
+        >
           <h2 className="global-reveal text-4xl md:text-5xl lg:text-7xl font-bold mb-6 text-[var(--global-text)] tracking-tight drop-shadow-2xl">
             {t.global.title}
           </h2>

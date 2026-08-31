@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { getAssetPath } from "@/lib/basePath";
+import gsap from 'gsap';
+import React, { useEffect, useRef, useState } from 'react';
+import { getAssetPath } from '@/lib/basePath';
 
 interface VantiPreloaderProps {
   ready: boolean;
@@ -25,14 +25,18 @@ export function VantiPreloader({ ready }: VantiPreloaderProps) {
         opacity: 0,
         scale: 1.08,
         duration: 0.35,
-        ease: "power2.in",
+        ease: 'power2.in',
       })
         .to(
           topRef.current,
-          { y: "-100%", duration: 1, ease: "expo.inOut" },
-          "-=0.05"
+          { y: '-100%', duration: 1, ease: 'expo.inOut' },
+          '-=0.05',
         )
-        .to(bottomRef.current, { y: "100%", duration: 1, ease: "expo.inOut" }, "<")
+        .to(
+          bottomRef.current,
+          { y: '100%', duration: 1, ease: 'expo.inOut' },
+          '<',
+        )
         .to(containerRef.current, { autoAlpha: 0, duration: 0.1 });
     }, containerRef);
 
@@ -59,7 +63,7 @@ export function VantiPreloader({ ready }: VantiPreloaderProps) {
         className="absolute inset-0 flex items-center justify-center"
       >
         <img
-          src={getAssetPath("/images/brands/vanti-logo.svg")}
+          src={getAssetPath('/images/brands/vanti-logo.svg')}
           alt="Vanti"
           className="h-24 md:h-32 opacity-90 animate-pulse drop-shadow-md"
         />

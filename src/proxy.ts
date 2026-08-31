@@ -1,5 +1,5 @@
-import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
 export const config = {
   matcher: [
@@ -16,7 +16,9 @@ export function proxy(req: NextRequest) {
   const currentBrand = brands.find((brand) => hostname.startsWith(`${brand}.`));
 
   if (currentBrand) {
-    return NextResponse.rewrite(new URL(`/brand/${currentBrand}${url.pathname}${url.search}`, req.url));
+    return NextResponse.rewrite(
+      new URL(`/brand/${currentBrand}${url.pathname}${url.search}`, req.url),
+    );
   }
 
   if (url.pathname.startsWith('/brand')) {

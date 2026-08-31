@@ -1,12 +1,13 @@
-import React, { Suspense } from "react";
-import { Metadata } from "next";
-import CategoryFirstShowcase from "@/components/sections/CategoryFirstShowcase";
-import { products } from "@/data/products";
+import type { Metadata } from 'next';
+import React, { Suspense } from 'react';
+import CategoryFirstShowcase from '@/components/sections/CategoryFirstShowcase';
+import { products } from '@/data/products';
 
 export const metadata: Metadata = {
-  title: "Tüm Ürünlerimiz | Kendal Elektrik",
-  description: "Kendal Elektrik, K2 ve Vanti markalarına ait tüm aydınlatma ve elektrik ürünlerini keşfedin. Yerli üretim LED armatürler, vantilatörler ve daha fazlası.",
-  alternates: { canonical: "/urunler" },
+  title: 'Tüm Ürünlerimiz | Kendal Elektrik',
+  description:
+    'Kendal Elektrik, K2 ve Vanti markalarına ait tüm aydınlatma ve elektrik ürünlerini keşfedin. Yerli üretim LED armatürler, vantilatörler ve daha fazlası.',
+  alternates: { canonical: '/urunler' },
 };
 
 export default function GlobalUrunlerPage() {
@@ -16,10 +17,21 @@ export default function GlobalUrunlerPage() {
     <div className="w-full text-zinc-900 min-h-screen pt-32 pb-12 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">Tüm Ürünlerimiz</h1>
-          <p className="text-zinc-500 max-w-2xl mx-auto">Kendal Elektrik, K2 ve Vanti markalarımıza ait tüm aydınlatma ve elektrik ürünlerini inceleyebilirsiniz.</p>
+          <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
+            Tüm Ürünlerimiz
+          </h1>
+          <p className="text-zinc-500 max-w-2xl mx-auto">
+            Kendal Elektrik, K2 ve Vanti markalarımıza ait tüm aydınlatma ve
+            elektrik ürünlerini inceleyebilirsiniz.
+          </p>
         </div>
-        <Suspense fallback={<div className="py-24 text-center text-zinc-500">Ürünler Yükleniyor...</div>}>
+        <Suspense
+          fallback={
+            <div className="py-24 text-center text-zinc-500">
+              Ürünler Yükleniyor...
+            </div>
+          }
+        >
           <CategoryFirstShowcase products={allProducts} brandName="global" />
         </Suspense>
       </div>

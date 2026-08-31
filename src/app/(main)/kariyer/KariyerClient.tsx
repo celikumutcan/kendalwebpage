@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import React from "react";
-import Link from "next/link";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import Link from 'next/link';
+import React from 'react';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function KariyerClient() {
   const { t } = useLanguage();
@@ -11,20 +11,28 @@ export function KariyerClient() {
 
   const links = [
     {
-      href: "/kariyer/insan-kaynaklari-politikamiz",
-      title: career?.links?.hr_policy_title || "İnsan Kaynakları Politikamız",
-      desc: career?.links?.hr_policy_desc || "Kurumumuzun vizyonu, misyonu ve insan kaynakları stratejileri.",
+      href: '/kariyer/insan-kaynaklari-politikamiz',
+      title: career?.links?.hr_policy_title || 'İnsan Kaynakları Politikamız',
+      desc:
+        career?.links?.hr_policy_desc ||
+        'Kurumumuzun vizyonu, misyonu ve insan kaynakları stratejileri.',
     },
     {
-      href: "/kariyer/temel-ilkelerimiz",
-      title: career?.links?.principles_title || "Temel İlkelerimiz",
-      desc: career?.links?.principles_desc || "Kendal Elektrik ailesi olarak benimsediğimiz temel insan kaynakları prensipleri.",
+      href: '/kariyer/temel-ilkelerimiz',
+      title: career?.links?.principles_title || 'Temel İlkelerimiz',
+      desc:
+        career?.links?.principles_desc ||
+        'Kendal Elektrik ailesi olarak benimsediğimiz temel insan kaynakları prensipleri.',
     },
     {
-      href: "/kariyer/insan-haklari-ve-calisan-haklari-politikasi",
-      title: career?.links?.human_rights_title || "İnsan Hakları ve Çalışan Hakları Politikası",
-      desc: career?.links?.human_rights_desc || "Evrensel değerlere, eşitliğe ve işçi haklarına verdiğimiz önem.",
-    }
+      href: '/kariyer/insan-haklari-ve-calisan-haklari-politikasi',
+      title:
+        career?.links?.human_rights_title ||
+        'İnsan Hakları ve Çalışan Hakları Politikası',
+      desc:
+        career?.links?.human_rights_desc ||
+        'Evrensel değerlere, eşitliğe ve işçi haklarına verdiğimiz önem.',
+    },
   ];
 
   return (
@@ -35,10 +43,10 @@ export function KariyerClient() {
       </div>
       <div className="relative z-10 max-w-3xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white text-center">
-          {career?.title || "Kariyer"}
+          {career?.title || 'Kariyer'}
         </h1>
         <p className="text-gray-400 text-center mb-12 text-lg">
-          {career?.subtitle || "Kendal Elektrik Ailesine Katılın"}
+          {career?.subtitle || 'Kendal Elektrik Ailesine Katılın'}
         </p>
 
         <div className="space-y-6">
@@ -48,9 +56,7 @@ export function KariyerClient() {
                 <h2 className="text-2xl font-semibold text-white mb-2 group-hover:text-[var(--brand-red)] transition-colors">
                   {link.title}
                 </h2>
-                <p className="text-white/70 leading-relaxed">
-                  {link.desc}
-                </p>
+                <p className="text-white/70 leading-relaxed">{link.desc}</p>
               </div>
             </Link>
           ))}

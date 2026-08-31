@@ -1,12 +1,12 @@
-"use client";
+'use client';
 
-import { useMemo, useState, type CSSProperties } from "react";
-import { feature } from "topojson-client";
-import provincesTopology from "@/data/turkey-provinces.json";
+import { type CSSProperties, useMemo, useState } from 'react';
+import { feature } from 'topojson-client';
+import provincesTopology from '@/data/turkey-provinces.json';
 
 type Ring = [number, number][];
-type PolygonGeom = { type: "Polygon"; coordinates: Ring[] };
-type MultiPolygonGeom = { type: "MultiPolygon"; coordinates: Ring[][] };
+type PolygonGeom = { type: 'Polygon'; coordinates: Ring[] };
+type MultiPolygonGeom = { type: 'MultiPolygon'; coordinates: Ring[][] };
 
 interface ProvinceShape {
   name: string;
@@ -17,35 +17,40 @@ interface ProvinceShape {
 
 const WIDTH = 900;
 const NAME_OVERRIDES: Record<string, string> = {
-  Afyon: "Afyonkarahisar",
+  Afyon: 'Afyonkarahisar',
 };
 
-const EXCLUDED_PROVINCES = ["Hakkari", "Ağrı", "Muş", "Ardahan"];
+const EXCLUDED_PROVINCES = ['Hakkari', 'Ağrı', 'Muş', 'Ardahan'];
 
 interface DealerMapInnerProps {
   language: string;
   accent: string;
-  theme?: "dark" | "light";
+  theme?: 'dark' | 'light';
   dealerLabel: string;
 }
 
-export default function DealerMapInner({ language, accent, theme = "dark", dealerLabel }: DealerMapInnerProps) {
-  const isDark = theme === "dark";
+export default function DealerMapInner({
+  language,
+  accent,
+  theme = 'dark',
+  dealerLabel,
+}: DealerMapInnerProps) {
+  const isDark = theme === 'dark';
   const containerClass = isDark
-    ? "bg-black/55 backdrop-blur-xl border-white/10"
-    : "bg-white/70 backdrop-blur-xl border-white/50";
+    ? 'bg-black/55 backdrop-blur-xl border-white/10'
+    : 'bg-white/70 backdrop-blur-xl border-white/50';
   const [activeName, setActiveName] = useState<string | null>(null);
 
   const { provinces, height } = useMemo(() => {
     const topology = provincesTopology as unknown as {
-      type: "Topology";
+      type: 'Topology';
       objects: Record<string, unknown>;
       arcs: number[][][];
       transform?: { scale: [number, number]; translate: [number, number] };
     };
     const objectKey = Object.keys(topology.objects)[0];
     const geo = feature(topology, topology.objects[objectKey] as never);
-    const features = geo.type === "FeatureCollection" ? geo.features : [geo];
+    const features = geo.type === 'FeatureCollection' ? geo.features : [geo];
 
     let lonMin = Infinity;
     let lonMax = -Infinity;
@@ -53,7 +58,8 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
     let latMax = -Infinity;
     for (const f of features) {
       const geom = f.geometry as PolygonGeom | MultiPolygonGeom;
-      const polys = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
+      const polys =
+        geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
       for (const poly of polys) {
         for (const ring of poly) {
           for (const [lon, lat] of ring) {
@@ -81,14 +87,15 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
       `${ring
         .map(([lon, lat], i) => {
           const [x, y] = project(lon, lat);
-          return `${i === 0 ? "M" : "L"}${x.toFixed(1)},${y.toFixed(1)}`;
+          return `${i === 0 ? 'M' : 'L'}${x.toFixed(1)},${y.toFixed(1)}`;
         })
-        .join(" ")}Z`;
+        .join(' ')}Z`;
 
     const provinces: ProvinceShape[] = features.map((f) => {
       const geom = f.geometry as PolygonGeom | MultiPolygonGeom;
-      const polys = geom.type === "Polygon" ? [geom.coordinates] : geom.coordinates;
-      const d = polys.map((poly) => poly.map(ringPath).join(" ")).join(" ");
+      const polys =
+        geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+      const d = polys.map((poly) => poly.map(ringPath).join(' ')).join(' ');
 
       let mainRing: Ring = polys[0][0];
       for (const poly of polys) {
@@ -105,23 +112,35 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
       }
 
       const rawName = (f.properties as { name: string }).name;
-      return { name: NAME_OVERRIDES[rawName] || rawName, d, cx: sx / mainRing.length, cy: sy / mainRing.length };
+      return {
+        name: NAME_OVERRIDES[rawName] || rawName,
+        d,
+        cx: sx / mainRing.length,
+        cy: sy / mainRing.length,
+      };
     });
 
     return { provinces, height: mapHeight };
   }, []);
 
   const active = provinces.find((p) => p.name === activeName);
-  const clear = (name: string) => setActiveName((cur) => (cur === name ? null : cur));
+  const clear = (name: string) =>
+    setActiveName((cur) => (cur === name ? null : cur));
 
   return (
-    <div className="w-full" style={{ "--accent": accent } as CSSProperties}>
-      <div className={`relative w-full rounded-[2rem] border ${containerClass}`}>
+    <div className="w-full" style={{ '--accent': accent } as CSSProperties}>
+      <div
+        className={`relative w-full rounded-[2rem] border ${containerClass}`}
+      >
         <svg
           viewBox={`0 0 ${WIDTH} ${height.toFixed(1)}`}
           className="w-full h-auto block"
           role="img"
-          aria-label={language === "en" ? "Dealer coverage map of Turkey" : "Türkiye bayi kapsama haritası"}
+          aria-label={
+            language === 'en'
+              ? 'Dealer coverage map of Turkey'
+              : 'Türkiye bayi kapsama haritası'
+          }
         >
           {provinces.map((p) => {
             const isExcluded = EXCLUDED_PROVINCES.includes(p.name);
@@ -130,15 +149,25 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
               <path
                 key={p.name}
                 d={p.d}
-                fill={isExcluded ? (isDark ? "rgba(255,255,255,0.05)" : "rgba(0,0,0,0.05)") : "var(--accent)"}
-                fillOpacity={isExcluded ? 1 : (isActive ? 0.85 : 0.35)}
-                stroke={isDark ? "rgba(255,255,255,0.35)" : "rgba(255,255,255,0.9)"}
+                fill={
+                  isExcluded
+                    ? isDark
+                      ? 'rgba(255,255,255,0.05)'
+                      : 'rgba(0,0,0,0.05)'
+                    : 'var(--accent)'
+                }
+                fillOpacity={isExcluded ? 1 : isActive ? 0.85 : 0.35}
+                stroke={
+                  isDark ? 'rgba(255,255,255,0.35)' : 'rgba(255,255,255,0.9)'
+                }
                 strokeWidth={isActive ? 1.6 : 0.8}
                 tabIndex={isExcluded ? -1 : 0}
-                role={isExcluded ? "presentation" : "button"}
+                role={isExcluded ? 'presentation' : 'button'}
                 aria-label={p.name}
-                className={`${isExcluded ? "" : "cursor-pointer"} outline-none transition-[fill-opacity,stroke-width] duration-200`}
-                onMouseEnter={isExcluded ? undefined : () => setActiveName(p.name)}
+                className={`${isExcluded ? '' : 'cursor-pointer'} outline-none transition-[fill-opacity,stroke-width] duration-200`}
+                onMouseEnter={
+                  isExcluded ? undefined : () => setActiveName(p.name)
+                }
                 onMouseLeave={isExcluded ? undefined : () => clear(p.name)}
                 onFocus={isExcluded ? undefined : () => setActiveName(p.name)}
                 onBlur={isExcluded ? undefined : () => clear(p.name)}
@@ -150,9 +179,15 @@ export default function DealerMapInner({ language, accent, theme = "dark", deale
         {active && (
           <div
             className="pointer-events-none absolute z-10 px-4 py-2.5 rounded-xl bg-white text-zinc-900 shadow-2xl flex items-center gap-2 whitespace-nowrap animate-[k2-pop_.2s_ease-out_forwards]"
-            style={{ left: `${(active.cx / WIDTH) * 100}%`, top: `${(active.cy / height) * 100}%` }}
+            style={{
+              left: `${(active.cx / WIDTH) * 100}%`,
+              top: `${(active.cy / height) * 100}%`,
+            }}
           >
-            <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: accent }} />
+            <span
+              className="w-2 h-2 rounded-full shrink-0"
+              style={{ backgroundColor: accent }}
+            />
             <span className="text-sm font-bold">{active.name}</span>
             <span className="text-xs text-zinc-400">{dealerLabel}</span>
           </div>

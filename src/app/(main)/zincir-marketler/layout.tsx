@@ -1,16 +1,18 @@
-import { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Zincir Marketler | Kendal Elektrik",
-  description: "Kendal Elektrik ürünlerini bulabileceğiniz zincir marketler ve perakende satış noktalarımız.",
+  title: 'Zincir Marketler | Kendal Elektrik',
+  description:
+    'Kendal Elektrik ürünlerini bulabileceğiniz zincir marketler ve perakende satış noktalarımız.',
   openGraph: {
-    title: "Zincir Marketler | Kendal Elektrik",
-    description: "Kendal Elektrik ürünlerini bulabileceğiniz zincir marketler ve perakende satış noktalarımız.",
-    url: "/zincir-marketler",
+    title: 'Zincir Marketler | Kendal Elektrik',
+    description:
+      'Kendal Elektrik ürünlerini bulabileceğiniz zincir marketler ve perakende satış noktalarımız.',
+    url: '/zincir-marketler',
   },
   alternates: {
-    canonical: "/zincir-marketler",
-  }
+    canonical: '/zincir-marketler',
+  },
 };
 
 export default function ZincirMarketlerLayout({

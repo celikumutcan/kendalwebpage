@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { getAssetPath } from "@/lib/basePath";
+import Image from 'next/image';
+import { getAssetPath } from '@/lib/basePath';
 
 interface CategoryCardProps {
   alt: string;
@@ -12,12 +12,27 @@ interface CategoryCardProps {
   onClick: () => void;
 }
 
-export function CategoryCard({ alt, displayName, sampleImage, index = 0, brandName, onClick }: CategoryCardProps) {
-  const isK2 = brandName === "k2";
-  const isVanti = brandName === "vanti";
+export function CategoryCard({
+  alt,
+  displayName,
+  sampleImage,
+  index = 0,
+  brandName,
+  onClick,
+}: CategoryCardProps) {
+  const isK2 = brandName === 'k2';
+  const isVanti = brandName === 'vanti';
 
-  const ringClass = isK2 ? "group-hover:ring-orange-400/70" : isVanti ? "group-hover:ring-blue-400/70" : "group-hover:ring-amber-300/70";
-  const arrowClass = isK2 ? "text-orange-500" : isVanti ? "text-blue-600" : "text-amber-600";
+  const ringClass = isK2
+    ? 'group-hover:ring-orange-400/70'
+    : isVanti
+      ? 'group-hover:ring-blue-400/70'
+      : 'group-hover:ring-amber-300/70';
+  const arrowClass = isK2
+    ? 'text-orange-500'
+    : isVanti
+      ? 'text-blue-600'
+      : 'text-amber-600';
 
   return (
     <button
@@ -39,9 +54,21 @@ export function CategoryCard({ alt, displayName, sampleImage, index = 0, brandNa
         <h3 className="font-bold text-zinc-900 leading-snug text-base truncate">
           {displayName}
         </h3>
-        <span className={`flex-shrink-0 w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center transition-all duration-300 group-hover:translate-x-0.5 ${arrowClass}`}>
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        <span
+          className={`flex-shrink-0 w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center transition-all duration-300 group-hover:translate-x-0.5 ${arrowClass}`}
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2.5}
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
           </svg>
         </span>
       </div>

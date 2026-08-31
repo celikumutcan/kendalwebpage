@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function NotFound() {
   const year = new Date().getFullYear();
@@ -9,8 +9,8 @@ export default function NotFound() {
         className="pointer-events-none absolute inset-0 opacity-[0.06]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
+            'linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)',
+          backgroundSize: '48px 48px',
         }}
       />
 
@@ -26,7 +26,12 @@ export default function NotFound() {
             stroke="var(--brand-red)"
             strokeWidth="2.5"
           />
-          <path d="M26 40h12M28 46h8" stroke="var(--brand-red)" strokeWidth="2.5" strokeLinecap="round" />
+          <path
+            d="M26 40h12M28 46h8"
+            stroke="var(--brand-red)"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+          />
           <path
             d="M26 20c-2.8 2-4.5 4.8-4.9 8.4M32 16v0"
             stroke="var(--brand-red)"
@@ -36,9 +41,13 @@ export default function NotFound() {
           />
         </svg>
 
-        <h1 className="notfound-glow text-[5rem] font-bold leading-none tracking-tight sm:text-[7rem]">404</h1>
+        <h1 className="notfound-glow text-[5rem] font-bold leading-none tracking-tight sm:text-[7rem]">
+          404
+        </h1>
 
-        <h2 className="mt-4 text-xl font-semibold sm:text-2xl">Bu sayfanın ışıkları sönmüş</h2>
+        <h2 className="mt-4 text-xl font-semibold sm:text-2xl">
+          Bu sayfanın ışıkları sönmüş
+        </h2>
         <p className="mt-3 max-w-md text-sm leading-relaxed text-gray-400 sm:text-base">
           Aradığınız sayfa taşınmış, kaldırılmış ya da hiç var olmamış olabilir.
         </p>
@@ -51,7 +60,9 @@ export default function NotFound() {
         </Link>
       </div>
 
-      <p className="relative z-10 mt-16 text-xs text-gray-600">© {year} Kendal Elektrik</p>
+      <p className="relative z-10 mt-16 text-xs text-gray-600">
+        © {year} Kendal Elektrik
+      </p>
 
       <style>{`
         .notfound-glow {

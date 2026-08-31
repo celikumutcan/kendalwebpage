@@ -1,25 +1,28 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { getAssetPath } from "@/lib/basePath";
-import { ImageSlider } from "@/components/ui/ImageSlider";
+import React from 'react';
+import { ImageSlider } from '@/components/ui/ImageSlider';
+import { getAssetPath } from '@/lib/basePath';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function UretimClient() {
   const { language, t } = useLanguage();
 
   const pageData = (t as any).production_page || {
-    title: "Üretim",
-    content: "Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde..."
+    title: 'Üretim',
+    content:
+      'Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde...',
   };
 
   const newImages = [
-    getAssetPath("/images/uretim/flamanli1.webp"),
-    getAssetPath("/images/uretim/flamanli2.webp"),
-    getAssetPath("/images/uretim/smt1.webp"),
-    getAssetPath("/images/uretim/smt2.webp")
+    getAssetPath('/images/uretim/flamanli1.webp'),
+    getAssetPath('/images/uretim/flamanli2.webp'),
+    getAssetPath('/images/uretim/smt1.webp'),
+    getAssetPath('/images/uretim/smt2.webp'),
   ];
-  const oldImages = Array.from({ length: 10 }, (_, i) => getAssetPath(`/images/uretim/uretim-${i + 1}.webp`));
+  const oldImages = Array.from({ length: 10 }, (_, i) =>
+    getAssetPath(`/images/uretim/uretim-${i + 1}.webp`),
+  );
   const images = [...newImages, ...oldImages];
 
   return (
@@ -29,7 +32,6 @@ export function UretimClient() {
         <div className="absolute -right-[10%] bottom-0 w-[600px] h-[600px] bg-orange-500/30 blur-[120px] rounded-full" />
       </div>
       <div className="relative z-10 max-w-4xl mx-auto">
-
         <header className="mb-10 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[var(--global-text)] opacity-90 tracking-tight">
             {pageData.title}
@@ -47,7 +49,12 @@ export function UretimClient() {
         <article className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed mt-12 text-justify">
           {Array.isArray(pageData.content) ? (
             pageData.content.map((paragraph: string, idx: number) => (
-              <p key={idx} className={idx === 0 ? "text-xl text-white font-medium mb-8" : "mb-6"}>
+              <p
+                key={idx}
+                className={
+                  idx === 0 ? 'text-xl text-white font-medium mb-8' : 'mb-6'
+                }
+              >
                 {paragraph}
               </p>
             ))
@@ -57,7 +64,6 @@ export function UretimClient() {
             </p>
           )}
         </article>
-
       </div>
     </div>
   );

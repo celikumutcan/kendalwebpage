@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useLanguage } from "@/lib/i18n/LanguageProvider";
+import React from 'react';
+import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 export function HrPolicyClient() {
   const { t } = useLanguage();
@@ -22,27 +22,37 @@ export function HrPolicyClient() {
 
         <div className="space-y-10 text-white/90 leading-relaxed text-justify">
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">{policy.vision_title}</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              {policy.vision_title}
+            </h2>
             <p>{policy.vision_text}</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">{policy.mission_title}</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              {policy.mission_title}
+            </h2>
             <p>{policy.mission_text}</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">{policy.policy_title}</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              {policy.policy_title}
+            </h2>
             <p>{policy.policy_text}</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">{policy.training_title}</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              {policy.training_title}
+            </h2>
             <p>{policy.training_text}</p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold text-white mb-4">{policy.health_safety_title}</h2>
+            <h2 className="text-2xl font-semibold text-white mb-4">
+              {policy.health_safety_title}
+            </h2>
             <p>{policy.health_safety_text}</p>
           </section>
         </div>

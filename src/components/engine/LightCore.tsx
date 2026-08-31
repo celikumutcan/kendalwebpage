@@ -1,16 +1,17 @@
-"use client";
+'use client';
 
-import React, { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import * as THREE from "three";
-import { useLightTemperature } from "@/lib/LightTemperatureProvider";
-import { useInView } from "@/lib/useInView";
+import { Canvas, useFrame } from '@react-three/fiber';
+import type React from 'react';
+import { useMemo, useRef } from 'react';
+import * as THREE from 'three';
+import { useLightTemperature } from '@/lib/LightTemperatureProvider';
+import { useInView } from '@/lib/useInView';
 
 const coreShader = {
   uniforms: {
     uTime: { value: 0 },
     uScroll: { value: 0 },
-    uColor: { value: new THREE.Color("#d8e4ff") },
+    uColor: { value: new THREE.Color('#d8e4ff') },
   },
   vertexShader: `
     varying vec2 vUv;
@@ -52,11 +53,15 @@ const coreShader = {
 };
 
 // The inner component that has access to R3F hooks
-const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
+const LightCoreScene = ({
+  scrollProgressRef,
+}: {
+  scrollProgressRef?: React.MutableRefObject<number>;
+}) => {
   const materialRef = useRef<THREE.ShaderMaterial>(null);
   const { getProgress } = useLightTemperature();
-  const colorCool = useMemo(() => new THREE.Color("#d8e4ff"), []);
-  const colorWarm = useMemo(() => new THREE.Color("#ffb347"), []);
+  const colorCool = useMemo(() => new THREE.Color('#d8e4ff'), []);
+  const colorWarm = useMemo(() => new THREE.Color('#ffb347'), []);
   const targetColor = useMemo(() => new THREE.Color(), []);
   const timeRef = useRef(0);
 
@@ -68,7 +73,7 @@ const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.Mutab
       materialRef.current.uniforms.uScroll.value = THREE.MathUtils.lerp(
         materialRef.current.uniforms.uScroll.value,
         currentProgress,
-        0.1
+        0.1,
       );
 
       targetColor.lerpColors(colorCool, colorWarm, getProgress());
@@ -76,7 +81,10 @@ const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.Mutab
     }
   });
 
-  const uniforms = useMemo(() => THREE.UniformsUtils.clone(coreShader.uniforms), []);
+  const uniforms = useMemo(
+    () => THREE.UniformsUtils.clone(coreShader.uniforms),
+    [],
+  );
 
   return (
     <mesh>
@@ -93,15 +101,22 @@ const LightCoreScene = ({ scrollProgressRef }: { scrollProgressRef?: React.Mutab
   );
 };
 
-export const LightCore = ({ scrollProgressRef }: { scrollProgressRef?: React.MutableRefObject<number> }) => {
+export const LightCore = ({
+  scrollProgressRef,
+}: {
+  scrollProgressRef?: React.MutableRefObject<number>;
+}) => {
   const [containerRef, isInView] = useInView<HTMLDivElement>();
 
   return (
-    <div ref={containerRef} className="absolute inset-0 pointer-events-none z-0">
+    <div
+      ref={containerRef}
+      className="absolute inset-0 pointer-events-none z-0"
+    >
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75 }}
         gl={{ alpha: true, antialias: true }}
-        frameloop={isInView ? "always" : "never"}
+        frameloop={isInView ? 'always' : 'never'}
       >
         <LightCoreScene scrollProgressRef={scrollProgressRef} />
       </Canvas>

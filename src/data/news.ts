@@ -1,8 +1,7 @@
-import { newsDataTR, NewsItem } from "./news-tr";
-import { newsDataEN } from "./news-en";
+import { newsDataEN } from './news-en';
+import { type NewsItem, newsDataTR } from './news-tr';
 
 export type { NewsItem };
-export { newsDataTR, newsDataEN };
+export { newsDataEN, newsDataTR };
 
 export const newsData = newsDataTR;
-

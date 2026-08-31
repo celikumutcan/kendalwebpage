@@ -1,21 +1,47 @@
 const trMonths: { [key: string]: number } = {
-  "ocak": 0, "şubat": 1, "mart": 2, "nisan": 3, "mayıs": 4, "haziran": 5,
-  "temmuz": 6, "ağustos": 7, "eylül": 8, "ekim": 9, "kasım": 10, "aralık": 11,
+  ocak: 0,
+  şubat: 1,
+  mart: 2,
+  nisan: 3,
+  mayıs: 4,
+  haziran: 5,
+  temmuz: 6,
+  ağustos: 7,
+  eylül: 8,
+  ekim: 9,
+  kasım: 10,
+  aralık: 11,
 };
 
 const enMonths: { [key: string]: number } = {
-  "january": 0, "february": 1, "march": 2, "april": 3, "may": 4, "june": 5,
-  "july": 6, "august": 7, "september": 8, "october": 9, "november": 10, "december": 11,
+  january: 0,
+  february: 1,
+  march: 2,
+  april: 3,
+  may: 4,
+  june: 5,
+  july: 6,
+  august: 7,
+  september: 8,
+  october: 9,
+  november: 10,
+  december: 11,
 };
 
 export function parseNewsDate(dateStr: string): number {
   const cleaned = dateStr.trim();
 
-  const enMatch = cleaned.match(/^([A-Za-zçğıöşüÇĞİÖŞÜ]+)\s+(\d{1,2}),\s*(\d{4})$/);
+  const enMatch = cleaned.match(
+    /^([A-Za-zçğıöşüÇĞİÖŞÜ]+)\s+(\d{1,2}),\s*(\d{4})$/,
+  );
   if (enMatch) {
     const month = enMonths[enMatch[1].toLowerCase()];
     if (month !== undefined) {
-      return Date.UTC(parseInt(enMatch[3], 10), month, parseInt(enMatch[2], 10));
+      return Date.UTC(
+        parseInt(enMatch[3], 10),
+        month,
+        parseInt(enMatch[2], 10),
+      );
     }
   }
 

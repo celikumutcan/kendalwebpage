@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Float, Sparkles, Environment } from "@react-three/drei";
-import * as THREE from "three";
+import { Environment, Float, Sparkles } from '@react-three/drei';
+import { Canvas, useFrame } from '@react-three/fiber';
+import React, { useEffect, useRef, useState } from 'react';
+import * as THREE from 'three';
 
 // A modern, high-end fan rotor design
 function AeroBlades() {
@@ -18,8 +18,8 @@ function AeroBlades() {
     const handleMouseMove = (e: MouseEvent) => {
       mouseXRef.current = (e.clientX / window.innerWidth) * 2 - 1;
     };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   useFrame((state, delta) => {
@@ -28,18 +28,24 @@ function AeroBlades() {
     lastScrollRef.current = scrollY;
 
     velocityRef.current += scrollDelta * 0.0015;
-    velocityRef.current = THREE.MathUtils.clamp(velocityRef.current, -0.05, 0.05);
-    velocityRef.current *= Math.pow(0.9, delta * 60);
+    velocityRef.current = THREE.MathUtils.clamp(
+      velocityRef.current,
+      -0.05,
+      0.05,
+    );
+    velocityRef.current *= 0.9 ** (delta * 60);
 
     if (bladeRef.current) {
       bladeRef.current.rotation.z -= velocityRef.current;
-      bladeRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
+      bladeRef.current.rotation.x =
+        Math.sin(state.clock.elapsedTime * 0.5) * 0.05;
     }
 
     if (pedestalRef.current) {
       const sweep = Math.sin(state.clock.elapsedTime * 0.25) * 0.25;
       const target = sweep + mouseXRef.current * 0.2;
-      pedestalRef.current.rotation.y += (target - pedestalRef.current.rotation.y) * 0.03;
+      pedestalRef.current.rotation.y +=
+        (target - pedestalRef.current.rotation.y) * 0.03;
     }
   });
 
@@ -65,12 +71,20 @@ function AeroBlades() {
       <group ref={bladeRef}>
         <mesh rotation={[Math.PI / 2, 0, 0]}>
           <cylinderGeometry args={[1.5, 1.5, 0.5, 32]} />
-          <meshStandardMaterial color="#f8fafc" roughness={0.3} metalness={0.5} />
+          <meshStandardMaterial
+            color="#f8fafc"
+            roughness={0.3}
+            metalness={0.5}
+          />
         </mesh>
 
         <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0.26]}>
           <cylinderGeometry args={[1.2, 1.2, 0.05, 32]} />
-          <meshStandardMaterial color="#e2e8f0" roughness={0.5} metalness={0.8} />
+          <meshStandardMaterial
+            color="#e2e8f0"
+            roughness={0.5}
+            metalness={0.8}
+          />
         </mesh>
 
         {blades}
@@ -83,14 +97,24 @@ function AeroBlades() {
 function AirCurrents() {
   return (
     <>
-      <Float speed={2} rotationIntensity={0.5} floatIntensity={1} position={[-5, 3, -2]}>
+      <Float
+        speed={2}
+        rotationIntensity={0.5}
+        floatIntensity={1}
+        position={[-5, 3, -2]}
+      >
         <mesh>
           <torusGeometry args={[3, 0.05, 16, 100, Math.PI]} />
           <meshBasicMaterial color="#ffffff" transparent opacity={0.3} />
         </mesh>
       </Float>
-      
-      <Float speed={1.5} rotationIntensity={0.8} floatIntensity={1.5} position={[6, -2, -3]}>
+
+      <Float
+        speed={1.5}
+        rotationIntensity={0.8}
+        floatIntensity={1.5}
+        position={[6, -2, -3]}
+      >
         <mesh>
           <torusGeometry args={[4, 0.02, 16, 100, Math.PI / 1.5]} />
           <meshBasicMaterial color="#7dd3fc" transparent opacity={0.4} />
@@ -103,24 +127,32 @@ function AirCurrents() {
 function BreezeEnvironment() {
   return (
     <>
-      <fog attach="fog" args={["#bae6fd", 10, 30]} />
-      
+      <fog attach="fog" args={['#bae6fd', 10, 30]} />
+
       <ambientLight intensity={0.6} color="#ffffff" />
-      <directionalLight position={[10, 20, 10]} intensity={0.8} color="#ffffff" />
-      <directionalLight position={[-10, -10, 5]} intensity={0.3} color="#7dd3fc" />
+      <directionalLight
+        position={[10, 20, 10]}
+        intensity={0.8}
+        color="#ffffff"
+      />
+      <directionalLight
+        position={[-10, -10, 5]}
+        intensity={0.3}
+        color="#7dd3fc"
+      />
 
       <AeroBlades />
-      
+
       <AirCurrents />
 
-      <Sparkles 
-        count={200} 
-        scale={20} 
-        size={4} 
-        speed={0.4} 
-        opacity={0.3} 
-        color="#ffffff" 
-        position={[0, 0, -2]} 
+      <Sparkles
+        count={200}
+        scale={20}
+        size={4}
+        speed={0.4}
+        opacity={0.3}
+        color="#ffffff"
+        position={[0, 0, -2]}
       />
 
       <mesh position={[0, 0, -15]}>
@@ -144,9 +176,11 @@ export function VantiScene({ onReady }: { onReady?: () => void }) {
   const [isTabVisible, setIsTabVisible] = useState(true);
 
   useEffect(() => {
-    const handleVisibilityChange = () => setIsTabVisible(document.visibilityState === "visible");
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
+    const handleVisibilityChange = () =>
+      setIsTabVisible(document.visibilityState === 'visible');
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+    return () =>
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
   }, []);
 
   return (
@@ -154,7 +188,7 @@ export function VantiScene({ onReady }: { onReady?: () => void }) {
       <Canvas
         dpr={[1, 1.5]}
         camera={{ position: [0, 0, 8], fov: 45 }}
-        frameloop={isTabVisible ? "always" : "never"}
+        frameloop={isTabVisible ? 'always' : 'never'}
         onCreated={() => {
           requestAnimationFrame(() => requestAnimationFrame(() => onReady?.()));
         }}
