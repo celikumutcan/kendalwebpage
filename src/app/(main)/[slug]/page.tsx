@@ -4,6 +4,7 @@ import React from 'react';
 import { BreadcrumbSchema } from '@/components/shared/BreadcrumbSchema';
 import { ProductSchema } from '@/components/shared/ProductSchema';
 import {
+  BRAND_HOSTS,
   getAllSlugs,
   getProductBySlug,
   getProductCanonicalUrl,
@@ -75,6 +76,7 @@ export default async function ProductDetailPage({
   const pdfFormFile = getProductPdfFile(product.model, product.name.tr);
   const canonicalUrl = getProductCanonicalUrl(product);
   const category = product.category?.tr?.[0];
+  const brandUrunlerUrl = `${BRAND_HOSTS[product.brand || 'k2'] || BRAND_HOSTS.k2}/urunler`;
 
   return (
     <>
@@ -82,12 +84,12 @@ export default async function ProductDetailPage({
       <BreadcrumbSchema
         items={[
           { name: 'Anasayfa', url: 'https://www.kendalelektrik.com.tr/' },
-          { name: 'Ürünler', url: 'https://www.kendalelektrik.com.tr/urunler' },
+          { name: 'Ürünler', url: brandUrunlerUrl },
           ...(category
             ? [
                 {
                   name: category,
-                  url: 'https://www.kendalelektrik.com.tr/urunler',
+                  url: brandUrunlerUrl,
                 },
               ]
             : []),

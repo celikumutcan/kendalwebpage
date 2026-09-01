@@ -27,11 +27,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         <div className="md:col-span-1 text-center flex flex-col items-center">
           <Link
-            href={
-              process.env.NODE_ENV === 'production'
-                ? `/brand/${brandName}`
-                : '/'
-            }
+            href="/"
             className="font-bold text-2xl md:text-3xl tracking-tight mb-6 flex flex-col items-center gap-4 hover:opacity-80 transition-opacity"
           >
             <div className="bg-white p-3 rounded-2xl shadow-sm border border-zinc-100">

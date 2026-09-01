@@ -59,12 +59,8 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
   const theme =
     brandThemes[brandName as keyof typeof brandThemes] || brandThemes.k2;
 
-  const homeHref =
-    process.env.NODE_ENV === 'production' ? `/brand/${brandName}` : '/';
-  const urunlerHref =
-    process.env.NODE_ENV === 'production'
-      ? `/brand/${brandName}/urunler`
-      : '/urunler';
+  const homeHref = '/';
+  const urunlerHref = '/urunler';
 
   useEffect(() => {
     const handleScroll = () => {

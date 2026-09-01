@@ -492,11 +492,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
       <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[420px] md:w-[650px] md:h-[500px] bg-orange-500/40 blur-[110px] rounded-full pointer-events-none z-0" />
         <Link
-          href={
-            process.env.NODE_ENV === 'production'
-              ? '/brand/k2/urunler'
-              : '/urunler'
-          }
+          href="/urunler"
           className="relative z-10 inline-flex items-center justify-center px-10 py-5 bg-orange-600 text-white font-bold tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(249,115,22,0.35)] hover:bg-orange-700 hover:shadow-[0_10px_28px_rgba(249,115,22,0.45)] transition-all duration-300"
         >
           {t.catalogBtn}

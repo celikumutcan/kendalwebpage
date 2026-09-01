@@ -80,8 +80,7 @@ export function VantiProductFamilies({
   language,
 }: VantiProductFamiliesProps) {
   const lang = language === 'en' ? 'en' : 'tr';
-  const catalogBase =
-    process.env.NODE_ENV === 'production' ? '/brand/vanti/urunler' : '/urunler';
+  const catalogBase = '/urunler';
 
   const families = useMemo(() => {
     return FAMILIES.map((f) => {

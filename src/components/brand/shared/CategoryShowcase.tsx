@@ -41,10 +41,7 @@ export function CategoryShowcase({
 }: CategoryShowcaseProps) {
   const lang = language === 'en' ? 'en' : 'tr';
   const isDark = theme === 'dark';
-  const catalogBase =
-    process.env.NODE_ENV === 'production'
-      ? `/brand/${brandName}/urunler`
-      : '/urunler';
+  const catalogBase = '/urunler';
 
   const categories = useMemo<CategoryItem[]>(() => {
     const raw = new Map<

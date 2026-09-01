@@ -97,8 +97,7 @@ const VANTI_VIDEO_IDS = [
   '2V-c5YGcldI',
 ];
 
-// Video id -> product detail path (category/slug, without the /urunler base
-// since that differs between dev and the /brand/vanti prefix used in prod).
+// Video id -> product detail path (category/slug)
 const VANTI_VIDEO_PRODUCT_PATHS: Record<string, string> = {
   hFYbw1fmjdE: 'vantilatorler/kcf295-masaustu-fan',
   gRdC236jqlI: 'vantilatorler/kcf276-130w-standing-wall-fan',
@@ -110,8 +109,7 @@ const VANTI_VIDEO_PRODUCT_PATHS: Record<string, string> = {
   '2V-c5YGcldI': 'vantilatorler/kcf280k-ahsap-tavan-vantilatoru',
 };
 
-const VANTI_URUNLER_BASE =
-  process.env.NODE_ENV === 'production' ? '/brand/vanti/urunler' : '/urunler';
+const VANTI_URUNLER_BASE = '/urunler';
 
 const VANTI_VIDEO_PRODUCTS: Record<string, string> = Object.fromEntries(
   Object.entries(VANTI_VIDEO_PRODUCT_PATHS).map(([id, path]) => [

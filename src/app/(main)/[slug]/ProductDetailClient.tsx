@@ -343,11 +343,20 @@ export function ProductDetailClient({
     }
   }
 
-  const isProd = process.env.NODE_ENV === 'production';
-  const homeHref = isLight && isProd ? `/brand/${brandName}` : '/';
+  const homeHref = '/';
   const categoryName =
     product.category?.[language]?.[0] || product.category?.tr?.[0] || null;
-  const categoryHref = `${isLight && isProd ? `/brand/${brandName}/urunler` : '/urunler'}${categoryName ? `?category=${encodeURIComponent(categoryName)}` : ''}`;
+  const productBrand = brandName || product.brand || 'k2';
+  // isLight => zaten marka alt alan adı bağlamındayız (proxy/rewrite aktif), göreli link kullan.
+  // Değilse (QR/kısa link, ana domain) marka alt alan adına geçmek gerekir: prod'da aynı
+  // döküman kökünü paylaştığı için /brand/{marka} yeterli, dev'de proxy.ts bunu ana domainde
+  // blokladığı için gerçek subdomain'e atlamak lazım (Navbar.tsx'teki marka linkleriyle aynı desen).
+  const categoryBase = isLight
+    ? '/urunler'
+    : process.env.NODE_ENV === 'production'
+      ? `/brand/${productBrand}/urunler`
+      : `http://${productBrand}.localhost:3000/urunler`;
+  const categoryHref = `${categoryBase}${categoryName ? `?category=${encodeURIComponent(categoryName)}` : ''}`;
 
   const isDimensionToken = (token: string) =>
     /^\d+[x*×]\d+$/i.test(token || '');

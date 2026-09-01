@@ -471,11 +471,7 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
       <section className="relative z-10 w-full flex flex-col items-center justify-center px-6 py-12 md:py-16 text-center overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-sky-400/15 blur-[110px] rounded-full pointer-events-none z-0" />
         <Link
-          href={
-            process.env.NODE_ENV === 'production'
-              ? '/brand/global/urunler'
-              : '/urunler'
-          }
+          href="/urunler"
           className="relative z-10 inline-flex items-center justify-center px-12 py-5 bg-black text-white font-black tracking-widest uppercase rounded-full shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-gray-800 hover:shadow-[0_10px_28px_rgba(0,0,0,0.35)] transition-all duration-300"
         >
           {t.catalogBtn}
