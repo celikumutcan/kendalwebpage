@@ -2,9 +2,11 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useRef } from 'react';
 import { getAssetPath } from '@/lib/basePath';
+import { gsap } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 // Ana sayfadaki CompanyStats verileriyle aynı kaynak (yeni içerik değil, mevcut rakamların kariyer bağlamında tekrarı).
 const CAREER_STATS = [
@@ -13,6 +15,7 @@ const CAREER_STATS = [
 ];
 
 export function KariyerClient() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
 
   const career = (t as any).career;
@@ -43,8 +46,36 @@ export function KariyerClient() {
     },
   ];
 
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+      tl.fromTo(
+        '.kariyer-hero-text > *',
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, stagger: 0.12 },
+      )
+        .fromTo(
+          '.kariyer-hero-image',
+          { opacity: 0, scale: 0.96 },
+          { opacity: 1, scale: 1, duration: 1 },
+          '<',
+        )
+        .fromTo(
+          '.kariyer-card',
+          { opacity: 0, y: 30 },
+          { opacity: 1, y: 0, duration: 0.7, stagger: 0.12 },
+          '-=0.5',
+        );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="relative min-h-screen bg-[#050505] text-white flex flex-col justify-center pt-28 pb-10 px-6 overflow-hidden">
+    <div
+      ref={containerRef}
+      className="relative min-h-screen bg-[#050505] text-white flex flex-col justify-center pt-28 pb-16 px-6 overflow-hidden"
+    >
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
         <div className="absolute left-1/2 top-[-10%] -translate-x-1/2 w-[750px] h-[500px] bg-indigo-500/45 blur-[130px] rounded-[100%]" />
         <div className="absolute left-1/2 bottom-[-10%] -translate-x-1/2 w-[750px] h-[500px] bg-rose-500/35 blur-[130px] rounded-[100%]" />
@@ -53,12 +84,13 @@ export function KariyerClient() {
 
       <div className="relative z-10 max-w-[90rem] mx-auto w-full">
         {/* Hero: foto + başlık */}
-        <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-8 md:gap-16 mb-8 md:mb-10">
-          <div className="order-2 md:order-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">
+        <div className="flex flex-col md:flex-row md:justify-center md:items-center gap-8 md:gap-16 mb-12 md:mb-16">
+          <div className="kariyer-hero-text order-2 md:order-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white tracking-tight">
               {career?.title || 'Kariyer'}
             </h1>
-            <p className="text-gray-400 text-lg mb-6">
+            <div className="h-1.5 w-16 bg-[var(--brand-red)] rounded-full mx-auto md:mx-0 mb-6" />
+            <p className="text-gray-400 text-lg mb-8">
               {career?.subtitle || 'Kendal Elektrik Ailesine Katılın'}
             </p>
 
@@ -66,7 +98,7 @@ export function KariyerClient() {
               {CAREER_STATS.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-white/5 border border-white/10 rounded-2xl px-8 py-6 min-w-[160px]"
+                  className="bg-white/[0.14] backdrop-blur-md border border-white/25 rounded-2xl px-8 py-6 min-w-[160px] shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_10px_30px_rgba(0,0,0,0.3)] transition-colors duration-500 hover:border-[var(--brand-red)]/50"
                 >
                   <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
                     {stat.value}
@@ -80,7 +112,7 @@ export function KariyerClient() {
           </div>
 
           <div
-            className="order-1 md:order-2 relative w-full aspect-[16/9] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
+            className="kariyer-hero-image group order-1 md:order-2 relative w-full aspect-[16/9] rounded-[2rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
             style={{ maxWidth: 520, aspectRatio: '3 / 2' }}
           >
             <Image
@@ -88,7 +120,7 @@ export function KariyerClient() {
               alt="Kendal Elektrik Ar-Ge ekibi"
               fill
               sizes="(max-width: 768px) 100vw, 520px"
-              className="object-cover"
+              className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
               quality={80}
               priority
             />
@@ -102,11 +134,11 @@ export function KariyerClient() {
             <Link
               href={link.href}
               key={link.href}
-              className="group block h-full cursor-pointer"
+              className="kariyer-card group block h-full cursor-pointer"
             >
-              <div className="h-full bg-white/5 p-6 rounded-2xl border border-white/10 shadow-[0_0_0_rgba(0,0,0,0)] transition-all duration-300 group-hover:bg-white/10 group-hover:border-[var(--brand-red)] group-hover:-translate-y-1 group-hover:shadow-[0_12px_30px_rgba(0,0,0,0.4)]">
+              <div className="h-full bg-white/[0.14] backdrop-blur-md p-8 rounded-3xl border border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-[var(--brand-red)]/50 hover:bg-white/[0.18] hover:-translate-y-1 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_15px_40px_rgba(0,0,0,0.4)]">
                 <div className="flex items-start justify-between gap-3 mb-2">
-                  <h2 className="text-lg font-semibold text-white">
+                  <h2 className="text-lg font-semibold text-white tracking-tight">
                     {link.title}
                   </h2>
                   <svg
