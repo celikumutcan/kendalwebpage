@@ -1,11 +1,14 @@
 'use client';
 
 import Image from 'next/image';
-import React from 'react';
+import React, { useRef } from 'react';
 import { getAssetPath } from '@/lib/basePath';
+import { gsap } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
+import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 export function MissionVisionClient() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const { t, language } = useLanguage();
 
   const missionData = (t as any).mission_page || {
@@ -23,8 +26,30 @@ export function MissionVisionClient() {
   const pageTitle =
     language === 'en' ? 'Mission and Vision' : 'Misyon ve Vizyon';
 
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        '.mv-block',
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          stagger: 0.2,
+          ease: 'power3.out',
+          scrollTrigger: { trigger: '.mv-blocks', start: 'top 80%' },
+        },
+      );
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen bg-[#050505]">
+    <div
+      ref={containerRef}
+      className="flex flex-col lg:flex-row min-h-screen bg-[#050505]"
+    >
       <div className="w-full lg:w-[55%] flex flex-col justify-center px-8 md:px-16 lg:px-24 py-32 relative z-10">
         <div className="mb-20">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white opacity-90 tracking-tight">
@@ -33,9 +58,8 @@ export function MissionVisionClient() {
           <div className="h-1.5 w-16 bg-[var(--brand-red)] mt-8 rounded-full"></div>
         </div>
 
-        <div className="flex flex-col gap-16">
-          <div className="group relative">
-            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md -z-10"></div>
+        <div className="mv-blocks flex flex-col gap-8">
+          <div className="mv-block group relative bg-white/[0.03] border border-white/10 rounded-3xl p-8 md:p-10 transition-colors duration-500 hover:border-[var(--brand-red)]/40 hover:bg-white/[0.05]">
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
               <div className="flex-shrink-0 w-16 h-16 bg-[var(--brand-red)]/10 border border-[var(--brand-red)]/30 rounded-2xl flex items-center justify-center group-hover:bg-[var(--brand-red)] transition-colors duration-500 shadow-[0_0_20px_rgba(255,0,0,0.1)] group-hover:shadow-[0_0_25px_rgba(255,0,0,0.3)]">
                 <svg
@@ -56,15 +80,14 @@ export function MissionVisionClient() {
                 <h2 className="text-3xl font-bold mb-4 text-white tracking-tight">
                   {missionData.title}
                 </h2>
-                <p className="text-gray-300 leading-relaxed text-lg font-light text-justify">
+                <p className="text-gray-300 leading-relaxed text-lg font-light">
                   {missionData.content}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="group relative">
-            <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md -z-10"></div>
+          <div className="mv-block group relative bg-white/[0.03] border border-white/10 rounded-3xl p-8 md:p-10 transition-colors duration-500 hover:border-[var(--brand-red)]/40 hover:bg-white/[0.05]">
             <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
               <div className="flex-shrink-0 w-16 h-16 bg-[var(--brand-red)]/10 border border-[var(--brand-red)]/30 rounded-2xl flex items-center justify-center group-hover:bg-[var(--brand-red)] transition-colors duration-500 shadow-[0_0_20px_rgba(255,0,0,0.1)] group-hover:shadow-[0_0_25px_rgba(255,0,0,0.3)]">
                 <svg
@@ -91,7 +114,7 @@ export function MissionVisionClient() {
                 <h2 className="text-3xl font-bold mb-4 text-white tracking-tight">
                   {visionData.title}
                 </h2>
-                <p className="text-gray-300 leading-relaxed text-lg font-light text-justify">
+                <p className="text-gray-300 leading-relaxed text-lg font-light">
                   {visionData.content}
                 </p>
               </div>
@@ -105,7 +128,7 @@ export function MissionVisionClient() {
           src={getAssetPath('/images/factory-bg.webp')}
           alt="Factory Building"
           fill
-          className="object-contain object-center"
+          className="object-cover object-center"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#050505] via-transparent to-transparent opacity-100 w-full h-32 lg:h-full lg:w-48"></div>
