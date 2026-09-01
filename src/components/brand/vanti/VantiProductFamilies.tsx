@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { type CSSProperties, useMemo } from 'react';
 import type { Product } from '@/data/products';
-import { getAssetPath } from '@/lib/basePath';
+import { getAssetPath, getBrandUrunlerHref } from '@/lib/basePath';
 
 interface VantiProductFamiliesProps {
   label: string;
@@ -80,7 +80,7 @@ export function VantiProductFamilies({
   language,
 }: VantiProductFamiliesProps) {
   const lang = language === 'en' ? 'en' : 'tr';
-  const catalogBase = '/urunler';
+  const catalogBase = getBrandUrunlerHref('vanti');
 
   const families = useMemo(() => {
     return FAMILIES.map((f) => {
@@ -118,10 +118,7 @@ export function VantiProductFamilies({
       </div>
 
       <div className="k2-marquee-pause relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-[var(--page-bg,#f0f9ff)] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-[var(--page-bg,#f0f9ff)] to-transparent z-10" />
-
-        <div className="overflow-hidden motion-reduce:overflow-x-auto">
+        <div className="k2-marquee-fade-mask overflow-hidden motion-reduce:overflow-x-auto">
           <div
             className="k2-marquee-track flex w-max gap-4 md:gap-5 px-6 md:px-16 lg:px-24"
             style={{ animationDuration: `${duration}s` }}

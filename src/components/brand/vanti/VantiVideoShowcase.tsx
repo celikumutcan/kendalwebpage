@@ -57,10 +57,7 @@ export function VantiVideoShowcase({
       )}
 
       <div className="k2-marquee-pause relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-20 md:w-40 bg-gradient-to-r from-[var(--page-bg,#f0f9ff)] via-[var(--page-bg,#f0f9ff)]/80 to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-20 md:w-40 bg-gradient-to-l from-[var(--page-bg,#f0f9ff)] via-[var(--page-bg,#f0f9ff)]/80 to-transparent z-10" />
-
-        <div className="overflow-hidden motion-reduce:overflow-x-auto">
+        <div className="k2-marquee-fade-mask overflow-hidden motion-reduce:overflow-x-auto">
           <div
             className="k2-marquee-track flex w-max gap-5 md:gap-7 py-3"
             style={{

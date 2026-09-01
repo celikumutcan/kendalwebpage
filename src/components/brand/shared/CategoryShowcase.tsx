@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { type CSSProperties, useMemo } from 'react';
 import { getCategoryGroupForCategory, type Product } from '@/data/products';
-import { getAssetPath } from '@/lib/basePath';
+import { getAssetPath, getBrandUrunlerHref } from '@/lib/basePath';
 
 interface CategoryShowcaseProps {
   label: string;
@@ -41,7 +41,7 @@ export function CategoryShowcase({
 }: CategoryShowcaseProps) {
   const lang = language === 'en' ? 'en' : 'tr';
   const isDark = theme === 'dark';
-  const catalogBase = '/urunler';
+  const catalogBase = getBrandUrunlerHref(brandName);
 
   const categories = useMemo<CategoryItem[]>(() => {
     const raw = new Map<
@@ -158,10 +158,7 @@ export function CategoryShowcase({
       </div>
 
       <div className="k2-marquee-pause relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 md:w-32 bg-gradient-to-r from-[var(--page-bg,#0a0a0b)] to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 md:w-32 bg-gradient-to-l from-[var(--page-bg,#0a0a0b)] to-transparent z-10" />
-
-        <div className="overflow-hidden motion-reduce:overflow-x-auto">
+        <div className="k2-marquee-fade-mask overflow-hidden motion-reduce:overflow-x-auto">
           <div
             className={`k2-marquee-track flex w-max gap-4 md:gap-5 ${align === 'right' ? 'k2-marquee-reverse' : ''}`}
             style={{ animationDuration: `${duration}s` }}

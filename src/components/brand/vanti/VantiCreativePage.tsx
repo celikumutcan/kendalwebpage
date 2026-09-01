@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ExportMap } from '@/components/brand/shared/ExportMap';
 import type { Product } from '@/data/products';
 
-import { getAssetPath } from '@/lib/basePath';
+import { getAssetPath, getBrandUrunlerHref } from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { VantiPreloader } from './VantiPreloader';
 import { VantiProductFamilies } from './VantiProductFamilies';
@@ -109,7 +109,7 @@ const VANTI_VIDEO_PRODUCT_PATHS: Record<string, string> = {
   '2V-c5YGcldI': 'vantilatorler/kcf280k-ahsap-tavan-vantilatoru',
 };
 
-const VANTI_URUNLER_BASE = '/urunler';
+const VANTI_URUNLER_BASE = getBrandUrunlerHref('vanti');
 
 const VANTI_VIDEO_PRODUCTS: Record<string, string> = Object.fromEntries(
   Object.entries(VANTI_VIDEO_PRODUCT_PATHS).map(([id, path]) => [

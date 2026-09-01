@@ -5,7 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
-import { getAssetPath } from '@/lib/basePath';
+import {
+  getAssetPath,
+  getBrandHomeHref,
+  getBrandUrunlerHref,
+} from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
 interface BrandNavbarProps {
@@ -59,8 +63,8 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
   const theme =
     brandThemes[brandName as keyof typeof brandThemes] || brandThemes.k2;
 
-  const homeHref = '/';
-  const urunlerHref = '/urunler';
+  const homeHref = getBrandHomeHref(brandName);
+  const urunlerHref = getBrandUrunlerHref(brandName);
 
   useEffect(() => {
     const handleScroll = () => {
