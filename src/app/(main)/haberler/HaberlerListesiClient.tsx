@@ -75,7 +75,7 @@ export function HaberlerListesiClient() {
                     {news.title}
                   </h2>
 
-                  <div className="mt-auto pt-4 border-t border-white/5 flex items-center text-sm font-medium text-[var(--brand-red)] opacity-80 group-hover:opacity-100 transition-opacity">
+                  <div className="mt-auto pt-4 border-t border-white/5 flex items-center text-sm font-medium text-white/70 group-hover:text-white transition-colors">
                     {language === 'en' ? 'Read News' : 'Haberi Oku'}
                     <svg
                       className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform"

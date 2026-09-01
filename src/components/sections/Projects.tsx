@@ -93,7 +93,7 @@ export const Projects = () => {
       } else {
         scrollTrack('right');
       }
-    }, 2200);
+    }, 1500);
     return () => clearInterval(interval);
   }, []);
 
