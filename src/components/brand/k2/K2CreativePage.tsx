@@ -393,7 +393,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
 
       <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16 overflow-hidden">
         <div className="absolute -bottom-16 -right-16 md:-right-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-orange-500/40 blur-[110px] rounded-full pointer-events-none z-0" />
-        <div className="reveal-text relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="reveal-text relative z-10 bg-neutral-950/60 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="flex flex-col justify-center">
             <div className="inline-flex w-max items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/30 bg-orange-500/10 text-xs md:text-sm font-semibold tracking-widest uppercase text-orange-400 mb-6">
               {t.whyEyebrow}
@@ -435,7 +435,7 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
 
       <section className="relative z-10 w-full px-6 md:px-24 py-12 md:py-16 overflow-hidden">
         <div className="absolute -top-16 -left-16 md:-left-24 w-[420px] h-[420px] md:w-[560px] md:h-[560px] bg-amber-500/35 blur-[110px] rounded-full pointer-events-none z-0" />
-        <div className="reveal-text relative z-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-white/10">
+        <div className="reveal-text relative z-10 bg-neutral-950/60 backdrop-blur-xl border border-white/10 rounded-[3rem] p-8 md:p-14 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-white/10">
           {[
             { title: t.sec1Title, text: t.sec1Text, icon: MountainIcon },
             { title: t.sec2Title, text: t.sec2Text, icon: LayersIcon },
