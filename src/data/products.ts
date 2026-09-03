@@ -32,10 +32,23 @@ export const slugMap: Record<string, string> = slugMapData as Record<
   string
 >;
 
+const sanitizeLegacySlug = (slug: string) =>
+  slug
+    .replace(/\*/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
 export function getProductBySlug(slug: string): Product | undefined {
   const id = slugMap[slug];
   if (id) return products[id];
-  return products[slug];
+  if (products[slug]) return products[slug];
+
+  if (slug.includes('*')) {
+    const sanitizedId = slugMap[sanitizeLegacySlug(slug)];
+    if (sanitizedId) return products[sanitizedId];
+  }
+
+  return undefined;
 }
 
 export function getAllSlugs(): string[] {

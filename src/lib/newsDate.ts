@@ -15,17 +15,29 @@ const trMonths: { [key: string]: number } = {
 
 const enMonths: { [key: string]: number } = {
   january: 0,
+  jan: 0,
   february: 1,
+  feb: 1,
   march: 2,
+  mar: 2,
   april: 3,
+  apr: 3,
   may: 4,
   june: 5,
+  jun: 5,
   july: 6,
+  jul: 6,
   august: 7,
+  aug: 7,
   september: 8,
+  sep: 8,
+  sept: 8,
   october: 9,
+  oct: 9,
   november: 10,
+  nov: 10,
   december: 11,
+  dec: 11,
 };
 
 export function parseNewsDate(dateStr: string): number {
@@ -48,13 +60,15 @@ export function parseNewsDate(dateStr: string): number {
   const parts = cleaned.split(/\s+/);
   if (parts.length === 3) {
     const day = parseInt(parts[0], 10);
-    const month = trMonths[parts[1].toLowerCase()];
+    const monthName = parts[1].toLowerCase();
+    const month = trMonths[monthName] ?? enMonths[monthName];
     const year = parseInt(parts[2], 10);
     if (!isNaN(day) && month !== undefined && !isNaN(year)) {
       return Date.UTC(year, month, day);
     }
   } else if (parts.length === 2) {
-    const month = trMonths[parts[0].toLowerCase()];
+    const monthName = parts[0].toLowerCase();
+    const month = trMonths[monthName] ?? enMonths[monthName];
     const year = parseInt(parts[1], 10);
     if (month !== undefined && !isNaN(year)) {
       return Date.UTC(year, month, 1);

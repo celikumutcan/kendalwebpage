@@ -43,8 +43,11 @@ src/app/
 │                              #   Provider chain: LanguageProvider → SmoothScrollProvider (Lenis) → LightTemperatureProvider
 │                              #   → GsapContext → OrganizationSchema + CustomCursor + {children}
 ├── globals.css
-├── robots.ts                  # force-static; allow:"/" for all UAs; points to sitemap.xml
-├── sitemap.ts                 # force-static; static pages + all news ids + getProductCanonicalUrl() for every product
+├── robots.ts                  # force-static; allow:"/" for all UAs; points to 4 per-host sitemaps (www + k2/vanti/global)
+├── sitemap.ts                 # force-static; generateSitemaps() emits one sitemap per host (www: static pages+news,
+│                               #   k2/vanti/global: brand home + /urunler + that brand's getProductCanonicalUrl() entries)
+│                               #   — required because product URLs live on brand subdomains, not www (sitemap protocol
+│                               #   forbids cross-host URLs in a single sitemap file)
 │
 ├── (main)/                    # Route group — main corporate site (no URL segment)
 │   ├── layout.tsx              # Navbar + <main>{children}</main> + Footer + CookieConsentBanner + ScrollToTop (no providers)
@@ -59,11 +62,9 @@ src/app/
 │   │   │                         # renders ProductDetailClient + ProductSchema + BreadcrumbSchema
 │   │   └── ProductDetailClient.tsx  # "use client" — main product detail UI, brand-themed
 │   │
-│   ├── urunler/
-│   │   ├── page.tsx              # "/urunler" — <Suspense><CategoryFirstShowcase products={all}/></Suspense>
-│   │   └── [category]/[slug]/page.tsx  # "/urunler/{category}/{slug}" — canonical product URL (brand-neutral)
-│   │       # generateStaticParams built from Object.values(products), NOT slug-map — only canonical slugs get pages
-│   │       # generateMetadata uses shared lib/productMetadata.ts::getProductDetailMetadata()
+│   │   # NOTE: `(main)/urunler` (brand-neutral canonical product listing/detail under www) was REMOVED
+│   │   # ("http://localhost:3000/urunler kaldırıldı" commit). The only canonical product route left is
+│   │   # `brand/[brandName]/urunler/[category]/[slug]` below — see "Three separate product-detail routes".
 │   │
 │   ├── haberler/
 │   │   ├── layout.tsx            # metadata-only pass-through (no visual wrapper)
@@ -96,7 +97,7 @@ src/app/
 
 There are **no** `loading.tsx` / `error.tsx` / `not-found.tsx` files anywhere in the project — not-found handling relies solely on Next's default via `notFound()` calls.
 
-**Three separate product-detail routes exist** (`(main)/[slug]`, `(main)/urunler/[category]/[slug]`, `brand/[brandName]/urunler/[category]/[slug]`), all reading from the same `src/data/products.ts` data layer and rendering the same `ProductDetailClient`. The first is the legacy/short-URL form (kept for old links, generates a page per slug-map entry incl. duplicates, then redirects non-canonical ones); the other two are canonical, one page per product.
+**Two product-detail routes exist** (`(main)/[slug]`, `brand/[brandName]/urunler/[category]/[slug]`), both reading from the same `src/data/products.ts` data layer and rendering the same `ProductDetailClient`. The first is the legacy/short-URL form (kept for old links, generates a page per slug-map entry incl. duplicates, then redirects non-canonical ones to itself); the second is the sole canonical route, one page per product, reached via the k2/vanti/global brand subdomains. A third route, brand-neutral `(main)/urunler/[category]/[slug]` under `www`, existed previously and was removed — do not re-introduce link/sitemap logic assuming it exists.
 
 ### `src/components/` — full inventory
 
@@ -146,7 +147,7 @@ All follow the same pattern: `useRef` container + `useIsomorphicLayoutEffect` wr
 - **`NewsTicker.tsx`** — infinite marquee via `gsap.to({xPercent:-50, repeat:-1}, duration:40s)` on a doubled list.
 - **`NewsPreview.tsx`** — latest 3 news cards, imports `news-tr`/`news-en` directly (not via `news.ts`), sorted with `parseNewsDate`. No GSAP.
 - **`CatalogCTA.tsx`** — PDF catalog download CTA, single fade-in.
-- **`BrandHero.tsx`, `BrandAbout.tsx`, `BrandProductsHeader.tsx`, `BrandProductShowcase.tsx`** — ⚠️ generic brand-name–parameterized sections that look like an **older/simpler alternative** to the `brand/*CreativePage.tsx` + `CategoryFirstShowcase` combo. Grep for usage before assuming they're live.
+- **`BrandHero.tsx`, `BrandAbout.tsx`, `BrandProductShowcase.tsx`** were removed (unused generic brand-name–parameterized sections, an older/simpler alternative to the `brand/*CreativePage.tsx` + `CategoryFirstShowcase` combo). `BrandProductsHeader.tsx` is **not** related to that cleanup — it IS actively used, by `brand/[brandName]/urunler/page.tsx`.
 - **`ProductCompareModal.tsx`** — `ProductCompareModal({items, language, brandName, texts, onClose, onRemove})`, portal-rendered comparison table (parses `" / "`-delimited attribute values into bullet lists).
 
 ##### `sections/CategoryFirstShowcase/` — the main product catalog browser
@@ -169,10 +170,9 @@ Each brand (`k2`/`vanti`/`global`) has a large, self-contained one-page story (h
   - `VantiPreloader.tsx` — same curtain pattern, sky-blue.
   - `VantiProductFamilies.tsx`, `VantiVideoShowcase.tsx` — CSS-marquee lists (`.k2-marquee-track`/`.k2-marquee-pause` classes in globals.css), not GSAP.
 - **`brand/global/GlobalCreativePage.tsx`** — yellow/gold "light switch" theme. Distinctive intro: hand-drawn cursor SVG animates to a switch icon, "clicks" it, triggers a black→cream (`#fdfbf5`) flash transition. No dedicated preloader component (unlike k2/vanti) — the switch-click sequence IS the reveal.
-  - `GlobalScene.tsx` — simplest of the three scenes: a chandelier/bulb mesh whose color/light intensity fades in based on a **module-level** `globalScrollProgress`.
+  - `GlobalScene.tsx` — simplest of the three scenes: a chandelier/bulb mesh whose color/light intensity fades in based on a **module-level** `globalScrollProgress`. ⚠️ Currently **not imported/rendered anywhere** — `GlobalCreativePage.tsx` has no `Canvas`/R3F usage at all, so the Global brand page has no 3D background despite this component existing. Confirm intent (regression vs. deliberate removal) before relying on this description or before touching `GlobalCreativePage.tsx`.
 - **`brand/shared/`**:
   - `CategoryShowcase.tsx` — infinite marquee of category cards, groups K2 categories via `getCategoryGroupForCategory`, pure CSS animation, theme-aware.
-  - `ProductCarousel.tsx` — ⚠️ similar marquee of individual products; not wired into any of the three `*CreativePage.tsx` files — possible dead code.
   - `DealerMap.tsx`/`DealerMapInner.tsx` — Turkey provinces SVG map (dealer coverage). Outer lazy-loads inner via `next/dynamic({ssr:false})` gated by `IntersectionObserver` (`rootMargin:400px`). Inner converts `@/data/turkey-provinces.json` (TopoJSON) via `topojson-client`, custom (non-d3) equirectangular-like `project()` function.
   - `ExportMap.tsx`/`ExportMapInner.tsx` — same lazy-on-intersect pattern, world map using real `d3-geo` (`geoPath`, `geoEquirectangional`, `geoGraticule`) + `topojson-client` on `@/data/world-land-110m.json`, dashed glowing arcs from `HQ` to `EXPORT_COUNTRIES`, click-to-zoom.
 
@@ -181,12 +181,12 @@ Each brand (`k2`/`vanti`/`global`) has a large, self-contained one-page story (h
 2. **R3F perf gating**: two different strategies exist — `useInView()`-driven `frameloop` toggling (Globe/LightCore, homepage) vs. `document.visibilitychange`-driven toggling (K2Scene/VantiScene, brand pages). Scroll-reactive uniforms are driven either via a `scrollProgressRef` passed down from a parent `ScrollTrigger.create({onUpdate})` (Globe/LightCore), or via a **module-level mutable singleton variable** updated by a raw `window.scroll` listener inside the scene component itself (`globalScrollProgress` in GlobalScene, `k2DawnProgress` in K2Scene) — the latter is a hacky pattern worth knowing about before refactoring those scenes.
 3. **Scroll-sync coordination convention**: whenever code does a programmatic `lenis.scrollTo(...)`, it (a) sets `window.isProgrammaticScroll = true`, (b) adds a `disable-cv` class to `<body>` (disables `content-visibility` to avoid layout jumps during the animated scroll), (c) on complete dispatches a custom `window` event `scroll-refresh`, which `GsapContext` listens for to trigger a debounced `ScrollTrigger.refresh()`. This exact triple repeats in `Navbar.tsx` (twice) and `ScrollToTop.tsx` — follow it exactly if adding new programmatic-scroll code, or `ScrollTrigger` positions will desync after `content-visibility:auto` toggles.
 4. **i18n split**: most of `sections/`/`ui/` use the shared `useLanguage()`/`t.*` dictionary system, but all three `brand/*/*CreativePage.tsx` files define their own local bilingual `translations = {tr:{...}, en:{...}}` object and only read `language` from `useLanguage()`. Don't assume brand-page copy lives in `src/lib/i18n/*.json` — it doesn't.
-5. **Legacy/duplicate candidates worth a grep-for-usage pass before assuming dead**: `sections/BrandHero.tsx`, `BrandAbout.tsx`, `BrandProductsHeader.tsx`, `BrandProductShowcase.tsx` (overlap with `brand/*CreativePage.tsx` + `CategoryFirstShowcase`); `brand/shared/ProductCarousel.tsx` (not referenced by any creative page read so far); `src/data/products_backup.json` (not imported anywhere).
+5. **Removed as dead code**: `sections/BrandHero.tsx`, `BrandAbout.tsx`, `BrandProductShowcase.tsx`, `brand/shared/ProductCarousel.tsx`, `src/data/products_backup.json` — all confirmed unused (zero imports) and deleted. `sections/BrandProductsHeader.tsx` is **not** related — it's used by `brand/[brandName]/urunler/page.tsx`, don't lump it in with the others.
 
 ### `src/data/` (Static Data) — full schemas
 
 #### `products.json` + `src/data/products.ts` (data-access layer)
-**Shape**: flat `Record<string, Product>` keyed by product id — **no nested category tree**. 923 products. Brand split: `k2`=822, `vanti`=53, `global`=48. 53 distinct TR category names (top: LED Paneller 127, Spotlar 116, LED Ampuller 91, Vantilatörler 53...). `images[]` (multi-image) present on only 49/923 products (rest use single `image`). `variantOptions` present on 901/923 (sub-keys: `watt` 710, `light` 425, `casing` 142, `socket` 28, rare `tip`/`color`/`açıklama`/`batarya`/`işık gücü`).
+**Shape**: flat `Record<string, Product>` keyed by product id — **no nested category tree**. 858 products (post "Veri Temizliği" cleanup, commit `311514b`). Brand split: `k2`=757, `vanti`=53, `global`=48. Category/attribute/variant counts below predate that cleanup and haven't been re-verified — treat as approximate, re-check with a quick script before relying on exact figures. 53 distinct TR category names (top: LED Paneller 127, Spotlar 116, LED Ampuller 91, Vantilatörler 53...). `images[]` (multi-image) present on only 49/923 products (rest use single `image`). `variantOptions` present on 901/923 (sub-keys: `watt` 710, `light` 425, `casing` 142, `socket` 28, rare `tip`/`color`/`açıklama`/`batarya`/`işık gücü`).
 
 TypeScript type (defined in `products.ts`, not in the JSON itself):
 ```ts
@@ -211,7 +211,6 @@ Example record (abridged, `products["4206"]`):
   "variantOptions": { "watt": "25W", "light": "Ararenk (4000K)" }
 }
 ```
-`src/data/products_backup.json`: same schema, **not imported anywhere** (manual backup only, not part of app logic).
 
 Key functions in `products.ts`:
 - `getProductBySlug(slug)` — resolves via `slugMap[slug]`, falls back to treating `slug` as a raw product id.
@@ -224,13 +223,13 @@ Key functions in `products.ts`:
 - `getCategoryGroupForCategory`, `getProductCategorySlug`, `getProductCanonicalUrl` — used by SEO metadata and static route generation.
 
 #### `slug-map.json`
-Flat `Record<slug, productId>`, 4470 entries. Example:
+Flat `Record<slug, productId>`, 4206 entries (839 distinct product ids) as of the `311514b` "Veri Temizliği Yapıldı" cleanup. Example:
 ```json
 { "ges230-20w-torch-led-ampul-beyaz": "GES230", "ges231-30w-torch-led-ampul-beyaz": "GES231" }
 ```
-⚠️ Not all values match a current `products.json` key: of 913 distinct values, 904 resolve; ~9 point to ids no longer in `products.json` (dead/renamed products, e.g. `7887`, `KLF176PLUS`, `5009`). A product can have multiple slugs (old-URL backward compatibility), which is why "canonical slug" is a distinct concept from "any slug that resolves."
+As of that cleanup, **0 orphan slugs** — every value resolves to a `products.json` key (verified by script; previously ~9 didn't, that's fixed now). A product can have multiple slugs (old-URL backward compatibility), which is why "canonical slug" is a distinct concept from "any slug that resolves." Re-verify with a quick script rather than trusting these counts if `products.json`/`slug-map.json` change again.
 
-Route usage: `(main)/[slug]/page.tsx` generates a page for **every** slug-map entry (including non-canonical), then `redirect()`s to the canonical slug at render time if they differ. `urunler/[category]/[slug]` and `brand/.../[category]/[slug]` instead build `generateStaticParams` from `Object.values(products)` directly — one page per product, canonical slugs only.
+Route usage: `(main)/[slug]/page.tsx` generates a page for **every** slug-map entry (including non-canonical), then `redirect()`s to the canonical slug at render time if they differ. `brand/[brandName]/urunler/[category]/[slug]` instead builds `generateStaticParams` from `Object.values(products)` directly — one page per product, canonical slugs only.
 
 #### `news.ts`, `news-tr.ts`, `news-en.ts`
 `news.ts` is a thin re-export layer:
@@ -267,7 +266,7 @@ There is **no central `src/types/` domain-types folder** — domain types (`Prod
 ## Key Concepts (quick summary)
 1. **Performance & Animation:** GSAP + ScrollTrigger for scroll-driven reveals/pins, Lenis for smooth scroll. `GsapContext` is the app-wide lifecycle root; every section additionally scopes its own `gsap.context()`. See "Cross-cutting conventions" above for the exact scroll-sync and R3F-gating patterns — follow them exactly when adding new scroll-driven code.
 2. **3D Elements:** R3F scenes (`Globe`, `LightCore`, and the three brand `*Scene.tsx` files) are always `dynamic({ssr:false})`, full-bleed backgrounds, frameloop-gated for perf.
-3. **Product Catalog:** Flat `products.json` (923 items) + `slug-map.json` (4470 slugs, many-to-one with products) drive three separate detail routes; `CategoryFirstShowcase` is the shared browsing UI for `/urunler` and brand product pages, with all filter/search/page state synced to the URL.
+3. **Product Catalog:** Flat `products.json` (858 items) + `slug-map.json` (4206 slugs, many-to-one with products) drive the two detail routes (legacy `(main)/[slug]` + canonical `brand/[brandName]/urunler/[category]/[slug]`); `CategoryFirstShowcase` is the shared browsing UI for brand product pages, with all filter/search/page state synced to the URL.
 4. **Static export, dual deploy target:** everything must work with `output:"export"` (no server-side code paths at runtime) and resolve correctly under both the root domain and the GitHub Pages subpath via `getAssetPath()`.
 
 ## Go-live / cPanel migration

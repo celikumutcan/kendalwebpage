@@ -6,7 +6,7 @@ export const NewsArticleSchema = ({ news }: { news: NewsItem }) => {
     '@context': 'https://schema.org',
     '@type': 'NewsArticle',
     headline: news.title,
-    image: news.images,
+    image: news.images.map((img) => `https://www.kendalelektrik.com.tr${img}`),
     datePublished: news.date,
     author: [
       {

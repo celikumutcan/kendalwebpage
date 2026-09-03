@@ -34,7 +34,7 @@ export const OrganizationSchema = () => {
     ],
     sameAs: [
       'https://www.facebook.com/kendalelektrik',
-      'https://www.instagram.com/k2.ledsystem',
+      'https://www.instagram.com/kendalelektrik.k2ledsystems/',
       'https://www.linkedin.com/company/kendal-elektrik-ayd%C4%B1nlatma-a-%C5%9F/',
     ],
   };

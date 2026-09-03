@@ -42,24 +42,34 @@ export function ImageSlider({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {images.map((src, idx) => (
-        <div
-          key={idx}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-          }`}
-        >
-          <Image
-            src={src}
-            alt={`${altPrefix} ${idx + 1}`}
-            title={titlePrefix ? `${titlePrefix} ${idx + 1}` : undefined}
-            fill
-            sizes="(max-width: 768px) 100vw, 80vw"
-            className="object-contain"
-            priority={idx === 0}
-          />
-        </div>
-      ))}
+      {images.map((src, idx) => {
+        const distance = Math.min(
+          Math.abs(idx - currentIndex),
+          images.length - Math.abs(idx - currentIndex),
+        );
+        const shouldRender = distance <= 1;
+
+        return (
+          <div
+            key={idx}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
+          >
+            {shouldRender && (
+              <Image
+                src={src}
+                alt={`${altPrefix} ${idx + 1}`}
+                title={titlePrefix ? `${titlePrefix} ${idx + 1}` : undefined}
+                fill
+                sizes="(max-width: 768px) 100vw, 80vw"
+                className="object-contain"
+                priority={idx === 0}
+              />
+            )}
+          </div>
+        );
+      })}
 
       {images.length > 1 && (
         <>

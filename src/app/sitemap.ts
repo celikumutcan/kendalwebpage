@@ -1,8 +1,12 @@
 import type { MetadataRoute } from 'next';
 import { newsData } from '@/data/news';
-import { getProductCanonicalUrl, products } from '@/data/products';
+import { BRAND_HOSTS, getProductCanonicalUrl, products } from '@/data/products';
 
 export const dynamic = 'force-static';
+
+const WWW_HOST = 'https://www.kendalelektrik.com.tr';
+const BRAND_KEYS = ['k2', 'vanti', 'global'] as const;
+const HOSTS = ['www', ...BRAND_KEYS] as const;
 
 const trMonths: { [key: string]: number } = {
   Ocak: 0,
@@ -32,98 +36,127 @@ function parseTRDate(dateStr: string): Date {
   return new Date();
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.kendalelektrik.com.tr';
-
+function wwwSitemap(): MetadataRoute.Sitemap {
   const newsEntries: MetadataRoute.Sitemap = newsData.map((news) => ({
-    url: `${baseUrl}/haberler/${news.id}`,
+    url: `${WWW_HOST}/haberler/${news.id}`,
     lastModified: parseTRDate(news.date),
     changeFrequency: 'yearly',
     priority: 0.6,
   }));
 
-  const productEntries: MetadataRoute.Sitemap = Object.values(products).map(
-    (product) => ({
-      url: getProductCanonicalUrl(product),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    }),
-  );
-
   return [
     {
-      url: baseUrl,
+      url: WWW_HOST,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
     },
-    ...productEntries,
     {
-      url: `${baseUrl}/projeler`,
+      url: `${WWW_HOST}/projeler`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/uretim`,
+      url: `${WWW_HOST}/uretim`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/misyon-ve-vizyon`,
+      url: `${WWW_HOST}/misyon-ve-vizyon`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/zincir-marketler`,
+      url: `${WWW_HOST}/zincir-marketler`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/haberler`,
+      url: `${WWW_HOST}/haberler`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
     },
     ...newsEntries,
     {
-      url: `${baseUrl}/kariyer`,
+      url: `${WWW_HOST}/kariyer`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/kariyer/insan-kaynaklari-politikamiz`,
+      url: `${WWW_HOST}/kariyer/insan-kaynaklari-politikamiz`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/kariyer/temel-ilkelerimiz`,
+      url: `${WWW_HOST}/kariyer/temel-ilkelerimiz`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/kariyer/insan-haklari-ve-calisan-haklari-politikasi`,
+      url: `${WWW_HOST}/kariyer/insan-haklari-ve-calisan-haklari-politikasi`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/kvkk`,
+      url: `${WWW_HOST}/kvkk`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/gizlilik-cerez-politikasi`,
+      url: `${WWW_HOST}/gizlilik-cerez-politikasi`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
   ];
+}
+
+function brandSitemap(brand: (typeof BRAND_KEYS)[number]): MetadataRoute.Sitemap {
+  const host = BRAND_HOSTS[brand];
+  const productEntries: MetadataRoute.Sitemap = Object.values(products)
+    .filter((product) => (product.brand || 'k2') === brand)
+    .map((product) => ({
+      url: getProductCanonicalUrl(product),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    }));
+
+  return [
+    {
+      url: host,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${host}/urunler`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    ...productEntries,
+  ];
+}
+
+export async function generateSitemaps() {
+  return HOSTS.map((_, id) => ({ id }));
+}
+
+export default async function sitemap({
+  id,
+}: {
+  id: Promise<string>;
+}): Promise<MetadataRoute.Sitemap> {
+  const host = HOSTS[Number(await id)];
+  return host === 'www' ? wwwSitemap() : brandSitemap(host);
 }

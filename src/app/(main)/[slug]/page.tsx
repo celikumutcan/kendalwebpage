@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import React from 'react';
 import { BreadcrumbSchema } from '@/components/shared/BreadcrumbSchema';
 import { ProductSchema } from '@/components/shared/ProductSchema';
@@ -69,7 +69,6 @@ export default async function ProductDetailPage({
 
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
-    const { redirect } = require('next/navigation');
     redirect(`/${encodeURIComponent(canonicalSlug)}`);
   }
 
@@ -77,6 +76,9 @@ export default async function ProductDetailPage({
   const canonicalUrl = getProductCanonicalUrl(product);
   const category = product.category?.tr?.[0];
   const brandUrunlerUrl = `${BRAND_HOSTS[product.brand || 'k2'] || BRAND_HOSTS.k2}/urunler`;
+  const brandCategoryUrl = category
+    ? `${brandUrunlerUrl}?category=${encodeURIComponent(category)}`
+    : brandUrunlerUrl;
 
   return (
     <>
@@ -89,7 +91,7 @@ export default async function ProductDetailPage({
             ? [
                 {
                   name: category,
-                  url: brandUrunlerUrl,
+                  url: brandCategoryUrl,
                 },
               ]
             : []),

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import React from 'react';
 import { ProductDetailClient } from '@/app/(main)/[slug]/ProductDetailClient';
 import { ProductSchema } from '@/components/shared/ProductSchema';
@@ -46,9 +46,8 @@ export default async function BrandProductDetailPage({
 
   const canonicalSlug = getSlugByProductId(product.id);
   if (canonicalSlug && canonicalSlug !== decodedSlug) {
-    const { redirect } = require('next/navigation');
     redirect(
-      `/urunler/${resolvedParams.category}/${encodeURIComponent(canonicalSlug)}`,
+      `/brand/${resolvedParams.brandName}/urunler/${resolvedParams.category}/${encodeURIComponent(canonicalSlug)}`,
     );
   }
 

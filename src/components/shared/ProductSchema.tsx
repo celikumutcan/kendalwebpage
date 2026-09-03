@@ -23,8 +23,8 @@ export const ProductSchema = ({
     '@type': 'Product',
     name: product.name.tr,
     sku: product.model,
-    image: [product.image, ...(product.images || [])].map((img) =>
-      getProductImageUrl(img),
+    image: [product.image, ...(product.images || [])].map(
+      (img) => `https://www.kendalelektrik.com.tr${getProductImageUrl(img)}`,
     ),
     description: `${product.name.tr}${category ? ` - ${category}` : ''} (${product.model})`,
     category,
