@@ -1,74 +1,70 @@
 'use client';
 
-import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
+import { LightCore } from '@/components/engine/LightCore';
 import { getAssetPath } from '@/lib/basePath';
 import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
-const LightCoreFallback = () => (
-  <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.03)_0%,_transparent_50%)] animate-pulse pointer-events-none" />
-);
-
-const LightCore = dynamic(
-  () => import('@/components/engine/LightCore').then((mod) => mod.LightCore),
-  {
-    ssr: false,
-    loading: LightCoreFallback,
-  },
-);
-
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const glowRef = useRef<HTMLDivElement>(null);
   const { t } = useLanguage();
-  const scrollProgressRef = useRef<number>(0);
-  const [mountEngine, setMountEngine] = useState(false);
-
-  useEffect(() => {
-    // İlk boyama tamamlanana kadar ağır Three.js paketinin
-    // indirilip çalıştırılmasını erteler; hydration ile yarışmaz.
-    let raf2 = 0;
-    const raf1 = requestAnimationFrame(() => {
-      raf2 = requestAnimationFrame(() => setMountEngine(true));
-    });
-    return () => {
-      cancelAnimationFrame(raf1);
-      if (raf2) cancelAnimationFrame(raf2);
-    };
-  }, []);
+  const lastAppliedProgress = useRef(-1);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: 'top top',
-        end: 'bottom top',
+        // Hero is h-[130vh] with a sticky h-screen inner — it only stays
+        // pinned (visually static on screen) for the "extra" 30vh, then
+        // unsticks and scrolls away like normal content. `end: 'bottom top'`
+        // spans the whole 130vh instead, so progress was still at ~0.2-0.3
+        // by the time the pin ended — the glow/text animations, keyed off
+        // that progress, were still mid-reveal as Hero scrolled out and
+        // AboutUs took over, instead of ever finishing while actually
+        // visible. Matching `end` to the real pin distance makes progress
+        // 0→1 track what the user can actually see happen.
+        end: () =>
+          `+=${(containerRef.current?.offsetHeight ?? 0) - window.innerHeight}`,
         scrub: true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
-          scrollProgressRef.current = Math.round(self.progress * 100) / 100;
+          // "Aperture" grow: tiny pulsing core at the top of Hero, opens up
+          // into a wide glow by the time the user scrolls past it. Rounded
+          // to reduce redundant style writes, same technique as
+          // LightTemperatureProvider's CSS var updates.
+          const progress = Math.round(self.progress * 200) / 200;
+          if (progress === lastAppliedProgress.current) return;
+          lastAppliedProgress.current = progress;
+
+          // The glow should finish opening well before Hero hands off to the
+          // next section — reaching full size right at the boundary reads as
+          // an unfinished, cut-off transition. Remapping so it completes by
+          // 70% through the (now correctly-scoped) pin duration leaves a
+          // stretch of "fully lit" before AboutUs takes over.
+          const scaleProgress = Math.min(1, progress / 0.7);
+          const scale = 0.03 + scaleProgress * 1.57;
+          glowRef.current?.style.setProperty('--lc-scale', scale.toFixed(3));
+
+          // Text reveal is driven off the same progress instead of its own
+          // separate scrollTrigger, so it can't outrun the glow — it only
+          // starts appearing once the light has visibly grown ("the light
+          // illuminates the text"), not before.
+          const textProgress = Math.min(
+            1,
+            Math.max(0, (progress - 0.1) / 0.25),
+          );
+          if (contentRef.current) {
+            contentRef.current.style.opacity = textProgress.toFixed(3);
+            contentRef.current.style.transform = `translateY(${((1 - textProgress) * 30).toFixed(1)}px)`;
+          }
         },
       });
-
-      gsap.fromTo(
-        contentRef.current,
-        { opacity: 0, y: 30 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: containerRef.current,
-            start: 'top -5%',
-            end: 'top -30%',
-            scrub: 0.5,
-          },
-        },
-      );
     }, containerRef);
 
     return () => {
@@ -82,11 +78,7 @@ export const Hero = () => {
       className="hero-cv-exclude relative h-[130vh] w-full bg-transparent"
     >
       <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24">
-        {mountEngine ? (
-          <LightCore scrollProgressRef={scrollProgressRef} />
-        ) : (
-          <LightCoreFallback />
-        )}
+        <LightCore glowRef={glowRef} />
 
         <div className="absolute bottom-0 left-0 w-full h-40 md:h-56 z-[1] bg-gradient-to-b from-transparent to-black pointer-events-none" />
 

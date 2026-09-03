@@ -181,7 +181,8 @@ const MOBILE_QUERY = '(max-width: 767px)';
 export function VantiScene({ onReady }: { onReady?: () => void }) {
   const [isTabVisible, setIsTabVisible] = useState(true);
   const [isMobile, setIsMobile] = useState(
-    () => typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches,
+    () =>
+      typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches,
   );
 
   useEffect(() => {

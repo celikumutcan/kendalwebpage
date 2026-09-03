@@ -45,7 +45,10 @@ export const GsapContext = ({ children }: { children: React.ReactNode }) => {
 
     const handleContentVisibilityChange = (event: Event) => {
       const cvEvent = event as Event & { skipped?: boolean };
-      if (!cvEvent.skipped && !(window as WindowWithProgrammaticScrollFlag).isProgrammaticScroll) {
+      if (
+        !cvEvent.skipped &&
+        !(window as WindowWithProgrammaticScrollFlag).isProgrammaticScroll
+      ) {
         scheduleRefresh();
       }
     };
@@ -55,7 +58,8 @@ export const GsapContext = ({ children }: { children: React.ReactNode }) => {
     };
 
     const handleScroll = () => {
-      if ((window as WindowWithProgrammaticScrollFlag).isProgrammaticScroll) return;
+      if ((window as WindowWithProgrammaticScrollFlag).isProgrammaticScroll)
+        return;
       scheduleRefresh();
     };
 

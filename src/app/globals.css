@@ -63,6 +63,66 @@ body.disable-cv section {
   contain-intrinsic-size: auto 2000px;
 }
 
+/*
+  Hero's LightCore glow — see components/engine/LightCore.tsx for why this
+  replaced a Three.js shader. `--lc-scale` is written directly onto
+  .light-core-scale by Hero.tsx's scroll handler; the pulse below is a
+  separate, independent transform so the two compose instead of fighting
+  over one `transform` property.
+*/
+.light-core-scale {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* A square sized off the larger viewport axis (vmax), not `inset:-50%`
+     (which is a % of each axis's own containing-block dimension — on a
+     non-square viewport that produces a rectangle, so the glow scaled from
+     it comes out an oval, flattened top/bottom, instead of a circle). */
+  width: 200vmax;
+  height: 200vmax;
+  transform: translate(-50%, -50%) scale(var(--lc-scale, 0.03));
+  transform-origin: center;
+  will-change: transform;
+}
+.light-core-glow {
+  position: absolute;
+  inset: 0;
+  /* Two tiers, like the old shader's sharp `core` + soft `glow` terms: a
+     small genuinely-white, fully-opaque hot spot at the very center (so it
+     reads as an actual light source, not a gray haze), then the wider
+     ambient falloff capped well under full opacity (~82%, mixing in
+     --accent-current for the cool/warm tint) — that cap is what keeps the
+     white hero text legible where it overlaps the glow; only the tiny core
+     is fully solid. */
+  background: radial-gradient(
+    circle at center,
+    #ffffff 0%,
+    color-mix(in srgb, #ffffff 70%, var(--accent-current, #d8e4ff)) 3%,
+    color-mix(in srgb, var(--accent-current, #d8e4ff) 82%, transparent) 9%,
+    color-mix(in srgb, var(--accent-current, #d8e4ff) 55%, transparent) 18%,
+    color-mix(in srgb, var(--accent-current, #d8e4ff) 28%, transparent) 32%,
+    color-mix(in srgb, var(--accent-current, #d8e4ff) 10%, transparent) 50%,
+    transparent 75%
+  );
+  transform-origin: center;
+  animation: light-core-pulse 3.2s ease-in-out infinite;
+  will-change: transform;
+}
+@keyframes light-core-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .light-core-glow {
+    animation: none;
+  }
+}
+
 /* Hide scrollbar globally to prevent aggressive scrolling that breaks animations */
 ::-webkit-scrollbar {
   display: none;

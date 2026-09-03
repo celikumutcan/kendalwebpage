@@ -15,8 +15,7 @@ const Globe = dynamic(
 
 // Below this width the 3D globe is replaced with a static gradient — measured
 // at ~39fps with ~23% main-thread time blocked under mobile-class CPU
-// throttling (the site's other 3D scene, LightCore, cost almost nothing by
-// comparison); skipping the Canvas entirely brought that to ~58fps.
+// throttling; skipping the Canvas entirely brought that to ~58fps.
 //
 // Unlike the brand pages' 3D scenes (mounted via ssr:false, so they never
 // render on the server), GlobalPresence itself is a plain SSR'd client
