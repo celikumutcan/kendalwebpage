@@ -129,7 +129,7 @@ export const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/k2.ledsystem/"
+              href="https://www.instagram.com/kendalelektrik.k2ledsystems/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-[var(--brand-red)] transition-colors"
