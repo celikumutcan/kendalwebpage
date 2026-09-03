@@ -97,11 +97,11 @@ export const Hero = () => {
           <div className="mb-4 inline-block rounded-full border border-white/25 bg-black/25 px-5 py-2 text-base md:text-lg font-semibold tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,0.25)] [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.5))]">
             {t.hero.badge}
           </div>
-          <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-tight [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))]">
+          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-9xl font-bold tracking-tighter leading-tight [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))]">
             {t.hero.title_part1} <br />
             <span className="">{t.hero.title_part2}</span>
           </h1>
-          <p className="mt-6 max-w-lg text-xl sm:text-2xl md:text-3xl text-white font-medium [filter:drop-shadow(0_0_6px_rgba(0,0,0,0.5))_drop-shadow(0_2px_6px_rgba(0,0,0,0.7))]">
+          <p className="mt-6 max-w-lg text-xl sm:text-2xl md:text-xl text-white font-medium [filter:drop-shadow(0_0_6px_rgba(0,0,0,0.5))_drop-shadow(0_2px_6px_rgba(0,0,0,0.7))]">
             {t.hero.subtitle}
           </p>
           <div className="mt-8 relative w-72 h-32 md:w-[32rem] md:h-44 transition-transform hover:scale-105 duration-500">

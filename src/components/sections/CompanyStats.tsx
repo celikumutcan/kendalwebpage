@@ -146,7 +146,7 @@ export const CompanyStats = () => {
           </div>
         </div>
 
-        <div className="stats-grid grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+        <div className="stats-grid grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 max-w-6xl mx-auto">
           {STATS.map((stat, idx) => {
             const isHighlight = idx === 0;
             return (

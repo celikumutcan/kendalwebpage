@@ -779,88 +779,6 @@
       "light": "Günışığı (3000K)"
     }
   },
-  "4471": {
-    "id": "4471",
-    "model": "KDB271C32KMZIL",
-    "image": "urunler/kdb271c32kmzil.webp",
-    "name": {
-      "tr": "KDB271C Uzaktan Kum. Zil",
-      "en": "KDB271C Uzaktan Kum. Zil"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        },
-        {
-          "label": "Ürün",
-          "value": "32 Melodi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        },
-        {
-          "label": "Product",
-          "value": "32 Melodi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Uzaktan Kumandalı Ziller"
-      ],
-      "en": [
-        "Remote Control Doorbells"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
-  "4472": {
-    "id": "4472",
-    "model": "KDB271D32KMZIL",
-    "image": "urunler/kdb271d32kmzil.webp",
-    "name": {
-      "tr": "KDB271D Uzaktan Kum. Zil",
-      "en": "KDB271D Uzaktan Kum. Zil"
-    },
-    "attributes": {
-      "tr": [
-        {
-          "label": "Koli Adeti",
-          "value": "60"
-        },
-        {
-          "label": "Ürün",
-          "value": "32 Melodi"
-        }
-      ],
-      "en": [
-        {
-          "label": "Package Quantity",
-          "value": "60"
-        },
-        {
-          "label": "Product",
-          "value": "32 Melodi"
-        }
-      ]
-    },
-    "category": {
-      "tr": [
-        "Uzaktan Kumandalı Ziller"
-      ],
-      "en": [
-        "Remote Control Doorbells"
-      ]
-    },
-    "brand": "k2",
-    "variantOptions": {}
-  },
   "4535": {
     "id": "4535",
     "model": "KDL400-6WARARENK",
@@ -3169,10 +3087,10 @@
     },
     "category": {
       "tr": [
-        "El Fenerleri"
+        "Fenerler"
       ],
       "en": [
-        "LED Flashlights & Lanterns"
+        "Fenerler"
       ]
     },
     "brand": "k2",
@@ -3220,10 +3138,10 @@
     },
     "category": {
       "tr": [
-        "El Fenerleri"
+        "Fenerler"
       ],
       "en": [
-        "LED Flashlights & Lanterns"
+        "Fenerler"
       ]
     },
     "brand": "k2",
@@ -3271,10 +3189,10 @@
     },
     "category": {
       "tr": [
-        "El Fenerleri"
+        "Fenerler"
       ],
       "en": [
-        "LED Flashlights & Lanterns"
+        "Fenerler"
       ]
     },
     "brand": "k2",
@@ -3322,10 +3240,10 @@
     },
     "category": {
       "tr": [
-        "El Fenerleri"
+        "Fenerler"
       ],
       "en": [
-        "LED Flashlights & Lanterns"
+        "Fenerler"
       ]
     },
     "brand": "k2",
@@ -3381,10 +3299,10 @@
     },
     "category": {
       "tr": [
-        "El Fenerleri"
+        "Fenerler"
       ],
       "en": [
-        "LED Flashlights & Lanterns"
+        "Fenerler"
       ]
     },
     "brand": "k2",
@@ -24681,7 +24599,7 @@
       "tr": [
         {
           "label": "Watt",
-          "value": "9W (24V)"
+          "value": "9W"
         },
         {
           "label": "Lümen",
@@ -24715,7 +24633,7 @@
       "en": [
         {
           "label": "Watt",
-          "value": "9W (24V)"
+          "value": "9W"
         },
         {
           "label": "Lumen",
@@ -24757,7 +24675,7 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "9W (24V)",
+      "watt": "9W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     }
   },
@@ -24773,7 +24691,7 @@
       "tr": [
         {
           "label": "Watt",
-          "value": "9W (12-48V)"
+          "value": "9W"
         },
         {
           "label": "Lümen",
@@ -24807,7 +24725,7 @@
       "en": [
         {
           "label": "Watt",
-          "value": "9W (12-48V)"
+          "value": "9W"
         },
         {
           "label": "Lumen",
@@ -24849,7 +24767,7 @@
     },
     "brand": "k2",
     "variantOptions": {
-      "watt": "9W (12-48V)",
+      "watt": "9W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
     },
     "images": []
@@ -67737,7 +67655,7 @@
     },
     "category": {
       "tr": [
-        "Kumandalı Zil"
+        "Kumandalı Ziller"
       ],
       "en": [
         "Remote Control Doorbells"
@@ -67778,7 +67696,7 @@
     },
     "category": {
       "tr": [
-        "Kumandalı Zil"
+        "Kumandalı Ziller"
       ],
       "en": [
         "Remote Control Doorbells"
@@ -67819,7 +67737,7 @@
     },
     "category": {
       "tr": [
-        "Uzaktan Kumandalı Ziller"
+        "Kumandalı Ziller"
       ],
       "en": [
         "Remote Control Doorbells"
@@ -67860,7 +67778,7 @@
     },
     "category": {
       "tr": [
-        "Uzaktan Kumandalı Ziller"
+        "Kumandalı Ziller"
       ],
       "en": [
         "Remote Control Doorbells"
