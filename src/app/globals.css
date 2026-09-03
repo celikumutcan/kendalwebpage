@@ -56,6 +56,13 @@ body.disable-cv section {
   contain-intrinsic-size: auto 1300px;
 }
 
+/* AboutUs is ~2000px tall (two-column text+timeline), far past the generic
+   800px estimate — content-visibility using a wrong estimate causes a big
+   layout shift, and everything below reflows, when it toggles visible. */
+#about {
+  contain-intrinsic-size: auto 2000px;
+}
+
 /* Hide scrollbar globally to prevent aggressive scrolling that breaks animations */
 ::-webkit-scrollbar {
   display: none;

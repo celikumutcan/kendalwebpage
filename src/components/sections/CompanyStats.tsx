@@ -38,7 +38,7 @@ export const CompanyStats = () => {
             },
             onUpdate: () => {
               if (el) {
-                el.innerHTML =
+                el.textContent =
                   Math.round(obj.val).toLocaleString('tr-TR') +
                   (statData[index]?.suffix || stat.suffix);
               }

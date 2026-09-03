@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import React, { useRef, useState } from 'react';
+import React, { useRef, useSyncExternalStore } from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
@@ -13,11 +13,57 @@ const Globe = dynamic(
   },
 );
 
+// Below this width the 3D globe is replaced with a static gradient — measured
+// at ~39fps with ~23% main-thread time blocked under mobile-class CPU
+// throttling (the site's other 3D scene, LightCore, cost almost nothing by
+// comparison); skipping the Canvas entirely brought that to ~58fps.
+//
+// Unlike the brand pages' 3D scenes (mounted via ssr:false, so they never
+// render on the server), GlobalPresence itself is a plain SSR'd client
+// component — reading matchMedia in a state initializer would mismatch the
+// server-rendered HTML. useSyncExternalStore's getServerSnapshot keeps the
+// first client render aligned with the server (always "not mobile"), then
+// swaps in the real value right after hydration.
+const MOBILE_QUERY = '(max-width: 767px)';
+
+function subscribeToMobileQuery(callback: () => void) {
+  const mq = window.matchMedia(MOBILE_QUERY);
+  mq.addEventListener('change', callback);
+  return () => mq.removeEventListener('change', callback);
+}
+
+const getIsMobileSnapshot = () => window.matchMedia(MOBILE_QUERY).matches;
+const getIsMobileServerSnapshot = () => false;
+
+// Fixed, curated colors (not the scroll-linked --accent-current var) so the
+// look stays predictable regardless of scroll position — same dark+grid+red-glow
+// language as app/not-found.tsx, for visual consistency across the site.
+const GlobeStaticFallback = () => (
+  <div
+    className="absolute inset-0"
+    style={{
+      background: [
+        'radial-gradient(50% 38% at 50% 22%, rgba(216,228,255,0.16) 0%, rgba(216,228,255,0.05) 45%, transparent 72%)',
+        'radial-gradient(55% 45% at 82% 92%, rgba(227,0,15,0.14) 0%, transparent 68%)',
+        'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px)',
+        'linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
+        '#050507',
+      ].join(', '),
+      backgroundSize: 'auto, auto, 44px 44px, 44px 44px',
+    }}
+  />
+);
+
 export const GlobalPresence = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
   const scrollProgressRef = useRef(0);
+  const isMobile = useSyncExternalStore(
+    subscribeToMobileQuery,
+    getIsMobileSnapshot,
+    getIsMobileServerSnapshot,
+  );
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
@@ -62,7 +108,11 @@ export const GlobalPresence = () => {
     >
       <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0 opacity-70">
-          <Globe scrollProgressRef={scrollProgressRef} />
+          {isMobile ? (
+            <GlobeStaticFallback />
+          ) : (
+            <Globe scrollProgressRef={scrollProgressRef} />
+          )}
         </div>
 
         <div

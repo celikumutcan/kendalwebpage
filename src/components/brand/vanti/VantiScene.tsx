@@ -172,8 +172,17 @@ function BreezeEnvironment() {
   );
 }
 
+// Below this width the 3D fan scene is replaced with a static gradient — a
+// continuously-rendering WebGL canvas on mobile CPUs/GPUs was measured at
+// ~21fps with ~35% main-thread time blocked; skipping the Canvas entirely
+// (not just lowering its quality) brought that to ~59fps.
+const MOBILE_QUERY = '(max-width: 767px)';
+
 export function VantiScene({ onReady }: { onReady?: () => void }) {
   const [isTabVisible, setIsTabVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.matchMedia(MOBILE_QUERY).matches,
+  );
 
   useEffect(() => {
     const handleVisibilityChange = () =>
@@ -182,6 +191,29 @@ export function VantiScene({ onReady }: { onReady?: () => void }) {
     return () =>
       document.removeEventListener('visibilitychange', handleVisibilityChange);
   }, []);
+
+  useEffect(() => {
+    const mq = window.matchMedia(MOBILE_QUERY);
+    const handleChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener('change', handleChange);
+    return () => mq.removeEventListener('change', handleChange);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) onReady?.();
+  }, [isMobile, onReady]);
+
+  if (isMobile) {
+    return (
+      <div
+        className="fixed inset-0 z-0 pointer-events-none w-full h-screen"
+        style={{
+          background:
+            'radial-gradient(120% 80% at 50% 15%, #e0f5fe 0%, #bae6fd 45%, #7dd3fc 78%, #38bdf8 100%)',
+        }}
+      />
+    );
+  }
 
   return (
     <div className="fixed inset-0 z-0 pointer-events-none w-full h-screen bg-sky-50">
