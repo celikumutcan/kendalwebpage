@@ -18,7 +18,7 @@ export const CustomCursor = () => {
         isVisible = true;
       }
 
-      cursorRef.current.style.transform = `translate3d(${e.clientX - 250}px, ${e.clientY - 250}px, 0)`;
+      cursorRef.current.style.transform = `translate3d(${e.clientX - 200}px, ${e.clientY - 200}px, 0)`;
     };
 
     const handleMouseLeave = () => {
@@ -39,10 +39,10 @@ export const CustomCursor = () => {
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 w-[500px] h-[500px] rounded-full pointer-events-none z-[90] mix-blend-screen will-change-transform transition-opacity duration-500 opacity-0 hidden md:block"
+      className="fixed top-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none z-[90] mix-blend-screen will-change-transform transition-opacity duration-500 opacity-0 hidden md:block"
       style={{
         background:
-          'radial-gradient(circle at center, rgba(255,255,255,0.20) 0%, rgba(227,0,15,0.08) 40%, transparent 70%)',
+          'radial-gradient(circle at center, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.08) 30%, transparent 60%)',
       }}
     />
   );

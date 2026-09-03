@@ -37,7 +37,7 @@ export const CatalogCTA = () => {
       className="w-full relative py-8 md:py-16 px-4 md:px-6 overflow-hidden flex items-center justify-center"
     >
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-        <div className="absolute w-[650px] h-[450px] md:w-[950px] md:h-[550px] bg-violet-500/40 blur-[120px] rounded-full translate-x-1/4 -translate-y-1/4 mix-blend-screen" />
+        <div className="absolute w-[800px] h-[450px] md:w-[1250px] md:h-[550px] bg-violet-500/40 blur-[130px] rounded-full translate-x-[10%] -translate-y-1/4 mix-blend-screen" />
       </div>
 
       <div className="catalog-content relative z-10 w-full max-w-3xl mx-auto text-center p-6 md:p-12 lg:p-14 rounded-[2rem] bg-[var(--global-bg)]/40 backdrop-blur-2xl border border-[var(--global-text)]/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.05)] dark:shadow-[0_8px_32px_0_rgba(0,0,0,0.2)]">

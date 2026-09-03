@@ -12,8 +12,8 @@ export function HrPolicyClient() {
   return (
     <div className="relative min-h-screen bg-[#050505] text-white pt-32 pb-24 px-6 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute -right-[10%] top-0 w-[500px] h-[500px] bg-emerald-600/20 blur-[120px] rounded-full" />
-        <div className="absolute -left-[10%] bottom-0 w-[500px] h-[500px] bg-teal-500/20 blur-[120px] rounded-full" />
+        <div className="absolute -right-[15%] top-0 w-[850px] h-[850px] bg-emerald-600/40 blur-[160px] rounded-full" />
+        <div className="absolute -left-[15%] bottom-0 w-[850px] h-[850px] bg-teal-500/40 blur-[160px] rounded-full" />
       </div>
       <div className="relative z-10 max-w-3xl mx-auto bg-white/5 p-8 md:p-12 rounded-2xl border border-white/10">
         <h1 className="text-3xl md:text-5xl font-bold mb-10 text-white text-center">

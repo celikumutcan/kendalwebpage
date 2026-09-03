@@ -91,11 +91,11 @@ export const CompanyStats = () => {
     >
       <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
 
-      <div className="absolute top-0 -right-[200px] w-[1200px] h-[1500px] bg-blue-500/25 blur-[180px] rounded-[100%] mix-blend-screen pointer-events-none z-0" />
+      <div className="absolute top-0 -right-[200px] w-[1600px] h-[1500px] bg-blue-500/45 blur-[200px] rounded-[100%] mix-blend-screen pointer-events-none z-0" />
 
       <div className="max-w-[90rem] mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 tracking-tight leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl font-extrabold mb-4 md:mb-6 tracking-tight leading-tight">
             {(t as any).company_stats?.title_part1 || 'Aydınlatmada'}{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-red)] to-red-500">
               {(t as any).company_stats?.title_part2 || "Türkiye'nin"}
@@ -105,7 +105,7 @@ export const CompanyStats = () => {
           <div className="w-24 h-1.5 bg-gradient-to-r from-[var(--brand-red)] to-transparent rounded-full mx-auto"></div>
         </div>
 
-        <div className="photo-card relative w-full aspect-[16/9] lg:aspect-[21/9] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 mb-12 lg:mb-20 group">
+        <div className="photo-card relative w-full max-w-5xl mx-auto aspect-[16/9] lg:aspect-[24/9] rounded-[2rem] md:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 mb-10 lg:mb-16 group">
           <Image
             src={getAssetPath('/images/fabric-photo.webp')}
             alt="Kendal Elektrik Factory"
@@ -141,18 +141,18 @@ export const CompanyStats = () => {
                 />
               </svg>
               {(t as any).company_stats?.location_label ||
-                'İstanbul, Türkiye Üretim Tesisleri'}
+                'İstanbul, Türkiye Üretim Tesisi'}
             </span>
           </div>
         </div>
 
-        <div className="stats-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="stats-grid grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {STATS.map((stat, idx) => {
             const isHighlight = idx === 0;
             return (
               <div
                 key={idx}
-                className="stat-card group relative bg-black/40 backdrop-blur-2xl border border-white/5 hover:border-[var(--brand-red)]/60 shadow-[0_0_30px_rgba(255,0,0,0.08)] hover:shadow-[0_0_50px_rgba(255,0,0,0.3)] rounded-[1.5rem] overflow-hidden transition-all duration-700 flex flex-col justify-end items-start p-6 md:p-8 min-h-[140px] md:min-h-[160px]"
+                className="stat-card group relative bg-black/40 backdrop-blur-2xl border border-white/5 hover:border-[var(--brand-red)]/60 shadow-[0_0_30px_rgba(255,0,0,0.08)] hover:shadow-[0_0_50px_rgba(255,0,0,0.3)] rounded-[1rem] md:rounded-[1.5rem] overflow-hidden transition-all duration-700 flex flex-col justify-center items-center p-3 sm:p-4 md:p-6 min-h-[90px] md:min-h-[140px]"
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[var(--brand-red)]/20 via-[#100505]/40 to-transparent opacity-80 group-hover:from-[var(--brand-red)]/40 group-hover:opacity-100 transition-all duration-700 pointer-events-none z-0"></div>
 
@@ -162,9 +162,9 @@ export const CompanyStats = () => {
 
                 <div className="absolute top-0 left-1/4 right-1/4 h-[1px] bg-gradient-to-r from-transparent via-[var(--brand-red)]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 blur-[1px]"></div>
 
-                <div className="relative z-10 w-full">
+                <div className="relative z-10 w-full flex flex-col items-center text-center">
                   <div
-                    className={`font-black tracking-tighter mb-2 md:mb-3 transition-transform duration-500 group-hover:scale-105 origin-bottom-left ${isHighlight ? 'text-5xl md:text-6xl text-[var(--brand-red)] drop-shadow-[0_0_20px_rgba(255,0,0,0.6)]' : 'text-4xl md:text-5xl text-white group-hover:text-red-50 group-hover:drop-shadow-[0_0_15px_rgba(255,50,50,0.4)]'}`}
+                    className={`font-black tracking-tighter mb-1 transition-transform duration-500 group-hover:scale-105 origin-center ${isHighlight ? 'text-2xl sm:text-3xl md:text-5xl text-[var(--brand-red)] drop-shadow-[0_0_20px_rgba(255,0,0,0.6)]' : 'text-xl sm:text-2xl md:text-4xl text-white group-hover:text-red-50 group-hover:drop-shadow-[0_0_15px_rgba(255,50,50,0.4)]'}`}
                   >
                     <span
                       ref={(el) => {
@@ -173,9 +173,9 @@ export const CompanyStats = () => {
                       suppressHydrationWarning
                     ></span>
                   </div>
-                  <div className="w-12 h-0.5 bg-white/20 mb-2 md:mb-3 group-hover:bg-[var(--brand-red)]/50 transition-colors duration-500"></div>
+                  <div className="w-8 md:w-12 h-0.5 bg-white/20 mb-1.5 md:mb-3 group-hover:bg-[var(--brand-red)]/50 transition-colors duration-500"></div>
                   <div
-                    className={`text-white/70 uppercase tracking-widest transition-colors duration-300 group-hover:text-white ${isHighlight ? 'text-sm md:text-base font-bold' : 'text-xs md:text-sm font-medium'}`}
+                    className={`text-white/70 uppercase tracking-tight transition-colors duration-300 group-hover:text-white ${isHighlight ? 'text-[9px] sm:text-xs md:text-base font-bold' : 'text-[9px] sm:text-xs md:text-sm font-medium'}`}
                   >
                     {statData[idx]?.label || stat.label}
                   </div>

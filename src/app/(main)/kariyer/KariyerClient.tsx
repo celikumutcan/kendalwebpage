@@ -74,12 +74,10 @@ export function KariyerClient() {
   return (
     <div
       ref={containerRef}
-      className="relative min-h-screen bg-[#050505] text-white flex flex-col justify-center pt-28 pb-16 px-6 overflow-hidden"
+      className="relative min-h-screen bg-[#1c1214] text-white flex flex-col justify-center pt-28 pb-16 px-6 overflow-hidden"
     >
-      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute left-1/2 top-[-10%] -translate-x-1/2 w-[750px] h-[500px] bg-indigo-500/45 blur-[130px] rounded-[100%]" />
-        <div className="absolute left-1/2 bottom-[-10%] -translate-x-1/2 w-[750px] h-[500px] bg-rose-500/35 blur-[130px] rounded-[100%]" />
-        <div className="absolute right-[10%] top-1/3 w-[500px] h-[500px] bg-orange-400/20 blur-[140px] rounded-[100%]" />
+      <div className="absolute inset-0 pointer-events-none overflow-hidden z-0 flex items-center justify-center">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1600px] h-[1200px] bg-[var(--brand-red)]/25 blur-[180px] rounded-full" />
       </div>
 
       <div className="relative z-10 max-w-[90rem] mx-auto w-full">
@@ -90,7 +88,7 @@ export function KariyerClient() {
               {career?.title || 'Kariyer'}
             </h1>
             <div className="h-1.5 w-16 bg-[var(--brand-red)] rounded-full mx-auto md:mx-0 mb-6" />
-            <p className="text-gray-400 text-lg mb-8">
+            <p className="text-white/70 text-lg mb-8">
               {career?.subtitle || 'Kendal Elektrik Ailesine Katılın'}
             </p>
 
@@ -98,12 +96,12 @@ export function KariyerClient() {
               {CAREER_STATS.map((stat) => (
                 <div
                   key={stat.label}
-                  className="bg-white/[0.14] backdrop-blur-md border border-white/25 rounded-2xl px-8 py-6 min-w-[160px] shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_10px_30px_rgba(0,0,0,0.3)] transition-colors duration-500 hover:border-[var(--brand-red)]/50"
+                  className="bg-white/[0.18] backdrop-blur-xl border border-white/30 rounded-2xl px-8 py-6 min-w-[160px] shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-500 hover:bg-white/[0.25] hover:border-white/50 hover:-translate-y-1 group"
                 >
                   <div className="text-4xl md:text-5xl font-black text-white tracking-tight">
                     {stat.value}
                   </div>
-                  <div className="text-xs md:text-sm text-white/60 uppercase tracking-wide mt-2">
+                  <div className="text-xs md:text-sm text-white/60 uppercase font-semibold tracking-wide mt-2">
                     {stat.label}
                   </div>
                 </div>
@@ -136,13 +134,13 @@ export function KariyerClient() {
               key={link.href}
               className="kariyer-card group block h-full cursor-pointer"
             >
-              <div className="h-full bg-white/[0.14] backdrop-blur-md p-8 rounded-3xl border border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-500 hover:border-[var(--brand-red)]/50 hover:bg-white/[0.18] hover:-translate-y-1 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_15px_40px_rgba(0,0,0,0.4)]">
+              <div className="h-full bg-white/[0.18] backdrop-blur-xl p-8 rounded-3xl border border-white/30 shadow-[inset_0_1px_0_rgba(255,255,255,0.25),0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-500 hover:bg-white/[0.25] hover:border-white/50 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)]">
                 <div className="flex items-start justify-between gap-3 mb-2">
-                  <h2 className="text-lg font-semibold text-white tracking-tight">
+                  <h2 className="text-lg font-bold text-white tracking-tight">
                     {link.title}
                   </h2>
                   <svg
-                    className="w-5 h-5 shrink-0 mt-0.5 text-white/40 transition-all duration-300 group-hover:text-[var(--brand-red)] group-hover:translate-x-1"
+                    className="w-5 h-5 shrink-0 mt-0.5 text-white/55 transition-all duration-300 group-hover:text-[var(--brand-red)] group-hover:translate-x-1"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -155,7 +153,7 @@ export function KariyerClient() {
                     />
                   </svg>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed">
+                <p className="text-white/70 font-medium text-sm leading-relaxed">
                   {link.desc}
                 </p>
               </div>

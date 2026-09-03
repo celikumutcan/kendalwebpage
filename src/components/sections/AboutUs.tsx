@@ -82,9 +82,7 @@ export const AboutUs = () => {
       ref={containerRef}
       className="relative w-full py-24 md:py-32 px-6 bg-black text-white overflow-hidden"
     >
-      <div className="absolute top-1/2 -translate-y-1/2 left-0 w-[700px] h-[500px] bg-[var(--brand-red)] opacity-[0.03] rounded-full blur-[120px] pointer-events-none z-0" />
-
-      <div className="absolute top-1/2 -translate-y-1/2 -right-[10%] w-[1600px] h-[600px] bg-cyan-400/30 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1800px] lg:w-[2200px] h-[700px] bg-cyan-500/50 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
 
       <div className="relative max-w-7xl mx-auto z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
         <div ref={textRef} className="flex flex-col justify-center">
@@ -122,7 +120,7 @@ export const AboutUs = () => {
               <div className="timeline-dot absolute -left-[37px] md:-left-[53px] top-1.5 w-4 h-4 bg-black border-2 border-[var(--brand-red)] rounded-full transition-transform duration-500 group-hover:scale-125 group-hover:bg-[var(--brand-red)] group-hover:shadow-[0_0_15px_var(--brand-red)]" />
 
               <div className="timeline-content">
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 transition-colors duration-300 group-hover:text-[var(--brand-red)]">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-2 transition-transform duration-300 group-hover:translate-x-2">
                   {beat.title}
                 </h3>
                 <p className="text-gray-400 leading-relaxed font-medium">
