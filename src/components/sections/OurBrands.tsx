@@ -78,7 +78,7 @@ export const OurBrands = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full py-20 md:py-28 px-6 bg-black overflow-hidden"
+      className="relative w-full py-12 md:py-16 px-6 bg-black overflow-hidden"
     >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[450px] bg-white/30 rounded-full blur-[140px] mix-blend-screen pointer-events-none" />
       <div

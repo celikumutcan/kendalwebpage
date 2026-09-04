@@ -39,11 +39,11 @@ export const CompanyVideo = () => {
     <section
       id="company-video"
       ref={containerRef}
-      className="relative w-full pt-12 pb-24 md:pt-16 md:pb-32 px-6 bg-black text-white overflow-hidden flex flex-col items-center justify-center"
+      className="relative w-full pt-8 pb-12 md:pt-10 md:pb-16 px-6 bg-black text-white overflow-hidden flex flex-col items-center justify-center"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1200px] bg-[var(--brand-red)]/50 mix-blend-screen rounded-full blur-[200px] pointer-events-none" />
 
-      <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
+      <div className="relative z-10 w-full max-w-3xl mx-auto flex flex-col items-center">
         <div className="flex flex-col items-center mb-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 pb-2 md:pb-4 leading-normal">
             {(t as any).company_video?.discover ||

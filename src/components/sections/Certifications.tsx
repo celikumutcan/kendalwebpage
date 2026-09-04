@@ -75,7 +75,7 @@ export const Certifications = () => {
     <section
       id="certifications"
       ref={containerRef}
-      className="w-full relative bg-transparent py-16 md:py-24 px-6 border-t border-white/5 overflow-hidden"
+      className="w-full relative bg-transparent py-10 md:py-14 px-6 border-t border-white/5 overflow-hidden"
     >
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] h-[300px] bg-yellow-500/40 rounded-[100%] blur-[90px] pointer-events-none" />
 

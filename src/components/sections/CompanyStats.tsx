@@ -87,7 +87,7 @@ export const CompanyStats = () => {
     <section
       id="stats"
       ref={containerRef}
-      className="py-24 md:py-32 bg-[#050505] text-white relative w-full border-y border-white/5 overflow-hidden"
+      className="py-12 md:py-16 bg-[#050505] text-white relative w-full border-y border-white/5 overflow-hidden"
     >
       <div className="absolute top-0 right-1/4 w-[800px] h-[800px] bg-[var(--brand-red)]/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none z-0" />
 

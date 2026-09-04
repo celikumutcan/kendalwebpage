@@ -27,7 +27,7 @@ export const NewsPreview = () => {
   if (latestNews.length === 0) return null;
 
   return (
-    <section className="w-full bg-transparent py-16 lg:py-24 relative overflow-hidden border-t border-[var(--global-text)]/5">
+    <section className="w-full bg-transparent py-10 lg:py-14 relative overflow-hidden border-t border-[var(--global-text)]/5">
       <div className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center opacity-40 dark:opacity-60">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1200px] h-[1000px] md:w-[2000px] md:h-[1600px] bg-gradient-to-tr from-emerald-400/60 to-emerald-700/40 blur-[180px] rounded-full mix-blend-screen pointer-events-none" />
       </div>
