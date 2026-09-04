@@ -117,22 +117,7 @@ body.disable-cv section {
     transparent 75%
   );
   transform-origin: center;
-  animation: light-core-pulse 3.2s ease-in-out infinite;
   will-change: transform;
-}
-@keyframes light-core-pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .light-core-glow {
-    animation: none;
-  }
 }
 
 /* Hide scrollbar globally to prevent aggressive scrolling that breaks animations */
