@@ -16,6 +16,14 @@ const isGithubPagesBuild = process.env.NEXT_PUBLIC_BUILD_MODE === 'ghpages';
 const nextConfig: NextConfig = {
   images: {
     qualities: [25, 50, 70, 75, 80, 100],
+    // Prod build'de zaten `output: "export"` yüzünden Next'in image
+    // optimizer'ı hiç çalışmıyor (aşağıdaki unoptimized:true bunu netleştiriyor).
+    // Bunu dev sunucusunda da açık tutuyoruz ki `next dev` prod ile aynı şekilde
+    // davransın: aksi halde dev'de her yeni boyut/kırılım noktası ilk istekte
+    // anlık (senkron) transcode edilir — özellikle mobil genişlikte yeni bir
+    // görsel boyutu ilk kez istendiğinde görsel bir-iki saniye boş görünür,
+    // sonra kalıcı olarak "gerçek" bir bug gibi rapor edilir.
+    unoptimized: true,
   },
   // Güvenlik başlıkları (CSP, HSTS, X-Frame-Options vb.) burada tanımlanmıyor:
   // `output: "export"` ile statik export modunda Next.js'in `headers()`
@@ -25,7 +33,6 @@ const nextConfig: NextConfig = {
   ...(process.env.NODE_ENV === 'production'
     ? {
         output: 'export',
-        images: { unoptimized: true },
         trailingSlash: true,
         ...(isGithubPagesBuild
           ? {

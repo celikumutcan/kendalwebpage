@@ -15,25 +15,16 @@ type WindowWithProgrammaticScrollFlag = Window & {
 export const GsapContext = ({ children }: { children: React.ReactNode }) => {
   const ctx = useRef<ReturnType<typeof gsap.context> | null>(null);
 
+  // Debounces ScrollTrigger.refresh() (a full-page synchronous layout
+  // recalc) to once ~150ms after scrolling stops, instead of once per
+  // content-visibility toggle — a fast scroll can flip many sections'
+  // visibility per second, and refreshing on each one measurably blocked
+  // the main thread (~4s of ~7s on a full-page scroll).
   useIsomorphicLayoutEffect(() => {
     ctx.current = gsap.context(() => {});
 
     const sections = document.querySelectorAll('section');
 
-    // content-visibility toggles can fire in bursts while scrolling fast
-    // (several sections flip skipped/rendered within the same frame or two),
-    // and on a long single-page site a fast scroll can pass through several
-    // of them over multiple seconds — longer than any reasonable debounce
-    // window, so debouncing the cv-events alone still let several refreshes
-    // fire mid-scroll (measured: ~4s of the ~7s total main-thread block on a
-    // full-page scroll came from these). ScrollTrigger.refresh() is a
-    // full-page synchronous layout recalculation (every trigger's position
-    // gets re-measured), so what actually matters isn't "did visibility
-    // change" but "has scrolling stopped" — positions only need to be correct
-    // once the user is done moving, not on every intermediate frame. The
-    // native `scroll` listener below re-arms the same debounce timer on every
-    // scroll tick, so as long as the user keeps scrolling the timeout never
-    // fires; it only lands ~150ms after the LAST scroll tick, i.e. once.
     let refreshTimeout: ReturnType<typeof setTimeout> | null = null;
     const scheduleRefresh = () => {
       if (refreshTimeout) clearTimeout(refreshTimeout);

@@ -11,15 +11,9 @@ export const getAssetPath = (path: string) => {
   return `${base}${cleanPath}`;
 };
 
-// Marka mikro-sitesi içi linkler (Ürünler, Ana Sayfa vb.):
-// - cPanel/yerel: k2.kendalelektrik.com.tr / k2.localhost gibi bir alt alan
-//   adı üzerinden geliniyor, arka planda görünmez bir rewrite zaten
-//   /brand/{marka}/... içine yönlendiriyor — bu yüzden göreli link ("/urunler")
-//   yeterli, "/brand/k2" öneki eklenirse rewrite ikinci kez tetiklenip
-//   "/brand/k2/brand/k2/..." gibi kırık bir adrese gider.
-// - GitHub Pages: alt alan adı/rewrite hiç yok, tek bir origin var — bu
-//   yüzden mutlak "/brand/{marka}/..." yolu şart (next/link basePath'i
-//   otomatik ekler).
+// cPanel/yerel'de marka alt alan adı zaten /brand/{marka} içine rewrite
+// ediyor, göreli link yeterli; GH Pages'te alt alan adı olmadığı için mutlak
+// /brand/{marka}/... yolu şart.
 export const getBrandHomeHref = (brand: string) =>
   isGithubPagesBuild ? `/brand/${brand}` : '/';
 

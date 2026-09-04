@@ -45,20 +45,20 @@ export function CategoryCard({
           src={getAssetPath('/images/' + sampleImage)}
           alt={alt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-contain object-center p-8 transition-transform duration-700 ease-out group-hover:scale-105"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
+          className="object-contain object-center p-4 sm:p-8 transition-transform duration-700 ease-out group-hover:scale-105"
         />
       </div>
 
-      <div className="flex items-center justify-between gap-3 px-5 py-4 border-t border-zinc-100">
-        <h3 className="font-bold text-zinc-900 leading-snug text-base truncate">
+      <div className="flex items-center justify-between gap-2 sm:gap-3 px-3 py-3 sm:px-5 sm:py-4 border-t border-zinc-100">
+        <h3 className="font-bold text-zinc-900 leading-snug text-sm sm:text-base truncate">
           {displayName}
         </h3>
         <span
-          className={`flex-shrink-0 w-8 h-8 rounded-full bg-zinc-50 flex items-center justify-center transition-all duration-300 group-hover:translate-x-0.5 ${arrowClass}`}
+          className={`flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-zinc-50 flex items-center justify-center transition-all duration-300 group-hover:translate-x-0.5 ${arrowClass}`}
         >
           <svg
-            className="w-4 h-4"
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

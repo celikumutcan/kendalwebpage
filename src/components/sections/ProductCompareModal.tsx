@@ -95,8 +95,8 @@ export default function ProductCompareModal({
   ];
   const gridColsClass =
     items.length >= 3
-      ? 'grid-cols-[repeat(3,260px)] md:grid-cols-[repeat(3,300px)]'
-      : 'grid-cols-[repeat(2,260px)] md:grid-cols-[repeat(2,300px)]';
+      ? 'grid-cols-[repeat(3,135px)] sm:grid-cols-[repeat(3,260px)] md:grid-cols-[repeat(3,300px)]'
+      : 'grid-cols-[repeat(2,150px)] sm:grid-cols-[repeat(2,260px)] md:grid-cols-[repeat(2,300px)]';
 
   const attributeRows = useMemo(() => {
     const labels: string[] = [];
@@ -177,7 +177,7 @@ export default function ProductCompareModal({
           </button>
         </div>
 
-        <div className="overflow-auto flex-1 scrollbar-thin scrollbar-thumb-zinc-200 px-5 md:px-8 pb-8">
+        <div className="overflow-auto flex-1 scrollbar-thin scrollbar-thumb-zinc-200 px-3 sm:px-5 md:px-8 pb-8">
           <div className="w-fit mx-auto">
             <div
               className={`sticky top-0 z-10 bg-white grid gap-3 pt-4 pb-3 ${gridColsClass}`}
@@ -189,14 +189,14 @@ export default function ProductCompareModal({
                 return (
                   <div
                     key={product.id}
-                    className={`relative rounded-3xl border ${accentBorder} bg-gradient-to-b ${accentGradient} to-white p-3 md:p-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)]`}
+                    className={`relative rounded-2xl sm:rounded-3xl border ${accentBorder} bg-gradient-to-b ${accentGradient} to-white p-2 sm:p-3 md:p-4 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)]`}
                   >
                     <button
                       onClick={() => onRemove(product.id)}
-                      className="absolute -top-3 -right-3 w-8 h-8 flex items-center justify-center rounded-full bg-white border border-zinc-200 text-zinc-400 hover:text-zinc-700 hover:border-zinc-300 shadow-sm transition-colors"
+                      className="absolute -top-2 -right-2 sm:-top-3 sm:-right-3 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-white border border-zinc-200 text-zinc-400 hover:text-zinc-700 hover:border-zinc-300 shadow-sm transition-colors"
                     >
                       <svg
-                        className="w-4 h-4"
+                        className="w-3 h-3 sm:w-4 sm:h-4"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -209,20 +209,21 @@ export default function ProductCompareModal({
                         />
                       </svg>
                     </button>
-                    <div className="relative aspect-square w-full max-w-[100px] md:max-w-[120px] mx-auto mb-2 md:mb-3 bg-white rounded-2xl overflow-hidden shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)]">
+                    <div className="relative aspect-square w-full max-w-[70px] sm:max-w-[100px] md:max-w-[120px] mx-auto mb-1.5 sm:mb-2 md:mb-3 bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-[0_4px_16px_-4px_rgba(0,0,0,0.15)]">
                       <Image
                         src={getAssetPath('/images/' + product.image)}
                         alt={displayName}
                         fill
                         sizes="280px"
-                        className="object-contain p-4"
+                        priority
+                        className="object-contain p-2 sm:p-4"
                       />
                     </div>
-                    <div className="text-xs font-bold uppercase tracking-wider text-zinc-400 mb-1.5 text-left">
+                    <div className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-zinc-400 mb-1 sm:mb-1.5 text-left truncate">
                       {texts.model} {product.model}
                     </div>
                     <div
-                      className="font-bold text-zinc-900 text-xs md:text-sm leading-snug mb-2 md:mb-3 text-left line-clamp-2 min-h-[2.4em]"
+                      className="font-bold text-zinc-900 text-[11px] sm:text-xs md:text-sm leading-snug mb-1.5 sm:mb-2 md:mb-3 text-left line-clamp-2 min-h-[2.4em]"
                       title={displayName}
                     >
                       {displayName}
@@ -230,11 +231,11 @@ export default function ProductCompareModal({
                     <div className="text-center">
                       <Link
                         href={url}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-full text-[11px] md:text-xs font-bold ${accentSolid} ${accentSolidHover} ${accentSolidText} shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md`}
+                        className={`inline-flex items-center gap-1 sm:gap-1.5 px-2.5 py-1 sm:px-3 sm:py-1.5 md:px-4 md:py-2 rounded-full text-[10px] sm:text-[11px] md:text-xs font-bold ${accentSolid} ${accentSolidHover} ${accentSolidText} shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md`}
                       >
                         {texts.view}
                         <svg
-                          className="w-4 h-4"
+                          className="w-3.5 h-3.5 sm:w-4 sm:h-4"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -257,24 +258,24 @@ export default function ProductCompareModal({
               const palette = rowPalette[i % rowPalette.length];
               return (
                 <div key={row.label} className={palette.bg}>
-                  <div className="flex justify-center pt-5 pb-3">
+                  <div className="flex justify-center pt-3 sm:pt-5 pb-2 sm:pb-3">
                     <span className="inline-flex items-center gap-2">
                       <span
                         className={`w-2 h-2 rounded-full ${palette.dot} flex-shrink-0`}
                       />
                       <span
-                        className={`text-base md:text-lg font-extrabold uppercase tracking-wider ${palette.text}`}
+                        className={`text-xs sm:text-base md:text-lg font-extrabold uppercase tracking-wider ${palette.text}`}
                       >
                         {row.label}
                       </span>
                     </span>
                   </div>
                   <div className="relative">
-                    <div className={`grid gap-3 pb-5 ${gridColsClass}`}>
+                    <div className={`grid gap-3 pb-3 sm:pb-5 ${gridColsClass}`}>
                       {row.values.map((value, j) => (
                         <div
                           key={j}
-                          className="px-1 text-center text-zinc-800 text-base md:text-lg font-medium leading-relaxed"
+                          className="px-1 text-center text-zinc-800 text-xs sm:text-base md:text-lg font-medium leading-relaxed"
                         >
                           {renderValue(value, texts.no_value)}
                         </div>

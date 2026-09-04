@@ -13,6 +13,10 @@ export const AboutUs = () => {
   const wireRef = useRef<HTMLDivElement>(null);
   const beatsRef = useRef<(HTMLDivElement | null)[]>([]);
 
+  // Timeline beats fade in via opacity, not filter: brightness()/grayscale()
+  // — filter is paint-heavy and with scrub:true recomputed every frame a
+  // beat was in range, causing stutter that opacity avoids at a fraction
+  // of the cost.
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -48,12 +52,6 @@ export const AboutUs = () => {
         const dot = beat.querySelector('.timeline-dot');
         const content = beat.querySelector('.timeline-content');
 
-        // Was filter: brightness()/grayscale() scrubbed on every scroll frame.
-        // filter is paint-heavy (no cheap compositor fast-path like transform/
-        // opacity), and with scrub:true it recomputed continuously for as long
-        // as this beat was in range, causing stutter independent of scroll
-        // speed. opacity gives the same "dims until scrolled into place" read
-        // at a fraction of the per-frame cost.
         gsap.fromTo(
           [dot, content],
           { opacity: 0.3 },

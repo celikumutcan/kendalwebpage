@@ -6,7 +6,6 @@ import React from 'react';
 import { getAssetPath } from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
-// Main Footer
 export const Footer = () => {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();

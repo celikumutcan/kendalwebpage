@@ -124,7 +124,7 @@ export function ProductCard({
               e.stopPropagation();
               onToggleCompare(product);
             }}
-            className={`absolute top-3 left-3 z-20 flex items-center gap-1.5 pl-1.5 pr-2.5 py-1.5 rounded-full text-[11px] font-bold border shadow-sm transition-all duration-200 ${
+            className={`absolute top-2 left-2 sm:top-3 sm:left-3 z-20 flex items-center gap-1 sm:gap-1.5 pl-1 pr-1.5 py-1 sm:pl-1.5 sm:pr-2.5 sm:py-1.5 rounded-full text-[9px] sm:text-[11px] font-bold border shadow-sm transition-all duration-200 ${
               isCompared
                 ? isK2
                   ? 'bg-orange-500 border-orange-500 text-white'
@@ -163,15 +163,15 @@ export function ProductCard({
           src={getAssetPath('/images/' + product.image)}
           alt={displayName}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="relative z-10 object-contain p-8 group-hover:scale-[1.08] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
+          sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
+          className="relative z-10 object-contain p-4 sm:p-8 group-hover:scale-[1.08] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
         />
 
         <span
-          className={`absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-300 ease-out shadow-lg ${ctaClass}`}
+          className={`absolute bottom-2 right-2 sm:bottom-3 sm:right-3 z-20 w-7 h-7 sm:w-9 sm:h-9 rounded-full text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-300 ease-out shadow-lg ${ctaClass}`}
         >
           <svg
-            className="w-4 h-4"
+            className="w-3.5 h-3.5 sm:w-4 sm:h-4"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -186,12 +186,12 @@ export function ProductCard({
         </span>
       </div>
 
-      <div className="p-5 pt-4 flex flex-col flex-grow border-t border-zinc-50">
-        <div className="text-[11px] font-bold text-zinc-400 mb-1.5 tracking-wider uppercase">
+      <div className="p-3 pt-2.5 sm:p-5 sm:pt-4 flex flex-col flex-grow border-t border-zinc-50">
+        <div className="text-[9px] sm:text-[11px] font-bold text-zinc-400 mb-1 sm:mb-1.5 tracking-wider uppercase">
           {showcaseTexts.model} {product.model}
         </div>
         <h4
-          className="font-bold text-sm leading-snug line-clamp-2 text-zinc-800"
+          className="font-bold text-xs sm:text-sm leading-snug line-clamp-2 text-zinc-800"
           title={displayName}
         >
           {displayName}

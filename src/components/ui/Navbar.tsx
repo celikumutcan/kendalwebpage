@@ -10,7 +10,6 @@ import { getAssetPath } from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
-// Main Navbar fixed to top
 export const Navbar = () => {
   const { t } = useLanguage();
   const [activeSection, setActiveSection] = useState('');

@@ -33,9 +33,9 @@ export function CompareTray({
   onOpenCompare,
 }: CompareTrayProps) {
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-[150] flex justify-center px-4 pb-4 pointer-events-none">
-      <div className="pointer-events-auto bg-white/95 backdrop-blur-xl rounded-[1.75rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-zinc-100 ring-1 ring-black/[0.02] px-4 py-3 flex items-center gap-4 max-w-[calc(100vw-2rem)] overflow-x-auto animate-in slide-in-from-bottom-4 fade-in duration-300">
-        <div className="flex items-center gap-2 flex-shrink-0">
+    <div className="fixed bottom-0 left-0 right-0 z-[150] flex justify-center px-3 sm:px-4 pb-3 sm:pb-4 pointer-events-none">
+      <div className="pointer-events-auto bg-white/95 backdrop-blur-xl rounded-[1.25rem] sm:rounded-[1.75rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-zinc-100 ring-1 ring-black/[0.02] px-2.5 py-2 sm:px-4 sm:py-3 flex items-center gap-2 sm:gap-4 max-w-[calc(100vw-1.5rem)] sm:max-w-[calc(100vw-2rem)] overflow-x-auto animate-in slide-in-from-bottom-4 fade-in duration-300">
+        <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
           {compareItems.map(({ product }) => {
             const name =
               product.name[language as keyof typeof product.name] ||
@@ -43,7 +43,7 @@ export function CompareTray({
             return (
               <div
                 key={product.id}
-                className="relative w-12 h-12 rounded-lg overflow-hidden border border-zinc-200 bg-white flex-shrink-0"
+                className="relative w-9 h-9 sm:w-12 sm:h-12 rounded-lg overflow-hidden border border-zinc-200 bg-white flex-shrink-0"
                 title={name}
               >
                 <Image
@@ -78,7 +78,7 @@ export function CompareTray({
             (_, i) => (
               <div
                 key={`empty-${i}`}
-                className="w-12 h-12 rounded-lg border border-dashed border-zinc-200 flex-shrink-0"
+                className="hidden sm:block w-9 h-9 sm:w-12 sm:h-12 rounded-lg border border-dashed border-zinc-200 flex-shrink-0"
               />
             ),
           )}
@@ -90,17 +90,17 @@ export function CompareTray({
           </div>
         )}
 
-        <div className="flex items-center gap-2 flex-shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
           <button
             onClick={onClear}
-            className="px-4 py-2.5 rounded-full text-sm font-bold text-zinc-500 hover:text-zinc-800 hover:bg-zinc-100 transition-colors"
+            className="px-2.5 py-2 sm:px-4 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold text-zinc-500 hover:text-zinc-800 hover:bg-zinc-100 transition-colors whitespace-nowrap"
           >
             {compareTexts.clear}
           </button>
           <button
             onClick={onOpenCompare}
             disabled={compareItems.length < 2}
-            className={`px-5 py-2.5 rounded-full text-sm font-bold text-white transition-all duration-300 shadow-lg ${
+            className={`px-3 py-2 sm:px-5 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold text-white transition-all duration-300 shadow-lg whitespace-nowrap ${
               compareItems.length < 2
                 ? 'bg-zinc-300 cursor-not-allowed shadow-none'
                 : isK2

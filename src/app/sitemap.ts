@@ -121,7 +121,9 @@ function wwwSitemap(): MetadataRoute.Sitemap {
   ];
 }
 
-function brandSitemap(brand: (typeof BRAND_KEYS)[number]): MetadataRoute.Sitemap {
+function brandSitemap(
+  brand: (typeof BRAND_KEYS)[number],
+): MetadataRoute.Sitemap {
   const host = BRAND_HOSTS[brand];
   const productEntries: MetadataRoute.Sitemap = Object.values(products)
     .filter((product) => (product.brand || 'k2') === brand)

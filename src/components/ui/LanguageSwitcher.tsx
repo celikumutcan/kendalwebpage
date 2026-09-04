@@ -3,7 +3,6 @@
 import React from 'react';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 
-// Toggles between TR and EN languages
 export const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
 

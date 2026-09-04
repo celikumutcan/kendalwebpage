@@ -347,10 +347,8 @@ export function ProductDetailClient({
   const categoryName =
     product.category?.[language]?.[0] || product.category?.tr?.[0] || null;
   const productBrand = brandName || product.brand || 'k2';
-  // isLight => zaten marka alt alan adı bağlamındayız (proxy/rewrite aktif), göreli link kullan.
-  // Değilse (QR/kısa link, ana domain) marka alt alan adına geçmek gerekir: prod'da aynı
-  // döküman kökünü paylaştığı için /brand/{marka} yeterli, dev'de proxy.ts bunu ana domainde
-  // blokladığı için gerçek subdomain'e atlamak lazım (Navbar.tsx'teki marka linkleriyle aynı desen).
+  // isLight: zaten marka alt alan adı bağlamındayız, göreli link yeter. Değilse
+  // marka alt alan adına geçmek gerekiyor (Navbar.tsx'teki desenle aynı).
   const categoryBase = isLight
     ? '/urunler'
     : process.env.NODE_ENV === 'production'

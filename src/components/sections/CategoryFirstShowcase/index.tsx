@@ -42,6 +42,7 @@ export default function CategoryFirstShowcase({
     view: 'İncele',
     model: 'Model:',
     search_placeholder: 'Ürün adı veya model kodu ile arayın...',
+    search_placeholder_mobile: 'Ürün veya model ara...',
     search_results_title: 'Arama Sonuçları',
     search_for: 'için',
     search_no_results_title: 'Sonuç Bulunamadı',
@@ -557,8 +558,25 @@ export default function CategoryFirstShowcase({
               type="text"
               value={searchQuery}
               onChange={handleSearchChange}
+              placeholder={
+                showcaseTexts.search_placeholder_mobile ||
+                showcaseTexts.search_placeholder
+              }
+              className={`sm:hidden relative z-10 w-full pl-12 pr-16 py-3.5 rounded-full border border-white/60 bg-white/70 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-sm hover:bg-white/85 focus:bg-white
+                ${
+                  isK2
+                    ? 'focus:border-orange-500 focus:ring-orange-500/20'
+                    : brandName === 'vanti'
+                      ? 'focus:border-blue-500 focus:ring-blue-500/20'
+                      : 'focus:border-amber-400 focus:ring-[#FFDA51]/30'
+                }`}
+            />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={handleSearchChange}
               placeholder={showcaseTexts.search_placeholder}
-              className={`relative z-10 w-full pl-14 pr-24 py-5 rounded-full border border-white/60 bg-white/70 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-lg hover:bg-white/85 focus:bg-white
+              className={`hidden sm:block relative z-10 w-full pl-14 pr-24 py-5 rounded-full border border-white/60 bg-white/70 backdrop-blur-2xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] text-zinc-900 placeholder-zinc-500 focus:outline-none focus:ring-4 transition-all duration-300 text-lg hover:bg-white/85 focus:bg-white
                 ${
                   isK2
                     ? 'focus:border-orange-500 focus:ring-orange-500/20'
@@ -600,7 +618,7 @@ export default function CategoryFirstShowcase({
 
         {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 sm:gap-5">
               {topLevelCards.map((item, i) => (
                 <CategoryCard
                   key={item.key}
@@ -646,7 +664,7 @@ export default function CategoryFirstShowcase({
                 {activeGroup.displayName}
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 sm:gap-5">
               {activeGroup.members.map((cat, i) => (
                 <CategoryCard
                   key={cat.name}
@@ -801,7 +819,7 @@ export default function CategoryFirstShowcase({
                 </p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-6">
                 {displayedProducts.map((group, i) => {
                   const product = group.product;
                   const canCompare = !!(

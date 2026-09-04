@@ -301,6 +301,7 @@
       "view": "View",
       "model": "Model:",
       "search_placeholder": "Search by product name or model code...",
+      "search_placeholder_mobile": "Search product or model...",
       "search_results_title": "Search Results",
       "search_for": "for",
       "search_no_results_title": "No Results Found",

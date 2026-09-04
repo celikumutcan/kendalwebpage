@@ -11,7 +11,6 @@ export const ScrollToTop = ({
   const [isVisible, setIsVisible] = useState(false);
   const lenis = useLenis();
 
-  // Show button when page is scrolled down
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);

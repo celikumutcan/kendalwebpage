@@ -26,7 +26,6 @@ export async function generateMetadata({
   };
 }
 
-// Define the static paths to be generated at build time
 export function generateStaticParams() {
   return newsData.map((news) => ({
     id: news.id,

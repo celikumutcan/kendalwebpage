@@ -301,6 +301,7 @@
       "view": "İncele",
       "model": "Model:",
       "search_placeholder": "Ürün adı veya model kodu ile arayın...",
+      "search_placeholder_mobile": "Ürün veya model ara...",
       "search_results_title": "Arama Sonuçları",
       "search_for": "için",
       "search_no_results_title": "Sonuç Bulunamadı",

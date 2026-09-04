@@ -369,15 +369,9 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
           </svg>
         </div>
 
+        {/* bottom-[vh] anchors to the same frame as the ridge SVG below, so the logo tracks the peak across aspect ratios instead of drifting like a fixed -mt offset would */}
         <div
           ref={heroTextRef}
-          // Anchored to the same bottom-relative, vh-based frame as the
-          // ridge SVG below (h-[38vh] md:h-[46vh]) instead of flex-centering
-          // in the viewport with a fixed -mt offset — the peak sits at a
-          // fixed % of the ridge's own height, so a fixed-pixel margin only
-          // lines the logo up with it at whatever viewport height it was
-          // tuned against (e.g. a laptop), drifting apart on other aspect
-          // ratios like phones.
           className="absolute left-1/2 -translate-x-1/2 bottom-[35vh] md:bottom-[43vh] text-center flex flex-col items-center"
         >
           <span

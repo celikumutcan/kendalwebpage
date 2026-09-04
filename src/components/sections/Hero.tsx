@@ -15,46 +15,29 @@ export const Hero = () => {
   const { t } = useLanguage();
   const lastAppliedProgress = useRef(-1);
 
+  // `end` matches Hero's real sticky-pin distance (not the full h-[130vh]) so
+  // scroll progress reaches 1 exactly as AboutUs takes over; the glow scale
+  // remaps to finish opening by 70% of that range instead of reading as
+  // cut off, and the text reveal rides the same progress so it never outruns
+  // the glow ("the light illuminates the text").
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: 'top top',
-        // Hero is h-[130vh] with a sticky h-screen inner — it only stays
-        // pinned (visually static on screen) for the "extra" 30vh, then
-        // unsticks and scrolls away like normal content. `end: 'bottom top'`
-        // spans the whole 130vh instead, so progress was still at ~0.2-0.3
-        // by the time the pin ended — the glow/text animations, keyed off
-        // that progress, were still mid-reveal as Hero scrolled out and
-        // AboutUs took over, instead of ever finishing while actually
-        // visible. Matching `end` to the real pin distance makes progress
-        // 0→1 track what the user can actually see happen.
         end: () =>
           `+=${(containerRef.current?.offsetHeight ?? 0) - window.innerHeight}`,
         scrub: true,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
-          // "Aperture" grow: tiny pulsing core at the top of Hero, opens up
-          // into a wide glow by the time the user scrolls past it. Rounded
-          // to reduce redundant style writes, same technique as
-          // LightTemperatureProvider's CSS var updates.
           const progress = Math.round(self.progress * 200) / 200;
           if (progress === lastAppliedProgress.current) return;
           lastAppliedProgress.current = progress;
 
-          // The glow should finish opening well before Hero hands off to the
-          // next section — reaching full size right at the boundary reads as
-          // an unfinished, cut-off transition. Remapping so it completes by
-          // 70% through the (now correctly-scoped) pin duration leaves a
-          // stretch of "fully lit" before AboutUs takes over.
           const scaleProgress = Math.min(1, progress / 0.7);
           const scale = 0.03 + scaleProgress * 1.57;
           glowRef.current?.style.setProperty('--lc-scale', scale.toFixed(3));
 
-          // Text reveal is driven off the same progress instead of its own
-          // separate scrollTrigger, so it can't outrun the glow — it only
-          // starts appearing once the light has visibly grown ("the light
-          // illuminates the text"), not before.
           const textProgress = Math.min(
             1,
             Math.max(0, (progress - 0.1) / 0.25),

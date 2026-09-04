@@ -1,7 +1,12 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import React, { useEffect, useRef, useState, useSyncExternalStore } from 'react';
+import React, {
+  useEffect,
+  useRef,
+  useState,
+  useSyncExternalStore,
+} from 'react';
 import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
@@ -64,18 +69,13 @@ export const GlobalPresence = () => {
     getIsMobileServerSnapshot,
   );
 
-  // Globe used to mount unconditionally on page load: its Canvas, texture
-  // fetches (3 images) and one-time scene build (40 shader-based arcs + 42
-  // pin meshes) all happened as soon as GlobalPresence rendered, regardless
-  // of scroll position — so that work could land at an arbitrary moment,
-  // often while the user was still reading an earlier section (CompanyVideo
-  // sits right before this one in HomeClient). Deferring the actual mount to
-  // an idle callback lets the browser do it when the main thread is free
-  // instead of fighting an in-progress scroll/animation frame; the 2s
-  // timeout is a safety net for browsers that never report idle (or lack
-  // requestIdleCallback, e.g. Safari) so the globe still shows up.
   const [shouldMountGlobe, setShouldMountGlobe] = useState(false);
 
+  // Defers the Globe's Canvas mount (texture fetches + one-time scene build)
+  // to an idle callback instead of mounting on page load, so that work
+  // lands when the main thread is free rather than at an arbitrary moment
+  // while the user is still reading an earlier section. The 2s timeout is a
+  // fallback for browsers without requestIdleCallback (e.g. Safari).
   useEffect(() => {
     if (isMobile) return;
 

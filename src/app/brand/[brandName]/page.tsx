@@ -51,7 +51,6 @@ export async function generateMetadata({
   };
 }
 
-// Server component
 export function generateStaticParams() {
   return [{ brandName: 'k2' }, { brandName: 'vanti' }, { brandName: 'global' }];
 }
