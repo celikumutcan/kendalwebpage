@@ -313,8 +313,8 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full bg-[#fdfbf5] text-black overflow-hidden font-sans min-h-screen"
-      style={{ '--page-bg': '#fdfbf5' } as React.CSSProperties}
+      className="relative w-full bg-[#fdf3d1] text-black overflow-hidden font-sans min-h-screen"
+      style={{ '--page-bg': '#fdf3d1' } as React.CSSProperties}
     >
       <GlobalPreloader onComplete={handlePreloaderComplete} />
 

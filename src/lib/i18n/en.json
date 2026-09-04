@@ -305,7 +305,17 @@
       "search_results_title": "Search Results",
       "search_for": "for",
       "search_no_results_title": "No Results Found",
-      "search_no_results_desc": "We couldn't find any products matching your search criteria. Please try again with different keywords."
+      "search_no_results_desc": "We couldn't find any products matching your search criteria. Please try again with different keywords.",
+      "filters": "Filters",
+      "filters_selected_suffix": "filters selected",
+      "filters_empty_hint": "Select filters to narrow down products",
+      "filter_tab_casings": "Colors",
+      "filter_tab_watts": "Power",
+      "filter_tab_sockets": "Socket Type",
+      "filter_casing_search_placeholder": "Search color...",
+      "filter_no_results": "No results found.",
+      "filter_clear": "Clear",
+      "filter_apply": "Apply"
     },
     "footer": {
       "address_prefix": "Address: ",

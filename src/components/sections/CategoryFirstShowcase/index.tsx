@@ -643,7 +643,7 @@ export default function CategoryFirstShowcase({
             <div className="mb-8">
               <button
                 onClick={handleBackToGroups}
-                className="flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-4 group"
+                className={`flex items-center text-sm font-medium transition-colors mb-4 group ${isK2 ? 'text-zinc-400 hover:text-white' : 'text-zinc-500 hover:text-zinc-900'}`}
               >
                 <svg
                   className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
@@ -660,7 +660,9 @@ export default function CategoryFirstShowcase({
                 </svg>
                 {showcaseTexts.back_to_categories}
               </button>
-              <h2 className="text-3xl md:text-4xl font-bold text-zinc-900">
+              <h2
+                className={`text-3xl md:text-4xl font-bold ${isK2 ? 'text-white' : 'text-zinc-900'}`}
+              >
                 {activeGroup.displayName}
               </h2>
             </div>
@@ -687,7 +689,7 @@ export default function CategoryFirstShowcase({
                 {!isSearching && showBackButton && (
                   <button
                     onClick={handleBack}
-                    className="flex items-center text-sm font-medium text-zinc-500 hover:text-zinc-900 transition-colors mb-4 group"
+                    className={`flex items-center text-sm font-medium transition-colors mb-4 group ${isK2 ? 'text-zinc-400 hover:text-white' : 'text-zinc-500 hover:text-zinc-900'}`}
                   >
                     <svg
                       className="w-5 h-5 mr-2 group-hover:-translate-x-1 transition-transform"
@@ -705,7 +707,9 @@ export default function CategoryFirstShowcase({
                     {showcaseTexts.back_to_categories}
                   </button>
                 )}
-                <h2 className="text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight">
+                <h2
+                  className={`text-3xl md:text-4xl font-bold tracking-tight ${isK2 ? 'text-white' : 'text-zinc-900'}`}
+                >
                   {isSearching
                     ? showcaseTexts.search_results_title
                     : categoriesData.find((c) => c.name === activeCategory)

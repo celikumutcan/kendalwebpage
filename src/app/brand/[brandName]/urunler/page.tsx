@@ -64,25 +64,32 @@ export default async function BrandProductsPage({
   );
 
   const glowStrong = isK2
-    ? 'bg-orange-300/30'
+    ? 'bg-[#ff5500]/60'
     : brandName === 'vanti'
       ? 'bg-blue-300/30'
-      : 'bg-[#FFDA51]/25';
+      : 'bg-[#FFDA51]/35';
   const glowSoft = isK2
-    ? 'bg-amber-200/25'
+    ? 'bg-[#ff5500]/40'
     : brandName === 'vanti'
       ? 'bg-cyan-200/25'
-      : 'bg-yellow-200/20';
+      : 'bg-yellow-200/30';
 
   return (
     <div
-      className={`relative w-full text-zinc-900 min-h-screen pt-32 pb-16 px-6 overflow-hidden ${isK2 ? 'bg-gradient-to-b from-orange-50/70 via-white to-white' : brandName === 'vanti' ? 'bg-gradient-to-b from-blue-50/70 via-white to-white' : 'bg-gradient-to-b from-[#FFF9E3] via-white to-white'}`}
+      className={`relative w-full min-h-screen pt-32 pb-16 px-6 overflow-hidden ${
+        isK2
+          ? 'bg-[#3a3a40] text-white'
+          : brandName === 'vanti'
+            ? 'bg-gradient-to-b from-blue-50/70 via-white to-white text-zinc-900'
+            : 'bg-[#FFF3C4] text-zinc-900'
+      }`}
     >
       <div
         className="absolute inset-0 z-0 pointer-events-none opacity-[0.55] [mask-image:radial-gradient(ellipse_65%_45%_at_50%_0%,black,transparent)]"
         style={{
-          backgroundImage:
-            'radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px)',
+          backgroundImage: isK2
+            ? 'radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)'
+            : 'radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px)',
           backgroundSize: '26px 26px',
         }}
       />

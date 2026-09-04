@@ -305,7 +305,17 @@
       "search_results_title": "Arama Sonuçları",
       "search_for": "için",
       "search_no_results_title": "Sonuç Bulunamadı",
-      "search_no_results_desc": "Aradığınız kriterlere uygun ürün bulamadık. Lütfen farklı kelimelerle tekrar deneyin."
+      "search_no_results_desc": "Aradığınız kriterlere uygun ürün bulamadık. Lütfen farklı kelimelerle tekrar deneyin.",
+      "filters": "Filtreler",
+      "filters_selected_suffix": "filtre seçili",
+      "filters_empty_hint": "Ürünleri daraltmak için filtre seçin",
+      "filter_tab_casings": "Renkler",
+      "filter_tab_watts": "Güç",
+      "filter_tab_sockets": "Duy Tipi",
+      "filter_casing_search_placeholder": "Renk ara...",
+      "filter_no_results": "Sonuç bulunamadı.",
+      "filter_clear": "Temizle",
+      "filter_apply": "Uygula"
     },
     "footer": {
       "address_prefix": "Adres: ",

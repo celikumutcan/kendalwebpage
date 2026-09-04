@@ -87,16 +87,21 @@ export function ProductCard({
     displayName = stripVariantTokens(displayName);
   }
 
+  const accentGradient = isK2
+    ? 'from-orange-400 to-amber-500'
+    : isVanti
+      ? 'from-blue-400 to-cyan-500'
+      : 'from-amber-300 to-yellow-400';
   const blobClass = isK2
     ? 'bg-orange-200/50'
     : isVanti
       ? 'bg-blue-200/50'
       : 'bg-amber-200/50';
   const ctaClass = isK2
-    ? 'bg-orange-600 group-hover:bg-orange-700'
+    ? 'bg-orange-600 group-hover:bg-orange-700 text-white'
     : isVanti
-      ? 'bg-blue-600 group-hover:bg-blue-700'
-      : 'bg-zinc-900 group-hover:bg-zinc-800';
+      ? 'bg-blue-600 group-hover:bg-blue-700 text-white'
+      : 'bg-[#FFDA51] group-hover:bg-[#f0c93e] text-zinc-900';
   const borderHoverClass = isK2
     ? 'hover:border-orange-200'
     : isVanti
@@ -107,11 +112,15 @@ export function ProductCard({
     <Link
       href={productUrl}
       style={{ animationDelay: `${Math.min(index, 10) * 40}ms` }}
-      className={`animate-in fade-in slide-in-from-bottom-2 fill-mode-both bg-white rounded-[1.5rem] overflow-hidden shadow-sm hover:shadow-[0_25px_50px_-18px_rgba(0,0,0,0.2)] hover:-translate-y-1.5 transition-all duration-300 ease-out group border border-zinc-100 flex flex-col relative ${borderHoverClass}`}
+      className={`animate-in fade-in slide-in-from-bottom-2 fill-mode-both bg-white rounded-[1.75rem] overflow-hidden shadow-sm hover:shadow-[0_25px_50px_-18px_rgba(0,0,0,0.2)] hover:-translate-y-1.5 transition-all duration-300 ease-out group border border-zinc-100 flex flex-col relative ${borderHoverClass}`}
     >
-      <div className="relative aspect-square flex items-center justify-center overflow-hidden bg-zinc-50/40">
+      <span
+        className={`absolute inset-x-0 top-0 h-[3px] z-20 bg-gradient-to-r ${accentGradient}`}
+      />
+
+      <div className="relative aspect-square flex items-center justify-center overflow-hidden bg-gradient-to-b from-zinc-50 to-white">
         <div
-          className={`absolute w-2/3 h-2/3 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${blobClass}`}
+          className={`absolute w-2/3 h-2/3 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 ${blobClass}`}
         />
 
         {canCompare && (
@@ -164,11 +173,17 @@ export function ProductCard({
           alt={displayName}
           fill
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
-          className="relative z-10 object-contain p-4 sm:p-8 group-hover:scale-[1.08] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
+          style={{
+            maskImage:
+              'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
+          }}
+          className="relative z-10 object-contain p-2 sm:p-3 scale-[1.15] group-hover:scale-[1.22] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
         />
 
         <span
-          className={`absolute bottom-2 right-2 sm:bottom-3 sm:right-3 z-20 w-7 h-7 sm:w-9 sm:h-9 rounded-full text-white flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-300 ease-out shadow-lg ${ctaClass}`}
+          className={`absolute bottom-2 right-2 sm:bottom-3 sm:right-3 z-20 w-7 h-7 sm:w-9 sm:h-9 rounded-full flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-300 ease-out shadow-lg ${ctaClass}`}
         >
           <svg
             className="w-3.5 h-3.5 sm:w-4 sm:h-4"

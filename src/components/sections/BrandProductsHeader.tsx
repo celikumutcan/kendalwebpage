@@ -90,7 +90,7 @@ export const BrandProductsHeader = ({
   const eyebrow = isK2 ? 'K2 LED SYSTEMS' : isVanti ? 'VANTİ' : 'GLOBAL';
 
   const eyebrowWrap = isK2
-    ? 'border-orange-200/80 bg-orange-50/80 text-orange-600'
+    ? 'border-orange-400/30 bg-white/5 text-orange-400'
     : isVanti
       ? 'border-blue-200/80 bg-blue-50/80 text-blue-600'
       : 'border-amber-200/80 bg-amber-50/80 text-amber-700';
@@ -105,7 +105,7 @@ export const BrandProductsHeader = ({
     ? 'from-orange-500 via-orange-600 to-amber-600'
     : isVanti
       ? 'from-blue-500 via-blue-600 to-cyan-600'
-      : 'from-amber-400 via-amber-500 to-orange-500';
+      : 'from-[#ffe375] via-[#FFDA51] to-[#f5c518]';
 
   const orbA = isK2
     ? 'bg-orange-300/60'
@@ -131,11 +131,15 @@ export const BrandProductsHeader = ({
             {eyebrow}
           </span>
         </div>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-zinc-900 pb-2 leading-[0.95]">
+        <h1
+          className={`text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter pb-2 leading-[0.95] ${isK2 ? 'text-white' : 'text-zinc-900'}`}
+        >
           {title}
         </h1>
         {description && (
-          <p className="mt-3 max-w-xl text-base md:text-lg text-zinc-500 font-medium leading-relaxed">
+          <p
+            className={`mt-3 max-w-xl text-base md:text-lg font-medium leading-relaxed ${isK2 ? 'text-zinc-300' : 'text-zinc-500'}`}
+          >
             {description}
           </p>
         )}

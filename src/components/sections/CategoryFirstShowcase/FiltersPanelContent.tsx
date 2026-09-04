@@ -58,8 +58,9 @@ export function FiltersPanelContent({
           </h3>
           <p className="text-xs text-zinc-400 mt-0.5">
             {selectedCount > 0
-              ? `${selectedCount} filtre seçili`
-              : 'Ürünleri daraltmak için filtre seçin'}
+              ? `${selectedCount} ${t.brand_pages?.showcase?.filters_selected_suffix || 'filtre seçili'}`
+              : t.brand_pages?.showcase?.filters_empty_hint ||
+                'Ürünleri daraltmak için filtre seçin'}
           </p>
         </div>
         <button
@@ -87,19 +88,19 @@ export function FiltersPanelContent({
           {[
             {
               id: 'casings' as const,
-              label: 'Renkler',
+              label: t.brand_pages?.showcase?.filter_tab_casings || 'Renkler',
               show: availableFilters.casings.length > 1,
               count: selectedCasings.length,
             },
             {
               id: 'watts' as const,
-              label: 'Güç',
+              label: t.brand_pages?.showcase?.filter_tab_watts || 'Güç',
               show: availableFilters.watts.length > 1,
               count: selectedWatts.length,
             },
             {
               id: 'sockets' as const,
-              label: 'Duy Tipi',
+              label: t.brand_pages?.showcase?.filter_tab_sockets || 'Duy Tipi',
               show: availableFilters.sockets.length > 1,
               count: selectedSockets.length,
             },
@@ -154,7 +155,10 @@ export function FiltersPanelContent({
                 </svg>
                 <input
                   type="text"
-                  placeholder="Renk ara..."
+                  placeholder={
+                    t.brand_pages?.showcase?.filter_casing_search_placeholder ||
+                    'Renk ara...'
+                  }
                   value={casingSearchQuery}
                   onChange={(e) => setCasingSearchQuery(e.target.value)}
                   className="w-full pl-10 pr-4 py-3 bg-zinc-50 border border-zinc-200 rounded-full text-sm focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-400 focus:bg-white transition-all"
@@ -219,7 +223,8 @@ export function FiltersPanelContent({
                   c.toLowerCase().includes(casingSearchQuery.toLowerCase()),
                 ).length === 0 && (
                   <div className="p-4 text-center text-sm text-zinc-500 col-span-full">
-                    Sonuç bulunamadı.
+                    {t.brand_pages?.showcase?.filter_no_results ||
+                      'Sonuç bulunamadı.'}
                   </div>
                 )}
               </div>
@@ -297,13 +302,13 @@ export function FiltersPanelContent({
           }}
           className="px-5 py-3 rounded-full font-bold text-sm bg-white border border-zinc-200 text-zinc-700 hover:bg-zinc-100 hover:border-zinc-300 transition-colors"
         >
-          Temizle
+          {t.brand_pages?.showcase?.filter_clear || 'Temizle'}
         </button>
         <button
           onClick={onClose}
           className={`flex-1 px-5 py-3 rounded-full font-bold text-sm text-white transition-all duration-300 shadow-lg hover:-translate-y-0.5 ${isK2 ? 'bg-orange-600 hover:bg-orange-700 shadow-orange-600/25' : 'bg-blue-600 hover:bg-blue-700 shadow-blue-600/25'}`}
         >
-          Uygula ({selectedCount})
+          {t.brand_pages?.showcase?.filter_apply || 'Uygula'} ({selectedCount})
         </button>
       </div>
     </>
