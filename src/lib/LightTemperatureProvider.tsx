@@ -20,7 +20,7 @@ export const LightTemperatureProvider = ({
   children: React.ReactNode;
 }) => {
   const progressRef = useRef(0);
-  const colorCool = useRef(new THREE.Color('#d8e4ff'));
+  const colorCool = useRef(new THREE.Color('#6fa8ff'));
   const colorWarm = useRef(new THREE.Color('#ffb347'));
   const currentColor = useRef(new THREE.Color());
   const lastAppliedProgress = useRef(-1);
@@ -63,7 +63,7 @@ export const LightTemperatureProvider = ({
       });
 
       document.documentElement.style.setProperty('--light-temp', '0');
-      document.documentElement.style.setProperty('--accent-current', '#d8e4ff');
+      document.documentElement.style.setProperty('--accent-current', '#6fa8ff');
     });
 
     return () => ctx.revert();

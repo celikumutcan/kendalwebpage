@@ -26,7 +26,7 @@ body {
 }
 
 :root {
-  --accent-cool: #d8e4ff;
+  --accent-cool: #6fa8ff;
   --accent-warm: #ffb347;
   --accent-current: var(--accent-cool);
   --brand-red: #E3000F;
@@ -63,6 +63,18 @@ body.disable-cv section {
   contain-intrinsic-size: auto 2000px;
 }
 
+/* CompanyStats (title + photo card + 2-row stat grid) runs ~1050px on
+   desktop, well past the generic 800px estimate — same class of mismatch as
+   #about/#global. Left as the generic guess, ScrollTrigger caches this
+   section's (and everything below it's) trigger positions against the wrong
+   800px height; a fast scroll can then cross the real photo-card/stat-card
+   reveal zone before the browser has ever recalculated against the true
+   layout, so the reveal never fires and the cards stay stuck at their
+   initial opacity:0. */
+#stats {
+  contain-intrinsic-size: auto 1050px;
+}
+
 /*
   Hero's LightCore glow — see components/engine/LightCore.tsx for why this
   replaced a Three.js shader. `--lc-scale` is written directly onto
@@ -97,11 +109,11 @@ body.disable-cv section {
   background: radial-gradient(
     circle at center,
     #ffffff 0%,
-    color-mix(in srgb, #ffffff 70%, var(--accent-current, #d8e4ff)) 3%,
-    color-mix(in srgb, var(--accent-current, #d8e4ff) 82%, transparent) 9%,
-    color-mix(in srgb, var(--accent-current, #d8e4ff) 55%, transparent) 18%,
-    color-mix(in srgb, var(--accent-current, #d8e4ff) 28%, transparent) 32%,
-    color-mix(in srgb, var(--accent-current, #d8e4ff) 10%, transparent) 50%,
+    color-mix(in srgb, #ffffff 70%, var(--accent-current, #6fa8ff)) 3%,
+    color-mix(in srgb, var(--accent-current, #6fa8ff) 82%, transparent) 9%,
+    color-mix(in srgb, var(--accent-current, #6fa8ff) 55%, transparent) 18%,
+    color-mix(in srgb, var(--accent-current, #6fa8ff) 28%, transparent) 32%,
+    color-mix(in srgb, var(--accent-current, #6fa8ff) 10%, transparent) 50%,
     transparent 75%
   );
   transform-origin: center;

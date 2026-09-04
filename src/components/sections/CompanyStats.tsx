@@ -54,7 +54,7 @@ export const CompanyStats = () => {
           opacity: 1,
           y: 0,
           scale: 1,
-          duration: 1.2,
+          duration: 0.6,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: containerRef.current,
