@@ -288,7 +288,7 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
       <section className="relative z-10 w-full h-[72vh] md:h-screen flex flex-col items-center justify-center pointer-events-none px-4">
         <div
           ref={heroTextRef}
-          className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-4"
+          className="text-center inline-flex flex-col items-center p-10 md:p-16 rounded-[4rem] bg-white/40 backdrop-blur-2xl border border-white/60 shadow-[0_8px_32px_rgba(0,0,0,0.1)] -mt-4 mb-10 md:mb-0"
         >
           <img
             src={getAssetPath('/images/brands/vanti-logo.svg')}
@@ -303,7 +303,7 @@ export function VantiCreativePage({ allProducts }: VantiCreativePageProps) {
           ref={scrollHintRef}
           className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center"
         >
-          <p className="text-xs tracking-[0.3em] uppercase mb-4 md:mb-6 font-bold text-white bg-blue-600/90 backdrop-blur-md px-6 py-2.5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] border border-blue-400/30">
+          <p className="whitespace-nowrap text-xs tracking-[0.2em] sm:tracking-[0.3em] uppercase mb-4 md:mb-6 font-bold text-white bg-blue-600/90 backdrop-blur-md px-4 sm:px-6 py-2.5 rounded-full shadow-[0_0_20px_rgba(37,99,235,0.4)] border border-blue-400/30">
             {t.explore}
           </p>
           <div className="w-[1px] h-12 md:h-32 bg-teal-900/30"></div>

@@ -72,7 +72,7 @@ export const Hero = () => {
           <div className="mb-4 inline-block rounded-full border border-white/25 bg-black/25 px-5 py-2 text-base md:text-lg font-semibold tracking-widest backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,0.25)] [filter:drop-shadow(0_1px_4px_rgba(0,0,0,0.5))] [@media(max-height:820px)]:mb-3">
             {t.hero.badge}
           </div>
-          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-9xl font-bold tracking-tighter leading-tight [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))] [@media(max-height:820px)]:text-8xl [@media(max-height:820px)]:sm:text-9xl">
+          <h1 className="text-[clamp(2rem,-3.1rem_+_25.5vw,3.75rem)] sm:text-7xl md:text-7xl lg:text-9xl font-bold tracking-tighter leading-tight [filter:drop-shadow(0_0_10px_rgba(0,0,0,0.55))_drop-shadow(0_4px_20px_rgba(0,0,0,0.7))] [@media(max-height:820px)_and_(min-width:480px)]:text-8xl [@media(max-height:820px)_and_(min-width:480px)]:sm:text-9xl">
             {t.hero.title_part1} <br />
             <span className="">{t.hero.title_part2}</span>
           </h1>
