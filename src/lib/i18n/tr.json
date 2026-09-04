@@ -276,7 +276,8 @@
     "navbar": {
       "home": "Ana Sayfa",
       "products": "Ürünler",
-      "contact": "İletişim"
+      "contact": "İletişim",
+      "cta": "Bize Ulaşın"
     },
     "hero": {
       "k2_title": "Profesyonel Aydınlatma Çözümleri",

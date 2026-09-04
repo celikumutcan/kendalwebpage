@@ -11,7 +11,6 @@ import type { Product } from '@/data/products';
 import { getAssetPath, getBrandUrunlerHref } from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { K2Preloader } from './K2Preloader';
-import { K2Scene } from './K2Scene';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -167,6 +166,18 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
   const [sceneReady, setSceneReady] = useState(false);
   const introPlayedRef = useRef(false);
 
+  // K2Scene (the 3D mountain/sunrise background) was removed for
+  // performance testing — it used to call this via its Canvas onCreated
+  // once WebGL had painted a frame. Two RAFs keeps the same "wait a paint"
+  // timing so the preloader curtain-wipe still starts against a settled
+  // layout instead of firing on the very first render.
+  useEffect(() => {
+    const id = requestAnimationFrame(() =>
+      requestAnimationFrame(() => setSceneReady(true)),
+    );
+    return () => cancelAnimationFrame(id);
+  }, []);
+
   useEffect(() => {
     if (!sceneReady || introPlayedRef.current) return;
     introPlayedRef.current = true;
@@ -303,10 +314,6 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
     >
       <K2Preloader ready={sceneReady} />
 
-      <div className="k2-scene-wrapper fixed inset-0 z-0 pointer-events-none">
-        <K2Scene onReady={() => setSceneReady(true)} />
-      </div>
-
       <section className="relative z-10 w-full h-screen flex flex-col items-center justify-center pointer-events-none px-4 overflow-hidden">
         <div
           ref={flashRef}
@@ -364,7 +371,14 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
 
         <div
           ref={heroTextRef}
-          className="relative text-center flex flex-col items-center -mt-24 md:-mt-28"
+          // Anchored to the same bottom-relative, vh-based frame as the
+          // ridge SVG below (h-[38vh] md:h-[46vh]) instead of flex-centering
+          // in the viewport with a fixed -mt offset — the peak sits at a
+          // fixed % of the ridge's own height, so a fixed-pixel margin only
+          // lines the logo up with it at whatever viewport height it was
+          // tuned against (e.g. a laptop), drifting apart on other aspect
+          // ratios like phones.
+          className="absolute left-1/2 -translate-x-1/2 bottom-[35vh] md:bottom-[43vh] text-center flex flex-col items-center"
         >
           <span
             ref={heroSubRef}

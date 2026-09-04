@@ -138,7 +138,7 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
               href={`${homeHref}#iletisim`}
               className={`hidden sm:flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold transition-all duration-300 shadow-lg hover:-translate-y-0.5 hover:shadow-xl ${theme.btn}`}
             >
-              <span>Bize Ulaşın</span>
+              <span>{(t as any).brand_pages?.navbar?.cta || 'Bize Ulaşın'}</span>
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -235,7 +235,7 @@ export const BrandNavbar = ({ brandName }: BrandNavbarProps) => {
             className={`mt-4 py-4 rounded-2xl flex items-center justify-center gap-2 shadow-xl ${theme.btn}`}
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Bize Ulaşın
+            {(t as any).brand_pages?.navbar?.cta || 'Bize Ulaşın'}
           </Link>
         </div>
       </div>

@@ -276,7 +276,8 @@
     "navbar": {
       "home": "Home",
       "products": "Products",
-      "contact": "Contact"
+      "contact": "Contact",
+      "cta": "Contact Us"
     },
     "hero": {
       "k2_title": "Professional Lighting Solutions",
