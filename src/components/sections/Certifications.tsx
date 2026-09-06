@@ -27,7 +27,7 @@ export const Certifications = () => {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top 80%',
+            start: 'top 85%',
           },
         },
       );
@@ -80,11 +80,11 @@ export const Certifications = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[1200px] h-[300px] bg-yellow-500/40 rounded-[100%] blur-[90px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {certs.map((cert, idx) => (
             <div
               key={idx}
-              className={`cert-item relative flex flex-col items-center justify-center p-6 rounded-2xl bg-[var(--global-text)]/[0.02] border border-[var(--global-text)]/10 transition-all duration-300 hover:bg-[var(--global-text)]/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group ${cert.id === 'iso' ? 'cursor-pointer z-40' : 'z-10'}`}
+              className={`cert-item relative flex flex-col items-center justify-center p-4 md:p-6 rounded-2xl bg-[var(--global-text)]/[0.02] border border-[var(--global-text)]/10 transition-all duration-300 hover:bg-[var(--global-text)]/[0.05] hover:border-[var(--brand-red)] hover:shadow-[0_0_15px_rgba(227,0,15,0.3)] group ${cert.id === 'iso' ? 'cursor-pointer z-40' : 'z-10'}`}
             >
               {cert.id === 'iso' && (
                 <>
@@ -144,7 +144,7 @@ export const Certifications = () => {
                     return (
                       <div
                         key={subIdx}
-                        className="absolute z-20 -translate-x-1/2 -translate-y-1/2 w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 pointer-events-none group-hover:pointer-events-auto"
+                        className="absolute z-20 -translate-x-1/2 -translate-y-1/2 w-16 h-16 md:w-24 md:h-24 flex items-center justify-center transition-all duration-500 opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 pointer-events-none group-hover:pointer-events-auto"
                         style={{
                           left: pos.left,
                           top: pos.top,
@@ -156,7 +156,7 @@ export const Certifications = () => {
                             src={subIcon}
                             alt={`ISO Detail ${subIdx + 1}`}
                             fill
-                            sizes="(max-width: 768px) 80px, 96px"
+                            sizes="(max-width: 768px) 64px, 96px"
                             className="object-contain p-2"
                             style={{
                               filter:
@@ -170,24 +170,24 @@ export const Certifications = () => {
                 </>
               )}
 
-              <div className="relative w-28 h-28 md:w-32 md:h-32 mb-4 flex items-center justify-center">
+              <div className="relative w-20 h-20 md:w-32 md:h-32 mb-3 md:mb-4 flex items-center justify-center">
                 {cert.id === 'iso' ? (
                   <div className="absolute inset-0 z-30 flex items-center justify-center transition-transform duration-500 group-hover:scale-90 bg-transparent rounded-full">
                     <Image
                       src={cert.icon}
                       alt={cert.label || 'Certification'}
                       fill
-                      sizes="128px"
+                      sizes="(max-width: 768px) 80px, 128px"
                       className="object-contain drop-shadow-md"
                     />
                   </div>
                 ) : (
-                  <div className="relative w-24 h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-md">
+                  <div className="relative w-16 h-16 md:w-24 md:h-24 transition-transform duration-300 group-hover:scale-110 drop-shadow-md">
                     <Image
                       src={cert.icon}
                       alt={cert.label || 'Certification'}
                       fill
-                      sizes="96px"
+                      sizes="(max-width: 768px) 64px, 96px"
                       className="object-contain drop-shadow-md"
                     />
                   </div>
@@ -195,7 +195,7 @@ export const Certifications = () => {
               </div>
 
               <h3
-                className={`text-center text-sm md:text-base font-medium text-[var(--global-text)] transition-opacity duration-300 ${cert.id === 'iso' ? 'opacity-90 group-hover:opacity-0' : 'opacity-70 group-hover:opacity-100'}`}
+                className={`text-center text-[13px] md:text-base font-medium text-[var(--global-text)] transition-opacity duration-300 ${cert.id === 'iso' ? 'opacity-90 group-hover:opacity-0' : 'opacity-70 group-hover:opacity-100'}`}
               >
                 {cert.label}
               </h3>

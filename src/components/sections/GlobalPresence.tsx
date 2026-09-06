@@ -71,45 +71,24 @@ export const GlobalPresence = () => {
 
   const [shouldMountGlobe, setShouldMountGlobe] = useState(false);
 
-  // Defers the Globe's Canvas mount (texture fetches + one-time scene build)
-  // to an idle callback instead of mounting on page load, so that work
-  // lands when the main thread is free rather than at an arbitrary moment
-  // while the user is still reading an earlier section. The 2s timeout is a
-  // fallback for browsers without requestIdleCallback (e.g. Safari).
   useEffect(() => {
-    if (isMobile) return;
-
-    const win = window as Window & {
-      requestIdleCallback?: (
-        callback: () => void,
-        opts?: { timeout: number },
-      ) => number;
-      cancelIdleCallback?: (id: number) => void;
-    };
-
-    if (win.requestIdleCallback) {
-      const id = win.requestIdleCallback(() => setShouldMountGlobe(true), {
-        timeout: 2000,
-      });
-      return () => win.cancelIdleCallback?.(id);
-    }
-
-    const timeoutId = window.setTimeout(() => setShouldMountGlobe(true), 300);
-    return () => window.clearTimeout(timeoutId);
-  }, [isMobile]);
+  }, []);
 
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: containerRef.current,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,
-        invalidateOnRefresh: true,
-        onUpdate: (self) => {
-          scrollProgressRef.current = Math.round(self.progress * 100) / 100;
-        },
-      });
+      // Sadece masaüstünde (3D Dünya varken) kaydırma yüzdesini hesapla
+      if (!isMobile) {
+        ScrollTrigger.create({
+          trigger: containerRef.current,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: true,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            scrollProgressRef.current = Math.round(self.progress * 100) / 100;
+          },
+        });
+      }
 
       gsap.fromTo(
         '.global-reveal',
@@ -122,26 +101,28 @@ export const GlobalPresence = () => {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top 15%',
+            // Mobilde ekrana girdiği an (top 85%), masaüstünde ise epey kaydırınca (top 15%) başlasın
+            start: isMobile ? 'top 85%' : 'top 15%',
             end: 'center center',
-            scrub: 0.8,
+            // Mobilde kaydırmaya bağlı (scrub) olmasın, normal animasyon gibi kendi oynasın
+            scrub: isMobile ? false : 0.8,
           },
         },
       );
     }, containerRef);
 
     return () => ctx.revert();
-  }, []);
+  }, [isMobile]);
 
   return (
     <section
       id="global"
       ref={containerRef}
-      className="w-full bg-transparent h-[130vh] relative"
+      className="w-full bg-transparent md:h-[130vh] relative"
     >
-      <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center">
+      <div className="md:sticky md:top-0 w-full min-h-[50vh] md:h-screen overflow-hidden flex items-center justify-center py-20 md:py-0">
         <div className="absolute inset-0 z-0 opacity-70">
-          {isMobile || !shouldMountGlobe ? (
+          {isMobile ? (
             <GlobeStaticFallback />
           ) : (
             <Globe scrollProgressRef={scrollProgressRef} />

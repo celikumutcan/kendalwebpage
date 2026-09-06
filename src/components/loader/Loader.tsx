@@ -32,11 +32,14 @@ export const Loader = ({ onComplete }: { onComplete: () => void }) => {
     }, 150);
 
     const handleLoad = () => {
-      setProgress(100);
+      setTimeout(() => {
+        currentProgress = 100;
+        setProgress(100);
+      }, 2000); 
     };
 
     if (document.readyState === 'complete') {
-      setTimeout(() => setProgress(100), 100);
+      handleLoad();
     } else {
       window.addEventListener('load', handleLoad);
     }

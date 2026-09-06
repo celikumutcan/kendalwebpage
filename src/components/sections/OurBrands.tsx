@@ -60,7 +60,7 @@ export const OurBrands = () => {
           y: 0,
           duration: 0.8,
           ease: 'power3.out',
-          scrollTrigger: { trigger: containerRef.current, start: 'top 80%' },
+          scrollTrigger: { trigger: containerRef.current, start: 'top 85%' },
         },
       );
 
@@ -73,7 +73,7 @@ export const OurBrands = () => {
           duration: 0.6,
           stagger: 0.12,
           ease: 'power3.out',
-          scrollTrigger: { trigger: containerRef.current, start: 'top 75%' },
+          scrollTrigger: { trigger: containerRef.current, start: 'top 85%' },
         },
       );
     }, containerRef);

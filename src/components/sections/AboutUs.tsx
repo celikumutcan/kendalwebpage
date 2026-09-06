@@ -30,7 +30,7 @@ export const AboutUs = () => {
           ease: 'power3.out',
           scrollTrigger: {
             trigger: textRef.current,
-            start: 'top 80%',
+            start: 'top 85%',
           },
         },
       );

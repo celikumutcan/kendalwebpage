@@ -21,7 +21,7 @@ export const CatalogCTA = () => {
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
-            start: 'top 80%',
+            start: 'top 85%',
           },
         },
       );
