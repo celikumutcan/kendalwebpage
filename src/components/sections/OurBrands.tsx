@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { type CSSProperties, useRef } from 'react';
-import { getAssetPath } from '@/lib/basePath';
+import { getAssetPath, isGithubPagesBuild } from '@/lib/basePath';
 import { gsap } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
@@ -13,27 +13,33 @@ const brands = [
     name: 'K2',
     logo: '/images/brands/k2-logo.svg',
     href:
-      process.env.NODE_ENV === 'production'
-        ? '/brand/k2'
-        : 'http://k2.localhost:3000',
+      process.env.NODE_ENV !== 'production'
+        ? 'http://k2.localhost:3000'
+        : isGithubPagesBuild
+          ? '/brand/k2'
+          : 'https://k2.kendalelektrik.com.tr',
     glow: '#f97316',
   },
   {
     name: 'Vanti',
     logo: '/images/brands/vanti-logo.svg',
     href:
-      process.env.NODE_ENV === 'production'
-        ? '/brand/vanti'
-        : 'http://vanti.localhost:3000',
+      process.env.NODE_ENV !== 'production'
+        ? 'http://vanti.localhost:3000'
+        : isGithubPagesBuild
+          ? '/brand/vanti'
+          : 'https://vanti.kendalelektrik.com.tr',
     glow: '#3b82f6',
   },
   {
     name: 'Global',
     logo: '/images/brands/global-logo.svg',
     href:
-      process.env.NODE_ENV === 'production'
-        ? '/brand/global'
-        : 'http://global.localhost:3000',
+      process.env.NODE_ENV !== 'production'
+        ? 'http://global.localhost:3000'
+        : isGithubPagesBuild
+          ? '/brand/global'
+          : 'https://global.kendalelektrik.com.tr',
     glow: '#facc15',
   },
 ];

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import type React from 'react';
 import { useEffect, useState } from 'react';
 import { useLenis } from '@/components/engine/SmoothScrollProvider';
-import { getAssetPath } from '@/lib/basePath';
+import { getAssetPath, isGithubPagesBuild } from '@/lib/basePath';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
@@ -165,9 +165,11 @@ export const Navbar = () => {
         {
           id: 'brand_k2',
           href:
-            process.env.NODE_ENV === 'production'
-              ? '/brand/k2'
-              : 'http://k2.localhost:3000',
+            process.env.NODE_ENV !== 'production'
+              ? 'http://k2.localhost:3000'
+              : isGithubPagesBuild
+                ? '/brand/k2'
+                : 'https://k2.kendalelektrik.com.tr',
           external: true,
           label: (
             <div className="flex items-center gap-3">
@@ -187,9 +189,11 @@ export const Navbar = () => {
         {
           id: 'brand_vanti',
           href:
-            process.env.NODE_ENV === 'production'
-              ? '/brand/vanti'
-              : 'http://vanti.localhost:3000',
+            process.env.NODE_ENV !== 'production'
+              ? 'http://vanti.localhost:3000'
+              : isGithubPagesBuild
+                ? '/brand/vanti'
+                : 'https://vanti.kendalelektrik.com.tr',
           external: true,
           label: (
             <div className="flex items-center gap-3">
@@ -209,9 +213,11 @@ export const Navbar = () => {
         {
           id: 'brand_global',
           href:
-            process.env.NODE_ENV === 'production'
-              ? '/brand/global'
-              : 'http://global.localhost:3000',
+            process.env.NODE_ENV !== 'production'
+              ? 'http://global.localhost:3000'
+              : isGithubPagesBuild
+                ? '/brand/global'
+                : 'https://global.kendalelektrik.com.tr',
           external: true,
           label: (
             <div className="flex items-center gap-3">
