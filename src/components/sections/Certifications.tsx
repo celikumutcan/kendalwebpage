@@ -22,8 +22,8 @@ export const Certifications = () => {
           opacity: 1,
           scale: 1,
           y: 0,
-          duration: 0.6,
-          stagger: 0.1,
+          duration: 0.4,
+          stagger: 0.05,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,

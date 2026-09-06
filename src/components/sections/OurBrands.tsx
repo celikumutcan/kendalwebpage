@@ -58,7 +58,7 @@ export const OurBrands = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.8,
+          duration: 0.5,
           ease: 'power3.out',
           scrollTrigger: { trigger: containerRef.current, start: 'top 85%' },
         },
@@ -70,8 +70,8 @@ export const OurBrands = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.6,
-          stagger: 0.12,
+          duration: 0.4,
+          stagger: 0.08,
           ease: 'power3.out',
           scrollTrigger: { trigger: containerRef.current, start: 'top 85%' },
         },

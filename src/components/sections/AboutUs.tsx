@@ -26,7 +26,7 @@ export const AboutUs = () => {
           opacity: 1,
           filter: 'blur(0px) brightness(1)',
           y: 0,
-          duration: 1.5,
+          duration: 0.7,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: textRef.current,

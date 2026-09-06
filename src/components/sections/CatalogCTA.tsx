@@ -17,7 +17,7 @@ export const CatalogCTA = () => {
         {
           y: 0,
           opacity: 1,
-          duration: 1,
+          duration: 0.5,
           ease: 'power2.out',
           scrollTrigger: {
             trigger: containerRef.current,
