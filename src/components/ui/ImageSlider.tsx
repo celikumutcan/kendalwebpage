@@ -14,17 +14,17 @@ export function ImageSlider({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  if (!images || images.length === 0) return null;
-
   useEffect(() => {
-    if (isHovered || images.length <= 1) return;
+    if (!images || images.length <= 1 || isHovered) return;
 
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 4000);
 
     return () => clearInterval(timer);
-  }, [isHovered, images.length]);
+  }, [isHovered, images]);
+
+  if (!images || images.length === 0) return null;
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);

@@ -18,7 +18,9 @@ Kendal Elektrik ürünleri Türkiye genelinde A101, BİM, Koçtaş, Avansas gibi
 
 ## Ana Sayfalar
 
-- [Tüm Ürünler](https://www.kendalelektrik.com.tr/urunler): 2900'ün üzerinde aydınlatma ve elektrik ürününden oluşan katalog.
+- [K2 Ürünleri](https://k2.kendalelektrik.com.tr/urunler): K2 Led System markasının yerli üretim LED aydınlatma armatürleri kataloğu.
+- [Vanti Ürünleri](https://vanti.kendalelektrik.com.tr/urunler): Vanti markasının vantilatör ve havalandırma ürünleri kataloğu.
+- [Kendal Global Ürünleri](https://global.kendalelektrik.com.tr/urunler): Kendal Global markasının uluslararası pazarlara yönelik aydınlatma ve elektrik ürünleri kataloğu.
 - [Üretim Tesisimiz](https://www.kendalelektrik.com.tr/uretim): Üretim tesisi ve süreçleri hakkında bilgi.
 - [Projelerimiz](https://www.kendalelektrik.com.tr/projeler): Referans projeler ve kurumsal iş birlikleri.
 - [Zincir Marketlerdeki Ürünlerimiz](https://www.kendalelektrik.com.tr/zincir-marketler): Ürünlerin satıldığı zincir marketler.
