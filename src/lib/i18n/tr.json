@@ -79,7 +79,7 @@
     "text1": "2017 yılında sektörel faaliyetlerine başlayan firmamız hali hazırda, yıllık 60 milyon üretim kapasitesi ile Türkiye'nin en büyük Ampul üretim tesisidir. 22.000m² kapalı alanda 200 kişi ve tam otomasyon ile led ampul, flamanlı rustik ampul, sıvaüstü sıva altı led panel ve spotlar, led projektör, led etanj, led sokak armatürü, led wall washer, sarkıt avizeler, ledli mağaza spotları, dekoratif lineer armatürler üretmektedir.",
     "text2": "Sektörde önemli bir pazara sahip olan Kendal Elektrik, dünyadaki teknolojik gelişmeleri yakından takip ederek Türkiye'de ilk uygulayan firmadır. Özellikle flamanlı rustik ampul üretimini Türkiye'de ilk kez gerçekleştirmiştir. K2 markası şirketimizin kendi markası olmakla beraber, Türkiye ve yurt dışında birçok firmaya kendilerine ait markaların üretimi de yapılmaktadır.",
     "text3": "Her yıl sürekli ERP yazılımlarına yüksek yatırımlar yapan Kendal Elektrik, MES/MAS programı ile tüm üretimini online izlemekte ve canlı raporlamaktadır.",
-    "stat1_value": "60M+",
+    "stat1_value": "80M+",
     "stat1_label": "Yıllık Üretim Kapasitesi",
     "stat2_value": "350",
     "stat2_label": "Çalışan",
@@ -127,7 +127,7 @@
   "global": {
     "title": "Küresel Varlığımız",
     "subtitle": "Türkiye Merkezli Üretim Gücü",
-    "text": "Türkiye merkezli üretim gücümüzle 4 kıtada, 42 ülkeye yayılan güçlü bir ihracat ağına sahibiz. Asya, Avrupa ve Afrika'da sektörün en büyük oyuncularından biri olarak ülkemizi küresel arenada gururla temsil ediyor, sağlam üretim altyapımızla dünya standartlarında kalite sunuyoruz."
+    "text": "Türkiye merkezli üretim gücümüzle 4 kıtada, 40 ülkeye yayılan güçlü bir ihracat ağına sahibiz. Asya, Avrupa ve Afrika'da sektörün en büyük oyuncularından biri olarak ülkemizi küresel arenada gururla temsil ediyor, sağlam üretim altyapımızla dünya standartlarında kalite sunuyoruz."
   },
   "references": {
     "title": "Türkiye Genelinde",
@@ -258,7 +258,7 @@
   "production_page": {
     "title": "Üretim",
     "content": [
-      "Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde, yıllık 100 milyon adet aydınlatma ürünü üretim kapasitesiyle sektörün öncü üreticileri arasında yer almaktadır. Yüksek otomasyon teknolojisiyle desteklenen üretim altyapısında LED ampul, LED panel, filament LED ampul, mum ampul, manuel montaj hatları, SMD dizgi sistemleri ve plastik enjeksiyon üretimi tek çatı altında gerçekleştirilmektedir.",
+      "Kendal Elektrik, 2017 yılında faaliyete geçen 22.000 m² kapalı alana sahip modern üretim tesisinde, yıllık 80 milyon adet aydınlatma ürünü üretim kapasitesiyle sektörün öncü üreticileri arasında yer almaktadır. Yüksek otomasyon teknolojisiyle desteklenen üretim altyapısında LED ampul, LED panel, filament LED ampul, mum ampul, manuel montaj hatları, SMD dizgi sistemleri ve plastik enjeksiyon üretimi tek çatı altında gerçekleştirilmektedir.",
       "Türkiye, Avrupa ve Orta Doğu'da filament LED ampul üreten tek üretici olma özelliğine sahip olan Kendal Elektrik, üretimin her aşamasında uluslararası kalite standartlarını esas almaktadır. Tedarikçilerden gelen tüm hammaddeler ve yarı mamuller IQC (Incoming Quality Control) süreçlerinden geçirilirken, üretim boyunca IPQC (In Process Quality Control) kontrolleri uygulanmakta, sevkiyat öncesinde ise OQC (Outgoing Quality Control) ile nihai ürünler tekrar denetlenmektedir.",
       "ESD korumalı üretim alanlarında gerçekleştirilen üretim süreçleri sayesinde elektronik bileşenler elektrostatik deşarja karşı korunurken, ürünler elektriksel güvenlik, mekanik dayanım, fotometrik performans, güç tüketimi, güç faktörü, EMC uyumluluğu, sürücü kontrolü, lümen değeri, renk sıcaklığı, CRI ölçümü, izolasyon direnci, topraklama direnci, yüksek gerilim, kaçak akım, yaşlandırma, ömür ve düşme testleri gibi kapsamlı kalite kontrollerinden geçirilmektedir. Dijital üretim yönetimini ERP, MES ve WMS sistemleriyle destekleyen Kendal Elektrik; yüksek üretim kapasitesi, ileri otomasyon altyapısı, izlenebilir süreçleri ve sürdürülebilir kalite anlayışıyla Türkiye'de ürettiği yenilikçi aydınlatma çözümlerini dünyanın birçok ülkesine güvenle ulaştırmaktadır."
     ]
