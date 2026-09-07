@@ -10245,11 +10245,11 @@
     "category": {
       "tr": [
         "Şerit LEDler",
-        "Neon Ledler"
+        "Neon LEDler"
       ],
       "en": [
         "Strip Leds",
-        "Neon Leds"
+        "Neon LEDs"
       ]
     },
     "brand": "global",
@@ -10341,11 +10341,11 @@
     "category": {
       "tr": [
         "Şerit LEDler",
-        "Neon Ledler"
+        "Neon LEDler"
       ],
       "en": [
         "Strip Leds",
-        "Neon Leds"
+        "Neon LEDs"
       ]
     },
     "brand": "global",
@@ -10429,11 +10429,11 @@
     "category": {
       "tr": [
         "Şerit LEDler",
-        "Neon Ledler"
+        "Neon LEDler"
       ],
       "en": [
         "Strip Leds",
-        "Neon Leds"
+        "Neon LEDs"
       ]
     },
     "brand": "global",
@@ -10907,11 +10907,11 @@
     "category": {
       "tr": [
         "Şerit LEDler",
-        "Neon Ledler"
+        "Neon LEDler"
       ],
       "en": [
         "Strip Leds",
-        "Neon Leds"
+        "Neon LEDs"
       ]
     },
     "brand": "global",
@@ -55323,10 +55323,10 @@
     },
     "category": {
       "tr": [
-        "LED Aplikler"
+        "Yüksek Tavan Armatürleri"
       ],
       "en": [
-        "LED Aplikler"
+        "High Bay Luminaires"
       ]
     },
     "brand": "k2",
@@ -55422,10 +55422,10 @@
     },
     "category": {
       "tr": [
-        "LED Aplikler"
+        "Yüksek Tavan Armatürleri"
       ],
       "en": [
-        "LED Aplikler"
+        "High Bay Luminaires"
       ]
     },
     "brand": "k2",
@@ -55521,10 +55521,10 @@
     },
     "category": {
       "tr": [
-        "LED Aplikler"
+        "Yüksek Tavan Armatürleri"
       ],
       "en": [
-        "LED Aplikler"
+        "High Bay Luminaires"
       ]
     },
     "brand": "k2",
@@ -58544,10 +58544,12 @@
     },
     "category": {
       "tr": [
-        "LED Aplikler"
+        "Bahçe Armatürleri",
+        "Armatürler"
       ],
       "en": [
-        "LED Aplikler"
+        "Garden Fixtures",
+        "Armatürler"
       ]
     },
     "brand": "k2",
