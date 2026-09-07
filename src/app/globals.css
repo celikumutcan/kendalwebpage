@@ -187,3 +187,31 @@ html {
   from { opacity: 0; transform: translate(-50%, calc(-100% - 14px)) scale(0.9); }
   to { opacity: 1; transform: translate(-50%, calc(-100% - 14px)) scale(1); }
 }
+
+/*
+  Footer "location card": the background is a static map snapshot (a plain
+  webp image, pre-rendered once from OSM tiles at build time) — not a live
+  embedded map. A live Google Maps/Leaflet embed pulls in third-party JS +
+  tiles and costs LCP/CLS for a footer element nobody interacts with beyond
+  one click-through; this card gets the same click-through with the network
+  cost of a single ordinary image. Only the pin's ring animates, and only
+  transform/opacity (compositor-only, same reasoning as the k2-marquee rule
+  above).
+*/
+@keyframes footer-pin-ping {
+  0% { transform: scale(0.4); opacity: 0.5; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+.footer-map-ring {
+  animation: footer-pin-ping 2.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  will-change: transform, opacity;
+}
+.footer-map-ring.footer-map-ring-delay {
+  animation-delay: 1.1s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .footer-map-ring {
+    animation: none;
+    opacity: 0.25;
+  }
+}

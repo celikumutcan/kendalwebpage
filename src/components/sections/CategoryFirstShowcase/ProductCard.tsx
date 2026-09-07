@@ -179,7 +179,7 @@ export function ProductCard({
             WebkitMaskImage:
               'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
           }}
-          className="relative z-10 object-contain p-2 sm:p-3 scale-[1.15] group-hover:scale-[1.22] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
+          className="relative z-10 object-contain p-2 sm:p-3 scale-[1.08] group-hover:scale-[1.15] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
         />
 
         <span

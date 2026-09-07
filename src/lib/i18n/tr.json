@@ -143,6 +143,7 @@
     "rights": "Kendal Elektrik. Tüm hakları saklıdır.",
     "company": "Kendal Elektrik Aydınlatma Elektronik İnşaat Sanayi ve Dış Ticaret A.Ş.",
     "address": "Selimpaşa Org. San. Böl. 5008 Sokak No:6 Selimpaşa Silivri/İSTANBUL",
+    "map_cta": "Haritada Aç",
     "contact_title": "İletişim",
     "phone": "0212 482 75 90 - 91",
     "sales_phone": "0850 259 41 41",
@@ -319,6 +320,7 @@
     },
     "footer": {
       "address_prefix": "Adres: ",
+      "map_cta": "Haritada Aç",
       "contact_title": "İletişim",
       "contact_line": "İletişim Hattı",
       "sales_line": "Satış Destek Hattı",
