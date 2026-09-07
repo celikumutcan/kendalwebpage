@@ -78,6 +78,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
                 <span className="mt-1.5 inline-flex items-center gap-1 text-xs font-semibold text-white opacity-80 transition-opacity group-hover:opacity-100">
                   {(t as any).brand_pages?.footer?.map_cta || 'Haritada Aç'}
                   <svg
+                    aria-hidden="true"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
