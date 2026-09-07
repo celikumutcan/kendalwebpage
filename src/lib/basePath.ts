@@ -29,7 +29,7 @@ export const getBrandExternalHref = (brand: string, path = '') => {
     return `http://${brand}.localhost:3000${path}`;
   }
   if (isGithubPagesBuild) {
-    return `/brand/${brand}${path}`;
+    return `${getBasePath()}/brand/${brand}${path}`;
   }
   return `https://${brand}.kendalelektrik.com.tr${path}`;
 };
