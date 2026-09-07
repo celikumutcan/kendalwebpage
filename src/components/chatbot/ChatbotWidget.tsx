@@ -75,6 +75,12 @@ export const ChatbotWidget = () => {
     if (host.startsWith('k2')) setAccentKey('k2');
     else if (host.startsWith('vanti')) setAccentKey('vanti');
     else if (host.startsWith('global')) setAccentKey('global');
+    else {
+      const match = window.location.pathname.match(
+        /\/brand\/(k2|vanti|global)(?:\/|$)/,
+      );
+      if (match) setAccentKey(match[1] as AccentKey);
+    }
   }, []);
 
   useEffect(() => {
