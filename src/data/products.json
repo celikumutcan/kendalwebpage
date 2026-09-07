@@ -12047,6 +12047,9 @@
     "id": "KDL404B",
     "model": "KDL404B",
     "image": "urunler/kdl404b.webp",
+    "images": [
+      "urunler/kdl404b-old.webp"
+    ],
     "name": {
       "tr": "KDL404B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL404B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12155,6 +12158,9 @@
     "id": "KDL400B",
     "model": "KDL400B",
     "image": "urunler/kdl400b.webp",
+    "images": [
+      "urunler/kdl400b-old.webp"
+    ],
     "name": {
       "tr": "KDL400B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL400B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12263,6 +12269,9 @@
     "id": "KDL405B",
     "model": "KDL405B",
     "image": "urunler/kdl405b.webp",
+    "images": [
+      "urunler/kdl405b-old.webp"
+    ],
     "name": {
       "tr": "KDL405B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL405B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12371,6 +12380,9 @@
     "id": "KDL401B",
     "model": "KDL401B",
     "image": "urunler/kdl401b.webp",
+    "images": [
+      "urunler/kdl401b-old.webp"
+    ],
     "name": {
       "tr": "KDL401B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL401B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12479,6 +12491,9 @@
     "id": "KDL402B",
     "model": "KDL402B",
     "image": "urunler/kdl402b.webp",
+    "images": [
+      "urunler/kdl402b-old.webp"
+    ],
     "name": {
       "tr": "KDL402B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL402B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12587,6 +12602,9 @@
     "id": "KDL403B",
     "model": "KDL403B",
     "image": "urunler/kdl403b.webp",
+    "images": [
+      "urunler/kdl403b-old.webp"
+    ],
     "name": {
       "tr": "KDL403B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL403B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12695,6 +12713,9 @@
     "id": "KDL407B",
     "model": "KDL407B",
     "image": "urunler/kdl407b.webp",
+    "images": [
+      "urunler/kdl407b-old.webp"
+    ],
     "name": {
       "tr": "KDL407B SIVA ALTI SİYAH KASA SLİM LED PANEL",
       "en": "KDL407B RECESSED BLACK BODY SLIM LED PANEL"
@@ -12803,6 +12824,9 @@
     "id": "KDL404S",
     "model": "KDL404S",
     "image": "urunler/kdl404s.webp",
+    "images": [
+      "urunler/kdl404s-old.webp"
+    ],
     "name": {
       "tr": "KDL404S SIVA ALTI SATEN KASA SLİM LED PANEL",
       "en": "KDL404S RECESSED SATIN BODY SLIM LED PANEL"
@@ -12911,6 +12935,9 @@
     "id": "KDL400S",
     "model": "KDL400S",
     "image": "urunler/kdl400s.webp",
+    "images": [
+      "urunler/kdl400s-old.webp"
+    ],
     "name": {
       "tr": "KDL400S SIVA ALTI SATEN KASA SLİM LED PANEL",
       "en": "KDL400S RECESSED SATIN BODY SLIM LED PANEL"
@@ -13019,6 +13046,9 @@
     "id": "KDL401S",
     "model": "KDL401S",
     "image": "urunler/kdl401s.webp",
+    "images": [
+      "urunler/kdl401s-old.webp"
+    ],
     "name": {
       "tr": "KDL401S SIVA ALTI SATEN KASA SLİM LED PANEL",
       "en": "KDL401S RECESSED SATIN BODY SLIM LED PANEL"
@@ -13127,6 +13157,9 @@
     "id": "KDL402S",
     "model": "KDL402S",
     "image": "urunler/kdl402s.webp",
+    "images": [
+      "urunler/kdl402s-old.webp"
+    ],
     "name": {
       "tr": "KDL402S SIVA ALTI SATEN KASA SLİM LED PANEL",
       "en": "KDL402S RECESSED SATIN BODY SLIM LED PANEL"
@@ -13235,6 +13268,9 @@
     "id": "KDL403S",
     "model": "KDL403S",
     "image": "urunler/kdl403s.webp",
+    "images": [
+      "urunler/kdl403s-old.webp"
+    ],
     "name": {
       "tr": "KDL403S SIVA ALTI SATEN KASA SLİM LED PANEL",
       "en": "KDL403S RECESSED SATIN BODY SLIM LED PANEL"
@@ -16403,6 +16439,9 @@
     "id": "KDL444",
     "model": "KDL444",
     "image": "urunler/kdl444.webp",
+    "images": [
+      "urunler/kdl444-old.webp"
+    ],
     "name": {
       "tr": "KDL444 SIVA ÜSTÜ ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
       "en": "KDL444 SURFACE MOUNTED DUAL COLOR 3 FUNCTION LED PANEL"
@@ -16511,6 +16550,9 @@
     "id": "KDL445",
     "model": "KDL445",
     "image": "urunler/kdl445.webp",
+    "images": [
+      "urunler/kdl445-old.webp"
+    ],
     "name": {
       "tr": "KDL445 SIVA ÜSTÜ ÇİFT RENKLİ 3 FONKSİYONLU LED PANEL",
       "en": "KDL445 SURFACE MOUNTED DUAL COLOR 3 FUNCTION LED PANEL"
@@ -17195,6 +17237,9 @@
     "id": "KDL465",
     "model": "KDL465",
     "image": "urunler/kdl465.webp",
+    "images": [
+      "urunler/kdl465-old.webp"
+    ],
     "name": {
       "tr": "KDL465 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL465 SLIM BACKLIGHT FRAMELESS PANEL"
@@ -17295,6 +17340,9 @@
     "id": "KDL466",
     "model": "KDL466",
     "image": "urunler/kdl466.webp",
+    "images": [
+      "urunler/kdl466-old.webp"
+    ],
     "name": {
       "tr": "KDL466 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL466 SLIM BACKLIGHT FRAMELESS PANEL"
@@ -17395,6 +17443,9 @@
     "id": "KDL467",
     "model": "KDL467",
     "image": "urunler/kdl467.webp",
+    "images": [
+      "urunler/kdl467-old.webp"
+    ],
     "name": {
       "tr": "KDL467 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL467 SLIM BACKLIGHT FRAMELESS PANEL"
@@ -17495,6 +17546,9 @@
     "id": "KDL468",
     "model": "KDL468",
     "image": "urunler/kdl468.webp",
+    "images": [
+      "urunler/kdl468-old.webp"
+    ],
     "name": {
       "tr": "KDL468 SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL468 SLIM BACKLIGHT FRAMELESS PANEL"
@@ -17811,6 +17865,9 @@
     "id": "KDL540",
     "model": "KDL540",
     "image": "urunler/kdl540.webp",
+    "images": [
+      "urunler/kdl540-old.webp"
+    ],
     "name": {
       "tr": "KDL540 AYARLANABİLİR SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL540 ADJUSTABLE SLIM BACKLIGHT FRAMELESS PANEL"
@@ -17911,6 +17968,9 @@
     "id": "KDL541",
     "model": "KDL541",
     "image": "urunler/kdl541.webp",
+    "images": [
+      "urunler/kdl541-old.webp"
+    ],
     "name": {
       "tr": "KDL541 AYARLANABİLİR SLİM BACKLİGHT ÇERÇEVESİZ PANEL",
       "en": "KDL541 ADJUSTABLE SLIM BACKLIGHT FRAMELESS PANEL"
@@ -18011,6 +18071,9 @@
     "id": "KDL061",
     "model": "KDL061",
     "image": "urunler/kdl061.webp",
+    "images": [
+      "urunler/kdl061-old.webp"
+    ],
     "name": {
       "tr": "KDL061 SIVA ÜSTÜ BACKLİGHT PANEL",
       "en": "KDL061 SURFACE MOUNTED BACKLIGHT PANEL"
@@ -18111,6 +18174,9 @@
     "id": "KDL062",
     "model": "KDL062",
     "image": "urunler/kdl062.webp",
+    "images": [
+      "urunler/kdl062-old.webp"
+    ],
     "name": {
       "tr": "KDL062 SIVA ÜSTÜ BACKLİGHT PANEL",
       "en": "KDL062 SURFACE MOUNTED BACKLIGHT PANEL"
@@ -18211,6 +18277,9 @@
     "id": "KDL063",
     "model": "KDL063",
     "image": "urunler/kdl063.webp",
+    "images": [
+      "urunler/kdl063-old.webp"
+    ],
     "name": {
       "tr": "KDL063 SIVA ÜSTÜ BACKLİGHT PANEL",
       "en": "KDL063 SURFACE MOUNTED BACKLIGHT PANEL"
@@ -18611,6 +18680,9 @@
     "id": "KDL050",
     "model": "KDL050",
     "image": "urunler/kdl050.webp",
+    "images": [
+      "urunler/kdl050-old.webp"
+    ],
     "name": {
       "tr": "KDL050 SIVA ALTI BACKLİGHT PANEL",
       "en": "KDL050 RECESSED BACKLIGHT PANEL"
@@ -18711,6 +18783,9 @@
     "id": "KDL052",
     "model": "KDL052",
     "image": "urunler/kdl052.webp",
+    "images": [
+      "urunler/kdl052-old.webp"
+    ],
     "name": {
       "tr": "KDL052 SIVA ALTI BACKLİGHT PANEL",
       "en": "KDL052 RECESSED BACKLIGHT PANEL"
@@ -18811,6 +18886,9 @@
     "id": "KDL053",
     "model": "KDL053",
     "image": "urunler/kdl053.webp",
+    "images": [
+      "urunler/kdl053-old.webp"
+    ],
     "name": {
       "tr": "KDL053 SIVA ALTI BACKLİGHT PANEL",
       "en": "KDL053 RECESSED BACKLIGHT PANEL"
@@ -18911,6 +18989,9 @@
     "id": "KDL054",
     "model": "KDL054",
     "image": "urunler/kdl054.webp",
+    "images": [
+      "urunler/kdl054-old.webp"
+    ],
     "name": {
       "tr": "KDL054 SIVA ALTI BACKLİGHT PANEL",
       "en": "KDL054 RECESSED BACKLIGHT PANEL"
@@ -19679,6 +19760,9 @@
     "id": "KDL4142",
     "model": "KDL4142",
     "image": "urunler/kdl4142.webp",
+    "images": [
+      "urunler/kdl4142-old.webp"
+    ],
     "name": {
       "tr": "KDL4142 60X60 SLİM KOMPAKT PANEL",
       "en": "KDL4142 60X60 SLIM COMPACT PANEL"
@@ -20119,6 +20203,9 @@
     "id": "HAN013A",
     "model": "HAN013A",
     "image": "urunler/han013a.webp",
+    "images": [
+      "urunler/han013a-old.webp"
+    ],
     "name": {
       "tr": "HAN013A 60X60 YEKPARE KASA PANEL ÇERÇEVESİ",
       "en": "HAN013A 60X60 ONE-PIECE BODY PANEL FRAME"
@@ -20167,6 +20254,9 @@
     "id": "HAN013B",
     "model": "HAN013B",
     "image": "urunler/han013b.webp",
+    "images": [
+      "urunler/han013b-old.webp"
+    ],
     "name": {
       "tr": "HAN013B 60X60 DEMONTE PANEL ÇERÇEVESİ",
       "en": "HAN013B 60X60 DISASSEMBLED PANEL FRAME"
@@ -20215,6 +20305,9 @@
     "id": "HAN013C",
     "model": "HAN013C",
     "image": "urunler/han013c.webp",
+    "images": [
+      "urunler/han013c-old.webp"
+    ],
     "name": {
       "tr": "HAN013C 60X60 CLİP-İN KASA PANEL ÇERÇEVESİ",
       "en": "HAN013C 60X60 CLIP-IN BODY PANEL FRAME"
@@ -20263,6 +20356,9 @@
     "id": "HAN013D",
     "model": "HAN013D",
     "image": "urunler/han013d.webp",
+    "images": [
+      "urunler/han013d-old.webp"
+    ],
     "name": {
       "tr": "HAN013D 60X60 ALÇIPAN KASA PANEL ÇERÇEVESİ",
       "en": "HAN013D 60X60 DRYWALL BODY PANEL FRAME"
@@ -20311,6 +20407,9 @@
     "id": "HAN015",
     "model": "HAN015",
     "image": "urunler/han015.webp",
+    "images": [
+      "urunler/han015-old.webp"
+    ],
     "name": {
       "tr": "HAN015 30X30 CLİP-İN KASA PANEL ÇERÇEVESİ",
       "en": "HAN015 30X30 CLIP-IN BODY PANEL FRAME"
@@ -20455,6 +20554,9 @@
     "id": "HAN016",
     "model": "HAN016",
     "image": "urunler/han016.webp",
+    "images": [
+      "urunler/han016-old.webp"
+    ],
     "name": {
       "tr": "HAN016 30X30 DEMONTE PANEL ÇERÇEVESİ",
       "en": "HAN016 30X30 DISASSEMBLED PANEL FRAME"
@@ -20551,6 +20653,9 @@
     "id": "HAN022",
     "model": "HAN022",
     "image": "urunler/han022.webp",
+    "images": [
+      "urunler/han022-old.webp"
+    ],
     "name": {
       "tr": "HAN022 30X120 DEMONTE PANEL ÇERÇEVESİ",
       "en": "HAN022 30X120 DISASSEMBLED PANEL FRAME"
@@ -20599,6 +20704,9 @@
     "id": "HAN017",
     "model": "HAN017",
     "image": "urunler/han017.webp",
+    "images": [
+      "urunler/han017-old.webp"
+    ],
     "name": {
       "tr": "HAN017 30X30 ALÇIPAN KASA PANEL ÇERÇEVESİ",
       "en": "HAN017 30X30 DRYWALL BODY PANEL FRAME"
@@ -20646,7 +20754,10 @@
   "HAN017A": {
     "id": "HAN017A",
     "model": "HAN017A",
-    "image": "urunler/han017a.jpg",
+    "image": "urunler/han017a.webp",
+    "images": [
+      "urunler/han017a-old.webp"
+    ],
     "name": {
       "tr": "HAN017A 30X60 ALÇIPAN KASA PANEL ÇERÇEVESİ",
       "en": "HAN017A 30X60 DRYWALL BODY PANEL FRAME"
@@ -20694,7 +20805,10 @@
   "HAN017B": {
     "id": "HAN017B",
     "model": "HAN017B",
-    "image": "urunler/han017b.jpg",
+    "image": "urunler/han017b.webp",
+    "images": [
+      "urunler/han017b-old.webp"
+    ],
     "name": {
       "tr": "HAN017B 30X120 ALÇIPAN KASA PANEL ÇERÇEVESİ",
       "en": "HAN017B 30X120 DRYWALL BODY PANEL FRAME"
@@ -20743,6 +20857,9 @@
     "id": "HAN018",
     "model": "HAN018",
     "image": "urunler/han018.webp",
+    "images": [
+      "urunler/han018-old.webp"
+    ],
     "name": {
       "tr": "HAN018 30X30 YEKPARE KASA PANEL ÇERÇEVESİ",
       "en": "HAN018 30X30 ONE-PIECE BODY PANEL FRAME"
@@ -20790,7 +20907,10 @@
   "HAN018A": {
     "id": "HAN018A",
     "model": "HAN018A",
-    "image": "urunler/han018a.jpg",
+    "image": "urunler/han018a.webp",
+    "images": [
+      "urunler/han018a-old.webp"
+    ],
     "name": {
       "tr": "HAN018A 30X60 YEKPARE KASA PANEL ÇERÇEVESİ",
       "en": "HAN018A 30X60 ONE-PIECE BODY PANEL FRAME"
@@ -20838,7 +20958,10 @@
   "HAN018B": {
     "id": "HAN018B",
     "model": "HAN018B",
-    "image": "urunler/han018b.jpg",
+    "image": "urunler/han018b.webp",
+    "images": [
+      "urunler/han018b-old.webp"
+    ],
     "name": {
       "tr": "HAN018B 30X120 YEKPARE KASA PANEL ÇERÇEVESİ",
       "en": "HAN018B 30X120 ONE-PIECE BODY PANEL FRAME"

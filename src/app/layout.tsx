@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { ChatbotWidget } from '@/components/chatbot/ChatbotWidget';
 import { GsapContext } from '@/components/engine/GsapContext';
 import { SmoothScrollProvider } from '@/components/engine/SmoothScrollProvider';
 import { OrganizationSchema } from '@/components/shared/OrganizationSchema';
@@ -60,6 +61,7 @@ export default function RootLayout({
                 <OrganizationSchema />
                 <CustomCursor />
                 {children}
+                <ChatbotWidget />
               </GsapContext>
             </LightTemperatureProvider>
           </SmoothScrollProvider>

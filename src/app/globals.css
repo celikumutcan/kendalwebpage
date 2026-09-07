@@ -215,3 +215,39 @@ html {
     opacity: 0.25;
   }
 }
+
+/*
+  Chatbot widget (scripted quick-reply assistant, no LLM/RAG — see
+  ChatbotWidget.tsx). Panel stays mounted after first open and is toggled
+  with opacity/transform + visibility instead of unmounting, so re-opening
+  never re-triggers React work; only compositor-safe properties animate.
+*/
+@keyframes chatbot-launcher-pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.chatbot-launcher-pop {
+  animation: chatbot-launcher-pop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+@keyframes chatbot-msg-in {
+  from { opacity: 0; transform: translateY(6px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.chatbot-msg-in {
+  animation: chatbot-msg-in 0.28s ease-out both;
+}
+@keyframes chatbot-typing-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-3px); opacity: 1; }
+}
+.chatbot-typing-dot {
+  animation: chatbot-typing-dot 1.1s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .chatbot-launcher-pop,
+  .chatbot-msg-in,
+  .chatbot-typing-dot {
+    animation: none;
+  }
+}

@@ -15,6 +15,15 @@ export const CookieConsentBanner = () => {
     }
   }, []);
 
+  useEffect(() => {
+    // Fires after the banner's own DOM node has actually committed (in
+    // both directions), so the chatbot widget's read of
+    // `[data-cookie-banner]` in its listener always sees the current
+    // state — a plain dispatch from handleAccept alone would race the
+    // async isVisible(true) mount effect above and read stale DOM.
+    window.dispatchEvent(new Event('kendal-cookie-consent-changed'));
+  }, [isVisible]);
+
   const handleAccept = () => {
     localStorage.setItem('kendal-cookie-consent', 'true');
     setIsVisible(false);
@@ -23,7 +32,10 @@ export const CookieConsentBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-t border-[var(--brand-red)] p-4 shadow-[0_-5px_20px_rgba(0,0,0,0.5)]">
+    <div
+      data-cookie-banner
+      className="fixed bottom-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-t border-[var(--brand-red)] p-4 shadow-[0_-5px_20px_rgba(0,0,0,0.5)]"
+    >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-white/80 text-sm md:text-base">
           {(t as any).cookies?.message ||

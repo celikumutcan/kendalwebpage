@@ -19,3 +19,17 @@ export const getBrandHomeHref = (brand: string) =>
 
 export const getBrandUrunlerHref = (brand: string) =>
   isGithubPagesBuild ? `/brand/${brand}/urunler` : '/urunler';
+
+// Cross-origin link to a brand's own site, for use from OUTSIDE that brand
+// (e.g. the main www site linking out to k2.kendalelektrik.com.tr). Unlike
+// getBrandHomeHref/getBrandUrunlerHref above, this never resolves to a
+// same-host relative path.
+export const getBrandExternalHref = (brand: string, path = '') => {
+  if (process.env.NODE_ENV !== 'production') {
+    return `http://${brand}.localhost:3000${path}`;
+  }
+  if (isGithubPagesBuild) {
+    return `/brand/${brand}${path}`;
+  }
+  return `https://${brand}.kendalelektrik.com.tr${path}`;
+};
