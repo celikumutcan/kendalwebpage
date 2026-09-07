@@ -53,8 +53,8 @@ export const CHAT_NODES: Record<string, ChatNode> = {
     id: 'brands',
     question: { tr: '🏷️ Markalarınız nelerdir?', en: '🏷️ What brands do you have?' },
     answer: {
-      tr: 'Kendal Elektrik çatısı altında 3 markamız var:\n\n🏔️ K2 — Profesyonel LED aydınlatma\n🌀 Vanti — Vantilatör ve serinletme ürünleri\n💡 Global — Genel kullanım aydınlatma ürünleri\n\nHangisini merak ediyorsun?',
-      en: 'We have 3 brands under Kendal Elektrik:\n\n🏔️ K2 — Professional LED lighting\n🌀 Vanti — Fans & cooling products\n💡 Global — General-purpose lighting products\n\nWhich one would you like to know more about?',
+      tr: 'Kendal Elektrik çatısı altında 3 markamız var:\n\n🏔️ K2 — Profesyonel aydınlatma\n🌀 Vanti — Vantilatör\n💡 Global — Genel kullanım aydınlatma ürünleri\n\nHangisini merak ediyorsun?',
+      en: 'We have 3 brands under Kendal Elektrik:\n\n🏔️ K2 — Professional lighting\n🌀 Vanti — Fans\n💡 Global — General-purpose lighting products\n\nWhich one would you like to know more about?',
     },
     followUps: ['brand_k2', 'brand_vanti', 'brand_global'],
   },
@@ -62,8 +62,8 @@ export const CHAT_NODES: Record<string, ChatNode> = {
     id: 'brand_k2',
     question: { tr: 'K2 hakkında bilgi alabilir miyim?', en: 'Can you tell me about K2?' },
     answer: {
-      tr: "K2, 'Aydınlatmanın Zirvesi' vizyonuyla hareket eden profesyonel LED aydınlatma markamız. Spot, LED panel, projektör, magnet ray sistemleri, solar armatürler ve dekoratif aydınlatmaya uzanan geniş bir ürün gamı sunuyor. Yurt dışına da ihracat yapıyoruz.",
-      en: "K2 is our professional LED lighting brand, driven by the vision of being 'The Summit of Lighting.' It offers a wide range from spotlights, LED panels, and projectors to magnetic track systems, solar fixtures, and decorative lighting. We also export K2 products internationally.",
+      tr: "K2, 'Aydınlatmanın Zirvesi' vizyonuyla hareket eden profesyonel aydınlatma markamız. Spot, LED panel, projektör, magnet ray sistemleri, solar armatürler ve dekoratif aydınlatmaya uzanan geniş bir ürün gamı sunuyor. Yurt dışına da ihracat yapıyoruz.",
+      en: "K2 is our professional lighting brand, driven by the vision of being 'The Summit of Lighting.' It offers a wide range from spotlights, LED panels, and projectors to magnetic track systems, solar fixtures, and decorative lighting. We also export K2 products internationally.",
     },
     links: [
       {

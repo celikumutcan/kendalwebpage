@@ -270,7 +270,7 @@ export const ChatbotWidget = () => {
         <div
           role="dialog"
           aria-label={lang === 'tr' ? 'Kendal Asistan' : 'Kendal Assistant'}
-          className={`fixed left-3 right-3 sm:left-5 sm:right-auto md:left-6 z-40 flex h-[72vh] max-h-[520px] w-auto flex-col overflow-hidden rounded-2xl border ${panel.border} ${panel.bg} shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-[bottom,opacity,transform] duration-300 ease-out sm:h-[560px] sm:max-h-[calc(100vh-180px)] sm:w-[380px] ${
+          className={`fixed left-3 right-3 sm:left-5 sm:right-auto md:left-6 z-40 flex h-[58vh] max-h-[420px] w-auto flex-col overflow-hidden rounded-2xl border ${panel.border} ${panel.bg} shadow-[0_24px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-[bottom,opacity,transform] duration-300 ease-out sm:h-[460px] sm:max-h-[calc(100vh-220px)] sm:w-[380px] ${
             isOpen
               ? 'translate-y-0 scale-100 opacity-100'
               : 'pointer-events-none translate-y-3 scale-[0.98] opacity-0'
@@ -316,7 +316,11 @@ export const ChatbotWidget = () => {
             </button>
           </div>
 
-          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
+          <div
+            ref={scrollRef}
+            data-lenis-prevent
+            className="min-h-0 flex-1 space-y-3 overflow-y-auto px-4 py-4"
+          >
             {messages.map((m) => (
               <div
                 key={m.id}
@@ -382,7 +386,10 @@ export const ChatbotWidget = () => {
           </div>
 
           {currentOptions.length > 0 && (
-            <div className={`max-h-[38%] shrink-0 overflow-y-auto border-t px-3 py-3 ${panel.chipsRowBg}`}>
+            <div
+              data-lenis-prevent
+              className={`max-h-[38%] shrink-0 overflow-y-auto border-t px-3 py-3 ${panel.chipsRowBg}`}
+            >
               <div className="flex flex-wrap gap-1.5">
                 {currentOptions.map((id) => (
                   <button
