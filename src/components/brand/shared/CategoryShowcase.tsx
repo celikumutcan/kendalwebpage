@@ -117,7 +117,7 @@ export function CategoryShowcase({
 
   return (
     <section
-      className="reveal-text relative z-10 w-full py-20 md:py-28 overflow-hidden"
+      className="reveal-text relative z-10 w-full py-12 md:py-16 overflow-hidden"
       style={{ '--accent': accent } as CSSProperties}
     >
       <div className="mb-10 md:mb-14 px-6 md:px-24 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -176,7 +176,7 @@ export function CategoryShowcase({
                 }`}
               >
                 <span
-                  className={`relative shrink-0 w-20 h-20 rounded-xl overflow-hidden ${
+                  className={`relative shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden ${
                     isDark ? 'bg-white/10' : 'bg-zinc-50'
                   }`}
                 >
@@ -185,21 +185,21 @@ export function CategoryShowcase({
                       src={getAssetPath('/images/' + item.sampleImage)}
                       alt=""
                       fill
-                      sizes="80px"
-                      className="object-contain p-2.5 transition-transform duration-500 ease-out group-hover:scale-110"
+                      sizes="112px"
+                      className="object-contain p-3 transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                     />
                   )}
                 </span>
                 <div className="min-w-0 flex-1">
                   <h4
-                    className={`font-bold text-base md:text-lg leading-snug truncate ${isDark ? 'text-white' : 'text-zinc-900'}`}
+                    className={`font-bold text-lg md:text-xl leading-snug truncate ${isDark ? 'text-white' : 'text-zinc-900'}`}
                   >
                     {item.displayName}
                   </h4>
                 </div>
                 <svg
-                  className={`w-4 h-4 shrink-0 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[var(--accent)] ${
+                  className={`w-5 h-5 shrink-0 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[var(--accent)] ${
                     isDark ? 'text-white/30' : 'text-zinc-300'
                   }`}
                   fill="none"

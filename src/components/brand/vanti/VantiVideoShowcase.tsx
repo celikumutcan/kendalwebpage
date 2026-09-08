@@ -35,7 +35,7 @@ export function VantiVideoShowcase({
   return (
     <section className="reveal-text relative z-10 w-full py-16 md:py-24 overflow-hidden">
       {label && title && (
-        <div className="flex justify-center px-6 mb-14 md:mb-20">
+        <div className="flex justify-center px-6 mb-8 md:mb-12">
           <div className="rounded-[2rem] bg-gradient-to-br from-white/80 via-teal-200/50 to-white/30 p-px shadow-[0_30px_80px_-35px_rgba(15,118,110,0.5)]">
             <div className="relative flex flex-col items-center text-center max-w-2xl px-8 py-8 md:px-14 md:py-10 rounded-[calc(2rem-1px)] bg-[var(--page-bg,#f0f9ff)]/80 backdrop-blur-2xl">
               <span className="inline-flex items-center gap-3 font-semibold tracking-[0.3em] uppercase text-[11px] md:text-xs text-teal-600">
@@ -143,11 +143,11 @@ export function VantiVideoShowcase({
                           href={href}
                           tabIndex={i < videoIds.length ? 0 : -1}
                           aria-hidden={i >= videoIds.length}
-                          className="absolute left-3 bottom-3 z-20 inline-flex w-fit items-center gap-1.5 rounded-full bg-teal-600 px-3.5 py-1.5 text-[11px] font-semibold tracking-wide text-white shadow-[0_6px_16px_-4px_rgba(15,118,110,0.6)] transition-all duration-300 hover:bg-teal-500 hover:-translate-y-0.5"
+                          className="absolute left-3 bottom-3 z-20 inline-flex w-fit items-center gap-2 rounded-full bg-teal-600 px-5 py-2.5 text-sm font-semibold tracking-wide text-white shadow-[0_6px_16px_-4px_rgba(15,118,110,0.6)] transition-all duration-300 hover:bg-teal-500 hover:-translate-y-0.5"
                         >
                           {ctaLabel}
                           <svg
-                            className="w-3 h-3 transition-transform duration-300 group-hover/card:translate-x-0.5"
+                            className="w-4 h-4 transition-transform duration-300 group-hover/card:translate-x-0.5"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth={2.5}

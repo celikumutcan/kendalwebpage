@@ -107,7 +107,7 @@ export function VantiProductFamilies({
     >
       <div className="mb-10 md:mb-14 px-6 md:px-16 lg:px-24">
         <div className="inline-flex flex-col gap-4 bg-white/60 backdrop-blur-xl border border-white/70 shadow-[0_8px_32px_rgba(0,0,0,0.08)] rounded-[2rem] px-6 py-5 md:px-9 md:py-7">
-          <h3 className="font-semibold tracking-[0.2em] uppercase text-sm md:text-base text-teal-700 flex items-center gap-4">
+          <h3 className="font-semibold tracking-widest uppercase text-sm md:text-base text-teal-700 flex items-center gap-4">
             <span className="w-12 h-[2px] rounded-full bg-teal-600 block"></span>
             {label}
           </h3>
@@ -131,21 +131,21 @@ export function VantiProductFamilies({
                 aria-hidden={i >= families.length}
                 className="group shrink-0 flex items-center gap-4 rounded-2xl p-3 pr-6 md:pr-7 min-w-[270px] sm:min-w-[310px] bg-white border border-black/5 shadow-sm hover:shadow-[0_20px_40px_-20px_rgba(15,118,110,0.35)] hover:-translate-y-1 transition-all duration-300"
               >
-                <span className="relative shrink-0 w-20 h-20 rounded-xl overflow-hidden bg-zinc-50">
+                <span className="relative shrink-0 w-24 h-24 md:w-28 md:h-28 rounded-xl overflow-hidden bg-zinc-50">
                   <Image
                     src={getAssetPath('/images/' + f.image)}
                     alt=""
                     fill
-                    sizes="80px"
-                    className="object-contain p-2.5 transition-transform duration-500 ease-out group-hover:scale-110"
+                    sizes="112px"
+                    className="object-contain p-3 transition-transform duration-500 ease-out group-hover:scale-110"
                     loading="lazy"
                   />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <h4 className="font-bold text-base md:text-lg leading-snug text-teal-950 truncate">
+                  <h4 className="font-bold text-lg md:text-xl leading-snug text-teal-950 truncate">
                     {lang === 'en' ? f.nameEn : f.nameTr}
                   </h4>
-                  <p className="text-xs text-teal-700/60 font-medium mt-0.5">
+                  <p className="text-sm text-teal-700/60 font-medium mt-0.5">
                     {f.count}{' '}
                     {lang === 'en'
                       ? f.count === 1
@@ -155,7 +155,7 @@ export function VantiProductFamilies({
                   </p>
                 </div>
                 <svg
-                  className="w-4 h-4 shrink-0 text-zinc-300 transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-600"
+                  className="w-5 h-5 shrink-0 text-zinc-300 transition-all duration-300 group-hover:translate-x-1 group-hover:text-teal-600"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
