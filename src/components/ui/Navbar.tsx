@@ -11,7 +11,7 @@ import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openMobileGroup, setOpenMobileGroup] = useState<number | null>(null);
@@ -182,7 +182,9 @@ export const Navbar = () => {
                   className="object-contain p-1.5"
                 />
               </div>
-              <span className="font-semibold tracking-wide">K2</span>
+              <span className="font-semibold tracking-wide">
+                {language === 'tr' ? 'K2 Ürünlerimiz' : 'K2 Products'}
+              </span>
             </div>
           ),
         },
@@ -206,7 +208,9 @@ export const Navbar = () => {
                   className="object-contain p-1.5"
                 />
               </div>
-              <span className="font-semibold tracking-wide">Vanti</span>
+              <span className="font-semibold tracking-wide">
+                {language === 'tr' ? 'Vanti Ürünlerimiz' : 'Vanti Products'}
+              </span>
             </div>
           ),
         },
@@ -230,7 +234,9 @@ export const Navbar = () => {
                   className="object-contain p-1.5"
                 />
               </div>
-              <span className="font-semibold tracking-wide">Global</span>
+              <span className="font-semibold tracking-wide">
+                {language === 'tr' ? 'Global Ürünlerimiz' : 'Global Products'}
+              </span>
             </div>
           ),
         },

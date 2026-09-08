@@ -41,7 +41,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Ortalama Müşteri Memnuniyeti',
       },
-      { value: "%2'nin Altında", label: 'İade Oranı' },
+      { value: "%0.5'in Altında", label: 'İade Oranı' },
     ],
     sec1Title: 'Kusursuz Güç',
     sec1Text:
@@ -78,7 +78,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Average Customer Satisfaction',
       },
-      { value: 'Under 2%', label: 'Return Rate' },
+      { value: 'Under 0.5%', label: 'Return Rate' },
     ],
     sec1Title: 'Flawless Power',
     sec1Text:

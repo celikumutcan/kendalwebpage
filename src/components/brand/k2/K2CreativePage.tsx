@@ -89,7 +89,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Ortalama Müşteri Memnuniyeti',
       },
-      { value: "%1.5'in Altında", label: 'İade Oranı' },
+      { value: "%0.5'in Altında", label: 'İade Oranı' },
     ],
     sec1Title: 'Zirve',
     sec1Text:
@@ -126,7 +126,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Average Customer Satisfaction',
       },
-      { value: 'Under 1.5%', label: 'Return Rate' },
+      { value: 'Under 0.5%', label: 'Return Rate' },
     ],
     sec1Title: 'The Peak',
     sec1Text:

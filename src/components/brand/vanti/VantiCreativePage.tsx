@@ -157,7 +157,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Ortalama Müşteri Memnuniyeti',
       },
-      { value: "%1'in Altında", label: 'İade Oranı' },
+      { value: "%0.5'in Altında", label: 'İade Oranı' },
     ],
     sec3Title: 'Enerji Tasarrufu',
     sec3Text:
@@ -199,7 +199,7 @@ const translations = {
         suffix: ' / 10',
         label: 'Average Customer Satisfaction',
       },
-      { value: 'Under 1%', label: 'Return Rate' },
+      { value: 'Under 0.5%', label: 'Return Rate' },
     ],
     sec3Title: 'Energy Saving',
     sec3Text:
