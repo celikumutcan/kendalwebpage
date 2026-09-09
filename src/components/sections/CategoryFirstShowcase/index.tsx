@@ -532,7 +532,7 @@ export default function CategoryFirstShowcase({
   };
 
   return (
-    <section className="pt-4 pb-12 px-6">
+    <section className="pt-4 pb-12 px-2 sm:px-6">
       <div className="max-w-[1440px] mx-auto">
         <div className="sticky top-20 md:top-24 z-30 mb-12 pb-8 relative animate-in fade-in slide-in-from-top-4 duration-500">
           <div className="relative max-w-3xl mx-auto group">
@@ -618,7 +618,7 @@ export default function CategoryFirstShowcase({
 
         {inTopLevel && (
           <div className="animate-in fade-in zoom-in duration-500">
-            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 sm:gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 sm:gap-5">
               {topLevelCards.map((item, i) => (
                 <CategoryCard
                   key={item.key}
@@ -666,7 +666,7 @@ export default function CategoryFirstShowcase({
                 {activeGroup.displayName}
               </h2>
             </div>
-            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 sm:gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-2 sm:gap-5">
               {activeGroup.members.map((cat, i) => (
                 <CategoryCard
                   key={cat.name}
@@ -823,7 +823,7 @@ export default function CategoryFirstShowcase({
                 </p>
               </div>
             ) : (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-3 sm:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-2 sm:gap-6">
                 {displayedProducts.map((group, i) => {
                   const product = group.product;
                   const canCompare = !!(

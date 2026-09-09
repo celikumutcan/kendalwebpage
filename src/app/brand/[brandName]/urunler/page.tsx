@@ -76,7 +76,7 @@ export default async function BrandProductsPage({
 
   return (
     <div
-      className={`relative w-full min-h-screen pt-32 pb-16 px-6 overflow-hidden ${
+      className={`relative w-full min-h-screen pt-32 pb-16 px-2 sm:px-6 overflow-hidden ${
         isK2
           ? 'bg-[#3a3a40] text-white'
           : brandName === 'vanti'
