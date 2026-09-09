@@ -65,7 +65,7 @@ export function VantiPreloader({ ready }: VantiPreloaderProps) {
         <img
           src={getAssetPath('/images/brands/vanti-logo.svg')}
           alt="Vanti"
-          className="h-24 md:h-32 opacity-90 animate-pulse drop-shadow-md"
+          className="h-24 md:h-32 opacity-90 drop-shadow-md"
         />
       </div>
     </div>

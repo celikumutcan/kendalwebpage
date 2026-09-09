@@ -211,17 +211,6 @@ export function GlobalCreativePage({ allProducts }: GlobalCreativePageProps) {
         '-=0.4',
       );
 
-    tl.call(() => {
-      gsap.to(glowRef.current, {
-        opacity: 0.7,
-        scale: 1.08,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-      });
-    });
-
     return () => {
       tl.kill();
     };

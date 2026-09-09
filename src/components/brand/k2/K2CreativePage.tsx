@@ -233,17 +233,6 @@ export function K2CreativePage({ allProducts }: K2CreativePageProps) {
       '-=0.3',
     );
 
-    tl.call(() => {
-      gsap.to(burstRef.current, {
-        opacity: 0.75,
-        scale: 1.12,
-        duration: 3,
-        repeat: -1,
-        yoyo: true,
-        ease: 'sine.inOut',
-      });
-    });
-
     return () => {
       tl.kill();
     };
