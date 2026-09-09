@@ -590,7 +590,7 @@ export function ProductDetailClient({
         )}
       </div>
 
-      <div className="relative z-10 container mx-auto max-w-[1400px] px-6 lg:px-10">
+      <div className="relative z-10 container mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
         <div className="kdl-fade-in flex flex-wrap items-center justify-between gap-3 mb-8 md:mb-10">
           <button
             onClick={() => router.back()}
@@ -1138,7 +1138,7 @@ export function ProductDetailClient({
                       );
 
                       const baseClass =
-                        'group relative flex items-center gap-2.5 px-4 py-2 rounded-xl text-[13px] md:text-sm font-semibold whitespace-nowrap transition-all duration-300';
+                        'group relative flex items-center gap-1.5 sm:gap-2.5 px-2.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-[12px] sm:text-[13px] md:text-sm font-semibold whitespace-nowrap transition-all duration-300';
                       return (
                         <div
                           key={match.variant.id + '-' + label}
@@ -1229,7 +1229,7 @@ export function ProductDetailClient({
 
                     return (
                       <div
-                        className={`w-full max-w-xl mx-auto flex flex-col p-6 md:p-8 rounded-[2rem] border shadow-[0_8px_40px_rgba(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_60px_rgba(0,0,0,0.05)] ${
+                        className={`w-full max-w-xl mx-auto flex flex-col p-4 sm:p-6 md:p-8 rounded-[2rem] border shadow-[0_8px_40px_rgba(0,0,0,0.03)] transition-all duration-500 hover:shadow-[0_16px_60px_rgba(0,0,0,0.05)] ${
                           isLight
                             ? 'bg-white border-zinc-100'
                             : 'bg-white/[0.02] backdrop-blur-xl border-white/[0.05]'
@@ -1245,7 +1245,7 @@ export function ProductDetailClient({
                             >
                               {group.label}
                             </span>
-                            <div className="flex flex-wrap gap-2.5">
+                            <div className="flex flex-wrap gap-1.5 sm:gap-2">
                               {group.items.map(({ value, match }) =>
                                 renderVariantLink(match, value, group.showDot),
                               )}
