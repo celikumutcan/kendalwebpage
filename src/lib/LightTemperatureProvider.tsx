@@ -1,9 +1,7 @@
 'use client';
 
 import type React from 'react';
-import { createContext, useContext, useRef, useState } from 'react';
-import * as THREE from 'three';
-import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
+import { createContext, useContext } from 'react';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
 interface LightTemperatureContextType {
@@ -14,63 +12,25 @@ const LightTemperatureContext = createContext<LightTemperatureContextType>({
   getProgress: () => 0,
 });
 
+// The accent light (Hero's LightCore glow, the Globe's tint) used to warm
+// from blue to orange as you scrolled the whole page, via a document-wide
+// ScrollTrigger. That warm-up was removed by design — the light now stays
+// a fixed cool blue everywhere, on every device — so this provider just
+// sets the static CSS vars once and exposes a getProgress() that always
+// reads 0, keeping Globe.tsx's existing lerp call (which reads it every
+// frame) a harmless no-op instead of having to touch that call site too.
 export const LightTemperatureProvider = ({
   children,
 }: {
   children: React.ReactNode;
 }) => {
-  const progressRef = useRef(0);
-  const colorCool = useRef(new THREE.Color('#6fa8ff'));
-  const colorWarm = useRef(new THREE.Color('#ffb347'));
-  const currentColor = useRef(new THREE.Color());
-  const lastAppliedProgress = useRef(-1);
-
-  // onUpdate fires every scroll frame across the whole document; writing the
-  // CSS var forces a style recalc, so progress is rounded and deduped first
-  // to skip writes that wouldn't change the rendered color anyway.
   useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: document.body,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: true,
-        onUpdate: (self) => {
-          const p = self.progress;
-          progressRef.current = p;
-
-          const rounded = Math.round(p * 500) / 500;
-          if (rounded === lastAppliedProgress.current) return;
-          lastAppliedProgress.current = rounded;
-
-          document.documentElement.style.setProperty(
-            '--light-temp',
-            rounded.toString(),
-          );
-
-          currentColor.current.lerpColors(
-            colorCool.current,
-            colorWarm.current,
-            rounded,
-          );
-          document.documentElement.style.setProperty(
-            '--accent-current',
-            `#${currentColor.current.getHexString()}`,
-          );
-        },
-      });
-
-      document.documentElement.style.setProperty('--light-temp', '0');
-      document.documentElement.style.setProperty('--accent-current', '#6fa8ff');
-    });
-
-    return () => ctx.revert();
+    document.documentElement.style.setProperty('--light-temp', '0');
+    document.documentElement.style.setProperty('--accent-current', '#6fa8ff');
   }, []);
 
   return (
-    <LightTemperatureContext.Provider
-      value={{ getProgress: () => progressRef.current }}
-    >
+    <LightTemperatureContext.Provider value={{ getProgress: () => 0 }}>
       {children}
     </LightTemperatureContext.Provider>
   );

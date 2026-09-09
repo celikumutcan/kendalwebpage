@@ -40,8 +40,23 @@ export function ExportMap({
   const hintColor = isCardDark ? 'text-white/35' : 'text-zinc-500';
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
+  // The world map renders full land geometry + a graticule + 40 dashed
+  // arcs and was causing scroll jank on mobile (same issue as DealerMap),
+  // so mobile gets a plain-text summary instead — gated on matchMedia
+  // (not just a CSS hide) so the heavy d3-geo/topojson work and the map's
+  // lazy chunk never even load there.
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const mql = window.matchMedia('(max-width: 767px)');
+    setIsMobile(mql.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mql.addEventListener('change', onChange);
+    return () => mql.removeEventListener('change', onChange);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
     const node = wrapperRef.current;
     if (!node || shouldLoad) return;
 
@@ -56,7 +71,7 @@ export function ExportMap({
     );
     observer.observe(node);
     return () => observer.disconnect();
-  }, [shouldLoad]);
+  }, [shouldLoad, isMobile]);
 
   const textBgClass = isCardDark
     ? 'bg-black/40 backdrop-blur-xl border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]'
@@ -80,27 +95,45 @@ export function ExportMap({
         </div>
       </div>
 
-      <div ref={wrapperRef} className="max-w-[90rem] mx-auto">
-        {shouldLoad ? (
-          <ExportMapInner language={language} accent={accent} theme={theme} />
-        ) : (
-          <div
-            className={`w-full aspect-[980/480] rounded-[2rem] ${placeholderClass}`}
-          />
-        )}
-      </div>
-
-      <p className="text-center mt-6">
-        {isCardDark ? (
-          <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
-        ) : (
-          <span
-            className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}
+      {isMobile ? (
+        <div className="max-w-2xl mx-auto">
+          <p
+            className={`text-center text-base leading-relaxed rounded-[2rem] border p-8 ${textBgClass}`}
           >
-            {hint}
-          </span>
-        )}
-      </p>
+            {language === 'en'
+              ? 'With our Turkey-based manufacturing power, we export to 40 countries across 4 continents.'
+              : 'Türkiye merkezli üretim gücümüzle 4 kıtada 40 ülkeye ihracat yapıyoruz.'}
+          </p>
+        </div>
+      ) : (
+        <>
+          <div ref={wrapperRef} className="max-w-[90rem] mx-auto">
+            {shouldLoad ? (
+              <ExportMapInner
+                language={language}
+                accent={accent}
+                theme={theme}
+              />
+            ) : (
+              <div
+                className={`w-full aspect-[980/480] rounded-[2rem] ${placeholderClass}`}
+              />
+            )}
+          </div>
+
+          <p className="text-center mt-6">
+            {isCardDark ? (
+              <span className={`${hintColor} text-xs md:text-sm`}>{hint}</span>
+            ) : (
+              <span
+                className={`inline-block ${hintColor} text-xs md:text-sm bg-white/70 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm`}
+              >
+                {hint}
+              </span>
+            )}
+          </p>
+        </>
+      )}
     </section>
   );
 }
