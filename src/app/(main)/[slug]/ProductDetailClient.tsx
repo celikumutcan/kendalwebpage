@@ -1445,7 +1445,7 @@ export function ProductDetailClient({
                               ({ attr, decodedValue }, index) => (
                                 <div
                                   key={index}
-                                  className={`group relative flex-1 min-w-[160px] max-w-[260px] flex flex-col items-center justify-center text-center gap-2.5 p-5 rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 ${isLight ? 'bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]' : 'bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]'}`}
+                                  className={`group relative flex-1 min-w-[138px] max-w-[260px] flex flex-col items-center justify-center text-center gap-2.5 p-5 rounded-2xl border overflow-hidden transition-all duration-300 hover:-translate-y-1.5 ${isLight ? 'bg-white border-zinc-100 shadow-[0_2px_10px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_30px_-12px_rgba(0,0,0,0.12)]' : 'bg-white/[0.03] border-white/[0.07] hover:bg-white/[0.06] hover:border-white/[0.12]'}`}
                                 >
                                   <span
                                     className={`absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[3px] rounded-full transition-all duration-300 group-hover:w-14 ${isLight ? themeColor : 'bg-white/25'}`}
