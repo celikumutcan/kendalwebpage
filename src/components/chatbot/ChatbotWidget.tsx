@@ -1,15 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
-import {
-  CHAT_NODES,
-  type ChatLink,
-  GREETING,
-  MENU_BACK,
-  ROOT_TOPIC_IDS,
-} from './chatbotContent';
+import { CHATBOT_CONTEXTS, type ChatLink, MENU_BACK } from './chatbotContent';
 
 interface Msg {
   id: string;
@@ -67,9 +62,16 @@ export const ChatbotWidget = () => {
   const idRef = useRef(0);
   const typingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   const nextId = () => `m${++idRef.current}`;
 
+  // Re-runs on every client-side route change (not just mount) so the
+  // GH Pages path-based case (/brand/k2/... with no subdomain) stays
+  // correct when navigating between brand pages without a full reload.
+  // The hostname-based subdomain case always gets a full page load on
+  // brand switches, so it naturally re-evaluates too.
+  // biome-ignore lint/correctness/useExhaustiveDependencies: pathname is a trigger-only dep — the effect re-reads window.location.pathname itself rather than using the hook value directly.
   useEffect(() => {
     const host = window.location.hostname;
     if (host.startsWith('k2')) setAccentKey('k2');
@@ -79,9 +81,9 @@ export const ChatbotWidget = () => {
       const match = window.location.pathname.match(
         /\/brand\/(k2|vanti|global)(?:\/|$)/,
       );
-      if (match) setAccentKey(match[1] as AccentKey);
+      setAccentKey(match ? (match[1] as AccentKey) : 'main');
     }
-  }, []);
+  }, [pathname]);
 
   useEffect(() => {
     const updateBannerLift = () => {
@@ -112,6 +114,7 @@ export const ChatbotWidget = () => {
   }, [messages, isTyping, currentOptions]);
 
   const accent = ACCENTS[accentKey];
+  const context = CHATBOT_CONTEXTS[accentKey];
   // Main site pages are dark (black bg) so the panel reads better light;
   // brand pages are light (zinc-50 bg) so the panel stays dark for contrast.
   const isLightPanel = accentKey === 'main';
@@ -126,7 +129,8 @@ export const ChatbotWidget = () => {
         typingDot: 'bg-zinc-400',
         chipsRowBg: 'border-black/10 bg-zinc-50',
         chipBase: 'border-zinc-300 text-zinc-700 hover:border-zinc-400',
-        chipMenu: 'border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-zinc-900',
+        chipMenu:
+          'border-zinc-300 text-zinc-500 hover:border-zinc-400 hover:text-zinc-900',
         link: 'text-zinc-900 decoration-zinc-400 hover:decoration-zinc-900',
         chipResetBorder: 'rgba(0,0,0,0.18)',
       }
@@ -140,15 +144,18 @@ export const ChatbotWidget = () => {
         typingDot: 'bg-white/60',
         chipsRowBg: 'border-white/10 bg-white/[0.02]',
         chipBase: 'border-white/15 text-white/85 hover:border-white/30',
-        chipMenu: 'border-white/15 text-white/60 hover:border-white/30 hover:text-white',
+        chipMenu:
+          'border-white/15 text-white/60 hover:border-white/30 hover:text-white',
         link: 'text-white decoration-white/30 hover:decoration-white',
         chipResetBorder: 'rgba(255,255,255,0.15)',
       };
 
   const openWidget = () => {
     if (!hasMounted) {
-      setMessages([{ id: nextId(), role: 'bot', text: GREETING[lang] }]);
-      setCurrentOptions(ROOT_TOPIC_IDS);
+      setMessages([
+        { id: nextId(), role: 'bot', text: context.greeting[lang] },
+      ]);
+      setCurrentOptions(context.rootTopicIds);
       setHasMounted(true);
     }
     setIsOpen(true);
@@ -175,12 +182,12 @@ export const ChatbotWidget = () => {
           { id: nextId(), role: 'bot', text: MENU_BACK.prompt[lang] },
         ]);
         setIsTyping(false);
-        setCurrentOptions(ROOT_TOPIC_IDS);
+        setCurrentOptions(context.rootTopicIds);
       }, TYPING_DELAY_MS);
       return;
     }
 
-    const node = CHAT_NODES[id];
+    const node = context.nodes[id];
     if (!node) return;
 
     setMessages((prev) => [
@@ -211,7 +218,7 @@ export const ChatbotWidget = () => {
   const panelBottom = buttonBottom + 56 + gap; // 56 = button height (h-14)
 
   const chipLabel = (id: string) =>
-    id === 'menu' ? MENU_BACK.label[lang] : CHAT_NODES[id]?.question[lang];
+    id === 'menu' ? MENU_BACK.label[lang] : context.nodes[id]?.question[lang];
 
   return (
     <>
@@ -248,7 +255,11 @@ export const ChatbotWidget = () => {
             strokeWidth={2.2}
             className="h-6 w-6 shrink-0"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 6l12 12M18 6L6 18"
+            />
           </svg>
         ) : (
           <svg
@@ -293,7 +304,13 @@ export const ChatbotWidget = () => {
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
               style={{ backgroundColor: accent.bg, color: accent.text }}
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                className="h-5 w-5"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -305,9 +322,13 @@ export const ChatbotWidget = () => {
               <p className={`truncate text-sm font-semibold ${panel.title}`}>
                 {lang === 'tr' ? 'Kendal Asistan' : 'Kendal Assistant'}
               </p>
-              <p className={`flex items-center gap-1.5 text-xs ${panel.subtitle}`}>
+              <p
+                className={`flex items-center gap-1.5 text-xs ${panel.subtitle}`}
+              >
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                {lang === 'tr' ? 'Hazır cevaplarla yardımcı olur' : 'Answers with ready info'}
+                {lang === 'tr'
+                  ? 'Hazır cevaplarla yardımcı olur'
+                  : 'Answers with ready info'}
               </p>
             </div>
             <button
@@ -316,8 +337,18 @@ export const ChatbotWidget = () => {
               aria-label={lang === 'tr' ? 'Kapat' : 'Close'}
               className={`shrink-0 rounded-full p-1.5 transition-colors ${panel.closeBtn}`}
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-4 w-4">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                className="h-4 w-4"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 6l12 12M18 6L6 18"
+                />
               </svg>
             </button>
           </div>
@@ -376,8 +407,12 @@ export const ChatbotWidget = () => {
 
             {isTyping && (
               <div className="chatbot-msg-in flex justify-start">
-                <div className={`flex items-center gap-1 rounded-2xl rounded-bl-sm border px-4 py-3 ${panel.botBubble}`}>
-                  <span className={`chatbot-typing-dot h-1.5 w-1.5 rounded-full ${panel.typingDot}`} />
+                <div
+                  className={`flex items-center gap-1 rounded-2xl rounded-bl-sm border px-4 py-3 ${panel.botBubble}`}
+                >
+                  <span
+                    className={`chatbot-typing-dot h-1.5 w-1.5 rounded-full ${panel.typingDot}`}
+                  />
                   <span
                     className={`chatbot-typing-dot h-1.5 w-1.5 rounded-full ${panel.typingDot}`}
                     style={{ animationDelay: '0.15s' }}
@@ -406,11 +441,13 @@ export const ChatbotWidget = () => {
                       id === 'menu' ? panel.chipMenu : panel.chipBase
                     }`}
                     onMouseEnter={(e) => {
-                      if (id !== 'menu') e.currentTarget.style.borderColor = accent.bg;
+                      if (id !== 'menu')
+                        e.currentTarget.style.borderColor = accent.bg;
                     }}
                     onMouseLeave={(e) => {
                       if (id !== 'menu')
-                        e.currentTarget.style.borderColor = panel.chipResetBorder;
+                        e.currentTarget.style.borderColor =
+                          panel.chipResetBorder;
                     }}
                   >
                     {chipLabel(id)}
