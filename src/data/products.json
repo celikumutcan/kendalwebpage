@@ -21050,6 +21050,7 @@
     "id": "KES120",
     "model": "KES120",
     "image": "urunler/kes120.webp",
+    "images": ["urunler/kes120-old.webp"],
     "name": {
       "tr": "KES120 LED AMPUL (IC DRIVER)",
       "en": "KES120 LED BULB (IC DRIVER)"
@@ -21150,6 +21151,7 @@
     "id": "KES126",
     "model": "KES126",
     "image": "urunler/kes126.webp",
+    "images": ["urunler/kes126-old.webp"],
     "name": {
       "tr": "KES126 LED AMPUL (IC DRIVER)",
       "en": "KES126 LED BULB (IC DRIVER)"
@@ -21250,6 +21252,7 @@
     "id": "KES122",
     "model": "KES122",
     "image": "urunler/kes122.webp",
+    "images": ["urunler/kes122-old.webp"],
     "name": {
       "tr": "KES122 LED AMPUL (IC DRIVER)",
       "en": "KES122 LED BULB (IC DRIVER)"
@@ -21350,6 +21353,7 @@
     "id": "KES123",
     "model": "KES123",
     "image": "urunler/kes123.webp",
+    "images": ["urunler/kes123-old.webp"],
     "name": {
       "tr": "KES123 LED AMPUL (IC DRIVER)",
       "en": "KES123 LED BULB (IC DRIVER)"
@@ -21450,6 +21454,7 @@
     "id": "KES181",
     "model": "KES181",
     "image": "urunler/kes181.webp",
+    "images": ["urunler/kes181-old.webp"],
     "name": {
       "tr": "KES181 LED AMPUL (DOB)",
       "en": "KES181 LED BULB (DOB)"
@@ -21550,6 +21555,7 @@
     "id": "KES185",
     "model": "KES185",
     "image": "urunler/kes185.webp",
+    "images": ["urunler/kes185-old.webp"],
     "name": {
       "tr": "KES185 LED AMPUL (DOB)",
       "en": "KES185 LED BULB (DOB)"
@@ -21650,6 +21656,7 @@
     "id": "KES182",
     "model": "KES182",
     "image": "urunler/kes182.webp",
+    "images": ["urunler/kes182-old.webp"],
     "name": {
       "tr": "KES182 LED AMPUL (DOB)",
       "en": "KES182 LED BULB (DOB)"
@@ -22250,6 +22257,7 @@
     "id": "KES209",
     "model": "KES209",
     "image": "urunler/kes209.webp",
+    "images": ["urunler/kes209-old.webp"],
     "name": {
       "tr": "KES209 LEDLİ BUJİ AMPUL",
       "en": "KES209 LED CANDLE BULB"
@@ -22336,13 +22344,13 @@
     "variantOptions": {
       "watt": "8W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES183": {
     "id": "KES183",
     "model": "KES183",
     "image": "urunler/kes183.webp",
+    "images": ["urunler/kes183-old.webp"],
     "name": {
       "tr": "KES183 LEDLİ BUJİ AMPUL (DOB)",
       "en": "KES183 LED CANDLE BULB (DOB)"
@@ -22435,6 +22443,7 @@
     "id": "KES184",
     "model": "KES184",
     "image": "urunler/kes184.webp",
+    "images": ["urunler/kes184-old.webp"],
     "name": {
       "tr": "KES184 LEDLİ BUJİ AMPUL (DOB)",
       "en": "KES184 LED CANDLE BULB (DOB)"
@@ -22521,13 +22530,13 @@
     "variantOptions": {
       "watt": "7W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES206": {
     "id": "KES206",
     "model": "KES206",
     "image": "urunler/kes206.webp",
+    "images": ["urunler/kes206-old.webp"],
     "name": {
       "tr": "KES206 LEDLİ BUJİ KIVRIK AMPUL",
       "en": "KES206 LED BENT CANDLE BULB"
@@ -22620,6 +22629,7 @@
     "id": "KES210",
     "model": "KES210",
     "image": "urunler/kes210.webp",
+    "images": ["urunler/kes210-old.webp"],
     "name": {
       "tr": "KES210 LEDLİ BUJİ KIVRIK AMPUL",
       "en": "KES210 LED BENT CANDLE BULB"
@@ -22712,6 +22722,7 @@
     "id": "KES207",
     "model": "KES207",
     "image": "urunler/kes207.webp",
+    "images": ["urunler/kes207-old.webp"],
     "name": {
       "tr": "KES207 LEDLİ TOP AMPUL",
       "en": "KES207 LED GLOBE BULB"
@@ -22806,13 +22817,13 @@
     "variantOptions": {
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES208": {
     "id": "KES208",
     "model": "KES208",
     "image": "urunler/kes208.webp",
+    "images": ["urunler/kes208-old.webp"],
     "name": {
       "tr": "KES208 LEDLİ TOP AMPUL",
       "en": "KES208 LED GLOBE BULB"
@@ -22907,13 +22918,13 @@
     "variantOptions": {
       "watt": "5W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KFL118": {
     "id": "KFL118",
     "model": "KFL118",
     "image": "urunler/kfl118.webp",
+    "images": ["urunler/kfl118-old.webp"],
     "name": {
       "tr": "KFL118 LED TÜP FLORESAN",
       "en": "KFL118 LED TUBE FLUORESCENT"
@@ -23008,13 +23019,13 @@
     "variantOptions": {
       "watt": "10W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KFL136": {
     "id": "KFL136",
     "model": "KFL136",
     "image": "urunler/kfl136.webp",
+    "images": ["urunler/kfl136-old.webp"],
     "name": {
       "tr": "KFL136 LED TÜP FLORESAN",
       "en": "KFL136 LED TUBE FLUORESCENT"
@@ -23109,13 +23120,13 @@
     "variantOptions": {
       "watt": "20W",
       "light": "Günışığı (3000K), Ararenk (4000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KFL136SE": {
     "id": "KFL136SE",
     "model": "KFL136SE",
     "image": "urunler/kfl136se.webp",
+    "images": ["urunler/kfl136se-old.webp"],
     "name": {
       "tr": "KFL136SE LED TÜP FLORESAN (RADAR SENSÖRLÜ)",
       "en": "KFL136SE LED TUBE FLUORESCENT (RADAR SENSOR)"
@@ -23216,6 +23227,7 @@
     "id": "KFL118C",
     "model": "KFL118C",
     "image": "urunler/kfl118c.webp",
+    "images": ["urunler/kfl118c-old.webp"],
     "name": {
       "tr": "KFL118C LED TÜP FLORESAN",
       "en": "KFL118C LED TUBE FLUORESCENT"
@@ -23316,6 +23328,7 @@
     "id": "KFL136C",
     "model": "KFL136C",
     "image": "urunler/kfl136c.webp",
+    "images": ["urunler/kfl136c-old.webp"],
     "name": {
       "tr": "KFL136C LED TÜP FLORESAN",
       "en": "KFL136C LED TUBE FLUORESCENT"
@@ -23416,6 +23429,7 @@
     "id": "KFL146C",
     "model": "KFL146C",
     "image": "urunler/kfl146c.webp",
+    "images": ["urunler/kfl146c-old.webp"],
     "name": {
       "tr": "KFL146C LED TÜP FLORESAN",
       "en": "KFL146C LED TUBE FLUORESCENT"
@@ -24714,6 +24728,7 @@
     "id": "KES224",
     "model": "KES224",
     "image": "urunler/kes224.webp",
+    "images": ["urunler/kes224-old.webp"],
     "name": {
       "tr": "KES224 12-48 VOLT LED AMPUL",
       "en": "KES224 12-48 VOLT LED BULB"
@@ -24806,6 +24821,7 @@
     "id": "KES222",
     "model": "KES222",
     "image": "urunler/kes222.webp",
+    "images": ["urunler/kes222-old.webp"],
     "name": {
       "tr": "KES222 12-48 VOLT LED AMPUL",
       "en": "KES222 12-48 VOLT LED BULB"
@@ -24892,13 +24908,13 @@
     "variantOptions": {
       "watt": "9W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES094": {
     "id": "KES094",
     "model": "KES094",
     "image": "urunler/kes094.webp",
+    "images": ["urunler/kes094-old.webp"],
     "name": {
       "tr": "KES094 LEDLİ RADAR SENSÖRLÜ AMPUL",
       "en": "KES094 LED RADAR SENSOR BULB"
@@ -24985,13 +25001,13 @@
     "variantOptions": {
       "watt": "9W",
       "light": "Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES300": {
     "id": "KES300",
     "model": "KES300",
     "image": "urunler/kes300.webp",
+    "images": ["urunler/kes300-old.webp"],
     "name": {
       "tr": "KES300 LEDLİ RGB AMPUL",
       "en": "KES300 LED RGB BULB"
@@ -30236,6 +30252,7 @@
     "id": "KES006",
     "model": "KES006",
     "image": "urunler/kes006.webp",
+    "images": ["urunler/kes006-old.webp"],
     "name": {
       "tr": "KES006 G4 DUY LEDLİ AMPUL",
       "en": "KES006 G4 SOCKET LED BULB"
@@ -30322,13 +30339,13 @@
     "variantOptions": {
       "watt": "2W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES104": {
     "id": "KES104",
     "model": "KES104",
     "image": "urunler/kes104.webp",
+    "images": ["urunler/kes104-old.webp"],
     "name": {
       "tr": "KES104 G4 DUY LEDLİ AMPUL",
       "en": "KES104 G4 SOCKET LED BULB"
@@ -30421,6 +30438,7 @@
     "id": "KES001",
     "model": "KES001",
     "image": "urunler/kes001.webp",
+    "images": ["urunler/kes001-old.webp"],
     "name": {
       "tr": "KES001 G4 DUY LEDLİ AMPUL",
       "en": "KES001 G4 SOCKET LED BULB"
@@ -30513,6 +30531,7 @@
     "id": "KES022",
     "model": "KES022",
     "image": "urunler/kes022.webp",
+    "images": ["urunler/kes022-old.webp"],
     "name": {
       "tr": "KES022 G4 DUY LEDLİ AMPUL",
       "en": "KES022 G4 SOCKET LED BULB"
@@ -30605,6 +30624,7 @@
     "id": "KES007",
     "model": "KES007",
     "image": "urunler/kes007.webp",
+    "images": ["urunler/kes007-old.webp"],
     "name": {
       "tr": "KES007 G4 DUY LEDLİ AMPUL",
       "en": "KES007 G4 SOCKET LED BULB"
@@ -30697,6 +30717,7 @@
     "id": "KES112",
     "model": "KES112",
     "image": "urunler/kes112.webp",
+    "images": ["urunler/kes112-old.webp"],
     "name": {
       "tr": "KES112 G4 DUY LEDLİ AMPUL - DİM",
       "en": "KES112 G4 SOCKET LED BULB - DIMMABLE"
@@ -30789,6 +30810,7 @@
     "id": "KES008",
     "model": "KES008",
     "image": "urunler/kes008.webp",
+    "images": ["urunler/kes008-old.webp"],
     "name": {
       "tr": "KES008 G4 DUY LEDLİ AMPUL",
       "en": "KES008 G4 SOCKET LED BULB"
@@ -30881,6 +30903,7 @@
     "id": "KES010",
     "model": "KES010",
     "image": "urunler/kes010.webp",
+    "images": ["urunler/kes010-old.webp"],
     "name": {
       "tr": "KES010 G9 DUY LEDLİ AMPUL",
       "en": "KES010 G9 SOCKET LED BULB"
@@ -30973,6 +30996,7 @@
     "id": "KES016",
     "model": "KES016",
     "image": "urunler/kes016.webp",
+    "images": ["urunler/kes016-old.webp"],
     "name": {
       "tr": "KES016 G9 DUY LEDLİ AMPUL - DİM",
       "en": "KES016 G9 SOCKET LED BULB - DIMMABLE"
@@ -31059,13 +31083,13 @@
     "variantOptions": {
       "watt": "5W",
       "light": "Günışığı (3000K), Beyaz (6500K)"
-    },
-    "images": []
+    }
   },
   "KES110": {
     "id": "KES110",
     "model": "KES110",
     "image": "urunler/kes110.webp",
+    "images": ["urunler/kes110-old.webp"],
     "name": {
       "tr": "KES110 G9 DUY LEDLİ AMPUL",
       "en": "KES110 G9 SOCKET LED BULB"
