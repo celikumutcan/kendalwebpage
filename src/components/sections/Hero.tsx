@@ -8,6 +8,8 @@ import { gsap, ScrollTrigger } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
+const MOBILE_QUERY = '(max-width: 767px)';
+
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -19,9 +21,19 @@ export const Hero = () => {
   // scroll progress reaches 1 exactly as AboutUs takes over; the glow scale
   // remaps to finish opening by 70% of that range instead of reading as
   // cut off, and the text reveal rides the same progress so it never outruns
-  // the glow ("the light illuminates the text").
+  // the glow ("the light illuminates the text"). On mobile this is skipped
+  // entirely in favor of a static CSS glow and a one-time text fade-in.
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      if (window.matchMedia(MOBILE_QUERY).matches) {
+        gsap.fromTo(
+          contentRef.current,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out', delay: 0.2 },
+        );
+        return;
+      }
+
       ScrollTrigger.create({
         trigger: containerRef.current,
         start: 'top top',
@@ -58,9 +70,9 @@ export const Hero = () => {
   return (
     <section
       ref={containerRef}
-      className="hero-cv-exclude relative h-[130vh] w-full bg-transparent"
+      className="hero-cv-exclude relative h-auto md:h-[130vh] w-full bg-transparent"
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24 [@media(max-height:820px)]:pt-14">
+      <div className="md:sticky md:top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center pt-24 [@media(max-height:820px)]:pt-14">
         <LightCore glowRef={glowRef} />
 
         <div className="absolute bottom-0 left-0 w-full h-40 md:h-56 z-[1] bg-gradient-to-b from-transparent to-black pointer-events-none" />

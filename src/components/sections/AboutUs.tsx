@@ -5,6 +5,8 @@ import { gsap } from '@/lib/gsapConfig';
 import { useLanguage } from '@/lib/i18n/LanguageProvider';
 import { useIsomorphicLayoutEffect } from '@/lib/useIsomorphicLayoutEffect';
 
+const MOBILE_QUERY = '(max-width: 767px)';
+
 export const AboutUs = () => {
   const { t } = useLanguage();
   const containerRef = useRef<HTMLElement>(null);
@@ -16,9 +18,12 @@ export const AboutUs = () => {
   // Timeline beats fade in via opacity, not filter: brightness()/grayscale()
   // — filter is paint-heavy and with scrub:true recomputed every frame a
   // beat was in range, causing stutter that opacity avoids at a fraction
-  // of the cost.
+  // of the cost. On mobile the wire/beats skip scrub entirely and just
+  // play once when they enter view instead.
   useIsomorphicLayoutEffect(() => {
     const ctx = gsap.context(() => {
+      const isMobile = window.matchMedia(MOBILE_QUERY).matches;
+
       gsap.fromTo(
         textRef.current,
         { opacity: 0, filter: 'blur(10px) brightness(0)', y: 30 },
@@ -34,6 +39,43 @@ export const AboutUs = () => {
           },
         },
       );
+
+      if (isMobile) {
+        gsap.fromTo(
+          wireRef.current,
+          { scaleY: 0 },
+          {
+            scaleY: 1,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: timelineRef.current,
+              start: 'top 75%',
+            },
+          },
+        );
+
+        beatsRef.current.forEach((beat) => {
+          if (!beat) return;
+
+          const dot = beat.querySelector('.timeline-dot');
+          const content = beat.querySelector('.timeline-content');
+
+          gsap.fromTo(
+            [dot, content],
+            { opacity: 0.3 },
+            {
+              opacity: 1,
+              duration: 0.5,
+              scrollTrigger: {
+                trigger: beat,
+                start: 'top 85%',
+              },
+            },
+          );
+        });
+        return;
+      }
 
       gsap.to(wireRef.current, {
         scaleY: 1,

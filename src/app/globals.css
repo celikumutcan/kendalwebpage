@@ -96,6 +96,14 @@ body.disable-cv section {
   transform-origin: center;
   will-change: transform;
 }
+
+/* Mobile: Hero.tsx never sets --lc-scale, so pin the glow open here instead. */
+@media (max-width: 767px) {
+  .light-core-scale {
+    transform: translate(-50%, -50%) scale(1.6);
+    will-change: auto;
+  }
+}
 .light-core-glow {
   position: absolute;
   inset: 0;
