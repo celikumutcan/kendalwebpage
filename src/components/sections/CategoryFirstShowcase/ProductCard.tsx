@@ -118,7 +118,9 @@ export function ProductCard({
         className={`absolute inset-x-0 top-0 h-[3px] z-20 bg-gradient-to-r ${accentGradient}`}
       />
 
-      <div className="relative aspect-square flex items-center justify-center overflow-hidden bg-gradient-to-b from-zinc-50 to-white">
+      <div className="flex flex-col overflow-hidden bg-gradient-to-b from-zinc-50 to-white">
+        <div className="pt-3 sm:pt-5" />
+        <div className="relative aspect-square flex items-center justify-center">
         <div
           className={`absolute w-2/3 h-2/3 rounded-full blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-500 ${blobClass}`}
         />
@@ -175,9 +177,9 @@ export function ProductCard({
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 20vw"
           style={{
             maskImage:
-              'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
+              'radial-gradient(ellipse 70% 70% at 50% 52%, black 68%, transparent 100%)',
             WebkitMaskImage:
-              'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
+              'radial-gradient(ellipse 70% 70% at 50% 52%, black 68%, transparent 100%)',
           }}
           className="relative z-10 object-contain p-2 sm:p-3 scale-[1.08] group-hover:scale-[1.15] group-hover:-translate-y-1 transition-transform duration-500 ease-out"
         />
@@ -199,6 +201,7 @@ export function ProductCard({
             />
           </svg>
         </span>
+        </div>
       </div>
 
       <div className="p-3 pt-2.5 sm:p-5 sm:pt-4 flex flex-col flex-grow border-t border-zinc-50">
