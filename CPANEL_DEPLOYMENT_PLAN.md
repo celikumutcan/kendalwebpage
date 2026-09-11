@@ -42,7 +42,16 @@ Bu dosya 2026-08-30 tarihinde yapılan inceleme ve hazırlıkların özeti. Ama�
    - `https://kendalelektrik.com.tr` (www'suz) → `https://www.kendalelektrik.com.tr`'ye yönleniyor mu
    - Sitede birkaç sayfa arası gezinip (menüden tıklayarak) geçişlerin bozulmadığını doğrula (madde 5'teki `.txt` riskiyle ilgili)
 
+## 2026-09-11 tarihli cPanel incelemesi notları
+
+- **Yedekler alındı:** Eski sitenin dosyaları (`public_html`, 3.81 GB zip) ve veritabanı (`kendalel_site`, 1.6 GB SQL dump) yedeklendi — 2026-09-11 tarihinde, cPanel'den indirilip **yerel makineye** kaydedildi.
+- **Eski DB silinmeyecek:** `kendalel_site` veritabanı cutover sonrasında **silinmeyecek**, hosting'te bağımsız olarak kalmaya devam edecek. Cutover kapsamında sadece dosyalar (statik export çıktısı) değiştirilecek, DB'ye dokunulmayacak.
+- **Cron Job yok, ama eski bir entegrasyon izi var:** cPanel'de tanımlı hiçbir Cron Job bulunmuyor (kontrol edildi). Ancak `univ_feed_cron.php`, `univ_import_cron.php`, `amp_cron.php` gibi dosyaların ve `storage/logs/` altındaki `googleshopping.0.log`, `openbay.log` gibi log dosyalarının varlığı, geçmişte bir **Google Shopping / Openbay** entegrasyonu kullanıldığını gösteriyor. Şu an aktif değil (cron tanımlı olmadığı için tetiklenmiyor), sadece ileride kafa karıştırmasın diye not düşülüyor.
+- **b2b ve sanalpos bu cPanel hesabında tanımlı değil:** `b2b.kendalelektrik.com.tr:38282` ve `sanalpos.kendalelektrik.com.tr`, bu cPanel hesabının Etki Alanları (Domains) listesinde **yok** — listede sadece ana domain var. Bunlar tamamen ayrı/harici sistemler; cutover'dan etkilenmeyecekler, dokunulmasına gerek yok.
+- **REST Admin API kullanılmıyor görünüyor:** `.htaccess`'teki `api/rest_admin/...` rewrite kurallarının son 24 saatlik erişim loglarında hiç kullanımı tespit edilmedi — aktif bir tüketici görünmüyor. (Yine de kural kaldırılmadan önce biraz daha uzun bir pencerede teyit edilmesi ihtiyatlı olur.)
+- **`maintenance.html` konumu netleşti:** Proje kökünde hazırlanan `maintenance.html`, cutover ve gelecekteki bakım pencereleri için cPanel'de **`/home/kendalelektrikco/maintenance.html`** konumuna kalıcı olarak konulacak. Devreye alma/kapatma, dosyayı `public_html` içine `index.html` olarak kopyalayıp/adını değiştirip geri almak gibi bir **dosya adı değiştirme** yöntemiyle yapılacak (ayrı bir mod_rewrite kuralına gerek yok).
+
 ## Hâlâ açık / teyit edilmemiş noktalar
 
-- cPanel'deki ana domainin eski `.htaccess`'inde bahsi geçmeyen, farklı bir subdomain'e (mail, webmail, b2b, sanalpos gibi) özel bir kural olup olmadığı tam teyit edilmedi. Bu subdomain'lerin muhtemelen kendi ayrı document root'ları vardır ve bizim `.htaccess` değişikliğimizden etkilenmemeleri gerekir — yine de canlıya almadan önce hızlıca kontrol edilmesi iyi olur.
+- cPanel'deki ana domainin eski `.htaccess`'inde bahsi geçmeyen, mail/webmail gibi subdomain'lere özel bir kural olup olmadığı tam teyit edilmedi (b2b ve sanalpos için bu artık netleşti — bkz. yukarıdaki 2026-09-11 notları, bu ikisi hesapta tanımlı değil). Mail/webmail'in muhtemelen kendi ayrı document root'ları vardır ve bizim `.htaccess` değişikliğimizden etkilenmemeleri gerekir — yine de canlıya almadan önce hızlıca kontrol edilmesi iyi olur.
 - `src/proxy.ts` hâlâ repo'da duruyor; statik export'ta zararsız/inert olduğu için silinmesi şart değil, ama isterse temizlik amacıyla kaldırılabilir (fonksiyonel bir engel oluşturmuyor).
