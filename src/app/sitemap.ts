@@ -70,6 +70,12 @@ function wwwSitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${WWW_HOST}/iletisim`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${WWW_HOST}/zincir-marketler`,
       lastModified: new Date(),
       changeFrequency: 'monthly',

@@ -2,7 +2,7 @@ import { getBrandExternalHref, getBrandUrunlerHref } from '@/lib/basePath';
 
 export interface ChatLink {
   label: { tr: string; en: string };
-  href: string;
+  href: string | { tr: string; en: string };
   external?: boolean;
 }
 
@@ -51,6 +51,29 @@ const CONTACT_NODE: ChatNode = {
   followUps: [],
 };
 
+const CATALOG_NODE: ChatNode = {
+  id: 'catalog',
+  question: {
+    tr: '📖 Ürün kataloğunuz var mı?',
+    en: '📖 Do you have a product catalog?',
+  },
+  answer: {
+    tr: 'Evet! Tüm ürün ailemizi, teknik detayları ve yeni modellerimizi içeren güncel kataloğumuzu aşağıdaki bağlantıdan inceleyebilir veya PDF olarak indirebilirsin.',
+    en: 'Yes! You can view or download our up-to-date catalog containing all our product families, technical details, and new models from the links below.',
+  },
+  links: [
+    {
+      label: { tr: 'Kataloğu İncele 📥', en: 'Browse Catalog 📥' },
+      href: {
+        tr: '/kendal-elektrik-katalog-2026.pdf',
+        en: '/en-catalog.pdf'
+      },
+      external: true,
+    },
+  ],
+  followUps: ['contact'],
+};
+
 // ---------------------------------------------------------------------------
 // Main site (Kendal Elektrik corporate) — unscoped, talks about the group.
 // ---------------------------------------------------------------------------
@@ -61,6 +84,7 @@ const MAIN_GREETING = {
 };
 
 const MAIN_ROOT_TOPIC_IDS = [
+  'catalog',
   'company',
   'brands',
   'products',
@@ -184,7 +208,7 @@ const MAIN_NODES: Record<string, ChatNode> = {
         external: true,
       },
     ],
-    followUps: ['brands'],
+    followUps: ['catalog', 'brands'],
   },
   export: {
     id: 'export',
@@ -259,6 +283,7 @@ const MAIN_NODES: Record<string, ChatNode> = {
     followUps: ['company'],
   },
   contact: CONTACT_NODE,
+  catalog: CATALOG_NODE,
 };
 
 // ---------------------------------------------------------------------------
@@ -274,6 +299,7 @@ const K2_GREETING = {
 };
 
 const K2_ROOT_TOPIC_IDS = [
+  'catalog',
   'k2_about',
   'k2_categories',
   'k2_solar',
@@ -379,9 +405,10 @@ const K2_NODES: Record<string, ChatNode> = {
         href: getBrandUrunlerHref('k2'),
       },
     ],
-    followUps: ['k2_categories'],
+    followUps: ['k2_categories', 'catalog'],
   },
   contact: CONTACT_NODE,
+  catalog: CATALOG_NODE,
 };
 
 // ---------------------------------------------------------------------------
@@ -396,6 +423,7 @@ const VANTI_GREETING = {
 };
 
 const VANTI_ROOT_TOPIC_IDS = [
+  'catalog',
   'vanti_about',
   'vanti_families',
   'vanti_smart',
@@ -504,9 +532,10 @@ const VANTI_NODES: Record<string, ChatNode> = {
         href: getBrandUrunlerHref('vanti'),
       },
     ],
-    followUps: ['vanti_families'],
+    followUps: ['vanti_families', 'catalog'],
   },
   contact: CONTACT_NODE,
+  catalog: CATALOG_NODE,
 };
 
 // ---------------------------------------------------------------------------
@@ -521,6 +550,7 @@ const GLOBAL_GREETING = {
 };
 
 const GLOBAL_ROOT_TOPIC_IDS = [
+  'catalog',
   'global_about',
   'global_categories',
   'global_dealers',
@@ -616,9 +646,10 @@ const GLOBAL_NODES: Record<string, ChatNode> = {
         href: getBrandUrunlerHref('global'),
       },
     ],
-    followUps: ['global_categories'],
+    followUps: ['global_categories', 'catalog'],
   },
   contact: CONTACT_NODE,
+  catalog: CATALOG_NODE,
 };
 
 export const CHATBOT_CONTEXTS: Record<

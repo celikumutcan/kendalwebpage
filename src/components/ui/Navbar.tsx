@@ -344,8 +344,7 @@ export const Navbar = () => {
 
           <div className="group relative py-2 cursor-pointer">
             <Link
-              href="/#iletisim"
-              onClick={(e) => handleLinkClick(e, '/#iletisim')}
+              href="/iletisim"
               className="flex items-center gap-1 hover:opacity-100 opacity-80 transition-opacity"
             >
               İletişim
@@ -492,9 +491,9 @@ export const Navbar = () => {
 
           <div className="border-b border-white/10 pb-4">
             <Link
-              href="/#iletisim"
-              onClick={(e) => handleLinkClick(e, '/#iletisim')}
+              href="/iletisim"
               className="flex items-center justify-between w-full text-lg font-medium text-white mb-2 hover:text-[var(--brand-red)] transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               İletişim
             </Link>

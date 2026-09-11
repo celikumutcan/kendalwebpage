@@ -7,47 +7,10 @@ interface BrandProductsHeaderProps {
   brandName: string;
 }
 
-const BrandGlyph = ({
-  brandName,
-  className,
-}: {
-  brandName: string;
-  className?: string;
-}) => {
-  if (brandName === 'vanti') {
-    return (
-      <svg
-        className={className}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.4}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
-        <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
-      </svg>
-    );
-  }
-  if (brandName === 'global') {
-    return (
-      <svg
-        className={className}
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth={1.2}
-      >
-        <path
-          d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    );
-  }
-  return (
+type GlyphName = 'bulb' | 'panel' | 'spot' | 'fan' | 'fanBlade';
+
+const GLYPHS: Record<GlyphName, (className?: string) => React.JSX.Element> = {
+  bulb: (className) => (
     <svg
       className={className}
       viewBox="0 0 24 24"
@@ -61,7 +24,81 @@ const BrandGlyph = ({
         strokeLinejoin="round"
       />
     </svg>
-  );
+  ),
+  panel: (className) => (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.2}
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" strokeLinejoin="round" />
+      <circle cx="8" cy="10" r="1" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="10" r="1" fill="currentColor" stroke="none" />
+      <circle cx="16" cy="10" r="1" fill="currentColor" stroke="none" />
+      <circle cx="8" cy="14" r="1" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="14" r="1" fill="currentColor" stroke="none" />
+      <circle cx="16" cy="14" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  spot: (className) => (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.2}
+    >
+      <path d="M9 3h6l1.5 5h-9L9 3Z" strokeLinejoin="round" />
+      <path d="M7.5 8h9L14 14h-4L7.5 8Z" strokeLinejoin="round" />
+      <path d="M9.5 17.5 8 21M14.5 17.5 16 21M12 17.5V21" strokeLinecap="round" />
+    </svg>
+  ),
+  fan: (className) => (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.4}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  ),
+  fanBlade: (className) => (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.3}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none" />
+      <path d="M12 12c0-4 2-6.5 4.5-7.5-1 3-.3 6-4.5 7.5Z" />
+      <path d="M12 12c-3.8-1.3-6.8-.2-9-3 3.2-.6 6.4.2 9 3Z" />
+      <path d="M12 12c2.6 3 2 6.2 0 9-1-3.4-2.6-6-0-9Z" />
+    </svg>
+  ),
+};
+
+const BrandGlyph = ({
+  name,
+  className,
+}: {
+  name: GlyphName;
+  className?: string;
+}) => GLYPHS[name](className);
+
+const ICON_SETS: Record<string, GlyphName[]> = {
+  k2: ['bulb', 'panel', 'spot'],
+  global: ['bulb', 'panel', 'spot'],
+  vanti: ['fan', 'fanBlade'],
 };
 
 export const BrandProductsHeader = ({
@@ -118,6 +155,14 @@ export const BrandProductsHeader = ({
       ? 'bg-cyan-200/70'
       : 'bg-yellow-200/70';
 
+  const accentText = isK2
+    ? 'text-orange-500'
+    : isVanti
+      ? 'text-blue-500'
+      : 'text-yellow-500';
+
+  const icons = ICON_SETS[brandName] || ICON_SETS.global;
+
   return (
     <div className="max-w-5xl mx-auto grid lg:grid-cols-[1.15fr_0.85fr] items-center gap-6 mb-6 mt-4">
       <div className="flex flex-col items-center text-center lg:items-start lg:text-left animate-in fade-in slide-in-from-bottom-4 duration-700 ease-out">
@@ -157,18 +202,18 @@ export const BrandProductsHeader = ({
           className={`relative w-32 h-32 rounded-[1.75rem] bg-gradient-to-br ${cardGradient} shadow-2xl -rotate-6 flex items-center justify-center overflow-hidden`}
         >
           <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle,white_1px,transparent_1px)] [background-size:18px_18px]" />
-          <BrandGlyph
-            brandName={brandName}
-            className="w-14 h-14 text-white/90"
-          />
+          <BrandGlyph name={icons[0]} className="w-14 h-14 text-white/90" />
         </div>
 
         <div className="absolute -bottom-1 right-4 w-20 h-20 rounded-[1.25rem] bg-white shadow-xl rotate-6 border border-zinc-100 flex items-center justify-center">
-          <BrandGlyph
-            brandName={brandName}
-            className={`w-8 h-8 ${isK2 ? 'text-orange-500' : isVanti ? 'text-blue-500' : 'text-yellow-500'}`}
-          />
+          <BrandGlyph name={icons[1]} className={`w-8 h-8 ${accentText}`} />
         </div>
+
+        {icons[2] && (
+          <div className="absolute -top-3 left-2 w-16 h-16 rounded-[1.1rem] bg-white shadow-xl -rotate-3 border border-zinc-100 flex items-center justify-center">
+            <BrandGlyph name={icons[2]} className={`w-6 h-6 ${accentText}`} />
+          </div>
+        )}
       </div>
     </div>
   );

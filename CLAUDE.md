@@ -284,6 +284,10 @@ There is **no central `src/types/` domain-types folder** — domain types (`Prod
 
 There is a pending migration from the old OpenCart (PHP) site at `kendalelektrik.com.tr` to this Next.js static export. See **`CPANEL_DEPLOYMENT_PLAN.md`** at the repo root for the full audit (subdomain routing feasibility, `.htaccess` rewrite, checklist) — read it before doing any deploy-related work on this project.
 
+## Adding products / processing photos
+
+See **`urun_ekleme_rehberi.md`** at the repo root for the full new-product workflow (JSON merging, legacy slug redirects, CCT/variant rules, ghost-record cleanup) and **`FOTOGRAF_SIKISTIRMA_REHBERI.md`** for the exact photo-compression method (sharp, `resize 800x800 inside/withoutEnlargement` + `webp({quality:80, effort:6})`) — read both before touching `src/data/products.json` or `public/images/urunler/`.
+
 ## Development Workflow
 - **Start Dev Server:** `npm run dev`
 - **Build:** `npm run build`

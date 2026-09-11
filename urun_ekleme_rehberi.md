@@ -22,7 +22,7 @@ Kullanıcı "Fotoğrafları yükledim" dediğinde yapman gerekenler:
 - Node.js ve `sharp` kütüphanesini kullanarak bu fotoğrafları **kesinlikle şu ayarlarla işleyip taşı:**
   - Hedef Klasör: `public/images/urunler/`
   - Boyutlandırma: `width: 800, height: 800, fit: 'inside', withoutEnlargement: true`
-  - Format: `.webp`, `quality: 80`
+  - Format: `.webp`, `quality: 80`, `effort: 6` (effort parametresi kaliteyi düşürmeden dosyayı küçültmenin asıl sırrı — detaylı açıklama ve örnekler için bkz. [`FOTOGRAF_SIKISTIRMA_REHBERI.md`](FOTOGRAF_SIKISTIRMA_REHBERI.md))
   - İsimlendirme: Orijinal ismin tamamı küçük harfe çevrilmiş hali (`kdl050.webp`).
 - İşlem bitince ana klasördeki eski `.jpg` orijinal dosyalarını **sil**.
 

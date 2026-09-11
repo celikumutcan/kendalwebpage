@@ -4,13 +4,16 @@ const path = require('path');
 
 const repoPath = 'C:/Users/umutcan.celik/Documents/GitHub/kendalwebpage';
 
-const logoPathStr = path.join(repoPath, 'public/images/kendal-logo.svg');
+const kendalLogoStr = path.join(repoPath, 'public/images/kendal-logo.svg');
+const brandLogoStr = path.join(repoPath, 'public/images/brands/k2-logo.svg');
 const productImagePathStr = path.join(repoPath, 'public/images/urunler/kes119-5wsari.webp');
 
-const logoBase64 = fs.readFileSync(logoPathStr, 'base64');
+const kendalLogoBase64 = fs.readFileSync(kendalLogoStr, 'base64');
+const brandLogoBase64 = fs.readFileSync(brandLogoStr, 'base64');
 const productBase64 = fs.readFileSync(productImagePathStr, 'base64');
 
-const logoPath = `data:image/svg+xml;base64,${logoBase64}`;
+const kendalLogo = `data:image/svg+xml;base64,${kendalLogoBase64}`;
+const brandLogo = `data:image/svg+xml;base64,${brandLogoBase64}`;
 const productImagePath = `data:image/webp;base64,${productBase64}`;
 
 const htmlContent = `
@@ -202,13 +205,20 @@ const htmlContent = `
             text-decoration: none;
             font-weight: 500;
             margin-left: 5px;
+            margin-right: 15px;
+        }
+
+        .footer img {
+            height: 20px;
+            margin-left: 15px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="${logoPath}" alt="Kendal Elektrik Logo" />
+            <img src="${brandLogo}" alt="Brand Logo" />
         </div>
         <div class="header-text">
             <h1>ÜRÜN BİLGİ FORMU</h1>
@@ -255,6 +265,7 @@ const htmlContent = `
 
     <div class="footer">
         Daha fazla bilgi için / For more information: <a href="https://www.kendalelektrik.com.tr">www.kendalelektrik.com.tr</a>
+        | <img src="${kendalLogo}" alt="Kendal Elektrik Logo" />
     </div>
 </body>
 </html>

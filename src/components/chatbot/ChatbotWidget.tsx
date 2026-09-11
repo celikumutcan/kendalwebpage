@@ -322,14 +322,7 @@ export const ChatbotWidget = () => {
               <p className={`truncate text-sm font-semibold ${panel.title}`}>
                 {lang === 'tr' ? 'Kendal Asistan' : 'Kendal Assistant'}
               </p>
-              <p
-                className={`flex items-center gap-1.5 text-xs ${panel.subtitle}`}
-              >
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                {lang === 'tr'
-                  ? 'Hazır cevaplarla yardımcı olur'
-                  : 'Answers with ready info'}
-              </p>
+
             </div>
             <button
               type="button"
@@ -378,11 +371,12 @@ export const ChatbotWidget = () => {
                   {m.text}
                   {m.links && m.links.length > 0 && (
                     <div className="mt-2.5 flex flex-col gap-1.5">
-                      {m.links.map((l) =>
-                        l.external ? (
+                      {m.links.map((l) => {
+                        const resolvedHref = typeof l.href === 'string' ? l.href : l.href[lang];
+                        return l.external ? (
                           <a
-                            key={l.href}
-                            href={l.href}
+                            key={resolvedHref}
+                            href={resolvedHref}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={`text-xs font-semibold underline underline-offset-2 transition-colors ${panel.link}`}
@@ -391,14 +385,14 @@ export const ChatbotWidget = () => {
                           </a>
                         ) : (
                           <Link
-                            key={l.href}
-                            href={l.href}
+                            key={resolvedHref}
+                            href={resolvedHref}
                             className={`text-xs font-semibold underline underline-offset-2 transition-colors ${panel.link}`}
                           >
                             {l.label[lang]}
                           </Link>
-                        ),
-                      )}
+                        );
+                      })}
                     </div>
                   )}
                 </div>

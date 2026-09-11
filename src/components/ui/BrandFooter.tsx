@@ -206,7 +206,12 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
       </div>
 
       <div className="pt-8 border-t border-zinc-200 flex flex-col items-center justify-center gap-4 text-center text-xs">
-        <div className="bg-black px-4 py-2.5 rounded-xl">
+        <a
+          href="https://www.kendalelektrik.com.tr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-black px-4 py-2.5 rounded-xl hover:scale-105 transition-transform"
+        >
           <Image
             src={getAssetPath('/images/kendal-logo.svg')}
             alt="Kendal Elektrik"
@@ -214,7 +219,7 @@ export const BrandFooter = ({ brandName }: BrandFooterProps) => {
             height={38}
             className="h-6 w-auto object-contain"
           />
-        </div>
+        </a>
         <p className="opacity-60">
           &copy; {new Date().getFullYear()}{' '}
           {isK2 ? 'K2 LED SYSTEMS' : brandName === 'vanti' ? 'VANTİ' : 'GLOBAL'}{' '}
