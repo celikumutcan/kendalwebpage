@@ -2,7 +2,7 @@
   "4206": {
     "id": "4206",
     "model": "GDL41425WPANARA",
-    "image": "urunler/gdl414.webp",
+    "image": "urunler/4206.webp",
     "name": {
       "tr": "GDL414 SLIM BACKLIGHT SIVA ALTI PANEL",
       "en": "GDL414 SLIM BACKLIGHT RECESSED PANEL"
@@ -94,7 +94,7 @@
   "4207": {
     "id": "4207",
     "model": "GDL41425WPANBYZ",
-    "image": "urunler/gdl414.webp",
+    "image": "urunler/4207.webp",
     "name": {
       "tr": "GDL414 SLIM BACKLIGHT SIVA ALTI PANEL",
       "en": "GDL414 SLIM BACKLIGHT RECESSED PANEL"
@@ -186,7 +186,7 @@
   "4208": {
     "id": "4208",
     "model": "GDL41425WPANGNI",
-    "image": "urunler/gdl414.webp",
+    "image": "urunler/4208.webp",
     "name": {
       "tr": "GDL414 SLIM BACKLIGHT SIVA ALTI PANEL",
       "en": "GDL414 SLIM BACKLIGHT RECESSED PANEL"
@@ -890,7 +890,7 @@
   "4536": {
     "id": "4536",
     "model": "KDL400-6WBEYAZ",
-    "image": "urunler/kdl400.webp",
+    "image": "urunler/4536.webp",
     "name": {
       "tr": "KDL400 SIVA ALTI SLİM LED PANEL",
       "en": "KDL400 RECESSED SLIM LED PANEL"
@@ -998,7 +998,7 @@
   "4537": {
     "id": "4537",
     "model": "KDL400-6WGNISK",
-    "image": "urunler/kdl400.webp",
+    "image": "urunler/4537.webp",
     "name": {
       "tr": "KDL400 SIVA ALTI SLİM LED PANEL",
       "en": "KDL400 RECESSED SLIM LED PANEL"
@@ -1106,7 +1106,7 @@
   "4540": {
     "id": "4540",
     "model": "KDL40112WARARENK",
-    "image": "urunler/kdl40112w.webp",
+    "image": "urunler/4540.webp",
     "name": {
       "tr": "KDL401 SIVA ALTI SLİM LED PANEL",
       "en": "KDL401 RECESSED SLIM LED PANEL"
@@ -1214,7 +1214,7 @@
   "4541": {
     "id": "4541",
     "model": "KDL40112WBEYAZ",
-    "image": "urunler/kdl40112w.webp",
+    "image": "urunler/4541.webp",
     "name": {
       "tr": "KDL401 SIVA ALTI SLİM LED PANEL",
       "en": "KDL401 RECESSED SLIM LED PANEL"
@@ -1322,7 +1322,7 @@
   "4542": {
     "id": "4542",
     "model": "KDL40112WGNISK",
-    "image": "urunler/kdl40112w.webp",
+    "image": "urunler/4542.webp",
     "name": {
       "tr": "KDL401 SIVA ALTI SLİM LED PANEL",
       "en": "KDL401 RECESSED SLIM LED PANEL"
@@ -1430,7 +1430,7 @@
   "4545": {
     "id": "4545",
     "model": "KDL40216WARARENK",
-    "image": "urunler/kdl40216w.webp",
+    "image": "urunler/4545.webp",
     "name": {
       "tr": "KDL402 SIVA ALTI SLİM LED PANEL",
       "en": "KDL402 RECESSED SLIM LED PANEL"
@@ -1538,7 +1538,7 @@
   "4546": {
     "id": "4546",
     "model": "KDL40216WBEYAZ",
-    "image": "urunler/kdl40216w.webp",
+    "image": "urunler/4546.webp",
     "name": {
       "tr": "KDL402 SIVA ALTI SLİM LED PANEL",
       "en": "KDL402 RECESSED SLIM LED PANEL"
@@ -1646,7 +1646,7 @@
   "4547": {
     "id": "4547",
     "model": "KDL40216WGNISK",
-    "image": "urunler/kdl40216w.webp",
+    "image": "urunler/4547.webp",
     "name": {
       "tr": "KDL402 SIVA ALTI SLİM LED PANEL",
       "en": "KDL402 RECESSED SLIM LED PANEL"
@@ -1754,7 +1754,7 @@
   "4550": {
     "id": "4550",
     "model": "KDL40318WARARENK",
-    "image": "urunler/kdl40318w.webp",
+    "image": "urunler/4550.webp",
     "name": {
       "tr": "KDL403 SIVA ALTI SLİM LED PANEL",
       "en": "KDL403 RECESSED SLIM LED PANEL"
@@ -1862,7 +1862,7 @@
   "4551": {
     "id": "4551",
     "model": "KDL40318WBEYAZ",
-    "image": "urunler/kdl40318w.webp",
+    "image": "urunler/4551.webp",
     "name": {
       "tr": "KDL403 SIVA ALTI SLİM LED PANEL",
       "en": "KDL403 RECESSED SLIM LED PANEL"
@@ -1970,7 +1970,7 @@
   "4552": {
     "id": "4552",
     "model": "KDL40318WGNISK",
-    "image": "urunler/kdl40318w.webp",
+    "image": "urunler/4552.webp",
     "name": {
       "tr": "KDL403 SIVA ALTI SLİM LED PANEL",
       "en": "KDL403 RECESSED SLIM LED PANEL"
@@ -2078,7 +2078,7 @@
   "4555": {
     "id": "4555",
     "model": "KDL404-3WARARENK",
-    "image": "urunler/kdl404.webp",
+    "image": "urunler/4555.webp",
     "name": {
       "tr": "KDL404 SIVA ALTI SLİM LED PANEL",
       "en": "KDL404 RECESSED SLIM LED PANEL"
@@ -2186,7 +2186,7 @@
   "4556": {
     "id": "4556",
     "model": "KDL404-3WBEYAZ",
-    "image": "urunler/kdl404.webp",
+    "image": "urunler/4556.webp",
     "name": {
       "tr": "KDL404 SIVA ALTI SLİM LED PANEL",
       "en": "KDL404 RECESSED SLIM LED PANEL"
@@ -2294,7 +2294,7 @@
   "4557": {
     "id": "4557",
     "model": "KDL404-3WGNISK",
-    "image": "urunler/kdl404.webp",
+    "image": "urunler/4557.webp",
     "name": {
       "tr": "KDL404 SIVA ALTI SLİM LED PANEL",
       "en": "KDL404 RECESSED SLIM LED PANEL"
@@ -2402,7 +2402,7 @@
   "4560": {
     "id": "4560",
     "model": "KDL405-9WARARENK",
-    "image": "urunler/kdl405.webp",
+    "image": "urunler/4560.webp",
     "name": {
       "tr": "KDL405 SIVA ALTI SLİM LED PANEL",
       "en": "KDL405 RECESSED SLIM LED PANEL"
@@ -2510,7 +2510,7 @@
   "4561": {
     "id": "4561",
     "model": "KDL405-9WBEYAZ",
-    "image": "urunler/kdl405.webp",
+    "image": "urunler/4561.webp",
     "name": {
       "tr": "KDL405 SIVA ALTI SLİM LED PANEL",
       "en": "KDL405 RECESSED SLIM LED PANEL"
@@ -2618,7 +2618,7 @@
   "4562": {
     "id": "4562",
     "model": "KDL405-9WGNISK",
-    "image": "urunler/kdl405.webp",
+    "image": "urunler/4562.webp",
     "name": {
       "tr": "KDL405 SIVA ALTI SLİM LED PANEL",
       "en": "KDL405 RECESSED SLIM LED PANEL"
@@ -2726,7 +2726,7 @@
   "4563": {
     "id": "4563",
     "model": "KDL40725WARARENK",
-    "image": "urunler/kdl40725w.webp",
+    "image": "urunler/4563.webp",
     "name": {
       "tr": "KDL407 SIVA ALTI SLİM LED PANEL",
       "en": "KDL407 RECESSED SLIM LED PANEL"
@@ -2834,7 +2834,7 @@
   "4564": {
     "id": "4564",
     "model": "KDL40725WBEYAZ",
-    "image": "urunler/kdl40725w.webp",
+    "image": "urunler/4564.webp",
     "name": {
       "tr": "KDL407 SIVA ALTI SLİM LED PANEL",
       "en": "KDL407 RECESSED SLIM LED PANEL"
@@ -10743,7 +10743,7 @@
   "KCL013": {
     "id": "KCL013",
     "model": "KCL013",
-    "image": "urunler/kcl013-rgb-neon-led.webp",
+    "image": "urunler/kcl013.webp",
     "name": {
       "tr": "KCL013 12V NEON LED",
       "en": "KCL013 12V NEON LED"
@@ -10829,7 +10829,7 @@
   "KCL013-RGB": {
     "id": "KCL013-RGB",
     "model": "KCL013-RGB",
-    "image": "urunler/kcl013-rgb-neon-led.webp",
+    "image": "urunler/kcl013-rgb.webp",
     "name": {
       "tr": "KCL013 12V NEON LED (RGB)",
       "en": "KCL013 12V NEON LED (RGB)"
@@ -20506,6 +20506,7 @@
     "id": "HAN015B",
     "model": "HAN015B",
     "image": "urunler/han015b.webp",
+    "images": ["urunler/han015b-old.webp"],
     "name": {
       "tr": "HAN015B 30X120 CLİP-İN KASA PANEL ÇERÇEVESİ",
       "en": "HAN015B 30X120 CLIP-IN BODY PANEL FRAME"
@@ -20605,6 +20606,7 @@
     "id": "HAN016A",
     "model": "HAN016A",
     "image": "urunler/han016a.webp",
+    "images": ["urunler/han016a-old.webp"],
     "name": {
       "tr": "HAN016A 30X60 DEMONTE PANEL ÇERÇEVESİ",
       "en": "HAN016A 30X60 DISASSEMBLED PANEL FRAME"
@@ -36346,7 +36348,7 @@
   "KLS923-3000K": {
     "id": "KLS923-3000K",
     "model": "KLS923",
-    "image": "urunler/kls923.webp",
+    "image": "urunler/kls923-3000k.webp",
     "name": {
       "tr": "KLS923 SMD LEDLİ SPOT",
       "en": "KLS923 SMD LED SPOT"
@@ -36431,7 +36433,7 @@
   "KLS923-4000K": {
     "id": "KLS923-4000K",
     "model": "KLS923",
-    "image": "urunler/kls923.webp",
+    "image": "urunler/kls923-4000k.webp",
     "name": {
       "tr": "KLS923 SMD LEDLİ SPOT",
       "en": "KLS923 SMD LED SPOT"
@@ -36516,7 +36518,7 @@
   "KLS923-6500K": {
     "id": "KLS923-6500K",
     "model": "KLS923",
-    "image": "urunler/kls923.webp",
+    "image": "urunler/kls923-6500k.webp",
     "name": {
       "tr": "KLS923 SMD LEDLİ SPOT",
       "en": "KLS923 SMD LED SPOT"
@@ -36601,7 +36603,7 @@
   "KLS923B-3000K": {
     "id": "KLS923B-3000K",
     "model": "KLS923B",
-    "image": "urunler/kls923b.webp",
+    "image": "urunler/kls923b-3000k.webp",
     "name": {
       "tr": "KLS923B SMD LEDLİ SPOT",
       "en": "KLS923B SMD LED SPOT"
@@ -36686,7 +36688,7 @@
   "KLS923B-4000K": {
     "id": "KLS923B-4000K",
     "model": "KLS923B",
-    "image": "urunler/kls923b.webp",
+    "image": "urunler/kls923b-4000k.webp",
     "name": {
       "tr": "KLS923B SMD LEDLİ SPOT",
       "en": "KLS923B SMD LED SPOT"
@@ -36771,7 +36773,7 @@
   "KLS923B-6500K": {
     "id": "KLS923B-6500K",
     "model": "KLS923B",
-    "image": "urunler/kls923b.webp",
+    "image": "urunler/kls923b-6500k.webp",
     "name": {
       "tr": "KLS923B SMD LEDLİ SPOT",
       "en": "KLS923B SMD LED SPOT"
@@ -36856,7 +36858,7 @@
   "KLS921-3000K": {
     "id": "KLS921-3000K",
     "model": "KLS921",
-    "image": "urunler/kls921.webp",
+    "image": "urunler/kls921-3000k.webp",
     "name": {
       "tr": "KLS921 SMD LEDLİ SPOT",
       "en": "KLS921 SMD LED SPOT"
@@ -36941,7 +36943,7 @@
   "KLS921-4000K": {
     "id": "KLS921-4000K",
     "model": "KLS921",
-    "image": "urunler/kls921.webp",
+    "image": "urunler/kls921-4000k.webp",
     "name": {
       "tr": "KLS921 SMD LEDLİ SPOT",
       "en": "KLS921 SMD LED SPOT"
@@ -37026,7 +37028,7 @@
   "KLS921-6500K": {
     "id": "KLS921-6500K",
     "model": "KLS921",
-    "image": "urunler/kls921.webp",
+    "image": "urunler/kls921-6500k.webp",
     "name": {
       "tr": "KLS921 SMD LEDLİ SPOT",
       "en": "KLS921 SMD LED SPOT"
@@ -42450,7 +42452,7 @@
   "KRS104-B": {
     "id": "KRS104-B",
     "model": "KRS104",
-    "image": "urunler/krs104.webp",
+    "image": "urunler/krs104-b.webp",
     "name": {
       "tr": "KRS104 MONOFAZE RAY APARATI",
       "en": "KRS104 SINGLE-PHASE TRACK ACCESSORY"
@@ -42509,7 +42511,7 @@
   "KRS104-S": {
     "id": "KRS104-S",
     "model": "KRS104",
-    "image": "urunler/krs104.webp",
+    "image": "urunler/krs104-s.webp",
     "name": {
       "tr": "KRS104 MONOFAZE RAY APARATI",
       "en": "KRS104 SINGLE-PHASE TRACK ACCESSORY"
@@ -42686,7 +42688,7 @@
   "KRS108-B": {
     "id": "KRS108-B",
     "model": "KRS108",
-    "image": "urunler/krs108.webp",
+    "image": "urunler/krs108-b.webp",
     "name": {
       "tr": "KRS108 MONOFAZE RAY APARATI",
       "en": "KRS108 SINGLE-PHASE TRACK ACCESSORY"
@@ -42745,7 +42747,7 @@
   "KRS108-S": {
     "id": "KRS108-S",
     "model": "KRS108",
-    "image": "urunler/krs108.webp",
+    "image": "urunler/krs108-s.webp",
     "name": {
       "tr": "KRS108 MONOFAZE RAY APARATI",
       "en": "KRS108 SINGLE-PHASE TRACK ACCESSORY"
@@ -42804,7 +42806,7 @@
   "KRS109-B": {
     "id": "KRS109-B",
     "model": "KRS109",
-    "image": "urunler/krs109.webp",
+    "image": "urunler/krs109-b.webp",
     "name": {
       "tr": "KRS109 MONOFAZE RAY APARATI",
       "en": "KRS109 SINGLE-PHASE TRACK ACCESSORY"
@@ -42863,7 +42865,7 @@
   "KRS109-S": {
     "id": "KRS109-S",
     "model": "KRS109",
-    "image": "urunler/krs109.webp",
+    "image": "urunler/krs109-s.webp",
     "name": {
       "tr": "KRS109 MONOFAZE RAY APARATI",
       "en": "KRS109 SINGLE-PHASE TRACK ACCESSORY"
@@ -42921,7 +42923,7 @@
   },
   "KLS519-3W": {
     "model": "KLS519",
-    "image": "urunler/kls519.webp",
+    "image": "urunler/kls519-3w.webp",
     "name": {
       "tr": "KLS519 HAREKETLİ LED YILDIZ SPOT",
       "en": "KLS519 ADJUSTABLE LED STAR SPOT"
@@ -43006,7 +43008,7 @@
   },
   "KLS519-5W": {
     "model": "KLS519",
-    "image": "urunler/kls519.webp",
+    "image": "urunler/kls519-5w.webp",
     "name": {
       "tr": "KLS519 HAREKETLİ LED YILDIZ SPOT",
       "en": "KLS519 ADJUSTABLE LED STAR SPOT"
@@ -43091,7 +43093,7 @@
   },
   "KSL243-BEYAZ": {
     "model": "KSL243",
-    "image": "urunler/ksl243.webp",
+    "image": "urunler/ksl243-beyaz.webp",
     "name": {
       "tr": "KSL243 SMD SPOT",
       "en": "KSL243 SMD SPOT"
@@ -43176,7 +43178,7 @@
   },
   "KSL243-KROM": {
     "model": "KSL243",
-    "image": "urunler/ksl243.webp",
+    "image": "urunler/ksl243-krom.webp",
     "name": {
       "tr": "KSL243 SMD SPOT",
       "en": "KSL243 SMD SPOT"
@@ -46807,7 +46809,7 @@
   "KSA190": {
     "id": "KSA190",
     "model": "KSA190",
-    "image": "urunler/ksa190-sensorlu-armatur.webp",
+    "image": "urunler/ksa190.webp",
     "name": {
       "tr": "KSA190 PIR SENSÖRLÜ TAVAN ARMATÜRÜ",
       "en": "KSA190 PIR SENSOR CEILING FIXTURE"
@@ -46898,7 +46900,7 @@
   "KSA191": {
     "id": "KSA191",
     "model": "KSA191",
-    "image": "urunler/ksa190-sensorlu-armatur.webp",
+    "image": "urunler/ksa191.webp",
     "name": {
       "tr": "KSA191 PIR SENSÖRLÜ TAVAN ARMATÜRÜ",
       "en": "KSA191 PIR SENSOR CEILING FIXTURE"

@@ -288,5 +288,6 @@ There is a pending migration from the old OpenCart (PHP) site at `kendalelektrik
 - **Start Dev Server:** `npm run dev`
 - **Build:** `npm run build`
 - **Lint:** `npm run lint` (Biome) — `npm run format` to auto-fix formatting, `npm run check` to run both lint+format together.
+- **Generate Product PDFs:** `node generate_urun_bilgi_formu.js` — Run this script when a new product is added (or updated) to generate/update its "Ürün Bilgi Formu" PDF document.
 
 Please refer to this document to understand where to place new components, where to look for routing logic, how the data layer resolves products/slugs, and how the styling/animation/3D stack is structured. When something here seems out of date (a file renamed, a component removed), trust the current code over this doc and update this file accordingly.

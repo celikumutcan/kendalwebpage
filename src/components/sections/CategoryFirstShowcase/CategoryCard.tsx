@@ -73,7 +73,7 @@ export function CategoryCard({
             WebkitMaskImage:
               'radial-gradient(ellipse 70% 70% at 50% 52%, black 55%, transparent 100%)',
           }}
-          className="relative z-10 object-contain object-center p-2 sm:p-3 scale-[1.22] transition-transform duration-700 ease-out group-hover:scale-[1.3]"
+          className="relative z-10 object-contain object-center p-4 pt-8 sm:p-6 sm:pt-10 scale-[1.05] transition-transform duration-700 ease-out group-hover:scale-[1.15]"
         />
       </div>
 
