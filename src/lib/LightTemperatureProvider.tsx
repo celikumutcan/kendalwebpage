@@ -12,7 +12,7 @@ const LightTemperatureContext = createContext<LightTemperatureContextType>({
   getProgress: () => 0,
 });
 
-// The accent light (Hero's LightCore glow, the Globe's tint) used to warm
+// The accent light (the Globe's tint) used to warm
 // from blue to orange as you scrolled the whole page, via a document-wide
 // ScrollTrigger. That warm-up was removed by design — the light now stays
 // a fixed cool blue everywhere, on every device — so this provider just

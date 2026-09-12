@@ -55,7 +55,7 @@ export function IletisimClient() {
   return (
     <div
       ref={containerRef}
-      className="bg-black text-white pt-28 pb-12 px-6 relative z-10 overflow-hidden"
+      className="bg-black text-white pt-36 pb-12 px-6 relative z-10 overflow-hidden"
     >
       <div
         className="absolute top-0 left-0 w-[65vw] h-full pointer-events-none opacity-40 mix-blend-screen"
@@ -71,8 +71,8 @@ export function IletisimClient() {
       />
 
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="mb-8">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-[var(--global-text)] opacity-90 mb-4">
             {language === 'tr' ? 'İletişim' : 'Contact Us'}
           </h1>
           <div className="h-1.5 w-16 bg-[var(--brand-red)] rounded-full" />
